@@ -1,0 +1,7 @@
+# This is a comment for Ignore in Book Editor
+
+# Ignore the file test.md
+test.md
+
+# Ignore everything in the directory "test"
+test/*
