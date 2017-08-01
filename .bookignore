@@ -3,5 +3,5 @@
 # Ignore the file test.md
 test.md
 
-# Ignore everything in the directory "test"
-test/*
+# Ignore everything in the directory "AAA_Example"
+AAA_Example/*
