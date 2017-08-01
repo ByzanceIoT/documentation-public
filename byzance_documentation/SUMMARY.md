@@ -1,6 +1,6 @@
 # Summary
 
 * [Introduction](README.md)
-* [QFSDFSADF](qfsdfsadf.md)
-* [ASDFSDF](asdfsdf.md)
+* [Device Registration](afdssdfasdf.md)
+* [First Steps](dsfasdf.md)
 

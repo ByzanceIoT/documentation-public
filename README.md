@@ -2,5 +2,5 @@
 
 ---
 
-Skip to [docu.byzance.cz](/docu.byzance.cz)[book.json](book.json)
+Skip to [docu.byzance.cz](/docu.byzance.cz)
 
