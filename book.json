@@ -6,6 +6,6 @@
      "language" : "en",
      "plugins": ["edit-link", "youtubex", "simple-page-toc", "anchorjs", "github", "gtm", "richquotes", "nocache"],
      "styles": {
-        "website": "website.css"
+        "website": "styles/website.css"
     }
 }
