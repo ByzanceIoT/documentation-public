@@ -5,5 +5,7 @@
      "author" : "Byzance IT solution s.r.o Czech Republic", 
      "language" : "en",
      "plugins": ["edit-link", "youtubex", "simple-page-toc", "anchorjs", "github", "gtm", "richquotes", "nocache"],
-     
+     "styles": {
+        "website": "website.css"
+    }
 }
