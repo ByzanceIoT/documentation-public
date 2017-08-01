@@ -7,7 +7,6 @@
      "gitbook": ">=3.0.0",
      "plugins": ["edit-link", "youtubex", "simple-page-toc", "anchorjs", "github", "richquotes", "nocache"],
 
-
     "pluginsConfig": {
     "theme-default": {
       "showLevel": true
