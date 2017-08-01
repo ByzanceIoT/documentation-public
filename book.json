@@ -4,8 +4,27 @@
     "description" : "We are Byzance – a technological start-up of advanced automatization developing a toolkit for design,    development and management of the ‘Internet of Things’ (IoT) for industrial purposes. We do not create smart washing machines, nor smart city furniture. We develop everything our customers need in order to do it themselves, easily and without any problems and with substantially reduced costs. Unlike many other companies, we make both hardware and software.",
      "author" : "Byzance IT solution s.r.o Czech Republic", 
      "language" : "en",
-     "plugins": ["edit-link", "youtubex", "simple-page-toc", "anchorjs", "github", "gtm", "richquotes", "nocache"],
-     "styles": {
-        "website": "styles/website.css"
+     "gitbook": ">=3.0.0",
+     "plugins": ["edit-link", "youtubex", "simple-page-toc", "anchorjs", "github", "richquotes", "nocache"],
+  
+    "pluginsConfig": {
+    "theme-default": {
+      "showLevel": true
+    },
+    "edit-link": {
+      "base": "https://github.com/ByzanceIoT/documentation-public/edit/master/docs",
+      "label": ""
+    },
+    "anchorjs": {
+      "icon": "#",
+      "placement": "right",
+      "visible": "always"
+    },
+    "github": {
+      "url": "https://github.com/ByzanceIoT/documentation-public"
     }
+  },
+  "styles": {
+    "website": "styles/website.css"
+  }    
 }
