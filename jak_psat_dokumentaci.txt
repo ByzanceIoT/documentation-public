@@ -1,0 +1,12 @@
+
+Tato část je určena pro Byzance vývojáře jak psát dokumentaci. 
+
+0) Tuto dokumentaci píšu v češtině protože si nehrajeme na Global Ramba jak umpalumpové z Jablotronu. 
+
+1) Do .bookignore se vkládají všechny soubory, které dukementace ignoruje, ale jsou vkládány pomocí Gitu. 
+
+2) Když uložíte novou verzi - automaticky se zkompiluje a její stav se zobrazí na https://www.gitbook.com/book/byzance/public-documentation/activity ,
+   kde je zobrazen stav. Pokud je červeně - verze se nepropíše na public doménu. Pokud zeleně - je hned nasazena. 
+   
+3)    
+ 
