@@ -5,10 +5,12 @@
 .custom-link {
     display: none !important;
 }
-
 /* Whole page settings */
 html,
 body {
+	font-family: "usual", sans-serif !important;
+	
+	/* Horizontal menu consistency */
 	float: left;
 	width: 100%;
 }
@@ -25,20 +27,43 @@ body {
 
 /* iOS Optimization Fix */
 .book-inner {
-	top: 65px;
+	top: 50px;
 }
-
 .page-wrapper {
 	padding-top: 50px !important;
 }
 .book .book-header {
 	position: fixed;
-	height: 60px;
+	height: 51px;
 	right: 0px;
 	left: 0px;
-	/* background-color: #ddd; */ 
-	/* border-bottom: 2px solid rgba(500, 0, 0, 1);*/ 
+	background-color: rgb(255, 255, 255);
+	border-bottom: 1px solid rgba(0,0,0,.07);
 	z-index: 9;
+}
+@media only screen and (max-width: 600px) {
+	.book .book-header {
+		left: 0px;
+		position: fixed;
+	}
+}
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+	.book .book-header {
+		left: 0px;
+		position: fixed;
+	}
+	.book.with-summary .book-header {
+		left: 300px;
+	}
+}
+@media only screen and (min-width: 1025px) {
+	.book .book-header {
+		left: 0px;
+		position: fixed;
+	}
+	.book.with-summary .book-header {
+		left: 300px;
+	}
 }
 
 /* Horizontal menu */
@@ -46,6 +71,9 @@ body {
 	width: 100%;
 	height: 65px;
 	background: #ffffff;
+	-webkit-box-shadow: 0px 0px 1px 0px rgba(0, 0, 0, 0.75);
+	-moz-box-shadow: 0px 0px 1px 0px rgba(0, 0, 0, 0.75);
+	box-shadow: 0px 0px 1px 0px rgba(0, 0, 0, 0.75);
 	position: absolute;
 	z-index: 10;
 	float: left;
@@ -88,13 +116,13 @@ body {
 	margin-left: -28.6px
 }
 #navigation ul li {
-	border-right: solid 1px #292424;
+	border-right: solid 1px #e6e6e6;
 	display: inline-block;
 	float: none;
 	margin-left: -3.7px
 }
 #navigation ul li:first-child {
-	border-left: solid 1px #3a1fda;
+	border-left: solid 1px #e6e6e6;
 }
 #navigation ul li a {
 	display: block;
@@ -112,7 +140,6 @@ body {
 	font-family: "usual", sans-serif !important;
 	letter-spacing: 0px !important;
 }
-
 #navigation ul li a:hover {
 	color: #e6381c;
 	cursor: pointer;
@@ -125,87 +152,7 @@ body {
 	color: #e6381c;
 }
 
-
-
-/* Logo */
-	.icon:before {
-		content:' ';
-		width: 6.349em;
-		height: 1.302em;
-		vertical-align:middle;
-		display: inline-block;
-		background-image: url("../images/byzance_logo.svg");
-		background-repeat: no-repeat;
-		background-size: 100em 204.6em;
-		background-position: 0em -191.1em;
-	}
-
-	/* Logo in PNG, if SVG not supported */
-	.no-svg .icon:before {
-		background-image: url("../images/byzance_logo.png");
-	}
-
-/* Left menu Copy from GIT Example Template*/
-
-    .book-summary ul.summary li a, .book-summary ul.summary li span {
-        padding: 10px 10px 1px 10px !important;
-
-    }
-    
-    .book-summary ul.summary li.header {
-        color: #272fa5 !important;
-        padding: 10px 20px 10px 5px !important; 
-        font-weight: bold;
-    }
-
-    /* Turn off counter on list for example 1.2 1.2.1 etc*/
-    .book-summary ul.summary li b {
-        display: none !important;
-      
-    }
-
-
-
-
-/* Styling for Sceen types */
-
-@media only screen and (min-width: 1025px) {
-	.book .book-header {
-		left: 0px;
-		position: fixed;
-	}
-	.book.with-summary .book-header {
-		left: 300px;
-	}
-}
-
-@media only screen and (max-width: 600px) {
-	.book .book-header {
-		left: 0px;
-		position: fixed;
-	}
-}
-@media only screen and (min-width: 601px) and (max-width: 1024px) {
-	.book .book-header {
-		left: 0px;
-		position: fixed;
-	}
-	.book.with-summary .book-header {
-		left: 300px;
-	}
-}
-@media only screen and (min-width: 1025px) {
-	.book .book-header {
-		left: 0px;
-		position: fixed;
-	}
-	.book.with-summary .book-header {
-		left: 300px;
-	}
-}
-
 /* Horizontal menu - Inside: Phone & Tablet */
-
 @media only screen and (max-width: 1024px) {
 	#navigation ul {
 		position: absolute;
@@ -236,4 +183,95 @@ body {
 		display: block;
 		width: 61px;
 	}
+}
+
+/* Logo in SVG */
+.icon:before {
+    content:' ';
+	width: 6.349em;
+	height: 1.302em;
+    vertical-align:middle;
+    display: inline-block;
+    background-image: url("../images/sprite.svg");
+    background-repeat: no-repeat;
+    background-size: 100em 204.6em;
+	background-position: 0em -191.1em;
+}
+/* Logo in PNG, if SVG not supported */
+.no-svg .icon:before {
+    background-image: url("../images/sprite.png");
+}
+
+/* Hamburger in SVG and PNG */
+.icon.icon-hamburger:before {
+	background-position: 0em -31.7em;
+	width: 1.6em;
+	height: 1.6em;
+}
+
+/* Counters h1 */
+section.normal h1 {
+	counter-reset: h2counter;
+}
+
+/* Counters h2 */
+section.normal h2 {
+	counter-reset: h3counter;
+}
+section.normal h2:before {
+	counter-increment: h2counter;
+	content: counter(h2counter) ".\0000a0\0000a0";
+}
+
+/* Counters h3 */
+section.normal h3 {
+	counter-reset: h4counter;
+}
+section.normal h3:before {
+	counter-increment: h3counter;
+	content: counter(h2counter) "." counter(h3counter) ".\0000a0\0000a0";
+}
+
+/* Counters h4 */
+section.normal h4 {
+	counter-reset: h5counter;
+}
+section.normal h4:before {
+	counter-increment: h4counter;
+	content: counter(h2counter) "." counter(h3counter) "." counter(h4counter) ".\0000a0\0000a0";
+}
+
+/* Counters h5 */
+section.normal h5 {
+	counter-reset: h6counter;
+}
+section.normal h5:before {
+	counter-increment: h5counter;
+	content: counter(h2counter) "." counter(h3counter) "." counter(h4counter) "." counter(h5counter) ".\0000a0\0000a0";
+}
+
+/* Counters h6 */
+section.normal h6:before {
+	counter-increment: h6counter;
+	content: counter(h2counter) "." counter(h3counter) "." counter(h4counter) "." counter(h5counter) "." counter(h6counter) ".\0000a0\0000a0";
+}
+
+/* Left menu new style */
+
+.book-summary ul.summary li a, .book-summary ul.summary li span {
+    padding: 4px 15px 4px 30px !important;
+}
+
+.book-summary ul.summary li.header {
+    color: inherit !important;
+    font-weight: bold;
+}
+
+.book-summary ul.summary li b {
+    display: none !important;
+}
+
+/* Override default 1.7× line height */
+.markdown-section {
+    line-height: 1.35 !important;
 }
