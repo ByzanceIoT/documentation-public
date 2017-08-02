@@ -32,12 +32,5 @@
 * [Issue Incident](incident_reports.md)
 * [Special Integration](integratin.md)
   
-  
----
-
-### Byzance IoT platform. 
-For enteprise technical support use [Support page](https://support.byzance.cz) or contact community developers on our [Forum](https://forum.byzance.cz). 
-Byzance with Love
-
 
 
