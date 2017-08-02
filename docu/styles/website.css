@@ -5,11 +5,13 @@
 .custom-link {
     display: none !important;
 }
+.book-header {
+    display: none !important;
+}
+
 /* Whole page settings */
 html,
 body {
-	font-family: "usual", sans-serif !important;
-	
 	/* Horizontal menu consistency */
 	float: left;
 	width: 100%;
