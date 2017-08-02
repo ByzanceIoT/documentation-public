@@ -192,21 +192,32 @@ body {
 	height: 1.302em;
     vertical-align:middle;
     display: inline-block;
-    background-image: url("../images/sprite.svg");
+    background-image: url("../images/byzance_logo.svg");
     background-repeat: no-repeat;
-    background-size: 100em 204.6em;
-	background-position: 0em -191.1em;
+	background-position: 0em 0em;
 }
 /* Logo in PNG, if SVG not supported */
 .no-svg .icon:before {
     background-image: url("../images/sprite.png");
 }
 
+/* Logo in SVG */
+.icon:before {
+    content:' ';
+    margin-top: 10px;
+    margin-left: 10px;
+	height: 100px;
+    display: inline-block;
+    background-image: url("../images/byzance_logo.svg");
+    background-repeat: no-repeat;
+}
+
+
 /* Hamburger in SVG and PNG */
 .icon.icon-hamburger:before {
 	background-position: 0em -31.7em;
-	width: 1.6em;
-	height: 1.6em;
+	margin-top: 10px;
+	height: 100px;
 }
 
 /* Counters h1 */
