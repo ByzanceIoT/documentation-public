@@ -1,81 +1,43 @@
 # Summary
 
 * [Start Here](README.md)
-  * [Build IoT Empire](plan_on_hardware.md)
-  * [First Steps](plan_on_backand.md)
+  * [Build IoT Empire](build_iot_empire.md)
+  * [First Steps](first_step.md)
 
 ## Tools
 
-* [Blocko](byzance_documentation/timeline.md)
-  * [On Hardware](plan_on_hardware.md)
-  * [On Backand](plan_on_backand.md)
-  * [On Cloud](plan_on_cloud.md)
-  * [On Tools](plan_on_tools.md)
+* [Blocko](byzance_documentation/blocko_intro.md)
 
+* [Grid](byzance_documentation/grid_intro.md)
 
-* [Grid](byzance_documentation/timeline.md)
-  * [On Hardware](plan_on_hardware.md)
-  * [On Backand](plan_on_backand.md)
-  * [On Cloud](plan_on_cloud.md)
-  * [On Tools](plan_on_tools.md)
-
-
-* [Code](byzance_documentation/timeline.md)
-  * [On Hardware](plan_on_hardware.md)
-  * [On Backand](plan_on_backand.md)
-  * [On Cloud](plan_on_cloud.md)
-  * [On Tools](plan_on_tools.md)
-
-
-* [Instancies](byzance_documentation/timeline.md)
-  * [On Hardware](plan_on_hardware.md)
-  * [On Backand](plan_on_backand.md)
-  * [On Cloud](plan_on_cloud.md)
-  * [On Tools](plan_on_tools.md)
+* [Code](byzance_documentation/code_intro.md)
+ 
+* [Instancies](byzance_documentation/instancies_intro.md)
   
-  
-
 ## Cloud
 
-* [Public Cloud](byzance_documentation/timeline.md)
-  * [On Hardware](plan_on_hardware.md)
-  * [On Backand](plan_on_backand.md)
-  * [On Cloud](plan_on_cloud.md)
-  * [On Tools](plan_on_tools.md)
-
-* [Private Cloud](byzance_documentation/timeline.md)
-  * [On Hardware](plan_on_hardware.md)
-  * [On Backand](plan_on_backand.md)
-  * [On Cloud](plan_on_cloud.md)
-  * [On Tools](plan_on_tools.md)
-
-
+* [Cloud](byzance_documentation/cloud_intro.md)
 
 ## Hardware
 
-* [Hardware](byzance_documentation/README.md)
-  * [Writing is nice](byzance_documentation/writing.md)
-  * [GitBook is nice](byzance_documentation/gitbook.md)
-
-
+* [Hardware](byzance_documentation/hardware_intro.md)
 
 ## General
 
-* [What we plan](byzance_documentation/timeline.md)
-* [Platform with own Brand](todo.md)
+* [What we plan](byzance_documentation/general_intro.md)
+* [Platform with own Brand](own_brand_platfrorm.md)
 
 ---
 
-  * [Issue Incident](todo.md)
-  * [Special Integration](todo.md)
+* [Issue Incident](incident_reports.md)
+* [Special Integration](integratin.md)
   
   
 ---
 
 ### Byzance IoT platform. 
 For enteprise technical support use [Support page](https://support.byzance.cz) or contact community developers on our [Forum](https://forum.byzance.cz). 
-
-
 Byzance with Love
+
 
 
