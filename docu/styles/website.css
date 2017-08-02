@@ -62,11 +62,6 @@ body {
 	float: left;
 	vertical-align: middle;
 }
-#navigation .icon.icon-hamburger {
-	position: absolute;
-    font-size: 22px;
-    line-height: 80px;
-}
 #navigation .showNavigation {
 	height: 80px;
     width: 10%;
@@ -85,14 +80,14 @@ body {
 	width: 100%;
 	text-align: left;
 	margin-left: 130px;
-	z-index: -1;
+	z-index: 1;
 }
 #navigation ul li {
 	display: inline-block;
 	float: none;
 }
 #navigation ul li:first-child {
-		   margin-left: 10px;
+	margin-left: 10px;
 }
 
 #navigation ul li a {
@@ -104,7 +99,7 @@ body {
 	color: #828890;
 	text-decoration: none;
     padding: 0px 15px;
-	font-weight: 600;
+	font-weight: bold;
 	text-transform: uppercase;
 	/* Override of GitBook style */
 	font-family: "usual", sans-serif !important;
@@ -121,25 +116,18 @@ body {
 	color: #27AAE2;
 }
 
-
-/* Logo in PNG, if SVG not supported */
-.no-svg .icon:before {
-    background-image: url("../images/byzance_logo.png");
-    	height: 85px;
-}
-
 /* Logo in SVG */
 .icon:before {
     content:' ';
-    margin-top: 20px;
+    margin-top: 0px;
     margin-left: 40px;
-    width : 125px;
-	height: 85px;
+    width : 120px;
+	height: 83px;
     vertical-align:left;
     display: inline-block;
     background-image: url("../images/byzance_logo.svg");
     background-repeat: no-repeat;
-	background-position: 0px 0px;
+	background-position: 0px 20px;
 }
 
 
