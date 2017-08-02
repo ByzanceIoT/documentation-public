@@ -10,7 +10,7 @@
 ## Tools
 
 * [Blocko](byzance_documentation/blocko_intro.md)
-  * [dsafdf](dsafdf.md)
+  * [bla bla bla](byzance_documentation/dsafdf.md)
 * [Grid](byzance_documentation/grid_intro.md)
 * [Code](byzance_documentation/code_intro.md)
 * [Instancies](byzance_documentation/instancies_intro.md)
@@ -30,6 +30,6 @@
 
 ---
 
-* [Issue Incident](incident_reports.md)
-* [Special Integration](integratin.md)
+* [Issue Incident](byzance_documentation/incident_reports.md)
+* [Special Integration](byzance_documentation/integration.md)
 
