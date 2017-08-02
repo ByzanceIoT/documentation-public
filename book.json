@@ -12,7 +12,7 @@
       "showLevel": true
     },
     "edit-link": {
-      "base": "https://github.com/ByzanceIoT/documentation-public/edit/master/docs",
+      "base": "https://github.com/ByzanceIoT/documentation-public/edit/master/docu",
       "label": ""
     },
     "anchorjs": {
