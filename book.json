@@ -15,6 +15,9 @@
       "base": "https://github.com/ByzanceIoT/documentation-public/edit/master/docu",
       "label": ""
     },
+    "gitbook-plugin-timeline" : {
+      
+    },
     "anchorjs": {
       "icon": "#",
       "placement": "right",
