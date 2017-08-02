@@ -27,12 +27,13 @@ body {
 .book-inner {
 	top: 65px;
 }
+
 .page-wrapper {
 	padding-top: 50px !important;
 }
 .book .book-header {
 	position: fixed;
-	height: 60 px;
+	height: 60px;
 	right: 0px;
 	left: 0px;
 	/* background-color: #ddd; */ 
@@ -45,9 +46,6 @@ body {
 	width: 100%;
 	height: 65px;
 	background: #ffffff;
-	-webkit-box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.75);
-	-moz-box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.75);
-	box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.75);
 	position: absolute;
 	z-index: 10;
 	float: left;
@@ -165,3 +163,77 @@ body {
         display: none !important;
       
     }
+
+
+
+
+/* Styling for Sceen types */
+
+@media only screen and (min-width: 1025px) {
+	.book .book-header {
+		left: 0px;
+		position: fixed;
+	}
+	.book.with-summary .book-header {
+		left: 300px;
+	}
+}
+
+@media only screen and (max-width: 600px) {
+	.book .book-header {
+		left: 0px;
+		position: fixed;
+	}
+}
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+	.book .book-header {
+		left: 0px;
+		position: fixed;
+	}
+	.book.with-summary .book-header {
+		left: 300px;
+	}
+}
+@media only screen and (min-width: 1025px) {
+	.book .book-header {
+		left: 0px;
+		position: fixed;
+	}
+	.book.with-summary .book-header {
+		left: 300px;
+	}
+}
+
+/* Horizontal menu - Inside: Phone & Tablet */
+
+@media only screen and (max-width: 1024px) {
+	#navigation ul {
+		position: absolute;
+		display: none;
+		margin-top: 65px;
+		width: 100%;
+		border-top: solid 1px #e6e6e6;
+		z-index: 100;
+		padding: 0;
+		right: 0;
+	}
+	#navigation ul li {
+		width: 100%;
+		border-right: none;
+		border-bottom: solid 1px #e6e6e6;
+		background: #ffffff;
+		text-align: center;
+		float: left;
+	}
+	#navigation .logo {
+		position: absolute;
+		left: 50%;
+		margin-left: -96px;
+		font-size: 20px;
+		line-height: 60px;
+	}
+	#navigation .showNavigation {
+		display: block;
+		width: 61px;
+	}
+}
