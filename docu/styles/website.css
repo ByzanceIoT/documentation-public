@@ -6,3 +6,162 @@
     display: none !important;
 }
 
+/* Whole page settings */
+html,
+body {
+	float: left;
+	width: 100%;
+}
+
+/* Indent from horizontal menu */
+.book{
+	margin-top: 65px;
+	position: relative;
+}
+#documentation {
+	height: calc(100% - 65px);
+	position: relative;
+}
+
+/* iOS Optimization Fix */
+.book-inner {
+	top: 65px;
+}
+.page-wrapper {
+	padding-top: 50px !important;
+}
+.book .book-header {
+	position: fixed;
+	height: 60 px;
+	right: 0px;
+	left: 0px;
+	/* background-color: #ddd; */ 
+	/* border-bottom: 2px solid rgba(500, 0, 0, 1);*/ 
+	z-index: 9;
+}
+
+/* Horizontal menu */
+#navigation {
+	width: 100%;
+	height: 65px;
+	background: #ffffff;
+	-webkit-box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.75);
+	-moz-box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.75);
+	box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.75);
+	position: absolute;
+	z-index: 10;
+	float: left;
+}
+#navigation .logo {
+	display: block;
+	height: 65px;
+	width: 192px;
+	float: left;
+	background-size: 140px;
+	font-size: 24px;
+	text-align: center;
+	vertical-align: middle;
+	line-height: 55px;
+}
+#navigation .icon.icon-hamburger {
+	position: absolute;
+    font-size: 22px;
+    line-height: 60px;
+    padding: 0 21%;
+}
+#navigation .showNavigation {
+	height: 65px;
+    width: 20%;
+    float: left;
+    border-right: solid 1px #e6e6e6;
+    cursor: pointer;
+    position: relative;
+    display: none;
+}
+
+/* Horizontal menu - Inside: Desktop (1024px +) */
+#navigation ul {
+	margin: 0;
+	float: none;
+	position: absolute;
+	width: 100%;
+	text-align: center;
+	z-index: -1;
+	margin-left: -28.6px
+}
+#navigation ul li {
+	border-right: solid 1px #292424;
+	display: inline-block;
+	float: none;
+	margin-left: -3.7px
+}
+#navigation ul li:first-child {
+	border-left: solid 1px #3a1fda;
+}
+#navigation ul li a {
+	display: block;
+	height: 100%;
+	overflow: hidden;
+	line-height: 65px;
+	font-size: 14px;
+	color: #2c232c;
+	text-decoration: none;
+	padding: 0 30px;
+	font-weight: 600;
+	text-transform: uppercase;
+
+	/* Override of GitBook style */
+	font-family: "usual", sans-serif !important;
+	letter-spacing: 0px !important;
+}
+
+#navigation ul li a:hover {
+	color: #e6381c;
+	cursor: pointer;
+}
+#navigation ul li.selected a {
+	background: #f6f6f6;
+	color: #222222;
+}
+#navigation ul li.selected a:hover {
+	color: #e6381c;
+}
+
+
+
+/* Logo */
+	.icon:before {
+		content:' ';
+		width: 6.349em;
+		height: 1.302em;
+		vertical-align:middle;
+		display: inline-block;
+		background-image: url("../images/byzance_logo.svg");
+		background-repeat: no-repeat;
+		background-size: 100em 204.6em;
+		background-position: 0em -191.1em;
+	}
+
+	/* Logo in PNG, if SVG not supported */
+	.no-svg .icon:before {
+		background-image: url("../images/byzance_logo.png");
+	}
+
+/* Left menu Copy from GIT Example Template*/
+
+    .book-summary ul.summary li a, .book-summary ul.summary li span {
+        padding: 10px 10px 1px 10px !important;
+
+    }
+    
+    .book-summary ul.summary li.header {
+        color: #272fa5 !important;
+        padding: 10px 20px 10px 5px !important; 
+        font-weight: bold;
+    }
+
+    /* Turn off counter on list for example 1.2 1.2.1 etc*/
+    .book-summary ul.summary li b {
+        display: none !important;
+      
+    }
