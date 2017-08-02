@@ -180,16 +180,6 @@ body {
 }
 
 
-/* Logo in SVG */
-.icon:before {
-    content:' ';
-    width : 125px;
-    vertical-align:left;
-    display: inline-block;
-    background-image: url("../images/byzance_logo.svg");
-    background-repeat: no-repeat;
-	background-position: 0px 0px;
-}
 /* Logo in PNG, if SVG not supported */
 .no-svg .icon:before {
     background-image: url("../images/byzance_logo.png");
@@ -200,10 +190,13 @@ body {
     content:' ';
     margin-top: 20px;
     margin-left: 40px;
+    width : 125px;
 	height: 85px;
+    vertical-align:left;
     display: inline-block;
     background-image: url("../images/byzance_logo.svg");
     background-repeat: no-repeat;
+	background-position: 0px 0px;
 }
 
 
