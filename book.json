@@ -5,7 +5,7 @@
      "author" : "Byzance IT solution s.r.o Czech Republic", 
      "language" : "en",
      "gitbook": ">=3.0.0",
-     "plugins": ["edit-link", "gitbook-plugin-timeline", "youtubex", "simple-page-toc", "anchorjs", "github", "richquotes", "nocache"],
+     "plugins": ["edit-link", "timeline", "youtubex", "simple-page-toc", "anchorjs", "github", "richquotes", "nocache"],
 
     "pluginsConfig": {
     "theme-default": {
@@ -15,7 +15,7 @@
       "base": "https://github.com/ByzanceIoT/documentation-public/edit/master/docu",
       "label": ""
     },
-    "gitbook-plugin-timeline" : {
+    "timeline" : {
       
     },
     "anchorjs": {
