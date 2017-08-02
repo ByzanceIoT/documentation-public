@@ -5,7 +5,7 @@
      "author" : "Byzance IT solution s.r.o Czech Republic", 
      "language" : "en",
      "gitbook": ">=3.0.0",
-     "plugins": ["edit-link", "collapsible-menu", "timeline", "youtubex", "simple-page-toc", "anchorjs", "github", "richquotes", "nocache"],
+     "plugins": ["edit-link", "timeline", "youtubex", "simple-page-toc", "anchorjs", "github", "richquotes", "nocache"],
 
     "pluginsConfig": {
     "theme-default": {
