@@ -43,63 +43,6 @@ body {
 	border-bottom: 1px solid rgba(0,0,0,.07);
 	z-index: 9;
 }
-@media only screen and (max-width: 600px) {
-	.book .book-header {
-		left: 0px;
-		position: fixed;
-	}
-}
-@media only screen and (min-width: 601px) and (max-width: 1024px) {
-	.book .book-header {
-		left: 0px;
-		position: fixed;
-	}
-	.book.with-summary .book-header {
-		left: 300px;
-	}
-}
-@media only screen and (min-width: 1025px) {
-	.book .book-header {
-		left: 0px;
-		position: fixed;
-	}
-	.book.with-summary .book-header {
-		left: 300px;
-	}
-}
-
-/* Horizontal menu - Inside: Phone & Tablet */
-@media only screen and (max-width: 1024px) {
-	#navigation ul {
-		position: absolute;
-		display: none;
-		margin-top: 85px;
-		width: 100%;
-		border-top: solid 1px #e6e6e6;
-		z-index: 100;
-		padding: 0;
-		right: 0;
-	}
-	#navigation ul li {
-		width: 100%;
-		border-right: none;
-		border-bottom: solid 1px #e6e6e6;
-		background: #ffffff;
-		text-align: center;
-		float: left;
-	}
-	#navigation .logo {
-		position: absolute;
-		left: 50%;
-		margin-left: -90px;
-		font-size: 20px;
-		line-height: 65px;
-	}
-	#navigation .showNavigation {
-		display: block;
-		width: 80px;
-	}
-}
 
 
 /* Horizontal menu */
@@ -111,14 +54,13 @@ body {
 	-moz-box-shadow: 0px 0px 1px 0px rgba(0, 0, 0, 0.75);
 	box-shadow: 0px 0px 1px 0px rgba(0, 0, 0, 0.75);
 	position: absolute;
-	z-index: 10;
+	z-index: 2;
 	float: left;
 }
 #navigation .logo {
 	display: block;
 	float: left;
 	vertical-align: middle;
-	line-height: 50px;
 }
 #navigation .icon.icon-hamburger {
 	position: absolute;
@@ -183,6 +125,7 @@ body {
 /* Logo in PNG, if SVG not supported */
 .no-svg .icon:before {
     background-image: url("../images/byzance_logo.png");
+    	height: 85px;
 }
 
 /* Logo in SVG */
@@ -204,6 +147,7 @@ body {
 .icon.icon-hamburger:before {
 	background-position: 0em -31.7em;
 	margin-top: 10px;
+	height: 85px;
 }
 
 /* Counters h1 */
