@@ -11,8 +11,6 @@
   * [Writing is nice](first_step.md)
   * [GitBook is nice](gitbook.mdbyzance_documentation)
 
-## Něco něco
-
 * [What we plan](byzance_documentation/timeline.md)
   * [On Hardware](plan_on_hardware.md)
   * [On Backand](plan_on_backand.md)
@@ -21,7 +19,6 @@
 
 ---
 
-* [Enteprise](byzance_documentation/timeline.md)
   * [Issue Incident](todo.md)
   * [Special Integration](todo.md)
   * [Platform with own Brand](todo.md)
