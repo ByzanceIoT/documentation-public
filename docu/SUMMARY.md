@@ -22,6 +22,10 @@
 ## Hardware
 
 * [Hardware](byzance_documentation/hardware_intro.md)
+  * [Obecné](byzance_documentation/hardware_intro/obecne.md)
+    * [O MBED](byzance_documentation/hardware_intro/obecne/o-mbed.md)
+
+## Obecné
 
 ## General
 
