@@ -33,7 +33,7 @@
 * [Features](byzance_documentation/hardware_intro/features.md)
   * [Autobackup](byzance_documentation/hardware_intro/features/autobackup.md)
   * [Watchdog](byzance_documentation/hardware_intro/features/watchdog.md)
-  * Události
+  * [Události](byzance_documentation/hardware_intro/features/udalosti.md)
   * Odložení restartu
   * Alias
   * Revize
