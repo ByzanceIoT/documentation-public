@@ -20,7 +20,7 @@ void init(){
 
     pc.baud(115200\);
     pc.printf("RTC test\n");
-    
+
     // nastaveni Unix timestamp    
     timestamp = 1234567890;    
     set_time(timestamp);    
@@ -42,69 +42,40 @@ void loop(){
 
 S tím souvisí i parsování podle regionálního nastavení. K unixovému časovému razítku se přičte lokální offset a výslednou položku je možné konvertovat do časové struktury funkcí \[\[[http://www.cplusplus.com/reference/ctime/gmtime/\|gmtime\(\)\]\](http://www.cplusplus.com/reference/ctime/gmtime/|gmtime%28%29]\)\].
 
-&lt;code&gt;
+```cpp
+#include "byzance.h"
 
-\#include "byzance.h"
+Serial    pc(SERIAL_TX, SERIAL_RX); // tx, rx
 
-Serial    pc\(SERIAL\_TX, SERIAL\_RX\); // tx, rx
+void init(){
 
-void init\(\){
-
-```
-pc.baud\(115200\);
-
-
-
-pc.printf\("Time demo\n"\);
-
-
-
-time\_t time\_utc;
-
-time\_t time\_local;
-
-
-
-struct tm \*p\_utc;
-
-struct tm \*p\_local;
-
-
-
-p\_utc    = \(tm\*\)malloc\(sizeof\(tm\)\);
-
-p\_local = \(tm\*\)malloc\(sizeof\(tm\)\);
-
-
-
-// load UTC time to variable
-
-time\(&time\_utc\);
-
-
-
-// calculate local time using timeoffset getter
-
-time\_local = time\_utc + Byzance::get\_timeoffset\(\);
-
-
-
-// convert UTC from timestamp to time struct
-
-memcpy\(p\_utc, gmtime\(&time\_utc\), sizeof\(tm\)\);
-
-pc.printf\("UTC time   = %2d:%02d\n", \(p\_utc  -&gt;tm\_hour\)%24, p\_utc  -&gt;tm\_min\);
-
-
-
-// convert localtime from timestamp to time struct
-
-memcpy\(p\_local, gmtime\(&time\_local\), sizeof\(tm\)\);
-
-pc.printf\("Local time = %2d:%02d\n", \(p\_local-&gt;tm\_hour\)%24, p\_local-&gt;tm\_min\);
-```
-
+    pc.baud\(115200\);
+    pc.printf\("Time demo\n"\);
+    
+    time_t time_utc;
+    time_t time_local;
+    
+    struct tm *p_utc;
+    struct tm *p_local;
+    
+    p_utc    = (tm*)malloc(sizeof(tm));
+    p_local  = (tm*)malloc(sizeof(tm));
+    
+    // load UTC time to variable    
+    time(&time_utc);
+    
+    // calculate local time using timeoffset getter    
+    time_local = time_utc + Byzance::get_timeoffset();
+    
+    // convert UTC from timestamp to time struct    
+    memcpy(p_utc, gmtime(&time_utc), sizeof(tm));    
+    pc.printf("UTC time   = %2d:%02d\n", (p_utc  -&gt;tm\_hour\)%24, p_utc  -&gt;tm_min);
+    
+    // convert localtime from timestamp to time struct    
+    memcpy(p_local, gmtime(&time_local), sizeof(tm));    
+    pc.printf("Local time = %2d:%02d\n", (p_local-&gt;tm_hour)%24, p_local-&gt;tm_min\);
 }
+```
 
-&lt;/code&gt;
+
 
