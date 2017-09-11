@@ -34,7 +34,7 @@
   * [Autobackup](byzance_documentation/hardware_intro/features/autobackup.md)
   * [Watchdog](byzance_documentation/hardware_intro/features/watchdog.md)
   * [Události](byzance_documentation/hardware_intro/features/udalosti.md)
-  * Odložení restartu
+  * [Odložení restartu](byzance_documentation/hardware_intro/features/odlozeni-restartu.md)
   * Alias
   * Revize
   * Restart do bootloaderu
