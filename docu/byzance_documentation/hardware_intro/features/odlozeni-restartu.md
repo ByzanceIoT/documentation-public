@@ -7,7 +7,21 @@ Zařízení takovýto požadavek zaregistruje a okamžitě volá funkci pomocí 
 Příklad možného použití
 
 ```cpp
- 
+void init(){
+
+    Byzance::attach_restart_follows(&my_function);
+
+}
+
+void my_function(){
+
+    // nejaka logika na zjisteni, jestli mi restart vadi nebo ne
+    
+    // pokud vadi, o kolik se ma posunout
+    
+    Byzance::restart_postpone(cislo);
+
+}
 ```
 
 Dotazování na stav restartu je možné i periodicky funkcí ''Byzance::restart\_pending\(\)'', jejíž návratovou hodnotou je čas, kolik zbývá do restartu.
