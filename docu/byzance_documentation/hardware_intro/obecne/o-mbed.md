@@ -4,57 +4,42 @@ MBED je open-source operační systém a sada knihoven vyvíjených konsorciem A
 
 Dokumentace k nejnovějšímu API je dostupná na webu \[\[[https://docs.mbed.com/docs/mbed-os-api-reference/en/latest/\]\](https://docs.mbed.com/docs/mbed-os-api-reference/en/latest/]\)\]
 
-\#\# Vstupně/výstupní API
+# Vstupně/výstupní API
 
-\#\#\# AnalogIn
+## AnalogIn
 
 Read an external voltage applied to an analog input pin.
 
-&lt;code&gt;
-
-```
-AnalogIn ain\(pin\_name\);
-
-printf\(”ain value = %3.3f%%\n”, ain.read\(\)\);
+```cpp
+AnalogIn ain(pin_name);
+printf(”ain value = %3.3f%%\n”, ain.read());
 ```
 
-&lt;/code&gt;
-
-\#\#\# AnalogOut
+## AnalogOut
 
 Set the voltage of an analog output pin in the range of VSS to VCC.
 
-&lt;code&gt;
-
-```
+```cpp
 AnalogOut aout\(pin\_name\);
 
 aout.write\(some\_float\);
 ```
 
-&lt;/code&gt;
-
-\#\#\# DigitalIn
+## DigitalIn
 
 Read the value of an digital input pin
 
-&lt;code&gt;
-
-```
+```cpp
 DigitalIn din\(pin\_name\);
 
 printf\("pin has value : %d \n", din.read\(\)\);
 ```
 
-&lt;/code&gt;
-
 \#\#\# DigitalOut
 
 Configure and control a digital output pin
 
-&lt;code&gt;
-
-```
+```cpp
 DigitalOut dout\(pin\_name\);
 
 dout=1;
@@ -66,9 +51,7 @@ dout=1;
 
 Bidirectional digital pin, combination of DigitalIn and DigitalOut
 
-&lt;code&gt;
-
-```
+```cpp
 DigitalInOut diout\(pin\_name\);
 
 diout.output\(\);
@@ -80,67 +63,45 @@ diout.input\(\);
 pc.printf\("diout value = %d \n", diout.read\(\)\);
 ```
 
-&lt;/code&gt;
-
 \#\#\# BusIn
 
 Number of DigitalIn pins that can be read as one value.
 
-&lt;code&gt;
-
+```cpp
+BusIn
 ```
-BusIn    
-```
-
-&lt;/code&gt;
 
 \#\#\# BusOut
 
 Number of DigitalOut pins that can be written as one value.
 
-&lt;code&gt;
-
-```
+```cpp
 BusOut
 ```
-
-&lt;/code&gt;
 
 \#\#\# BusInOut
 
 Number of DigitalInOut pins that can be read and written as one value.
 
-&lt;code&gt;
-
-```
+```cpp
 BusInOut
 ```
-
-&lt;/code&gt;
 
 \#\#\# PortIn
 
 Similar to BusIn, much faster but much less flexible.
 
-&lt;code&gt;
-
-```
+```cpp
 PortIn
 ```
-
-&lt;/code&gt;
 
 \#\#\# PortOut
 
 Similar to BusOut, much faster but much less flexible.
 
-&lt;code&gt;
-
-```
+```cpp
 PortOut
 ```
-
-&lt;/code&gt;
 
 \#\#\# PortInOut
 
@@ -148,35 +109,25 @@ Similar to BusInOut, much faster but much less flexible.
 
 &lt;code&gt;
 
-```
+```cpp
 PortInOut
 ```
-
-&lt;/code&gt;
 
 \#\#\# PwmOut
 
 Interface to control the frequency and mark-to-space ration of digital pulse train.
 
-&lt;code&gt;
-
-```
+```cpp
 PwmOut
 ```
-
-&lt;/code&gt;
 
 \#\#\# InterruptIn
 
 Trigger an event when a digital input pin changes.
 
-&lt;code&gt;
-
-```
+```cpp
 InterruptIn
 ```
-
-&lt;/code&gt;
 
 \#\# Digital interface APIs
 
@@ -186,13 +137,9 @@ Generic serial protocol API, send and receive data.
 
 See \[\[[https://en.wikipedia.org/wiki/Serial\_port\]\](https://en.wikipedia.org/wiki/Serial_port]\)\]
 
-&lt;code&gt;
-
-```
+```cpp
 Serial pc\(bblabla\);
 ```
-
-&lt;/code&gt;
 
 \#\#\# SPI
 
@@ -200,61 +147,41 @@ Serial Peripheral Interface Master.
 
 See [https://en.wikipedia.org/wiki/Serial\_Peripheral\_Interface\_Bus](https://en.wikipedia.org/wiki/Serial_Peripheral_Interface_Bus)
 
-&lt;code&gt;
-
+```cpp
+Example
 ```
-Example    
-```
-
-&lt;/code&gt;
 
 \#\#\# SPISlave
 
 Serial Peripheral Interface Slave.
 
-&lt;code&gt;
-
-```
+```cpp
 SPISlave spislave;
 ```
-
-&lt;/code&gt;
 
 \#\#\# I2C
 
 I2C Master functionality.
 
-&lt;code&gt;
-
-```
+```cpp
 I2C i2c;
 ```
-
-&lt;/code&gt;
 
 \#\#\# I2CSlave
 
 Use to communicate with I2C Master.
 
-&lt;code&gt;
-
-```
+```cpp
 I2CSlave i2cslave;
 ```
-
-&lt;/code&gt;
 
 \#\#\# CAN
 
 Controller-Area Network bus standard support.
 
-&lt;code&gt;
-
-```
+```cpp
 CAN can;
 ```
-
-&lt;/code&gt;
 
 \#\# Task management APIs
 
@@ -270,11 +197,9 @@ Postpone the execution of a code sequence from an interrupt hander to user or di
 
 Calls a function repeatedly and at a specified rate
 
-&lt;code&gt;
-
+```cpp
 Ticker ticker;
-
-&lt;/code&gt;
+```
 
 \#\#\# Time
 
@@ -284,121 +209,81 @@ Date and time manipulation functions.  Support for time acquisition, conversion 
 
 Set up an interrupt to call a function after a specified delay
 
-&lt;code&gt;
-
-```
+```cpp
 Timeout timeout;
 ```
-
-&lt;/code&gt;
 
 \#\#\# Timer
 
 Create, start, stop and read a timer for measuring small times \(between microseconds and seconds\)
 
-&lt;code&gt;
-
-```
+```cpp
 Timer timer;
 ```
-
-&lt;/code&gt;
 
 \#\#\# Wait
 
 Simple wait capabilities¨
 
-&lt;code&gt;
-
-```
+```cpp
 Example
 ```
-
-&lt;/code&gt;
 
 \#\# RTOS basics
 
 Thread        Defining, creating and controlling thread functions in the system.
 
-&lt;code&gt;
-
-```
+```cpp
 Thread thread;
 ```
-
-&lt;/code&gt;
 
 \#\#\# Mutex
 
 Synchronize execution of threads, for example to protect access to a shared resource.
 
-&lt;code&gt;
-
-```
+```cpp
 Mutex mutex;
 ```
-
-&lt;/code&gt;
 
 \#\#\# Semaphore
 
 Manages thread access to a pool of shared resources of a certain type.
 
-&lt;code&gt;
-
-```
+```cpp
 Semaphore semaphore;
 ```
-
-&lt;/code&gt;
 
 \#\#\# Signals
 
 Each Thread can wait for signals and to be notified of events.
 
-&lt;code&gt;
-
-```
+```cpp
 Signal
 ```
-
-&lt;/code&gt;
 
 \#\#\# Queue
 
 Allows queue pointers to data from producer threads to consumer threads.
 
-&lt;code&gt;
-
-```
+```cpp
 Queue
 ```
-
-&lt;/code&gt;
 
 \#\#\# MemoryPool
 
 Define and manage fixed-size memory pools.
 
-&lt;code&gt;
-
-```
+```cpp
 MemoryPool
 ```
-
-&lt;/code&gt;
 
 \#\#\# Mail
 
 Like queue, with the added benefit of providing a memory pool for allocating messages.
 
-&lt;code&gt;
-
-```
+```cpp
 Mail
 ```
-
-&lt;/code&gt;
 
 \#\#\# Interrupts
 
