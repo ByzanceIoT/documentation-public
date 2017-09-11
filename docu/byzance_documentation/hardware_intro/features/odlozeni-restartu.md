@@ -1,24 +1,26 @@
 # Softwarový restart
 
-Zařízení je možné na dálku softwarově restartovat. 
+Zařízení je možné na dálku softwarově restartovat.
 
 Zařízení takovýto požadavek zaregistruje a okamžitě volá funkci pomocí Byzance API napojenou na ''Byzance::attach\_restart\_follows''. Zde se uživatel dozví o příchozím požadavku na restart. Ne vždy je restart žádoucí, proto je možné vyvolat jeho odložení. K tomu slouží funkce ''Byzance::restart\_postpone\(time\_t sec\)''.
 
 Příklad možného použití
 
-`void init(){`
 
-`Byzance::attach_restart_follows(&my_function);`
 
-`}`
+`void init(){`
 
-`void my_function(){`
+`Byzance::attach_restart_follows(&my_function);`
 
-`// nejaka logika na zjisteni, jestli mi restart vadi nebo ne`
+`}`
 
-`// pokud vadi, o kolik se ma posunout`
+`void my_function(){`
 
-`Byzance::restart_postpone(cislo);`
+`// nejaka logika na zjisteni, jestli mi restart vadi nebo ne`
+
+`// pokud vadi, o kolik se ma posunout`
+
+`Byzance::restart_postpone(cislo);`
 
 `}`
 
