@@ -4,11 +4,11 @@ U Yody je možné využít webové rozhraní, pokud je povoleno v \[\[Bootloader
 
 ## Nároky po zapnutí
 
-* \*1 vlákno
-* \* 2kB stack RAM
-* \* zhruba 2kB heap RAM
-* \* 1 socket TCPSocket a 1 socket TCPServer
-* \* několik KB flash paměti \(+- 10kB\), hlavně co se týče HTML kódu
+* 1 vlákno
+* 2kB stack RAM
+* zhruba 2kB heap RAM
+* 1 socket TCPSocket a 1 socket TCPServer
+* několik KB flash paměti \(+- 10kB\), hlavně co se týče HTML kódu
 
 ## Jak se dostat do webového rozhraní
 
@@ -16,7 +16,8 @@ U Yody je možné využít webové rozhraní, pokud je povoleno v \[\[Bootloader
 
 * Alternativně se dá nastavit pomocí příslušných MQTT topiců FIXME doplnit link
 
-* je třeba zjistit IP adresu Yody \(například z routeru, nebo ze samotného programu \[\[tutorial:public\_functions\| metodou get\_ip\]\]  
+* je třeba zjistit IP adresu Yody \(například z routeru, nebo ze samotného programu \[\[tutorial:public\_functions\| metodou get\_ip\]\]
+
 * zadat IP adresu do prohlížeče
 
 ## Funkce webového rozhraní
