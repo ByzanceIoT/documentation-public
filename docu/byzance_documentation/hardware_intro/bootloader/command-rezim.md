@@ -35,6 +35,7 @@
 * ''_mac_'' - Zjištění MAC adresy. Souvisí s \[\[feature:ethernet\|ethernetem\]\].
 
 * ''_blreport _- Bootloader report; zap nebo vyp textu do konzole, který píše \[\[bootloader:overview\|bootloader\]\].
+
 * ''_wdenable_'' - Watchdog enable; zap nebo vyp \[\[feature:watchdog\|watchdogu\]\].
 * ''_wdtime_'' - Nastavení periody resetu watchdogu \[\[feature:watchdog\|watchdogu\]\].
 * ''_autobackup_'' - \[\[feature:autobackup\|Funkce, která zajišťuje, že při nahrátí nové binárky se stará zálohuje\]\].
