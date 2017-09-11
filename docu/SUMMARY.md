@@ -36,7 +36,7 @@
   * [Události](byzance_documentation/hardware_intro/features/udalosti.md)
   * [Odložení restartu](byzance_documentation/hardware_intro/features/odlozeni-restartu.md)
   * Alias
-  * Revize
+  * [Revize](byzance_documentation/hardware_intro/features/revize.md)
   * Restart do bootloaderu
   * Detekce spuštění firmware
 
