@@ -1,6 +1,6 @@
 # Webové rozhraní
 
-U Yody je možné využít webové rozhraní, pokud je povoleno v \[\[Bootloader:commands\| command režimu bootloaderu\]\]. Rozhraní slouží k zjištění a monitorování základních informací, hlavně z vývojářského hlediska.
+U Yody je možné využít webové rozhraní, pokud je povoleno v \[\[Bootloader:commands\| command režimu bootloaderu\]\]. Rozhraní slouží k zjištění a monitorování základních informací, hlavně z vývojářského hlediska.
 
 ## Nároky po zapnutí
 
@@ -15,7 +15,7 @@
 *   \* webové rozhraní musí být povoleno \[\[Bootloader:commands\| v bootloaderu\]\] příkazy ''webview'' a nakonfigurováno na konrétní port příkazem ''webport''.
 *   \* Alternativně se dá nastavit pomocí příslušných MQTT topiců FIXME doplnit link
 *   \* je třeba zjistit IP adresu Yody \(například z routeru, nebo ze samotného programu \[\[tutorial:public\_functions\| metodou get\_ip\]\]  
-*   \* zadat IP adresu do prohlížeče
+*   \* zadat IP adresu do prohlížeče
 
 ## Funkce webového rozhraní
 
@@ -37,8 +37,7 @@
 
 ## 
 
-{{ :tutorial:webview.png?direct&200 \|}}
-
+![](/assets/Snímek obrazovky 2017-09-11 v 18.25.30.png)
 
 
 
