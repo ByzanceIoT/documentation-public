@@ -27,6 +27,8 @@
 * [Bootloader](byzance_documentation/hardware_intro/bootloader.md)
   * [Command režim](byzance_documentation/hardware_intro/bootloader/command-rezim.md)
   * [Defaultní hodnoty](byzance_documentation/hardware_intro/bootloader/defaultni-hodnoty.md)
+* [Návody](byzance_documentation/hardware_intro/navody.md)
+  * [Práce s datem a časem \(RTC\)](byzance_documentation/hardware_intro/navody/prace-s-datem-a-casem-rtc.md)
 
 ## Obecné
 
