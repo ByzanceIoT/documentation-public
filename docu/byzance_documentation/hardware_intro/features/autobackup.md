@@ -26,7 +26,7 @@ V případě, že je autobackup **vypnutý**, zařízení spoléhá na to, že v
 
 ## Proměnná backuptime
 
-Pokud je \*\*autobackup zapnutý\*\*, firmware začne brát v potaz proměnnou \*\*backuptime\*\*. Tato proměnná vyjadřuje ochranný čas od startu programu a následného připojení k serverům Byzance do spuštění procesu automatického backupu \(vyjádřeném v sekundách\).
+Pokud je autobackup **zapnutý**, firmware začne brát v potaz proměnnou backuptime. Tato proměnná vyjadřuje ochranný čas od startu programu a následného připojení k serverům Byzance do spuštění procesu automatického backupu \(vyjádřeném v sekundách\).
 
 Nastavená minimální hodnota by měla být alespoň 60 sekund, aby bylo při zálohování aktuálně probíhajícího firmware ověřeno, že firmware dokáže bez pádu daný čas běžet, tudíž je velká pravděpodobnost, že se dokáže během daného času i updatovat. Optimální hodhota je 5 minut a víc.
 
@@ -34,9 +34,8 @@ Nastavená minimální hodnota by měla být alespoň 60 sekund, aby bylo při z
 
 Pokud je nutné režim autobackup změnit, existuje několik možností, jak toho docílit.
 
-\* Jediná správná možnost je přepnout režim z Tyriona/Becki. Ostatní režimy můžou být v libovolnou dobu, popř. při restartu "přebity" dle libovůle Tyriona, jehož konfigurace se upřednostňuje v případě konfliktů. Při nahrátí statické zálohy z Tyriona/Becki se automaticky autobackup vypíná nezávisle na okolnostech.
+* Jediná správná možnost je přepnout režim z Tyriona/Becki. Ostatní režimy můžou být v libovolnou dobu, popř. při restartu "přebity" dle libovůle Tyriona, jehož konfigurace se upřednostňuje v případě konfliktů. Při nahrátí statické zálohy z Tyriona/Becki se automaticky autobackup vypíná nezávisle na okolnostech.
+* Další možnost je přepnutí autobackup=1/0 v command režimu bootloaderu a nastavení příkazem backuptime=XXX na určitý počet sekund.
 
-\* další možnost je přepnutí autobackup=1/0 v command režimu bootloaderu a nastavení příkazem backuptime=XXX na určitý počet sekund.
 
-\* možné je i zjištění/nastavení pomocí příslušeného MQTT příkazu v topicích \[\[Yoda:topic\_settings\|settings\]\] a \[\[Yoda:topic\_info\|info\]\]
 
