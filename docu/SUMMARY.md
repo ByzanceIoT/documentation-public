@@ -21,9 +21,10 @@
 
 ## Hardware
 
-* [Hardware](byzance_documentation/hardware_intro.md)
-  * [Obecné](byzance_documentation/hardware_intro/obecne.md)
-    * [O MBED](byzance_documentation/hardware_intro/obecne/o-mbed.md)
+* [Obecné](byzance_documentation/hardware_intro/obecne.md)
+  * [O MBED](byzance_documentation/hardware_intro/obecne/o-mbed.md)
+* [Bootloader](byzance_documentation/hardware_intro/bootloader.md)
+  * [Command režim](byzance_documentation/hardware_intro/bootloader/command-rezim.md)
 
 ## Obecné
 
