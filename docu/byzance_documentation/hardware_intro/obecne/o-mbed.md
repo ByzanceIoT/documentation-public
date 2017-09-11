@@ -35,7 +35,7 @@ DigitalIn din\(pin\_name\);
 printf\("pin has value : %d \n", din.read\(\)\);
 ```
 
-\#\#\# DigitalOut
+## DigitalOut
 
 Configure and control a digital output pin
 
@@ -45,9 +45,7 @@ DigitalOut dout\(pin\_name\);
 dout=1;
 ```
 
-&lt;/code&gt;
-
-\#\#\# DigitalInOut
+## DigitalInOut
 
 Bidirectional digital pin, combination of DigitalIn and DigitalOut
 
@@ -63,7 +61,7 @@ diout.input\(\);
 pc.printf\("diout value = %d \n", diout.read\(\)\);
 ```
 
-\#\#\# BusIn
+## BusIn
 
 Number of DigitalIn pins that can be read as one value.
 
@@ -71,7 +69,7 @@ Number of DigitalIn pins that can be read as one value.
 BusIn
 ```
 
-\#\#\# BusOut
+## BusOut
 
 Number of DigitalOut pins that can be written as one value.
 
@@ -79,7 +77,7 @@ Number of DigitalOut pins that can be written as one value.
 BusOut
 ```
 
-\#\#\# BusInOut
+## BusInOut
 
 Number of DigitalInOut pins that can be read and written as one value.
 
@@ -87,7 +85,7 @@ Number of DigitalInOut pins that can be read and written as one value.
 BusInOut
 ```
 
-\#\#\# PortIn
+## PortIn
 
 Similar to BusIn, much faster but much less flexible.
 
@@ -95,7 +93,7 @@ Similar to BusIn, much faster but much less flexible.
 PortIn
 ```
 
-\#\#\# PortOut
+## PortOut
 
 Similar to BusOut, much faster but much less flexible.
 
@@ -103,17 +101,15 @@ Similar to BusOut, much faster but much less flexible.
 PortOut
 ```
 
-\#\#\# PortInOut
+## PortInOut
 
 Similar to BusInOut, much faster but much less flexible.
-
-&lt;code&gt;
 
 ```cpp
 PortInOut
 ```
 
-\#\#\# PwmOut
+## PwmOut
 
 Interface to control the frequency and mark-to-space ration of digital pulse train.
 
@@ -121,7 +117,7 @@ Interface to control the frequency and mark-to-space ration of digital pulse tra
 PwmOut
 ```
 
-\#\#\# InterruptIn
+## InterruptIn
 
 Trigger an event when a digital input pin changes.
 
@@ -129,9 +125,9 @@ Trigger an event when a digital input pin changes.
 InterruptIn
 ```
 
-\#\# Digital interface APIs
+# Digital interface APIs
 
-\#\#\# Serial
+## Serial
 
 Generic serial protocol API, send and receive data.
 
@@ -141,7 +137,7 @@ See \[\[[https://en.wikipedia.org/wiki/Serial\_port\]\](https://en.wikipedia.org
 Serial pc\(bblabla\);
 ```
 
-\#\#\# SPI
+## SPI
 
 Serial Peripheral Interface Master.
 
@@ -151,7 +147,7 @@ See [https://en.wikipedia.org/wiki/Serial\_Peripheral\_Interface\_Bus](https://e
 Example
 ```
 
-\#\#\# SPISlave
+## SPISlave
 
 Serial Peripheral Interface Slave.
 
@@ -159,7 +155,7 @@ Serial Peripheral Interface Slave.
 SPISlave spislave;
 ```
 
-\#\#\# I2C
+## I2C
 
 I2C Master functionality.
 
@@ -167,7 +163,7 @@ I2C Master functionality.
 I2C i2c;
 ```
 
-\#\#\# I2CSlave
+## I2CSlave
 
 Use to communicate with I2C Master.
 
@@ -175,7 +171,7 @@ Use to communicate with I2C Master.
 I2CSlave i2cslave;
 ```
 
-\#\#\# CAN
+## CAN
 
 Controller-Area Network bus standard support.
 
@@ -183,17 +179,17 @@ Controller-Area Network bus standard support.
 CAN can;
 ```
 
-\#\# Task management APIs
+# Task management APIs
 
-\#\#\# RTOS
+## RTOS
 
 Real Time Operating System based on Keil RTX code. See following RTOS section.
 
-\#\#\# Event loop
+## Event loop
 
 Postpone the execution of a code sequence from an interrupt hander to user or different context.
 
-\#\#\# Ticker
+## Ticker
 
 Calls a function repeatedly and at a specified rate
 
@@ -201,11 +197,11 @@ Calls a function repeatedly and at a specified rate
 Ticker ticker;
 ```
 
-\#\#\# Time
+## Time
 
 Date and time manipulation functions.  Support for time acquisition, conversion between date formats and formatted output to strings.
 
-\#\#\# Timeout
+## Timeout
 
 Set up an interrupt to call a function after a specified delay
 
@@ -213,7 +209,7 @@ Set up an interrupt to call a function after a specified delay
 Timeout timeout;
 ```
 
-\#\#\# Timer
+## Timer
 
 Create, start, stop and read a timer for measuring small times \(between microseconds and seconds\)
 
@@ -221,7 +217,7 @@ Create, start, stop and read a timer for measuring small times \(between microse
 Timer timer;
 ```
 
-\#\#\# Wait
+## Wait
 
 Simple wait capabilities¨
 
@@ -229,15 +225,17 @@ Simple wait capabilities¨
 Example
 ```
 
-\#\# RTOS basics
+# RTOS basics
 
-Thread        Defining, creating and controlling thread functions in the system.
+## Thread
+
+Defining, creating and controlling thread functions in the system.
 
 ```cpp
-Thread thread;
+Thread t;
 ```
 
-\#\#\# Mutex
+## Mutex
 
 Synchronize execution of threads, for example to protect access to a shared resource.
 
@@ -245,7 +243,7 @@ Synchronize execution of threads, for example to protect access to a shared reso
 Mutex mutex;
 ```
 
-\#\#\# Semaphore
+## Semaphore
 
 Manages thread access to a pool of shared resources of a certain type.
 
@@ -253,7 +251,7 @@ Manages thread access to a pool of shared resources of a certain type.
 Semaphore semaphore;
 ```
 
-\#\#\# Signals
+## Signals
 
 Each Thread can wait for signals and to be notified of events.
 
@@ -261,7 +259,7 @@ Each Thread can wait for signals and to be notified of events.
 Signal
 ```
 
-\#\#\# Queue
+## Queue
 
 Allows queue pointers to data from producer threads to consumer threads.
 
@@ -269,7 +267,7 @@ Allows queue pointers to data from producer threads to consumer threads.
 Queue
 ```
 
-\#\#\# MemoryPool
+## MemoryPool
 
 Define and manage fixed-size memory pools.
 
@@ -277,7 +275,7 @@ Define and manage fixed-size memory pools.
 MemoryPool
 ```
 
-\#\#\# Mail
+## Mail
 
 Like queue, with the added benefit of providing a memory pool for allocating messages.
 
@@ -285,7 +283,7 @@ Like queue, with the added benefit of providing a memory pool for allocating mes
 Mail
 ```
 
-\#\#\# Interrupts
+## Interrupts
 
 The same RTOS API can be used in ISR.  See InterruptIn reference.
 
