@@ -10,7 +10,7 @@ Revision je interně interpretováno jako 32 bitové číslo, které se zobrazuj
 
 ## Jak lze revision zjistit
 
-* V   bootloaderu v command režimu
+* V bootloaderu v command režimu
 * V Byzance API
 * Ve webovém rozhraní
 
