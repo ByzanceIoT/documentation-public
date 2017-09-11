@@ -1,14 +1,14 @@
 # Alias
 
-Alias slouží společně s \[\[hardware:full\_id\|Full ID\]\] k identifikaci zařízení. Narozdíl od Full ID, které je vždy unikátní z výroby a strojově dobře čitelné, Alias je nastavovaný uživatelsky pro lepší identifikaci člověkem. Při více zařízeních by měl být identifikátor Alias dostatečně popisný. Například při použití v osvětlení by měl Alias nést názvy typu "SVETLO-KUCHYN", "SVETLO-OBYVAK" a podobně. S identifikátorem Alias je možné pracovat několika způsoby.
+Alias slouží společně s \[\[hardware:full\_id\|Full ID\]\] k identifikaci zařízení. Narozdíl od Full ID, které je vždy unikátní z výroby a strojově dobře čitelné, Alias je nastavovaný uživatelsky pro lepší identifikaci člověkem. Při více zařízeních by měl být identifikátor Alias dostatečně popisný. Například při použití v osvětlení by měl Alias nést názvy typu "SVETLO-KUCHYN", "SVETLO-OBYVAK" a podobně. S identifikátorem Alias je možné pracovat několika způsoby.
 
- Omezení
+Omezení
 
-*  Alias může mít maximálně 63 znaků \(resp. 64 znaků včetně terminační nuly\)
-*  Může nabývat libovolné ASCII hodnoty včetně mezer
-*  Musí být \[\[http://www.cplusplus.com/reference/cctype/isprint/\|tisknutelný z pohledu C++\]\]
+* Alias může mít maximálně 63 znaků \(resp. 64 znaků včetně terminační nuly\)
+* Může nabývat libovolné ASCII hodnoty včetně mezer
+* Musí být \[\[[http://www.cplusplus.com/reference/cctype/isprint/\|tisknutelný](http://www.cplusplus.com/reference/cctype/isprint/|tisknutelný) z pohledu C++\]\]
 
-# Jak s Alias pracovat?
+# Jak s Alias pracovat?
 
 Je možné jej zjistit při startu zařízení vyčtením při startu \[\[bootloader:overview\|bootloaderu\]\].
 
@@ -16,12 +16,12 @@ Je možné jej zjistit při startu zařízení vyčtením při startu \[\[bootlo
 
 Je možné jej zjistit či nastavit v \[\[bootloader:commands\|command režimu bootloaderu\]\]. V případě nastavení z bootloaderu není garantována funkčnost, protože zařízení při startu zařízení žádá o nastavení Aliasu a v případě, že je název s Tyrionem kolizní, za správnou variantu je považovana varianta Tyrionu. Příkaz pro bootloader je ''alias''.
 
-Alias je možné také zjistit v rámci uživatelského kódu dotazem na \[\[tutorial:public\_functions\|veřejnou metodu\]\] ''Byzance::get\_alias\(\);''. Jednoduchý kód může vypadat například takto:
+Alias je možné také zjistit v rámci uživatelského kódu dotazem na \[\[tutorial:public\_functions\|veřejnou metodu\]\] ''Byzance::get\_alias\(\);''. Jednoduchý kód může vypadat například takto:
 
 ```cpp
-#include "byzance.h"
+#include "byzance.h"
 
-Serial	pc(SERIAL_TX, SERIAL_RX); // tx, rx
+Serial    pc(SERIAL_TX, SERIAL_RX); // tx, rx
 
 void init(){
     pc.baud(115200);
@@ -33,7 +33,7 @@ void loop(){
 }
 ```
 
-Jediná správná možnost editace aliasu je pomocí Byzance Code \(Becki\). V sekci hardware uživatele je možné Alias jak zjistit, tak změnit.
+Jediná správná možnost editace aliasu je pomocí Byzance Code \(Becki\). V sekci hardware uživatele je možné Alias jak zjistit, tak změnit.
 
 // obrázek
 
