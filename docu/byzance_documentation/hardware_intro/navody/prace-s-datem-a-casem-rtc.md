@@ -10,51 +10,31 @@ Jednoduchý kód, jak získat časové razítko může vypadat například takto
 
 ## Ukázka pro práci s Unix timestamp
 
+```cpp
+#include "byzance.h"
 
+Serial pc(SERIAL_TX, SERIAL_RX);
+time_t timestamp;
 
-`#include "byzance.h"`
+void init(){
 
-`Serial pc(SERIAL_TX, SERIAL_RX);`
+    pc.baud(115200\);
+    pc.printf("RTC test\n");
+    
+    // nastaveni Unix timestamp    
+    timestamp = 1234567890;    
+    set_time(timestamp);    
+    pc.printf("Cas nastaven\n");
+}
 
-`time_t timestamp;`
+void loop(){
 
-`void init(){`
-
+    // vycteni Unix timestamp    
+    time(&timestamp);    
+    pc.printf("Cas je: %u\n",(unsigned int) timestamp);    
+    Thread::wait(1000);
+}
 ```
-pc.baud\(115200\);    
-
-pc.printf\("RTC test\n"\);
-
-
-
-// nastaveni Unix timestamp
-
-timestamp = 1234567890;
-
-set\_time\(timestamp\);
-
-
-
-pc.printf\("Cas nastaven\n"\);
-```
-
-`}`
-
-`void loop(){`
-
-```
-// vycteni Unix timestamp
-
-time\(&timestamp\);
-
-pc.printf\("Cas je: %u\n",\(unsigned int\) timestamp\);
-
-
-
-Thread::wait\(1000\);
-```
-
-`}`
 
 # Vlastní časové pásmo a parsování timestamp do struktury
 
