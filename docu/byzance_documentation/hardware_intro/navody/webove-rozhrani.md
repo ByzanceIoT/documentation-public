@@ -52,5 +52,4 @@ U Yody je možné využít webové rozhraní, pokud je povoleno v \[\[Bootloader
 
 ==== Ukázka webového rozhraní ====
 
-{{ :tutorial:webview.png?direct&200 \|}}
 
