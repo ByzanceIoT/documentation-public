@@ -1,2 +1,1 @@
 
-<swagger>../swagger.json</swagger>
