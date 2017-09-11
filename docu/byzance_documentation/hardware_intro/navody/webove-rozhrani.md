@@ -27,5 +27,7 @@ U Yody je možné využít webové rozhraní, pokud je povoleno v \[\[Bootloader
 * Seznam připojených zařízení FIXME nyní zastaralé
 * Zaregistrované Byzance \[\[tutorial:byzance\_io\| digitální/analogové/message vstupy a výstupy viditelné z Blocka\]\]
 
-==== Ukázka webového rozhraní ====
+# Ukázka webového rozhraní
+
+
 
