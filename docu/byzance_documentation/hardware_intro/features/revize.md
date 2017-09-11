@@ -10,18 +10,9 @@ Revision je interně interpretováno jako 32 bitové číslo, které se zobrazuj
 
 ## Jak lze revision zjistit
 
-```
-\* V \[\[bootloader:overview\|bootloaderu\]\] v \[\[bootloader:commands\|command režimu\]\]
-```
-
-```
-
-\* Zjištění pomocí příslušného \[\[yoda:topic\_info\#informace\_o\_revision\|info topicu MQTT\]\]. Nastavení není možné, protože položka je read-only.
-
-\* \[\[tutorial:public\_functions\|Veřejnou funkcí třídy Byzance\]\]
-
-\* Ve \[\[tutorial:webview\|webovém rozhraní\]\]
-```
+* V   bootloaderu v command režimu
+* V Byzance API
+* Ve webovém rozhraní
 
 
 
