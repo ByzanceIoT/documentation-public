@@ -32,7 +32,7 @@
   * [Webové rozhraní](byzance_documentation/hardware_intro/navody/webove-rozhrani.md)
 * [Features](byzance_documentation/hardware_intro/features.md)
   * [Autobackup](byzance_documentation/hardware_intro/features/autobackup.md)
-  * Watchdog
+  * [Watchdog](byzance_documentation/hardware_intro/features/watchdog.md)
   * Události
   * Odložení restartu
   * Alias
