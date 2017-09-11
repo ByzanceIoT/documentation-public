@@ -1,318 +1,272 @@
-\# MBED
+# MBED
 
+MBED je open-source operační systém a sada knihoven vyvíjených konsorciem ARM. Je možné jej stáhnout \[\[[https://github.com/ARMmbed/mbed-os\|Githubu\]\](https://github.com/ARMmbed/mbed-os|Githubu]\)\]. Byzance k MBED přidává vlastní targety, definici pinů a nad MBED běží další služby v mikrokontroléru, které se starají o aktualizaci firmware a komunikaci se servery. Součástí MBED jsou knihovny pro BLE, LWIP, mbedTLS, nanostack a další.
 
-
-MBED je open-source operační systém a sada knihoven vyvíjených konsorciem ARM. Je možné jej stáhnout \[\[https://github.com/ARMmbed/mbed-os\|Githubu\]\]. Byzance k MBED přidává vlastní targety, definici pinů a nad MBED běží další služby v mikrokontroléru, které se starají o aktualizaci firmware a komunikaci se servery. Součástí MBED jsou knihovny pro BLE, LWIP, mbedTLS, nanostack a další.
-
-
-
-Dokumentace k nejnovějšímu API je dostupná na webu \[\[https://docs.mbed.com/docs/mbed-os-api-reference/en/latest/\]\]
-
-
+Dokumentace k nejnovějšímu API je dostupná na webu \[\[[https://docs.mbed.com/docs/mbed-os-api-reference/en/latest/\]\](https://docs.mbed.com/docs/mbed-os-api-reference/en/latest/]\)\]
 
 \#\# Vstupně/výstupní API
 
-
-
-\#\#\# AnalogIn 
+\#\#\# AnalogIn
 
 Read an external voltage applied to an analog input pin.
 
 &lt;code&gt;
 
-    AnalogIn ain\(pin\_name\);
+```
+AnalogIn ain\(pin\_name\);
 
-    printf\(”ain value = %3.3f%%\n”, ain.read\(\)\);
+printf\(”ain value = %3.3f%%\n”, ain.read\(\)\);
+```
 
 &lt;/code&gt;
 
-
-
-\#\#\# AnalogOut 
+\#\#\# AnalogOut
 
 Set the voltage of an analog output pin in the range of VSS to VCC.
 
 &lt;code&gt;
 
-    AnalogOut aout\(pin\_name\);
+```
+AnalogOut aout\(pin\_name\);
 
-    aout.write\(some\_float\);
+aout.write\(some\_float\);
+```
 
 &lt;/code&gt;
 
-
-
-\#\#\# DigitalIn 
+\#\#\# DigitalIn
 
 Read the value of an digital input pin
 
 &lt;code&gt;
 
-    DigitalIn din\(pin\_name\);
+```
+DigitalIn din\(pin\_name\);
 
-    printf\("pin has value : %d \n", din.read\(\)\);
+printf\("pin has value : %d \n", din.read\(\)\);
+```
 
 &lt;/code&gt;
 
-
-
-\#\#\# DigitalOut 
+\#\#\# DigitalOut
 
 Configure and control a digital output pin
 
-
-
 &lt;code&gt;
 
-    DigitalOut dout\(pin\_name\);
+```
+DigitalOut dout\(pin\_name\);
 
-    dout=1;
+dout=1;
+```
 
 &lt;/code&gt;
 
-	
-
-\#\#\# DigitalInOut 
+\#\#\# DigitalInOut
 
 Bidirectional digital pin, combination of DigitalIn and DigitalOut
 
-
-
 &lt;code&gt;
 
-    DigitalInOut diout\(pin\_name\);
+```
+DigitalInOut diout\(pin\_name\);
 
-    diout.output\(\);
+diout.output\(\);
 
-    diout = 1;
+diout = 1;
 
-    diout.input\(\);
+diout.input\(\);
 
-    pc.printf\("diout value = %d \n", diout.read\(\)\);
+pc.printf\("diout value = %d \n", diout.read\(\)\);
+```
 
 &lt;/code&gt;
 
-	
+\#\#\# BusIn
 
-\#\#\# BusIn 
-
-Number of DigitalIn pins that can be read as one value.		
-
-
+Number of DigitalIn pins that can be read as one value.
 
 &lt;code&gt;
 
-    BusIn	
+```
+BusIn    
+```
 
 &lt;/code&gt;
 
-
-
-\#\#\# BusOut 
+\#\#\# BusOut
 
 Number of DigitalOut pins that can be written as one value.
 
-
-
 &lt;code&gt;
 
-    BusOut
+```
+BusOut
+```
 
 &lt;/code&gt;
 
-
-
-\#\#\# BusInOut 
+\#\#\# BusInOut
 
 Number of DigitalInOut pins that can be read and written as one value.
 
-
-
 &lt;code&gt;
 
-    BusInOut
+```
+BusInOut
+```
 
 &lt;/code&gt;
 
-
-
-\#\#\# PortIn 
+\#\#\# PortIn
 
 Similar to BusIn, much faster but much less flexible.
 
-
-
 &lt;code&gt;
 
-    PortIn
+```
+PortIn
+```
 
 &lt;/code&gt;
 
-
-
-\#\#\# PortOut 
+\#\#\# PortOut
 
 Similar to BusOut, much faster but much less flexible.
 
-
-
 &lt;code&gt;
 
-    PortOut
+```
+PortOut
+```
 
 &lt;/code&gt;
 
-
-
-\#\#\# PortInOut 
+\#\#\# PortInOut
 
 Similar to BusInOut, much faster but much less flexible.
 
-
-
 &lt;code&gt;
 
-    PortInOut
+```
+PortInOut
+```
 
 &lt;/code&gt;
 
-
-
-\#\#\# PwmOut 
+\#\#\# PwmOut
 
 Interface to control the frequency and mark-to-space ration of digital pulse train.
 
-
-
 &lt;code&gt;
 
-    PwmOut
+```
+PwmOut
+```
 
 &lt;/code&gt;
 
-
-
-\#\#\# InterruptIn 
+\#\#\# InterruptIn
 
 Trigger an event when a digital input pin changes.
 
 &lt;code&gt;
 
-    InterruptIn
+```
+InterruptIn
+```
 
 &lt;/code&gt;
-
-
 
 \#\# Digital interface APIs
 
-
-
-\#\#\# Serial 
-
-
+\#\#\# Serial
 
 Generic serial protocol API, send and receive data.
 
-See \[\[https://en.wikipedia.org/wiki/Serial\_port\]\]
-
-
+See \[\[[https://en.wikipedia.org/wiki/Serial\_port\]\](https://en.wikipedia.org/wiki/Serial_port]\)\]
 
 &lt;code&gt;
 
-    Serial pc\(bblabla\);
+```
+Serial pc\(bblabla\);
+```
 
 &lt;/code&gt;
 
-
-
-\#\#\# SPI 
+\#\#\# SPI
 
 Serial Peripheral Interface Master.
 
-See https://en.wikipedia.org/wiki/Serial\_Peripheral\_Interface\_Bus
-
-
+See [https://en.wikipedia.org/wiki/Serial\_Peripheral\_Interface\_Bus](https://en.wikipedia.org/wiki/Serial_Peripheral_Interface_Bus)
 
 &lt;code&gt;
 
-    Example	
+```
+Example    
+```
 
 &lt;/code&gt;
 
+\#\#\# SPISlave
 
-
-\#\#\# SPISlave 
-
-Serial Peripheral Interface Slave. 
-
-
+Serial Peripheral Interface Slave.
 
 &lt;code&gt;
 
-    SPISlave spislave;
+```
+SPISlave spislave;
+```
 
 &lt;/code&gt;
 
+\#\#\# I2C
 
-
-\#\#\# I2C 
-
-I2C Master functionality. 
-
-
+I2C Master functionality.
 
 &lt;code&gt;
 
-    I2C i2c;
+```
+I2C i2c;
+```
 
 &lt;/code&gt;
 
-
-
-\#\#\# I2CSlave 
+\#\#\# I2CSlave
 
 Use to communicate with I2C Master.
 
-
-
 &lt;code&gt;
 
-    I2CSlave i2cslave;
+```
+I2CSlave i2cslave;
+```
 
 &lt;/code&gt;
 
-
-
-\#\#\# CAN 
+\#\#\# CAN
 
 Controller-Area Network bus standard support.
 
-
-
 &lt;code&gt;
 
-    CAN can;
+```
+CAN can;
+```
 
 &lt;/code&gt;
 
-
-
 \#\# Task management APIs
 
-\#\#\# RTOS 
+\#\#\# RTOS
 
 Real Time Operating System based on Keil RTX code. See following RTOS section.
 
-
-
-\#\#\# Event loop 
+\#\#\# Event loop
 
 Postpone the execution of a code sequence from an interrupt hander to user or different context.
 
-
-
-\#\#\# Ticker 
+\#\#\# Ticker
 
 Calls a function repeatedly and at a specified rate
 
@@ -322,141 +276,137 @@ Ticker ticker;
 
 &lt;/code&gt;
 
-
-
-\#\#\# Time 
+\#\#\# Time
 
 Date and time manipulation functions.  Support for time acquisition, conversion between date formats and formatted output to strings.
 
-
-
-\#\#\# Timeout 
+\#\#\# Timeout
 
 Set up an interrupt to call a function after a specified delay
 
 &lt;code&gt;
 
-    Timeout timeout;
+```
+Timeout timeout;
+```
 
 &lt;/code&gt;
 
-
-
-\#\#\# Timer 
+\#\#\# Timer
 
 Create, start, stop and read a timer for measuring small times \(between microseconds and seconds\)
 
 &lt;code&gt;
 
-    Timer timer;
+```
+Timer timer;
+```
 
 &lt;/code&gt;
 
-
-
-\#\#\# Wait 
+\#\#\# Wait
 
 Simple wait capabilities¨
 
 &lt;code&gt;
 
-    Example
+```
+Example
+```
 
 &lt;/code&gt;
-
-
 
 \#\# RTOS basics
 
-Thread		Defining, creating and controlling thread functions in the system.
+Thread        Defining, creating and controlling thread functions in the system.
 
 &lt;code&gt;
 
-    Thread thread;
+```
+Thread thread;
+```
 
 &lt;/code&gt;
 
-
-
-\#\#\# Mutex 
+\#\#\# Mutex
 
 Synchronize execution of threads, for example to protect access to a shared resource.
 
 &lt;code&gt;
 
-    Mutex mutex;
+```
+Mutex mutex;
+```
 
 &lt;/code&gt;
 
-
-
-\#\#\# Semaphore 
+\#\#\# Semaphore
 
 Manages thread access to a pool of shared resources of a certain type.
 
 &lt;code&gt;
 
-    Semaphore semaphore;
+```
+Semaphore semaphore;
+```
 
 &lt;/code&gt;
 
-
-
-\#\#\# Signals 
+\#\#\# Signals
 
 Each Thread can wait for signals and to be notified of events.
 
 &lt;code&gt;
 
-    Signal
+```
+Signal
+```
 
 &lt;/code&gt;
 
-
-
-\#\#\# Queue 
+\#\#\# Queue
 
 Allows queue pointers to data from producer threads to consumer threads.
 
 &lt;code&gt;
 
-    Queue
+```
+Queue
+```
 
 &lt;/code&gt;
 
-
-
-\#\#\# MemoryPool 
+\#\#\# MemoryPool
 
 Define and manage fixed-size memory pools.
 
 &lt;code&gt;
 
-    MemoryPool
+```
+MemoryPool
+```
 
 &lt;/code&gt;
 
-
-
-\#\#\# Mail 
+\#\#\# Mail
 
 Like queue, with the added benefit of providing a memory pool for allocating messages.
 
 &lt;code&gt;
 
-    Mail
+```
+Mail
+```
 
 &lt;/code&gt;
 
-
-
-\#\#\# Interrupts 
+\#\#\# Interrupts
 
 The same RTOS API can be used in ISR.  See InterruptIn reference.
 
 Warnings
 
-  \* Cannot use mutex in ISR.
+\* Cannot use mutex in ISR.
 
-  \* Wait in ISR is not allowed.
+\* Wait in ISR is not allowed.
 
