@@ -2,7 +2,7 @@
 
 Pokud se poprvé nahraje binárka bootloaderu do mikrokontroléru, bootloader sám umí detekovat, že target není zatím nakonfigurován. Nastala-li porucha některé hodnoty, bootloader danou hodnotu umí opravit. K nastavení výchozích vlastností slouží soubor`struct_defaults.h`s podobným obsahem tomuto
 
-```
+```cpp
 // defaultní hodnoty pro MQTT hlavní a záložní broker
 DEFAULTS_MQTT_HOSTNAME                "192.168.65.179"
 DEFAULTS_MQTT_PORT                    1881
