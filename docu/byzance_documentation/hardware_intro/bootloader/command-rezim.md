@@ -1,9 +1,9 @@
 # Command režim
 
-## Příkazy bez parametru
+## Příkazy bez parametru
 
 * _''ping''_ - ping; pro testovací účely
-* ''help'' - vypíše nápovědu do konzole
+* ''_help_'' - vypíše nápovědu do konzole
 * ''overview'' - vypíše aktuální hodnotu všech parametrů, které jsou v bootloaderu nastavovat
 * ''restart'' - restartuje Yodu. \[\[tutorial:restart\|Dokumentace k restartu\]\].
 * ''target' -Typ desky. TODO: link
@@ -26,11 +26,13 @@
 * ''normal\_mqtt\_password'' - Hlavní heslo pro přihlášení k Homerovi. \[\[yoda:mqtt\|Dokumentace MQTT\]\].
 
 * ''backup\_mqtt\_hostname'' - Záložní hostname, na kterém běží Homer. \[\[yoda:mqtt\|Dokumentace MQTT\]\].
+
 * ''backup\_mqtt\_port'' - Záložní port, na kterém běží Homer. \[\[yoda:mqtt\|Dokumentace MQTT\]\].
 * ''backup\_mqtt\_username'' - Záložní jméno pro přihlášení k Homerovi. \[\[yoda:mqtt\|Dokumentace MQTT\]\].
 * ''backup\_mqtt\_password'' - Záložní heslo pro přihlášení k Homerovi. \[\[yoda:mqtt\|Dokumentace MQTT\]\].
 
 * ''alias'' - Alias zařízení, který si každý může nastavit pro lepší rozpoznání zařízení. Více viz článek \[\[feature:alias\|alias\]\].
+
 * ''mac'' - Zjištění MAC adresy. Souvisí s \[\[feature:ethernet\|ethernetem\]\].
 * ''blreport - Bootloader report; zap nebo vyp textu do konzole, který píše \[\[bootloader:overview\|bootloader\]\].
 * ''wdenable'' - Watchdog enable; zap nebo vyp \[\[feature:watchdog\|watchdogu\]\].
@@ -48,7 +50,7 @@
 * ''restartbl'' - Identifikátor pro \[\[feature:restartbl\|restart zařízení do bootloaderu\]\]
 * ''revision'' - Zjištění \[\[feature:revision\|revize zařízení\]\]
 
-###### Pokud zařízení podporuje Wifi
+###### Pokud zařízení podporuje Wifi
 
 * ''wifi\_ssid'' - Záložní jméno pro přihlášení k Homerovi. \[\[yoda:mqtt\|Dokumentace MQTT\]\].
 * ''wifi\_password'' - Záložní heslo pro přihlášení k Homerovi. \[\[yoda:mqtt\|Dokumentace MQTT\]\].
