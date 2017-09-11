@@ -30,6 +30,7 @@
 * ''_backup\_mqtt\_port_'' - Záložní port, na kterém běží Homer. \[\[yoda:mqtt\|Dokumentace MQTT\]\].
 
 * ''_backup\_mqtt\_username_'' - Záložní jméno pro přihlášení k Homerovi. \[\[yoda:mqtt\|Dokumentace MQTT\]\].
+
 * ''_backup\_mqtt\_password_'' - Záložní heslo pro přihlášení k Homerovi. \[\[yoda:mqtt\|Dokumentace MQTT\]\].
 
 * ''_alias_'' - Alias zařízení, který si každý může nastavit pro lepší rozpoznání zařízení. Více viz článek \[\[feature:alias\|alias\]\].
@@ -47,6 +48,7 @@
 * ''_netsource_'' - \[\[feature:netsource\|Zdroj internetu pro zařízení\]\].
 
 * ''_configured_'' - při prvním spuštění bootloader naběhne vždy do Command režimu a čeká na konfiguraci všech parametrů. Až jsou parametry nastaveny, ''configured'' se přepne na 1 a tím se dá Yodovi najevo, že bude už nabíhat do normálního programu.
+
 * ''_timestamp_'' - časové razítko pro obvod reálného času \(RTC\). Lze vyčíst funkcemi pro \[\[tutorial:timestamp\|práci s časem\]\].
 * ''_backuptime_'' - Nastavení času, po kterém se spustí \[\[feature:autobackup\|automatická záloha firmware\]\]. 
 * ''_webview_'' - Zapnutí nebo vypnutí \[\[tutorial:webview\|webového rozhraní\]\]
@@ -64,10 +66,14 @@
 
 ## Příkazy pouze s parametrem
 
-* ''_info_'' - Informace k dané komponentě. Parametry mohou být "bootloader", "firmware", "buffer", "backup".
-* ''_memsize_' - Velikost oddílu, který je vyhrazen pro danou komponentu. Parametry mohou být "bootloader", "firmware", "buffer", "backup".
-* ''_intmem_'' - Zformátuje paměť. Parametry mohou být "intmem" nebo "extmem". \[\[memory:internal\|Informace o interní paměti\]\].
-* ''_firmware_' - Práce si firmwarem. Parametry mohou být "backup" pro zálohu, nebo "restore" pro obnovu.
+* ''_info_'' - Informace k dané komponentě.
+  Parametry mohou být "bootloader", "firmware", "buffer", "backup".
+* ''_memsize_' - Velikost oddílu, který je vyhrazen pro danou komponentu.
+  Parametry mohou být "bootloader", "firmware", "buffer", "backup".
+* ''_intmem_'' - Zformátuje paměť.
+  Parametry mohou být "intmem" nebo "extmem". \[\[memory:internal\|Informace o interní paměti\]\].
+* ''_firmware_' - Práce si firmwarem.
+  Parametry mohou být "backup" pro zálohu, nebo "restore" pro obnovu.
 
 
 
