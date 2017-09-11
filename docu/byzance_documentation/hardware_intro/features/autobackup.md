@@ -6,20 +6,20 @@ Aktuálně běžící program vždy aktualizuje sám sebe. Pokud se běžící p
 
 ## Vlastnosti autobackup
 
-Pokud je autobackup zapnutý, aktuálně běžící firmware se sám začne zálohovat a při chybě nové binárky se dokáže tato konfigurace obnovit. Tomuto typu zálohy se říká dynamická záloha.
+Pokud je autobackup **zapnutý**, aktuálně běžící firmware se sám začne zálohovat a při chybě nové binárky se dokáže tato konfigurace obnovit. Tomuto typu zálohy se říká **dynamická záloha**.
 
 Mezi podmínky spuštění automatického zálohování patří
 
 * úspěšné naběhnutí
 * úspěšné připojení k serverům
-* bezpečnostní běhový čas //backuptime//
+* bezpečnostní běhový čas backuptime \(viz dále\)
 
 Autobackup přináší výhody i nevýhody.
 
 * Výhodou této varianty je, že pokud update zařízení selže, vždy se obnoví poměrně nedávná \(poslední funkční\) konfigurace.
 * Bohužel zálohovací proces spotřebovává procesorový výkon, a pouští se automaticky na základě výše popsaných podmínek, což může  negativně ovlivnit výkon probíhajícího kódu. Tato varianta není vhodná pro aplikace, které vyžadují kritické časování.
 
-V případě, že je autobackup **vypnutý**, zařízení spoléhá na to, že v záložním sektoru existuje platná **statická **záloha, která byla do zařízení při vypnutí autobackupu doručena. Pokud update binárky neproběhne v pořádku, statická záloha se automaticky obnoví.
+V případě, že je autobackup **vypnutý**, zařízení spoléhá na to, že v záložním sektoru existuje platná **statická záloha,** která byla do zařízení při vypnutí autobackupu doručena. Pokud update binárky neproběhne v pořádku, statická záloha se automaticky obnoví.
 
 * Výhodou je, že stačí zálohu nahrát jednou a zařízení si ji "navždy" pamatuje \(případně do doby než je autobackup zapnutý, čímž se záloha se automaticky přepíše na dynamickou\). Při běhu uživatelského firmware se tak nepouští žádný automatický proces.
 * Nevýhoda je to, že pokud update selže, může se obnovit velmi stará fukční konfigurace, která v aktuálním kontextu nemusí být dávno platná.
