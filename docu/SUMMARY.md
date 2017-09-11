@@ -29,6 +29,7 @@
   * [Defaultní hodnoty](byzance_documentation/hardware_intro/bootloader/defaultni-hodnoty.md)
 * [Návody](byzance_documentation/hardware_intro/navody.md)
   * [Práce s datem a časem \(RTC\)](byzance_documentation/hardware_intro/navody/prace-s-datem-a-casem-rtc.md)
+  * [Struktura programu](byzance_documentation/hardware_intro/navody/struktura-programu.md)
   * [Webové rozhraní](byzance_documentation/hardware_intro/navody/webove-rozhrani.md)
 * [Features](byzance_documentation/hardware_intro/features.md)
   * [Autobackup](byzance_documentation/hardware_intro/features/autobackup.md)
