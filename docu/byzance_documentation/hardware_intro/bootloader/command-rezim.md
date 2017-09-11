@@ -12,7 +12,7 @@
 * ''_launch\_reset_'' - Pokud bylo předchozí spuštění firmware neúspěšné a není žádná validní binárka k obnovení, je třeba nahrát validní binárku a poté napsat příkaz ''launch\_reset''.
 * ''_defaults_'' - Veškeré nastavení se obnoví do \[\[bootloader:defaults\|defaultních hodnot\]\].
 
-###### Pokud zařízení používá DevList
+**Pokud zařízení používá DevList**
 
 * ''_devlist\_clear_'' - natvrdo smaže seznam všech uložených device v Yodovi. \[\[feature:devlist\|Dokumentace k devlist\]\].
 * ''_devlist\_counter_'' - zjistí počet uložených device v Yodovi. \[\[feature:devlist\|Dokumentace k devlist\]\].
@@ -28,6 +28,7 @@
 * ''_backup\_mqtt\_hostname_'' - Záložní hostname, na kterém běží Homer. \[\[yoda:mqtt\|Dokumentace MQTT\]\].
 
 * ''_backup\_mqtt\_port_'' - Záložní port, na kterém běží Homer. \[\[yoda:mqtt\|Dokumentace MQTT\]\].
+
 * ''_backup\_mqtt\_username_'' - Záložní jméno pro přihlášení k Homerovi. \[\[yoda:mqtt\|Dokumentace MQTT\]\].
 * ''_backup\_mqtt\_password_'' - Záložní heslo pro přihlášení k Homerovi. \[\[yoda:mqtt\|Dokumentace MQTT\]\].
 
@@ -44,6 +45,7 @@
 * ''_autobackup_'' - \[\[feature:autobackup\|Funkce, která zajišťuje, že při nahrátí nové binárky se stará zálohuje\]\].
 
 * ''_netsource_'' - \[\[feature:netsource\|Zdroj internetu pro zařízení\]\].
+
 * ''_configured_'' - při prvním spuštění bootloader naběhne vždy do Command režimu a čeká na konfiguraci všech parametrů. Až jsou parametry nastaveny, ''configured'' se přepne na 1 a tím se dá Yodovi najevo, že bude už nabíhat do normálního programu.
 * ''_timestamp_'' - časové razítko pro obvod reálného času \(RTC\). Lze vyčíst funkcemi pro \[\[tutorial:timestamp\|práci s časem\]\].
 * ''_backuptime_'' - Nastavení času, po kterém se spustí \[\[feature:autobackup\|automatická záloha firmware\]\]. 
@@ -55,7 +57,7 @@
 * ''_restartbl_'' - Identifikátor pro \[\[feature:restartbl\|restart zařízení do bootloaderu\]\]
 * ''_revision_'' - Zjištění \[\[feature:revision\|revize zařízení\]\]
 
-###### Pokud zařízení podporuje Wifi
+**Pokud zařízení podporuje Wifi**
 
 * ''_wifi\_ssid_'' - Záložní jméno pro přihlášení k Homerovi. \[\[yoda:mqtt\|Dokumentace MQTT\]\].
 * ''_wifi\_password_'' - Záložní heslo pro přihlášení k Homerovi. \[\[yoda:mqtt\|Dokumentace MQTT\]\].
