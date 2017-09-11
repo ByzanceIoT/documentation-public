@@ -35,10 +35,10 @@
   * [Watchdog](byzance_documentation/hardware_intro/features/watchdog.md)
   * [Události](byzance_documentation/hardware_intro/features/udalosti.md)
   * [Odložení restartu](byzance_documentation/hardware_intro/features/odlozeni-restartu.md)
-  * Alias
+  * [Alias](byzance_documentation/hardware_intro/features/alias.md)
   * [Revize](byzance_documentation/hardware_intro/features/revize.md)
   * [Restart do bootloaderu](byzance_documentation/hardware_intro/features/restart-do-bootloaderu.md)
-  * Detekce spuštění firmware
+  * [Detekce spuštění firmware](byzance_documentation/hardware_intro/features/detekce-spusteni-firmware.md)
   * [Vytížení mikrokontroléru](byzance_documentation/hardware_intro/features/vytizeni-mikrokontroleru.md)
   * [Čas běhu zařízení](byzance_documentation/hardware_intro/features/cas-behu-zarizeni.md)
 
