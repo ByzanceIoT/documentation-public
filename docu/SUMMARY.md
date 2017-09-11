@@ -39,6 +39,7 @@
   * [Revize](byzance_documentation/hardware_intro/features/revize.md)
   * [Restart do bootloaderu](byzance_documentation/hardware_intro/features/restart-do-bootloaderu.md)
   * Detekce spuštění firmware
+  * [Vytížení mikrokontroléru](byzance_documentation/hardware_intro/features/vytizeni-mikrokontroleru.md)
 
 ## Obecné
 
