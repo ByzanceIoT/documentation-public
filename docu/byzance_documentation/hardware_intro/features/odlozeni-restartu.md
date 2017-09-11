@@ -6,21 +6,19 @@ Zařízení takovýto požadavek zaregistruje a okamžitě volá funkci pomocí 
 
 Příklad možného použití
 
+`void init(){`
 
+`Byzance::attach_restart_follows(&my_function);`
 
-`void init(){`
+`}`
 
-`Byzance::attach_restart_follows(&my_function);`
+`void my_function(){`
 
-`}`
+`// nejaka logika na zjisteni, jestli mi restart vadi nebo ne`
 
-`void my_function(){`
+`// pokud vadi, o kolik se ma posunout`
 
-`// nejaka logika na zjisteni, jestli mi restart vadi nebo ne`
-
-`// pokud vadi, o kolik se ma posunout`
-
-`Byzance::restart_postpone(cislo);`
+`Byzance::restart_postpone(cislo);`
 
 `}`
 
