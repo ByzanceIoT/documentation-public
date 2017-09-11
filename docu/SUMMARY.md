@@ -25,6 +25,7 @@
   * [O MBED](byzance_documentation/hardware_intro/obecne/o-mbed.md)
 * [Bootloader](byzance_documentation/hardware_intro/bootloader.md)
   * [Command režim](byzance_documentation/hardware_intro/bootloader/command-rezim.md)
+  * [Defaultní hodnoty](byzance_documentation/hardware_intro/bootloader/defaultni-hodnoty.md)
 
 ## Obecné
 

@@ -26,6 +26,7 @@
 * ''_normal\_mqtt\_password_'' - Hlavní heslo pro přihlášení k Homerovi. \[\[yoda:mqtt\|Dokumentace MQTT\]\].
 
 * ''_backup\_mqtt\_hostname_'' - Záložní hostname, na kterém běží Homer. \[\[yoda:mqtt\|Dokumentace MQTT\]\].
+
 * ''_backup\_mqtt\_port_'' - Záložní port, na kterém běží Homer. \[\[yoda:mqtt\|Dokumentace MQTT\]\].
 * ''_backup\_mqtt\_username_'' - Záložní jméno pro přihlášení k Homerovi. \[\[yoda:mqtt\|Dokumentace MQTT\]\].
 * ''_backup\_mqtt\_password_'' - Záložní heslo pro přihlášení k Homerovi. \[\[yoda:mqtt\|Dokumentace MQTT\]\].
@@ -41,6 +42,7 @@
 * ''_wdtime_'' - Nastavení periody resetu watchdogu \[\[feature:watchdog\|watchdogu\]\].
 
 * ''_autobackup_'' - \[\[feature:autobackup\|Funkce, která zajišťuje, že při nahrátí nové binárky se stará zálohuje\]\].
+
 * ''_netsource_'' - \[\[feature:netsource\|Zdroj internetu pro zařízení\]\].
 * ''_configured_'' - při prvním spuštění bootloader naběhne vždy do Command režimu a čeká na konfiguraci všech parametrů. Až jsou parametry nastaveny, ''configured'' se přepne na 1 a tím se dá Yodovi najevo, že bude už nabíhat do normálního programu.
 * ''_timestamp_'' - časové razítko pro obvod reálného času \(RTC\). Lze vyčíst funkcemi pro \[\[tutorial:timestamp\|práci s časem\]\].
