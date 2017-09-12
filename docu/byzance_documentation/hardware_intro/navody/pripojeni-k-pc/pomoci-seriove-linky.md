@@ -4,7 +4,7 @@ Sériová linka je poměrně standardní rozhraní využívané v oblasti mikrok
 
 ## Inicializace
 
-Většina zařízení je vybavena více sériovými linkami, což je třeba specifikovat při inicializaci. Je nutné zjistit konkrétní piny, které disponují touto periferií. Tyto informace se dají zjistit v sekci [Hardware](/Hardware).
+Většina zařízení je vybavena více sériovými linkami, což je třeba specifikovat při inicializaci. Je nutné zjistit konkrétní piny, které disponují touto periferií. Tyto informace se dají zjistit v sekci [Hardware](/Hardware) vždy pro konkrétní zařízení.
 
 V konstruktoru se zadávají parametry pinů TX a RX.
 
