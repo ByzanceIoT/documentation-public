@@ -1,6 +1,6 @@
 # Připojení k PC pomocí sériové linky
 
-Sériová linka je poměrně standardní rozhraní využívané v oblasti mikrokontrolérů. Pro připojení se využívá [MBED-OS API](/byzance_documentation/hardware_intro/API/mbed-api.md) pro [komunikační rozhraní](/byzance_documentation/hardware_intro/API/mbed-api/komunikacni-rozhrani.md).
+Sériová linka je poměrně standardní rozhraní využívané v oblasti mikrokontrolérů. Pro připojení se využívá [MBED-OS API](/byzance_documentation/hardware_intro/API/mbed-api.md) pro [komunikační rozhraní](/byzance_documentation/hardware_intro/API/mbed-api/komunikacni-rozhrani.md). Pro správnou funkčnost je třeba sériovou komunikaci [zprovoznit ze strany počítače](/byzance_documentation/hardware_intro/navody/pripojeni-k-pc.md).
 
 ## Inicializace
 
