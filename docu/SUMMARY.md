@@ -33,6 +33,7 @@
   * [Byzance IO](byzance_documentation/hardware_intro/navody/byzance-io.md)
   * [Práce s datem a časem \(RTC\)](byzance_documentation/hardware_intro/navody/prace-s-datem-a-casem-rtc.md)
   * [Webové rozhraní](byzance_documentation/hardware_intro/navody/webove-rozhrani.md)
+  * [Připojení pomocí USB](byzance_documentation/hardware_intro/navody/pripojeni-pomoci-usb.md)
 * [Features](byzance_documentation/hardware_intro/features.md)
   * [Autobackup](byzance_documentation/hardware_intro/features/autobackup.md)
   * [Watchdog](byzance_documentation/hardware_intro/features/watchdog.md)
