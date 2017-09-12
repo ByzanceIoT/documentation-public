@@ -1,5 +1,7 @@
 # Připojení k PC pomocí sériové linky
 
+# Inicializace
+
 # Ukázkový kód
 
 Jednoduchý kód pro výpis ''hello word'' přes sériovou linku.
