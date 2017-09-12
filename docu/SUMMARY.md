@@ -42,6 +42,7 @@
   * [Připojení pomocí sériové linky](byzance_documentation/hardware_intro/navody/pripojeni-pomoci-seriove-linky.md)
   * [Programování ve vlastním IDE](byzance_documentation/hardware_intro/navody/programovani-ve-vlastnim-ide.md)
   * [Vlastní knihovny](byzance_documentation/hardware_intro/navody/vlastni-knihovny.md)
+  * [Programování z GUI](byzance_documentation/hardware_intro/navody/programovani-z-gui.md)
 * [Features](byzance_documentation/hardware_intro/features.md)
   * [Autobackup](byzance_documentation/hardware_intro/features/autobackup.md)
   * [Watchdog](byzance_documentation/hardware_intro/features/watchdog.md)
