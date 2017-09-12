@@ -5,7 +5,7 @@
 Calls a function repeatedly and at a specified rate
 
 ```cpp
-
+Ticker ticker;
 ```
 
 ## Time
