@@ -2,9 +2,7 @@
 
 Dostane se ti do ruky nějaké zařízení Byzance.
 
-Kroky, kde začít:
-
-\* \[\[specs:targetlist\|Přehled zařízení\]\] aneb jaké zařízení mám v ruce?
+\* Jaké zařízení mám v ruce? Identifikace konkrétního targetu.
 
 \* Zajištění napájení pro mé zařízení? Dozvíš se v příslušné sekci stránky zařízení, které jsi identifikoval v předchozím bodě \(např. \[\[specs:yodag3e\#napajeni\|zde\]\]\).
 
