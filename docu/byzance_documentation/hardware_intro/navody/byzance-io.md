@@ -1,12 +1,10 @@
 # Byzance IO
 
-Blocko je online vizuální programovací nástroj, díky němuž je možné propojit s hardwarem a ovládat jednotlivé vstupy a výstupy. Sdružuje hardware, vstupy a výstupy z mobilní aplikace a logické bloky.
+Blocko je online vizuální programovací nástroj, díky němuž je možné propojit s hardwarem a ovládat jednotlivé vstupy a výstupy. Sdružuje hardware, vstupy a výstupy z mobilní aplikace a logické bloky.
 
-// obrázek
+// obrázek
 
-Pro propojení hardware s blockem je nutné v hardware do kódu přidat speciálně definované vstupy, výstupy a případně zprávy. Ty je možné psát kdekoliv do souboru main.cpp.
-
-
+Pro propojení hardware s blockem je nutné v hardware do kódu přidat speciálně definované vstupy, výstupy a případně zprávy. Ty je možné psát kdekoliv do souboru main.cpp.
 
 Existuje 6 typů takovýchto definicí
 
@@ -36,9 +34,9 @@ ANALOG_OUTPUT(aout_name);
 MESSAGE_OUTPUT(mout_name, STRING, ...);
 ```
 
-# Příklad použití 
+# Příklad použití
 
-Kód pro rozsvícení LED na dálku může potom vypadat například takto
+Kód pro rozsvícení LED na dálku může potom vypadat například takto
 
 ```cpp
 #include "byzance.h"
