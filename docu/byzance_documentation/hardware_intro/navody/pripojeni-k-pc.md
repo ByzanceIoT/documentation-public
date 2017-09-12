@@ -48,3 +48,7 @@ Na některých distribucích je nutné přidat uživatele do skupiny dialout pro
 
 ''sudo adduser už\_jméno dialout''.
 
+# Programování sériové linky
+
+Konkrétní ukázky kódu pro komunikaci s počítačem je možné nalézt v sekcích [komunikace pomocí USB](/byzance_documentation/hardware_intro/navody/pripojeni-k-pc/pomoci-usb.md) či [komunikace pomocí sériové linky](/byzance_documentation/hardware_intro/navody/pripojeni-k-pc/pomoci-seriove-linky.md).
+
