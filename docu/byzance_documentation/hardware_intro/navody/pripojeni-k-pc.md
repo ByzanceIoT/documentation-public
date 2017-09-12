@@ -6,19 +6,17 @@ Zařízení se dá k počítači připojit buď pomocí [sériové linky](/byzan
 
 Každé sériové zařízení se standardně přihlašuje jako nový COM port. Seznam těchto portů je možné získat ve správci zařízení. To je možné zavolat například zkratkou ''WIN+X'' -&gt; ''Device Manager''. Je-li zařízeních víc, číslo konkrétního se dá zjistit například tak, že se zařízení několikrát fyzicky připojí a odpojí a přitom se jeho číslo objeví v seznamu a zase zmizí.
 
-//obrázek
+![](/assets/com_port.png)
 
-Neobjeví-li se zařízení, možná je třeba nainstalovat jeho ovladač. Windows 7 a Windows 10 by toto měly udělat automaticky. Dále je třeba mít nainstalovaný terminálový program. To může být například \[\[[https://www.compuphase.com/software\_termite.htm\|Termite\]\](https://www.compuphase.com/software_termite.htm|Termite]\)\], \[\[[http://www.hw-group.com/products/hercules/index\_cz.html\|Hercules\]\](http://www.hw-group.com/products/hercules/index_cz.html|Hercules]\)\] a mnoho jiných.
+Neobjeví-li se zařízení, možná je třeba nainstalovat jeho ovladač. Windows 7 a Windows 10 by toto měly udělat automaticky. Dále je třeba mít nainstalovaný terminálový program. To může být například [Termite](https://www.compuphase.com/software_termite.htm), [Hercules](http://www.hw-group.com/products/hercules/index_cz.html) a mnoho jiných.
 
 Zvolený COM port je třeba v nastavení terminálu společně s ukončovánímk řádků CR-LF, zvolenou rychlostí BAUD, data bits 8, stop bit 1, parita žádná. USB driver vyžaduje zapnutí flow control na RTS/CTS.
 
-// obrázek
+![](/assets/termite.png)
 
 Po potvrzení nastavení je možné se zařízením začít komunikovat.
 
-// obrázek
-
-# 
+![](/assets/hello_world.png)
 
 ## MAC
 
