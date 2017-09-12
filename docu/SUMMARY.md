@@ -42,8 +42,8 @@
   * [Bootloader](byzance_documentation/hardware_intro/bootloader.md)
     * [Command režim](byzance_documentation/hardware_intro/bootloader/command-rezim.md)
     * [Defaultní hodnoty](byzance_documentation/hardware_intro/bootloader/defaultni-hodnoty.md)
-  * Offline programování
-  * [Offline programování z GUI](byzance_documentation/hardware_intro/navody/programovani-z-gui.md)
+  * [Offline programování](byzance_documentation/hardware_intro/navody/offline-programovani.md)
+  * [Offline programování z konzole](byzance_documentation/hardware_intro/navody/offline-programovani-z-konzole.md)
   * [Offline programování z konzole](byzance_documentation/hardware_intro/navody/offline-programovani-z-konzole.md)
 * [Features](byzance_documentation/hardware_intro/features.md)
   * [Autobackup](byzance_documentation/hardware_intro/features/autobackup.md)
