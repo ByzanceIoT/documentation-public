@@ -1,4 +1,4 @@
-# Programování z GUI
+# Offline programování z GUI
 
 
 
