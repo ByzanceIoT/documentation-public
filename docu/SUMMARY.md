@@ -23,11 +23,11 @@
 
 * [Obecné](byzance_documentation/hardware_intro/obecne.md)
   * [Kde začít](byzance_documentation/hardware_intro/obecne/kde-zacit.md)
-  * [O MBED](byzance_documentation/hardware_intro/obecne/o-mbed.md)
   * [Struktura programu](byzance_documentation/hardware_intro/obecne/struktura-programu.md)
 * [API](byzance_documentation/hardware_intro/api.md)
-  * [Byzance IO](byzance_documentation/hardware_intro/API/byzance-io.md)
+  * [MBED API](byzance_documentation/hardware_intro/obecne/o-mbed.md)
   * [Byzance API](byzance_documentation/hardware_intro/API/byzance-api.md)
+  * [Byzance IO](byzance_documentation/hardware_intro/API/byzance-io.md)
 * [Bootloader](byzance_documentation/hardware_intro/bootloader.md)
   * [Command režim](byzance_documentation/hardware_intro/bootloader/command-rezim.md)
   * [Defaultní hodnoty](byzance_documentation/hardware_intro/bootloader/defaultni-hodnoty.md)
