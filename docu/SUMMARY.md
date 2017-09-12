@@ -30,7 +30,7 @@
   * [MBED API](byzance_documentation/hardware_intro/API/mbed-api.md)
     * [Vstupy a výstupy](byzance_documentation/hardware_intro/API/mbed-api/vstupnevystupni-api.md)
     * [Komunikační rozhraní](byzance_documentation/hardware_intro/API/mbed-api/api-komunikacnich-rozhrani.md)
-    * [Správa úloh](byzance_documentation/hardware_intro/API/mbed-api/sprava-uloh.md)
+    * [Časování](byzance_documentation/hardware_intro/API/mbed-api/sprava-uloh.md)
   * [Byzance API](byzance_documentation/hardware_intro/API/byzance-api.md)
   * [Byzance IO](byzance_documentation/hardware_intro/API/byzance-io.md)
   * [Makra](byzance_documentation/hardware_intro/API/makra.md)
