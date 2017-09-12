@@ -1,9 +1,8 @@
 # Struktura programu
 
-Základem při psaní zdrojového kódu je využití open-source operačního systému \[\[tutorial:mbed\| MBED-OS\]\]. Kód se píše především v online rozhraní Byzance.
+Základem při psaní zdrojového kódu je využití open-source operačního systému [MBED-OS](/byzance_documentation/hardware_intro/API/mbed-api.md). Kód se píše především v online rozhraní Becki Byzance.
 
-Struktura je následovná.   
-Na prvním řádku by měl být include byzance knihovny. Ta se postará o automatickou inicializaci periferií, připojení desky k internetu a zapnutí vláken, která se starají o update zdrojového kódu a připojení k serverům. Zároveň podporuje některá \[\[tutorial:macros\|uživatelská makra\]\] a \[\[tutorial:public\_functions\|rozhraní pro uživatele\]\].
+Struktura je následovná. Na prvním řádku by měl být include byzance knihovny. Ta se postará o automatickou inicializaci periferií, připojení desky k internetu a zapnutí vláken, která se starají o update zdrojového kódu a připojení k serverům. Includem knihovny se zpřístupní [Byzance API](/byzance_documentation/hardware_intro/API/byzance-api.md). Při programování jsou dostupná [uživatelská makra](/byzance_documentation/hardware_intro/API/makra.md).
 
 ```cpp
 #include "byzance.h"
@@ -11,30 +10,23 @@ Na prvním řádku by měl být include byzance knihovny. Ta se postará o autom
 
 Následovat by měla definice vstupů a výstupů pro blocko, ale Code server si s tím poradí v celém main souboru.
 
-Více viz \[\[tutorial:byzance\_io\| Byzance vstupy a výstupy viditelné z Blocka\]\]
+Více viz [Byzance IO](/byzance_documentation/hardware_intro/API/byzance-io.md).
 
 ```cpp
-Byzance vstupy a výstupy
+definice vstupů a výstupů
 ```
 
-Inicializace globálních proměnných a objektů
-
-Například sériovka atd.
+Inicializace globálních proměnných a objektů, například sériovka atd.
 
 ```cpp
 Serial pc(SERIAL_TX, SERIAL_RX); // tx, rx
 ```
 
-Nepovinná část spíše nutná pro debug.
-
-Věci ve funkci pre\_init\(\) se pustí dříve, než Byzance vlákno a připojení k serverům.
+Věci ve funkci pre\_init\(\) se pustí dříve, než Byzance vlákno a připojení k serverům. Nepovinná část spíše nutná pro debug.
 
 ```cpp
 void pre_init(){
-    ByzanceLogger::init(&pc);
-    ByzanceLogger::set_level(LOGGER_LEVEL_TRACE);
-    ByzanceLogger::enable_prefix(false);
-    pc.baud(115200);
+   
 }
 ```
 
@@ -46,7 +38,7 @@ void init(){
 }
 ```
 
-Část kódu, který se bude točit stále dokola. Mezi každým loop\(\) se automaticky dává prostor i Byzance vláknu a \[\[feature:watchdog\|resetuje se watchdog\]\].
+Poslední je část kódu, který se bude vykonávat stále dokola, slouží jako náhrada while\(true\) cyklu v klasické main funkci. Jediným rozdílem je to, že mezi každým loop\(\) se automaticky dává prostor i Byzance vláknu a [resetuje se watchdog](/byzance_documentation/hardware_intro/features/watchdog.md).
 
 ```cpp
 void loop(){
@@ -65,11 +57,12 @@ Jednoduchý kód pro výpis do sériovky \(bez debugu\) může tedy vypadat takt
 Serial pc(SERIAL_TX, SERIAL_RX); // tx, rx
 
 void init(){
+    // Hello world se vypise jednou pri startu
     pc.printf("Hello world\n");
 }
 
-
 void loop(){
+    // Test se bude vypisovat stale dokola kazdych 500 ms
     pc.printf("Test\n");
     Thread::wait(500);
 }
