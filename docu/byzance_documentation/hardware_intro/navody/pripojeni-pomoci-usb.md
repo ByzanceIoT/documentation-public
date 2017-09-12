@@ -27,7 +27,6 @@ Ze strany PC se zařízení hlásí stejně jako každá jiná sériová linka. 
 Kód pro výpis ''hello world'' pomocí USB
 
 ```cpp
-
 USBSerial usb;
 
 void loop(){
