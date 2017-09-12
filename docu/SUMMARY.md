@@ -39,12 +39,12 @@
   * [Připojení pomocí sériové linky](byzance_documentation/hardware_intro/navody/pripojeni-pomoci-seriove-linky.md)
   * [Programování ve vlastním IDE](byzance_documentation/hardware_intro/navody/programovani-ve-vlastnim-ide.md)
   * [Vlastní knihovny](byzance_documentation/hardware_intro/navody/vlastni-knihovny.md)
-  * [Offline programování z konzole](byzance_documentation/hardware_intro/navody/offline-programovani-z-konzole.md)
   * [Bootloader](byzance_documentation/hardware_intro/bootloader.md)
     * [Command režim](byzance_documentation/hardware_intro/bootloader/command-rezim.md)
     * [Defaultní hodnoty](byzance_documentation/hardware_intro/bootloader/defaultni-hodnoty.md)
   * Offline programování
   * [Offline programování z GUI](byzance_documentation/hardware_intro/navody/programovani-z-gui.md)
+  * [Offline programování z konzole](byzance_documentation/hardware_intro/navody/offline-programovani-z-konzole.md)
 * [Features](byzance_documentation/hardware_intro/features.md)
   * [Autobackup](byzance_documentation/hardware_intro/features/autobackup.md)
   * [Watchdog](byzance_documentation/hardware_intro/features/watchdog.md)
