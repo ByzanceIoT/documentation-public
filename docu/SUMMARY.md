@@ -27,6 +27,7 @@
   * [Flash paměť](byzance_documentation/hardware_intro/obecne/flash-pamet.md)
     * [Žurnál](byzance_documentation/hardware_intro/obecne/flash-pamet/zurnal.md)
   * [6LOWPAN](byzance_documentation/hardware_intro/obecne/6lowpan.md)
+  * [RAM](byzance_documentation/hardware_intro/obecne/ram.md)
 * [API](byzance_documentation/hardware_intro/api.md)
   * [MBED API](byzance_documentation/hardware_intro/API/mbed-api.md)
     * [Vstupy a výstupy](byzance_documentation/hardware_intro/API/mbed-api/vstupy-a-vystupy.md)
