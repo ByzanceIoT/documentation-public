@@ -10,7 +10,7 @@ plnohodnotná paměť pro náhodný přístup
 
 Jedná se o neplnohodnotnou RAM, její omezení plyne především z toho, že není schopna pracovat s DMA; lze ji například použít pro různé překladové tabulky, jejichž výčet z paměti FLASH by byl časově náročný a je proto proveden jen jednou při startu procesoru
 
-==== Rozložení paměti v C a linkování ====
+# Rozložení paměti v C a linkování
 
 Z hlediska programování v jazyce C je možné rozdělit proměnné dle platnosti:
 
