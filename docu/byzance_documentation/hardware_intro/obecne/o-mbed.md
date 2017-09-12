@@ -1,8 +1,8 @@
 # MBED
 
-MBED je open-source operační systém a sada knihoven vyvíjených konsorciem ARM. Je možné jej stáhnout \[\[[https://github.com/ARMmbed/mbed-os\|Githubu\]\](https://github.com/ARMmbed/mbed-os|Githubu]\)\]. Byzance k MBED přidává vlastní targety, definici pinů a nad MBED běží další služby v mikrokontroléru, které se starají o aktualizaci firmware a komunikaci se servery. Součástí MBED jsou knihovny pro BLE, LWIP, mbedTLS, nanostack a další.
+MBED je open-source operační systém a sada knihoven vyvíjených konsorciem ARM. Je možné jej stáhnout [z Githubu](https://github.com/ARMmbed/mbed-os). Byzance k MBED přidává vlastní targety, definici pinů a nad MBED běží další služby v mikrokontroléru, které se starají o aktualizaci firmware a komunikaci se servery. Součástí MBED jsou knihovny pro BLE, LWIP, mbedTLS, nanostack a další.
 
-Dokumentace k nejnovějšímu API je dostupná na webu \[\[[https://docs.mbed.com/docs/mbed-os-api-reference/en/latest/\]\](https://docs.mbed.com/docs/mbed-os-api-reference/en/latest/]\)\]
+Dokumentace k nejnovějšímu API je dostupná [na webu projektu](https://docs.mbed.com/docs/mbed-os-api-reference/en/latest/).
 
 # Vstupně/výstupní API
 
@@ -290,7 +290,8 @@ The same RTOS API can be used in ISR.  See InterruptIn reference.
 
 Warnings
 
-\* Cannot use mutex in ISR.
+* Cannot use mutex in ISR.
+* Wait in ISR is not allowed.
 
-\* Wait in ISR is not allowed.
+
 
