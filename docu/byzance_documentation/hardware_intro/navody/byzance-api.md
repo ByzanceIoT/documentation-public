@@ -2,6 +2,8 @@
 
 Veřejné Byzance funkce pomáhají běžnému uživateli zjišťovat stavy zařízení a související události. Společně s \[\[tutorial:mbed\|MBED\]\], \[\[tutorial:macros\|užitečnými makry\]\] a \[\[tutorial:byzance\_io\|Byzance vstupy a výstupy\]\] by měly sloužit jako základní jednotka stavby kódu. Možný příklad použití je dostupný na stránce se \[\[tutorial:structure\|strukturou programu\]\].
 
+Inicializace je automatická při startu zařízení.
+
 ```cpp
 /** Initialize Byzance library
 *
@@ -24,6 +26,8 @@ static Byzance_Err_TypeDef init();
 */
 static Byzance_Err_TypeDef deinit();
 ```
+
+Připojení k Homerovi je automatické, pokud je správně nastaven netsource a přihlašovací údaje do MQTT.
 
 ```cpp
 /** Connect to Homer
@@ -48,6 +52,8 @@ static Byzance_Err_TypeDef connect();
 static Byzance_Err_TypeDef disconnect();
 ```
 
+Zjištění Aliasu zařízení
+
 ```cpp
 /** Get alias
 *
@@ -58,6 +64,8 @@ static Byzance_Err_TypeDef disconnect();
 static const char* get_alias();
 ```
 
+Zjištění IP adresy
+
 ```cpp
 /** Get IP address
 *
@@ -67,6 +75,8 @@ static const char* get_alias();
 */
 static const char* get_ip_address();
 ```
+
+Zjištění MAC adresy
 
 ```cpp
 /** Get MAC address
@@ -91,6 +101,8 @@ static const char* get_mac_address();
 static bool get_trusted();
 ```
 
+Odložení restartu
+
 ```cpp
 /** Postpone restart if it is pending
 *
@@ -104,6 +116,8 @@ static bool get_trusted();
 static void restart_postpone(time_t sec);
 ```
 
+Zjištění, jestli bude následovat restart
+
 ```cpp
 /** Restart is pending?
 *
@@ -114,6 +128,8 @@ static void restart_postpone(time_t sec);
 */
 static time_t restart_pending();
 ```
+
+Převzetí kontroly nad LED modulem
 
 ```cpp
 /** Start or stop LED module
@@ -126,6 +142,8 @@ static time_t restart_pending();
 static void led_module(bool state);
 ```
 
+Digitální výstup z Byzance IO
+
 ```cpp
 /** Set some value to digital output
 *
@@ -136,6 +154,8 @@ static void led_module(bool state);
 */
 static void digital_output_set_value(const char *name, bool value);
 ```
+
+Analogový výstup z Byzance IO
 
 ```cpp
 /** Set some value to analog output
@@ -148,6 +168,8 @@ static void digital_output_set_value(const char *name, bool value);
 static void analog_output_set_value(const char *name, float value);
 ```
 
+Message výstup z Byzance IO
+
 ```cpp
 /** Set some value to message output
 *
@@ -159,6 +181,8 @@ static void analog_output_set_value(const char *name, float value);
 static void message_output_set_value(const char *name, ByzanceSerializer* serializer);
 ```
 
+Callback, že se změnil stav linkové vrstvy \(připojení, nebo odpojení ethernet kabelu\)
+
 ```cpp
 /** Change in link layer
 *
@@ -169,6 +193,8 @@ static void message_output_set_value(const char *name, ByzanceSerializer* serial
 */
 static void attach_link_connection_changed(void (*function)(bool));
 ```
+
+Callback, že se změnil stav linkové vrstvy \(připojení, nebo odpojení ethernet kabelu\)
 
 ```cpp
 /** Change in link layer
@@ -238,6 +264,8 @@ static void attach_byzance_state_changed(T *object, void (T::*member)(State_t)) 
 }
 ```
 
+Callback o požadavku na softwarový restart
+
 ```cpp
 /** Restart will follow callback
 *
@@ -248,6 +276,8 @@ static void attach_byzance_state_changed(T *object, void (T::*member)(State_t)) 
 */
 static void attach_restart_follows(void (*function)(void));
 ```
+
+Callback o požadavku na softwarový restart
 
 ```cpp
 /** Restart will follow callback
