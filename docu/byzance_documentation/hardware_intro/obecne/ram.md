@@ -34,15 +34,10 @@ C překladač využívá několik oblastí pro práci s pamětí:
 
 Proměnné dle typu jsou přiřazeny do jednotlivých oblastí dle následující tabulky
 
-|  | globální |
-| :--- | :--- |
-|  |  |
-
-\|                   ^ globální    ^ lokální    ^ statická            ^ konstantní \|
-
-^ inicializovaná    \| .data + flash    \| stack      \|  .data + flash    \| flash \|
-
-^ neinicializovaná    \| .bss      \| stack     \| .bss              \| flash \|
+|  | globální | lokální | statická | konstantní |
+| :--- | :--- | :--- | :--- | :--- |
+| inicializovaná | .data+flash | stack | .data + flash | flash |
+| neinicalizovaná | .bss | stack | .bss | flash |
 
 Do oblasti .bss tedy míří statické a globální neinicializované proměnné. Tyto proměnné musí být přístupné po celý běh programu a je znám jejich počet a datové typy a tedy i celková velikost. Vzhledem k faktu, že proměnné nejsou inicializované, není třeba nikde ukládat jejich inicializační hodnotu ve nevoalitní paměti \(FLASH\). Z hlediska využití paměti není prakticky rozdíl mezi globální a statickou proměnnou, přestože statická proměnná je platná pouze v použitém souboru.
 
