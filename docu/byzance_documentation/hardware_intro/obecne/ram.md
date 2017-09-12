@@ -47,3 +47,7 @@ Oblast stack a heap vyplňuje zbytek paměti RAM. Stack je využíván pro loká
 
 Oblast .text je určená pro read-only \(nebo alespoň read-mostly\) operace. Čtení z této paměti může být pomalejší.
 
+# Mapa paměti daného zařízení
+
+Mapa paměti je závislá na konkrétním zařízení. Konkrétní informace jsou vždy u daných zařízení v sekci [Hardware](/Hardware).
+
