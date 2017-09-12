@@ -5,7 +5,7 @@ Generic serial protocol API, send and receive data.
 See \[\[[https://en.wikipedia.org/wiki/Serial\_port\]\](https://en.wikipedia.org/wiki/Serial_port]\)\]
 
 ```cpp
-Serial pc\(bblabla\);
+Serial pc(PIN_TX, PIN_RX);
 ```
 
 ## SPI
