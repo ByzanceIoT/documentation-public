@@ -2,7 +2,7 @@
 
 Zařízení se dá k počítači připojit buď pomocí [sériové linky](/byzance_documentation/hardware_intro/navody/pripojeni-k-pc/pomoci-seriove-linky.md) s použitím FTDI převodníku, nebo se tato linka dá [softwarově emulovat přes USB](/byzance_documentation/hardware_intro/navody/pripojeni-k-pc/pomoci-usb.md). Ze strany počítače je tento přístup stejný a postup je jednotný.
 
-# Windows
+## Windows
 
 Každé sériové zařízení se standardně přihlašuje jako nový COM port. Seznam těchto portů je možné získat ve správci zařízení. To je možné zavolat například zkratkou ''WIN+X'' -&gt; ''Device Manager''. Je-li zařízeních víc, číslo konkrétního se dá zjistit například tak, že se zařízení několikrát fyzicky připojí a odpojí a přitom se jeho číslo objeví v seznamu a zase zmizí.
 
@@ -20,7 +20,7 @@ Po potvrzení nastavení je možné se zařízením začít komunikovat.
 
 # 
 
-MAC
+## MAC
 
 Nové zařízení se v případě macOS přihlašuje přes porty s názvem "usbmodem" pro USB nebo "usbserial" pro sériovou linku. Pro snadné připojení je nejdříve vhodné nainstalovat utilitu // utilita coolterm. V odkazovaném ZIP souboru je jak samotný program DMG a konfigurační soubor \*\*Yoda.stc\*\*.
 
@@ -36,7 +36,7 @@ Nyní by se měl vypisovat log do okna aplikace.
 
 V případě přepnutí na Bootloader v zařízení Yoda není nutné měnit port.
 
-# Linux
+## Linux
 
 Připojením zařízení k PC je v adresáři ''/dev/'' vytvořen soubor ''ttyUSBx'' nebo ''ttyACMx'', kde ''x'' je číslo. Výpis zařízení je tedy možné zobrazit pomocí správce souborů nebo příkazu ''ls /dev/tty\*''.
 
