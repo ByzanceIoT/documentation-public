@@ -25,6 +25,7 @@
   * [Kde začít](byzance_documentation/hardware_intro/obecne/kde-zacit.md)
   * [Struktura programu](byzance_documentation/hardware_intro/obecne/struktura-programu.md)
   * [Flash paměť](byzance_documentation/hardware_intro/obecne/flash-pamet.md)
+    * [Žurnál](byzance_documentation/hardware_intro/obecne/flash-pamet/zurnal.md)
   * [6LOWPAN](byzance_documentation/hardware_intro/obecne/6lowpan.md)
 * [API](byzance_documentation/hardware_intro/api.md)
   * [MBED API](byzance_documentation/hardware_intro/API/mbed-api.md)
