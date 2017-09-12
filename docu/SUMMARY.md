@@ -24,7 +24,7 @@
 * [Obecné](byzance_documentation/hardware_intro/obecne.md)
   * [Kde začít](byzance_documentation/hardware_intro/obecne/kde-zacit.md)
   * [O MBED](byzance_documentation/hardware_intro/obecne/o-mbed.md)
-  * [Struktura programu](byzance_documentation/hardware_intro/navody/struktura-programu.md)
+  * [Struktura programu](byzance_documentation/hardware_intro/obecne/struktura-programu.md)
 * [API](byzance_documentation/hardware_intro/api.md)
   * [Byzance IO](byzance_documentation/hardware_intro/API/byzance-io.md)
   * [Byzance API](byzance_documentation/hardware_intro/API/byzance-api.md)
