@@ -1,6 +1,6 @@
 # Command režim
 
-## Příkazy bez parametruit
+## Příkazy bez parametru
 
 * _''ping''_ - ping; pro testovací účely
 * ''_help_'' - vypíše nápovědu do konzole
@@ -50,6 +50,7 @@
 * ''_configured_'' - při prvním spuštění bootloader naběhne vždy do Command režimu a čeká na konfiguraci všech parametrů. Až jsou parametry nastaveny, ''configured'' se přepne na 1 a tím se dá Yodovi najevo, že bude už nabíhat do normálního programu.
 
 * ''_timestamp_'' - časové razítko pro obvod reálného času \(RTC\). Lze vyčíst funkcemi pro \[\[tutorial:timestamp\|práci s časem\]\].
+
 * ''_backuptime_'' - Nastavení času, po kterém se spustí \[\[feature:autobackup\|automatická záloha firmware\]\]. 
 * ''_webview_'' - Zapnutí nebo vypnutí \[\[tutorial:webview\|webového rozhraní\]\]
 * ''_webport_'' - Port, na které poběží \[\[tutorial:webview\|webové rozhraní\]\]
