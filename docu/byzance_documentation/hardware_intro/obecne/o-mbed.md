@@ -20,9 +20,8 @@ printf(”ain value = %3.3f%%\n”, ain.read());
 Set the voltage of an analog output pin in the range of VSS to VCC.
 
 ```cpp
-AnalogOut aout\(pin\_name\);
-
-aout.write\(some\_float\);
+AnalogOut aout(pin_name);
+aout.write(some_float);
 ```
 
 ## DigitalIn
@@ -30,9 +29,8 @@ aout.write\(some\_float\);
 Read the value of an digital input pin
 
 ```cpp
-DigitalIn din\(pin\_name\);
-
-printf\("pin has value : %d \n", din.read\(\)\);
+DigitalIn din(pin_name);
+printf("pin has value : %d \n", din.read());
 ```
 
 ## DigitalOut
@@ -40,8 +38,7 @@ printf\("pin has value : %d \n", din.read\(\)\);
 Configure and control a digital output pin
 
 ```cpp
-DigitalOut dout\(pin\_name\);
-
+DigitalOut dout(pin_name);
 dout=1;
 ```
 
