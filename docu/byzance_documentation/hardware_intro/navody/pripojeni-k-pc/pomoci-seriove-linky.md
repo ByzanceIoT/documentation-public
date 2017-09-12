@@ -1,7 +1,5 @@
 # Připojení k PC pomocí sériové linky
 
-
-
 # Ukázkový kód
 
 Jednoduchý kód pro výpis ''hello word'' přes sériovou linku.
@@ -17,19 +15,6 @@ void init(){
 
 void loop(){
    pc.printf("hello world\n");
-   Thread::wait(500);
-}
-```
-
-Kód pro výpis ''hello world'' pomocí USB
-
-```cpp
-#include "byzance.h"
-
-USBSerial usb;
-
-void loop(){
-   usb.printf("hello world\n");
    Thread::wait(500);
 }
 ```
