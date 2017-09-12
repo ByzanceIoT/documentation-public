@@ -1,19 +1,20 @@
 # Práce s datem a časem \(RTC\)
 
-Každé Byzance zařízení je vybaveno obvodem pro udržování reálného času \(RTC\). Jeho obsluha je poměrně triviální a dodržuje \[\[[http://www.cplusplus.com/reference/ctime/time/\|standardy](http://www.cplusplus.com/reference/ctime/time/|standardy) C++\]\].
+Každé Byzance zařízení je vybaveno obvodem pro udržování reálného času \(RTC\). Jeho obsluha je poměrně triviální a dodržuje [standardy C++](http://www.cplusplus.com/reference/ctime/time/).
 
-Čas je synchronizován Yodovi automaticky při připojení k Homerovi FIXME HOMER-111 ticket.
+Čas je synchronizován automaticky při připojení k Homerovi. Toto je možné vypnout v [bootloaderu](/byzance_documentation/hardware_intro/features/bootloader.md).
 
-Základní jednotkou je Unixové časové razítko, které reprezentuje počet sekund, které uplynuly od 1.1. 1970. K převodu jednotek je možné využít například jeden z mnoha \[\[[http://www.onlineconversion.com/unix\_time.htm\|online](http://www.onlineconversion.com/unix_time.htm|online) nástrojů\]\].
-
-Jednoduchý kód, jak získat časové razítko může vypadat například takto
+Základní jednotkou je Unixové časové razítko, které reprezentuje počet sekund, které uplynuly od 1.1. 1970. K převodu jednotek je možné využít například jeden z mnoha [online nástrojů](http://www.onlineconversion.com/unix_time.htm).
 
 ## Ukázka pro práci s Unix timestamp
 
 ```cpp
 #include "byzance.h"
 
+// serial line init
 Serial pc(SERIAL_TX, SERIAL_RX);
+
+// time object
 time_t timestamp;
 
 void init(){
@@ -21,17 +22,17 @@ void init(){
     pc.baud(115200\);
     pc.printf("RTC test\n");
 
-    // nastaveni Unix timestamp    
+    // unix timestamp setter
     timestamp = 1234567890;    
     set_time(timestamp);    
-    pc.printf("Cas nastaven\n");
+    pc.printf("Time set\n");
 }
 
 void loop(){
 
-    // vycteni Unix timestamp    
+    // unix timestamp getter
     time(&timestamp);    
-    pc.printf("Cas je: %u\n",(unsigned int) timestamp);    
+    pc.printf("Timestamp is %u\n",(unsigned int) timestamp);    
     Thread::wait(1000);
 }
 ```
