@@ -61,6 +61,10 @@
   * [Události](byzance_documentation/hardware_intro/features/udalosti.md)
   * [Vytížení mikrokontroléru](byzance_documentation/hardware_intro/features/vytizeni-mikrokontroleru.md)
   * [Watchdog](byzance_documentation/hardware_intro/features/watchdog.md)
+* [Hardware](byzance_documentation/hardware_intro/hardware.md)
+  * [IODAG3E](byzance_documentation/hardware_intro/hardware/iodag3e.md)
+    * Přehled
+    * Pinout
 
 ## Obecné
 
