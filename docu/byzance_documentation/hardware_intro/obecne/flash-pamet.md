@@ -1,6 +1,6 @@
 # Flash paměť
 
-Interní i externí paměť Byzance desek jsou typu \[\[[https://cs.wikipedia.org/wiki/Flash\_paměť\|FLASH\]\](https://cs.wikipedia.org/wiki/Flash_paměť|FLASH]\)\]. Neinicializovaná hodnota 32 bitových paměťových buněk je 0xFFFFFFFF \(samé logické 1\), přičemž zápisem lze logická 1 pouze vypnout na logickou 0. Pokud je třeba zapsat znovu do některé paměťové buňky logickou 1, je třeba dodržet přibližně následující postup
+Interní i externí paměť Byzance desek jsou typu [FLASH](https://cs.wikipedia.org/wiki/Flash_paměť), přičemž zápisem lze logická 1 pouze vypnout na logickou 0. Pokud je třeba zapsat znovu do některé paměťové buňky logickou 1, používá se mazání celých stránek a je třeba dodržet přibližně následující postup
 
 * Načtení aktuální stránky z FLASH do RAM
 * Změna konkrétní informace v RAM
@@ -10,7 +10,7 @@ Interní i externí paměť Byzance desek jsou typu \[\[[https://cs.wikipedia.or
 Tento postup nese několik nevýhod
 
 * Drobné změny trvají velmi dluho \(velký overhead\), protože kvůli každému byte je třeba pracovat s celou stránkou několika kB.
-* Pokud dojde chybě mikrokontroléru mezi kroky "smazání FLASH" a "zápisem nové stránky", datová informace je nenávratně ztracena. Mezi takové chyby může patřit například zásek software, nebo výpadek napětí. Ztrátě dat je možné předejít \[\[memory:journal\|využitím žurnálu\]\].
+* Pokud dojde chybě mikrokontroléru mezi kroky "smazání FLASH" a "zápisem nové stránky", datová informace je nenávratně ztracena. Mezi takové chyby může patřit například zásek software, nebo výpadek napětí. Ztrátě dat je možné předejít [využitím žurnálu](/byzance_documentation/hardware_intro/obecne/flash-pamet/zurnal.md).
 
 Existují ale i výhody použití FLASH paměti
 
