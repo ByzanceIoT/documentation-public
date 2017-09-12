@@ -1,0 +1,4 @@
+# Rozložení a využití paměti
+
+
+
