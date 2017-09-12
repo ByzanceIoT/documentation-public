@@ -32,7 +32,11 @@ C překladač využívá několik oblastí pro práci s pamětí:
 * stack + heap - zbylé volné místo v RAM, přičemž oblast pro heap je zaplňována od nejnižší adresy výše a stack od nejvyyší adresy níže
 * .text - FLASH, oblast pouze pro čtení
 
-Proměnné dle typu jsou přiřazeny do jednotlivých oblastí dle následující tabulky:
+Proměnné dle typu jsou přiřazeny do jednotlivých oblastí dle následující tabulky
+
+|  | globální |
+| :--- | :--- |
+|  |  |
 
 \|                   ^ globální    ^ lokální    ^ statická            ^ konstantní \|
 
