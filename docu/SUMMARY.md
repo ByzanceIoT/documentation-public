@@ -28,6 +28,9 @@
   * [6LOWPAN](byzance_documentation/hardware_intro/obecne/6lowpan.md)
 * [API](byzance_documentation/hardware_intro/api.md)
   * [MBED API](byzance_documentation/hardware_intro/API/mbed-api.md)
+    * [Vstupy a výstupy](byzance_documentation/hardware_intro/API/mbed-api/vstupnevystupni-api.md)
+    * [Komunikační rozhraní](byzance_documentation/hardware_intro/API/mbed-api/api-komunikacnich-rozhrani.md)
+    * Správa úloh
   * [Byzance API](byzance_documentation/hardware_intro/API/byzance-api.md)
   * [Byzance IO](byzance_documentation/hardware_intro/API/byzance-io.md)
   * [Makra](byzance_documentation/hardware_intro/API/makra.md)
@@ -52,12 +55,11 @@
   * [Čas běhu zařízení](byzance_documentation/hardware_intro/features/cas-behu-zarizeni.md)
   * [Detekce spuštění firmware](byzance_documentation/hardware_intro/features/detekce-spusteni-firmware.md)
   * [Odložení restartu](byzance_documentation/hardware_intro/features/odlozeni-restartu.md)
-  * [Restart do bootloaderu](byzance_documentation/hardware_intro/features/restart-do-bootloaderu.md)  
+  * [Restart do bootloaderu](byzance_documentation/hardware_intro/features/restart-do-bootloaderu.md)
   * [Revize](byzance_documentation/hardware_intro/features/revize.md)
   * [Události](byzance_documentation/hardware_intro/features/udalosti.md)
   * [Vytížení mikrokontroléru](byzance_documentation/hardware_intro/features/vytizeni-mikrokontroleru.md)
   * [Watchdog](byzance_documentation/hardware_intro/features/watchdog.md)
-
 
 ## Obecné
 
