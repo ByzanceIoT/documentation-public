@@ -14,8 +14,6 @@ Veřejné Byzance funkce pomáhají běžnému uživateli zjišťovat stavy zař
 static Byzance_Err_TypeDef init();
 ```
 
-
-
 ```cpp
 /** Deinitialize Byzance library
 *
@@ -26,8 +24,6 @@ static Byzance_Err_TypeDef init();
 */
 static Byzance_Err_TypeDef deinit();
 ```
-
-
 
 ```cpp
 /** Connect to Homer
@@ -41,8 +37,6 @@ static Byzance_Err_TypeDef deinit();
 static Byzance_Err_TypeDef connect();
 ```
 
-
-
 ```cpp
 /** Disconnect from Byzance servers
 *
@@ -54,8 +48,6 @@ static Byzance_Err_TypeDef connect();
 static Byzance_Err_TypeDef disconnect();
 ```
 
-
-
 ```cpp
 /** Get alias
 *
@@ -65,8 +57,6 @@ static Byzance_Err_TypeDef disconnect();
 */
 static const char* get_alias();
 ```
-
-
 
 ```cpp
 /** Get IP address
@@ -78,8 +68,6 @@ static const char* get_alias();
 static const char* get_ip_address();
 ```
 
-
-
 ```cpp
 /** Get MAC address
 *
@@ -89,8 +77,6 @@ static const char* get_ip_address();
 */
 static const char* get_mac_address();
 ```
-
-
 
 ```cpp
 /** Is firmware trusted?
@@ -105,8 +91,6 @@ static const char* get_mac_address();
 static bool get_trusted();
 ```
 
-
-
 ```cpp
 /** Postpone restart if it is pending
 *
@@ -120,8 +104,6 @@ static bool get_trusted();
 static void restart_postpone(time_t sec);
 ```
 
-
-
 ```cpp
 /** Restart is pending?
 *
@@ -132,8 +114,6 @@ static void restart_postpone(time_t sec);
 */
 static time_t restart_pending();
 ```
-
-
 
 ```cpp
 /** Start or stop LED module
@@ -146,8 +126,6 @@ static time_t restart_pending();
 static void led_module(bool state);
 ```
 
-
-
 ```cpp
 /** Set some value to digital output
 *
@@ -158,8 +136,6 @@ static void led_module(bool state);
 */
 static void digital_output_set_value(const char *name, bool value);
 ```
-
-
 
 ```cpp
 /** Set some value to analog output
@@ -172,8 +148,6 @@ static void digital_output_set_value(const char *name, bool value);
 static void analog_output_set_value(const char *name, float value);
 ```
 
-
-
 ```cpp
 /** Set some value to message output
 *
@@ -185,8 +159,6 @@ static void analog_output_set_value(const char *name, float value);
 static void message_output_set_value(const char *name, ByzanceSerializer* serializer);
 ```
 
-
-
 ```cpp
 /** Change in link layer
 *
@@ -197,8 +169,6 @@ static void message_output_set_value(const char *name, ByzanceSerializer* serial
 */
 static void attach_link_connection_changed(void (*function)(bool));
 ```
-
-
 
 ```cpp
 /** Change in link layer
@@ -214,8 +184,6 @@ void attach_link_connection_changed(T *object, void (T::*member)(bool)) {
 }
 ```
 
-
-
 ```cpp
 /** Change in communication client (MQTT)
 *
@@ -228,8 +196,6 @@ void attach_link_connection_changed(T *object, void (T::*member)(bool)) {
 */
 static void attach_client_connection_changed(void (*function)(bool));
 ```
-
-
 
 ```cpp
 /** Change in communication client (MQTT)
@@ -247,8 +213,6 @@ static void attach_client_connection_changed(T *object, void (T::*member)(bool))
 }
 ```
 
-
-
 ```cpp
 /** Byzance state changed
 *
@@ -259,8 +223,6 @@ static void attach_client_connection_changed(T *object, void (T::*member)(bool))
 */
 static void attach_byzance_state_changed(void (*function)(State_t));
 ```
-
-
 
 ```cpp
 /** Byzance state changed
@@ -276,8 +238,6 @@ static void attach_byzance_state_changed(T *object, void (T::*member)(State_t)) 
 }
 ```
 
-
-
 ```cpp
 /** Restart will follow callback
 *
@@ -288,8 +248,6 @@ static void attach_byzance_state_changed(T *object, void (T::*member)(State_t)) 
 */
 static void attach_restart_follows(void (*function)(void));
 ```
-
-
 
 ```cpp
 /** Restart will follow callback
