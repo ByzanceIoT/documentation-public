@@ -47,15 +47,19 @@ dout=1;
 Bidirectional digital pin, combination of DigitalIn and DigitalOut
 
 ```cpp
-DigitalInOut diout\(pin\_name\);
+DigitalInOut diout(pin_name);
 
-diout.output\(\);
+// configure as output
+diout.output();
 
+// set HIGH
 diout = 1;
 
-diout.input\(\);
+// configure as input
+diout.input();
 
-pc.printf\("diout value = %d \n", diout.read\(\)\);
+// read value of pin
+pc.printf("diout value = %d \n", diout.read());
 ```
 
 ## BusIn
