@@ -28,6 +28,7 @@
   * [MBED API](byzance_documentation/hardware_intro/obecne/o-mbed.md)
   * [Byzance API](byzance_documentation/hardware_intro/API/byzance-api.md)
   * [Byzance IO](byzance_documentation/hardware_intro/API/byzance-io.md)
+  * [Makra](byzance_documentation/hardware_intro/obecne/makra.md)
 * [Bootloader](byzance_documentation/hardware_intro/bootloader.md)
   * [Command režim](byzance_documentation/hardware_intro/bootloader/command-rezim.md)
   * [Defaultní hodnoty](byzance_documentation/hardware_intro/bootloader/defaultni-hodnoty.md)
