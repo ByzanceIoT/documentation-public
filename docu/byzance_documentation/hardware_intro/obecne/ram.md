@@ -25,43 +25,26 @@ Z hlediska toho, zda jsou proměnné inicializované:
 * inicializované
 * neinicializované
 
-C překladač využívá několik oblastí pro práci s pamětí:
+C překladač využívá několik oblastí pro práci s pamětí:
 
-  \* .bss - RAM; má pevnou velikost, oblast je nulována
+* .bss - RAM; má pevnou velikost, oblast je nulována
+* .data - RAM; má pevnou velikost, oblast je inicializována kopírováním z paměti FLASH
+* stack + heap - zbylé volné místo v RAM, přičemž oblast pro heap je zaplňována od nejnižší adresy výše a stack od nejvyyší adresy níže
+* .text - FLASH, oblast pouze pro čtení
 
-  \* .data - RAM; má pevnou velikost, oblast je inicializována kopírováním z paměti FLASH
+Proměnné dle typu jsou přiřazeny do jednotlivých oblastí dle následující tabulky:
 
-  \* stack + heap - zbylé volné místo v RAM, přičemž oblast pro heap je zaplňována od nejnižší adresy výše a stack od nejvyyší adresy níže
+\|                   ^ globální    ^ lokální    ^ statická            ^ konstantní \|
 
-  \* .text - FLASH, oblast pouze pro čtení
+^ inicializovaná    \| .data + flash    \| stack      \|  .data + flash    \| flash \|
 
-Proměnné dle typu jsou přiřazeny do jednotlivých oblastí dle následující tabulky:
-
-
-
-\|               	^ globální	^ lokální	^ statická	        ^ konstantní \|
-
-^ inicializovaná	\| .data + flash	\| stack  	\|  .data + flash	\| flash \|
-
-^ neinicializovaná	\| .bss  	\| stack 	\| .bss          	\| flash \| 
-
-
-
-
+^ neinicializovaná    \| .bss      \| stack     \| .bss              \| flash \|
 
 Do oblasti .bss tedy míří statické a globální neinicializované proměnné. Tyto proměnné musí být přístupné po celý běh programu a je znám jejich počet a datové typy a tedy i celková velikost. Vzhledem k faktu, že proměnné nejsou inicializované, není třeba nikde ukládat jejich inicializační hodnotu ve nevoalitní paměti \(FLASH\). Z hlediska využití paměti není prakticky rozdíl mezi globální a statickou proměnnou, přestože statická proměnná je platná pouze v použitém souboru.
 
-
-
 Oblast .data je podobná oblasti .bss, s tím rozdílem, že jsou zde uloženy inicializované globální a statické proměnné. Bezprostředně po spuštění programu je tato oblast zaplněna svým inicializačním klonem z nevoalitní paměti \(FLASH\).
-
-
 
 Oblast stack a heap vyplňuje zbytek paměti RAM. Stack je využíván pro lokální proměnné v jednotlivých složených příkazech - inicializací proměnných je stack postupně zvětšován, koncem složeného příkazu jsou jednotlivé funkce opět dealokovány ze stacku =&gt; dealokace probíhá ve opačném pořadí jako alokace, nezpůsobuje tedy fragmentaci paměti. Oblast heap je určena pro dynamickou alokaci \(například pomocí ''malloc\(\)''\), její alokace i dealokace je plně v režii programátora a nevhodnou skladbou alokací/dealokací může způsobit rozsáhlou fragmentaci paměti.
 
-
-
 Oblast .text je určená pro read-only \(nebo alespoň read-mostly\) operace. Čtení z této paměti může být pomalejší.
-
-
 
