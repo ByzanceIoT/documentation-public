@@ -2,7 +2,7 @@
 
 Blocko je online vizuální programovací nástroj, díky němuž je možné propojit s hardwarem a ovládat jednotlivé vstupy a výstupy. Sdružuje hardware, vstupy a výstupy z mobilní aplikace a logické bloky.
 
-// obrázek
+![](/assets/blocko.png)
 
 Pro propojení hardware s blockem je nutné v hardware do kódu přidat speciálně definované vstupy, výstupy a případně zprávy. Ty je možné psát kdekoliv do souboru main.cpp.
 
