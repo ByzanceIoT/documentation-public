@@ -35,6 +35,7 @@
   * [Webové rozhraní](byzance_documentation/hardware_intro/navody/webove-rozhrani.md)
   * [Připojení pomocí USB](byzance_documentation/hardware_intro/navody/pripojeni-pomoci-usb.md)
   * [Připojení pomocí sériové linky](byzance_documentation/hardware_intro/navody/pripojeni-pomoci-seriove-linky.md)
+  * [Programování ve vlastním IDE](byzance_documentation/hardware_intro/navody/programovani-ve-vlastnim-ide.md)
 * [Features](byzance_documentation/hardware_intro/features.md)
   * [Autobackup](byzance_documentation/hardware_intro/features/autobackup.md)
   * [Watchdog](byzance_documentation/hardware_intro/features/watchdog.md)
