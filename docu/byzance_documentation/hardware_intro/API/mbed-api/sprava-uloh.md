@@ -30,7 +30,7 @@ Timer timer;
 
 ## Wait
 
-Simple wait capabilities¨
+Simple wait capabilities
 
 ```cpp
 Example
