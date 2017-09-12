@@ -63,7 +63,7 @@
   * [Watchdog](byzance_documentation/hardware_intro/features/watchdog.md)
 * [Hardware](byzance_documentation/hardware_intro/hardware.md)
   * [IODAG3E](byzance_documentation/hardware_intro/hardware/iodag3e.md)
-    * Přehled
+    * [Přehled](byzance_documentation/hardware_intro/hardware/iodag3e/prehled.md)
     * [Pinout](byzance_documentation/hardware_intro/hardware/iodag3e/pinout.md)
     * [Revize](byzance_documentation/hardware_intro/hardware/iodag3e/revize.md)
 

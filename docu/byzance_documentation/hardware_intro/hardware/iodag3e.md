@@ -12,8 +12,7 @@ Technická specifikace
 
 ### Ethernet
 
-* Budič LAN8720
-   \([Datasheet](http://ww1.microchip.com/downloads/en/DeviceDoc/8720a.pdf)\)
+* Budič LAN8720 \([Datasheet](http://ww1.microchip.com/downloads/en/DeviceDoc/8720a.pdf)\)
 * Podpora PoE 
 * Rychlost do 100Mbit
 
@@ -24,6 +23,7 @@ viz \[\[lowpan:teoreticke\_informace\_lowpan\|Základní teoretické informace o
 * 868 MHz
 
 * přenosová rychlost až 10 kBps
+
 * možnost režimu border router \(sdílení Internetového připojení pro LowPAN síť - NAT64, DNS64\) viz. \[\[feature:lowpanbr\|Lowpan BR\]\]
 * možnost připojení k Internetu prostřednictvím LowPAN sítě viz. \[\[feature:lowpan\|6Lowpan\]\]
 
@@ -165,7 +165,7 @@ spojení k serverům a údržbu desky zajišťují \[\[tutorial:public\_function
 ```
 \* budovat větší sítě s prvky ne přímo připojenými do internetu
 
-\* MESH sítí s jejími benefity \(rozšíření dosahu bezdrátovo signálu, přizpusobení přenosové cesty za běhu, větší odolnost proti výpadkům\) 
+\* MESH sítí s jejími benefity \(rozšíření dosahu bezdrátovo signálu, přizpusobení přenosové cesty za běhu, větší odolnost proti výpadkům\)
 ```
 
 \* dohled nad během firmware přes interní watchdog
