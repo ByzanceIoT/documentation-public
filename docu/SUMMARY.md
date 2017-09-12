@@ -64,7 +64,8 @@
 * [Hardware](byzance_documentation/hardware_intro/hardware.md)
   * [IODAG3E](byzance_documentation/hardware_intro/hardware/iodag3e.md)
     * Přehled
-    * Pinout
+    * [Pinout](byzance_documentation/hardware_intro/hardware/iodag3e/pinout.md)
+    * [Revize](byzance_documentation/hardware_intro/hardware/iodag3e/revize.md)
 
 ## Obecné
 
