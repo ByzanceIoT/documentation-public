@@ -12,7 +12,7 @@ Omezení
 
 Je možné jej zjistit při startu zařízení vyčtením při startu [bootloaderu](/byzance_documentation/hardware_intro/features/bootloader.md).
 
-![](/docu/byzance_documentation/hardware_intro/navody/pripojeni-k-pc/com_port.png)
+![](/docu/byzance_documentation/hardware_intro/features/alias_bootloader.png)
 
 Je možné jej zjistit či nastavit v [command režimu bootloaderu](/byzance_documentation/hardware_intro/features/bootloader/command-rezim.md). V případě nastavení z bootloaderu není garantována funkčnost, protože zařízení při startu zařízení žádá o nastavení Aliasu a v případě, že je název s Tyrionem kolizní, za správnou variantu je považovana varianta Tyrionu.
 
