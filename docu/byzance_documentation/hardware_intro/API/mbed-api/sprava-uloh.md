@@ -10,7 +10,7 @@ Ticker ticker;
 
 ## Time
 
-Date and time manipulation functions.  Support for time acquisition, conversion between date formats and formatted output to strings.
+Date and time manipulation functions.  Support for time acquisition, conversion between date formats and formatted output to strings. Více informací je popsáno ve zvláštním článku [Práce s datem a časem \(RTC\).](/byzance_documentation/hardware_intro/navody/prace-s-datem-a-casem-rtc.md)
 
 ## Timeout
 
