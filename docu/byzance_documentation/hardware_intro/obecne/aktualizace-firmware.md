@@ -6,8 +6,6 @@ Aby bylo možné aktualizovat firmware v zařízení, existuje několik způsob�
 
 Všechna zařízení jsou vybavena mechanismem pro aktualizaci firmware na dálku, vše za běhu firmware. Této vlastnosti se říká OTA update \(Over The Air\). Zařízení musí být spojeno s Byzance servery.
 
-
-
 // postup, jak aktualizace probíhá
 
 ## Offline editace ve vlastním IDE
