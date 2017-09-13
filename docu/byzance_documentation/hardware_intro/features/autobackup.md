@@ -30,6 +30,10 @@ Pokud je autobackup **zapnutý**, firmware začne brát v potaz proměnnou backu
 
 Nastavená minimální hodnota by měla být alespoň 60 sekund, aby bylo při zálohování aktuálně probíhajícího firmware ověřeno, že firmware dokáže bez pádu daný čas běžet, tudíž je velká pravděpodobnost, že se dokáže během daného času i updatovat. Optimální hodhota je 5 minut a víc.
 
+## Proměnna Trusted
+
+dopsat
+
 ## Nastavování a zjišťování hodnot
 
 Pokud je nutné režim autobackup změnit, existuje několik možností, jak toho docílit.

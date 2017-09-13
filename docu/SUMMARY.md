@@ -64,6 +64,7 @@
   * [Vytížení mikrokontroléru](byzance_documentation/hardware_intro/features/vytizeni-mikrokontroleru.md)
   * [Watchdog](byzance_documentation/hardware_intro/features/watchdog.md)
   * [Zdroj internetu](byzance_documentation/hardware_intro/features/zdroj-internetu.md)
+  * [Flag Trusted](byzance_documentation/hardware_intro/features/flag-trusted.md)
 * [Hardware](byzance_documentation/hardware_intro/hardware.md)
   * [IODAG3E](byzance_documentation/hardware_intro/hardware/iodag3e.md)
     * [Schémata](byzance_documentation/hardware_intro/hardware/iodag3e/schemata.md)
