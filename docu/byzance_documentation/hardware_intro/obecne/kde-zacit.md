@@ -4,11 +4,11 @@ Dostane se ti do ruky nějaké zařízení Byzance.
 
 \* Jaké zařízení mám v ruce? Identifikace konkrétního targetu.
 
-\* Zajištění napájení pro mé zařízení? Dozvíš se v příslušné sekci stránky zařízení, které jsi identifikoval v předchozím bodě \(např. \[\[specs:yodag3e\#napajeni\|zde\]\]\).
+\* Připojení zařízení k napájení
 
 \* \[\[[https://portal.stage.byzance.cz/\|Zaregistrovat](https://portal.stage.byzance.cz/|Zaregistrovat) se na servery Byzance\]\] FIXME odkaz směřuje na stage, což nebude finální URL.
 
-\* Nastavení, netsource jakým způsobem se bude zařízení připojovat k internetu\]\].
+\* Nastavení, [jakým způsobem se bude zařízení připojovat k internetu](/byzance_documentation/hardware_intro/features/zdroj-internetu.md)
 
 \* [Připojení zařízení k počítači](/byzance_documentation/hardware_intro/navody/pripojeni-k-pc.md) [pomocí sériové](/byzance_documentation/hardware_intro/navody/pripojeni-k-pc/pomoci-seriove-linky.md) linky nebo [USB](/byzance_documentation/hardware_intro/navody/pripojeni-k-pc/pomoci-usb.md).
 
