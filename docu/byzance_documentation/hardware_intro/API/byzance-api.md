@@ -52,7 +52,7 @@ static Byzance_Err_TypeDef connect();
 static Byzance_Err_TypeDef disconnect();
 ```
 
-Zjištění Aliasu zařízení
+Zjištění [Aliasu zařízení](/byzance_documentation/hardware_intro/features/alias.md).
 
 ```cpp
 /** Get alias
@@ -129,7 +129,7 @@ Zjištění, jestli bude následovat restart
 static time_t restart_pending();
 ```
 
-Převzetí kontroly nad LED modulem
+Převzetí kontroly nad [LED modulem](/byzance_documentation/hardware_intro/features/led-modul.md).
 
 ```cpp
 /** Start or stop LED module
@@ -142,7 +142,7 @@ Převzetí kontroly nad LED modulem
 static void led_module(bool state);
 ```
 
-Digitální výstup z Byzance IO
+Digitální výstup z [Byzance IO](/byzance_documentation/hardware_intro/API/byzance-io.md)
 
 ```cpp
 /** Set some value to digital output
@@ -155,7 +155,7 @@ Digitální výstup z Byzance IO
 static void digital_output_set_value(const char *name, bool value);
 ```
 
-Analogový výstup z Byzance IO
+Analogový výstup z [Byzance IO](/byzance_documentation/hardware_intro/API/byzance-io.md)
 
 ```cpp
 /** Set some value to analog output
@@ -168,7 +168,7 @@ Analogový výstup z Byzance IO
 static void analog_output_set_value(const char *name, float value);
 ```
 
-Message výstup z Byzance IO
+Message výstup z [Byzance IO](/byzance_documentation/hardware_intro/API/byzance-io.md)
 
 ```cpp
 /** Set some value to message output
@@ -264,7 +264,7 @@ static void attach_byzance_state_changed(T *object, void (T::*member)(State_t)) 
 }
 ```
 
-Callback o požadavku na softwarový restart
+Callback o požadavku na [softwarový restart](/byzance_documentation/hardware_intro/features/odlozeni-restartu.md)
 
 ```cpp
 /** Restart will follow callback
@@ -277,7 +277,7 @@ Callback o požadavku na softwarový restart
 static void attach_restart_follows(void (*function)(void));
 ```
 
-Callback o požadavku na softwarový restart
+Callback o požadavku na [softwarový restart](/byzance_documentation/hardware_intro/features/odlozeni-restartu.md)
 
 ```cpp
 /** Restart will follow callback
