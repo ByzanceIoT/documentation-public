@@ -73,6 +73,7 @@
     * [Pinout](byzance_documentation/hardware_intro/hardware/iodag3e/pinout.md)
     * [Rozložení a využití paměti](byzance_documentation/hardware_intro/hardware/iodag3e/rozlozeni-a-vyuziti-pameti.md)
     * [Revize](byzance_documentation/hardware_intro/hardware/iodag3e/revize.md)
+  * [DK3G](byzance_documentation/hardware_intro/hardware/dk3g.md)
 
 ## Obecné
 
