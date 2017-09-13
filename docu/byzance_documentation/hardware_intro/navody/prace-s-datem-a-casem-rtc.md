@@ -39,9 +39,9 @@ void loop(){
 
 # Vlastní časové pásmo a parsování timestamp do struktury
 
-Časové razítko je v zařízení automaticky nastaveno nastaveno na UTC pásmo. Pro vlastní offset od UTC je třeba příslušnou položku změnit v \[\[bootloader:commands\|command režimu bootloaderu\]\]. Nastavený offset se za běhu normálního programu získat pomocí veřejné funkce ''Byzance::get\_timeoffset\(\)''.
+Časové razítko je v zařízení automaticky nastaveno nastaveno na UTC pásmo. Pro vlastní offset od UTC je třeba příslušnou položku změnit v [command režimu bootloaderu](/byzance_documentation/hardware_intro/features/bootloader/command-rezim.md). Nastavený offset se za běhu normálního programu získat pomocí veřejné funkce ''Byzance::get\_timeoffset\(\)''.
 
-S tím souvisí i parsování podle regionálního nastavení. K unixovému časovému razítku se přičte lokální offset a výslednou položku je možné konvertovat do časové struktury funkcí \[\[[http://www.cplusplus.com/reference/ctime/gmtime/\|gmtime\(\)\]\](http://www.cplusplus.com/reference/ctime/gmtime/|gmtime%28%29]\)\].
+S tím souvisí i parsování podle regionálního nastavení. K unixovému časovému razítku se přičte lokální offset a výslednou položku je možné konvertovat do časové struktury funkcí [gmtime\(\)](http://www.cplusplus.com/reference/ctime/gmtime/).
 
 ```cpp
 #include "byzance.h"
