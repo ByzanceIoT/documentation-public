@@ -7,7 +7,8 @@ Pro programování ve vlastním IDE je třeba zajistit následující
 * Stažení GITu Byzance FIXME zatím nepodporujeme
 * Vytvoření projektu
 * Nastavení kompilace
-* # Vytvoření nového projektu
+
+# Vytvoření nového projektu
 
 Pro prostředí Eclipse či jeho deriváty typu SW4STM32 je postup následující. Ve složce se staženými knihovnami z GITu FIXME zatím nic takového neumožňume pro cizí lidi se vytvoří nová podsložka s vlastním názvem dle projektu a v ní se udělá soubor main.cpp. V IDE je nutno kliknout na ''File-&gt;New-&gt;Makefile Project with Existing Code'', viz screenshot níže.
 
