@@ -18,7 +18,13 @@ Dále je třeba vyplnit název projektu, který by se měl shodovat s názvem sl
 
 // obrázek
 
-V nastavení projektu je třeba nastavit vlastní build command, který se skládá z následujících částí
+V nastavení projektu je třeba nastavit vlastní build command, který může vypadat následovně
+
+```
+node ...
+```
+
+který se skládá z následujících částí
 
 * node - příkaz pro interpreter Javascriptu \[\[[https://nodejs.org/en/\|Node.JS\]\](https://nodejs.org/en/|Node.JS]\)\]
 * ../\_makescript\_.js -&gt; cesta k build scriptu
