@@ -12,7 +12,7 @@ Omezení
 
 Je možné jej zjistit při startu zařízení vyčtením při startu [bootloaderu](/byzance_documentation/hardware_intro/features/bootloader.md).
 
-![](/assets/bootloader_alias.png)
+![](/docu/byzance_documentation/hardware_intro/features/alias_bootloader.png)
 
 Je možné jej zjistit či nastavit v [command režimu bootloaderu](/byzance_documentation/hardware_intro/features/bootloader/command-rezim.md). V případě nastavení z bootloaderu není garantována funkčnost, protože zařízení při startu zařízení žádá o nastavení Aliasu a v případě, že je název s Tyrionem kolizní, za správnou variantu je považovana varianta Tyrionu.
 
@@ -37,5 +37,5 @@ void loop(){
 
 Jediná správná možnost editace aliasu je pomocí Byzance Code \(Becki\). V sekci hardware uživatele je možné Alias jak zjistit, tak změnit.
 
-![](/assets/alias_edit.png)
+![](/docu/byzance_documentation/hardware_intro/features/alias_edit.png)
 
