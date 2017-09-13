@@ -24,6 +24,7 @@
 * [Obecné](byzance_documentation/hardware_intro/obecne.md)
   * [Kde začít](byzance_documentation/hardware_intro/obecne/kde-zacit.md)
   * [Struktura programu](byzance_documentation/hardware_intro/obecne/struktura-programu.md)
+  * [Aktualizace firmware](byzance_documentation/hardware_intro/obecne/aktualizace-firmware.md)
   * [RAM](byzance_documentation/hardware_intro/obecne/ram.md)
   * [Flash paměť](byzance_documentation/hardware_intro/obecne/flash-pamet.md)
     * [Žurnál](byzance_documentation/hardware_intro/obecne/flash-pamet/zurnal.md)
