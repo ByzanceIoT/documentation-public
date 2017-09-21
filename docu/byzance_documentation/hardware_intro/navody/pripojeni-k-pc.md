@@ -17,11 +17,11 @@ Zvolený COM port je třeba v nastavení terminálu společně s ukončovánímk
 
 
 
-![](/assets/termite.png)
+![](/images/termite.png)
 
 Po potvrzení nastavení je možné se zařízením začít komunikovat.
 
-![](/assets/hello_world.png)
+![](/images/hello_world.png)
 
 ## MAC
 
