@@ -17,7 +17,7 @@ Zvolený COM port je třeba v nastavení terminálu společně s ukončovánímk
 
 
 
-![](/images/termite.png)
+![](../assets/termite.png)
 
 Po potvrzení nastavení je možné se zařízením začít komunikovat.
 
