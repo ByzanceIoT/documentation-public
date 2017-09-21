@@ -1,0 +1,1 @@
+![](/assets/byzance_logo.svg)
