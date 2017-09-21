@@ -1,4 +1,0 @@
-# Offline programování z konzole
-
-
-
