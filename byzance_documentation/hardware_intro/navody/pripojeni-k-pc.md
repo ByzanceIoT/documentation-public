@@ -8,8 +8,6 @@ Každé sériové zařízení se standardně přihlašuje jako nový COM port. S
 
 ![](/images/com_port.png)
 
-# ![](/docu/byzance_documentation/hardware_intro/navody/pripojeni-k-pc/com_port.png)
-
 Neobjeví-li se zařízení, možná je třeba nainstalovat jeho ovladač. Windows 7 a Windows 10 by toto měly udělat automaticky. Dále je třeba mít nainstalovaný terminálový program. To může být například [Termite](https://www.compuphase.com/software_termite.htm), [Hercules](http://www.hw-group.com/products/hercules/index_cz.html) a mnoho jiných.
 
 Zvolený COM port je třeba v nastavení terminálu společně s ukončovánímk řádků CR-LF, zvolenou rychlostí BAUD, data bits 8, stop bit 1, parita žádná. USB driver vyžaduje zapnutí flow control na RTS/CTS.
