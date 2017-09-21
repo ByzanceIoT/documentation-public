@@ -1,4 +1,4 @@
-
+﻿
 Tato část je určena pro Byzance vývojáře jak psát dokumentaci. 
 
 0) Tuto dokumentaci píšu v češtině protože si nehrajeme na Global Ramba jak umpalumpové z Jablotronu. 
@@ -15,8 +15,13 @@ MENU
 
 Úvodní Text
  - Ve složce docu je soubor README.md - ten definuje co se zobrazí na úvodní stránce 
+
+Obrázky 
+ - Obrázky přidávejte do složky images a v textu na ně odkazujte pomocí ![](/images/<jméno_obrázku>)
  
 
 STYLES  
       
- 
+Pozn: [Struktura dokumentace] Normálně bývá všechen text dokumentace ve složce docs, kvůli špatnému zorbrazování obrázků v gitbooku nebo webu
+jsme zrušili složku docs a veškeré dokumenty byli přemístěny do hlavní složky. Pokud by nědo chtěl toto vrátit zpět je nutné přidat do 
+souboru book.json přidat položku "root" : "./docs". 
