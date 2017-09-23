@@ -6,6 +6,15 @@ Dostane se ti do ruky nějaké zařízení Byzance.
 
 \* Připojení zařízení k napájení
 
+###První spuštění 
+
+ Zařízení je možné napájet několika různými způsoby. Informace o metodách napájení lze nalézt v kapitole Zařízení se spustí automaticky po připojení napájecího USB kabelu. 
+ 
+
+
+
+
+
 \* \[\[[https://portal.stage.byzance.cz/\|Zaregistrovat](https://portal.stage.byzance.cz/|Zaregistrovat) se na servery Byzance\]\] FIXME odkaz směřuje na stage, což nebude finální URL.
 
 \* Nastavení, [jakým způsobem se bude zařízení připojovat k internetu](/byzance_documentation/hardware_intro/features/zdroj-internetu.md)
