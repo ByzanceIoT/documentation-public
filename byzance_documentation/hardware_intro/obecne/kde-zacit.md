@@ -15,7 +15,8 @@ Po připojení USB kabelu můžete pozorovat rozsvícení několika indikačníc
 
 ###Připojení zařízení k PC
 
-Před připojením zařízení k internetu, je vhodné provést kontrolu jeho nastavení.
+
+Před připojením zařízení k internetu, je vhodné provést kontrolu jeho nastavení v bootloaderu. Bootloader je speciální část firmwaru, která uchovává nastavení zařízení. O bootloaderu se můžete více dočíst v sekci [Bootloader]((/byzance_documentation/hardware_intro/features/bootloader.md))
 
 
 ###Pripojení zařízení k internetu
