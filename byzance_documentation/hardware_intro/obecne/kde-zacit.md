@@ -6,6 +6,23 @@ Dostane se ti do ruky nějaké zařízení Byzance.
 
 \* Připojení zařízení k napájení
 
+###První spuštění
+
+Zařízení se automaticky spustí po připojení napájení. Zařízení lze napájet několika různými způsoby, které jsou zdokumentovány v kapitole [Metody napájení](/byzance_documentation/hardware_intro/features/zdroj-internetu.md). Při prvním spuštění ovšem doporučujeme napájet zařízení pomocí USB.
+
+Po připojení USB kabelu můžete pozorovat rozsvícení několika indikačních LED diod a speciálně pomalé blikání zelené diody LED modulu, které indikuje stav zařízení nepřipojeného k internetu.
+
+
+###Připojení zařízení k PC
+
+Před připojením zařízení k internetu, je vhodné provést kontrolu jeho nastavení.
+
+
+###Pripojení zařízení k internetu
+
+
+
+
 \* \[\[[https://portal.stage.byzance.cz/\|Zaregistrovat](https://portal.stage.byzance.cz/|Zaregistrovat) se na servery Byzance\]\] FIXME odkaz směřuje na stage, což nebude finální URL.
 
 \* Nastavení, [jakým způsobem se bude zařízení připojovat k internetu](/byzance_documentation/hardware_intro/features/zdroj-internetu.md)
