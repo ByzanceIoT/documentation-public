@@ -9,7 +9,20 @@ See \[\[[https://en.wikipedia.org/wiki/Serial\_port\]\](https://en.wikipedia.org
 Tato funkce slouží k definici sériového rozhraní a komunikaci po sériové lince.
 
 ```cpp
+//Defince sériového rozhraní 
 Serial pc(PIN_TX, PIN_RX);
+
+void init(){
+
+pc.printf("Serial connection");
+
+}
+void loop(){
+
+pc.printf("Hello world");
+
+}
+
 ```
 
 ## SPI
