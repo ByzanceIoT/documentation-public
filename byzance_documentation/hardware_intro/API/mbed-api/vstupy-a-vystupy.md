@@ -103,7 +103,7 @@ void loop(){
 //Postupné zobrazení čísla 0-8 v binární podobě na LED
 for(int i = 0; i < 8, i++){
   leds = i; 
-  wait(0,25);
+  wait(0.25);
 }
 
 }
