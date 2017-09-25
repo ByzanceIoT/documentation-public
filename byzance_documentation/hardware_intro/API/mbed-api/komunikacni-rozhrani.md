@@ -6,6 +6,8 @@ API popsané v této kapitole, slouží k propojení desky s počítačem a exte
 
 See \[\[[https://en.wikipedia.org/wiki/Serial\_port\]\](https://en.wikipedia.org/wiki/Serial_port]\)\]
 
+Tato funkce slouží k definici sériového rozhraní a komunikaci po sériové lince.
+
 ```cpp
 Serial pc(PIN_TX, PIN_RX);
 ```
