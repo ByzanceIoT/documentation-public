@@ -133,10 +133,12 @@ void loop(){
 
 ## PortIn
 
-Similar to BusIn, much faster but much less flexible.
+PortIn má stejnou funkci jako BusIn,je o dost rychlejší ale méně flexibilnější 
 
 ```cpp
-PortIn
+
+// Argumenty konstruktoru je číslo portu a číslem určené jeho piny 
+PortIn p2(port2, 0x0000003F); // pin 21 - 26  
 ```
 
 ## PortOut
