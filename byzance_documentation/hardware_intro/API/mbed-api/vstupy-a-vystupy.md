@@ -29,7 +29,7 @@ printf("pin has value : %d \n", din.read());
 
 ## DigitalOut
 
-Nastaví na digitálním vástupu logickou úroveň
+Nastaví na digitálním vástupu logickou úroveň.
 
 ```cpp
 DigitalOut dout(pin_name);
@@ -38,7 +38,7 @@ dout=1;
 
 ## DigitalInOut
 
-Bidirectional digital pin, combination of DigitalIn and DigitalOut
+Obousměrný digitální pin, kombinace digitálního vstupu a digitálního výstupu. 
 
 ```cpp
 DigitalInOut diout(pin_name);
@@ -58,15 +58,37 @@ pc.printf("diout value = %d \n", diout.read());
 
 ## BusIn
 
-Number of DigitalIn pins that can be read as one value.
+Umožňuje definovat seznam digitálních pinů, jejichž hodnota lze přečíst jako jedno číslo. 
 
+ 
 ```cpp
-BusIn
+
+// Tři přepínače vedené jako BUS připojené na vstupy X1,X2,X3
+BusIn switches(X01,X02,X03);
+
+int init(){
+//Nastavení módu přepínačů (PullUp/PullDown/PullNone/OpenDrain)
+switches.mode(PullNone);
+
+
+}
+
+int main(){
+
+
+while(1){
+
+
+}
+
+
+
+}
 ```
 
 ## BusOut
 
-Number of DigitalOut pins that can be written as one value.
+Definuje seznam digitálních výstupů, které lze přepsat jedním číslem. 
 
 ```cpp
 BusOut
