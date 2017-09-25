@@ -70,16 +70,10 @@ int init(){
 //Nastavení módu přepínačů (PullUp/PullDown/PullNone/OpenDrain)
 switches.mode(PullNone);
 
-
 }
-
-int main(){
-
-
-while(1){
+int loop(){
 
 
-}
 
 
 
