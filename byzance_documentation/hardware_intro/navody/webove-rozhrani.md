@@ -1,6 +1,6 @@
 # Webové rozhraní
 
-U Yody je možné využít webové rozhraní, pokud je povoleno v \[\[Bootloader:commands\| command režimu bootloaderu\]\]. Rozhraní slouží k zjištění a monitorování základních informací, hlavně z vývojářského hlediska.
+U Iody je možné využít webové rozhraní, pokud je povoleno v \[\[Bootloader:commands\| command režimu bootloaderu\]\]. Rozhraní slouží k zjištění a monitorování základních informací, hlavně z vývojářského hlediska.
 
 # Nároky po zapnutí
 
