@@ -20,6 +20,8 @@ Aby bylo možné spravovat nastavení bootloaderu, je potřea připojit zaříze
 
 ###Pripojení zařízení k internetu
 
+Etherenet WIFI
+
 \* \[\[[https://portal.stage.byzance.cz/\|Zaregistrovat](https://portal.stage.byzance.cz/|Zaregistrovat) se na servery Byzance\]\] FIXME odkaz směřuje na stage, což nebude finální URL.
 
 \* Nastavení, [jakým způsobem se bude zařízení připojovat k internetu](/byzance_documentation/hardware_intro/features/zdroj-internetu.md)
