@@ -98,6 +98,16 @@ Definuje seznam digitálních výstupů, které lze přepsat jedním číslem.
 //Tři Led diody připojené na digitální výstupy X01, X02, X03 
 BusOut leds(X01, X02, X03); 
 
+void loop(){
+
+//Postupné zobrazení čísla 0-8 v binární podobě na LED
+for(int i = 0; i < 8, i++){
+  leds = i; 
+  wait(0,25);
+}
+
+}
+
 
 
 
