@@ -27,21 +27,30 @@ Aby bylo možné spravovat nastavení bootloaderu, je potřea připojit zaříze
 
 ## Pripojení zařízení k internetu
 
-Pokud zařízení správně komunikuje s počítačem přes USB nebo sériovou linku je možné přejít k nastavení připopjení k internetu. Zařízení 
-
-
+Pokud zařízení správně komunikuje s počítačem přes USB nebo sériovou linku je možné přejít k nastavení připojení k internetu. V této fázi se nastavení liší podle typu zařízení a komunikačního rozhraní, které je schopné využívat (Ethernet, Wi-fi). Zařízení se bude připojovat k serveru Becky a proto je také potřeba se nejprve zaregistrovat na portál.
 
 ### Přihlášení na portál a nastavení Becky
 
+
+
 ### Připojení pomocí Ethernetu
 
+
+
 ### Připojení pomocí WIFI
+
+
+
+# Testovací program 
+
+
+
 
 \* \[\[[https://portal.stage.byzance.cz/\|Zaregistrovat](https://portal.stage.byzance.cz/|Zaregistrovat) se na servery Byzance\]\] FIXME odkaz směřuje na stage, což nebude finální URL.
 
 \* Nastavení, [jakým způsobem se bude zařízení připojovat k internetu](/byzance_documentation/hardware_intro/features/zdroj-internetu.md)
 
-\* [Připojení zařízení k počítači](/byzance_documentation/hardware_intro/navody/pripojeni-k-pc.md) [pomocí sériové](/byzance_documentation/hardware_intro/navody/pripojeni-k-pc/pomoci-seriove-linky.md) linky nebo [USB](/byzance_documentation/hardware_intro/navody/pripojeni-k-pc/pomoci-usb.md).
+\* [Připojení zařízení k počítači (/byzance_documentation/hardware_intro/navody/pripojeni-k-pc.md) [pomocí sériové](/byzance_documentation/hardware_intro/navody/pripojeni-k-pc/pomoci-seriove-linky.md) linky nebo [USB](/byzance_documentation/hardware_intro/navody/pripojeni-k-pc/pomoci-usb.md).
 
 \* Zařízení by mělo být nakonfigurováno. Pokud není, je třeba se seznámit s tím, co je [bootloader](/byzance_documentation/hardware_intro/features/bootloader.md), respektive dostat se do jeho [command režimu](/byzance_documentation/hardware_intro/features/bootloader/command-rezim.md) a nastavit připojení k lokálnímu počítači, nebo do serverů Byzance.
 
