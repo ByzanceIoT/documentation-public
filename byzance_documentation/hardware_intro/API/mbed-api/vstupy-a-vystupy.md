@@ -194,10 +194,19 @@ void loop(){
 
 ## PwmOut
 
-Interface to control the frequency and mark-to-space ration of digital pulse train.
+Funkce PwmOut umožňuje na pinu vytvářet pulzně šířkovou modulaci, regulovat její periodu a šířku jejich pulsů.
 
 ```cpp
-PwmOut
+
+PwmOut pwm(X04);
+
+void loop(){
+    
+  pwm.period(4.0f);  //Natavení periody 4s 
+  pwm.write(0.50f);  //50% duty cycle, vzhledem k periodě
+  
+}
+
 ```
 
 ## InterruptIn
