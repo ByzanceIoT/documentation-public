@@ -73,18 +73,19 @@ switches.mode(PullNone);
 }
 void loop(){
 
-// Přečte digitální vstupy a    
-switch(switches.read()){
-  // na základě hodnoty vypíše, která kombinace přepínačů je navolená. 
-  case 0x0: printf("everything LOW\n"); break;
-  case 0x1: printf("X01-UP X02-DOWN X03-DOWN\n"); break;
-  case 0x2: printf("X01-DOWN X02-UP X03-DOWN\n"); break;
-  case 0x3: printf("X01-UP X02-UP X03-DOWN\n"); break;
-  case 0x4: printf("X01-DOWN X02-DOWN X03-UP\n"); break;
-  case 0x5: printf("X01-UP X02-DOWN X03-UP\n"); break;
-  case 0x6: printf("X01-DOWN X02-UP X03-UP\n"); break;
-  case 0x7: printf("X01-UP X02-UP X03-UP\n"); break;
-}
+  // Přečte digitální vstupy a    
+  switch(switches.read()){
+  // na základě hodnoty vypíše, která kombinace přepínačů je navolená.
+  
+      case 0x0: printf("everything LOW\n"); break;
+      case 0x1: printf("X01-UP X02-DOWN X03-DOWN\n"); break;
+      case 0x2: printf("X01-DOWN X02-UP X03-DOWN\n"); break;
+      case 0x3: printf("X01-UP X02-UP X03-DOWN\n"); break;
+      case 0x4: printf("X01-DOWN X02-DOWN X03-UP\n"); break;
+      case 0x5: printf("X01-UP X02-DOWN X03-UP\n"); break;
+      case 0x6: printf("X01-DOWN X02-UP X03-UP\n"); break;
+      case 0x7: printf("X01-UP X02-UP X03-UP\n"); break;
+  }
 
 
 }
@@ -101,24 +102,21 @@ BusOut leds(X01, X02, X03);
 void loop(){
 
 //Postupné zobrazení čísla 0-8 v binární podobě na LED
-for(int i = 0; i < 8, i++){
-  leds = i; 
-  wait(0.25);
-}
+  for(int i = 0; i < 8, i++){
+    leds = i; 
+    wait(0.25);
+  }
 
 }
-
-
-
-
 ```
 
 ## BusInOut
 
-Number of DigitalInOut pins that can be read and written as one value.
+Definuje bus, ze kterého je možné jak číst, tak do něj i zapisovat.
 
 ```cpp
-BusInOut
+
+BusInOut io_bus(X01, X02, X03);
 ```
 
 ## PortIn
