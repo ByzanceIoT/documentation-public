@@ -147,15 +147,11 @@ void init(){
 void loop(){
   int pins = p.read();
   if(pins){ //alespoň jeden vstup z portu má hodnotu jedna
-  printf("At least one switch is turned on");
+    printf("At least one switch is turned on");
   }
 }
 
-
-
 ```
-
-
 
 ## PortOut
 
