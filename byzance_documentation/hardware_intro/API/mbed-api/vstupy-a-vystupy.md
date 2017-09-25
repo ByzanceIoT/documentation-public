@@ -2,7 +2,7 @@
 
 # AnalogIn
 
-Převede napětí v rozmezí 0 - 3.3V do digitální podoby a interpretuje ho číslem ve škále 0-4095
+Převede napětí na pinu analogového vstupu v rozmezí 0 - 3.3V do digitální podoby a interpretujep ho číslem na škále 0-4095. Rozlišení převodníku je 2.44 mV. 
 
 ```cpp
 AnalogIn ain(pin_name);
@@ -11,7 +11,7 @@ printf(”ain value = %3.3f%%\n”, ain.read());
 
 ## AnalogOut
 
-Set the voltage of an analog output pin in the range of VSS to VCC.
+Nastaví napětí na pinu analogového výstupu v rozmezí 0 - 3.3V zadáním hodnoty 0-4095. Každá jednotka interpretuje 2.44mV.
 
 ```cpp
 AnalogOut aout(pin_name);
@@ -20,7 +20,7 @@ aout.write(some_float);
 
 ## DigitalIn
 
-Read the value of an digital input pin
+Přečte hodnotu digitálního vstupu
 
 ```cpp
 DigitalIn din(pin_name);
@@ -29,7 +29,7 @@ printf("pin has value : %d \n", din.read());
 
 ## DigitalOut
 
-Configure and control a digital output pin
+Nastaví na digitálním vástupu logickou úroveň
 
 ```cpp
 DigitalOut dout(pin_name);
