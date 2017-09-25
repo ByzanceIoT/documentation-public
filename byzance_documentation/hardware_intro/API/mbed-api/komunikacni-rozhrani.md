@@ -4,22 +4,20 @@ API popsané v této kapitole, slouží k propojení desky s počítačem a exte
 
 ##Serial
 
-See \[\[[https://en.wikipedia.org/wiki/Serial\_port\]\](https://en.wikipedia.org/wiki/Serial_port]\)\]
-
-Tato funkce slouží k definici sériového rozhraní a komunikaci po sériové lince.
-
+Tato funkce slouží k definici sériového rozhraní a komunikaci po sériové lince. Ke komunikaci jsou zapotřebí dva piny - RX(recieve data) a TX(transfer data)
 ```cpp
 //Defince sériového rozhraní 
 Serial pc(PIN_TX, PIN_RX);
 
 void init(){
 
-pc.printf("Serial connection");
+pc.baud(9600); //Nastavení baudové rychlosti
+pc.printf("Serial connection\n"); //Send to serial line
 
 }
 void loop(){
 
-pc.printf("Hello world");
+pc.printf("Hello world\n");
 
 }
 
