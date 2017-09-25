@@ -117,6 +117,18 @@ Definuje bus, ze kterého je možné jak číst, tak do něj i zapisovat.
 ```cpp
 
 BusInOut io_bus(X01, X02, X03);
+
+void loop(){
+
+  io_bus.output();
+  io_bus = 5;
+  wait(5);
+  io_bus.input();
+  wait(5);
+  if(io_bus == 0x6){
+    printf("NUMBER 6!\n");
+  }
+}
 ```
 
 ## PortIn
