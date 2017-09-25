@@ -133,7 +133,7 @@ void loop(){
 
 ## PortIn
 
-PortIn má stejnou funkci jako BusIn,je o dost rychlejší ale méně flexibilnější 
+PortIn má stejnou funkci jako BusIn, je o dost rychlejší ale méně flexibilnější 
 
 ```cpp
 
