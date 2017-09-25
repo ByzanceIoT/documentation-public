@@ -137,7 +137,7 @@ PortIn má stejnou funkci jako BusIn,je o dost rychlejší ale méně flexibiln�
 
 ```cpp
 
-// Argumenty konstruktoru je číslo portu a číslem určené jeho piny 
+// Argumentem konstruktoru je číslo portu a číslem určené piny tohoto portu
 PortIn p2(port2, 0x0000003F); // pin 21 - 26  
 
 void init(){
@@ -158,7 +158,18 @@ void loop(){
 Port Out nahrazuje BusOut, stejně jako PortIn je rychlejší ale méně flexibilnější
 
 ```cpp
-PortOut
+#define LED_SHIELD 0x00B40000
+
+PortOut port(Port2, LED_SHIELD);
+
+void loop(){
+  port=LED_MASK;
+  wait(1);
+  port=0;
+  wait(1);
+
+
+}
 ```
 
 ## PortInOut
