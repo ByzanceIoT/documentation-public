@@ -1,12 +1,11 @@
 # Jak začít?
-stane se ti do ruky nějaké zařízení Byzance.
+
+
+
+
+Dostane se ti do ruky nějaké zařízení Byzance.
 
 \* Jaké zařízení mám v ruce? Identifikace konkrétního targetu.
-
-
-
-
-
 
 \* Připojení zařízení k napájení
 
@@ -14,7 +13,11 @@ stane se ti do ruky nějaké zařízení Byzance.
 
 Zařízení se automaticky spustí po připojení napájení. Zařízení lze napájet několika různými způsoby, které jsou zdokumentovány v kapitole [Metody napájení](/byzance_documentation/hardware_intro/features/zdroj-internetu.md). Při prvním spuštění ovšem doporučujeme napájet zařízení pomocí USB.
 
+/- Klipart se zvýrazněným konektorem microUSB nebo Gif připojujícího kabelu
+
 Po připojení USB kabelu můžete pozorovat rozsvícení několika indikačních LED diod a speciálně pomalé blikání zelené diody LED modulu, které indikuje stav zařízení nepřipojeného k internetu.
+
+/- Obrázek indikující blikající ledku po startu
 
 ##Připojení zařízení k PC
 
