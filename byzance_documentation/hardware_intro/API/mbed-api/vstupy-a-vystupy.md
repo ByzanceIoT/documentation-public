@@ -139,7 +139,23 @@ PortIn má stejnou funkci jako BusIn,je o dost rychlejší ale méně flexibiln�
 
 // Argumenty konstruktoru je číslo portu a číslem určené jeho piny 
 PortIn p2(port2, 0x0000003F); // pin 21 - 26  
+
+void init(){
+  //Nastavení módu portu
+  p2.mode(PullNone); 
+}
+void loop(){
+  int pins = p.read();
+  if(pins){ //alespoň jeden vstup z portu má hodnotu jedna
+  printf("At least one switch is turned on");
+  }
+}
+
+
+
 ```
+
+
 
 ## PortOut
 
