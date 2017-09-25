@@ -205,6 +205,12 @@ void loop(){
   pwm.period(4.0f);  //Natavení periody 4s 
   pwm.write(0.50f);  //50% duty cycle, vzhledem k periodě
   
+  wait(10);
+  
+  pwm.period(4.0f);   //nastavení periody 4s
+  pwm.pulsewidth(2);  //dvouvteřinový puls -> stejné jako 50% duty cycle
+  
+  
 }
 
 ```
