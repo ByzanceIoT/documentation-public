@@ -69,12 +69,21 @@ BusIn switches(X01,X02,X03);
 int init(){
 //Nastavení módu přepínačů (PullUp/PullDown/PullNone/OpenDrain)
 switches.mode(PullNone);
-
 }
 int loop(){
 
-
-
+switch(switches.read()){
+  
+  case 0x0: printf("everything LOW\n"); break;
+  case 0x1: printf("X01-UP X02-DOWN X03-DOWN\n"); break;
+  case 0x2: printf("X01-DOWN X02-UP X03-DOWN\n"); break;
+  case 0x3: printf("X01-UP X02-UP X03-DOWN\n"); break;
+  case 0x4: printf("X01-DOWN X02-DOWN X03-UP\n"); break;
+  case 0x5: printf("X01-UP X02-DOWN X03-UP\n"); break;
+  case 0x6: printf("X01-DOWN X02-UP X03-UP\n"); break;
+  case 0x7: printf("X01-DOWN X02-DOWN X03-UP\n"); break;
+  
+}
 
 
 }
