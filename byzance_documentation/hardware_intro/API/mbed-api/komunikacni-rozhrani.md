@@ -1,6 +1,8 @@
 # Komunikační rozhraní
 
-Generic serial protocol API, send and receive data.
+API popsané v této kapitole, slouží k propojení desky s počítačem a externími zařízeními.
+
+##Serial
 
 See \[\[[https://en.wikipedia.org/wiki/Serial\_port\]\](https://en.wikipedia.org/wiki/Serial_port]\)\]
 
