@@ -58,7 +58,7 @@ pc.printf("diout value = %d \n", diout.read());
 
 ## BusIn
 
-Umožňuje definovat seznam digitálních pinů, jejichž hodnota lze přečíst jako jedno číslo. 
+BusIn umožňuje definovat seznam digitálních pinů, jejichž hodnota lze přečíst jako jedno číslo. 
 
  
 ```cpp
@@ -93,7 +93,7 @@ void loop(){
 
 ## BusOut
 
-Definuje seznam digitálních výstupů, které lze přepsat jedním číslem. 
+BusOut definuje seznam digitálních výstupů, které lze přepsat jedním číslem. 
 
 ```cpp
 //Tři Led diody připojené na digitální výstupy X01, X02, X03 
