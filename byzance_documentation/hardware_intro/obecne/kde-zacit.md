@@ -6,7 +6,7 @@ Dostane se ti do ruky nějaké zařízení Byzance.
 
 \* Připojení zařízení k napájení
 
-###První spuštění
+### První spuštění
 
 Zařízení se automaticky spustí po připojení napájení. Zařízení lze napájet několika různými způsoby, které jsou zdokumentovány v kapitole [Metody napájení](/byzance_documentation/hardware_intro/features/zdroj-internetu.md). Při prvním spuštění ovšem doporučujeme napájet zařízení pomocí USB.
 
