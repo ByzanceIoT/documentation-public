@@ -12,21 +12,13 @@ Zařízení se automaticky spustí po připojení napájení. Zařízení lze na
 
 Po připojení USB kabelu můžete pozorovat rozsvícení několika indikačních LED diod a speciálně pomalé blikání zelené diody LED modulu, které indikuje stav zařízení nepřipojeného k internetu.
 
-
 ###Připojení zařízení k PC
-
 
 Před připojením zařízení k internetu, je vhodné provést kontrolu jeho nastavení v bootloaderu. Bootloader je speciální část firmwaru, která uchovává nastavení zařízení. O bootloaderu se můžete více dočíst v sekci [Bootloader](/byzance_documentation/hardware_intro/features/bootloader.md)
 
 Aby bylo možné spravovat nastavení bootloaderu, je potřea připojit zařízení k počítači. Postup jak se k zařízení připojit naleznete v sekci [Připojení zařízení k počítači](/byzance_documentation/hardware_intro/navody/pripojeni-k-pc.md)
 
-
-
-
 ###Pripojení zařízení k internetu
-
-
-
 
 \* \[\[[https://portal.stage.byzance.cz/\|Zaregistrovat](https://portal.stage.byzance.cz/|Zaregistrovat) se na servery Byzance\]\] FIXME odkaz směřuje na stage, což nebude finální URL.
 
