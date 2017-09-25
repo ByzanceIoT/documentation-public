@@ -66,11 +66,12 @@ Umožňuje definovat seznam digitálních pinů, jejichž hodnota lze přečíst
 // Tři přepínače vedené jako BUS připojené na vstupy X1,X2,X3
 BusIn switches(X01,X02,X03);
 
-int init(){
+void init(){
+
 //Nastavení módu přepínačů (PullUp/PullDown/PullNone/OpenDrain)
 switches.mode(PullNone);
 }
-int loop(){
+void loop(){
 
 // Přečte digitální vstupy a    
 switch(switches.read()){
@@ -94,7 +95,12 @@ switch(switches.read()){
 Definuje seznam digitálních výstupů, které lze přepsat jedním číslem. 
 
 ```cpp
-BusOut
+//Tři Led diody připojené na digitální výstupy X01, X02, X03 
+BusOut leds(X01, X02, X03); 
+
+
+
+
 ```
 
 ## BusInOut
