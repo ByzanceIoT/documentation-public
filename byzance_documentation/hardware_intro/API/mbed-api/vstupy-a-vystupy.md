@@ -217,10 +217,22 @@ void loop(){
 
 ## InterruptIn
 
-Trigger an event when a digital input pin changes.
+Připojením interruptu na konkrétní pin, lze okamžitě reagovat akcí na změnu digitální hodnoty tohoto pinu.
 
 ```cpp
-InterruptIn
+InterruptIn button(X08); //Připojení interruptu k pinu X08
+DigitalOut led(X05);
+
+void pushed_button(){ //Při stisknutí tlačítka změn logickou hodnotu na pinu X05
+ led = !led;
+}
+
+void init(){
+
+button.rise(&pushed_button); //Připojení adresy funkce pushed_button na náběžnou hranu pinu X08 
+
+}
+
 ```
 
 
