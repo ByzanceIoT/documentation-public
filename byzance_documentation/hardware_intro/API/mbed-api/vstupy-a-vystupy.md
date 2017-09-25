@@ -2,7 +2,7 @@
 
 # AnalogIn
 
-Read an external voltage applied to an analog input pin.
+Převede napětí v rozmezí 0 - 3.3V do digitální podoby a interpretuje ho číslem ve škále 0-4095
 
 ```cpp
 AnalogIn ain(pin_name);
