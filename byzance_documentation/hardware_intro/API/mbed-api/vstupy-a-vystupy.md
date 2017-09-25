@@ -173,10 +173,23 @@ void loop(){
 
 ## PortInOut
 
-Similar to BusInOut, much faster but much less flexible.
-
+Třída PortInOut kombinuje funkce PortIn a PortOut a mód této funkce lze nastavovat za běhu programu. 
+ 
 ```cpp
-PortInOut
+#define LED_SHIELD 0x00B40000
+PortOut port(Port2, LED_SHIELD);
+
+void loop(){
+  port.input();
+  int port_value = port;
+  port.output();
+  port=LED_MASK;
+  wait(1);
+  port=0;
+  wait(1);
+
+}
+
 ```
 
 ## PwmOut
