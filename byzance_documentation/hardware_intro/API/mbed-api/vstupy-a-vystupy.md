@@ -155,7 +155,7 @@ void loop(){
 
 ## PortOut
 
-Similar to BusOut, much faster but much less flexible.
+Port Out nahrazuje BusOut, stejně jako PortIn je rychlejší ale méně flexibilnější
 
 ```cpp
 PortOut
