@@ -72,8 +72,9 @@ switches.mode(PullNone);
 }
 int loop(){
 
+// Přečte digitální vstupy a    
 switch(switches.read()){
-  
+
   case 0x0: printf("everything LOW\n"); break;
   case 0x1: printf("X01-UP X02-DOWN X03-DOWN\n"); break;
   case 0x2: printf("X01-DOWN X02-UP X03-DOWN\n"); break;
@@ -81,7 +82,7 @@ switch(switches.read()){
   case 0x4: printf("X01-DOWN X02-DOWN X03-UP\n"); break;
   case 0x5: printf("X01-UP X02-DOWN X03-UP\n"); break;
   case 0x6: printf("X01-DOWN X02-UP X03-UP\n"); break;
-  case 0x7: printf("X01-DOWN X02-DOWN X03-UP\n"); break;
+  case 0x7: printf("X01-UP X02-UP X03-UP\n"); break;
   
 }
 
