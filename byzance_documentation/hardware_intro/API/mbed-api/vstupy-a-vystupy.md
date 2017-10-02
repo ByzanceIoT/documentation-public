@@ -13,7 +13,7 @@ printf(”ain value = %3.3f%%\n”, ain.read());
 
 Nastaví napětí na pinu analogového výstupu v rozmezí 0 - 3.3V zadáním hodnoty 0-4095. Každá jednotka interpretuje 2.44mV.
 
-
+Procesor umožňuje definovat dva analogové výstupy a to na pinech Y23 a Y25
 
 ```cpp
 AnalogOut aout(pin_name);
