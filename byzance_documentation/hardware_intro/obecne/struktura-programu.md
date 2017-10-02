@@ -9,7 +9,8 @@ V první části programu, nejlépe již na prvním řádku, je nutné importova
 ```
 Tato knihovna má za úkol automaticky inicializovat periferie, připojit desku k internetu a inicializovat vlákna, která se starají o update zdrojového kódu a připojení k serverům. Includem knihovny se zpřístupní [Byzance API](/byzance_documentation/hardware_intro/API/byzance-api.md) a [uživatelská makra](/byzance_documentation/hardware_intro/API/makra.md).
 
-Následovat by měla definice vstupů a výstupů pro blocko, ale Code server si s tím poradí v celém main souboru.
+**TO DO!!!!**  Následovat by měla definice vstupů a výstupů pro blocko, ale Code server si s tím poradí v celém main souboru.
+
 
 Více viz [Byzance IO](/byzance_documentation/hardware_intro/API/byzance-io.md).
 
@@ -17,7 +18,7 @@ Více viz [Byzance IO](/byzance_documentation/hardware_intro/API/byzance-io.md).
 //definice virtuálních vstupů a výstupů
 ```
 
-V další části kódu se poté definují fyzické výstupy a vstupy desky viz [MBED vstupy a výstupy](/byzance_documentation/hardware_intro/MBED API/vstupy-a-vystupy.md)
+V další části kódu se poté definují fyzické výstupy a vstupy desky viz [MBED vstupy a výstupy](/byzance_documentation/hardware_intro/API/MBED API/vstupy-a-vystupy.md)
 
 
 ```cpp
