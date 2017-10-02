@@ -69,7 +69,7 @@ pc.printf("diout value = %d \n", diout.read());
 
 ## BusIn
 
-Funkcí BusIn lze vést libovolný počet digitálních vstupů jako bus, což umožňuje jejich hodnotu přečíst jako zároveň jako jedno číslo. 
+Funkcí BusIn lze vést libovolný počet digitálních vstupů jako bus, což umožňuje přečíst digitální hodnotu těchto vstupů jako jedno číslo. 
 
  
 ```cpp
@@ -97,7 +97,6 @@ void loop(){
       case 0x6: printf("X01-DOWN X02-UP X03-UP\n"); break;
       case 0x7: printf("X01-UP X02-UP X03-UP\n"); break;
   }
-
 
 }
 ```
