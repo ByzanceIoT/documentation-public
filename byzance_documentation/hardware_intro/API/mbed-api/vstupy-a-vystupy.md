@@ -245,6 +245,10 @@ void loop(){
 
 ## InterruptIn
 
+Funkce InterruptIn umožňuje uživateli okamžitě reagovat na změnu logické úrovně libovolného pinu (na náběžnou i sestupnou hranu) a na základě této změny zavolat libovolnou funkci.
+
+
+
 Připojením interruptu na konkrétní pin, lze okamžitě reagovat akcí na změnu digitální hodnoty tohoto pinu.
 
 ```cpp
