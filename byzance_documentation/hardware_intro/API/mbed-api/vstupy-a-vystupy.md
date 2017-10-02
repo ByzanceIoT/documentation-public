@@ -69,7 +69,7 @@ pc.printf("diout value = %d \n", diout.read());
 
 ## BusIn
 
-BusIn umožňuje definovat seznam digitálních pinů, jejichž hodnota lze přečíst jako jedno číslo. 
+Funkce BusIn  definuje po, jejichž hodnota lze přečíst jako jedno číslo. 
 
  
 ```cpp
@@ -116,7 +116,9 @@ void loop(){
 /* 
 Příklad: 
 Zápis čísla 3 na bus "leds"
+*/
 leds = 3 
+/*
 číslo 3 -> v binární podobě 110 
 
 Logické urovně na pinech busu:
