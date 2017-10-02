@@ -67,6 +67,12 @@ Jednoduchý kód pro výpis do sériové linky \(bez debugu\) může tedy vypada
 ```cpp
 #include "byzance.h"
 
+
+//definice fyzických vstupů a výstupů
+DigitalOut D1(X02);
+DigitalIn D2(X05);
+AnalogOut A1(Y23);
+
 Serial pc(SERIAL_TX, SERIAL_RX); // tx, rx
 
 void init(){
