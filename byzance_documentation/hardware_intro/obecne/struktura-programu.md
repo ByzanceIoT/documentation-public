@@ -15,7 +15,7 @@ Více viz [Byzance IO](/byzance_documentation/hardware_intro/API/byzance-io.md).
 ```cpp
 //definice vstupů a výstupů
 DigitalOut D1(X02);
-DigitalIn D2(X05)
+DigitalIn D2(X05);s
 AnalogOut A1(Y23);
 
 ```
