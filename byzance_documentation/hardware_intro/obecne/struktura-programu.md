@@ -1,6 +1,6 @@
 # Struktura programu
 
-Základem při psaní zdrojového kódu je využití open-source operačního systému [MBED-OS](/byzance_documentation/hardware_intro/API/mbed-api.md). Kód se píše především v online rozhraní Becki Byzance.
+Základem při psaní zdrojového kódu je využití open-source operačního systému [MBED-OS](/byzance_documentation/hardware_intro/API/mbed-api.md). Kód se píše především v online rozhraní Becki Byzance. **TO DO - odkaz na článek o becki**
 
 V první části programu, nejlépe již na prvním řádku, je nutné importovat knihovnu Byzance pomocí pžíkazu:
 
