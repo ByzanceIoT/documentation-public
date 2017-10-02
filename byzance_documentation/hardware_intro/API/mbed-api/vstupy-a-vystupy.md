@@ -251,13 +251,17 @@ Funkce InterruptIn umožňuje uživateli okamžitě reagovat na změnu logické 
 InterruptIn button(X08); //Připojení interruptu k pinu X08
 DigitalOut led(X05);
 
-void pushed_button(){ //Při stisknutí tlačítka změn logickou hodnotu na pinu X05
+
+//Při stisknutí tlačítka změn logickou 
+void pushed_button(){ hodnotu na pinu X05
  led = !led;
 }
 
 void init(){
+
 //Připojení adresy funkce pushed_button na náběžnou hranu pinu X08 
 button.rise(&pushed_button); 
+
 }
 
 ```
