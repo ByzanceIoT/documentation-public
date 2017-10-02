@@ -112,7 +112,14 @@ BusOut leds(X01, X02, X03);
 
 /* 
 Příklad: 
-příkazem 
+
+leds = 3 
+číslo 3 -> v binární podobě 110 
+
+Logické urovně na pinech busu:
+X01 -> HIGH 
+X02 -> HIGH
+X03 -> LOW
 
 */
 
