@@ -110,9 +110,12 @@ Funkce BusOut definuje z libovolného počtu digitálních výstupů bus, který
 //Definicu busu ze trí výstupů - X01,X02,X03, kde X01 je nejnižší bit
 BusOut leds(X01, X02, X03); 
 
+
+void loop(){
+
 /* 
 Příklad: 
-
+Zápis čísla 3 na bus "leds"
 leds = 3 
 číslo 3 -> v binární podobě 110 
 
@@ -123,7 +126,7 @@ X03 -> LOW
 
 */
 
-void loop(){
+
 
 //Postupné zobrazení čísla 0-8 v binární podobě na LED
   for(int i = 0; i < 8, i++){
