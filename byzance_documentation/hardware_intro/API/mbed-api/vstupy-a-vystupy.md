@@ -13,9 +13,11 @@ printf(”ain value = %3.3f%%\n”, ain.read());
 
 Nastaví napětí na pinu analogového výstupu v rozmezí 0 - 3.3V zadáním hodnoty 0-4095. Každá jednotka interpretuje 2.44mV.
 
+
+
 ```cpp
 AnalogOut aout(pin_name);
-aout.write(some_float);
+aout = some_float;
 ```
 
 ## DigitalIn
