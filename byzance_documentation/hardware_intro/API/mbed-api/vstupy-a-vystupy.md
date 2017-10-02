@@ -247,10 +247,6 @@ void loop(){
 
 Funkce InterruptIn umožňuje uživateli okamžitě reagovat na změnu logické úrovně libovolného pinu (na náběžnou i sestupnou hranu) a na základě této změny zavolat libovolnou funkci.
 
-
-
-Připojením interruptu na konkrétní pin, lze okamžitě reagovat akcí na změnu digitální hodnoty tohoto pinu.
-
 ```cpp
 InterruptIn button(X08); //Připojení interruptu k pinu X08
 DigitalOut led(X05);
@@ -260,9 +256,8 @@ void pushed_button(){ //Při stisknutí tlačítka změn logickou hodnotu na pin
 }
 
 void init(){
-
-button.rise(&pushed_button); //Připojení adresy funkce pushed_button na náběžnou hranu pinu X08 
-
+//Připojení adresy funkce pushed_button na náběžnou hranu pinu X08 
+button.rise(&pushed_button); 
 }
 
 ```
