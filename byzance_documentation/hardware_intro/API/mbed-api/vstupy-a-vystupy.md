@@ -16,8 +16,16 @@ Nastaví napětí na pinu analogového výstupu v rozmezí 0 - 3.3V zadáním ho
 Funkce **AnalogOut** umožňuje definovat analogový výstup, který pomocí digitáně analogového převodníku dokáže na základě vstupní hodnoty této funkce měnit hodnotu napětí na výstupním pinu v rozsahu **0 - 3.3V** . Procesor umožňuje definovat dva analogové výstupy a to na pinech **Y23** a **Y25**. Procesor disponuje 12-bitovými DAC 
 
 ```cpp
-AnalogOut aout(pin_name);
+
+//Definice analogového výstupu na pinu Y25
+AnalogOut aout(Y25);
+
+//
 aout = some_float;
+
+// Přečti hodnotu napětí na 
+aout.read()
+
 ```
 
 ## DigitalIn
