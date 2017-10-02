@@ -24,11 +24,10 @@ AnalogOut aout(Y25);
 aout = 1.0f;
 
 // Nastavení poloviny VCC
-
 aout = 0.5f; 
 
 // Čtení aktuální hodnotu napětí na 
-aout.read()
+aout.read();
 
 ```
 
