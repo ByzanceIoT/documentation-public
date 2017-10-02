@@ -69,7 +69,7 @@ pc.printf("diout value = %d \n", diout.read());
 
 ## BusIn
 
-Funkce BusIn  definuje po, jejichž hodnota lze přečíst jako jedno číslo. 
+Funkcí BusIn lze vést libovolný počet digitálních vstupů jako bus, což umožňuje jejich hodnotu přečíst jako zároveň jako jedno číslo. 
 
  
 ```cpp
