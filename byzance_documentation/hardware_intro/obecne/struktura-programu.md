@@ -22,7 +22,7 @@ V další části kódu se poté definují fyzické vstupy a výstupy desky viz 
 
 
 ```cpp
-//definice fyzických vstupů a výstupů
+// Definice fyzických vstupů a výstupů
 DigitalOut D1(X02);
 DigitalIn D2(X05);
 AnalogOut A1(Y23);
