@@ -18,7 +18,7 @@ Více viz [Byzance IO](/byzance_documentation/hardware_intro/API/byzance-io.md).
 //definice virtuálních vstupů a výstupů
 ```
 
-V další části kódu se poté definují fyzické výstupy a vstupy desky viz [MBED vstupy a výstupy](/byzance_documentation/hardware_intro/API/mbed-api/vstupy-a-vystupy.md)
+V další části kódu se poté definují fyzické vstupy a výstupy desky viz [MBED vstupy a výstupy](/byzance_documentation/hardware_intro/API/mbed-api/vstupy-a-vystupy.md)
 
 
 ```cpp
@@ -29,7 +29,7 @@ AnalogOut A1(Y23);
 
 ```
 
-Inicializace globálních proměnných a objektů, například sériová linka atd.
+Poté je vhodné inicializovat globální proměnné a objekty jako například sériová komunikace atd.
 
 ```cpp
 Serial pc(SERIAL_TX_pin, SERIAL_RX_pin); // tx, rx
