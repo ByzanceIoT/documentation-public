@@ -17,7 +17,7 @@ Více viz [Byzance IO](/byzance_documentation/hardware_intro/API/byzance-io.md).
 //definice virtuálních vstupů a výstupů
 ```
 
-
+v další části kódu se poté definují fyzické výstupy a vstupy desky viz [MBED vstupy a výstupy](/byzance_documentation/hardware_intro/MBED API/vstupy-a-vystupy.md)
 
 
 ```cpp
