@@ -15,15 +15,15 @@ Více viz [Byzance IO](/byzance_documentation/hardware_intro/API/byzance-io.md).
 ```cpp
 //definice vstupů a výstupů
 DigitalOut D1(X02);
-DigitalIn D2(X05);s
+DigitalIn D2(X05);
 AnalogOut A1(Y23);
 
 ```
 
-Inicializace globálních proměnných a objektů, například sériovka atd.
+Inicializace globálních proměnných a objektů, například sériová linka atd.
 
 ```cpp
-Serial pc(SERIAL_TX, SERIAL_RX); // tx, rx
+Serial pc(SERIAL_TX_pin, SERIAL_RX_pin); // tx, rx
 ```
 
 Věci ve funkci pre\_init\(\) se pustí dříve, než Byzance vlákno a připojení k serverům. Nepovinná část spíše nutná pro debug.
