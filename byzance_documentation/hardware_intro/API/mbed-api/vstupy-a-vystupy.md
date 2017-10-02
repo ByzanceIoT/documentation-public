@@ -13,7 +13,7 @@ printf(”ain value = %3.3f%%\n”, ain.read());
 
 Nastaví napětí na pinu analogového výstupu v rozmezí 0 - 3.3V zadáním hodnoty 0-4095. Každá jednotka interpretuje 2.44mV.
 
-Procesor umožňuje definovat dva analogové výstupy a to na pinech Y23 a Y25
+Funkce **AnalogOut** umožňuje definovat analogový výstup, který pomocí digitáně analogového převodníku dokáže na základě vstupní hodnoty této funkce měnit hodnotu napětí na výstupním pinu v rozsahu _0 - VCC_. Procesor umožňuje definovat dva analogové výstupy a to na pinech Y23 a Y25. Procesor obsahuje 12-bitové DAC
 
 ```cpp
 AnalogOut aout(pin_name);
