@@ -104,11 +104,17 @@ void loop(){
 
 ## BusOut
 
-BusOut definuje seznam digitálních výstupů, které lze přepsat jedním číslem. 
+Funkce BusOut definuje z libovolného počtu digitálních výstupů bus, který lze ovládat zápisem jedné hodnoty. 
 
 ```cpp
-//Tři Led diody připojené na digitální výstupy X01, X02, X03 
+//Definicu busu ze trí výstupů - X01,X02,X03, kde X01 je nejnižší bit
 BusOut leds(X01, X02, X03); 
+
+/* 
+Příklad: 
+příkazem 
+
+*/
 
 void loop(){
 
