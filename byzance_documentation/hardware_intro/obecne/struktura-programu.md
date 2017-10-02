@@ -35,9 +35,8 @@ Poté je vhodné inicializovat globální proměnné a objekty jako například 
 Serial pc(SERIAL_TX_pin, SERIAL_RX_pin); // tx, rx
 ```
 
-
-
-Věci ve funkci pre\_init\(\) se pustí dříve, než Byzance vlákno a připojení k serverům. Nepovinná část spíše nutná pro debug.
+**TO DO - přeformulovat následující odstavec**
+Po inicializaci proměnných je možné implementovat funkci pre\_init\(\). Tato funkce je spuštěna předtím, než je inicializováno vlákno Byzance a předtím než se zažízení připojí k serverům. Tuto funcki není nutné implementovat, nicméně je vhodná v případě debugu.
 
 ```cpp
 void pre_init(){
@@ -45,15 +44,14 @@ void pre_init(){
 }
 ```
 
-Inicializační část, která je automaticky zavolána právě jednou po startu zařízení.
+Následuje inicializační část, která je automaticky zavolána právě jednou po startu zařízení.
 
 ```cpp
 void init(){
     pc.printf("Hello world\n");
 }
 ```
-
-Poslední je část kódu, který se bude vykonávat stále dokola, slouží jako náhrada while\(true\) cyklu v klasické main funkci. Jediným rozdílem je to, že mezi každým loop\(\) se automaticky dává prostor i Byzance vláknu a [resetuje se watchdog](/byzance_documentation/hardware_intro/features/watchdog.md).
+Poslední je část kódu, který se bude vykonávat ve smyčce. Slouží jako náhrada while\(true\) cyklu v klasické main funkci. Jediným rozdílem je to, že mezi každým loop\(\) se automaticky dává prostor i Byzance vláknu a [resetuje se watchdog](/byzance_documentation/hardware_intro/features/watchdog.md). 
 
 ```cpp
 void loop(){
@@ -64,7 +62,7 @@ void loop(){
 
 # Příklad
 
-Jednoduchý kód pro výpis do sériovky \(bez debugu\) může tedy vypadat takto
+Jednoduchý kód pro výpis do sériové linky \(bez debugu\) může tedy vypadat například takto.
 
 ```cpp
 #include "byzance.h"
