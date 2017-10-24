@@ -5,6 +5,9 @@ Tato dokumentace popisuje, jak spustit, programovat a ovládat zařízení BYZAN
 ![](/images/ioda_board.png)
 
 
+
+
+
 Dostane se ti do ruky nějaké zařízení Byzance.
 
 \* Jaké zařízení mám v ruce? Identifikace konkrétního targetu.
