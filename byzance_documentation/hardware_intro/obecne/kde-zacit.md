@@ -2,7 +2,7 @@
 
 Tato dokumentace popisuje, jak spustit, programovat a ovládat zařízení BYZANCE
 
-![](/images/Ioda_board.png)
+![](/images/ioda_board.png)
 
 
 Dostane se ti do ruky nějaké zařízení Byzance.
