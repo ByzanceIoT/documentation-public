@@ -5,6 +5,7 @@
      "language" : "en",
      "gitbook": ">=3.0.0",
      "plugins": ["edit-link", "swagger", "collapsible-menu", "timeline", "youtubex", "simple-page-toc", "anchorjs", "github", "richquotes", "nocache"],
+	 "root": "./"
 
     "pluginsConfig": {
     "theme-default": {

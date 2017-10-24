@@ -1,6 +1,8 @@
-# Jak začít?
+# Kde začít?
 
+Tato dokumentace popisuje, jak spustit, programovat a ovládat zařízení BYZANCE
 
+![](/images/Ioda_board.png)
 
 
 Dostane se ti do ruky nějaké zařízení Byzance.
@@ -15,7 +17,7 @@ Zařízení se automaticky spustí po připojení napájení. Zařízení lze na
 
 /- Klipart se zvýrazněným konektorem microUSB nebo Gif připojujícího kabelu
 
-Po připojení USB kabelu můžete pozorovat rozsvícení několika indikačních LED diod a speciálně pomalé blikání zelené diody LED modulu, které indikuje stav zařízení nepřipojeného k internetu.
+Po připojení USB kabelu lze pozorovat rozsvícení několika indikačních LED diod a speciálně pomalé blikání zelené diody LED modulu, které indikuje stav zařízení nepřipojeného k internetu.
 
 /- Obrázek indikující blikající ledku po startu
 

@@ -21,7 +21,7 @@
 
 ## Hardware
 
-* [Obecné](byzance_documentation/hardware_intro/obecne.md)
+* [Úvod](byzance_documentation/hardware_intro/uvod.md)
   * [Kde začít](byzance_documentation/hardware_intro/obecne/kde-zacit.md)
   * [Struktura programu](byzance_documentation/hardware_intro/obecne/struktura-programu.md)
   * [Aktualizace firmware](byzance_documentation/hardware_intro/obecne/aktualizace-firmware.md)
