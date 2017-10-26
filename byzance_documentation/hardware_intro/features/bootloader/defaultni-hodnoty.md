@@ -30,6 +30,7 @@ DEFAULTS_CONF_TIMEOFFSET            0
 DEFAULTS_CONF_TIMESYNC                1
 DEFAULTS_CONF_LOWPANBR                0
 DEFAULTS_CONF_RESTARTBL            0
+DEFAULTS_CONF_AUTOJUMP				300
 
 // informace o wifi čipu (zastaralé, nyní nepoužito)
 DEFAULTS_WIFI_VERSION_NAME            'V'
