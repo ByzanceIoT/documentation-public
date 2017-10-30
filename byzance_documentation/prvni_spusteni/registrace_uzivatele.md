@@ -8,5 +8,9 @@ Do portálu je možné se pohodlně přihlásit z profilu Facebook a GitHub, neb
 
 
 
-![](/images/zaciname/login.PNG)
+
+
+
+
+![](/images/zaciname/dashboard.PNG)
 
