@@ -1,4 +1,9 @@
-# Summary
+
+## První spuštění
+* [Úvod](byzance_documentation/prvni_spusteni/uvod.md)
+* [Registrace uživatele](byzance_documentation/prvni_spusteni/registrace_uzivatele.md)
+* [Registrace zařízení](byzance_documentation/prvni_spusteni/registrace_zarizeni.md)
+* [Oživení zařízení](byzance_documentation/prvni_spusteni/oziveni_zarizeni.md)
 
 ## Summary
 
