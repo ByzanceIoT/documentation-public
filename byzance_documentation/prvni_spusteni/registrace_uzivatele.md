@@ -5,3 +5,8 @@ Předtím, než bude možné zařízení registrovat a zprovoznit, je třeba mí
 ![](/images/zaciname/login.PNG)
 
 Do portálu je možné se pohodlně přihlásit z profilu Facebook a GitHub, nebo je možné si vytvořit nový profil kliknutím na tlačítko "CREATE AN ACCOUNT".
+
+
+
+![](/images/zaciname/login.PNG)
+
