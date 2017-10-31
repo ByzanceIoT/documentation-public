@@ -2,8 +2,7 @@
 
 * todo: pár vět/odstavců s krátkým a stručným přehledem, co tato deska je, k čemu slouží a co umí a asi fotku, další detaily bych dal do podkapitol
 
-### Mikrokontrolér <a name="sometext"></a>
-
+### Mikrokontrolér 
 * STM32F437IIH6 \([Datasheet](http://www.st.com/content/ccc/resource/technical/document/datasheet/fd/8c/0a/19/13/8f/41/99/DM00077036.pdf/files/DM00077036.pdf/jcr:content/translations/en.DM00077036.pdf)\)
 * 2 MB Flash
 * 192 kB SRAM \(včetně 64 KB CCM\)
