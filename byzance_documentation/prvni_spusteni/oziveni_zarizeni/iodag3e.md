@@ -6,4 +6,4 @@
 ### Připojení napájení
 
 
-### Připojení k 
+### Připojení k portálu
