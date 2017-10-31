@@ -20,6 +20,13 @@ Po připojení USB kabelu lze pozorovat rozsvícení několika indikačních LED
 
 ### Připojení k portálu
 
-Všechna zařízení Byzance jsou nastavena již z výroby, tudíž pro připojení k portálu stačí k zařízení připojit Ethernetový kabel
+Všechna zařízení Byzance jsou nastavena již z výroby, tudíž pro připojení k portálu stačí k zařízení připojit Ethernetový kabel a zařízení se samo připojí. Úspěšné připojení zařízení indikuje rychlým blikáním led modulu
+
+\- klipart s blikajícím modulem po připojení k Homeru
+
+
+
+
+
 
 
