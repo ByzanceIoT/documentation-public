@@ -8,7 +8,7 @@ Předtím, než bude možné zařízení registrovat a zprovoznit, je nutné na 
 
 ![](/images/zaciname/login.PNG)
 
-V přihlašovacím okně je možné vytvořit nový účet pomocí tlačítka **CREATE AN ACCOUNT**. Nebo se přihlásit s využitím profilu Facebook či Github.
+V přihlašovacím okně je možné vytvořit nový účet pomocí tlačítka **CREATE AN ACCOUNT**. Nebo se přihlásit s využitím profilu Facebook či Github. 
 
 Po úspěšném přihlášení se zobrazí Dashboard portálu Byzance. V pravé horní 
 
