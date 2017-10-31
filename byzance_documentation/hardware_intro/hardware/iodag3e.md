@@ -1,6 +1,6 @@
 # IODAG3E
 
-Technická specifikace
+* todo: pár vět/odstavců s krátkým a stručným přehledem, co tato deska je, k čemu slouží a co umí a asi fotku, další detaily bych dal do podkapitol
 
 ### Mikrokontrolér
 
@@ -25,6 +25,7 @@ viz \[\[lowpan:teoreticke\_informace\_lowpan\|Základní teoretické informace o
 * přenosová rychlost až 10 kBps
 
 * možnost režimu border router \(sdílení Internetového připojení pro LowPAN síť - NAT64, DNS64\) viz. \[\[feature:lowpanbr\|Lowpan BR\]\]
+
 * možnost připojení k Internetu prostřednictvím LowPAN sítě viz. \[\[feature:lowpan\|6Lowpan\]\]
 
 ### Externí paměť
@@ -37,46 +38,70 @@ viz \[\[lowpan:teoreticke\_informace\_lowpan\|Základní teoretické informace o
 * Tlačítko USER
 * RGB LED pro signalizaci
 
-### Napájení
+## Napájení
 
-První tři varianty \(USB, PoE, externí zdroj\) napájení mohou být použity současně a je to bezpečné \(z pohodlnosti, jako záloha, ..\). Použití možnosti \*\*MAIN\_PWR\_OUT\*\* vylučuje použít současně jakýkoliv jiný zdroj.
+Deska IODAG3E disponuje **třemi **standartními **napájecími vstupy** \(USB, PoE, externí\) s širokém rozsahem akceptovaného napájecího napětí. Všechny tři varianty výše uvedené varianty mohou být použity současně, je to bezpečné a lze je zapínat nezávisle na sobě \(z pohodlnosti, jako záloha, ..\). Čtvrtou možností je použití signálu _**VBUS**_, který je vyveden na X a Y liště desky. Jeho použití **není **pro běžného uživatele **bezpečné **a nemělo by se používat. Všechny možnosti jsou dále detailněji rozebrány.
 
-#### USB
+**Příkon **desky se v zásvislost na stavu a činnosti desky a zvoleném vstupu pohybuje od 0.6W do 0.9W. Měřeno bez rozšiřujících desek a dalších připojených komponentech. Příkon je také závisly na amplitudě napájecího napětí.
 
-```
-\* klasika, 5V, doporučený max. proud 1000mA 
+Všechny uvedené proudy jsou bezpečné proudy pro dlouhodobější provoz s ohledem na výkonové ztráty v systému \(zahřívání komponent\). Překročení **horní** hranice uvedených napětí může vést k **poškození **zařízení. Naopak **podpětí** a **nedostatečně dimenzovaný **vstup zdroj energie může zpusobit **nepředvídatelné chování **a nestabilitu.
 
-\* Dle tolerancí USB je napětí +-10% a deska to splňuje a je ochotná startovat od 4,5V na USB.
-```
+Detailnější výsledky měření na napájecí kaskádě jsou dostupné v gitu \(rezpozitář _hardware/G3/IODAG3E/Measurements/22062017\_psu_\).
 
-#### PoE
+### USB
 
-Napájení přes LAN kabel
+Napájení skrze klasický micro USB konektor, stačí zapojit a deska poběží. 
 
-* Kompatibilita se \*\*standartem 802.3af\*\* \(802.3at Type 1\). Nelze říct, že \*\*podpora\*\* standartu 802.3af, protože PoE uvedeného standartu povoluje napětí od 37 do 57V. My chceme jít od nižšího napětí a proto jsme jen kompatibilní a navíc umíme i níže uvedené pasivní PoE.
-* IODA je navržen jako //Class 0// zařízení z čehož vyplívá, že přes PoE může odebírat max. 12.95W energie.
-* Zároven umíme tzv. \*\*pasivní PoE\*\*. Tzn. akceptujeme napájecí napětí 10 - 60V na nevyužitých párech 100Mbit LAN kabelu \(10V spodní hranice je otázkou domluvy, technicky je limit cca 6,5V\). Doporučený max. proud vstupem 500mA.
-* Víceméně k PoE přistupujeme jako Mikrotik na jejich zařízeních \(\[\[[http://www.wifihw.cz/img.asp?attid=22184\|ukázka](http://www.wifihw.cz/img.asp?attid=22184|ukázka) popisku\]\]\).
+Technické vlastností USB vstupu:
 
-#### Externí zdroj
+* doporučené vstupní napětí: 5.0V \(+-10% dle specifikací USB\)
+* doporučený maximální proud vstupem: 1.0A
+* vstup je vybaven přepěťovou ochranou: max. vstupní napětí je 6.0V
 
-```
-  \* AC/DC, napětí 10-60V, proud až 500mA \(technicky stejně jako u pasivního PoE\)
+### PoE
 
-  \* Je to ten zelený konektor vedle ethernetového kabelu. Polarita napětí není podstatná.
-```
+Napájení po datovém síťovém kabelu, bez nutnosti přivést napájecí napětí k přístroji dalším samostatným kabelem. Rozlišuje se tzv. **aktivní **a **pasivní PoE**.
 
-#### MAIN\_PWR\_OUT
+#### **Aktivní PoE **
 
-signál na liště X/Y
+* **Kompatibilita **se standartem **802.3af** \(802.3at Type 1, tzn. **aktivní** PoE\). Nelze doslovně uvést **podporujeme** standart 802.3af, protože PoE uvedeného standartu povoluje napětí od 37 do 57V. My chceme jít od nižšího napětí a proto jsme **jen** **kompatibilní **s daným standartem a navíc umíme i níže uvedené pasivní PoE, které funguje od nižšího napětí.
+* IODA je navržen jako _**Class 0**_ zařízení z čehož vyplívá, že přes PoE může odebírat max. 12.95W energie.
 
-* na daný signál je možné aplikovat \*\*nechráněné napětí\*\* přímo na vstup spínanného zdroje a dosáhnout tak běhu YODY v rozmezí 4-57V. Maximální proud vstupem 1200mA \(dáno šířkou spoje, 0.6mm/18um\).
-* Umožnuje běh YODY z externího 5V zdroje \(typicky při vestavbě do existujícího 5V systému\). 
-* Tato věc je technicka možná, nicméně se silně nedoporučuje. \*\*Člověk musí chápat, co dělá.\*\* Spíš jen pro interní info.
+#### P**asivní PoE **
 
-Všechny uvedené proudy jsou bezpečné proudy pro dlouhodobější provoz s ohledem na výkonové ztráty v systému \(zahřívání komponent\). Překročení \*\*horní\*\* hranice uvedených \*\*napětí\*\* může vést k \*\*poškození\*\* zařízení. Naopak \*\*podpětí\*\* a \*\*nedostatečně dimenzovaný\*\* vstup zdroj energie může zpusobit \*\*nepředvídatelné chování\*\*.
+* Zároven umíme tzv. **pasivní **PoE. Tzn. akceptujeme napájecí napětí 6 - 60V na nevyužitých párech 100Mbit LAN kabelu. 
 
-Detailnější výsledky měření na napájecí kaskádě jsou dostupné v gitu \(//hardware/IODAG3/Measurements/22062017\_psu//\).
+Víceméně k PoE přistupujeme jako Mikrotik na jejich zařízeních \([http://www.wifihw.cz/img.asp?attid=22184](http://www.wifihw.cz/img.asp?attid=22184|ukázka)\). Kombinují se vlastnosti aktivního PoE s výhodami pasivního PoE pro dosažení maximální flexibility a jednoduchosti použití \(tj. funguje to jednoduše a za všech okolností\). 
+
+Technické vlastností PoE napájení:
+
+* rozsah vstupního napětí 6 - 60V AC/DC
+* doporučený maximální proud vstupem: 0.5A
+* vstup je vybaven přepěťovou ochranou zasahující lehce nad 60V
+
+### Externí zdroj
+
+ Jde o napájení přivedené do zeleného konektoru na čelní straně desky vedle ethernetového kabelu. Výhodou je široký rozsah napájecího napětí a jeho nezávislost na polaritě.
+
+Technické vlastností vstupu externího napájení:
+
+* rozsah vstupního napětí 6 - 60V AC/DC
+* doporučený maximální proud vstupem: 0.5A
+* vstup je vybaven přepěťovou ochranou zasahující lehce nad 60V
+
+### VBUS
+
+Jde o signál na liště X/Y, jehož** použití není **pro běžného uživatele **bezpečné **a a může vést ke zničení desky či připojeného zdroje. Na daný signál je možné aplikovat napětí přímo na **nechráněný** vstup spínanného zdroje a dosáhnout tak běhu desky již od napětí typ. 4.0V.
+
+Smyslem je umožnit běh desky z externího 5V zdroje \(typicky při vestavbě do existujícího 5V systému\). Tato věc je technicky možná, nicméně se silně **nedoporučuje**. Člověk musí chápat, co dělá. Spíš jen pro interní info. 
+
+Technické vlastností napájení signálem VBUS:
+
+* rozsah vstupního napětí 4.0 - 60V DC \(horní limit maximální, doporučeno spíše 57V\)
+* doporučený maximální proud vstupem: 1.2A \(dáno šířkou spoje, 0.6mm/18um\)
+* pro použití nutno vodivě spojit pájecí propojku SJ1 \(vedle tlačítka RST\)
+
+
 
 ### Rozměry a hmotnost
 
