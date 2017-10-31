@@ -14,6 +14,8 @@
 * [Úvod](programovani/uvod.md)
 * [Struktura programu ](programovani/struktura-programu.md)
 * [MBED API ](programovani/mbed-api.md)
+  * Vstupy a výstupy 
+  * [Komunikační rozhraní](programovani/mbed-api/komunikacni-rozhrani.md)
 * [Byzance API ](programovani/byzance-api.md)
   * Funkce
   * Uživatelská makra

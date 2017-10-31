@@ -6,9 +6,10 @@ Zařízení Byznce se programují v jazyce **C++** a využívají knihoven **MBE
 #include "byzance.h"
 ```
 
-Tato knihovna má za úkol automaticky inicializovat periferie, připojit desku k internetu a inicializovat vlákna, která se starají o update zdrojového kódu a připojení k serverům. Importem knihovny se také zpřístupní knihovna [Byzance API](/byzance_documentation/hardware_intro/API/byzance-api.md) a [uživatelská makra](/byzance_documentation/hardware_intro/API/makra.md).
+Tato knihovna má za úkol automaticky inicializovat periferie, připojit zařízení k internetu a inicializovat vlákna, která se starají o update zdrojového kódu a připojení k serverům. Importem knihovny se také zpřístupní [funkce]() a [uživatelská makra]() Byzance API.
 
-**TO DO!!!!**  Následovat by měla definice vstupů a výstupů pro blocko, ale Code server si s tím poradí v celém main souboru.
+
+Po importu knihovny byzance by měla následovat definice vstupů a výstupů pro , ale Code server si s tím poradí v celém main souboru.
 
 
 Více viz [Byzance IO](/byzance_documentation/hardware_intro/API/byzance-io.md).
