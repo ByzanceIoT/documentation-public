@@ -18,7 +18,7 @@
   * [Komunikační rozhraní](programovani/mbed-api/komunikacni-rozhrani.md)
 * [Byzance API ](programovani/byzance-api.md)
   * [Funkce](programovani/byzance-api/funkce.md)
-  * Uživatelská makra
+  * [Uživatelská makra](programovani/byzance-api/uzivatelska-makra.md)
 * [Ukázkové programy ](programovani/ukazkove-programy.md)
 
 ## Summary
