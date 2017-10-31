@@ -24,7 +24,7 @@ Bližší informace o fyzických vstupech a výstupech lze získat v [MBED API -
 
 ### Definice virtuálních vstupů a výstupů
 
-Při programování funkčního bloku v pro tool [BLOCKO](odkaz na blocko) v portálu Byzance je často potřeba definovat virtuální vstupy a výstupy, které symbolizují právě vstupy a výstupy funkčního bloku. Tyto definice je nutné zanést společně s fyzikými vstupy a výstupy.
+Při programování funkčního bloku toolu [BLOCKO](odkaz na blocko) v portálu Byzance je často potřeba definovat virtuální vstupy a výstupy, které symbolizují právě vstupy a výstupy funkčního bloku. Tyto definice je nutné zanést společně s fyzikými vstupy a výstupy.
 
 ```cpp
 
@@ -40,7 +40,7 @@ ANALOG_INPUT(ain_name, {
 
 ```
 
-Bližší informace o Virtuálních vstupech a výstupech a programování funkčních bloků lze dohledat v [Byzance API - Digitální vstupy a výstupy](/programovani/byzance-api/digitalni-vstupy-a-vystupy.md)
+Bližší informace o významu a funkci virtuálních vstupů/výstupů a programování funkčních bloků lze dohledat v [Byzance API - Digitální vstupy a výstupy](/programovani/byzance-api/digitalni-vstupy-a-vystupy.md)
 
 ### Definice komunikačních rozhraní
 
