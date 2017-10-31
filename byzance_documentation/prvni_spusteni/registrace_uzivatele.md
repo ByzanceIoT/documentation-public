@@ -14,5 +14,7 @@ V přihlašovacím okně je možné vytvořit nový účet pomocí tlačítka **
 
 
 
+
+
 ![](/images/zaciname/dashboard.PNG)
 
