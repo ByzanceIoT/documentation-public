@@ -10,10 +10,13 @@ Portál je internetová aplikace vytvořená Byzánce, která slouží jako brá
 
 ### Typy Byzance zařízení 
 
-Byzance nabízí portfolio zařízení, která se liší, komunikačními rozhraními 
+Byzance nabízí portfolio zařízení. Jednotlivá zařízení se liší komunikačními rozhraními a 
 
 
-Veškerá IoT zařízení Byzance komunikují s [portálem](Odkza na portál), přes který se připojená zařízení konfigurují, programují a provádí jejich aktualizace. Portál je zároveň bránou přes kterou zařízení může navazovat libovolnou komunikaci s okolním světem.
+ 
+Tato dokumentace pomáhá uživateli při prvním spuštění a konfiguraci nového zařízení. Bližší informace a specifikace jednotlivých zařízení lze nalézt v 
+
+
 
 
 
