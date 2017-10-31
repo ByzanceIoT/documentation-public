@@ -1,1 +1,3 @@
 ## Registrace zařízení
+
+Poté 
