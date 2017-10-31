@@ -42,8 +42,7 @@ ANALOG_INPUT(ain_name, {
 
 Bližší informace o Virtuálních vstupech a výstupech a programování funkčních bloků lze dohledat v [Byzance API - Digitální vstupy a výstupy](/programovani/byzance-api/digitalni-vstupy-a-vystupy.md)
 
-
-
+### Definice komunikačních rozhraní
 
 
 Poté je vhodné inicializovat globální proměnné a objekty jako například sériová komunikace atd.
