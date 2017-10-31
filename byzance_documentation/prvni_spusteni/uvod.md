@@ -10,7 +10,7 @@ Portál je internetová aplikace vytvořená Byzance, která slouží jako brán
 
 ### Konfigurace hardware
  
-Tato dokumentace pomáhá uživateli při prvním spuštění a základní konfiguraci těchto zařízení. Bližší informace a specifikace jednotlivých zařízení lze nalézt v [Hardwarové dokumentaci](Odkaz na Hardwarovou docu).
+Následující dokumentace pomáhá uživateli při prvním spuštění a základní konfiguraci nově zakoupených zařízení. Bližší informace a specifikace jednotlivých zařízení lze nalézt v [Hardwarové dokumentaci](Odkaz na Hardwarovou docu).
 
 
 
