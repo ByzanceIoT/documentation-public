@@ -1,6 +1,6 @@
 ## Registrace uživatele
 
-Předtím, než bude možné zařízení registrovat a zprovoznit, je nutné na tomto [portále](Odkaz na portál) vytvořit uživatelský účet. 
+Předtím, než bude možné zařízení registrovat a zprovoznit, je nutné vytvořit uživatelský účet na [portálu](Odkaz na portál). 
 
 ### Vytvoření uživatelského účtu 
 
