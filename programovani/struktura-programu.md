@@ -50,7 +50,7 @@ Pokud je v programu potřeba využít nějaké komunikační rozhraní jako Sér
 Serial pc(SERIAL_TX_pin, SERIAL_RX_pin); // tx, rx
 ```
 
-Bližší informace ke komunikačním rozhraním lze získat v sekci [MBED API-Komunikační rozhraní](/programovani/mbed-api/komunikacni_rozhrani.md)
+Bližší informace ke komunikačním rozhraním lze získat v sekci [MBED API-Komunikační rozhraní](/programovani/mbed-api/komunikacni-rozhrani.md)
 
 
 
