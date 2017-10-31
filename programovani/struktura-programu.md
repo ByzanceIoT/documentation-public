@@ -17,10 +17,8 @@ Následně po importu všech potřebných knihoven, je v případě jejich použ
 DigitalOut D1(X02);
 DigitalIn D2(X05);
 AnalogOut A1(Y23);
-
+AnalogIn analog_vstup(Y22)
 ```
-
-
 
 ### Virtuální vstupy a výstupy 
 
