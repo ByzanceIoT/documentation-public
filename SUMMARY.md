@@ -20,6 +20,7 @@
   * [Funkce](programovani/byzance-api/funkce.md)
   * [Uživatelská makra](programovani/byzance-api/uzivatelska-makra.md)
   * [Digitální vstupy a výstupy ](programovani/byzance-api/digitalni-vstupy-a-vystupy.md)
+* [Programování funkčních bloků](programovani/programovani-funkcnich-bloku.md)
 * [Ukázkové programy ](programovani/ukazkove-programy.md)
 
 ## Summary

@@ -40,7 +40,7 @@ ANALOG_INPUT(ain_name, {
 
 ```
 
-Bližší informace o významu a funkci virtuálních vstupů/výstupů a programování funkčních bloků lze dohledat v [Byzance API - Digitální vstupy a výstupy](/programovani/byzance-api/digitalni-vstupy-a-vystupy.md)
+Bližší informace o významu a funkci virtuálních vstupů/výstupů a programování funkčních bloků lze dohledat v [Prograování funkčních bloků](/programovani/byzance-api/digitalni-vstupy-a-vystupy.md)
 
 ### Definice komunikačních rozhraní
 
