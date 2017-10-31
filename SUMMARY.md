@@ -14,7 +14,7 @@
 * [Úvod](programovani/uvod.md)
 * [Struktura programu ](programovani/struktura-programu.md)
 * [MBED API ](programovani/mbed-api.md)
-  * Vstupy a výstupy 
+  * [Vstupy a výstupy ](programovani/mbed-api/vstupy-a-vystupy.md)
   * [Komunikační rozhraní](programovani/mbed-api/komunikacni-rozhrani.md)
 * [Byzance API ](programovani/byzance-api.md)
   * [Funkce](programovani/byzance-api/funkce.md)
