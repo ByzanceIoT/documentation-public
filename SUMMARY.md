@@ -12,10 +12,10 @@
 ## Programování
 
 * [Úvod](programovani/uvod.md)
-* Struktura programu 
-* MBED API 
-* BYZANCE API 
-* Ukázkové programy 
+* [Struktura programu ](programovani/struktura-programu.md)
+* [MBED API ](programovani/mbed-api.md)
+* [BYZANCE API ](programovani/byzance-api.md)
+* [Ukázkové programy ](programovani/ukazkove-programy.md)
 
 ## Summary
 
