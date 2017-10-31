@@ -1,0 +1,1 @@
+## Digitální vstupy a výstupy 

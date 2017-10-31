@@ -24,27 +24,27 @@ Bližší informace o fyzických vstupech a výstupech lze získat v [MBED API -
 
 ### Definice virtuálních vstupů a výstupů
 
-Při programování funkčního bloku v pro tool [BLOCKO](odkaz na blocko) je často potřeba definovat virtuální vstupy a výstupy, které symbolizují právě vstupy a výstupy funkčního bloku
-
-Po importu knihovny Byzance by měla následovat definice vstupů a výstupů pro , ale Code server si s tím poradí v celém main souboru.
-
-
-Více viz [Byzance IO](/byzance_documentation/hardware_intro/API/byzance-io.md).
+Při programování funkčního bloku v pro tool [BLOCKO](odkaz na blocko) v portálu Byzance je často potřeba definovat virtuální vstupy a výstupy, které symbolizují právě vstupy a výstupy funkčního bloku. Tyto definice je nutné zanést společně s fyzikými vstupy a výstupy.
 
 ```cpp
-//definice virtuálních vstupů a výstupů
+
+// digitalni vstup s nazvem din_name
+DIGITAL_INPUT(din_name, {
+    my_din_variable = value;
+})
+
+// analogovy vstup s nazvem ain_name
+ANALOG_INPUT(ain_name, {
+    my_ain_variable = value;
+})
+
 ```
 
-V další části kódu se poté definují fyzické vstupy a výstupy desky viz [MBED vstupy a výstupy](/byzance_documentation/hardware_intro/API/mbed-api/vstupy-a-vystupy.md)
+Bližší informace o Virtuálních vstupech a výstupech a programování funkčních bloků lze dohledat v [Byzance API]()
 
 
-```cpp
-// Definice fyzických vstupů a výstupů
-DigitalOut D1(X02);
-DigitalIn D2(X05);
-AnalogOut A1(Y23);
 
-```
+
 
 Poté je vhodné inicializovat globální proměnné a objekty jako například sériová komunikace atd.
 
