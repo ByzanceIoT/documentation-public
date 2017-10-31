@@ -15,6 +15,8 @@
 * [Struktura programu ](programovani/struktura-programu.md)
 * [MBED API ](programovani/mbed-api.md)
 * [Byzance API ](programovani/byzance-api.md)
+  * Funkce
+  * Uživatelská makra
 * [Ukázkové programy ](programovani/ukazkove-programy.md)
 
 ## Summary

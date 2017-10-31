@@ -1,16 +1,12 @@
 ## Struktura programu
 
-Zařízení Byznce se programují v jazyce **C++** a využívají knihoven **MBED API** a **Byzance API**
-
-
-Základem při psaní zdrojového kódu je využití open-source operačního systému [MBED-OS](/byzance_documentation/hardware_intro/API/mbed-api.md). Kód se píše především v online rozhraní Becki Byzance. **TO DO - odkaz na článek o becki**
-
-V první části programu, nejlépe již na prvním řádku, je nutné importovat knihovnu Byzance pomocí příkazu:
+Zařízení Byznce se programují v jazyce **C++** a využívají knihoven **MBED API** a **Byzance API**. Pro správnou funkčnost programu v Byzance zařízení je nutné importovat knihovny byzance příkazem 
 
 ```cpp
 #include "byzance.h"
 ```
-Tato knihovna má za úkol automaticky inicializovat periferie, připojit desku k internetu a inicializovat vlákna, která se starají o update zdrojového kódu a připojení k serverům. Includem knihovny se zpřístupní [Byzance API](/byzance_documentation/hardware_intro/API/byzance-api.md) a [uživatelská makra](/byzance_documentation/hardware_intro/API/makra.md).
+
+Tato knihovna má za úkol automaticky inicializovat periferie, připojit desku k internetu a inicializovat vlákna, která se starají o update zdrojového kódu a připojení k serverům. Importem knihovny se také zpřístupní knihovna [Byzance API](/byzance_documentation/hardware_intro/API/byzance-api.md) a [uživatelská makra](/byzance_documentation/hardware_intro/API/makra.md).
 
 **TO DO!!!!**  Následovat by měla definice vstupů a výstupů pro blocko, ale Code server si s tím poradí v celém main souboru.
 
