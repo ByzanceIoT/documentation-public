@@ -14,7 +14,7 @@
 * [Úvod](programovani/uvod.md)
 * [Struktura programu ](programovani/struktura-programu.md)
 * [MBED API ](programovani/mbed-api.md)
-* [BYZANCE API ](programovani/byzance-api.md)
+* [Byzance API ](programovani/byzance-api.md)
 * [Ukázkové programy ](programovani/ukazkove-programy.md)
 
 ## Summary
