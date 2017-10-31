@@ -1,7 +1,5 @@
 ## Registrace uživatele
 
-Veškerá IoT zařízení Byzance komunikují s [portálem](Odkza na portál), přes který se připojená zařízení konfigurují, programují a provádí jejich aktualizace. Portál je zároveň bránou přes kterou zařízení může navazovat libovolnou komunikaci s okolním světem.
-
 Předtím, než bude možné zařízení registrovat a zprovoznit, je nutné na tomto [portále](Odkaz na portál) vytvořit uživatelský účet. 
 
 ### Vytvoření uživatelského účtu 
