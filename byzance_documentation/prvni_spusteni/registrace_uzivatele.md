@@ -13,3 +13,5 @@ V přihlašovacím okně se lze přilásit s využitím účtu Facebook či Gith
 Po úspěšném přihlášení se zobrazí Dashboard portálu Byzance
 
 ![](/images/zaciname/dashboard.PNG)
+
+
