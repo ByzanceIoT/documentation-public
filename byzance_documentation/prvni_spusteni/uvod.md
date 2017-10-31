@@ -14,7 +14,7 @@ Byzance nabízí portfolio zařízení. Jednotlivá zařízení se liší komuni
 
 
  
-Tato dokumentace pomáhá uživateli při prvním spuštění a konfiguraci nového zařízení. Bližší informace a specifikace jednotlivých zařízení lze nalézt v 
+Tato dokumentace pomáhá uživateli při prvním spuštění a základní konfiguraci nového zařízení. Bližší informace a specifikace jednotlivých zařízení lze nalézt v [Hardwarové dokumentaci](Odkaz na Hardwarovou docu) 
 
 
 
