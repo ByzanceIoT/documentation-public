@@ -1,6 +1,6 @@
 ## Registrace uživatele
 
-Předtím, než bude možné zařízení registrovat a zprovoznit, je třeba mít vytvořený účet na [Portále Byznace](http://byzance.cz), ke kterému se nové zařízení přhlásí. 
+Předtím, než bude možné zařízení registrovat a zprovoznit, je třeba mít vytvořený účet na [Portále Byznace](http://byzance.cz), ke kterému se nové zařízení přihlásí a pomocí kterého budete . 
 
 ![](/images/zaciname/login.PNG)
 
