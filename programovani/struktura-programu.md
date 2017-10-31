@@ -14,9 +14,9 @@ Následně po importu všech potřebných knihoven, je v případě jejich použ
 
 ```cpp
 // Definice fyzických vstupů a výstupů
-DigitalOut D1(X02);
-DigitalIn D2(X05);
-AnalogOut A1(Y23);
+DigitalOut digital_vystup(X02);
+DigitalIn digital_vstup(X05);
+AnalogOut analog_vystup(Y23);
 AnalogIn analog_vstup(Y22)
 ```
 
