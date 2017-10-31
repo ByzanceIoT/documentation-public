@@ -17,7 +17,7 @@
   * Vstupy a výstupy 
   * [Komunikační rozhraní](programovani/mbed-api/komunikacni-rozhrani.md)
 * [Byzance API ](programovani/byzance-api.md)
-  * Funkce
+  * [Funkce](programovani/byzance-api/funkce.md)
   * Uživatelská makra
 * [Ukázkové programy ](programovani/ukazkove-programy.md)
 
