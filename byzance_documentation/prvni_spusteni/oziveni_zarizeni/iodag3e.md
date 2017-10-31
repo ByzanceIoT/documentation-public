@@ -2,6 +2,7 @@
 
 ### Popis zařízení
 
+IODAG3E je Byzance zařízení 3. generace, které .... TO DO POPIS
 
 ### Připojení napájení
 
