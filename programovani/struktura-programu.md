@@ -14,15 +14,17 @@ Následně po importu všech potřebných knihoven, je v případě jejich použ
 
 ```cpp
 // Definice fyzických vstupů a výstupů
-DigitalOut digital_vystup(X02);
-DigitalIn digital_vstup(X05);
-AnalogOut analog_vystup(Y23);
-AnalogIn analog_vstup(Y22)
+DigitalOut DI1(X02);
+DigitalIn DO1(X05);
+AnalogOut AO1(Y23);
+AnalogIn AI1(Y22)
 ```
+
+Bližší informace o fyzických vstupech a výstupech lze získat v [MBED API - Vstupy a výstupy](/programovani/mbed-api/vstupy-a-vystupy.md).
 
 ### Virtuální vstupy a výstupy 
 
-
+Při vitváře
 
 Po importu knihovny Byzance by měla následovat definice vstupů a výstupů pro , ale Code server si s tím poradí v celém main souboru.
 
