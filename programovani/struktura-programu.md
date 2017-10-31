@@ -10,7 +10,17 @@ Tato knihovna má za úkol automaticky inicializovat periferie, připojit zaří
 
 ### Definice fyzických vstupů a výstupů
 
-Následně po importu všech potřebných knihoven, je v případě použití nutné definovat 
+Následně po importu všech potřebných knihoven, je v případě jejich použití nutné definovat fyzické vstupy a výstupy, které se budou v programu používat. Zařízení Byzance na své GPIO sběrnici disponují Analogovými i digitálními vstupy a výstupy.
+
+```cpp
+// Definice fyzických vstupů a výstupů
+DigitalOut D1(X02);
+DigitalIn D2(X05);
+AnalogOut A1(Y23);
+
+```
+
+
 
 ### Virtuální vstupy a výstupy 
 
