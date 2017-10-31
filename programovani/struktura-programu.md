@@ -53,10 +53,17 @@ Serial pc(SERIAL_TX_pin, SERIAL_RX_pin); // tx, rx
 Bližší informace ke komunikačním rozhraním lze získat v sekci [MBED API-Komunikační rozhraní](/programovani/mbed-api/komunikacni-rozhrani.md)
 
 
+### Hlavní funkce programu
 
+Program může mít definované tři základní funkce
 
-**TO DO - přeformulovat následující odstavec**
-Po inicializaci proměnných je možné implementovat funkci pre\_init\(\). Tato funkce je spuštěna předtím, než je inicializováno vlákno Byzance a předtím než se zažízení připojí k serverům. Tuto funcki není nutné implementovat, nicméně je vhodná v případě debugu.
+* pre\_init()
+* init()
+* loop()
+
+#### Funkce pre_init()
+
+Tato funkce je zavolána na začátku programu jako první, ještě předtím, než je inicializováno vlákno Byzance a předtím než se zařízení připojí k serverům. Tuto funkci není povinné implementovat, nicméně její implementace může být užitečná například při debugu komunikace se servery nebo ovládání některých funkcí inicializovaných operačním systémem MBED. 
 
 ```cpp
 void pre_init(){
@@ -64,25 +71,31 @@ void pre_init(){
 }
 ```
 
-Následuje inicializační část, která je automaticky zavolána právě jednou po startu zařízení.
+#### Funkce init()
+
+Funkce _init_ je provedená hned po funkci _pre_init_ a stejně tak pouze jednou. Tato funkce slouží k inicializaci prvků potřebných v hlavní části programu. Její implementace není povinná. 
 
 ```cpp
 void init(){
     pc.printf("Hello world\n");
 }
 ```
-Poslední je část kódu, který se bude vykonávat ve smyčce. Slouží jako náhrada while\(true\) cyklu v klasické main funkci. Jediným rozdílem je to, že mezi každým loop\(\) se automaticky dává prostor i Byzance vláknu a [resetuje se watchdog](/byzance_documentation/hardware_intro/features/watchdog.md). 
+
+#### Funkce loop()
+
+Poslední hlavní funkcí je funkce _loop_, Tato funkce je vykonávaná ve smyčce a nahrazuje tak funkci _while(true)_. Jediným rozdílem je to, že mezi jednotlivými smyčkami se dává prostor Byzance vláknu, které zajišťuje komunikaci a resetuje se watchdog.
 
 ```cpp
 void loop(){
-    pc.printf("Test\n");
+    pc.printf("Hello world\n");
     Thread::wait(500);
 }
 ```
 
-# Příklad
+### Hello world
 
-Jednoduchý kód pro výpis do sériové linky \(bez debugu\) může tedy vypadat například takto.
+Následující kód zobrazuje strukturu programu **Hello_world** s definicí vstupů, výstupů a komunikačních rozhraní a implementací všech třech hlavních funkcí
+
 
 ```cpp
 #include "byzance.h"
