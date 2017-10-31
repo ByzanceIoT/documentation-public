@@ -24,7 +24,7 @@ Bližší informace o fyzických vstupech a výstupech lze získat v [MBED API -
 
 ### Virtuální vstupy a výstupy 
 
-Při vitváře
+Při programování funkčního bloku v pro tool [BLOCKO](odkaz na blocko)  
 
 Po importu knihovny Byzance by měla následovat definice vstupů a výstupů pro , ale Code server si s tím poradí v celém main souboru.
 
