@@ -1,6 +1,6 @@
 ## Vstupy a výstupy
 
-V této sekci jsou zdokumentovány funkce z knihovny MBED API, sloužící k ovládání fyzických vstupů a výstupů GPIO sběrnice.
+V této sekci jsou zdokumentovány funkce z knihovny MBED API, sloužící k ovládání fyzických vstupů a výstupů GPIO sběrnice zařízení Byzance.
 
 ## AnalogIn
 
