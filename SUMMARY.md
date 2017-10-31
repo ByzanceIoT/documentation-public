@@ -7,6 +7,7 @@
 * [Registrace zařízení](byzance_documentation/prvni_spusteni/registrace_zarizeni.md)
 * [Oživení zařízení](byzance_documentation/prvni_spusteni/oziveni_zarizeni.md)
   * [IODAG3E](byzance_documentation/prvni_spusteni/oziveni_zarizeni/iodag3e.md)
+  * [IODAG3W](byzance_documentation/prvni_spusteni/oziveni_zarizeni/ioda-g3w.md)
 
 ## Summary
 
