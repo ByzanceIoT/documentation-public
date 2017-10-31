@@ -1,2 +1,2 @@
-## Oživení zařízení IODA G3E 
+## Oživení zařízení IODAG3E 
 
