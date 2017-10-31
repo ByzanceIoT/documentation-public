@@ -4,3 +4,4 @@ Tato dokumentace popisuje, jak správně nakonfigurovat a zprovoznit nové zař�
 
 
 
+
