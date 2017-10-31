@@ -40,16 +40,20 @@ ANALOG_INPUT(ain_name, {
 
 ```
 
-Bližší informace o významu a funkci virtuálních vstupů/výstupů a programování funkčních bloků lze dohledat v [Prograování funkčních bloků](/programovani/byzance-api/digitalni-vstupy-a-vystupy.md)
+Bližší informace o významu a funkci virtuálních vstupů/výstupů a programování funkčních bloků lze dohledat v sekci [Prograování funkčních bloků](/programovani/byzance-api/digitalni-vstupy-a-vystupy.md)
 
 ### Definice komunikačních rozhraní
 
-
-Poté je vhodné inicializovat globální proměnné a objekty jako například sériová komunikace atd.
+Pokud je v programu potřeba využít nějaké komunikační rozhraní jako Sériová linka, SPI, CAN apd. je vhodné provést jejich definici v této části za definicí vstupů a výstupů. Definice sériové linky je znázorněna v následujícím kódu.
 
 ```cpp
 Serial pc(SERIAL_TX_pin, SERIAL_RX_pin); // tx, rx
 ```
+
+Bližší informace ke komunikačním rozhraním lze získat v sekci [MBED API-Komunikační rozhraní](/programovani/mbed-api/komunikacni_rozhrani.md)
+
+
+
 
 **TO DO - přeformulovat následující odstavec**
 Po inicializaci proměnných je možné implementovat funkci pre\_init\(\). Tato funkce je spuštěna předtím, než je inicializováno vlákno Byzance a předtím než se zažízení připojí k serverům. Tuto funcki není nutné implementovat, nicméně je vhodná v případě debugu.
