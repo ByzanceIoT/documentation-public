@@ -22,9 +22,9 @@ AnalogIn AI1(Y22)
 
 Bližší informace o fyzických vstupech a výstupech lze získat v [MBED API - Vstupy a výstupy](/programovani/mbed-api/vstupy-a-vystupy.md).
 
-### Virtuální vstupy a výstupy 
+### Definice virtuálních vstupů a výstupů
 
-Při programování funkčního bloku v pro tool [BLOCKO](odkaz na blocko)  
+Při programování funkčního bloku v pro tool [BLOCKO](odkaz na blocko) je často potřeba definovat virtuální vstupy a výstupy, které symbolizují právě vstupy a výstupy funkčního bloku
 
 Po importu knihovny Byzance by měla následovat definice vstupů a výstupů pro , ale Code server si s tím poradí v celém main souboru.
 
