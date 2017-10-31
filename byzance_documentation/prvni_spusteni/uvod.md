@@ -1,6 +1,6 @@
 ## ÚVOD 
 
-Tato dokumentace popisuje první spuštění a konfiguraci zařízení Byzance a jeho registraci v portálu. 
+Tato dokumentace popisuje první spuštění a konfiguraci zařízení Byzance a jeho registraci v Portálu. 
 
 V první fázi se zaměří na vytvoření uživatelského účtu v portálu Byzance a jeho konfiguraci. Uvede, jak krok po kroku registrovat a oživit nově zakoupené zařízení a poté  vysvětlí jak vytvořit a uploadovat první funkční "Hello world" program.
 
