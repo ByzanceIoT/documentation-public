@@ -4,8 +4,6 @@ Veškerá IoT zařízení Byzance komunikují s [portálem](Odkza na portál), p
 
 Předtím, než bude možné zařízení registrovat a zprovoznit, je nutné na tomto [portále](Odkaz na portál) vytvořit uživatelský účet. 
 
-
-
 ### Vytvoření uživatelského účtu 
 
 ![](/images/zaciname/login.PNG)
