@@ -1,6 +1,6 @@
 ## Struktura programu
 
-
+Zařízení Byznce se programují v jazyce **C++** a využívají knihoven **MBED API** a **Byzance API**
 
 
 Základem při psaní zdrojového kódu je využití open-source operačního systému [MBED-OS](/byzance_documentation/hardware_intro/API/mbed-api.md). Kód se píše především v online rozhraní Becki Byzance. **TO DO - odkaz na článek o becki**
