@@ -24,7 +24,7 @@ Všechna zařízení Byzance jsou nastavena již z výroby, tudíž pro připoje
 
 \- klipart s blikajícím modulem po připojení k Homeru
 
-
+Pokud vše proběhlo úspěšně, zařízení je připraveno na upload prvního funkčního programu.
 
 
 
