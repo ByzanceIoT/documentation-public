@@ -101,20 +101,25 @@ Následující kód zobrazuje strukturu programu **Hello_world** s definicí vst
 #include "byzance.h"
 
 // Definice fyzických vstupů a výstupů
-DigitalOut D1(X02);
-DigitalIn D2(X05);
-AnalogOut A1(Y23);
+DigitalOut DO1(X02);
+DigitalIn DI1(X05);
+AnalogOut AO1(Y23);
+AnalogOut AI1(Y22);
 
 Serial pc(SERIAL_TX, SERIAL_RX); // tx, rx
 
+void pre_init(){
+    //Funkce pre_init - proběhne právě jednou
+}
+
 void init(){
     // Hello world se vypise jednou pri startu
-    pc.printf("Hello world\n");
+    pc.printf("Hello world from init function\n");
 }
 
 void loop(){
     // Test se bude vypisovat stale dokola kazdych 500 ms
-    pc.printf("Test\n");
+    pc.printf("Hello World\n");
     Thread::wait(500);
 }
 ```
