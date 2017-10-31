@@ -118,7 +118,7 @@ void init(){
 }
 
 void loop(){
-    // Test se bude vypisovat stale dokola kazdych 500 ms
+    // Hello world se bude vypisovat stale dokola kazdych 500 ms
     pc.printf("Hello World\n");
     Thread::wait(500);
 }
