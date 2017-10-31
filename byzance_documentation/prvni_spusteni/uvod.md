@@ -10,11 +10,12 @@ Portál je internetová aplikace vytvořená Byzánce, která slouží jako brá
 
 ### Typy Byzance zařízení 
 
-Byzance nabízí portfolio zařízení. Jednotlivá zařízení se liší komunikačními rozhraními a 
+Byzance nabízí následující portfolio IoT zařízení
 
-
+* IODAG3E
+* IODAG3W
  
-Tato dokumentace pomáhá uživateli při prvním spuštění a základní konfiguraci nového zařízení. Bližší informace a specifikace jednotlivých zařízení lze nalézt v [Hardwarové dokumentaci](Odkaz na Hardwarovou docu) 
+Tato dokumentace pomáhá uživateli při prvním spuštění a základní konfiguraci těchto zařízení. Bližší informace a specifikace jednotlivých zařízení lze nalézt v [Hardwarové dokumentaci](Odkaz na Hardwarovou docu) 
 
 
 
