@@ -35,6 +35,7 @@
 * [Blocko](byzance_documentation/blocko_intro.md)
   * [bla bla bla](byzance_documentation/dsafdf.md)
 * [Grid](byzance_documentation/grid_intro.md)
+  * úvod
 * [Code](byzance_documentation/code_intro.md)
 * [Instancies](byzance_documentation/instancies_intro.md)
 
