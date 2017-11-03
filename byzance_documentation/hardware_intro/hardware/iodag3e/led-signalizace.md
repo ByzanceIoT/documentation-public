@@ -1,10 +1,8 @@
 ## LED signalizace IODAG3E 
 
-LED signalizace je implementována s využitím LED modulu. V defaultním nastavení bez zásahu uživatele slouží k vizuální reprezentaci stavů zařízení. Funkci LED modulu lze přeprogramovat vlastní funkcionalitou.
+LED signalizace je implementována s využitím LED modulu. V defaultním nastavení bez zásahu uživatele **slouží k vizuální reprezentaci stavů zařízení**. Funkci LED modulu lze přeprogramovat vlastní funkcionalitou.
 
-
-
-Generace hardware GEN3 použivá k signalizaci stavu jednu RGB LED diodu. Stavy jsou proto dány jako kombinace blikání a barvy.
+Tato generace použivá k signalizaci stavu jednu RGB LED diodu. Stavy jsou proto dány jako kombinace blikání a barvy.
 
 Známe sekvence pro pro YODU:
 
