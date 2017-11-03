@@ -51,7 +51,7 @@ Detailnější výsledky měření na napájecí kaskádě jsou dostupné v gitu
 
 ### USB
 
-Připojením napájení microUSB kabelem se zařízení spustí.
+Zařízení se spustí neprodleně po připojení microUSB kabelu.
 
 Technické parametry USB vstupu:
 
@@ -66,7 +66,7 @@ Napájení po datovém síťovém kabelu, bez nutnosti přivést napájecí nap�
 #### **Aktivní PoE **
 
 * **Kompatibilita **se standartem **802.3af** \(802.3at Type 1, tzn. **aktivní** PoE\). Nelze doslovně uvést **podporujeme** standart 802.3af, protože PoE uvedeného standartu povoluje napětí od 37 do 57V. My chceme jít od nižšího napětí a proto jsme **jen** **kompatibilní **s daným standartem a navíc umíme i níže uvedené pasivní PoE, které funguje od nižšího napětí.
-* IODA je navržen jako _**Class 0**_ zařízení z čehož vyplívá, že přes PoE může odebírat max. 12.95W energie.
+* IODA je _**Class 0**_ zařízení, tudíž přes PoE může odebírat max. 12.95W energie.
 
 #### P**asivní PoE **
 
