@@ -37,9 +37,9 @@ viz \[\[lowpan:teoreticke\_informace\_lowpan\|Základní teoretické informace o
 * Tlačítko USER
 * RGB LED pro signalizaci
 
-## Napájení <a name="napajeni"></a>
+## Napájení 
 
-Deska IODAG3E disponuje **třemi **standartními **napájecími vstupy** \(USB, PoE, externí\) s širokém rozsahem akceptovaného napájecího napětí. Všechny tři varianty výše uvedené varianty mohou být použity současně, je to bezpečné a lze je zapínat nezávisle na sobě \(z pohodlnosti, jako záloha, ..\). Čtvrtou možností je použití signálu _**VBUS**_, který je vyveden na X a Y liště desky. Jeho použití **není **pro běžného uživatele **bezpečné **a nemělo by se používat. Všechny možnosti jsou dále detailněji rozebrány.
+Zařízení IODAG3E disponuje **třemi **standartními **napájecími vstupy** \(USB, PoE, externí\) s širokém rozsahem akceptovaného napájecího napětí. Všechny tři výše uvedené varianty mohou být bezpečně použity současně a lze je zapínat nezávisle na sobě. Čtvrtou možností je použití signálu _**VBUS**_, který je vyveden na X a Y liště desky. Jeho použití **není **pro běžného uživatele **bezpečné **a nemělo by se používat. Všechny možnosti jsou dále detailněji rozebrány.
 
 **Příkon **desky se v zásvislost na stavu a činnosti desky a zvoleném vstupu pohybuje od 0.6W do 0.9W. Měřeno bez rozšiřujících desek a dalších připojených komponentech. Příkon je také závisly na amplitudě napájecího napětí.
 

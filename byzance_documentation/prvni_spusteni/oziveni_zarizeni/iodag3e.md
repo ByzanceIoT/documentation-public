@@ -4,7 +4,7 @@
 
 IODAG3E je Byzance zařízení 3. generace, které .... TO DO POPIS
 
-![IODAG3E BOARD](/images/ioda_board.png)
+![IODAG3E BOARD](/images/ioda_board_500.png)
 
 ### Připojení napájení <a name="sometext"></a>
 
