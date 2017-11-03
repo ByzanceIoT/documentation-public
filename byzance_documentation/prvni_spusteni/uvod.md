@@ -10,7 +10,7 @@ Portál je internetová aplikace vytvořená Byzance, která slouží jako brán
 
 ### Konfigurace hardware
  
-Následující dokumentace pomáhá uživateli při prvním spuštění a základní konfiguraci nově zakoupených zařízení. Bližší informace a specifikace jednotlivých zařízení lze nalézt v [Hardwarové dokumentaci](Odkaz na Hardwarovou docu). Během konigurace lze indentifikovat chování zařízení pomocí LED signalizace, kterou zařízení provádí. Význam těchto LED signálů, lze vyhledat v Hardvarové dokumentaci jednotlivých typů zařízení v sekci [LED signalizace](/byzance_doumentation/hardware_intro/hardware/iodag3e/led-signalizace.md)
+Následující dokumentace pomáhá uživateli při prvním spuštění a základní konfiguraci nově zakoupených zařízení. Bližší informace a specifikace jednotlivých zařízení lze nalézt v [Hardwarové dokumentaci](Odkaz na Hardwarovou docu). Během konigurace lze indentifikovat chování zařízení pomocí LED signalizace, kterou zařízení provádí. Význam těchto LED signálů, lze vyhledat v Hardvarové dokumentaci jednotlivých typů zařízení v sekci [LED signalizace](/byzance_documentation/hardware_intro/hardware/iodag3e/led-signalizace.md)
 
 
 
