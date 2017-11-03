@@ -71,6 +71,7 @@
   * [Práce s datem a časem \(RTC\)](byzance_documentation/hardware_intro/navody/prace-s-datem-a-casem-rtc.md)
   * [Webové rozhraní](byzance_documentation/hardware_intro/navody/webove-rozhrani.md)
   * [Vlastní knihovny](byzance_documentation/hardware_intro/navody/vlastni-knihovny.md)
+  * [Připojení zdroje k VBAT](byzance_documentation/hardware_intro/navody/pripojeni-zdroje-k-vbat.md)
   * [Připojení k PC](byzance_documentation/hardware_intro/navody/pripojeni-k-pc.md)
     * [Pomocí USB](byzance_documentation/hardware_intro/navody/pripojeni-k-pc/pomoci-usb.md)
     * [Pomocí sériové linky](byzance_documentation/hardware_intro/navody/pripojeni-k-pc/pomoci-seriove-linky.md)
