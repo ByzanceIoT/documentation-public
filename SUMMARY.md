@@ -35,6 +35,9 @@
 * [Blocko](byzance_documentation/blocko_intro.md)
   * [bla bla bla](byzance_documentation/dsafdf.md)
 * [Grid](byzance_documentation/grid_intro.md)
+  * [úvod](byzance_documentation/grid_intro/uvod.md)
+  * [WK elements and style](byzance_documentation/grid_intro/wk-elements-and-style.md)
+  * [HOW TO: slider](byzance_documentation/grid_intro/how-to-slider.md)
 * [Code](byzance_documentation/code_intro.md)
 * [Instancies](byzance_documentation/instancies_intro.md)
 
