@@ -6,3 +6,4 @@ Napájení je nutné připojit podle schámatu napájecí části procesoru.
 
 ![Power supply schema](/images/hardware/power_schema.PNG)
 
+U pinu VBAT je kapacitor, který udrží při napájení VBAT 3.6V hodnotu RTC i při úplném odpojení zhruba na 10 sekund
