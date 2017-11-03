@@ -30,7 +30,7 @@ Známe sekvence pro pro IODUG3E:
 
 ### Signalizace Bootloaderu
 
-Při vstupu do bootloaderu se na RGB modulu rozsvítí žlutá barva.
-Pokud je třeba přepnout bootloader do command režimu, podrží se tlačítka USER a RESTART a poté se pustí RESTART. Zhruba po vteřině se zapne command režim, přičemž LED modul se přene do modré, kde trvale svítí. V té chvíli je nutné pustit i tlačítko USER.
-Pokud se v bootloaderu začne vykonávat časově náročnější operace (typicky flashování firmware, záloha atd.), bootloader přeblikává žlutě.
+* Při vstupu do bootloaderu se na RGB modulu rozsvítí žlutá barva.
+* Pokud je třeba přepnout bootloader do command režimu, podrží se tlačítka USER a RESTART a poté se pustí RESTART. Zhruba po vteřině se zapne command režim, přičemž LED modul se přepne do modré, kde trvale svítí. V té chvíli je nutné pustit i tlačítko USER.
+* Pokud se v bootloaderu začne vykonávat časově náročnější operace (typicky flashování firmware, záloha atd.), bootloader přeblikává žlutě.
 
