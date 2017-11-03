@@ -4,3 +4,5 @@ Zařízení IODAG3E disponuje pinem **VBAT**. Pokud se na tento pin přivede ext
 
 Napájení je nutné připojit podle schámatu napájecí části procesoru.
 
+![Power supply schema](/images/hardware/power_schema.PNG)
+
