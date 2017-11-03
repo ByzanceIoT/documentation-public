@@ -5,7 +5,7 @@ LED signalizace je implementována s využitím LED modulu. V defaultním nastav
 
 ### Signály
 
-Známe sekvence pro pro YODU:
+Známe sekvence pro pro IODUG3E:
 
 ##### Stav CONNECTED
 
