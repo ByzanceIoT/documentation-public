@@ -105,15 +105,15 @@ Technické vlastností napájení signálem VBUS:
 
 ### Rozměry a hmotnost
 
-\* rozměry samotného PCB jsou 41x63mm
+* Rozměry samotného PCB jsou 41x63mm
 
-\* rozměry včetně přečnívajícího RJ45, napájecího a USB konektoru jsou 42,5x65,5mm
+* Rozměry včetně přečnívajícího RJ45, napájecího a USB konektoru jsou 42,5x65,5mm
 
-\* celková výška včetně konektorů 11,5mm, výška od horní strany PCB 8,5mm
+* Celková výška včetně konektorů 11,5mm, výška od horní strany PCB 8,5mm
 
-\* váha 60g \(hrubý odhad\)
+* Váha 60g \(hrubý odhad\)
 
-\* rozměrové náčrtky:
+* Rozměrové náčrtky:
 
 ```
 \* Rozměry: {{:specs:iodag3e\_250717\_dimensions.png?linkonly\|PNG}}, {{:specs:iodag3e\_250717\_dimensions.pdf\|PDF}}, DXF: naše wiki nedovolí upload, je to v gitu
