@@ -43,7 +43,7 @@ Zařízení IODAG3E disponuje **třemi **standartními **napájecími vstupy** \
 
 Čtvrtou možností je použití signálu _**VBUS**_, který je vyveden na X a Y liště desky. Jeho použití **není **pro běžného uživatele **bezpečné **a není doporučené ho používat. Všechny možnosti jsou dále detailněji rozebrány.
 
-**Příkon ** zařízení se v zásvislost na stavu, činnosti a zvoleném vstupu pohybuje od 0.6W do 0.9W (Měřeno bez rozšiřujících desek a dalších připojených komponentech). Příkon je dále také ovlivněn amplitudou napájecího napětí. Všechny uváděné proudy jsou bezpečné proudy pro dlouhodobější provoz s ohledem na výkonové ztráty v systému \(zahřívání komponent\). Překročení **horní** hranice uvedených napětí může vést k **poškození **zařízení. Naopak **podpětí** a **nedostatečně dimenzovaný **vstup zdroj energie může zpusobit **nepředvídatelné chování **a nestabilitu.
+**Příkon ** zařízení se v zásvislost na stavu, činnosti a zvoleném vstupu pohybuje od 0.6W do 0.9W (Měřeno bez rozšiřujících desek a dalších připojených komponente). Příkon je dále také ovlivněn amplitudou napájecího napětí. Všechny uváděné proudy jsou bezpečné proudy pro dlouhodobější provoz s ohledem na výkonové ztráty v systému \(zahřívání komponent\). Překročení **horní** hranice uvedených napětí může vést k **poškození **zařízení. Naopak **podpětí** a **nedostatečně dimenzovaný **vstup zdroj energie může zpusobit **nepředvídatelné chování **a nestabilitu.
 
 Detailnější výsledky měření na napájecí kaskádě jsou dostupné v gitu \(rezpozitář _hardware/G3/IODAG3E/Measurements/22062017\_psu_\).
 
@@ -93,13 +93,13 @@ Technické vlastností vstupu externího napájení:
 
 Jde o signál na liště X/Y, jehož** použití není **pro běžného uživatele **bezpečné **a a může vést ke zničení desky či připojeného zdroje. Na daný signál je možné aplikovat napětí přímo na **nechráněný** vstup spínanného zdroje a dosáhnout tak spuštění desky již od napětí typ. 4.0V.
 
-Smyslem je umožnit běh desky z externího 5V zdroje \(typicky při vestavbě do existujícího 5V systému\). Tato věc je technicky možná, nicméně se silně **nedoporučuje**. (Spíše jen pro interní info)
+Smyslem je umožnit běh desky z externího 5V zdroje \(typicky při vestavbě do existujícího 5V systému\). Tato věc je technicky možná, nicméně se silně **nedoporučuje** (Spíše jen pro interní info).
 
 Technické vlastností napájení signálem VBUS:
 
-* rozsah vstupního napětí 4.0 - 60V DC \(horní limit maximální, doporučeno spíše 57V\)
-* doporučený maximální proud vstupem: 1.2A \(dáno šířkou spoje, 0.6mm/18um\)
-* pro použití nutno vodivě spojit pájecí propojku SJ1 \(vedle tlačítka RST\)
+* Rozsah vstupního napětí 4.0 - 60V DC \(horní limit maximální, doporučeno spíše 57V\)
+* Doporučený maximální proud vstupem: 1.2A \(dáno šířkou spoje, 0.6mm/18um\)
+* Pro použití nutno vodivě spojit pájecí propojku SJ1 \(vedle tlačítka RST\)
 
 
 
