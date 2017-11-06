@@ -87,7 +87,7 @@ Technické vlastností vstupu externího napájení:
 
 * rozsah vstupního napětí 6 - 60V AC/DC
 * doporučený maximální proud vstupem: 0.5A
-* vstup je vybaven přepěťovou ochranou zasahující lehce nad 60V
+* vstup je vybaven přepěťovou ochranou dimenzovanou mírně nad 60V
 
 ### VBUS
 
