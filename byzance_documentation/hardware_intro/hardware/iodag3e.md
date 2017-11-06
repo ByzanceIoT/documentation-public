@@ -61,14 +61,14 @@ Technické parametry USB vstupu:
 
 Napájení po datovém síťovém kabelu, bez nutnosti přivést napájecí napětí k přístroji dalším samostatným kabelem. Rozlišuje se tzv. **aktivní **a **pasivní PoE**.
 
-#### **Aktivní PoE **
+#### Aktivní PoE 
 
-* Tato metoda je **Kompatibilní** se standartem **802.3af** \(802.3at Type 1, jedná se tedy o tzn. **aktivní** PoE\). Tento standart je     
+* Tato metoda je **Kompatibilní** se standartem **802.3af** \(802.3at Type 1, jedná se tedy o tzn. **aktivní** PoE\). Standart 802.3af 
 
 Nelze doslovně uvést **podporujeme** standart 802.3af, protože PoE uvedeného standartu povoluje napětí od 37 do 57V. My chceme jít od nižšího napětí a proto jsme **jen** **kompatibilní **s daným standartem a navíc umíme i níže uvedené pasivní PoE, které funguje od nižšího napětí.
 * IODA je _**Class 0**_ zařízení, tudíž přes PoE může odebírat max. 12.95W energie.
 
-#### P**asivní PoE **
+#### Pasivní PoE 
 
 * Zároven umíme tzv. **pasivní **PoE. Tzn. akceptujeme napájecí napětí 6 - 60V na nevyužitých párech 100Mbit LAN kabelu. 
 
