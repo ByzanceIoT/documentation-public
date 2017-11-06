@@ -53,11 +53,11 @@ Zařízení se spustí neprodleně po připojení microUSB kabelu.
 
 Technické parametry USB vstupu:
 
-* doporučené vstupní napětí: 5.0V \(+-10% dle specifikací USB\)
-* doporučený maximální proud vstupem: 1.0A
-* vstup je vybaven přepěťovou ochranou: max. vstupní napětí je 6.0V
+* Doporučené vstupní napětí: 5.0V \(+-10% dle specifikací USB\)
+* Doporučený maximální proud vstupem: 1.0A
+* Vstup je vybaven přepěťovou ochranou: max. vstupní napětí je 6.0V
 
-### PoE
+### PoE (Power over Ethernet)
 
 Napájení po datovém síťovém kabelu, bez nutnosti přivést napájecí napětí k přístroji dalším samostatným kabelem. Rozlišuje se tzv. **aktivní **a **pasivní PoE**.
 
