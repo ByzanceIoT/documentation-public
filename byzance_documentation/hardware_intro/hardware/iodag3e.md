@@ -39,19 +39,21 @@ viz \[\[lowpan:teoreticke\_informace\_lowpan\|Základní teoretické informace o
 
 ## Napájení 
 
-Zařízení IODAG3E disponuje **třemi **standartními **napájecími vstupy** \(USB, PoE, externí\) s širokém rozsahem akceptovaného napájecího napětí. Všechny tři výše uvedené varianty mohou být bezpečně použity současně a lze je zapínat nezávisle na sobě. Čtvrtou možností je použití signálu _**VBUS**_, který je vyveden na X a Y liště desky. Jeho použití **není **pro běžného uživatele **bezpečné **a nemělo by se používat. Všechny možnosti jsou dále detailněji rozebrány.
+Zařízení IODAG3E disponuje **třemi **standartními **napájecími vstupy** \(USB, PoE a napájení z externího zdroje\) s širokém rozsahem akceptovaného napájecího napětí. Všechny tři výše uvedené varianty mohou být bezpečně použity současně a lze je zapínat nezávisle na sobě. 
 
-**Příkon **desky se v zásvislost na stavu a činnosti desky a zvoleném vstupu pohybuje od 0.6W do 0.9W. Měřeno bez rozšiřujících desek a dalších připojených komponentech. Příkon je také závisly na amplitudě napájecího napětí.
+Čtvrtou možností je použití signálu _**VBUS**_, který je vyveden na X a Y liště desky. Jeho použití **není **pro běžného uživatele **bezpečné **a není doporučené ho používat. Všechny možnosti jsou dále detailněji rozebrány.
 
-Všechny uvedené proudy jsou bezpečné proudy pro dlouhodobější provoz s ohledem na výkonové ztráty v systému \(zahřívání komponent\). Překročení **horní** hranice uvedených napětí může vést k **poškození **zařízení. Naopak **podpětí** a **nedostatečně dimenzovaný **vstup zdroj energie může zpusobit **nepředvídatelné chování **a nestabilitu.
+**Příkon ** zařízení se v zásvislost na stavu, činnosti a zvoleném vstupu pohybuje od 0.6W do 0.9W (Měřeno bez rozšiřujících desek a dalších připojených komponentech). Příkon je dále také ovlivněn amplitudou napájecího napětí.
+
+Všechny uváděné proudy jsou bezpečné proudy pro dlouhodobější provoz s ohledem na výkonové ztráty v systému \(zahřívání komponent\). Překročení **horní** hranice uvedených napětí může vést k **poškození **zařízení. Naopak **podpětí** a **nedostatečně dimenzovaný **vstup zdroj energie může zpusobit **nepředvídatelné chování **a nestabilitu.
 
 Detailnější výsledky měření na napájecí kaskádě jsou dostupné v gitu \(rezpozitář _hardware/G3/IODAG3E/Measurements/22062017\_psu_\).
 
 ### USB
 
-Napájení skrze klasický micro USB konektor, stačí zapojit a deska poběží. 
+Zařízení se spustí neprodleně po připojení microUSB kabelu.
 
-Technické vlastností USB vstupu:
+Technické parametry USB vstupu:
 
 * doporučené vstupní napětí: 5.0V \(+-10% dle specifikací USB\)
 * doporučený maximální proud vstupem: 1.0A
@@ -64,7 +66,7 @@ Napájení po datovém síťovém kabelu, bez nutnosti přivést napájecí nap�
 #### **Aktivní PoE **
 
 * **Kompatibilita **se standartem **802.3af** \(802.3at Type 1, tzn. **aktivní** PoE\). Nelze doslovně uvést **podporujeme** standart 802.3af, protože PoE uvedeného standartu povoluje napětí od 37 do 57V. My chceme jít od nižšího napětí a proto jsme **jen** **kompatibilní **s daným standartem a navíc umíme i níže uvedené pasivní PoE, které funguje od nižšího napětí.
-* IODA je navržen jako _**Class 0**_ zařízení z čehož vyplívá, že přes PoE může odebírat max. 12.95W energie.
+* IODA je _**Class 0**_ zařízení, tudíž přes PoE může odebírat max. 12.95W energie.
 
 #### P**asivní PoE **
 
