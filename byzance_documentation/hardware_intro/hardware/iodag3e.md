@@ -75,9 +75,9 @@ K PoE se přistupuje podobným způsobem jako Mikrotic u zařízení \([http://w
 
 Technické vlastností PoE napájení:
 
-* Rozsah vstupního napětí 6 - 60V AC/DC
-* Doporučený maximální proud vstupem: 0.5A
-* Vstup je vybaven přepěťovou ochranou dimenzovanou lehce nad 60V
+* Rozsah vstupního napětí **6 - 60V AC/DC**
+* Doporučený maximální proud vstupem: **0.5A**
+* Vstup je vybaven přepěťovou ochranou dimenzovanou lehce nad **60V**
 
 ### Externí zdroj
 
