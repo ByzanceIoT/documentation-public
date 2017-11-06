@@ -38,6 +38,7 @@
   * [úvod](byzance_documentation/grid_intro/uvod.md)
   * [WK elements and style](byzance_documentation/grid_intro/wk-elements-and-style.md)
   * [HOW TO: slider](byzance_documentation/grid_intro/how-to-slider.md)
+  * [HOW TO: grafické prvky](byzance_documentation/grid_intro/how-to-graficke-prvky.md)
 * [Code](byzance_documentation/code_intro.md)
 * [Instancies](byzance_documentation/instancies_intro.md)
 
