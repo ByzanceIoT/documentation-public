@@ -85,9 +85,9 @@ Technické vlastností PoE napájení:
 
 Technické vlastností vstupu externího napájení:
 
-* Rozsah vstupního napětí 6 - 60V AC/DC
-* Doporučený maximální proud vstupem: 0.5A
-* Vstup je vybaven přepěťovou ochranou dimenzovanou mírně nad 60V
+* Rozsah vstupního napětí **6 - 60V AC/DC**
+* Doporučený maximální proud vstupem: **0.5A**
+* Vstup je vybaven přepěťovou ochranou dimenzovanou mírně nad **60V**
 
 ### VBUS
 
