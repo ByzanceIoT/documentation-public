@@ -115,11 +115,11 @@ Technické vlastností napájení signálem VBUS:
 
 * Rozměrové náčrtky:
 
-```
-\* Rozměry: {{:specs:iodag3e\_250717\_dimensions.png?linkonly\|PNG}}, {{:specs:iodag3e\_250717\_dimensions.pdf\|PDF}}, DXF: naše wiki nedovolí upload, je to v gitu
+![Rozměry deska](/images/hardware/IODAG3E_170725_dimensions.png)
+![Rozměry Konektory](/images/hardware/IODAG3E_170725_connectors.png)
 
-\* Konektory: {{:specs:iodag3e\_250717\_connectors.png?linkonly\|PNG}}{{:specs:iodag3e\_250717\_connectors.pdf\|PDF}}, DXF: naše wiki nedovolí upload, je to v gitu
-```
+
+
 
 ### Software
 
