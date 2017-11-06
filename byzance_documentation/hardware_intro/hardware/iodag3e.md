@@ -63,7 +63,7 @@ Napájení po datovém síťovém kabelu, bez nutnosti přivést napájecí nap�
 
 #### **Aktivní PoE **
 
-* Tato metoda je **Kompatibilní** se standartem **802.3af** \(802.3at Type 1, jedná se tedy o tzn. **aktivní** PoE\). 
+* Tato metoda je **Kompatibilní** se standartem **802.3af** \(802.3at Type 1, jedná se tedy o tzn. **aktivní** PoE\). Tento standart je     
 
 Nelze doslovně uvést **podporujeme** standart 802.3af, protože PoE uvedeného standartu povoluje napětí od 37 do 57V. My chceme jít od nižšího napětí a proto jsme **jen** **kompatibilní **s daným standartem a navíc umíme i níže uvedené pasivní PoE, které funguje od nižšího napětí.
 * IODA je _**Class 0**_ zařízení, tudíž přes PoE může odebírat max. 12.95W energie.
