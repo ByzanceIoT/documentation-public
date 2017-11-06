@@ -81,7 +81,7 @@ Technické vlastností PoE napájení:
 
 ### Externí zdroj
 
- Jde o napájení přivedené do zeleného konektoru na čelní straně desky vedle ethernetového kabelu. Výhodou je široký rozsah napájecího napětí a jeho nezávislost na polaritě.
+Další metodou napájení je zapojení externího zdroje do zeleného konektoru na čelní straně desky vedle ethernetového kabelu. Výhodou je široký rozsah napájecího napětí a jeho nezávislost na polaritě.
 
 Technické vlastností vstupu externího napájení:
 
