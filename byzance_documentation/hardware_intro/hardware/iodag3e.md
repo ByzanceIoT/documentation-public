@@ -69,6 +69,8 @@ Napájení po datovém síťovém kabelu, bez nutnosti přivést napájecí nap�
 
 #### Pasivní PoE 
 
+* Zařízení akceptuje také **Pasivním PoE**, což znamená, že zařízení je možné napájet 6-60V na nevyužitých párech 100Mbit LAN kabelu.
+
 * Zároven umíme tzv. **pasivní **PoE. Tzn. akceptujeme napájecí napětí 6 - 60V na nevyužitých párech 100Mbit LAN kabelu. 
 
 Víceméně k PoE přistupujeme jako Mikrotik na jejich zařízeních \([http://www.wifihw.cz/img.asp?attid=22184](http://www.wifihw.cz/img.asp?attid=22184|ukázka)\). Kombinují se vlastnosti aktivního PoE s výhodami pasivního PoE pro dosažení maximální flexibility a jednoduchosti použití \(tj. funguje to jednoduše a za všech okolností\). 
