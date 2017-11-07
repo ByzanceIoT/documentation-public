@@ -140,9 +140,9 @@ Pro efektivní využití bylo navrženo upravit původní kód Daplink tak, aby:
   * sektorové mazání mazalo sektory různé velikosti
 
 ### Hardwarová architektura 
-Hardwarová architektura vychází přímo z mbed HDK schématu pro LPC11U35 viz [[https://github.com/ARMmbed/mbed-HDK/tree/master/Production%20Design%20Projects/ARM-mbed/DAPLink/DIPDAP|DIPDAP]].
+Hardwarová architektura vychází přímo z mbed HDK schématu pro LPC11U35 viz [DIPDAP](https://github.com/ARMmbed/mbed-HDK/tree/master/Production%20Design%20Projects/ARM-mbed/DAPLink/DIPDAP).
 
-===== Použití programátoru =====
+### Použití programátoru 
 Programátor je velmi jednoduchý na použití. Připojením programátoru k PC jsou systémem registrována následující zařízení:
   * vyměnitelný disk s názvem ''BYZG3_****'' 
   * nový virtuální port
