@@ -10,13 +10,13 @@ Každé zařízení má v sobě nahraných více do jisté míry nezávislých p
   * záložní program,
   * programový buffer.
 
-Každý program má ve FLASH paměti vyhrazeno pevné místo, tj. má ()[[memory:internal|danou počáteční adresu a max. velikost]].
+Každý program má ve FLASH paměti vyhrazeno pevné místo, tj. má [danou počáteční adresu a max. velikost - TO DO odkaz](ODKAZ na adresaci)
 
 #### Činnost bootloaderu 
 
 Po zapnutí napájení zařízení vždy začne vykonávat instrukce z bootloaderu. Úkolem bootloaderu je zajistit aktualizaci hlavního programu zařízení, obnovení v případě nefunkčního hlavního firmware a nastavení některých konfiguračních dat.
 
-==== Mód JUMP ====
+#### Mód JUMP 
 Pokud není nastaven jiný mód, bootloader se sám přepne do módu JUMP. Ten sestává z několika kroků:
   * Kontrola, jestli je přítomna hlavní aplikace - pokud není, dojde k přepnutí do command_mode.
   * Zapnutí watchdogu (pokud má být zapnut) a případné nastavení na příslušnou hodnotu. Více na stránce [[feature:watchdog|watchdog]].
