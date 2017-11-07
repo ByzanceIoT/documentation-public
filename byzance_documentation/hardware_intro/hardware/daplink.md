@@ -1,4 +1,4 @@
-## DAPLINK
+## DAPLink
 
 Jedná se o otevřený projekt, který si klade za cíl vytvořit univerzální programátor/debugger, projekt je hostován na  [githubu Daplinku](https://github.com/mbedmicro/DAPLink). Mezi hlavní přednosti patří:
   * drag and drop programování - nahrávání binárních dat do FLASH paměti cílového procesoru
