@@ -30,7 +30,7 @@ Po nainstalování utility \*\*CoolTerm\*\* a spuštění konfiguračního soubo
 * Potvrďte stisknutím "OK"
 * Stiskněte tlačítko "Connect" v horním menu
 
-
+![mac_connection](/images/mac_connection.png)
 
 Nyní by se měl vypisovat log do okna aplikace.
 
@@ -42,7 +42,7 @@ Připojením zařízení k PC je v adresáři ''/dev/'' vytvořen soubor ''ttyUS
 
 Jako komunikační terminál lze použít například cutecom či moserial.
 
-// obrázek
+![monserial](/images/moserial.png)
 
 Na některých distribucích je nutné přidat uživatele do skupiny dialout pro přístup k sériovému portu. To je možné učinit příkazem
 
