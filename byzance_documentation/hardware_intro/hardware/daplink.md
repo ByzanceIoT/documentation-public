@@ -157,4 +157,4 @@ V případě nutnosti nahrávat nový firmware pro programovací mikroprocesor j
   * překopírováním nového *crc.bin souboru na disk je soubor nahrán do flash programovacího mikroprocesoru
   * restartováním je spuštěn Daplink s novým firmwarem
 
-Programátor je dále možné ovládat pomocí MSD příkazů. Jejich zadávání spočívá v tom, že jsou na flashdisk nahrávány soubory s různými názvy. Ve výchozím nastavení jsou příkazy prováděny pouze pokud je současně stisknuto tlačítko ISP/RST (mód automation je vypnutý). Podrobnosti viz.: [MSD Commands](https://github.com/mbedmicro/DAPLink/blob/master/docs/MSD_COMMANDS.mdk).
+Programátor je dále možné ovládat pomocí MSD příkazů. Jejich zadávání spočívá v tom, že jsou na flashdisk nahrávány soubory s různými názvy. Ve výchozím nastavení jsou příkazy prováděny pouze pokud je současně stisknuto tlačítko ISP/RST (mód automation je vypnutý). Podrobnosti viz.: [MSD Commands](https://github.com/mbedmicro/DAPLink/blob/master/docs/MSD_COMMANDS.md).
