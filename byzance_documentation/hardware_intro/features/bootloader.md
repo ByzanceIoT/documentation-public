@@ -10,7 +10,7 @@ Každé zařízení má v sobě nahraných více do jisté míry nezávislých p
   * záložní program,
   * programový buffer.
 
-Každý program má ve FLASH paměti vyhrazeno pevné místo, tj. má [danou počáteční adresu a max. velikost - TO DO odkaz](ODKAZ na adresaci)
+Každý program má ve FLASH paměti vyhrazeno pevné místo, tj. má [danou počáteční adresu a max. velikost - TO DO odkaz](ODKAZ na adresaci).
 
 #### Činnost bootloaderu 
 
@@ -19,10 +19,12 @@ Po zapnutí napájení zařízení vždy začne vykonávat instrukce z bootloade
 #### Mód JUMP 
 Pokud není nastaven jiný mód, bootloader se sám přepne do módu JUMP. Ten sestává z několika kroků:
   * Kontrola, jestli je přítomna hlavní aplikace - pokud není, dojde k přepnutí do command_mode.
-  * Zapnutí watchdogu (pokud má být zapnut) a případné nastavení na příslušnou hodnotu. Více na stránce [[feature:watchdog|watchdog]].
+  * Zapnutí watchdogu (pokud má být zapnut) a případné nastavení na příslušnou hodnotu. Více v sekci [watchdog](link na watchdog).
   * **Skok do hlavní aplikace**
-==== Mód FLASH ====
-Do módu FLASH bootloader automaticky přechází, pokud je zapnutý ''flashflag'' (více viz  [[Yoda:aktualizace_firmware| aktualizace firmware]] ). V takovém případě potom následují tyto kroky:
+
+
+#### Mód FLASH 
+Do módu FLASH bootloader automaticky přechází, pokud je zapnutý ''flashflag'' (více viz [aktualizace firmware TO DO ](odkaz aktualizace firmware)). V takovém případě potom následují tyto kroky:
 
   * načtení struktury s informacemi o novém firmware,
   * validace a případná oprava velikosti, je-li to možné a smyslné,
@@ -35,10 +37,10 @@ Pokud všechny tyto kroky proběhnou v pořádku, následuje
   * zapnutí ''launched'', který by se měl v naběhnutém firmware vypnout a pokud tak nenastane (binárka je vadná), [[feature:watchdog| watchdog]]  restartuje mikrokontrolér a spustí obnovu poslední funkční binárky vyrobené pomocí procesem [[feature:autobackup|autobackup]] 
   * vypnutí oprávnění udělené do proměnné ''trusted'', díky čemuž se firmware označí za potencionálně nefunkční. Oprávnění se zvýší až pokud běžící firmware splní příslušná kritéria procesu [[feature:autobackup| autobackup]], kdy se automaticky může spustit záloha.
 
-==== Mód RESTORE ====
+#### Mód RESTORE 
 Tento mód je velmi podobný módu FLASH. Pokud bootloader detekuje zapnutý flag ''launched'' (tzn. binárka se nedokázala spustit jako hlavní program), mód je automaticky vyvolán a poslední funkční firmware je obnoven. Flagy ''flashflag'', ''launched'' a ''trusted'' zůstávají nezměněny.
 
-==== Mód COMMANDS ====
+#### Mód COMMANDS 
 
 Do módu COMMANDS je možné vstoupit několika způsoby
   * první spuštění bootloaderu na novém mikrokontroléru
@@ -46,7 +48,7 @@ Do módu COMMANDS je možné vstoupit několika způsoby
   * chybějící hlavní aplikace
   * bootloader není nakonfigurován (vypnutá proměnná ''configured'' v [[Bootloader:commands|command režimu]].
 
-==== Mód WIFIAP ====
+#### Mód WIFIAP 
 
 FIXME Nyní nepoužito
 
