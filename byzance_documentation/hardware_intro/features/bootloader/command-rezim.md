@@ -1,5 +1,14 @@
 # Command režim
 
+Do command režimu bootloaderu je možno vstopit následujícím způsobem
+
+ 1. podržet RESET a USER tlačítko dohromady
+ 2. pustit RESET tlačítko
+ 3. počkat několik sekund, než zhasne červená LED
+ 4. pustit USER tlačítko
+
+Při prvním spuštění nebo při položce configured=0 bootloader skáče do command režimu automaticky.
+
 ## Příkazy bez parametru
 
 * _''ping''_ - ping; pro testovací účely
