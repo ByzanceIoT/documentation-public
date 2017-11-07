@@ -73,6 +73,7 @@
   * [Metody napájení](byzance_documentation/hardware_intro/navody/metody_napajeni.md)
   * [Práce s datem a časem \(RTC\)](byzance_documentation/hardware_intro/navody/prace-s-datem-a-casem-rtc.md)
   * [Webové rozhraní](byzance_documentation/hardware_intro/navody/webove-rozhrani.md)
+  * [Webová konzole ](byzance_documentation/hardware_intro/navody/webova-konzole.md)
   * [Vlastní knihovny](byzance_documentation/hardware_intro/navody/vlastni-knihovny.md)
   * [Připojení zdroje k VBAT](byzance_documentation/hardware_intro/navody/pripojeni-zdroje-k-vbat.md)
   * [Připojení k PC](byzance_documentation/hardware_intro/navody/pripojeni-k-pc.md)
