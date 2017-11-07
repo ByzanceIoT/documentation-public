@@ -2,6 +2,7 @@
 
 ## První spuštění
 
+* [Introduction](README.md)
 * [Úvod](byzance_documentation/prvni_spusteni/uvod.md)
 * [Registrace uživatele](byzance_documentation/prvni_spusteni/registrace_uzivatele.md)
 * [Registrace zařízení](byzance_documentation/prvni_spusteni/registrace_zarizeni.md)
@@ -22,13 +23,6 @@
   * [Digitální vstupy a výstupy ](programovani/byzance-api/digitalni-vstupy-a-vystupy.md)
 * [Programování funkčních bloků](programovani/programovani-funkcnich-bloku.md)
 * [Ukázkové programy ](programovani/ukazkove-programy.md)
-
-## Summary
-
-* [Docu Summary](README.md)
-  * [Build IoT Empire](build_iot_empire.md)
-  * [TEST ARTICLE](testarticle.md)
-  * [First Steps](first_step.md)
 
 ## Tools
 
@@ -111,6 +105,11 @@
     * [LED signalizace](byzance_documentation/hardware_intro/hardware/iodag3e/led-signalizace.md)
   * [DAPLink](byzance_documentation/hardware_intro/hardware/daplink.md)
   * [DevKit](byzance_documentation/hardware_intro/hardware/dk3g.md)
+
+## Interní
+
+* [mbed](interni/mbed.md)
+  * [Konfigurace MBED na Windows](interni/mbed/konfigurace-mbed-na-windows.md)
 
 ## Obecné
 
