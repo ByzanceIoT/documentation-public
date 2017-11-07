@@ -12,11 +12,12 @@ Pro programování ve vlastním IDE je třeba zajistit následující
 
 Pro prostředí Eclipse či jeho deriváty typu SW4STM32 je postup následující. Ve složce se staženými knihovnami z GITu FIXME zatím nic takového neumožňume pro cizí lidi se vytvoří nová podsložka s vlastním názvem dle projektu a v ní se udělá soubor main.cpp. V IDE je nutno kliknout na ''File-&gt;New-&gt;Makefile Project with Existing Code'', viz screenshot níže.
 
-![ide_start](/images/hardware/ide_project.png)
+![ide_start](/images/hardware/ide_start.png)
 
 Dále je třeba vyplnit název projektu, který by se měl shodovat s názvem složky s projektem a vybrat umístění složky
 
-// obrázek
+![ide_project](/images/hardware/ide_project.png)
+
 
 V nastavení projektu je třeba nastavit vlastní build command, který může vypadat následovně
 
