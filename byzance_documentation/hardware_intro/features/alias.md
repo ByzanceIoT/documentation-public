@@ -37,5 +37,5 @@ void loop(){
 
 Jediná správná možnost editace aliasu je pomocí Byzance Code \(Becki\). V sekci hardware uživatele je možné Alias jak zjistit, tak změnit.
 
-![alias_edit](/images/alias_edit.png)(/docu/byzance_documentation/hardware_intro/features/alias_edit.png)
+![alias_edit](/images/alias_edit.png)
 
