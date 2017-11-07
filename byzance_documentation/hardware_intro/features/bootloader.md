@@ -79,6 +79,6 @@ Sestává ze 2 sad kroků
   * **upload**, kdy se binárka přenese z Homera do Yody a uloží se do jeho externí paměti.
   * **update**, kdy je yodovi specifikováno, co s danou binárkou má provést (aktualizuje svůj firmware, nebo několik zařízení atd..)
 
-===== Vývojový diagram =====
+#### Vývojový diagram
 
 FIXME Zde bude obrázkový vývojový diagram co a jak
