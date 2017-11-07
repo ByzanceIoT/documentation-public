@@ -44,9 +44,9 @@ Tento mód je velmi podobný módu FLASH. Pokud bootloader detekuje zapnutý fla
 
 Do módu COMMANDS je možné vstoupit několika způsoby
   * první spuštění bootloaderu na novém mikrokontroléru
-  * kombinací tlačítek (viz [[Bootloader:commands|bootloader command režim]])
+  * kombinací tlačítek (viz [bootloader command režim TO DO ](odkaz na bootloader comand režim))
   * chybějící hlavní aplikace
-  * bootloader není nakonfigurován (vypnutá proměnná ''configured'' v [[Bootloader:commands|command režimu]].
+  * bootloader není nakonfigurován (vypnutá proměnná ''configured'' v [command režimu TO DO](odkaz na command režim).
 
 #### Mód WIFIAP 
 
