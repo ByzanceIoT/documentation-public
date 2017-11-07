@@ -32,7 +32,7 @@ U Iody je možné využít webové rozhraní, pokud je povoleno v \[\[Bootloader
 
 Výpis výtížení procesoru běžícími vlákny + obrázek z webového rozhraní 
 
-TO DO 
+ - TO DO -
 
 ### Ukázka webového rozhraní
 
