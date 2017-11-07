@@ -2,7 +2,6 @@
 
 LED signalizace je implementována s využitím LED modulu. V defaultním nastavení bez zásahu uživatele **slouží k vizuální reprezentaci stavů zařízení**. Funkci LED modulu lze přeprogramovat vlastní funkcionalitou. Tato generace použivá k signalizaci stavu jednu RGB LED diodu. Stavy jsou proto dány jako kombinace blikání a barvy.
 
-
 ### Signály
 
 Známe sekvence pro pro IODUG3E:
@@ -31,6 +30,6 @@ Známe sekvence pro pro IODUG3E:
 ### Signalizace Bootloaderu
 
 * Při vstupu do bootloaderu se na RGB modulu rozsvítí **žlutá barva**.
-* Pokud je třeba přepnout bootloader do command režimu, podrží se tlačítka USER a RESTART a poté se pustí RESTART. Zhruba po vteřině se zapne command režim, přičemž LED modul se přepne do **modré barvy**, kde trvale svítí. V té chvíli je nutné pustit i tlačítko USER.
+* Pokud je třeba přepnout bootloader do command režimu, podrží se nejprve tlačítka USER a RESTART a následně se pustí RESTART. Zhruba po vteřině se zapne command režim, přičemž LED modul se přepne do **modré barvy**, kde trvale svítí. V té chvíli je nutné pustit i tlačítko USER.
 * Pokud se v bootloaderu začne vykonávat časově náročnější operace (typicky flashování firmware, záloha atd.), bootloader přeblikává **žlutě**.
 
