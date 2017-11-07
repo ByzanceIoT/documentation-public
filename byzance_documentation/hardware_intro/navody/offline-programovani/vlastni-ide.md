@@ -32,11 +32,11 @@ který se skládá z následujících částí
 * byzance -&gt; název projektu
 * BYZANCE\_YODAG3E -&gt; build makro pro identifikaci targetu
 
-// obrázek
+![build_command](/images/hardware/build_command.png)
 
 Také nezapomeňte na propojení vašeho projektu s knihovnami.
 
-// obrázek
+![project_references](/images/hardware/project_references.png)
 
 # Programování
 
