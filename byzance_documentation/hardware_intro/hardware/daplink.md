@@ -1,6 +1,6 @@
 ## DAPLINK
 
-Jedná se o otevřený projekt, který si klade za cíl vytvořit univerzální programátor/debugger, projekt je hostován na  [github Daplink](https://github.com/mbedmicro/DAPLink). Mezi hlavní přednosti patří:
+Jedná se o otevřený projekt, který si klade za cíl vytvořit univerzální programátor/debugger, projekt je hostován na  [githubu Daplinku](https://github.com/mbedmicro/DAPLink). Mezi hlavní přednosti patří:
   * drag and drop programování - nahrávání binárních dat do FLASH paměti cílového procesoru
   * převodník sériové linky USB <-> UART
   * debugger (gdb klient)
@@ -34,7 +34,7 @@ Veškeré ''*.yaml'' soubory slouží python skriptu pro generování uVision pr
 Soubor ''byzanceg3.c'' je velmi jednoduchý - obsahuje ID desky (mělo by být v rámci Daplink unikátní a přidělené správci projektu). V sekci target je definován cílový procesor: ''target_reset.c'' obsahuje pomocné funkce pro odemčení FLASH paměti aj. (ty nejsou využity).
 
 Soubor ''stm32f437/target.c'' má následující strukturu:
-<code c>
+```
 #include "target_config.h"
 
 // The file flash_blob.c must only be included in target.c
@@ -53,7 +53,8 @@ target_cfg_t target_device = {
 };
 const uint32_t firmware_start_address = 0x08010000;
 
-</code>
+```
+
 Je zde tedy potřeba nastavit oblast začátek a konec paměti FLASH a RAM a dále je třeba uvést odkaz na strukturu popisující přístup k paměti FLASH. Dále byla přidána globální konstantní proměnná, která definuje začátek oblasti určené pro firmware.
 
 Vlastní programování probíhá následovně:
@@ -64,7 +65,8 @@ Vlastní programování probíhá následovně:
   * programovaný mikroprocesor přijatá data postupně ukládá do své FLASH pamětí a na vyžádání maže sektory
   * programování je hotovo
 Program, který má běžet v paměti RAM programovaného mikroprocesoru je znám již při kompilaci projetu a je zapsán v souboru ''flash_blob.c'' (jeho inkluze je v souboru ''target.c'') a může vypadat následovně:
-<code c>
+
+```
 #include "flash_blob.h"
 #define RAM_OFFSET 0x1AC
 
@@ -111,7 +113,7 @@ static const program_target_t flash = {
     output_flash_prog_blob,           // address of prog_blob
     0x00000400       // ram_to_flash_bytes_to_be_written
 };
-</code>
+```
 
 Pole ''output_flash_prog_blob[]'' je zkompilovaný kód, který musí být schopný běžet na cílovém procesoru (target). Lze jej vygenerovat z projektu FlashAlgo. Kód musí fungovat nezávisle na pozici v RAM (pouze relativní skoky aj.) a musí nutně implementovat následující fuknce:
   * inicializace flash (odemčení,...)
