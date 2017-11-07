@@ -42,7 +42,7 @@ Připojením zařízení k PC je v adresáři ''/dev/'' vytvořen soubor ''ttyUS
 
 Jako komunikační terminál lze použít například cutecom či moserial.
 
-![monserial](/images/monserial.png)
+![monserial](/images/moserial.png)
 
 Na některých distribucích je nutné přidat uživatele do skupiny dialout pro přístup k sériovému portu. To je možné učinit příkazem
 
