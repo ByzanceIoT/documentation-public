@@ -30,7 +30,7 @@ Po nainstalování utility \*\*CoolTerm\*\* a spuštění konfiguračního soubo
 * Potvrďte stisknutím "OK"
 * Stiskněte tlačítko "Connect" v horním menu
 
-
+![mac_connection](/images/mac_connection.png)
 
 Nyní by se měl vypisovat log do okna aplikace.
 
