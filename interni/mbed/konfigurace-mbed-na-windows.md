@@ -24,14 +24,14 @@ MBED se kompiluje pomocí MBED python skriptu. Pro kompilaci na OS Windows je nu
   * v souboru ''BYZANCE_README'' jsou jednotlivé buildící příkazy pro jednotlivé targety.
 
 ===== Aktuální targety =====
-<code>
+```
 mbed/tools/build.py -m BYZANCE_YODAG2 -t GCC_ARM --source mbed --build mbed-os_BYZANCE_YODAG2 --no-archive --profile small
 mbed/tools/build.py -m BYZANCE_YODAG2_BOOTLOADER -t GCC_ARM --source mbed --build mbed-os_BYZANCE_YODAG2_BOOTLOADER --no-archive --profile small
 mbed/tools/build.py -m BYZANCE_YODAG3E -t GCC_ARM --source mbed --build mbed-os_BYZANCE_YODAG3E --no-archive --profile small
 mbed/tools/build.py -m BYZANCE_YODAG3E_BOOTLOADER -t GCC_ARM --source mbed --build mbed-os_BYZANCE_YODAG3E_BOOTLOADER --no-archive --profile small
 mbed/tools/build.py -m BYZANCE_WRLSKITG2 -t GCC_ARM --source mbed --build mbed-os_BYZANCE_WRLSKITG2 --no-archive --profile small
 mbed/tools/build.py -m BYZANCE_BUSKITG2 -t GCC_ARM --source mbed --build mbed-os_BYZANCE_BUSKITG2 --no-archive --profile small
-</code>
+```
 
 ===== Další info =====
 
