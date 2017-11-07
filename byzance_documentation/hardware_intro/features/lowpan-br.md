@@ -5,7 +5,8 @@ Jedná se o hraniční router, který má za úkol zajistit směrování paketů
 
 #### Architektura sítě 
 
-{{ :feature:lowpanbr_arch.png?300 | Lowpan Border Router v síti}}
+
+
 LowpanBR má dva síťové interfacy:
   * pro přístup k Internetu a LAN disponuje rozhraním WiFi nebo Ethernet
   * pro přístup k devicům (D) disponuje 6lowpan rozhraním
