@@ -83,6 +83,7 @@
     * [Vlastní IDE](byzance_documentation/hardware_intro/navody/offline-programovani/vlastni-ide.md)
     * [Upload kódu z GUI](byzance_documentation/hardware_intro/navody/offline-programovani/upload-kodu-z-gui.md)
     * [Upload kódu z konzole](byzance_documentation/hardware_intro/navody/offline-programovani/upload-kodu-z-konzole.md)
+  * [Interní paměť mikrokontroléru](byzance_documentation/hardware_intro/navody/interni-pamet-mikrokontroleru.md)
 * [Features](byzance_documentation/hardware_intro/features.md)
   * [Alias](byzance_documentation/hardware_intro/features/alias.md)
   * [Autobackup](byzance_documentation/hardware_intro/features/autobackup.md)
