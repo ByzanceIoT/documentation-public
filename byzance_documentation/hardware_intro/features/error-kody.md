@@ -18,10 +18,11 @@ Seznam společných Error Kódů. Ty se můžou a používají uvnitř programu 
 ```
 
 
-
 #### Seznam Error Codů
 
-^ Error Code ^ Error Message                    ^ Určeno pro                   ^ Komentář               ^
+
+| Error Code | Error Message                    | Určeno pro                   | Komentář               |
+| -----------|----------------------------------|------------------------------|------------------------|
 | 99999999    | "GENERAL ERROR"                    | Hardware / Hardware-Homer    | Some unidentified general error |
 | 1    | "UNKNOWN_TOPIC"                           | Hardware / Hardware-Homer    | Nerozeznaný MQTT Topic |
 | 2    | "MISSING_LABEL"                           | Hardware / Hardware-Homer    | Missing some Label     |
@@ -29,7 +30,10 @@ Seznam společných Error Kódů. Ty se můžou a používají uvnitř programu 
 | 4    | "MALLOC ERROR"                            | Hardware / Hardware-Homer    | MALLOC ERROR -> not enough memory     |
 | 50   | "ERROR"                                   | ALL                          | Nedefinovatelný Error  |
 
-=== Tyrion-Homer-Instance ====
+#### Tyrion-Homer-Instance
+ 
+| Error Code | Error Message                    | Určeno pro                   | Komentář               |
+| -----------|----------------------------------|------------------------------|------------------------|
 | 100  | "INSTANCE_NOT_FOUND"                      | Homer / Homer-Tyrion         | Instance neexistuje |
 | 101  | "INSTANCE_ALREADY_EXIST"                  | Homer / Homer-Tyrion         | Instance already Exist |
 | 102  | "BLOCKO_JSON_ERROR"                       | Homer / Homer-Tyrion         | |
@@ -37,18 +41,18 @@ Seznam společných Error Kódů. Ty se můžou a používají uvnitř programu 
 | 104  | "HARDWARE_ALREADY_ADDED"                  | Homer / Homer-Tyrion         | |
 | 105  | "HARDWARE_NOT_IN_INSTANCE"                | Homer / Homer-Tyrion         | |
 
-=== Tyrion-Homer-Hardware ====
+#### Tyrion-Homer-Hardware 
+
+| Error Code | Error Message                    | Určeno pro                   | Komentář               |
+| -----------|----------------------------------|------------------------------|------------------------|
 | 201  | "HARDWARE_IS_OFFLINE"                     | Homer / Homer-Tyrion         | |
 | 202  | "BINARY_FILE_NOT_VALID"                   | Homer / Homer-Tyrion         | |
 | 203  | "BINARY_TYPE_NOT_RECOGNIZE"               | Homer / Homer-Tyrion         | Device ještě nebyl spárován s Yodou |
 | 204  | "BINARY_FILE_NOT_FOUND"                   | Homer / Homer-Tyrion         | Při párování došlo k chybě          |
 | 204  | "UPDATE_PROCEDURE_TIMEOUT"                | Homer / Homer-Tyrion         | Při párování došlo k chybě          |
-
 | 300  | "TYRION_IS_OFFLINE"                       | Homer / Homer-Tyrion         | |
 | 301  | "TOKEN_IS_INVALID"                        | Homer / Homer-Tyrion         | |
-
 | 670  | "BLOCKO_JSON_ERROR"                       | Homer / Homer-Tyrion         | Json for Blocko with not valid |
-
 |10000 | JSON INVALID                              | Hardware / Hardware-Homer    | JSON is invalid, parsing failed|
 |10001 | MSGID MISSING                             | Hardware / Hardware-Homer    | There is no label "messageId" in JSON|
 |10002 | JSON NOT OBJECT                           | Hardware / Hardware-Homer    | Given JSON is not object|
@@ -79,10 +83,6 @@ Seznam společných Error Kódů. Ty se můžou a používají uvnitř programu 
 |70002 | INTMEM ERASE ERROR                        | Hardware / Hardware-Homer    | Erase of internal memory failed|
 ----------
 
-Příklady:: 
-| 0 |  | Hardware / Hardware-Homer | |
-| 0 |  | Tyrion / Tyrion-Becki | |
-| 0 |  | Homer / Homer-Tyrion | |
- 
+
 
 
