@@ -139,7 +139,7 @@ Pro efektivní využití bylo navrženo upravit původní kód Daplink tak, aby:
   * nedocházelo k mazání celé paměti před začátkem programování => sektorové mazání
   * sektorové mazání mazalo sektory různé velikosti
 
-===== Hardwarová architektura =====
+### Hardwarová architektura 
 Hardwarová architektura vychází přímo z mbed HDK schématu pro LPC11U35 viz [[https://github.com/ARMmbed/mbed-HDK/tree/master/Production%20Design%20Projects/ARM-mbed/DAPLink/DIPDAP|DIPDAP]].
 
 ===== Použití programátoru =====
