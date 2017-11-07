@@ -1,6 +1,6 @@
 ## DAPLINK
 
-Jedná se o otevřený projekt, který si klade za cíl vytvořit univerzální programátor/debugger, projekt je hostován na  [github Daplink](https://github.com/mbedmicro/DAPLink)|]]. Mezi hlavní přednosti patří:
+Jedná se o otevřený projekt, který si klade za cíl vytvořit univerzální programátor/debugger, projekt je hostován na  [github Daplink](https://github.com/mbedmicro/DAPLink). Mezi hlavní přednosti patří:
   * drag and drop programování - nahrávání binárních dat do FLASH paměti cílového procesoru
   * převodník sériové linky USB <-> UART
   * debugger (gdb klient)
