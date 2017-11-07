@@ -30,6 +30,8 @@ Po nainstalování utility \*\*CoolTerm\*\* a spuštění konfiguračního soubo
 * Potvrďte stisknutím "OK"
 * Stiskněte tlačítko "Connect" v horním menu
 
+
+
 Nyní by se měl vypisovat log do okna aplikace.
 
 V případě přepnutí na Bootloader v zařízení Yoda není nutné měnit port.
