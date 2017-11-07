@@ -52,10 +52,11 @@ Do módu COMMANDS je možné vstoupit několika způsoby
 
 FIXME Nyní nepoužito
 
-==== Mód FACTORY RESET ====
+#### Mód FACTORY RESET 
 
-Do módu FACTORY RESET se může dostat bootloader tak, že uživatel stiskne zároveň tlačítka ''restart'' a ''user'', pustí ''restart'' a tlačítko ''user'' drží dlouhou dobu, zpravidla více jak 10 sekund. Mikrokontrolér je nastaven do [[Bootloader:defaults| defaultních hodnot]] a po této proceduře se přepne do režimu COMMANDS, stejně jako by byl mikrokontrolér poprvé spuštěn.
-===== Proces aktualizace hlavního programu v Device =====  
+Do módu FACTORY RESET se může dostat bootloader tak, že uživatel stiskne zároveň tlačítka ''restart'' a ''user'', pustí ''restart'' a tlačítko ''user'' drží dlouhou dobu, zpravidla více jak 10 sekund. Mikrokontrolér je nastaven do [defaultních hodnot TO DO](odkaz na defaultní hodnoty) a po této proceduře se přepne do režimu COMMANDS, stejně jako by byl mikrokontrolér poprvé spuštěn.
+
+#### Proces aktualizace hlavního programu v Device  
 
 FIXME aktuálně nevyužito a do budoucna device asi dostanou extmem a budou normálně pracovat s bufferem, je to bezpečnější a systematičtější
 
@@ -71,9 +72,9 @@ Terminologie:
   - Zapíše se informace o **aktuálním** programu v Yodovi do konfigurační paměti.
   - Na závěr bootloader skočí na začátek **aktuálního** programu a začne ho vykonávat.
 
-===== Aktualizace firmware =====  
+#### Aktualizace firmware 
 
-Aktualizace firmware je zdokumentována na stránce [[Yoda:upload| Aktualizace firmware]].
+Aktualizace firmware je zdokumentována v sekci [Aktualizace firmware TO DO ](odkaz na aktualizaci firmware).
 Sestává ze 2 sad kroků
   * **upload**, kdy se binárka přenese z Homera do Yody a uloží se do jeho externí paměti.
   * **update**, kdy je yodovi specifikováno, co s danou binárkou má provést (aktualizuje svůj firmware, nebo několik zařízení atd..)
