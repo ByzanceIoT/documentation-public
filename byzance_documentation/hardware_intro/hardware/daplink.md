@@ -132,7 +132,7 @@ Oproti výstupu generovanému projektem FlashAlgo bylo nutné:
   * veškeré odkazy na RAM posunout o velikost tabulky vektorů (makro RAM_OFFSET)
   * ukazatel na Stack Pointer opravit (na začátek RAM, tabulky vektorů)
 
-===== Změny v Daplink =====
+### Změny v Daplink 
 Pro efektivní využití bylo navrženo upravit původní kód Daplink tak, aby:
   * bylo možné pomocí názvu souboru zvolit, zda bude při programování použita startovní adresa pro bootloader nebo firmware
   * bylo možné odlišit dvě stejná zařízení dle názvu
