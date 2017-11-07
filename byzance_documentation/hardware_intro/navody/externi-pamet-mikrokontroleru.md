@@ -13,7 +13,7 @@ Paměť je virtuálně rozdělena na několik sekcí. Jejich velikosti jsou nás
   * Journal index - 0x00001000 (4 KiB). [[memory:journal|Index žurnálu]].
   * Journal data  - 0x00002000 (8 KiB). [[memory:journal|Data žurnálu]].
 
-==== Rozložení paměti ====
+#### Rozložení paměti 
 
 Absolutní adresy na základě předchozího přehledu vypadají tedy následovně
 
@@ -71,7 +71,7 @@ Na základě výše uvedených informací začíná být zřejmý postup, jakým
 
 Je zřejmé, že stejně jako při práci s interní pamětí může dojít ke ztrátě dat, pokud kód mikrokontroléru přestane odpovídat či dojde k výpadku napájení. Kritické místo je mezi kroky smazání subsektoru FLASH a zápisem bufferu z RAM. Tato situace je ovšem ošetřena [[memory:journal|využitím žurnálu]].
 
-#### API pro přístup do externí paměti ====
+#### API pro přístup do externí paměti
 
 ```
 /** Initialization of external memory
