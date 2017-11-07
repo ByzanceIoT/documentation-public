@@ -10,9 +10,9 @@ Každé zařízení má v sobě nahraných více do jisté míry nezávislých p
   * záložní program,
   * programový buffer.
 
-Každý program má ve FLASH paměti vyhrazeno pevné místo, tj. má [[memory:internal|danou počáteční adresu a max. velikost]].
+Každý program má ve FLASH paměti vyhrazeno pevné místo, tj. má ()[[memory:internal|danou počáteční adresu a max. velikost]].
 
-===== Činnost bootloaderu =====
+#### Činnost bootloaderu 
 
 Po zapnutí napájení zařízení vždy začne vykonávat instrukce z bootloaderu. Úkolem bootloaderu je zajistit aktualizaci hlavního programu zařízení, obnovení v případě nefunkčního hlavního firmware a nastavení některých konfiguračních dat.
 
