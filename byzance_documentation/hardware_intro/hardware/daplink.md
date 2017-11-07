@@ -5,20 +5,21 @@ Jedná se o otevřený projekt, který si klade za cíl vytvořit univerzální 
   * převodník sériové linky USB <-> UART
   * debugger (gdb klient)
 
-{{ :tutorial:daplink.png?600 | Blokové schéma Daplink}}
+![Daplink schema](/images/hardware/daplink.png)
 
 Z hlediska hardwarové a softwarové architektury je třeba rozlišit programující a programovaný mikroprocesor. Programující mikroprocesor (na obrázku konkrétně LPC11U35) má za úkol komunikovat s PC prostřednictvím sběrnice USB a vytvořit virtuální sériový port, MSD zařízení (vyměnitelný disk), případně GDB klienta. Pro programování programovaného mikroprocesoru využívá SWD/JTAG rozhraní, dále nabízí piny RX a TX virtuálního sériového portu. Z hlediska programovaného mikroprocesoru není Daplink univerzální - **jeden konkrétní firmware pro programující MCU je kompatibilní pouze s jedním nebo užší množinou programovaných MCU** - závislost na flashovacím algoritmu, oblasti RAM, velikost a pozice paměti flash aj..
 
-===== Softwarová architektura =====
+### Softwarová architektura 
 Z hlediska softwaru je celý Daplink prozatím založen především na projektech Keil uVision 5. Jednotlivé projekty (kombinace board + target) jsou zapsány v souboru ''projects.yaml'', příklad záznamu:
-<code>
+```
 lpc11u35_byzanceg3_if:
     - *module_if
     - *module_hic_lpc11u35
     - records/board/byzanceg3.yaml
-</code>
+```
 Je patrné, že je využito společných modulů a modulů pro programovací procesor LPC11U35. Dále je definován odkaz na desku ''byzanceg3.yaml'', jeho obsah může být následující:
-<code>
+
+```
 common:
     sources:
         board:
@@ -26,8 +27,7 @@ common:
         target:
             - source/target/st/stm32f437/target.c
             - source/target/st/target_reset.c
-
-</code>
+```
 
 Veškeré ''*.yaml'' soubory slouží python skriptu pro generování uVision projektů. V případě klonování Daplink z githubu je potřeba nejdříve generovat uVision projekty pomocí python skriptu nebo bat souboru ve složce tools. Ve skriptech lze také provést změny, kterými je možné generovat makefily pro arm-gcc-none-eabi*, v současnosti ovšem nelze projekty tímto překladačem kompilovat.
 
