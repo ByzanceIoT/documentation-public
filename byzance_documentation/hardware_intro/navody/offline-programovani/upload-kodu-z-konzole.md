@@ -4,6 +4,7 @@
 #### Obecně 
 Syntaxe příkazů pro nahrávání binárek do procesorů pomocí utility ''STM32 ST-LINK Utility''. Obecná syntaxe
 YODA:
+
 ```
 <cesta k utilitě>\ST-LINK_CLI.exe -P <cesta k binarce> <počáteční adresa ve FLASH pameti> <další příkazy>
 ```
