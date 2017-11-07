@@ -24,7 +24,7 @@ Pokud není nastaven jiný mód, bootloader se sám přepne do módu JUMP. Ten s
 
 
 #### Mód FLASH 
-Do módu FLASH bootloader automaticky přechází, pokud je zapnutý ''flashflag'' (více viz [aktualizace firmware TO DO ](odkaz aktualizace firmware)). V takovém případě potom následují tyto kroky:
+Do módu FLASH bootloader automaticky přechází, pokud je zapnutý ''flashflag'' (více viz [aktualizace firmware TO DO](odkaz aktualizace firmware)). V takovém případě potom následují tyto kroky:
 
   * načtení struktury s informacemi o novém firmware,
   * validace a případná oprava velikosti, je-li to možné a smyslné,
