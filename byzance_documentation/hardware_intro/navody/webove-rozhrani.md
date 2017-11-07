@@ -29,7 +29,7 @@ U Iody je možné využít webové rozhraní, pokud je povoleno v \[\[Bootloader
 
 # Ukázka webového rozhraní
 
-TO DO obrázek 
+![webview](/images/hardware/webview.png)
 
 
 
