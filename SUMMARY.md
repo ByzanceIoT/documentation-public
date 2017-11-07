@@ -99,6 +99,7 @@
   * [Watchdog](byzance_documentation/hardware_intro/features/watchdog.md)
   * [Zdroj internetu](byzance_documentation/hardware_intro/features/zdroj-internetu.md)
   * [LED modul](byzance_documentation/hardware_intro/features/led-modul.md)
+  * [Error kódy](byzance_documentation/hardware_intro/features/error-kody.md)
 * [Hardware](byzance_documentation/hardware_intro/hardware.md)
   * [IODAG3E](byzance_documentation/hardware_intro/hardware/iodag3e.md)
     * [Schémata](byzance_documentation/hardware_intro/hardware/iodag3e/schemata.md)
