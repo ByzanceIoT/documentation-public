@@ -17,6 +17,8 @@ Seznam společných Error Kódů. Ty se můžou a používají uvnitř programu 
 }
 ```
 
+
+
 #### Seznam Error Codů
 
 ^ Error Code ^ Error Message                    ^ Určeno pro                   ^ Komentář               ^
