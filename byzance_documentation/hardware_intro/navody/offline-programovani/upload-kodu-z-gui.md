@@ -10,7 +10,7 @@ Toto rozhraní je třeba napojit do programátoru, který je zapojený v počít
 
 Utilita se po kliknutí na ikonu ''blesk'' (třetí zleva v menu) nakomunikuje s programátorem, skrz který zjistí verzi připojeného mikrokontroléru. Pokud toto neproběhne správně, není programátor připojen v PC, není v PC nainstalován příslušný driver, nebo je rozpojeno SWD rozhraní mezi programovaným zařízením a programátorem. Chyba je detekována takto. Někdy k chybě dochází samovolně a třeba odpojit a zapojit všechny konektory, popřípadě zkontrolovat zapojení SWD, kvůli případném prohození pinů (nebo otočení konektoru).
 
-![St-link_error](/images/hardware/st-link_error.png)
+![St-linkerror](/images/hardware/st-link_error.png)
 
 V případě, že je vše OK, programátor se po kliknutí na ikonu ''blesk'' spojí se zařízením a identifikuje jeho mikrokontrolér.
 V informační konzoli dole se zobrazí identifikátory mikrokontroléru a v tabulce uprostře se automaticky vypíše začátek FLASH pamětí s vektory přerušení (které nejsou pro účely programování důležité.
