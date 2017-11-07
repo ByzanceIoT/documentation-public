@@ -15,12 +15,12 @@ Utilita se po kliknutí na ikonu ''blesk'' (třetí zleva v menu) nakomunikuje s
 V případě, že je vše OK, programátor se po kliknutí na ikonu ''blesk'' spojí se zařízením a identifikuje jeho mikrokontrolér.
 V informační konzoli dole se zobrazí identifikátory mikrokontroléru a v tabulce uprostře se automaticky vypíše začátek FLASH pamětí s vektory přerušení (které nejsou pro účely programování důležité.
 
-![st-link](st-link.png)
+![st-link](/images/hardware/st-link.png)
 
 
 Programování může začít kliknutím na modrou složku ''open file'' vlevo nahoře. V průzkumníku souborů je potom nutné vybrat *.bin soubor zvoleného firmware či bootloaderu. Vypálení do mikrokontroléru následuje stiskem tlačítka ''program - verify'' (6. ikona zleva). Zde je nutné zkontrolovat adresu a režim vypalování. Adresy je možné zjistit v článku [[memory:internal|interní paměť mikrokontroléru]]. V zásadě platí, že bootloader se vypaluje na adresu ''0x08000000'' a firmware na adresu ''0x08010000'', adresy je ale nutno překontrolovat podle zvoleného targetu. Správné zadání adresy je velmi kritické, protože v případě překlepu se přepíše špatná část mikrokontroléru a může dojít k tzv. ''bricknutí''. Je důležité si neplést kolonku ''Memory display'' (zakroužkováno červeně), která pouze slouží k zobrazení části paměti, ale nikoliv k programování. Programovací adresa ''Start address'' je zakroužkována modře. Upload se spustí kliknutím na tlačítko ''Start''.
 
-![st-link](st-link_programming.png)
+![st-link](/images/hardware/st-link_programming.png)
 
 
 
