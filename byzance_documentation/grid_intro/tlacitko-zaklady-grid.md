@@ -26,7 +26,7 @@ protože píšeme v jazyku Typescript, začneme takto
 
 let `valueDigOutput`definuje promněnou abychom mohli k daménu outputu přistupovat v kódu  ![](/assets/code1.png)
 
-Poté definujeme rozměry widgetu, **definice rozměrů je povinná ve všech widgetech.    
+Poté definujeme rozměry widgetu, **definice rozměrů je povinná ve všech widgetech.      
 **Můžeme použít  
 `context.addSizeProfile(1,1);`kde v parametrech definujeme výšku a šířku widgetu \(v pevně daných čtvercích, tudíž widgety vypadají všude stejně. Jeden  čtverec má zhruba 1 cm\).
 
@@ -62,68 +62,60 @@ pro přidání tlačítka do Widgetu použijeme
 
 ![](/assets/code6.png)prvný argument je element, který přidáváme.  
 Root můžeme považovat za **základní **element, který je rozšířen o několik funkcionalit a je přítomný vždy ve všech widgetech.  
-Klikneme na tlačítko _test.    
+Klikneme na tlačítko _test.      
 _![](/assets/code7.png)pokud si tlačítko zvětšíme, zjistíme že je defalutně nastylované, avšak vzhedově je naprosto ošklivé.  
 ![](/assets/code8.png)
 
 ### Základní stylizace
 
 Upravíme si tlačítko tak, aby bylo po celé šířce i výšce našeho widgetu.  
-Připomínám, že widgetů budeme mít v aplikaci několik a jeden widget by měl zastávat jednu funkci.  
-  
-Úprava stylu elementu je jednoduchá. Šířku a výšku _button _elementu upravíme snadno pomocí  
-`button.style.height = "100%";  
- button.style.width = "100%";  
-  
-`![](/assets/code9.png)
+Připomínám, že widgetů budeme mít v aplikaci několik a jeden widget by měl zastávat jednu funkci.
+
+Úprava stylu elementu je jednoduchá. Šířku a výšku \_button \_elementu upravíme snadno pomocí  
+\`button.style.height = "100%";  
+ button.style.width = "100%";
+
+\`![](/assets/code9.png)
 
 Pokud dáme _test_ ihned uvidíme zlepšení.
 
 ![](/assets/code10.png)
 
-
-
-Rosáhlejší stylování popíšeme později, pro rychlé nahlédnutí ale pomůže kapitola "[Styly a jejich použití](/byzance_documentation/grid_intro/wk-elements-and-style.md)". 
-
-
+Rosáhlejší stylování popíšeme později, pro rychlé nahlédnutí ale pomůže kapitola "[Styly a jejich použití](/byzance_documentation/grid_intro/wk-elements-and-style.md)".
 
 ### Interakce s uživatelem
 
 O interaktivní stránku widgetů se nejčastěji používají listenery.  
-Na náš _button _přidáme event listener, který bude naslouchat zda bylo na tlačítko kliknuto.  
+Na náš \_button \_přidáme event listener, který bude naslouchat zda bylo na tlačítko kliknuto.
 
-
-`button.listenEvent("mousedown", callback => {  
-     valueDigOutput.value = true;  
+`button.listenEvent("mousedown", callback => {    
+     valueDigOutput.value = true;    
  });`
 
-na _button_ zavoláme listenEvent, první argument je typ akce, na kterou má kód reagovat \(v tomto případě, že na element bylo zmáčknuto tlačítko myši\) a další část je funkce, co se má vykonat při vyvolání. Jedná se o zkrácený javascriptový zápis 
+na _button_ zavoláme listenEvent, první argument je typ akce, na kterou má kód reagovat \(v tomto případě, že na element bylo zmáčknuto tlačítko myši\) a další část je funkce, co se má vykonat při vyvolání. Jedná se o zkrácený javascriptový zápis
 
-`button.listenEvent("mousedown", function(callback){  
-     valueDigOutput.value = true;  
+`button.listenEvent("mousedown", function(callback){    
+     valueDigOutput.value = true;    
  });`
 
-\(obojí je validní\)   
-kde _callback _je pouze pomocná promněná a můžeme jí pojmenovat jak je libo.  
-  
+\(obojí je validní\)  
+kde \_callback \_je pouze pomocná promněná a můžeme jí pojmenovat jak je libo.
+
 V hranatých závorkách je kód, co se vykoná při stisknutí levého tlačítka na myši ve chvíli co je najet na button element.  
-V kódu voláme na záčátku definovaný _valueDigOutput _jakožto výstup.   
-Protože se jedná o digitální výstup, vkládáme do .value jenom _true_ nebo _false._  
-v tomto případě posíláme true \(logickou 1\);  
-  
-přidáme ještě:  
-  
-`button.listenEvent("mouseup", e => {  
-     valueDigOutput.value = false;  
+V kódu voláme na záčátku definovaný _valueDigOutput \_jakožto výstup.  
+Protože se jedná o digitální výstup, vkládáme do .value jenom \_true_ nebo _false._  
+v tomto případě posíláme true \(logickou 1\);
+
+přidáme ještě:
+
+`button.listenEvent("mouseup", e => {    
+     valueDigOutput.value = false;    
  });`
 
-Což při puštění tlačítka myši pošle na výstup _false_  
-  
-Nyní klikneme na _test_   
-![](/assets/code11.png)A mužeme testovat.  
+Což při puštění tlačítka myši pošle na výstup _false_
 
-
-
+Nyní klikneme na _test_  
+![](/assets/code11.png)A mužeme testovat, pokud vše proběhlo správně, do konzole se vypisuje stav valDigOut.
 
 ## Gratuluji, tímto jste vytvořili základní tlačítko pro uživatele
 
