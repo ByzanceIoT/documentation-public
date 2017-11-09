@@ -36,11 +36,11 @@ Nyní tlačítko kompletně nastylizujeme:
 ![](/assets/code19.png)  
 všechny možnosti které mohou být v daném stylu napovídá našeptávač \(ctrl + mezerník\) při psaní daného stylu.
 
-Můžeme i upravit pozici elementu pomocí_      
-_`button.style.originX      
+Můžeme i upravit pozici elementu pomocí_          
+_`button.style.originX          
  button.style.originY`
 
-`button.style.x       
+`button.style.x           
  button.style.y`
 
 Ale v našem případě to není třeba, více informací najdeme v [Styly a jejich použití](/byzance_documentation/grid_intro/wk-elements-and-style.md).
@@ -49,85 +49,62 @@ Ale v našem případě to není třeba, více informací najdeme v [Styly a jej
 
 Můžeme si všimnout problému s tím, že pokud styly napíšeme takto, tak se pouze nastaví jednou a tím veškeré změny končí.
 
-Řekněme, že chceme zvětšit velikost fontu v závislosti na velikosti widgetu.   
-Napíšeme do kódu toto:  
-  
-`button.listenEvent("resize", e =>{  
-    button.style.fontSize = button.visibleRect.size.height * 0.8 + "";  
+Řekněme, že chceme zvětšit velikost fontu v závislosti na velikosti widgetu.  
+Napíšeme do kódu toto:
+
+`button.listenEvent("resize", e =>{      
+    button.style.fontSize = button.visibleRect.size.height * 0.8 + "";      
  });`
-
-
 
 Jako minule, posloucháme změny na _button_ a při jakékoliv změny velikosti buttonu se zavolá funkce za tím.
 
-`button.style.fontSize = button.visibleRect.size.height * 0.8 + "";  
-`protože styly se dají měnit "za běhu" můžeme upravit velikost bloku, barvu pozadí apod.
+`button.style.fontSize = button.visibleRect.size.height * 0.8 + "";`protože styly se dají měnit "za běhu" můžeme upravit velikost bloku, barvu pozadí apod.
 
 `button.visibleRect.size.height * 0.8 + "";`  
-vezme velikost viditelného obdélníku z _buttonu_ a z něho vezme jeho výšku v pixelech. proto dané číslo násobíme "koeficientem" 0.8. část `+" "` je pouze ošetření toho, že daná vlastnost požaduje datový typ string, né number.  
-  
+vezme velikost viditelného obdélníku z _buttonu_ a z něho vezme jeho výšku v pixelech. proto dané číslo násobíme "koeficientem" 0.8. část `+" "` je pouze ošetření toho, že daná vlastnost požaduje datový typ string, né number.
+
 Pozn. z widgetu se dá dostat i "celková" výška celého widgetu pomocí **root** a to  
 `context.root.visibleRect.size.height`
 
-samozřejmě, daná výška je v pixelech  
-  
-V podobném stylu napíšeme i funkci, která změní barvu pozadí a ikonu dle _digOut   
-  
-`function changeIconAndText(){  
-`_`    if(digOut.value){  
-        button.style.background = ColorTrue.value;  
-        button.text = "[fa]"+iconTrue.value+"[/]";  
-    }else{  
-        button.style.background = ColorFalse.value;  
-        button.text = "[fa]"+iconFalse.value+"[/]";  
-    }  
+samozřejmě, daná výška je v pixelech
+
+V podobném stylu napíšeme i funkci, která změní barvu pozadí a ikonu dle \_digOut
+
+`function changeIconAndText(){`\_`if(digOut.value){      
+        button.style.background = ColorTrue.value;      
+        button.text = "[fa]"+iconTrue.value+"[/]";      
+    }else{      
+        button.style.background = ColorFalse.value;      
+        button.text = "[fa]"+iconFalse.value+"[/]";      
+    }      
 };`
 
+protože digOut je boolean, můžeme zkrátit zápis. Při změně textu nesmíme zapomenout že pracujeme s ikonami a je třeba připsat dané ohraničení.
 
+nakonec napíšeme event listener na button, že ve chvíli kdy je na button kliknuto, obrátíme hodnotu \_digOut \_a zavoláme naší funkci.
 
-protože digOut je boolean, můžeme zkrátit zápis. Při změně textu nesmíme zapomenout že pracujeme s ikonami a je třeba připsat dané ohraničení.   
-
-
-nakonec napíšeme event listener na button, že ve chvíli kdy je na button kliknuto, obrátíme hodnotu _digOut _a zavoláme naší funkci.  
-  
-`button.listenEvent("mousedown", e => {  
-        digOut.value = !digOut.value;'  
-        changeIconAndText();  
+`button.listenEvent("mousedown", e => {      
+        digOut.value = !digOut.value;'      
+        changeIconAndText();      
 });`
 
 ![](/assets/17.png)
 
-**Pozn.:  **`if(button.isHover)` funguje jakožto pojistka při vícero prvcích která potvrdí, že je kurzor opravdu nad naším elementem \(prvkem\). Je dobré o ní vědět a psát jí do vetšiny event listenerů, jenž mají spojitost s myší.  
-  
+**Pozn.:  **`if(button.isHover)` funguje jakožto pojistka při vícero prvcích která potvrdí, že je kurzor opravdu nad naším elementem \(prvkem\). Je dobré o ní vědět a psát jí do vetšiny event listenerů, jenž mají spojitost s myší.
+
 nyní klikneme na test a otestujeme naše tlačítko:![](/assets/code20.png)Pokud se vše povedlo, mělo by se tlačítko při zvetšení zvětšit i text a při kliknutí změnit barvu a poslat negaci předešlé hodnoty.  
 ![](/assets/code21.png)
 
-  
 **Pozn.:** Widget se při změně v _Configuration _ sám nezmění, je třeba přidat event listener.  
 můžeme buďto poslouchat konkrétní config-property , nebo rovnou celému contextu  
-![](/assets/code22.png)  
+![](/assets/code22.png)
 
+v tomto případě můžeme zavolat `changeIconAndText();`protože tam již nastavujeme ikonku a barvu.  
+hodí se poznamenat, že pokud posloucháme konkrétní property, vrátí se nám její hodnota po změně. pokud nasloucháme celému context.configProperities, vrátí se nám objekt která ve value obsahuje \`tag\_property:hodnota\_property.
 
-v tomto případě můžeme zavolat `changeIconAndText(); `protože tam již nastavujeme ikonku a barvu.  
-hodí se poznamenat, že pokud posloucháme konkrétní property, vrátí se nám její hodnota po změně. pokud nasloucháme celému context.configProperities, vrátí se nám objekt která ve value obsahuje `tag_property:hodnota_property.  
-  
-`![](/assets/code23.png)
-
-
-
-
+\`![](/assets/code23.png)
 
 Tímto máme funkční přepínač, jenž se ná změnit dle potřeby a mění svůj vzhed
 
-
-
-
-
-
-
-
-
-
-
-
+Pokud jste opravdu perfekcionalisti, můžete ještě přidat event listener při vytvoření projektu na nastavení správé velikosti a změny ikonky a barvy pozadí pomocí `context.listenEvent("ready", e => {});`
 
