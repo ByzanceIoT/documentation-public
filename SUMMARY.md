@@ -31,7 +31,7 @@
 * [Grid](byzance_documentation/grid_intro.md)
   * [Základní Tlačítko \(základy GRID\)](byzance_documentation/grid_intro/tlacitko-zaklady-grid.md)
   * [vylepšený Přepínač \(stylování a pokročilé možnosti GRID\)](byzance_documentation/grid_intro/vylepsene-tlacitko-stylovani-a-pokrocile-moznosti-grid.md)
-  * [graf \(grafická stránka GRID\)](byzance_documentation/grid_intro/graf-graficka-stranka-grid.md)
+  * [graf \(pokročilé funkce GRID\)](byzance_documentation/grid_intro/graf-graficka-stranka-grid.md)
   * [Styly a jejich použití](byzance_documentation/grid_intro/wk-elements-and-style.md)
   * [HOW TO: slider](byzance_documentation/grid_intro/how-to-slider.md)
   * [HOW TO: grafické prvky](byzance_documentation/grid_intro/how-to-graficke-prvky.md)
