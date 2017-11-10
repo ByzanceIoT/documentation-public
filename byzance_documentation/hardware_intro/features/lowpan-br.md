@@ -3,6 +3,7 @@
 Jedná se o hraniční router, který má za úkol zajistit směrování paketů (tj. na základě analýzy IP adresy a routovací tabulky přeposlat paket z jednoho rozhraní na druhé).
 
 
+
 #### Architektura sítě 
 
 
