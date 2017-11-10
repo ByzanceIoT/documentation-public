@@ -99,6 +99,7 @@
   * [Error kódy](byzance_documentation/hardware_intro/features/error-kody.md)
   * [Lowpan BR](byzance_documentation/hardware_intro/features/lowpan-br.md)
   * [Netsource Lowpan](byzance_documentation/hardware_intro/features/6lowpan.md)
+  * [Lowpan](byzance_documentation/hardware_intro/features/lowpan.md)
 * [Hardware](byzance_documentation/hardware_intro/hardware.md)
   * [IODAG3E](byzance_documentation/hardware_intro/hardware/iodag3e.md)
     * [Schémata](byzance_documentation/hardware_intro/hardware/iodag3e/schemata.md)
