@@ -36,10 +36,11 @@ Každé zařízení v projektu Byzance lze indentifikovat pomocí **jedinečné 
 Seznam všech topiců používaných Byzance je na stránce [[topics:| MQTT Topics]].
 
 
-===== Seznam topiců =====
+##### Seznam topiců 
 
 Aktuální topicy, do kterých se subscribuje zařízení je uložen v souboru ByzanceClientRoutines.h
-<code>
+
+```
 CLIENT_TOPIC_DIGITAL 	"/d_in/#"
 CLIENT_TOPIC_ANALOG 	"/a_in/#"
 CLIENT_TOPIC_MESSAGE	"/m_in/#"
@@ -47,14 +48,15 @@ CLIENT_TOPIC_COMMAND	"/command_in/#"
 CLIENT_TOPIC_SETTINGS	"/settings_in/+"
 CLIENT_TOPIC_INFO	"/info_in/+"
 CLIENT_TOPIC_CONSOLE	"/console_in/#"
-</code>
+```
 
 Prefix se definuje ve stejném souboru pod makrem
-<code>
-CLIENT_PREFIX           "" (už není)
-</code>
 
-==== Další informace ====
+```
+CLIENT_PREFIX           "" (už není)
+```
+
+#### Další informace 
 
 Další informace a podrobnosti je možné dohledat v příslušných sekcích topiců
 
