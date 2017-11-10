@@ -2,10 +2,9 @@
 
 Jedná se o hraniční router, který má za úkol zajistit směrování paketů (tj. na základě analýzy IP adresy a routovací tabulky přeposlat paket z jednoho rozhraní na druhé).
 
-
-
 #### Architektura sítě 
 
+![Lowpan architecture](/images/hardware/lowpanbr_arch.png)
 
 LowpanBR má dva síťové interfacy:
   * pro přístup k Internetu a LAN disponuje rozhraním WiFi nebo Ethernet
@@ -15,7 +14,7 @@ Prozatím se předpokládá pouze IPv4 konektivita k Internetu/LAN. Naproti tomu
 
 Pro přístup zařízení (D) k Internetu/LAN je používáno techniky NAT64, jež je implementována na LowpanBR. Jediným omezením této techniky je fakt, že spojení vždy musí navázat device (D), čímž je vytvořen záznam v NAT64 tabulce a směrování z/do Internetu již funguje obousměrně na základě analýzy portů. 
 
-==== Příklad: navázání TCP spojení se vzdáleným serverem pomocí doménového jména ====
+#### Příklad: navázání TCP spojení se vzdáleným serverem pomocí doménového jména
 V tomto případě je nutné uvažovat tři záchytné body - D (device - iniciátor spojení), LowpanBR (hraniční router poskytující internetové připojení D), vzdálený server (například www.example.com, port 80).
 
   * D iniciuje spojení - prvně musí zjistit cílovou IP adresu z doménového jména
