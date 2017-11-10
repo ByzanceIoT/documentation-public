@@ -1,6 +1,10 @@
 ## Výsledky měření přenosové rychlosti a dosahu 
-===== Přenosová rychlost ===== 
-==== Podmínky měření ====
+
+
+### Přenosová rychlost 
+
+####Podmínky měření 
+
 Test rychlosti byl prováděn za následujících podmínek:
   * měření probíhalo mezi dvěma prvky, oba byly součástí 6lowpan sítě (a byly to jediné prvky v síti)
   * měření probíhalo nad UDP sokety (tj. nebyla zde žádná nadbytečná data - potvrzování atp.)
@@ -9,17 +13,19 @@ Test rychlosti byl prováděn za následujících podmínek:
   * v každé iteraci byl paket odeslán vícekrát a byl měřen čas odesílání celé skupiny
   * jako objem dat pro výpočet přenosové rychlosti byla použita délka UDP payloadu
   * měřeno na Nucleo 429ZI + Wireless Xplained Pro
-==== Výsledky měření ====
+
+
+#### Výsledky měření 
 {{ :lowpan:vp-6lowpan-udp.png |}}
 
 Z grafu je patrné, že maximální přenosová rychlost je přibližně 10 kB/s. Dále je zde patrný vliv fragmentace dlouhých paketů (překročením určité délky dojde ke vzniku dalšího fragmentu => nutný přenos další hlavičky => snížení přenosové rychlosti).
 
-==== TCP komunikace ====
+#### TCP komunikace 
   * TCP komunikace oproti UDP komunikaci přidává mj. spojovou komunikaci (tj. navazování spojení, ukončování spojení) a dále zvyšuje spolehlivost spojení potvrzováním odeslaných zpráv
   * komunikace je tedy oproti UDP zatížena zprávami pro navázání, udržování a ukončování spojení, ale především potvrzovacími zprávami
   * to vše má za následek citelné snížení přenosové rychlosti, obvzlášť v poloduplexních sítích (kterou 6lowpan je)
 
-=== MQTT komunikace ===  
+#### MQTT komunikace   
   * měřeno na YodaG3 + WEXP
   * MQTT komunikace standartně probíhá nad TCP
   * nad TCP je tedy navázáno spojení, které je udržováno pomocí keepalive zpráv (které zajišťují i otevírání NATu atp.), případně je spojení ukončeno
@@ -31,7 +37,7 @@ Z grafu je patrné, že maximální přenosová rychlost je přibližně 10 kB/s
   * přenos binárního souboru o velikosti 450 kB pomocí MQTT zabere přibližně 3:10 minuty pro QoS0 na Windows
   * přenos binárního souboru o velikosti 450 kB pomocí MQTT zabere přibližně 2:20 minuty pro QoS0 na Linuxu, efektivní rychlost je tedy 3,21 kB/s
 
-===== Dosah ===== 
+#### Dosah 
 orientační dosah bez antén:
   * 0 nm
 orientační dosah s anténami (pigtail 433 MHz, antény 868 MHz):
