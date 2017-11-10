@@ -114,6 +114,7 @@
   * [Konfigurace MBED na Windows](interni/mbed/konfigurace-mbed-na-windows.md)
 * [hardware](interni/hardware.md)
   * [Seznam hardware](interni/hardware/seznam-hardware.md)
+  * [Aktualizace firmware](interni/hardware/aktualizace-firmware.md)
 
 ## Obecné
 
