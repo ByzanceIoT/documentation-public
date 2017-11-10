@@ -1,0 +1,2 @@
+## Identifikátor zařízení 
+
