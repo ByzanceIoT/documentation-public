@@ -1,12 +1,8 @@
-Zatím jsme do widgetů dávali pouze jeden \(grafický\) element, aniž bychom s ním nějak více pracovali.
+ 
 
-Zde si ukážeme práci s vícero elementama a jejich kreslení do nich.
+Založíme si nový projekt a pojmenujeme si hi LineGraph.
 
----
-
-Založíme si nový projekt a pojmenujeme si ho \_LineGraph.
-
-\_vytvoříme Analogový vstup.  
+vytvoříme Analogový vstup.  
 Analog je reprezontován \(desetiným\) číslem. které může jít i do záporných hodnot.  
 \(Poslední datový typ messeage, si ukážeme později.\)
 
@@ -15,9 +11,9 @@ Analog je reprezontován \(desetiným\) číslem. které může jít i do zápor
 a přidáme sizeProfile  
 `context.addSizeProfiles(3,2,20,20);`
 
-a nakonec přidáme "generický element", ve kterém budeme pracovat.
+a nakonec přidáme "generický element", na kterém budeme pracovat.
 
-\`let element = new WK.Element\(context\);
+```let element = new WK.Element(context);``
 
 \`![](/assets/code24.png)
 
@@ -29,43 +25,39 @@ Určitě budeme chtít zaznamenat hodnoty, které pak vykreslíme do widgetu jak
 
 Nejlepší způsob, jak získat hodnotu z inputu je event listenerem. Proto napíšem
 
-`anaIn.listenEvent("valueChanged", e => {      
-    dataStorage.push(anaIn.value);    
+`anaIn.listenEvent("valueChanged", e => {        
+    dataStorage.push(anaIn.value);      
 });`
 
 **Pozn.: **kvůli bugu v GRID se nová hodnota nedá získat z callbacku \(e\).
 
 tímto při každé změně uložíme novou hodnotu do pole.  
 ![](/assets/code25.png)  
-Nyní je třeba začít s vykreslováním  do elementu.
+Nyní je třeba začít s vykreslováním  na element.
 
 ## Event render a kreslení
 
 Widgety vykreslovány v Canvasu, díky tomu můžeme použít oficiální dokumentaci Canvasu. [\(LINK\).  ](https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API/Tutorial/Drawing_shapes)
 
-Veškeré vykreslování se děje v 
+Veškeré vykreslování se děje v
 
-`context.listenEvent("render", e => {      
-    let draw = e.context;  
-}) `
+`context.listenEvent("render", e => {        
+    let draw = e.context;    
+})`
 
-  
-čímž kreslíme na vrh celé "plochy" widgetu.   
-Protože budeme hodně používat e.context, uložil jsem si ho do promněné pro jednodušší práci.  
-  
-Ve zkratce nyní shrnu nejduležitější body z dokumentace Canvasu, 
+čímž kreslíme na vrh celé "plochy" widgetu.  
+Protože budeme hodně používat e.context, uložil jsem si ho do promněné pro jednodušší práci.
+
+Ve zkratce nyní shrnu nejduležitější body z dokumentace Canvasu,
 
 * Prakticky veškeré úkony s ním začínáme tím, že zavoláme metodu `.beginPath();`
 * bod 0,0 se nachází v levém horním rohu
 * veškeré změny projeví až poté co zavoláme `.stroke();`
 
-
-
 Nakreslíme si základní testovací čáru.  
-pod námi definovaný _draw _napíšeme   
+pod námi definovaný \_draw \_napíšeme
 
-
-        `draw.beginPath();  
+    draw.beginPath();  
      draw.moveTo(0,0);  
      draw.lineTo(context.root.visibleRect.size.width,context.root.visibleRect.size.height);  
      draw.strokeStyle = "#000000";  
@@ -75,18 +67,152 @@ pod námi definovaný _draw _napíšeme
 
 a klikneme na test
 
-![](/assets/code26.png)  
-  
+![](/assets/code26.png)
+
 Čára by vždy měla být z levého horního rohu do dolního pravého.  
-Pozornější si jistě všimli     `context.root.invalidate();   
-`Tato metoda se volá kdykoliv se změní widget a je třeba znovu ho celý vykreslit \(znova zavolá render\).  
+Pozornější si jistě všimli     `context.root.invalidate();`Tato metoda se volá kdykoliv se změní widget a je třeba znovu ho celý vykreslit \(znova zavolá render\).  
 Např. při změně velikosti widgetu, nebo když ho zavoláme my s tím že chceme vykreslit nově příchozí hodnoty.
 
 když už jsme dali dohromady základy práce s canvasem, jsem si udělat graf z hodnot co ukládáme do pole.
 
 ---
 
-Pro snažší práci si zabarvíme pozadí na bílo a vytvoříme si několik promněných pro snažší práci.
+Pro snažší práci si zabarvíme pozadí na bílo a vytvoříme si několik promněných pro snažší práci.  
+  
+Samozřejmě, přídáme si element, který jsme vytvořili na žačátku do widgetu.  
+`context.root.add(element);`
+
+nyní by při kliknuntí na test měla čára být nakreslená na bílém pozadí.  
+![](/assets/code27.png)  
+  
+  
+Na začátek renderu si nadefinujeme několik pomocných promněných.
+
+začneme s   
+`   let chartPaddingX = 10;  
+    let chartPaddingY = 10;`
+
+chceme nechat nějaký prostor na krajích.  
+poté  
+`let chartX = 30 + chartPaddingX;  
+ let chartY = 10 + chartPaddingY;`
+
+jakožto "startovací bod" pro náš graf \(vlevo nahoře\). Odtud budeme začínat se vším vykreslováním.
+
+nakonec  
+` let chartWidth = context.root.visibleRect.size.width - chartPaddingX  
+  let chartHeight = context.root.visibleRect.size.height - chartPaddingY;`
+
+Ve zkratce jsme si nadefinovali výšku a šířku pro náš widget, složením těchto dvou hodnot máme souřadnice pravého dolního rohu našeho grafu. U _chartWidth _jsme si vzali šířku celého widgetu  \(která může být různě veliká\) a odečetli jsme od ní padding \(pro odstup od okraje\).  
+  
+Abychom zhruba věděli, jak je náš Graf ve widgetu velký, změníme několik parametrů v naší předtím vytvořené čáry.  
+  
+změníme 
+
+`draw.moveTo(0,0);  
+ draw.lineTo(context.root.visibleRect.size.width,context.root.visibleRect.size.height);  `
+
+na 
+
+`draw.moveTo(chartX, chartY);  
+ draw.lineTo(chartWidth, chartHeight);`
+
+![](/assets/code29.png)  
+  
+klikneme na test a podíváme se, zda se všechno povedlo dle plánu.
+
+![](/assets/code30.png)
+
+---
+
+Poté, co jsme si oveřili že vše vypadá OK, mohli bychom získat data z našeho pole, a zakreslit je do widgetu.  
+to uděláme smyčkou\(loop\).  
+  
+nejdříve najdeme nejvyšší hodnotu v poli, což uděláme jednoduše:  
+  
+` let max = 0;  
+    for (let i = 0; i < dataStorage.length; i++) {  
+        if (max < dataStorage[i]) {  
+            max = dataStorage[i];  
+        }  
+    }`
+
+ vytvoříme promněnou, kterou budeme určovat počet prvků jenž zobrazíme v grafu 
+
+`    let chartSize = 50;`
+
+  
+ poté napíšeme smyčku na vykreslování grafu jako takového:
+
+`render.beginPath();`
+
+`    let first = true;  
+    for (let i = Math.max(dataStorage.length - chartSize, 0), j = 0; i < dataStorage.length; i++ , j++) {  
+        const x = chartX + (j / chartSize) * chartWidth;  
+        const y = chartY + chartHeight - (dataStorage[i] / max) * chartHeight;`
+
+
+
+`        if (first) {  
+            render.moveTo(x, y);  
+        } else {  
+            render.lineTo(x, y);  
+        }`
+
+`  
+        first = false;  
+    }  
+  
+    render.strokeStyle = "#489fdf";  
+    render.stroke();`
+
+![](/assets/code31.png)  
+  
+To nejdůležitější je hotovo. Pokud jste ještě nedopsali to, že při změně hodnoty se má překreslit widget, nyní je správná chvíle na to
+
+`anaIn.listenEvent("valueChanged", e => {  
+    context.root.invalidate();  
+    dataStorage.push(anaIn.value);  
+});  
+  
+`a můžeme náš widget otestovat.  
+![](/assets/code32.png)
+
+widget by měl při každé změně hodnoty nakreslit nový graf, který se postupně posouvá.  
+Avšak, graf bez hodnot je užitečný jako bezdrátová myš bez baterek.  
+Přidáme text a "vodící čáry'  
+  
+`    render.fillStyle = "#000"; `
+
+
+
+`    render.fillText("0", 3, chartY + chartHeight - 3);`
+
+`    render.fillText(max, 3, chartY + 13);`
+
+
+
+`    render.strokeStyle = "rgba(0,0,0,0.5)";`
+
+
+
+`    render.beginPath();`
+
+`    render.moveTo(chartX, chartY);`
+
+`    render.lineTo(chartX + chartWidth, chartY);`
+
+`    render.stroke();`
+
+
+
+`    render.beginPath();`
+
+`    render.moveTo(chartX, chartY + chartHeight);`
+
+`    render.lineTo(chartX + chartWidth, chartY + chartHeight);`
+
+`    render.stroke();`
 
 
 
