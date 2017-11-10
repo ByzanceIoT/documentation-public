@@ -9,7 +9,7 @@ Základem je systém typu **publish**  / **subscribe** (zveřejnit/odebírat). K
 
 V našem pojetí reprezentuje Homer server uzel typu //broker//, Yoda je kombinací uzlů //klient// a //gateway// a device je uzlem //klient//. Yoda překládá MQTT protokol a topicy pro device posílá přes náš proprietární protokol na device, kde je (zkrácená) MQTT zpráva zpracována. FIXME poslední věta možná už nebude platit.
 
-===== Topics (témata) =====
+#### Topics (témata) 
 Zprávy jsou zveřejňovány do topiců, které mají hierarchickou strukturu. Struktura je plně definovatelná vývojářem a její podoba je níže. Jednotlivé úrovně hierarchie jsou oddělovány znakem „/“. Obecně MQTT zpráva vypadá takto:
 
 příklad topicu ''nulta_uroven/prvni_uroven/druha/treti''
@@ -18,8 +18,8 @@ Samotná data spojená s daným topicem jsou přenášena pomocí JSONů a pokud
 
 
 
-===== Konvence pro názvy Byzance topiců =====
-==== In/out postfix ====
+#### Konvence pro názvy Byzance topiců 
+##### In/out postfix 
 V Byzance existují vždy **dva topicy se stejným názvem**, které se **liší postfixem**, např.: ''message_out'' a ''message_in''. Proč dva? V situaci, kdy klient pošle zprávu do topicu ''message'' a zároveň je přihlášen k odběru tohoto topicu, byla by mu obratem doručena zpráva, kterou sám vyslal. To je nežádoucí chování zvyšující zátež sítě.
 
 Z tohoto důvodu klient publikuje zprávy do topicu s postfixem **_out** a je odebírá topicy koncovkou **_in**. 
@@ -32,7 +32,7 @@ Každé zařízení v projektu Byzance lze indentifikovat pomocí **jedinečné 
 
   * **Device** - identifikátorem je opět [[hardware:full_id#Full ID|Full ID]] device. Do device se příkazy posílají přes nadřazeného Homera. Pokud má Device adresu 003E00523533510B34353732, příkaz se pošle např. do topicu ''yoda_002600513533510B34353732/device_in/003E00523533510B34353732/datetime''. FIXME adresování podle device nemusí do budoucna platit.
 
-
-
-==== Hierarchická struktura topiců ====
+#### Hierarchická struktura topiců 
 Seznam všech topiců používaných Byzance je na stránce [[topics:| MQTT Topics]].
+
+
