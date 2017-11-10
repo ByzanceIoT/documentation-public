@@ -80,6 +80,7 @@
   * [Externí paměť mikrokontroléru](byzance_documentation/hardware_intro/navody/externi-pamet-mikrokontroleru.md)
 * [Features](byzance_documentation/hardware_intro/features.md)
   * [Alias](byzance_documentation/hardware_intro/features/alias.md)
+  * [Identifikátor zařízení ](byzance_documentation/hardware_intro/features/identifikator-zarizeni.md)
   * [Autobackup](byzance_documentation/hardware_intro/features/autobackup.md)
   * [Bootloader](byzance_documentation/hardware_intro/features/bootloader.md)
     * [Command režim](byzance_documentation/hardware_intro/features/bootloader/command-rezim.md)
@@ -96,7 +97,7 @@
   * [LED modul](byzance_documentation/hardware_intro/features/led-modul.md)
   * [Error kódy](byzance_documentation/hardware_intro/features/error-kody.md)
   * [Lowpan BR](byzance_documentation/hardware_intro/features/lowpan-br.md)
-  * [Netsource Lowpan](byzance_documentation/hardware_intro/features/6lowpan.md)
+  * Identifikátor zařízení 
 * [Hardware](byzance_documentation/hardware_intro/hardware.md)
   * [IODAG3E](byzance_documentation/hardware_intro/hardware/iodag3e.md)
     * [Schémata](byzance_documentation/hardware_intro/hardware/iodag3e/schemata.md)
