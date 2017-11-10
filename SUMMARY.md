@@ -119,6 +119,8 @@
   * [Seznam hardware](interni/hardware/seznam-hardware.md)
   * [Aktualizace firmware](interni/hardware/aktualizace-firmware.md)
   * [Výsledky testů pingu na IODA](interni/hardware/vysledky-testu-pingu-na-ioda.md)
+* [Generace G2](interni/generace-g2.md)
+  * [Update modulu ESP8266 v Iodovi](interni/generace-g2/update-modulu-esp8266-v-iodovi.md)
 
 ## Obecné
 
