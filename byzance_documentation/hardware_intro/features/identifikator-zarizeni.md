@@ -8,9 +8,14 @@ Toto 96b číslo je pro naše účely převedeno na pole **24 ASCII znaků, repr
 #### Jak zjistit Full ID 
 
 Online v sekci Projects -> Hardware
+
+![]()
 {{ :hardware:fullid.png?direct&200 | fullid_online }}
 
 Na zařízení přímo z [[bootloader:overview|bootloaderu]] výpisem přes [[tutorial:serial|sériovou linku]] nebo [[tutorial:usb|USB]].
+
+![]()
+
 {{ :hardware:fullid_bootloader.png?direct&200 | fullid_bootloader }}
 
 Pomocí [[tutorial:public_functions|veřejné metody]] třídy Byzance ''Byzance::get_full_id()'' výpisem přes [[tutorial:serial|sériovou linku]] nebo [[tutorial:usb|USB]].
@@ -29,6 +34,7 @@ void loop(){
     Thread::wait(500);
 }
 ```
+![]()
 
 {{ :hardware:full_id_code.png?direct&200 | full_id_code}}
 
