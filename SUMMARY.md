@@ -112,6 +112,8 @@
 
 * [mbed](interni/mbed.md)
   * [Konfigurace MBED na Windows](interni/mbed/konfigurace-mbed-na-windows.md)
+* [hardware](interni/hardware.md)
+  * [Seznam hardware](interni/hardware/seznam-hardware.md)
 
 ## Obecné
 
