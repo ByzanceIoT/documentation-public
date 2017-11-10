@@ -1,6 +1,6 @@
 ## Sezanm Hardware
 
-Device YodaG3E
+#### Device YodaG3E
 ```
 Nálepka		|	Full ID				|	MAC
 ==================================================================================
@@ -26,7 +26,7 @@ Albistech (Detešováno) (Bus Kit)
 
 ```
 
-Device BusKitG2
+#### Device BusKitG2
 ```
 Nálepka č.	       |	Full ID
 ========================================
@@ -71,7 +71,8 @@ G2.1:
 [76]			|	002D00115748430E20303039
 ```
 
-Device WrlsKitG2
+#### Device WrlsKitG2
+
 ```
 Nálepka č.	       |	Full ID
 ========================================
@@ -115,7 +116,8 @@ G2.1:
 ```
 
 
-Device YodaG2
+#### Device YodaG2
+
 ```
 Nálepka		|	Full ID				|	MAC
 ==================================================================================
@@ -145,9 +147,8 @@ G2.1:
 [W]		|	002600513533510B34353732	|	be:ff:ff:ff:ff:04
 ```
 
+#### Yoda Expansion boards
 
-
-Yoda Expansion boards
 ```
 Nálepka		        |	Stav
 ========================================
