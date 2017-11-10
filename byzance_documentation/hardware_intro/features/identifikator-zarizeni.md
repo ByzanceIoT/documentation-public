@@ -9,7 +9,7 @@ Toto 96b číslo je pro naše účely převedeno na pole **24 ASCII znaků, repr
 
 Online v sekci Projects -> Hardware
 
-![]()
+![fullid](/images/hardware/fullid.png)
 {{ :hardware:fullid.png?direct&200 | fullid_online }}
 
 Na zařízení přímo z [[bootloader:overview|bootloaderu]] výpisem přes [[tutorial:serial|sériovou linku]] nebo [[tutorial:usb|USB]].
