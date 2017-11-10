@@ -1,7 +1,5 @@
 # Alias
 
-ahoj
-
 Alias slouží společně s \[\[hardware:full\_id\|Full ID\]\] k identifikaci zařízení. Narozdíl od Full ID, které je vždy unikátní z výroby a strojově dobře čitelné, Alias je nastavovaný uživatelsky pro lepší identifikaci člověkem. Při více zařízeních by měl být identifikátor Alias dostatečně popisný. Například při použití v osvětlení by měl Alias nést názvy typu "SVETLO-KUCHYN", "SVETLO-OBYVAK" a podobně. S identifikátorem Alias je možné pracovat několika způsoby.
 
 Omezení
