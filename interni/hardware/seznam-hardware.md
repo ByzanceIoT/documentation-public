@@ -147,10 +147,6 @@ G2.1:
 
 
 
-
-
-
-
 Yoda Expansion boards
 ```
 Nálepka		        |	Stav
