@@ -15,8 +15,6 @@ Na zařízení přímo z [[bootloader:overview|bootloaderu]] výpisem přes [[tu
 ![](/images/hardware/fullid_bootloader.png)
 
 
-{{ :hardware:fullid_bootloader.png?direct&200 | fullid_bootloader }}
-
 Pomocí [[tutorial:public_functions|veřejné metody]] třídy Byzance ''Byzance::get_full_id()'' výpisem přes [[tutorial:serial|sériovou linku]] nebo [[tutorial:usb|USB]].
 
 ```
@@ -33,6 +31,9 @@ void loop(){
     Thread::wait(500);
 }
 ```
+
+![](/images/hardware/full_id_code.png)
+
 
 {{ :hardware:full_id_code.png?direct&200 | full_id_code}}
 
