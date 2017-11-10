@@ -15,6 +15,7 @@ Prozatím se předpokládá pouze IPv4 konektivita k Internetu/LAN. Naproti tomu
 Pro přístup zařízení (D) k Internetu/LAN je používáno techniky NAT64, jež je implementována na LowpanBR. Jediným omezením této techniky je fakt, že spojení vždy musí navázat device (D), čímž je vytvořen záznam v NAT64 tabulce a směrování z/do Internetu již funguje obousměrně na základě analýzy portů. 
 
 #### Příklad: navázání TCP spojení se vzdáleným serverem pomocí doménového jména
+
 V tomto případě je nutné uvažovat tři záchytné body - D (device - iniciátor spojení), LowpanBR (hraniční router poskytující internetové připojení D), vzdálený server (například www.example.com, port 80).
 
   * D iniciuje spojení - prvně musí zjistit cílovou IP adresu z doménového jména
@@ -40,7 +41,7 @@ V tomto případě je nutné uvažovat tři záchytné body - D (device - inici�
 
 Napsat nějakou dokumentaci k tomu, co je Lowpan BR.
 
-==== Jak zjistit hodnotu flagu Lowpan BR ====
+#### Jak zjistit hodnotu flagu Lowpan BR
   * V [[bootloader:overview|bootloaderu]] v [[bootloader:commands|command režimu]]
   * Zjištění pomocí příslušného [[yoda:topic_info|info topicu MQTT]] či nastavení v [[yoda:topic_settings|settings topicu]]
   * [[tutorial:public_functions|Veřejnou funkcí třídy Byzance]]
