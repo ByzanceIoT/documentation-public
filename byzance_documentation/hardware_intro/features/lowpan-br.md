@@ -38,7 +38,6 @@ V tomto případě je nutné uvažovat tři záchytné body - D (device - inici�
   * v LowPAN síti je dle cílové IPv6 adresy automaticky zajištěno směrování paketu k D
 
 
-
 Napsat nějakou dokumentaci k tomu, co je Lowpan BR.
 
 #### Jak zjistit hodnotu flagu Lowpan BR
@@ -47,7 +46,7 @@ Napsat nějakou dokumentaci k tomu, co je Lowpan BR.
   * [[tutorial:public_functions|Veřejnou funkcí třídy Byzance]]
   * Ve [[tutorial:webview|webovém rozhraní]]
 
-==== Softwarová architektura ====
+#### Softwarová architektura 
 
 Funkcionalita border routeru je rozdělena na čtyři části (zdrojové soubory):
   * třída LowpanBR
@@ -55,20 +54,21 @@ Funkcionalita border routeru je rozdělena na čtyři části (zdrojové soubory
   * ovladač stm32xx_emac
   * nat64_dri
 
-=== LowpanBR ===
+#### LowpanBR 
 Jedná se o statickou třídu, která se inicializuje metodou ''init()''. Tato metoda vytvoří a spustí nové vlákno, kde nejprve dojde k inicializaci rádiového rozhraní, v případě úspěchu je spuštěn událostní systém v tomto vlákně. Postupně se tedy inicializuje lowpan interface v roli  border roteru a také backhaul interface (tunelovací ovladač). Pokud proběhne vše dle plánu, je inicializována DNS64 funkcionalita.
 
-=== DNS64 ===
+#### DNS64
 Metoda ''init()'' otevře soket nad rozhraním lowpan a zadaným portem (defaultně 53) a přiřadí callback, který je volán v případě události na soketu. V případě přijmu dat je vyhodnocen požadavek, pokud je validní (AAAA dotaz - na IPv6), je dotaz na doménové jméno replikován na backhaul interface (jako A dotaz - na IPv4). Pokud je IPv4 tázaného doménového jména úspěšně zjištěna, je generována AAAA odpověď a odeslána zpět tazateli.
 
-=== stm32xx_emac ===
+#### stm32xx_emac 
 Jedná se o ethernetový ovladač a je součástí lwip. Ve své originální podobě neumožňuje implementaci NAT64 funkcionality. Byly zde provedeny následující změny:
   * přidaná funkce ''arm_tun_phy_device_register()'' - provede inicializaci tunelovacího ovladače  (nulování callbacků, které nastavuje vyšší vrstva, nastavení odesílacího callbacku)
   * přidaná funkce ''stm32_tun_phy_tx()'' - callback registrovaný při inicializaci ovladače; je automaticky volán vyšší vrstvou lowpan v případě, že je potřeba odeslat nějaká data
-    * provede se kontrola integrity paketu, konverze, alokace bufferu a paket je odeslán pomocí původní funkce ''_eth_arch_netif_output_ipv4'' do ethernetu
+  * provede se kontrola integrity paketu, konverze, alokace bufferu a paket je odeslán pomocí původní funkce ''_eth_arch_netif_output_ipv4'' do ethernetu
   * funkce ''_eth_arch_rx_task'' běží ve vlastním (přijímacím) vlákně; původně prováděla výčet rámce do bufferu a jeho předání síťovému interfacu (netif) lwip; zde je provedena odbočka - nejdříve je vyhodnoceno, zda rámec patří do NAT64 nebo do lwip netif
-    *  v případě, že rámec patří do lwip, je proveden původní kód
-    *  v případě, že rámec patří do NAT64, je buffer překopírován do vlastního bufferu, konvertován a odeslán do lowpan routeru
+  *  v případě, že rámec patří do lwip, je proveden původní kód
+  *  v případě, že rámec patří do NAT64, je buffer překopírován do vlastního bufferu, konvertován a odeslán do lowpan routeru
 
-=== nat64_dri ===
+#### nat64_dri 
+
 Jedná se o ovladač nat64 - provádí konverze paketů, udržuje tabulky (tcp a udp). 
