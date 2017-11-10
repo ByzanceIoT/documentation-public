@@ -35,6 +35,3 @@ void loop(){
 ![](/images/hardware/full_id_code.png)
 
 
-{{ :hardware:full_id_code.png?direct&200 | full_id_code}}
-
-
