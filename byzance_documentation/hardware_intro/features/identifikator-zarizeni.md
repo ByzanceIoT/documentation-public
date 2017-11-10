@@ -14,7 +14,7 @@ Online v sekci Projects -> Hardware
 
 Na zařízení přímo z [[bootloader:overview|bootloaderu]] výpisem přes [[tutorial:serial|sériovou linku]] nebo [[tutorial:usb|USB]].
 
-![]()
+![fullid_bootloader](/images/hardware/fullid_bootloader.png)
 
 {{ :hardware:fullid_bootloader.png?direct&200 | fullid_bootloader }}
 
@@ -34,7 +34,7 @@ void loop(){
     Thread::wait(500);
 }
 ```
-![]()
+![full_id_code](/images/hardware/fill_id_code.png)
 
 {{ :hardware:full_id_code.png?direct&200 | full_id_code}}
 
