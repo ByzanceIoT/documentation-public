@@ -1,4 +1,4 @@
-## Netsource Lowpan
+## 6Lowpan
 
 Článek pojednává o využití bezdrátové sítě Lowpan pro přístup k Internetu nebo LAN síti. Jedná se tedy o alternativu k připojení přes Ethernet (nutná kabeláž) či WiFi (omezený rozsah). Tato síť je typu mesh a je tedy možné ji prostorově rozšiřovat (pro připojení k síti je nutné být v dosahu alespoň jednoho zařízení, které je již součástí sítě). 
 
