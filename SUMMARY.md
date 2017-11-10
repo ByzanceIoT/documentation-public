@@ -122,6 +122,7 @@
 * [Generace G2](interni/generace-g2.md)
   * [Update modulu ESP8266 v Iodovi](interni/generace-g2/update-modulu-esp8266-v-iodovi.md)
   * [NRF905 timing](interni/generace-g2/nrf905-timing.md)
+* [Coding style](interni/coding-style.md)
 
 ## Obecné
 
