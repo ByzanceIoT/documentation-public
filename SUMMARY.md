@@ -100,7 +100,7 @@
   * [Lowpan](byzance_documentation/hardware_intro/features/lowpan.md)
     * [Lowpan BR](byzance_documentation/hardware_intro/features/lowpan-br.md)
     * [6lowpan](byzance_documentation/hardware_intro/features/6lowpan.md)
-    * Měření přenosové rychlosti dosahu
+    * [Měření přenosové rychlosti dosahu](byzance_documentation/hardware_intro/features/mereni-prenosove-rychlosti-dosahu.md)
 * [Hardware](byzance_documentation/hardware_intro/hardware.md)
   * [IODAG3E](byzance_documentation/hardware_intro/hardware/iodag3e.md)
     * [Schémata](byzance_documentation/hardware_intro/hardware/iodag3e/schemata.md)
