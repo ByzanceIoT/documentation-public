@@ -115,6 +115,7 @@
 * [hardware](interni/hardware.md)
   * [Seznam hardware](interni/hardware/seznam-hardware.md)
   * [Aktualizace firmware](interni/hardware/aktualizace-firmware.md)
+  * [Výsledky testů pingu na IODA](interni/hardware/vysledky-testu-pingu-na-ioda.md)
 
 ## Obecné
 
