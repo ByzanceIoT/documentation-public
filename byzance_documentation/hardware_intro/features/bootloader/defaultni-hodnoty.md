@@ -1,5 +1,9 @@
 # Default Configuration Values
 
+"_If you are in the configuration mode, the LED lights up blue"_
+
+
+
 Pokud se poprvé nahraje binárka bootloaderu do mikrokontroléru, bootloader sám umí detekovat, že target není zatím nakonfigurován. Nastala-li porucha některé hodnoty, bootloader danou hodnotu umí opravit. K nastavení výchozích vlastností slouží soubor`struct_defaults.h`s podobným obsahem tomuto
 
 ```cpp
@@ -44,13 +48,11 @@ DEFAULTS_BIN_STATE                    BINSTRUCT_STATE_INVALID  // ** managed by 
 
 ## Technical Description
 
-DEFAULTS\_CONF\_AUTOBACKUP:  
+DEFAULTS\_CONF\_AUTOBACKUP: 
 
-**DEFAULTS\_CONF\_CONFIGURED**: After all values are configured, the set Flag Registrer DEFAULTS\_CONF\_CONFIGURED to value "1" \(number\). This indicates that the device is fully configured. After restart of on every start, the device \(bootloader\) will automatically search for the main Firmware first or Backup\). When it does not find the firmware, Bootloader is activated.
+**DEFAULTS\_CONF\_CONFIGURED**: After all values are configured,  you have to set Flag Register DEFAULTS\_CONF\_CONFIGURED to value "1" \(number\). This indicates that the device is fully configured. After restart of on every start, the device \(bootloader\) will automatically search for the main Firmware first or Backup. When Bootloader does not find the Main Firmware or Backup, Bootloader is automaticaly activated.
 
 **DEFAULTS\_CONF\_AUTOJUMP:** in some case, the device enters into configuration mode \(bootloader\). Therefore, there is this constant that automatically restarts and and switches the device back to the firmware. If this constant is not set, you risk that the device will be permanently active in the configuration mode and will not be able to update it remotely.
-
-
 
 ---
 
