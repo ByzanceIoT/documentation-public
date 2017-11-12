@@ -36,11 +36,11 @@
   * [HOW TO: slider](byzance_documentation/grid_intro/how-to-slider.md)
   * [HOW TO: grafické prvky](byzance_documentation/grid_intro/how-to-graficke-prvky.md)
 * [Code](byzance_documentation/code_intro.md)
-* [Instancies](byzance_documentation/instancies_intro.md)
 
 ## Cloud
 
 * [Cloud](byzance_documentation/cloud_intro.md)
+* [Instancies](byzance_documentation/instancies_intro.md)
 
 ## Hardware
 
