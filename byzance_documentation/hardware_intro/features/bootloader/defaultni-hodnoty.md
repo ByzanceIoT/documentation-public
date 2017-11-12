@@ -1,4 +1,4 @@
-# Defaultní hodnoty
+# Default Configuration Values
 
 Pokud se poprvé nahraje binárka bootloaderu do mikrokontroléru, bootloader sám umí detekovat, že target není zatím nakonfigurován. Nastala-li porucha některé hodnoty, bootloader danou hodnotu umí opravit. K nastavení výchozích vlastností slouží soubor`struct_defaults.h`s podobným obsahem tomuto
 
@@ -42,13 +42,9 @@ DEFAULTS_BIN_NAME                    "DEFAULT"                 // ** managed by 
 DEFAULTS_BIN_STATE                    BINSTRUCT_STATE_INVALID  // ** managed by byzance
 ```
 
-**DEFAULTS\_CONF\_AUTOJUMP** in some case, the device enters into configuration mode \(bootloader\). Therefore, there is this constant that automatically restarts and and switches the device back to the firmware. If this constant is not set, you risk that
+## Technical Description
 
-the device will be permanently active in the configuration mode and will not
-
-be able to update it remotely.
-
-
+**DEFAULTS\_CONF\_AUTOJUMP** in some case, the device enters into configuration mode \(bootloader\). Therefore, there is this constant that automatically restarts and and switches the device back to the firmware. If this constant is not set, you risk that the device will be permanently active in the configuration mode and will not be able to update it remotely.
 
 
 
