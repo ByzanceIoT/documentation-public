@@ -36,9 +36,10 @@ V rámci sítě existuje několik druhů zařízení:
 
 #### Routování 
 Routováním se rozumí automatická tvorba routovacích tabulek pro každé zařízení, které routuje (border router, router). Každý bod v síti musí být odkudkoli dosažitelný (v každé tabulce musí být všechny body sítě).
-K tomu je využito protokolu RPL (podrobněji viz. [[https://tools.ietf.org/html/rfc6550|RFC6550]]).
+K tomu je využito protokolu RPL ([podrobněji](https://tools.ietf.org/html/rfc6550|RFC6550)).
 
-K teoretickému úvodu je super toto: {{:lowpan:6lowpan_demystifie_ti.pdf|6LoWPAN demystifie - Texas Instruments}}
+K teoretickému úvodu je super toto: [Texas Instruments](https://www.scribd.com/document/321983296/6LoWPAN-pdf)
 
-A část informací je i zde a chtělo by to přepsat sem:
-[[https://docs.google.com/document/d/1A-cqm9hOdHit5S7163-tDQGedfTgmsbwE1ObiNAx7fY/edit#|google docs]]
+
+
+A část informací je i zde a chtělo by to přepsat sem: [google docs](https://docs.google.com/document/d/1A-cqm9hOdHit5S7163-tDQGedfTgmsbwE1ObiNAx7fY/edit#)
