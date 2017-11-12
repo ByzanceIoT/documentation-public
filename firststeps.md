@@ -59,7 +59,7 @@ Teď tě čeká vytvoření tvého prvního projektu. Každý projekt je vázan�
  
  - **Code Libraries**:: Knihovny jsou předpřipravené balíčky kodu, jež ti umožní velmi snadno integrovat speciální funkce nebo obsluhu Shieldu pro tvůj Hardware. 
  
-- GRID: Je nástroj pro tvorbu jednoduchých ovládacích aplikací přímo na míru k jendomu HW nebo celé skupině. Grid nemá za cíl udělat dokonalé sexy vypadající aplikace pro vaše zákazníky - doporučujeme dělat nativní s podporou Rest-Api, ale umožnit ti tvořit jednoduché řídící aplikace pro průmysl a průmyslové řízení s prezentací dat.
+- **GRID**: Je nástroj pro tvorbu jednoduchých ovládacích aplikací přímo na míru k jendomu HW nebo celé skupině. Grid nemá za cíl udělat dokonalé sexy vypadající aplikace pro vaše zákazníky - doporučujeme dělat nativní s podporou Rest-Api, ale umožnit ti tvořit jednoduché řídící aplikace pro průmysl a průmyslové řízení s prezentací dat.
  
  - **Grid Apps**::
  - **Grid Widgets**::
