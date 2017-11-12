@@ -90,11 +90,11 @@ Teď tě čeká vytvoření tvého prvního projektu. Každý projekt je vázan�
 
 * CLOUD:  TODO
 
-
-
 ---
 
-#### Registrace Hardwaru
+### Registrace Hardwaru
+
+
 
 
 
@@ -102,9 +102,21 @@ Teď tě čeká vytvoření tvého prvního projektu. Každý projekt je vázan�
 
 ### První program pro Hardware
 
-Nahrátí programu na Hardware
 
-První Blocko
+
+---
+
+### Nahrátí programu na Hardware
+
+
+
+---
+
+### První Blocko Program
+
+
+
+
 
 První Vlastní Bloček
 
@@ -112,7 +124,7 @@ Integrace Blocko s Hardwarem
 
 První vlastní Instance
 
-První Aplikace v Gridu 
+První Aplikace v Gridu
 
 První vlastní Widget
 
