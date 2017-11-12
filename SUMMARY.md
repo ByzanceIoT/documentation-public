@@ -4,7 +4,6 @@
 
 * [1. Welcome Page](README.md)
 * [2. Intrudoction \(Beginner's Guide\)](firststeps.md)
-* [Registrace zařízení](byzance_documentation/prvni_spusteni/registrace_zarizeni.md)
 * [Oživení zařízení](byzance_documentation/prvni_spusteni/oziveni_zarizeni.md)
   * [IODAG3E](byzance_documentation/prvni_spusteni/oziveni_zarizeni/iodag3e.md)
   * [IODAG3W](byzance_documentation/prvni_spusteni/oziveni_zarizeni/ioda-g3w.md)
@@ -122,15 +121,7 @@
   * [NRF905 timing](interni/generace-g2/nrf905-timing.md)
 * [Coding style](interni/coding-style.md)
 
-## Obecné
-
 ## General
 
 * [What we plan](byzance_documentation/general_intro.md)
-* [Platform with own Brand](own_brand_platfrorm.md)
-
----
-
-* [Issue Incident](byzance_documentation/incident_reports.md)
-* [Special Integration](byzance_documentation/integration.md)
 
