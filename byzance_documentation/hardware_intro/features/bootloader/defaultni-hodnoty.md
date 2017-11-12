@@ -8,8 +8,6 @@ Pokud se poprvé nahraje binárka bootloaderu do mikrokontroléru, bootloader s�
 
 > **Please keep in mind that what is stored in the database \(expected device setup\) is always superior to what is currently on the hardware. If you locally set a value and are not enabled \(Synchronize always with database = False\) in Portal. The system automatically synchronizes everything to the expected value.**
 
-
-
 ```cpp
 // MQTT defaults
 DEFAULTS_MQTT_HOSTNAME            (const char*)"192.168.65.179"  // user configurable via Bootloader & Portal
@@ -43,12 +41,12 @@ DEFAULTS_BIN_VERSION_NAME            'v'            // ** managed by byzance (ac
 DEFAULTS_BIN_VERSION_MAJOR            0             // ** managed by byzance (number 0 - 99)   
 DEFAULTS_BIN_VERSION_MINOR            0             // ** managed by byzance (number 0 - 99) 
 DEFAULTS_BIN_VERSION_PATCH            0             // ** managed by byzance (number 0 - 99) 
-DEFAULTS_BIN_SIZE                     0             // ** managed by byzance
-DEFAULTS_BIN_CRC                      0             // ** managed by byzance
+DEFAULTS_BIN_SIZE                     0             // ** managed by byzance (number)
+DEFAULTS_BIN_CRC                      0             // ** managed by byzance (number)
 DEFAULTS_BIN_TIMESTAMP                0             // ** managed by byzance (number UX time stamp) 
-DEFAULTS_BIN_BUILD_ID                "DEFAULT"                 // ** managed by byzance
-DEFAULTS_BIN_NAME                    "DEFAULT"                 // ** managed by byzance
-DEFAULTS_BIN_STATE                    BINSTRUCT_STATE_INVALID  // ** managed by byzance
+DEFAULTS_BIN_BUILD_ID                "DEFAULT"                 // ** managed by byzance (UUID - 32 chars always)
+DEFAULTS_BIN_NAME                    "DEFAULT"                 // ** managed by byzance (String 32 chars max)
+DEFAULTS_BIN_STATE                    BINSTRUCT_STATE_INVALID  // ** managed by byzance (String 32 chars max)
 ```
 
 ## Technical Description
@@ -67,7 +65,11 @@ DEFAULTS_BIN_STATE                    BINSTRUCT_STATE_INVALID  // ** managed by 
 
 **DEFAULTS\_CONF\_AUTOJUMP:** in some case, the device enters into configuration mode \(bootloader\). Therefore, there is this constant that automatically restarts and and switches the device back to the firmware. If this constant is not set, you risk that the device will be permanently active in the configuration mode and will not be able to update it remotely. Remember that you can do this automatically with our portal. Or with Rest Api with our Core Server
 
-DEFAULTS\_CONF_ALIAS: Alias is your own device name - Limited to 63 characters. For example "My Light" or "DEVICE\_X\_Y_1". The Alias Name is accessible in firmware so you can used that for your private communication.  "MYCompany_\_LIGHT\_GENERATION1\_123423231". _ Remember that you can do this automatically with our portal. Or with Rest Api with our Core Server. If you rename the device in the  our portal, or throw the API, It will automatically syncronizes with Hardware. Or the instructions are saved as soon as the device logs on.
+**DEFAULTS\_CONF**_**ALIAS: **Alias is your own device name - Limited to 63 characters. For example "My Light" or "DEVICE\_X\_Y\_1". The Alias Name is accessible in firmware so you can used that for your private communication.  "MYCompany_\_LIGHT\_GENERATION1\_123423231". \_ Remember that you can do this automatically with our portal. Or with Rest Api with our Core Server. If you rename the device in the  our portal, or throw the API, It will automatically syncronizes with Hardware. Or the instructions are saved as soon as the device logs on.
+
+
+
+
 
 ---
 
