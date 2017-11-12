@@ -86,7 +86,8 @@ Terminologie:
 
 * Funkce autobackup je u device vždy zapnutá a nedá se vypnout.
 
-* Homer dříve \[\[Yoda:upload\| nahrál do device\]\] do části nového programu **nový** program. 
+* Homer dříve \[\[Yoda:upload\| nahrál do device\]\] do části nového programu **nový** program.
+
 * Bootloader prohodí **aktuální** program s **novým** programem. Tím se z **nového** programu stane **aktuální**
 * Zapíše se informace o **aktuálním** programu v Yodovi do konfigurační paměti.
 * Na závěr bootloader skočí na začátek **aktuálního** programu a začne ho vykonávat.
@@ -172,6 +173,7 @@ Při prvním spuštění nebo při položce configured=0 bootloader skáče do c
 * ''_webview_'' - Zapnutí nebo vypnutí \[\[tutorial:webview\|webového rozhraní\]\]
 
 * ''_webport_'' - Port, na které poběží \[\[tutorial:webview\|webové rozhraní\]\]
+
 * ''_timeoffset_'' - Slouží pro lokalizovanou \[\[tutorial:timestamp\|práci s časem\]\]. Nastavení offsetu lokálního času od UTC času.
 * ''_timesync_'' - Slouží pro kontrolu synchronizace \[\[tutorial:timestamp\|času se servery\]\]. 
 * ''_lowpanbr_'' - Zap nebo vyp funkce \[\[feature:lowpanbr\|lowpan border router\]\]
@@ -205,6 +207,8 @@ Pokud se poprvé nahraje binárka bootloaderu do mikrokontroléru, bootloader s�
 ### Important notice
 
 > **Please keep in mind that what is stored in the database \(expected device setup\) is always superior to what is currently on the hardware. If you locally set a value and are not enabled \(Synchronize always with database = False\) in Portal. The system automatically synchronizes everything to the expected value.**
+
+
 
 ```cpp
 // MQTT defaults
