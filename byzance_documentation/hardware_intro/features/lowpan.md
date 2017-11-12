@@ -2,7 +2,7 @@
 
 Článek se zabývá obecně technologií 6lowpan. 6lowpan je zkratka Low power Personal Area Network; číslice 6 značí, že přenos probíhá pomocí IPv6 paketů. 
 
-Technologie je spjata s rozšířeným rádiovým rozhraním 802.15.4, což umožňuje využití hardwaru, který je na trhu již nějakou dobu a přechod na 6lowpan znamená pouze softwarovou úpravu. 
+Technologie je spjata s rozšířeným rádiovým rozhraním 802.15.4, což umožňuje využití hardwaru, který je na trhu již nějakou dobu a přechod na 6lowpan znamená pouze softwarovou úpravu.
 
 #### 6lowpan stack 
 {{ :lowpan:lowpan_stack.jpg?200|6lowpan stack}}
