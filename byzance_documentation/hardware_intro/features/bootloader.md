@@ -1,6 +1,6 @@
 # Bootloader
 
-Overview
+**Overview**
 
 1. [Základní Přehled](#základní-přehled)
    1. [Činnost bootloaderu](#činnost-bootloaderu)
@@ -8,8 +8,6 @@ Overview
    3. [Mód FLASH](#mód-flash)
 2. [Command režim](#command-režim)
 3. [Default Configuration Values](#default-configuration-values)
-
-
 
 ## Základní Přehled
 
@@ -87,6 +85,7 @@ Terminologie:
 * Bootolader provede načtení parametrů **nového** programu z konfig. paměti a provedene validaci.
 
 * Funkce autobackup je u device vždy zapnutá a nedá se vypnout.
+
 * Homer dříve \[\[Yoda:upload\| nahrál do device\]\] do části nového programu **nový** program. 
 * Bootloader prohodí **aktuální** program s **novým** programem. Tím se z **nového** programu stane **aktuální**
 * Zapíše se informace o **aktuálním** programu v Yodovi do konfigurační paměti.
@@ -171,6 +170,7 @@ Při prvním spuštění nebo při položce configured=0 bootloader skáče do c
 * ''_backuptime_'' - Nastavení času, po kterém se spustí \[\[feature:autobackup\|automatická záloha firmware\]\].
 
 * ''_webview_'' - Zapnutí nebo vypnutí \[\[tutorial:webview\|webového rozhraní\]\]
+
 * ''_webport_'' - Port, na které poběží \[\[tutorial:webview\|webové rozhraní\]\]
 * ''_timeoffset_'' - Slouží pro lokalizovanou \[\[tutorial:timestamp\|práci s časem\]\]. Nastavení offsetu lokálního času od UTC času.
 * ''_timesync_'' - Slouží pro kontrolu synchronizace \[\[tutorial:timestamp\|času se servery\]\]. 
