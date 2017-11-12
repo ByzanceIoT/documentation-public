@@ -5,7 +5,8 @@
 Technologie je spjata s rozšířeným rádiovým rozhraním 802.15.4, což umožňuje využití hardwaru, který je na trhu již nějakou dobu a přechod na 6lowpan znamená pouze softwarovou úpravu.
 
 #### 6lowpan stack
-{{ :lowpan:lowpan_stack.jpg?200|6lowpan stack}}
+![6lowpan stack](/images/hardware/lowpan_stack.jpg)
+
 6lowpan protokolový stack definuje především fyzickou, linkovou a síťovou vrstvu.
 
 #### Fyzická vrstva
