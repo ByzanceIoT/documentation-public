@@ -9,41 +9,47 @@ Ale pro automatické uchopení a reakci na typy chyb je nutné zavét seznam (vi
 
 Seznam společných Error Kódů. Ty se můžou a používají uvnitř programu pro vyhodnocování chyb a zároveň ke komunikaci s ostatními systémy - Error kód je zasílán v JSON a to vždy jeh číslo a dobrovolně jeho popis. (Ten je vhodný během vývoje)  
 
+
+
 ```
 {
- "status" : "error" <- Status může být "success" nebo "error" a označuje - zda v JSON očekávat chybový kod, nebo je vše v pořádku.  
- "error_code" : 203321, <- Number
- "error_message" : "this is optional value" 
+ "status"        :  "error"    <- Status can be "success" or "error" and mark if message is ok, or not.  
+ "error_code"    :  203321, <- Number (if status == error)
+ "error_message" :  "this is optional mesage for humans"  (if status == error)
 }
 ```
 
 
-#### Seznam Error Codů
 
+#### List of Error Codes
 
-| Error Code | Error Message                    | Určeno pro                   | Komentář               |
+| Error Code | Error Message                    | For                          | Komentář               |
 | -----------|----------------------------------|------------------------------|------------------------|
-| 99999999    | "GENERAL ERROR"                    | Hardware / Hardware-Homer    | Some unidentified general error |
-| 1    | "UNKNOWN_TOPIC"                           | Hardware / Hardware-Homer    | Nerozeznaný MQTT Topic |
-| 2    | "MISSING_LABEL"                           | Hardware / Hardware-Homer    | Missing some Label     |
-| 3    | "UNKNOWN_LABEL"                           | Hardware / Hardware-Homer    | JSON label is unsupported     |
-| 4    | "MALLOC ERROR"                            | Hardware / Hardware-Homer    | MALLOC ERROR -> not enough memory     |
-| 50   | "ERROR"                                   | ALL                          | Nedefinovatelný Error  |
+| 99999999    | "GENERAL ERROR"                 | Hardware / Hardware-Homer    | Some unidentified general error |
+| 1    | "UNKNOWN_TOPIC"                        | Hardware / Hardware-Homer    | Nerozeznaný MQTT Topic |
+| 2    | "MISSING_LABEL"                        | Hardware / Hardware-Homer    | Missing some Label     |
+| 3    | "UNKNOWN_LABEL"                        | Hardware / Hardware-Homer    | JSON label is unsupported     |
+| 4    | "MALLOC ERROR"                         | Hardware / Hardware-Homer    | MALLOC ERROR -> not enough memory     |
+| 50   | "ERROR"                                | ALL                          | Nedefinovatelný Error  |
 
-#### Tyrion-Homer-Instance
+
+
+#### Tyrion <-> Homer <-> Instance
  
-| Error Code | Error Message                    | Určeno pro                   | Komentář               |
+| Error Code | Error Message                    | For                          | Description            |
 | -----------|----------------------------------|------------------------------|------------------------|
-| 100  | "INSTANCE_NOT_FOUND"                      | Homer / Homer-Tyrion         | Instance neexistuje |
-| 101  | "INSTANCE_ALREADY_EXIST"                  | Homer / Homer-Tyrion         | Instance already Exist |
-| 102  | "BLOCKO_JSON_ERROR"                       | Homer / Homer-Tyrion         | |
-| 103  | "HARDWARE_ALREADY_IN_ANOTHER_INSTANCE"    | Homer / Homer-Tyrion         | |
-| 104  | "HARDWARE_ALREADY_ADDED"                  | Homer / Homer-Tyrion         | |
-| 105  | "HARDWARE_NOT_IN_INSTANCE"                | Homer / Homer-Tyrion         | |
+| 100  | "INSTANCE_NOT_FOUND"                   | Homer / Homer-Tyrion         | |
+| 101  | "INSTANCE_ALREADY_EXIST"               | Homer / Homer-Tyrion         | |
+| 102  | "BLOCKO_JSON_ERROR"                    | Homer / Homer-Tyrion         | |
+| 103  | "HARDWARE_ALREADY_IN_ANOTHER_INSTANCE" | Homer / Homer-Tyrion         | |
+| 104  | "HARDWARE_ALREADY_ADDED"               | Homer / Homer-Tyrion         | |
+| 105  | "HARDWARE_NOT_IN_INSTANCE"             | Homer / Homer-Tyrion         | |
 
-#### Tyrion-Homer-Hardware 
 
-| Error Code | Error Message                    | Určeno pro                   | Komentář               |
+
+#### Tyrion <-> Homer <-> Hardware 
+
+| Error Code | Error Message                    | For                          | Description            |
 | -----------|----------------------------------|------------------------------|------------------------|
 | 201  | "HARDWARE_IS_OFFLINE"                     | Homer / Homer-Tyrion         | |
 | 202  | "BINARY_FILE_NOT_VALID"                   | Homer / Homer-Tyrion         | |
