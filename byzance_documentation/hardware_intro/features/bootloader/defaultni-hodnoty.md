@@ -61,9 +61,9 @@ DEFAULTS_BIN_STATE                    BINSTRUCT_STATE_INVALID  // ** managed by 
 
 **DEFAULTS\_CONF\_AUTOJUMP:** in some case, the device enters into configuration mode \(bootloader\). Therefore, there is this constant that automatically restarts and and switches the device back to the firmware. If this constant is not set, you risk that the device will be permanently active in the configuration mode and will not be able to update it remotely. Remember that you can do this automatically with our portal. Or with Rest Api with our Core Server
 
+DEFAULTS\_CONF\_ALIAS:
 
 
-DEFAULTS\_CONF\_ALIAS:  
 
 
 
