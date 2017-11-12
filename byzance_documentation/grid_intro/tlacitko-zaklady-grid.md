@@ -22,13 +22,12 @@ Tudíž nám stačí jeden output, vzhledem k tomu že se jedná o boolean, jen�
 **Pozn.:** Z praktického hlediska vždy začínáme s psaním input/output na začátku.
 
 protože píšeme v jazyku Typescript, začneme takto  
-`let valueDigOutput = context.outputs.add("valDigOut","digital","value digital out");  
-`  
+`let valueDigOutput = context.outputs.add("valDigOut","digital","value digital out");`  
 kde první argument označuje **jednoslovně** jméno výstupu \(pro práci v blocku\), druhý **typ výstupu** \(digital, analog, messeage\), o těch si povíme později, a poslední je popisné pojmenování jenž se zobrazí v nastavení u nastavení.
 
 let `valueDigOutput`definuje promněnou abychom mohli k daménu outputu přistupovat v kódu  ![](/assets/code1.png)
 
-Poté definujeme rozměry widgetu, **definice rozměrů je povinná ve všech widgetech.        
+Poté definujeme rozměry widgetu, **definice rozměrů je povinná ve všech widgetech.          
 **Můžeme použít  
 `context.addSizeProfile(1,1);`kde v parametrech definujeme výšku a šířku widgetu \(v pevně daných čtvercích, tudíž widgety vypadají všude stejně. Jeden  čtverec má zhruba 1 cm\).
 
@@ -64,7 +63,7 @@ pro přidání tlačítka do Widgetu použijeme
 
 ![](/assets/code6.png)prvný argument je element, který přidáváme.  
 Root můžeme považovat za **základní **element, který je rozšířen o několik funkcionalit a je přítomný vždy ve všech widgetech.  
-Klikneme na tlačítko _test.        
+Klikneme na tlačítko _test.          
 _![](/assets/code7.png)pokud si tlačítko zvětšíme, zjistíme že je defalutně nastylované, avšak vzhedově je naprosto ošklivé.  
 ![](/assets/code8.png)
 
@@ -90,14 +89,14 @@ Rosáhlejší stylování popíšeme později, pro rychlé nahlédnutí ale pom�
 O interaktivní stránku widgetů se nejčastěji používají listenery.  
 Na náš \_button \_přidáme event listener, který bude naslouchat zda bylo na tlačítko kliknuto.
 
-`button.listenEvent("mousedown", callback => {      
-     valueDigOutput.value = true;      
+`button.listenEvent("mousedown", callback => {        
+     valueDigOutput.value = true;        
  });`
 
 na _button_ zavoláme listenEvent, první argument je typ akce, na kterou má kód reagovat \(v tomto případě, že na element bylo zmáčknuto tlačítko myši\) a další část je funkce, co se má vykonat při vyvolání. Jedná se o zkrácený javascriptový zápis
 
-`button.listenEvent("mousedown", function(callback){      
-     valueDigOutput.value = true;      
+`button.listenEvent("mousedown", function(callback){        
+     valueDigOutput.value = true;        
  });`
 
 \(obojí je validní\)  
@@ -110,8 +109,8 @@ v tomto případě posíláme true \(logickou 1\);
 
 přidáme ještě:
 
-`button.listenEvent("mouseup", e => {      
-     valueDigOutput.value = false;      
+`button.listenEvent("mouseup", e => {        
+     valueDigOutput.value = false;        
  });`
 
 Což při puštění tlačítka myši pošle na výstup _false_

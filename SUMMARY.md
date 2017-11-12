@@ -24,7 +24,7 @@
 * [Programování funkčních bloků](programovani/programovani-funkcnich-bloku.md)
 * [Ukázkové programy ](programovani/ukazkove-programy.md)
 
-## Tools
+## Portal Tools
 
 * [Blocko](byzance_documentation/blocko_intro.md)
   * [bla bla bla](byzance_documentation/dsafdf.md)
@@ -83,10 +83,10 @@
   * [Alias](byzance_documentation/hardware_intro/features/alias.md)
   * [Identifikátor zařízení ](byzance_documentation/hardware_intro/features/identifikator-zarizeni.md)
   * [Autobackup](byzance_documentation/hardware_intro/features/autobackup.md)
+  * [Čas běhu zařízení](byzance_documentation/hardware_intro/features/cas-behu-zarizeni.md)
   * [Bootloader](byzance_documentation/hardware_intro/features/bootloader.md)
     * [Command režim](byzance_documentation/hardware_intro/features/bootloader/command-rezim.md)
     * [Defaultní hodnoty](byzance_documentation/hardware_intro/features/bootloader/defaultni-hodnoty.md)
-  * [Čas běhu zařízení](byzance_documentation/hardware_intro/features/cas-behu-zarizeni.md)
   * [Detekce spuštění firmware](byzance_documentation/hardware_intro/features/detekce-spusteni-firmware.md)
   * [Odložení restartu](byzance_documentation/hardware_intro/features/odlozeni-restartu.md)
   * [Restart do bootloaderu](byzance_documentation/hardware_intro/features/restart-do-bootloaderu.md)
