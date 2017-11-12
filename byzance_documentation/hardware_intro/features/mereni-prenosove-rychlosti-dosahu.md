@@ -16,9 +16,8 @@ Test rychlosti byl prováděn za následujících podmínek:
 
 
 #### Výsledky měření 
-{{ :lowpan:vp-6lowpan-udp.png |}}
 
-Z grafu je patrné, že maximální přenosová rychlost je přibližně 10 kB/s. Dále je zde patrný vliv fragmentace dlouhých paketů (překročením určité délky dojde ke vzniku dalšího fragmentu => nutný přenos další hlavičky => snížení přenosové rychlosti).
+Maximální přenosová rychlost je přibližně 10 kB/s. Dále je zde patrný vliv fragmentace dlouhých paketů (překročením určité délky dojde ke vzniku dalšího fragmentu => nutný přenos další hlavičky => snížení přenosové rychlosti).
 
 #### TCP komunikace 
   * TCP komunikace oproti UDP komunikaci přidává mj. spojovou komunikaci (tj. navazování spojení, ukončování spojení) a dále zvyšuje spolehlivost spojení potvrzováním odeslaných zpráv
