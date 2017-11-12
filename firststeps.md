@@ -4,12 +4,12 @@ Vítej ještě jednou v Byzance. Zde je seznam, co vše během úvodního tutori
 
 ## List of Steps
 
-1. Vlastí účet
-2. Vlastní Tariff
-3. První projekt
+1. [Vlastní účet](#own-account)
+2. [Vlastní Tariff](#own-tariff)
+3. [První Projekt](#first-project)
    1. Základní přehled
    2. Vysvětlení Menu
-4. Registrace Hardwaru
+4. [Registrace Hardwaru](#registrace-hardwaru)
 5. První program pro Hardware
 6. Nahrátí programu na Hardware
 7. První Blocko
@@ -30,7 +30,8 @@ V přihlašovacím okně se lze přilásit s využitím účtu Facebook či Gith
 
 Po úspěšném přihlášení se zobrazí Dashboard portálu Byzance.
 
-**Co je Portál**  
+#### **Co je Portál**
+
 Portál je internetová aplikace vytvořená Byzance, která slouží jako brána pro všechna Byzance IoT zařízení ke komunikaci s okolním světem. Portál zároveň uživateli slouží jako prostředí, ve kterém vytváří funkční kód, uploaduje tento kód do síťě svých zařízení a dochází k aktualizaci zařízení. Dokumentace, krok po kroku vysvětluje, jak provést základní konfiguraci.
 
 ---
@@ -40,14 +41,16 @@ Portál je internetová aplikace vytvořená Byzance, která slouží jako brán
 V levém Menu Najdi odkaz Financial \([portal.byzance.cz/financial](/portal.byzance.cz/financial)\)  
 Vytvoř si nový účet a vyber si - který typ účtu ti nejvíce vyhovuje. **I do it for my self** or **I will be integrator**. Na stránce máš více rozepsané, co k čemu slouží.
 
-**Co jsou to Tarify **  
+#### **Co jsou to Tarify **
+
 Jelikož jsou některé naše služby placené a protože chceme umožnit i velkým firmám pracovat a spravovat své produkty ve složité hierarchii, jsou všechny aktivity vázané na Tariffs. Tarify jsou Účetní entity, která má vlasntíka \(neboli správce\) v podobě fyzické osoby \(zakladatel účtu\) nebo firmy \(lze nastavit\) a také fakturované jednotky buď jde o stejnou osobu / firmu - nebo externí firmu. Lze tedy Vytvořit i Tarrif, kterého jsem vlastník - ale fakturuje se to třetí osobě. Tento model je vhodný pro Freelancery nebo Integrátory. Integrátor tak může vytvářet zakázkové projekty pro desítky svých klientů a mít tak dokonalý přehled o celkových nákladech každého klienta. Tariff lze migrovat i na jiné účty a firmy. Takto lze vytvářet různé kombinace desítek finančních entit.
 
-** Jaký je rozdíl v tariffech? **
+#### ** Jaký je rozdíl v tariffech? **
 
 Rozdíl není žádný - jde jen o počáteční stav. To s čím na začátku začínáš.  Každý Tariff se skládá z Extensions \(Extensions pro vyšší počet HW, Extensions Pro vyšší objem přenesených dat atd.\). Takže na začátku máš některé Tariffy, které už mají předplacený vyšší objem dat, nebo vyšší počet uživatelů, kteří se mohou spravovat projekty. Naše zkušenosti nám říkají, že někteří zákazníci mají rádi už od začátku vše aktivní a tak jsme jim připravili již předkonfigurované Tariffy obsahující důležité funkce. Pokud si nevíš rady, prostě začni s tím základním a postupně si přidávej jednotlivé funkce. Některé tariffy už od začátku vyžadují plnohodnotnou registraci včetně emergency kontaktů a dalších. Tyto kontakty NIKDY NESLOUŽÍ K MARKETINGU! Ale jsou použity výlučně pro technickou a bezpečností podporu. \(Naše servisní středisko vás může v některých případech kontaktovat pokud dojde k vážným incidentům\)
 
-** Co jsou Extensions? **  
+#### ** Co jsou Extensions? **
+
 Extensions jsou balíčky, jež lze kdykoliv nebo i na začátku přikupovat do svého Tariffu. Na začátku každý tariff obsahuje základní sadu balíčků. Díky nim se nám snadno zpřístupňují jendnotlivé funkce pro naše zákazníky. Některé jsou zdarma, jiné ve zpoplatněných tariffech už měsíčně něco stojí. Většina Extensions je založena na poplatcích na měsíční bázy. Některé poskytuje přímo Byzance, jiné jsou třetích stran. Balíčky mají vlastní konfiguraci - založené na tom, co který balíček umožnuje. Například potřebuješ-li databázi k uskladnění svých dat, lze aktivovat balíček "Databáze" s různou velikostí podle potřeb s různou cenou. U některých je aktivní sleva z rozsahu.
 
 ---
@@ -56,7 +59,7 @@ Extensions jsou balíčky, jež lze kdykoliv nebo i na začátku přikupovat do 
 
 Teď tě čeká vytvoření tvého prvního projektu. Každý projekt je vázaný na některý z tvých finančních produktů \(Tariffech\). Pokud ho nemáš - vrať se k bodu číslo 2. **Tadááá - Máš svůj první projekt. Gratulujeme! &lt;3 **
 
-**Overview:**
+#### **Overview:**
 
 * **DashBoard**: je výchozí obrazovka projektu, kde máš základní přehled všeho.
 
@@ -87,7 +90,35 @@ Teď tě čeká vytvoření tvého prvního projektu. Každý projekt je vázan�
 
 * CLOUD:  TODO
 
+
+
 ---
+
+#### Registrace Hardwaru
+
+
+
+---
+
+### První program pro Hardware
+
+Nahrátí programu na Hardware
+
+První Blocko
+
+První Vlastní Bloček
+
+Integrace Blocko s Hardwarem
+
+První vlastní Instance
+
+První Aplikace v Gridu 
+
+První vlastní Widget
+
+Integrace s Blocko
+
+#### 
 
 #### Konfigurace hardware
 
