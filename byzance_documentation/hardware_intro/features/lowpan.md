@@ -4,14 +4,14 @@
 
 Technologie je spjata s rozšířeným rádiovým rozhraním 802.15.4, což umožňuje využití hardwaru, který je na trhu již nějakou dobu a přechod na 6lowpan znamená pouze softwarovou úpravu.
 
-#### 6lowpan stack 
+#### 6lowpan stack
 {{ :lowpan:lowpan_stack.jpg?200|6lowpan stack}}
 6lowpan protokolový stack definuje především fyzickou, linkovou a síťovou vrstvu.
 
-#### Fyzická vrstva 
+#### Fyzická vrstva
 Je definována rozhraním 802.15.4. V této oblasti stojí především za zmínku, že provoz je možný v několika frekvenčních pásmech (868 MHz, 902 MHz, 2,4 GHz) a pomocí několika modulací.
 
-#### Linková vrstva 
+#### Linková vrstva
 Linková vrstva obecně řeší komunikaci mezi sousedy. V podvrstvě MAC déle řeší kontrolu přístupu k médiu. Data je možné šifrovat pomocí předsdíleného klíče (PSK) a to v sedmi úrovních. Přístup k médiu je řízen metodou CSMA/CA - naslouchání nosné s přecházením kolizí (vysílání do kanálu ve stavu idle, potvrzování zpráv).
 
 #### 6lowpan přizpůsobovací vrstva 
