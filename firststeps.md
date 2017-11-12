@@ -1,8 +1,6 @@
 ## Beginner's Guide
 
-Vítej ještě jednou v Byzance.
-
-_Přehled dokumentace_
+Vítej ještě jednou v Byzance. Zde je seznam, co vše během úvodního tutoriálu probereme. 
 
 1. Vlastí účet
 2. Vlastní Tariff
@@ -19,8 +17,6 @@ _Přehled dokumentace_
 11. První Aplikace v Gridu 
 12. První vlastní Widget
 13. Integrace s Blocko
-
-
 
 ---
 
@@ -86,6 +82,7 @@ Teď tě čeká vytvoření tvého prvního projektu. Každý projekt je vázan�
   Grid se skládá s kolekce aplikací - a s Widgetů
 
 * BLOCKO: TODO
+
 * CLOUD:  TODO
 
 ---
