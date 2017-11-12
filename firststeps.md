@@ -1,6 +1,10 @@
-## Beginner's Guide
+# Beginner's Guide
 
-Vítej ještě jednou v Byzance. Zde je seznam, co vše během úvodního tutoriálu probereme. 
+
+
+Vítej ještě jednou v Byzance. Zde je seznam, co vše během úvodního tutoriálu probereme.
+
+## List of Steps
 
 1. Vlastí účet
 2. Vlastní Tariff
@@ -20,7 +24,7 @@ Vítej ještě jednou v Byzance. Zde je seznam, co vše během úvodního tutori
 
 ---
 
-### 1. Vlastní účet
+### Vlastní účet
 
 První věc, kterou musíš udělat je vytvořit si účet účet na Portálu Byzance \([portal.byzance.cz](/portal.byzance.cz)\)
 
@@ -33,7 +37,7 @@ Portál je internetová aplikace vytvořená Byzance, která slouží jako brán
 
 ---
 
-### 2. Vlastní Tariff
+### Vlastní Tariff
 
 V levém Menu Najdi odkaz Financial \([portal.byzance.cz/financial](/portal.byzance.cz/financial)\)  
 Vytvoř si nový účet a vyber si - který typ účtu ti nejvíce vyhovuje. **I do it for my self** or **I will be integrator**. Na stránce máš více rozepsané, co k čemu slouží.
@@ -50,7 +54,7 @@ Extensions jsou balíčky, jež lze kdykoliv nebo i na začátku přikupovat do 
 
 ---
 
-### 3. První Projekt
+### První Projekt
 
 Teď tě čeká vytvoření tvého prvního projektu. Každý projekt je vázaný na některý z tvých finančních produktů \(Tariffech\). Pokud ho nemáš - vrať se k bodu číslo 2. **Tadááá - Máš svůj první projekt. Gratulujeme! &lt;3 **
 
