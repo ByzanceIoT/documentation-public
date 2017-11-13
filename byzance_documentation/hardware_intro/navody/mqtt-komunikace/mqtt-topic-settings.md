@@ -194,3 +194,110 @@ Příkaz slouží k nastavení uživatelského jména do[wifi](https://wiki.byza
 
 **Reply:**
 
+```
+{
+   "mid"            : "SOME ID",
+   "status"         : "ok/error",
+   "error"          : "SOME ERROR MESSAGE", // pouze pokud je status == error
+   "error_code"     :  SOME NUMBER,         // pouze pokud je status == error   
+   "value"          : "SOME VALUE"          // pouze pokud je status == ok
+ }
+```
+
+### Subtopic "console"
+
+Přistupuje se do něj takto`XXXXXXXXXXXXXXXXXXXXXXXX/settings_in/console`
+
+Pokud je třeba zjistit už nastavenou hodnotu, je třeba poslat dotaz do topicu[MQTT Topic Info](https://wiki.byzance.cz/wiki/doku.php?id=yoda:topic_info)`XXXXXXXXXXXXXXXXXXXXXXXX/info_in/console`
+
+Příkaz slouží k zapnutí nebo vypnutí[webové console](https://wiki.byzance.cz/wiki/doku.php?id=tutorial:console).
+
+**Request:**
+
+```
+ {
+   "mid"            : "SOME ID",
+   "value"          : TRUE/FALSE
+ }
+```
+
+**Reply:**
+
+```
+ {
+   "mid"            : "SOME ID",
+   "status"         : "ok/error",
+   "error"          : "SOME ERROR MESSAGE", // pouze pokud je status == error
+   "error_code"     :  SOME NUMBER,         // pouze pokud je status == error   
+   "value"          :  TRUE/FALSE          // pouze pokud je status == ok
+ }
+```
+
+### Subtopic "webview"
+
+Přistupuje se do něj takto`XXXXXXXXXXXXXXXXXXXXXXXX/settings_in/webview`
+
+Pokud je třeba zjistit už nastavenou hodnotu, je třeba poslat dotaz do topicu[MQTT Topic Info](https://wiki.byzance.cz/wiki/doku.php?id=yoda:topic_info)`XXXXXXXXXXXXXXXXXXXXXXXX/info_in/webview`
+
+Příkaz slouží k zapnutí nebo vypnutí[webového rozhraní](https://wiki.byzance.cz/wiki/doku.php?id=tutorial:webview).
+
+**Request:**
+
+```
+ {
+   "mid"            : "SOME ID",
+   "value"          : TRUE/FALSE
+ }
+```
+
+**Reply:**
+
+```
+ {
+   "mid"            : "SOME ID",
+   "status"         : "ok/error",
+   "error"          : "SOME ERROR MESSAGE", // pouze pokud je status == error
+   "error_code"     :  SOME NUMBER,         // pouze pokud je status == error   
+   "value"          :  TRUE/FALSE          // pouze pokud je status == ok
+ }
+```
+
+### Subtopic "webport"
+
+Přistupuje se do něj takto`XXXXXXXXXXXXXXXXXXXXXXXX/settings_in/webport`
+
+Pokud je třeba zjistit už nastavenou hodnotu, je třeba poslat dotaz do topicu[MQTT Topic Info](https://wiki.byzance.cz/wiki/doku.php?id=yoda:topic_info)`XXXXXXXXXXXXXXXXXXXXXXXX/info_in/webport`
+
+Příkaz slouží k nastavení portu pro[webové rozhraní](https://wiki.byzance.cz/wiki/doku.php?id=tutorial:webview).
+
+**Request:**
+
+```
+ {
+   "mid"            : "SOME ID",
+   "value"          :  SOME NUMBER
+ }
+```
+
+**Reply:**
+
+```
+{
+   "mid"            : "SOME ID",
+   "status"         : "ok/error",
+   "error"          : "SOME ERROR MESSAGE", // pouze pokud je status == error
+   "error_code"     :  SOME NUMBER,         // pouze pokud je status == error   
+   "value"          :  SOME NUMBER          // pouze pokud je status == ok
+ }
+```
+
+# Chybové stavy: {#chybove_stavy}
+
+Každý příkaz může selhat s určitým chybovým kódem. Seznam takovýchto chybových kódů je v
+
+[přehledu chybových kódů](https://wiki.byzance.cz/wiki/doku.php?id=errorcodes:errorcodes)
+
+.
+
+
+
