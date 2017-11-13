@@ -221,3 +221,149 @@ Slouží k odebrání zařízení z Yody pro potřeby Homera. Reálny vliv je ta
 "result" : "removed/missing" // pouze pokud je status == ok
 }
 ```
+
+#### Subtopic "get"
+
+Přistupuje se do něj takto
+XXXXXXXXXXXXXXXXXXXXXXXX/command_in/device/get
+
+Pokud zařízení není saved, snažilo se připojit k Yodovi a existuje v síti.
+Yoda se s ním ale nebaví, dokud nedostane pokyn.
+
+interface, state:
+odpovídá ItfEnum_TypeDef a StateEnum_TypeDef v souboru DevList.h
+
+Pokud zařízení není reálně připojeno, jeho interface je unknown. Až se připojí, interface se přiřadí na aktuální hodnotu.
+
+```
+typedef enum ( Typy zařízení - jako je drátový nebo bezdrátový)
+{
+ITF_UNKNOWN = 0x00,
+ITF_NRF = 0x01, (Bezdrát)
+ITF_RS485 = 0x02, (Drát)
+ITF_ERROR = 0xFF
+} ItfEnum_TypeDef;
+```
+
+```
+typedef enum : unsigned char {
+DEV_STATE_UNKNOWN	= 0x00, // Device zatim nema nastaveny zadny stav, tj po startu.
+DEV_STATE_DISCONNECTED	= 0x01, // Device je odpojeno - Homer si s nim nechce povidat.
+DEV_STATE_ADD	= 0x02, // Device se bude enumerovat (prechodny stav), Yoda poslal prikaz add.
+DEV_STATE_ALIVE = 0x03, // Enumerace probiha (prechodny stav).
+DEV_STATE_ENUMERATED	= 0x04,	// Je enumerovano a normalne zije a komunikuje.
+DEV_STATE_REMOVE	= 0x05,	// Device se ma zakazat (prechodny stav), Yoda poslal prikaz remove.
+DEV_STATE_TIMEOUT	= 0x14, // Nekolikrat neodpovedelo, ale jeste neni prohlaseno za mrtve. (20 dekadické)
+DEV_STATE_DEAD	= 0x15, // Prohlaseno za mrtve - neodpovida. (21 dekadické)
+DEV_STATE_ERROR	= 0x20	// error (32 dekadické)
+} StateEnum_TypeDef;
+```
+
+**Request:**
+
+```
+{
+"mid" : "SOME ID",
+// Json musí obsahova buď "deviceId" nebo "device_count" - nic jiného
+"deviceId" : "24 BYTES OF FULL ID" vzdy to musi byt string
+"device_count" : "INDEX OF DEVICE"
+}
+```
+
+**Reply:**
+
+```
+{
+"mid" : "SOME ID",
+"status" : "ok/error",
+"error" : "SOME ERROR MESSAGE", // pouze pokud je status == error
+"error_code" : SOME NUMBER, // pouze pokud je status == error
+"full_id" : "SOME FULL ID", // pouze pokud je status == ok
+"short_id" : "SOME SHORT ID", // pouze pokud je status == ok
+"saved" : true/false, // pouze pokud je status == ok
+"interface" : SOME NUMBER, // pouze pokud je status == ok (Viz typedef enum)
+"state" : SOME NUMBER // pouze pokud je status == ok
+}
+```
+#### Subtopic "system"
+
+Systémové příkazy. Viz níže.
+
+#### Subtopic "restart"
+
+Přistupuje se do něj takto
+XXXXXXXXXXXXXXXXXXXXXXXX/command_in/system/restart
+
+Slouží k restartování yody.
+
+**Request:**
+```
+{
+"mid" : "SOME ID"
+}
+```
+
+**Reply:**
+```
+{
+"mid" : "SOME ID",
+"status" : "ok/error",
+"error" : "SOME ERROR MESSAGE", // pouze pokud je status == error
+"error_code" : SOME NUMBER // pouze pokud je status == error
+}
+```
+
+#### Subtopic "ping"
+
+Přistupuje se do něj takto
+XXXXXXXXXXXXXXXXXXXXXXXX/command_in/system/ping
+
+Slouží k pingnutí yody, otestování komunikace, atd...
+
+**Request:**
+
+```
+{
+"mid" : "SOME ID"
+}
+```
+
+**Reply:**
+
+```
+{
+"mid" : "SOME ID",
+"status" : "ok/error",
+"error" : "SOME ERROR MESSAGE", // pouze pokud je status == error
+"error_code" : SOME NUMBER // pouze pokud je status == error
+}
+```
+
+#### Subtopic "blink"
+
+Přistupuje se do něj takto
+XXXXXXXXXXXXXXXXXXXXXXXX/command_in/system/blink
+
+Podobně jako ping slouží k otestování komunikace, ale při zaslání příkazu Blink problikne na IODovi RGB dioda.
+Pokud má člověk na stole např. 10 IODů a potřebuje si je nějak identifikovat, tohle se hodí.
+
+**Request:**
+```
+{
+"mid" : "SOME ID"
+}
+```
+**Reply:**
+
+```
+{
+"mid" : "SOME ID",
+"status" : "ok/error",
+"error" : "SOME ERROR MESSAGE", // pouze pokud je status == error
+"error_code" : SOME NUMBER // pouze pokud je status == error
+}
+```
+
+#### Chybové stavy
+
+Každý příkaz může selhat s určitým chybovým kódem. Seznam takovýchto chybových kódů je v [[errorcodes:errorcodes|přehledu chybových kódů]].
