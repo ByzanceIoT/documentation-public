@@ -130,7 +130,7 @@
   * [Instalace homer-js na Azure ](interni/homer/instalace-homer-js-na-azure.md)
   * [Vývojářské příkazy pro Homera \(GRID\)](interni/homer/vyvojarske-prikazy-pro-homera-grid.md)
   * [Vývojářské příkazy pro Homera \(HW\)](interni/homer/vyvojarske-prikazy-pro-homera-hw.md)
-* Tyrion
+* [Tyrion](interni/tyrion.md)
   * [Základní grafické schéma](interni/zakladni-graficke-schema.md)
 
 ## General
