@@ -181,6 +181,7 @@ Při prvním spuštění nebo při položce configured=0 bootloader skáče do c
 * ''_timesync_'' - Slouží pro kontrolu synchronizace \[\[tutorial:timestamp\|času se servery\]\].
 
 * ''_lowpanbr_'' - Zap nebo vyp funkce \[\[feature:lowpanbr\|lowpan border router\]\]
+
 * ''_restartbl_'' - Identifikátor pro \[\[feature:restartbl\|restart zařízení do bootloaderu\]\]
 * ''_revision_'' - Zjištění \[\[feature:revision\|revize zařízení\]\]
 
@@ -208,9 +209,9 @@ Při prvním spuštění nebo při položce configured=0 bootloader skáče do c
 
 Pokud se poprvé nahraje binárka bootloaderu do mikrokontroléru, bootloader sám umí detekovat, že target není zatím nakonfigurován. Nastala-li porucha některé hodnoty, bootloader danou hodnotu umí opravit. K nastavení výchozích vlastností slouží soubor`struct_defaults.h`s podobným obsahem tomuto
 
-### Important notice
+### Important notice !!!
 
-> **Please keep in mind that what is stored in the database \(expected device setup\) is always superior to what is currently on the hardware. If you locally set a value and are not enabled \(Synchronize always with database = False\) in Portal. The system automatically synchronizes everything to the expected value.**
+**Please keep in mind that what is stored in the database \(expected device setup\) is always superior to what is currently on the hardware. If you locally set a value and are not enabled \(Synchronize always with database = False\) in Portal. Core system \(server\) automatically synchronizes everything to the expected value by database.**
 
 ```cpp
 // MQTT defaults
@@ -257,11 +258,8 @@ DEFAULTS_BIN_STATE                    BINSTRUCT_STATE_INVALID  // ** managed by 
 
 **DEFAULTS\_CONF\_AUTOBACKUP**: The Backup feature was designed to protect you against your own **mistakes** in Firmware while\(true\) {} for example. You have 2 options to have an active backup. The first is** Auto Backup **and second is **Static Backup. Value 1 for Auto backup, 0 for Static Backup \(If you are doing this manualy - we recomend set Backup Firmware immidiately\). **Remember that you can do this automatically with "Releas Manager" on our portal. Or with Rest Api with our Core Server.
 
-> Detail:
->
-> **Auto Backup: ** Which is a mode that always keeps the firmware running for at least 30 seconds and successfully sommunicated with main Server in Cloud. Firmware will automaticaly make a copy of you actual running firmware to  backup part of memmory. So when you upload a new firmware that contains errors, Bootloader will automaticaly start the previous one from Backup. The version you uploaded is also marked i Portal by the server as unstable.
->
-> **Static Backup: **You specify what static version of the backup you want on your device. We recommend using it in critical areas of industry. For example, when driving traffic lights. \(When the primary program fails - the backup is at least flashing orange\). The downside is that if the backup fails and bugs in backup does not allow the device to connect to server, you're fucked. You have to to fix the device yourself.
+* **Auto Backup: ** Which is a mode that always keeps the firmware running for at least 30 seconds and successfully sommunicated with main Server in Cloud. Firmware will automaticaly make a copy of you actual running firmware to  backup part of memmory. So when you upload a new firmware that contains errors, Bootloader will automaticaly start the previous one from Backup. The version you uploaded is also marked i Portal by the server as unstable.
+* **Static Backup: **You specify what static version of the backup you want on your device. We recommend using it in critical areas of industry. For example, when driving traffic lights. \(When the primary program fails - the backup is at least flashing orange\). The downside is that if the backup fails and bugs in backup does not allow the device to connect to server, you're fucked. You have to to fix the device yourself.
 
 **DEFAULTS\_CONF\_WEBVIEW**: For easier programming and overview, we've created a simple web page that shows current events and information on hardware. You have to enable this register to show it.  \(make it available on the local network\). Warning! \(Its not available from outside from public internet\) The IP address is assigned by your DHCP server. Remember that you can do this automatically with our portal. Or with Rest Api with our Core Server.
 
