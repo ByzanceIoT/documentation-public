@@ -284,7 +284,7 @@ Systémové příkazy. Viz níže.
 #### Subtopic "restart" 
 
 Přistupuje se do něj takto
-''XXXXXXXXXXXXXXXXXXXXXXXX/command_in/system/restart''
+XXXXXXXXXXXXXXXXXXXXXXXX/command_in/system/restart
 
 Slouží k restartování yody.
 
@@ -294,6 +294,7 @@ Slouží k restartování yody.
    "mid"            : "SOME ID"
  }
 ```
+
 **Reply:**
 ```
 {
@@ -307,17 +308,19 @@ Slouží k restartování yody.
 #### Subtopic "ping" 
 
 Přistupuje se do něj takto
-''XXXXXXXXXXXXXXXXXXXXXXXX/command_in/system/ping''
+XXXXXXXXXXXXXXXXXXXXXXXX/command_in/system/ping
 
 Slouží k pingnutí yody, otestování komunikace, atd...
 
 **Request:**
+
 ```
  {
    "mid"            : "SOME ID"
  }
 ```
 **Reply:**
+
 ```
  {
    "mid"            : "SOME ID",
@@ -330,7 +333,7 @@ Slouží k pingnutí yody, otestování komunikace, atd...
 #### Subtopic "blink" 
 
 Přistupuje se do něj takto
-''XXXXXXXXXXXXXXXXXXXXXXXX/command_in/system/blink''
+XXXXXXXXXXXXXXXXXXXXXXXX/command_in/system/blink
 
 Podobně jako ping slouží k otestování komunikace, ale při zaslání příkazu Blink problikne na IODovi RGB dioda.
 Pokud má člověk na stole např. 10 IODů a potřebuje si je nějak identifikovat, tohle se hodí.
@@ -355,3 +358,4 @@ Pokud má člověk na stole např. 10 IODů a potřebuje si je nějak identifiko
 #### Chybové stavy 
 
 Každý příkaz může selhat s určitým chybovým kódem. Seznam takovýchto chybových kódů je v [[errorcodes:errorcodes|přehledu chybových kódů]].
+
