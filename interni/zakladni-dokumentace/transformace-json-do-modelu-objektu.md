@@ -62,12 +62,13 @@ public  Result update_b_program(){
     return GlobalResult.result_ok(Json.toJson(model_x));
     
 }
-</code> 
+```
 
-Pokud se podíváme na řádek form.hasError, tak ten podle anotace uvnitř objektu Swagger_Object <code Java>
-  if(form.hasErrors()) {return GlobalResult.formExcepting(form.errorsAsJson());} </code> zkontroluje obsah Json respektive zhmotěného objektu a vrátí co chybí, nebo nesplňuje požadavky - například na délku řetězce, validitu proměnné emailu atd. 
+Pokud se podíváme na řádek form.hasError, tak ten podle anotace uvnitř objektu Swagger_Object ```
+  if(form.hasErrors()) {return GlobalResult.formExcepting(form.errorsAsJson());}```
+   zkontroluje obsah Json respektive zhmotěného objektu a vrátí co chybí, nebo nesplňuje požadavky - například na délku řetězce, validitu proměnné emailu atd. 
    
-Anotace (Pro kontrolu obsahu JSONu) můžou být: <code Java>
+Anotace (Pro kontrolu obsahu JSONu) můžou být: ```
     @Constraints.Required // tato hodnota v Json je vyžadována 
     public String name; 
     
@@ -77,12 +78,12 @@ Anotace (Pro kontrolu obsahu JSONu) můžou být: <code Java>
     @Constraints.Email
     public String email;
     
-</code>
+```
 
  
   * Pokud potřebujeme příjímat Objekty v Objektech (často celé pole) (Respektive skládané JSON) 
  
-  * <code .net>
+  * ```
   {
    "version_name"        : "První Verze Programu",
    "version_description" : "Novy program",
@@ -125,8 +126,9 @@ Anotace (Pro kontrolu obsahu JSONu) můžou být: <code Java>
             ]
       }
    ],
-</code>
-  * <code Java>
+```
+
+  * ```
 @ApiModel(description = "Json Model for new Version of C_Program",
           value = "C_Program_Version_New")
 public class Swagger_C_Program_Version_Update {
@@ -166,5 +168,4 @@ public class Swagger_C_Program_Version_Update {
                     }
             }
 }
-
-</code>
+```
