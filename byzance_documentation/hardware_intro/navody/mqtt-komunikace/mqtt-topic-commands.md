@@ -335,6 +335,7 @@ Slouží k pingnutí yody, otestování komunikace, atd...
    "mid"            : "SOME ID"
  }
 ```
+
 **Reply:**
 
 ```
