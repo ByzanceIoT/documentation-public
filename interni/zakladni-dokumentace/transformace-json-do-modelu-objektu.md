@@ -8,7 +8,7 @@ public Result zpracujData(){
    .
    .
 }
-
+```
   * Druhým bodem je transformace JSON na objekt (Ten je vázán na Swagger Dokumentaci! Viz Swagger Anotace)
   * Protože to co přijímáme, musíme dokumentovat pro front-end! A jako pojistka, že nikdy nebudeme mít odchylku od dokumentace a zpracovávaného objektu se používá objekt, který to sám na sobě dokumentuje. Důležité je zdokumentování přijímaného Json **@ApiImplicitParams!!**
   *  Je zde uveden **dataType = "utilities.swagger.documentationClass.Swagger_B_Program_Version_Update"**
