@@ -147,6 +147,7 @@ Topic platný pouze v případě, že jde o  ''"update_state"   : "longTerm"'' t
 
 
 **Request:**
+
 ```
  {
    "mid"            : "SOME ID",
@@ -154,7 +155,8 @@ Topic platný pouze v případě, že jde o  ''"update_state"   : "longTerm"'' t
  }
 ```
 
- * **Reply:** 
+ **Reply:** 
+ 
  ```
  {
    "mid"            : "SAME ID",
@@ -180,13 +182,16 @@ XXXXXXXXXXXXXXXXXXXXXXXX/command_in/device/add
 Slouží k přidání nového zařízení do Yody. **Pokud už zařízení už v yodovi existuje, návratový JSON obsahuje status "ok", a result "existing". Pokud zařízení neexistuje, status="ok" a result="new". Result "error" může nastat pouze v případě, že se něco vyloženě pokazí**.
 
 **Request:**
+
 ```
 {
   "mid"           : "SOME ID",
   "deviceId"      : "24 BYTES OF FULL ID"
 }
 ```
+
 **Reply:**
+
 ```
  {
    "mid"            : "SOME ID",
@@ -211,7 +216,9 @@ Slouží k odebrání zařízení z Yody pro potřeby Homera. Reálny vliv je ta
   "deviceId"         : "24 BYTES FULL ID" (Index není podporován ze strany homera!! Homer neumí pořadí pole! 
 }
 ```
+
 **Reply:**
+
 ```
  {
    "mid"            : "SOME ID",
@@ -247,15 +254,15 @@ typedef enum ( Typy zařízení - jako je drátový nebo bezdrátový)
 
 ```
 typedef enum : unsigned char {
-	DEV_STATE_UNKNOWN		= 0x00, // Device zatim nema nastaveny zadny stav, tj po startu.
-	DEV_STATE_DISCONNECTED	        = 0x01, // Device je odpojeno - Homer si s nim nechce povidat.
-	DEV_STATE_ADD			= 0x02, // Device se bude enumerovat (prechodny stav), Yoda poslal prikaz add.
-	DEV_STATE_ALIVE  		= 0x03, // Enumerace probiha (prechodny stav).
-	DEV_STATE_ENUMERATED	        = 0x04,	// Je enumerovano a normalne zije a komunikuje.
-	DEV_STATE_REMOVE		= 0x05,	// Device se ma zakazat (prechodny stav), Yoda poslal prikaz remove.
-	DEV_STATE_TIMEOUT		= 0x14, // Nekolikrat neodpovedelo, ale jeste neni prohlaseno za mrtve. (20 dekadické) 
-	DEV_STATE_DEAD			= 0x15, // Prohlaseno za mrtve - neodpovida. (21 dekadické)
-	DEV_STATE_ERROR			= 0x20	// error (32 dekadické) 
+DEV_STATE_UNKNOWN		= 0x00, // Device zatim nema nastaveny zadny stav, tj po     startu.
+DEV_STATE_DISCONNECTED	        = 0x01, // Device je odpojeno - Homer si s nim nechce povidat.
+DEV_STATE_ADD			= 0x02, // Device se bude enumerovat (prechodny stav), Yoda poslal prikaz add.
+DEV_STATE_ALIVE  		= 0x03, // Enumerace probiha (prechodny stav).
+DEV_STATE_ENUMERATED	        = 0x04,	// Je enumerovano a normalne zije a komunikuje.
+DEV_STATE_REMOVE		= 0x05,	// Device se ma zakazat (prechodny stav), Yoda poslal prikaz remove.
+DEV_STATE_TIMEOUT		= 0x14, // Nekolikrat neodpovedelo, ale jeste neni prohlaseno za mrtve. (20 dekadické) 
+DEV_STATE_DEAD			= 0x15, // Prohlaseno za mrtve - neodpovida. (21 dekadické)
+DEV_STATE_ERROR			= 0x20	// error (32 dekadické) 
 } StateEnum_TypeDef;
 ```
 
