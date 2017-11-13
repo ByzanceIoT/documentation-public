@@ -20,6 +20,7 @@ Položka ''"version"'' se sklada ze čtyř části: **jeden** znak (písmeno) a 
 Odpověď na příkaz přijde okamžitě, nicméně to neznamená, že je Yoda připraven binárku přijmout. Je třeba potom kouknout na stav jednotlivých vnitřních komponent, jestli jsou OK.
 
 **Request:**
+
 ```
  {
    "mid"            : "SOME ID",
@@ -34,6 +35,7 @@ Odpověď na příkaz přijde okamžitě, nicméně to neznamená, že je Yoda p
 ```
 
 **Reply:**
+
 ```
  {
    "mid"            : "SOME ID",
@@ -49,6 +51,7 @@ Přistupuje se do něj takto
 XXXXXXXXXXXXXXXXXXXXXXXX/command_in/upload/end
 
 **Request:**
+
 ```
  {
    "mid"            : "SOME ID"
@@ -56,6 +59,7 @@ XXXXXXXXXXXXXXXXXXXXXXXX/command_in/upload/end
 ```
 
 **Reply:**
+
 ```
  {
    "mid"            : "SOME ID",
@@ -83,6 +87,7 @@ XXXXXXXXXXXXXXXXXXXXXXXX/command_in/upload/data
 ```
 
 **Reply:**
+
 ```
  {
    "mid"            : "SOME ID",
@@ -107,11 +112,12 @@ Příkazy pro část "update" v procesu [[Yoda:aktualizace_firmware|aktualizace 
 
 Význam tohoto topicu podle typu zařízení a typu binárky:
   * U **Yody**:
-    * **firmware** - zapsani flagu na update do FLASh paměti, pak čekani na restart od Homera
-    * **bootloader** - přepis oblasti bootloaderu v interni paměti mikrokontroleru novým bootloaderem, pak čekání na restart
-    * ** backup** - přepis oblasti s komponentou backup
+  * **firmware** - zapsani flagu na update do FLASh paměti, pak čekani na restart od Homera
+  * **bootloader** - přepis oblasti bootloaderu v interni paměti mikrokontroleru novým bootloaderem, pak čekání na restart
+  * ** backup** - přepis oblasti s komponentou backup
 
  **Request:**
+ 
  ```
  {
    "mid"            : "SOME ID",
@@ -119,7 +125,9 @@ Význam tohoto topicu podle typu zařízení a typu binárky:
  }
 
 ```
- * **Reply:** 
+
+**Reply:** 
+
 ```
  {
    "mid"            : "SOME ID",
