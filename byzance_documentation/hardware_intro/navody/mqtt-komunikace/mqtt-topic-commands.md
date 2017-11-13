@@ -9,7 +9,7 @@ Příkazy pro část "upload" v procesu [[Yoda:aktualizace_firmware|aktualizace 
 #### Subtopic "start" 
 
 Přistupuje se do něj takto
-''XXXXXXXXXXXXXXXXXXXXXXXX/command_in/upload/start''
+XXXXXXXXXXXXXXXXXXXXXXXX/command_in/upload/start
 
 Polozka ''"name"'' obsahuje volitelny textovy popisek (napr. ve zkratce, co dany program dela - je to uzivatelska informace). Maximalni delka je 64B včetně ukončovacího znaku.
 
@@ -46,7 +46,7 @@ Odpověď na příkaz přijde okamžitě, nicméně to neznamená, že je Yoda p
 #### Subtopic "end" 
 
 Přistupuje se do něj takto
-''XXXXXXXXXXXXXXXXXXXXXXXX/command_in/upload/end''
+XXXXXXXXXXXXXXXXXXXXXXXX/command_in/upload/end
 
 **Request:**
 ```
@@ -68,7 +68,7 @@ Přistupuje se do něj takto
 #### Subtopic "data" 
 
 Přistupuje se do něj takto
-''XXXXXXXXXXXXXXXXXXXXXXXX/command_in/upload/data''
+XXXXXXXXXXXXXXXXXXXXXXXX/command_in/upload/data
 
 **Request:**
 
@@ -100,7 +100,8 @@ Ale update Yody trvá "hned" update devicu i 3 minuty.... Proto je tu důležit�
 
 #### Subsubtopic "start" 
 Přistupuje se do něj takto
-''XXXXXXXXXXXXXXXXXXXXXXXX/command_in/update/start''
+
+XXXXXXXXXXXXXXXXXXXXXXXX/command_in/update/start
 
 Příkazy pro část "update" v procesu [[Yoda:aktualizace_firmware|aktualizace firmware]]. Stručně řečeno, jeho smyslem je odstartovat samotný proces přepisu FLASH paměti aktualizovaného zařízení. 
 
@@ -130,7 +131,7 @@ Význam tohoto topicu podle typu zařízení a typu binárky:
 
 #### Subtopic "status" 
 Přistupuje se do něj takto
-''XXXXXXXXXXXXXXXXXXXXXXXX/command_in/update/status''
+XXXXXXXXXXXXXXXXXXXXXXXX/command_in/update/status
 
 
 Topic platný pouze v případě, že jde o  ''"update_state"   : "longTerm"'' typ nahrávání firmwaru, tj. přenos binárky z Yody na Device, který je časově náročnější. Homer se dotazuje na progress updatu, kde chce znát procentuální stav nahrávání. (Homer se ptá, Yoda odpovídá)
@@ -166,7 +167,7 @@ Subtopic slouží k práci se seznamem zařízení, se kterými bude Yoda komuni
 #### Subtopic "add" 
 
 Přistupuje se do něj takto
-''XXXXXXXXXXXXXXXXXXXXXXXX/command_in/device/add''
+XXXXXXXXXXXXXXXXXXXXXXXX/command_in/device/add
 
 Slouží k přidání nového zařízení do Yody. **Pokud už zařízení už v yodovi existuje, návratový JSON obsahuje status "ok", a result "existing". Pokud zařízení neexistuje, status="ok" a result="new". Result "error" může nastat pouze v případě, že se něco vyloženě pokazí**.
 
@@ -191,7 +192,7 @@ Slouží k přidání nového zařízení do Yody. **Pokud už zařízení už v
 #### Subtopic "remove" 
 
 Přistupuje se do něj takto
-''XXXXXXXXXXXXXXXXXXXXXXXX/command_in/device/remove''
+XXXXXXXXXXXXXXXXXXXXXXXX/command_in/device/remove
 
 Slouží k odebrání zařízení z Yody pro potřeby Homera. Reálny vliv je takový, že device **není** ze seznamu zařízení smazán, ale je mu nastaven status ''saved'' na ''false'' a také je jeho ''state'' na ''DISCONNECTED'' (číselně ''0x01'').
 
@@ -216,7 +217,7 @@ Slouží k odebrání zařízení z Yody pro potřeby Homera. Reálny vliv je ta
 #### Subtopic "get" 
 
 Přistupuje se do něj takto
-''XXXXXXXXXXXXXXXXXXXXXXXX/command_in/device/get''
+XXXXXXXXXXXXXXXXXXXXXXXX/command_in/device/get
 
 Pokud zařízení není saved, snažilo se připojit k Yodovi a existuje v síti.
 Yoda se s ním ale nebaví, dokud nedostane pokyn.
