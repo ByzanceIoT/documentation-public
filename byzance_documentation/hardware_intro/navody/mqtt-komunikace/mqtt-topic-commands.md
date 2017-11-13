@@ -23,7 +23,6 @@ Odpověď na příkaz přijde okamžitě, nicméně to neznamená, že je Yoda p
 **Request:**
 
 ```
-
 "mid"            : "SOME ID",
 "size"           :  SIZE OF WHOLE BINARY FILE BEFORE BASE64,
 "crc"            :  CHECKSUM OF WHOLE BINARY FILE BEFORE BASE64,
@@ -34,10 +33,6 @@ Odpověď na příkaz přijde okamžitě, nicméně to neznamená, že je Yoda p
 "usr_name"       : "rychle_blikani_ledkou", (zatim nepovinne) (31 char max)
 }
 ```
-
-
-
-
 
 **Reply:**
 
@@ -50,9 +45,7 @@ Odpověď na příkaz přijde okamžitě, nicméně to neznamená, že je Yoda p
 }
 ```
 
-
-
-#### Subtopic "end" 
+#### Subtopic "end"
 
 Přistupuje se do něj takto
 
@@ -66,79 +59,55 @@ Přistupuje se do něj takto
 }
 ```
 
+**Reply:**
 
-
-&lt;/code&gt;
-
-\*\*Reply:\*\*
-
-&lt;code Json&gt;
-
+```
 {
-
 "mid"            : "SOME ID",
-
 "status"         : "ok/error",
-
 "error"          : "SOME ERROR MESSAGE", // pouze pokud je status == error
-
-"error\_code"     :  SOME NUMBER          // pouze pokud je status == error
-
+"error_code"     :  SOME NUMBER          // pouze pokud je status == error
 }
+```
 
-&lt;/code&gt;
-
-==== Subtopic "data" ====
+#### Subtopic "data"
 
 Přistupuje se do něj takto
 
 ''XXXXXXXXXXXXXXXXXXXXXXXX/command\_in/upload/data''
 
-\*\*Request:\*\*
+**Request:**
 
-&lt;code Json&gt;
 
+
+```
 {
-
 "mid"            : "SOME ID",
-
 "part"           :  SOME NUMBER,
-
 "crc"            :  SOME CRC OF FOLLOWING PART OF DATA BEFORE BASE64,
-
-"size"           :  768 BYTES \(BEFORE BASE64\)
-
+"size"           :  768 BYTES (BEFORE BASE64)
 "data"           : "BINARY DATA WITH SIZE DEFINED IN LABEL "size",
-
 }
+```
 
-&lt;/code&gt;
+**Reply:**
 
-\*\*Reply:\*\*
-
-&lt;code Json&gt;
-
+```
 {
-
 "mid"            : "SOME ID",
-
 "status"         : "ok/error",
-
 "error"          : "SOME ERROR MESSAGE", // pouze pokud je status == error
-
-"error\_code"     :  SOME NUMBER          // pouze pokud je status == error
-
+"error_code"     :  SOME NUMBER          // pouze pokud je status == error
 }
+```
 
-&lt;/code&gt;
-
-===== Subtopic "update" =====
+#### Subtopic "update" 
 
 Jelikož jsme se dohodli že Homer nemusí rozumět tomu jaké zařízení updatuje. Což je důležité do budoucna.
 
 Ale update Yody trvá "hned" update devicu i 3 minuty.... Proto je tu důležitý další parametr. Existují dva různe topicy: topic ''start'' a topic ''status''.
 
-==== Subsubtopic "start" ====
+#### Subsubtopic "start" 
 
 Přistupuje se do něj takto
 
@@ -148,7 +117,7 @@ Příkazy pro část "update" v procesu \[\[Yoda:aktualizace\_firmware\|aktualiz
 
 Význam tohoto topicu podle typu zařízení a typu binárky:
 
-\* U \*\*Yody\*\*:
+* U **Iody**:
 
 ```
 \* \*\*firmware\*\* - zapsani flagu na update do FLASh paměti, pak čekani na restart od Homera
@@ -158,35 +127,30 @@ Význam tohoto topicu podle typu zařízení a typu binárky:
 \* \*\* backup\*\* - přepis oblasti s komponentou backup
 ```
 
-\*\*Request:\*\*&lt;code Json&gt;
+**Request:**
 
+```
 {
-
 "mid"            : "SOME ID",
-
 "component"      : "firmware/bootloader/backup"
-
 }
+```
 
-&lt;/code&gt;
+**Reply:**
 
-\* \*\*Reply:\*\* &lt;code Json&gt;
-
+```
 {
-
 "mid"            : "SOME ID",
-
 "status"         : "ok/error",
-
 "error"          : "SOME ERROR MESSAGE", // pouze pokud je status == error
-
-"error\_code"     :  SOME NUMBER          // pouze pokud je status == error
-
+"error_code"     :  SOME NUMBER          // pouze pokud je status == error
 }
 
-&lt;/code&gt;
+```
 
-==== Subtopic "status" ====
+#### Subtopic "status"
+
+
 
 Přistupuje se do něj takto
 
@@ -194,41 +158,36 @@ Přistupuje se do něj takto
 
 Topic platný pouze v případě, že jde o  ''"update\_state"   : "longTerm"'' typ nahrávání firmwaru, tj. přenos binárky z Yody na Device, který je časově náročnější. Homer se dotazuje na progress updatu, kde chce znát procentuální stav nahrávání. \(Homer se ptá, Yoda odpovídá\)
 
-\*\*Request:\*\*&lt;code Json&gt;
+**Request:**
 
+```
 {
-
 "mid"            : "SOME ID",
-
 "device"         : "FULL ID DEVICE, kterého aktuálně Yoda updatuje"
-
 }
+```
 
-&lt;/code&gt;
 
-\* \*\*Reply:\*\* &lt;code Json&gt;
 
+**Reply:**
+
+
+
+```
 {
-
 "mid"            : "SAME ID",
-
 "status"         : "ok/error",
-
-"progress"       : 14   &lt;----- int číslo, od 0 do 100 zastupující % update
-
+"progress"       : 14   <----- int číslo, od 0 do 100 zastupující % update
 "error"          : "SOME ERROR MESSAGE", // pouze pokud je status == error
-
-"error\_code"     :  SOME NUMBER          // pouze pokud je status == error
-
+"error_code"     :  SOME NUMBER          // pouze pokud je status == error
 }
+```
 
-&lt;/code&gt;
-
-===== Subtopic "device" =====
+#### Subtopic "device" 
 
 Subtopic slouží k práci se seznamem zařízení, se kterými bude Yoda komunikovat.
 
-==== Subtopic "add" ====
+#### Subtopic "add" 
 
 Přistupuje se do něj takto
 
@@ -236,41 +195,28 @@ Přistupuje se do něj takto
 
 Slouží k přidání nového zařízení do Yody. \*\*Pokud už zařízení už v yodovi existuje, návratový JSON obsahuje status "ok", a result "existing". Pokud zařízení neexistuje, status="ok" a result="new". Result "error" může nastat pouze v případě, že se něco vyloženě pokazí\*\*.
 
-\*\*Request:\*\*
+**Request:**
 
-&lt;code Json&gt;
-
+```
 {
-
 "mid"           : "SOME ID",
-
 "deviceId"      : "24 BYTES OF FULL ID"
-
 }
+```
 
-&lt;/code&gt;
+**Reply:**
 
-\*\*Reply:\*\*
-
-&lt;code Json&gt;
-
+```
 {
-
 "mid"            : "SOME ID",
-
 "status"         : "ok/error",
-
 "error"          : "SOME ERROR MESSAGE", // pouze pokud je status == error
-
-"error\_code"     :  SOME NUMBER,         // pouze pokud je status == error
-
+"error_code"     :  SOME NUMBER,         // pouze pokud je status == error
 "result"         : "new/existing"        // pouze pokud je status == ok
-
 }
+```
 
-&lt;/code&gt;
-
-==== Subtopic "remove" ====
+#### Subtopic "remove" 
 
 Přistupuje se do něj takto
 
@@ -278,41 +224,30 @@ Přistupuje se do něj takto
 
 Slouží k odebrání zařízení z Yody pro potřeby Homera. Reálny vliv je takový, že device \*\*není\*\* ze seznamu zařízení smazán, ale je mu nastaven status ''saved'' na ''false'' a také je jeho ''state'' na ''DISCONNECTED'' \(číselně ''0x01''\).
 
-\*\*Request:\*\*
+**Request:**
 
-&lt;code Json&gt;
-
+```
 {
-
 "mid"              : "SOME ID",
-
-"deviceId"         : "24 BYTES FULL ID" \(Index není podporován ze strany homera!! Homer neumí pořadí pole!
-
+"deviceId"         : "24 BYTES FULL ID" (Index není podporován ze strany homera!! Homer neumí pořadí pole!
 }
+```
 
-&lt;/code&gt;
+**Reply:**
 
-\*\*Reply:\*\*
-
-&lt;code Json&gt;
-
+```
 {
-
 "mid"            : "SOME ID",
-
 "status"         : "ok/error",
-
 "error"          : "SOME ERROR MESSAGE", // pouze pokud je status == error
-
-"error\_code"     :  SOME NUMBER,         // pouze pokud je status == error
-
+"error_code"     :  SOME NUMBER,         // pouze pokud je status == error
 "result"         : "removed/missing"     // pouze pokud je status == ok
-
 }
+```
 
-&lt;/code&gt;
 
-==== Subtopic "get" ====
+
+#### Subtopic "get" 
 
 Přistupuje se do něj takto
 
@@ -367,7 +302,7 @@ DEV\_STATE\_TIMEOUT        = 0x14, // Nekolikrat neodpovedelo, ale jeste neni pr
 
 DEV\_STATE\_DEAD            = 0x15, // Prohlaseno za mrtve - neodpovida. \(21 dekadické\)
 
-DEV\_STATE\_ERROR            = 0x20    // error \(32 dekadické\) 
+DEV\_STATE\_ERROR            = 0x20    // error \(32 dekadické\)
 ```
 
 } StateEnum\_TypeDef;
