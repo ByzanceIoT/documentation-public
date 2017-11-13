@@ -137,6 +137,7 @@
     * [Transformace Json do Modelu \(objektu\)](interni/zakladni-dokumentace/transformace-json-do-modelu-objektu.md)
     * [Logování chyb](interni/zakladni-dokumentace/logovani-chyb.md)
     * [Centrum notifikací](interni/zakladni-dokumentace/centrum-notifikaci.md)
+    * [Oprávnění a validace uživatele](interni/zakladni-dokumentace/opravneni-a-validace-uzivatele.md)
 
 ## General
 
