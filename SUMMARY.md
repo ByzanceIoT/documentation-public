@@ -140,6 +140,7 @@
     * [Filtrování velkých Listů](interni/zakladni-dokumentace/filtrovani-velkych-listu.md)
   * [Websoketová komunikace Tyrion - Homer](interni/websoketova-komunikace-tyrion-homer.md)
   * [Weboketová komunikace grid - Tyrion](interni/weboketova-komunikace-grid-tyrion.md)
+  * [Kompilace code-serveru ](interni/kompilace-code-serveru.md)
 
 ## General
 
