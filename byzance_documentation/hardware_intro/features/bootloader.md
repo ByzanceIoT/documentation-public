@@ -183,6 +183,7 @@ Při prvním spuštění nebo při položce configured=0 bootloader skáče do c
 * ''_lowpanbr_'' - Zap nebo vyp funkce \[\[feature:lowpanbr\|lowpan border router\]\]
 
 * ''_restartbl_'' - Identifikátor pro \[\[feature:restartbl\|restart zařízení do bootloaderu\]\]
+
 * ''_revision_'' - Zjištění \[\[feature:revision\|revize zařízení\]\]
 
 **Pokud zařízení podporuje Wifi**
@@ -242,16 +243,16 @@ DEFAULTS_CONF_RESTARTBL           0                   // user configurable
 DEFAULTS_CONF_AUTOJUMP            300                 // user configurable via Bootloader & Portal
 
 // binary defaults
-DEFAULTS_BIN_VERSION_NAME            'v'            // ** managed by byzance (according http://semver.org) 
+DEFAULTS_BIN_VERSION_NAME            'v'            // ** managed by byzance (according http://semver.org) - Automatic update
 DEFAULTS_BIN_VERSION_MAJOR            0             // ** managed by byzance (number 0 - 99)   
 DEFAULTS_BIN_VERSION_MINOR            0             // ** managed by byzance (number 0 - 99) 
 DEFAULTS_BIN_VERSION_PATCH            0             // ** managed by byzance (number 0 - 99) 
-DEFAULTS_BIN_SIZE                     0             // ** managed by byzance (number)
-DEFAULTS_BIN_CRC                      0             // ** managed by byzance (number)
-DEFAULTS_BIN_TIMESTAMP                0             // ** managed by byzance (number UX time stamp) 
-DEFAULTS_BIN_BUILD_ID                "DEFAULT"                 // ** managed by byzance (UUID - 32 chars always)
-DEFAULTS_BIN_NAME                    "DEFAULT"                 // ** managed by byzance (String 32 chars max)
-DEFAULTS_BIN_STATE                    BINSTRUCT_STATE_INVALID  // ** managed by byzance (String 32 chars max)
+DEFAULTS_BIN_SIZE                     0             // ** managed by byzance (number) - Automatic update
+DEFAULTS_BIN_CRC                      0             // ** managed by byzance (number) - Automatic update
+DEFAULTS_BIN_TIMESTAMP                0             // ** managed by byzance (number UX time stamp) - Automatic update 
+DEFAULTS_BIN_BUILD_ID                "DEFAULT"                 // ** managed by byzance (UUID - 32 chars always) - Automatic update
+DEFAULTS_BIN_NAME                    "DEFAULT"                 // ** managed by byzance (String 32 chars max) - Automatic update
+DEFAULTS_BIN_STATE                    BINSTRUCT_STATE_INVALID  // ** managed by byzance (String 32 chars max) - Automatic update
 ```
 
 ### Technical Description
