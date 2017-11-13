@@ -125,6 +125,8 @@
   * [Update modulu ESP8266 v Iodovi](interni/generace-g2/update-modulu-esp8266-v-iodovi.md)
   * [NRF905 timing](interni/generace-g2/nrf905-timing.md)
 * [Coding style](interni/coding-style.md)
+* [Homer](interni/homer.md)
+  * [Instalace homer-js na RPi](interni/homer/instalace-homer-js-na-rpi.md)
 
 ## General
 
