@@ -129,6 +129,7 @@
   * [Instalace homer-js na RPi](interni/homer/instalace-homer-js-na-rpi.md)
   * [Instalace homer-js na Azure ](interni/homer/instalace-homer-js-na-azure.md)
   * [Vývojářské příkazy pro Homera \(GRID\)](interni/homer/vyvojarske-prikazy-pro-homera-grid.md)
+  * [Vývojářské příkazy pro Homera \(HW\)](interni/homer/vyvojarske-prikazy-pro-homera-hw.md)
 
 ## General
 
