@@ -77,6 +77,7 @@
   * [Interní paměť mikrokontroléru](byzance_documentation/hardware_intro/navody/interni-pamet-mikrokontroleru.md)
   * [Externí paměť mikrokontroléru](byzance_documentation/hardware_intro/navody/externi-pamet-mikrokontroleru.md)
   * [MQTT komunikace](byzance_documentation/hardware_intro/navody/mqtt-komunikace.md)
+    * [Byzance topicy ](byzance_documentation/hardware_intro/navody/mqtt-komunikace/byzance-topicy.md)
 * [Features](byzance_documentation/hardware_intro/features.md)
   * [Alias](byzance_documentation/hardware_intro/features/alias.md)
   * [Identifikátor zařízení ](byzance_documentation/hardware_intro/features/identifikator-zarizeni.md)
