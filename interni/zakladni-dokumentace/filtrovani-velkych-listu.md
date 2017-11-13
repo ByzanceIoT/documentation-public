@@ -48,7 +48,7 @@ public Result get_BigList( @ApiParam(value = "page_number is Integer. 1,2,3...n"
 
 ----
 
-==== Složitá metoda vracející seznam (Podle filtr parametrů) ====
+### Složitá metoda vracející seznam (Podle filtr parametrů) 
   * Momentálně parametry filtru nemáme v url jak je běžné, ale v těle (v Json) 
   * Standartě metoda obsahuje Form.form(Swagger_Board_Filter.class).bindFromRequest(); 
   * Query< Board > je stavěna postupně podle filtru 
