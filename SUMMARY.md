@@ -79,6 +79,7 @@
   * [MQTT komunikace](byzance_documentation/hardware_intro/navody/mqtt-komunikace.md)
     * [Byzance topicy ](byzance_documentation/hardware_intro/navody/mqtt-komunikace/byzance-topicy.md)
     * [MQTT Topic Commands](byzance_documentation/hardware_intro/navody/mqtt-komunikace/mqtt-topic-commands.md)
+    * [MQTT Topic settings](byzance_documentation/hardware_intro/navody/mqtt-komunikace/mqtt-topic-settings.md)
 * [Features](byzance_documentation/hardware_intro/features.md)
   * [Alias](byzance_documentation/hardware_intro/features/alias.md)
   * [Identifikátor zařízení ](byzance_documentation/hardware_intro/features/identifikator-zarizeni.md)
