@@ -138,6 +138,7 @@
     * [Logování chyb](interni/zakladni-dokumentace/logovani-chyb.md)
     * [Centrum notifikací](interni/zakladni-dokumentace/centrum-notifikaci.md)
     * [Oprávnění a validace uživatele](interni/zakladni-dokumentace/opravneni-a-validace-uzivatele.md)
+    * [Filtrování velkých Listů](interni/zakladni-dokumentace/filtrovani-velkych-listu.md)
 
 ## General
 
