@@ -192,5 +192,5 @@ Příkaz slouží k nastavení uživatelského jména do[wifi](https://wiki.byza
  }
 ```
 
-
+**Reply:**
 
