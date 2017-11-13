@@ -132,6 +132,8 @@
   * [Vývojářské příkazy pro Homera \(HW\)](interni/homer/vyvojarske-prikazy-pro-homera-hw.md)
 * [Tyrion](interni/tyrion.md)
   * [Základní grafické schéma](interni/zakladni-graficke-schema.md)
+  * [Základní dokumentace](interni/zakladni-dokumentace.md)
+    * [Pro nové členy týmu](interni/zakladni-dokumentace/pro-nove-cleny-tymu.md)
 
 ## General
 
