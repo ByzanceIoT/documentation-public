@@ -54,6 +54,7 @@ Přistupuje se do něj takto
    "mid"            : "SOME ID"
  }
 ```
+
 **Reply:**
 ```
  {
@@ -70,6 +71,7 @@ Přistupuje se do něj takto
 ''XXXXXXXXXXXXXXXXXXXXXXXX/command_in/upload/data''
 
 **Request:**
+
 ```
 {
   "mid"            : "SOME ID",
@@ -79,6 +81,7 @@ Přistupuje se do něj takto
   "data"           : "BINARY DATA WITH SIZE DEFINED IN LABEL "size",
 }
 ```
+
 **Reply:**
 ```
  {
@@ -339,6 +342,7 @@ Pokud má člověk na stole např. 10 IODů a potřebuje si je nějak identifiko
  }
 ```
 **Reply:**
+
 ```
 {
    "mid"            : "SOME ID",
