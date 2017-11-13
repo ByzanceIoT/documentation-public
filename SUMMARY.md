@@ -2,7 +2,7 @@
 
 ## First Steps
 
-* [1. Welcome Page](README.md)
+* [1. Welcome Page](byzance_dovumentation/README.md)
 * [2. Intrudoction \(Beginner's Guide\)](firststeps.md)
 * [Oživení zařízení](byzance_documentation/prvni_spusteni/oziveni_zarizeni.md)
   * [IODAG3E](byzance_documentation/prvni_spusteni/oziveni_zarizeni/iodag3e.md)
