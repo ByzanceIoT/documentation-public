@@ -12,6 +12,6 @@ Analogová zpráva IN nemá v payloadu JSON, ale pouze ASCII číslo, které se 
 
 Analogová zpráva OUT funguje analogicky FIXME doplnit
 
-==== Message IN/OUT ====
+#### Message IN/OUT 
 
 FIXME doplnit
