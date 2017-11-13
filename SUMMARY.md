@@ -136,6 +136,7 @@
     * [Pro nové členy týmu](interni/zakladni-dokumentace/pro-nove-cleny-tymu.md)
     * [Transformace Json do Modelu \(objektu\)](interni/zakladni-dokumentace/transformace-json-do-modelu-objektu.md)
     * [Logování chyb](interni/zakladni-dokumentace/logovani-chyb.md)
+    * [Centrum notifikací](interni/zakladni-dokumentace/centrum-notifikaci.md)
 
 ## General
 
