@@ -547,6 +547,7 @@ Zjištění aktuálního čísla revize. Položka je read-only a není možné j
  {
    "mid"            : "SOME ID"
  }
+ 
 ```
 **Reply:**
 ```
