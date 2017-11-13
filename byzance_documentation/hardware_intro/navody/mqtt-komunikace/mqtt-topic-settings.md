@@ -297,7 +297,5 @@ Každý příkaz může selhat s určitým chybovým kódem. Seznam takovýchto 
 
 [přehledu chybových kódů](https://wiki.byzance.cz/wiki/doku.php?id=errorcodes:errorcodes)
 
-.
-
 
 
