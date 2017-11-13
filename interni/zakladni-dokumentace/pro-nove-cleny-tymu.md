@@ -87,7 +87,7 @@ Každý Controller je opatřen stejnou anotací - která nezdokumentované API v
   * @BodyParser
   * @Security.Authenticated(Secured.class)
 
-==@ApiOperation==
+### @ApiOperation 
 Každá metoda obsahuje @ApiOperation - základní popis co metoda v případě úspěchu vrací, jak se jmenuje, popis a kategorii (složku). **Hvězdičky** značí že tyto parametry editujeme - ostatní jsou neměnné a všude stejné. 
 
 ```
