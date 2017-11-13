@@ -177,8 +177,6 @@ Příkaz slouží k nastavení záložní IP adresy a portu, na které se bude H
 
 ### Subtopic "wifi\_username"
 
-
-
 Přistupuje se do něj takto`XXXXXXXXXXXXXXXXXXXXXXXX/settings_in/wifi_username`
 
 Pokud je třeba zjistit už nastavenou hodnotu, je třeba poslat dotaz do topicu[MQTT Topic Info](https://wiki.byzance.cz/wiki/doku.php?id=yoda:topic_info)`XXXXXXXXXXXXXXXXXXXXXXXX/info_in/wifi_username`
@@ -187,7 +185,12 @@ Příkaz slouží k nastavení uživatelského jména do[wifi](https://wiki.byza
 
 **Request:**
 
-
+```
+ {
+   "mid"            : "SOME ID",
+   "value"          : "username"
+ }
+```
 
 
 
