@@ -127,6 +127,7 @@
 * [Coding style](interni/coding-style.md)
 * [Homer](interni/homer.md)
   * [Instalace homer-js na RPi](interni/homer/instalace-homer-js-na-rpi.md)
+  * [Instalace homer-js na Azure ](interni/homer/instalace-homer-js-na-azure.md)
 
 ## General
 
