@@ -27,7 +27,7 @@ kde první argument označuje **jednoslovně** jméno výstupu \(pro práci v bl
 
 let `valueDigOutput`definuje promněnou abychom mohli k daménu outputu přistupovat v kódu  ![](/assets/code1.png)
 
-Poté definujeme rozměry widgetu, **definice rozměrů je povinná ve všech widgetech.          
+Poté definujeme rozměry widgetu, **definice rozměrů je povinná ve všech widgetech.            
 **Můžeme použít  
 `context.addSizeProfile(1,1);`kde v parametrech definujeme výšku a šířku widgetu \(v pevně daných čtvercích, tudíž widgety vypadají všude stejně. Jeden  čtverec má zhruba 1 cm\).
 
@@ -51,19 +51,27 @@ připomínám že \*\*Musíme přidat jakýkoliv kladný a nenulový sizeProfile
 
 Protože Widgety jsou od toho, abychom poskytnuli uživateli grafickou vazbu na jeho zařízení, musíme je do Widgetu přidat.
 
-Přidáme jednoduchý _button_ element, z WK objektů  
-`let button = new WK.Button(context,"push");`
+Přidáme jednoduchý _button_ element, z WK objektů
+
+```js
+
+let button = new WK.Button(context,"push");
+```
 
 ![](/assets/code5.png)první argument je vždy context \(později si ukážeme, proč\) a druhý je text v našem tlačítku.
 
 Pokud znovu klikneme na _test_, nic se nestane, protože tlačítko nená ani styl a ani není přidané do Widgetu.
 
-pro přidání tlačítka do Widgetu použijeme  
-`context.root.add(button);`
+pro přidání tlačítka do Widgetu použijeme
+
+```js
+
+context.root.add(button);
+```
 
 ![](/assets/code6.png)prvný argument je element, který přidáváme.  
 Root můžeme považovat za **základní **element, který je rozšířen o několik funkcionalit a je přítomný vždy ve všech widgetech.  
-Klikneme na tlačítko _test.          
+Klikneme na tlačítko _test.            
 _![](/assets/code7.png)pokud si tlačítko zvětšíme, zjistíme že je defalutně nastylované, avšak vzhedově je naprosto ošklivé.  
 ![](/assets/code8.png)
 
@@ -72,9 +80,13 @@ _![](/assets/code7.png)pokud si tlačítko zvětšíme, zjistíme že je defalut
 Upravíme si tlačítko tak, aby bylo po celé šířce i výšce našeho widgetu.  
 Připomínám, že widgetů budeme mít v aplikaci několik a jeden widget by měl zastávat jednu funkci.
 
-Úprava stylu elementu je jednoduchá. Šířku a výšku \_button \_elementu upravíme snadno pomocí  
-\`button.style.height = "100%";  
- button.style.width = "100%";
+Úprava stylu elementu je jednoduchá. Šířku a výšku \_button \_elementu upravíme snadno pomocí
+
+```js
+
+button.style.height = "100%";
+button.style.width = "100%";
+```
 
 \`![](/assets/code9.png)
 
@@ -89,15 +101,19 @@ Rosáhlejší stylování popíšeme později, pro rychlé nahlédnutí ale pom�
 O interaktivní stránku widgetů se nejčastěji používají listenery.  
 Na náš \_button \_přidáme event listener, který bude naslouchat zda bylo na tlačítko kliknuto.
 
-`button.listenEvent("mousedown", callback => {        
+```js
+button.listenEvent("mousedown", callback => {        
      valueDigOutput.value = true;        
- });`
+ });
+```
 
 na _button_ zavoláme listenEvent, první argument je typ akce, na kterou má kód reagovat \(v tomto případě, že na element bylo zmáčknuto tlačítko myši\) a další část je funkce, co se má vykonat při vyvolání. Jedná se o zkrácený javascriptový zápis
 
-`button.listenEvent("mousedown", function(callback){        
+```js
+button.listenEvent("mousedown", function(callback){        
      valueDigOutput.value = true;        
- });`
+ });
+```
 
 \(obojí je validní\)  
 kde \_callback \_je pouze pomocná promněná a můžeme jí pojmenovat jak je libo.
@@ -109,9 +125,11 @@ v tomto případě posíláme true \(logickou 1\);
 
 přidáme ještě:
 
-`button.listenEvent("mouseup", e => {        
+```js
+button.listenEvent("mouseup", e => {        
      valueDigOutput.value = false;        
- });`
+ });
+```
 
 Což při puštění tlačítka myši pošle na výstup _false_
 
