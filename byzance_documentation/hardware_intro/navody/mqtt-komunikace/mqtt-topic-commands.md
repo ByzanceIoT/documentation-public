@@ -6,7 +6,7 @@ Další možné topicy jsou \[\[Yoda:topic\_settings\|settings\]\] a \[\[Yoda:to
 
 Příkazy pro část "upload" v procesu \[\[Yoda:aktualizace\_firmware\|aktualizace firmware\]\]. Pomocí následujích 3 příkazů se do Yody dá nahrát binárka k určité komponentě firmware.
 
-#### Subtopic "start" ====
+#### Subtopic "start"
 
 Přistupuje se do něj takto
 
@@ -252,8 +252,6 @@ odpovídá ItfEnum\_TypeDef a StateEnum\_TypeDef v souboru DevList.h
 
 Pokud zařízení není reálně připojeno, jeho interface je unknown. Až se připojí, interface se přiřadí na aktuální hodnotu.
 
-
-
 ```
 typedef enum ( Typy zařízení - jako je drátový nebo bezdrátový)
 {
@@ -286,8 +284,6 @@ DEV\_STATE\_ERROR            = 0x20    // error \(32 dekadické\)
 } StateEnum_TypeDef;
 ```
 
-
-
 **Request:**
 
 ```
@@ -299,11 +295,7 @@ DEV\_STATE\_ERROR            = 0x20    // error \(32 dekadické\)
 }
 ```
 
-
-
 **Reply:**
-
-
 
 ```
 {
@@ -319,13 +311,11 @@ DEV\_STATE\_ERROR            = 0x20    // error \(32 dekadické\)
 }
 ```
 
-
-
-#### Subtopic "system" 
+#### Subtopic "system"
 
 Systémové příkazy. Viz níže.
 
-#### Subtopic "restart" 
+#### Subtopic "restart"
 
 Přistupuje se do něj takto
 
@@ -352,7 +342,7 @@ Slouží k restartování yody.
 }
 ```
 
-#### Subtopic "ping" 
+#### Subtopic "ping"
 
 Přistupuje se do něj takto
 
@@ -361,8 +351,6 @@ Přistupuje se do něj takto
 Slouží k pingnutí yody, otestování komunikace, atd...
 
 **Request:**
-
-
 
 ```
 {
@@ -381,7 +369,7 @@ Slouží k pingnutí yody, otestování komunikace, atd...
 }
 ```
 
-#### Subtopic "blink" 
+#### Subtopic "blink"
 
 Přistupuje se do něj takto
 
@@ -410,7 +398,7 @@ Pokud má člověk na stole např. 10 IODů a potřebuje si je nějak identifiko
 }
 ```
 
-#### Chybové stavy 
+#### Chybové stavy
 
 Každý příkaz může selhat s určitým chybovým kódem. Seznam takovýchto chybových kódů je v \[\[errorcodes:errorcodes\|přehledu chybových kódů\]\].
 
