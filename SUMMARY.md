@@ -134,6 +134,7 @@
   * [Základní grafické schéma](interni/zakladni-graficke-schema.md)
   * [Základní dokumentace](interni/zakladni-dokumentace.md)
     * [Pro nové členy týmu](interni/zakladni-dokumentace/pro-nove-cleny-tymu.md)
+    * [Transformace Json do Modelu \(objektu\)](interni/zakladni-dokumentace/transformace-json-do-modelu-objektu.md)
 
 ## General
 
