@@ -8,16 +8,13 @@ public Result zpracujData(){
    .
    .
 }
+
 ```
-
-
   * Druhým bodem je transformace JSON na objekt (Ten je vázán na Swagger Dokumentaci! Viz Swagger Anotace)
   * Protože to co přijímáme, musíme dokumentovat pro front-end! A jako pojistka, že nikdy nebudeme mít odchylku od dokumentace a zpracovávaného objektu se používá objekt, který to sám na sobě dokumentuje. Důležité je zdokumentování přijímaného Json **@ApiImplicitParams!!**
   *  Je zde uveden **dataType = "utilities.swagger.documentationClass.Swagger_B_Program_Version_Update"**
   *  Bohužel Swagger v tomto případě musí mít přímou cestu ke třídě. A tak jsou všechny Swagger třídy určené k dokumentaci ve složce utilities/swager/documentationClass (To jsou třídy, které dokumentují příchozí Json) 
   * Pro odchozí máme složku utilities/swager/outboundClass
-
-  * 
  ```
 
  @ApiOperation(value = "create new Version of B Program",
@@ -126,7 +123,7 @@ Anotace (Pro kontrolu obsahu JSONu) můžou být: ```
             ]
       }
    ],
-```
+    ```
 
   * ```
 @ApiModel(description = "Json Model for new Version of C_Program",
