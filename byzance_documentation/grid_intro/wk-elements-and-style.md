@@ -1,12 +1,11 @@
-  
-  
-pro vytvoření grafického prvku v Gridu použijeme   
-  
-let \[nazevPrvku\] = new WK.\[button,label,element...\]\(context,"text"\)  
+pro vytvoření grafického prvku v Gridu použijeme
+
+let \[nazevPrvku\] = new WK.\[button,label,element...\]\(context,"text"\)
 
 
-  
-`label.style.background = "transparent";        //  color of background  
+
+```js
+label.style.background = "transparent";        //  color of background  
 label.style.color = "#000000";                        //  color of font  
 label.style.fontSize = "32px";                         //  size of font  
 label.style.x = '50%';                                       //  position on x axis - can be in % (of element width), or in pixels  
@@ -20,5 +19,8 @@ label.style.textShadow = '#000 50 0 0';      //  Define shadow for text renderin
 label.style.fontFamily = 'Arial';  
 label.style.horizontalAlign = 'center';  
 label.style.multiline = 'true';  
-label.style.textShadow = null;`
+label.style.textShadow = null;
+```
+
+
 
