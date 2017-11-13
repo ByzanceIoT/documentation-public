@@ -36,12 +36,15 @@ Nyní tlačítko kompletně nastylizujeme:
 ![](/assets/code19.png)  
 všechny možnosti které mohou být v daném stylu napovídá našeptávač \(ctrl + mezerník\) při psaní daného stylu.
 
-Můžeme i upravit pozici elementu pomocí_          
-_`button.style.originX          
- button.style.originY`
+Můžeme i upravit pozici elementu pomocí_          _
 
-`button.style.x           
- button.style.y`
+```
+
+ button.style.originX          
+ button.style.originY
+ button.style.x           
+ button.style.y
+```
 
 Ale v našem případě to není třeba, více informací najdeme v [Styly a jejich použití](/byzance_documentation/grid_intro/wk-elements-and-style.md).
 
@@ -52,9 +55,11 @@ Můžeme si všimnout problému s tím, že pokud styly napíšeme takto, tak se
 Řekněme, že chceme zvětšit velikost fontu v závislosti na velikosti widgetu.  
 Napíšeme do kódu toto:
 
-`button.listenEvent("resize", e =>{      
+```js
+button.listenEvent("resize", e =>{      
     button.style.fontSize = button.visibleRect.size.height * 0.8 + "";      
- });`
+ });
+```
 
 Jako minule, posloucháme změny na _button_ a při jakékoliv změny velikosti buttonu se zavolá funkce za tím.
 
@@ -70,23 +75,27 @@ samozřejmě, daná výška je v pixelech
 
 V podobném stylu napíšeme i funkci, která změní barvu pozadí a ikonu dle \_digOut
 
-`function changeIconAndText(){`\_`if(digOut.value){      
+```js
+function changeIconAndText(){_if(digOut.value){      
         button.style.background = ColorTrue.value;      
         button.text = "[fa]"+iconTrue.value+"[/]";      
     }else{      
         button.style.background = ColorFalse.value;      
         button.text = "[fa]"+iconFalse.value+"[/]";      
     }      
-};`
+};
+```
 
 protože digOut je boolean, můžeme zkrátit zápis. Při změně textu nesmíme zapomenout že pracujeme s ikonami a je třeba připsat dané ohraničení.
 
 nakonec napíšeme event listener na button, že ve chvíli kdy je na button kliknuto, obrátíme hodnotu \_digOut \_a zavoláme naší funkci.
 
-`button.listenEvent("mousedown", e => {      
+```js
+button.listenEvent("mousedown", e => {      
         digOut.value = !digOut.value;'      
         changeIconAndText();      
-});`
+});
+```
 
 ![](/assets/17.png)
 
