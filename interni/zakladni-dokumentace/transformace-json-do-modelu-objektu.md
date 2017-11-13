@@ -1,6 +1,6 @@
 ## Transformace Json do Model (objektu) 
 
-  * Pro přijetí příchozích dat z API requestu uvedeme nejdříve nad konkrétní metodou anotaci kontrolující obsah body HTTP requestu že je to validní JSON ( Tím ho už nemusíme kontrolovat a zároveň označíme metodu za data přijímající)  <code Java>
+  * Pro přijetí příchozích dat z API requestu uvedeme nejdříve nad konkrétní metodou anotaci kontrolující obsah body HTTP requestu že je to validní JSON ( Tím ho už nemusíme kontrolovat a zároveň označíme metodu za data přijímající)  ``
 
 // Metoda v controlleru
 @BodyParser.Of(BodyParser.Json.class) <--- Api vyžaduje v těle http requestu Json 
