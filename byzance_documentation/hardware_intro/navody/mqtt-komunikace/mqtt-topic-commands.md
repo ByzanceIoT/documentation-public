@@ -267,6 +267,7 @@ DEV_STATE_ERROR			= 0x20	// error (32 dekadické)
 ```
 
 **Request:**
+
 ```
 {
   "mid"             : "SOME ID",
@@ -277,9 +278,8 @@ DEV_STATE_ERROR			= 0x20	// error (32 dekadické)
 }
 ```
 
-
-
 **Reply:**
+
 ```
  {
    "mid"            : "SOME ID",
