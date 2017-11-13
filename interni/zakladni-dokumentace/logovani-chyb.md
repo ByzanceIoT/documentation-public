@@ -6,13 +6,15 @@ Chyby se logují pomocí třídy utilities.loggy.Loggy
 
   * Loggy všechny chyby ukládá do databáze a zároveň je zapisuje do souboru
 
-  * Pro zaznamenání vyjímek v catch se nejčastěji používá univerzální metoda ``` 
+  * Pro zaznamenání vyjímek v catch se nejčastěji používá univerzální metoda 
+  ``` 
     ..
     ..
     catch(Exception e){
         return Loggy.internalServerError(e, request());
     }
-``` která chybu uloží a vrátí prázdný 500 result. 
+``` 
+která chybu uloží a vrátí prázdný 500 result. 
 
   * Pokud nemůžete metodě poskytnout vyjímku, použijte ``` Loggy.internalServerError([popis problému], request()) ```
   * Pokud chcete pouze zapsat string a result, stack trace a další data chcete řešit sami, použijte ``` Loggy.error([název chyby], [obsah]) ```
