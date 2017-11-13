@@ -78,8 +78,6 @@ Přistupuje se do něj takto
 
 **Request:**
 
-
-
 ```
 {
 "mid"            : "SOME ID",
@@ -101,13 +99,13 @@ Přistupuje se do něj takto
 }
 ```
 
-#### Subtopic "update" 
+#### Subtopic "update"
 
 Jelikož jsme se dohodli že Homer nemusí rozumět tomu jaké zařízení updatuje. Což je důležité do budoucna.
 
 Ale update Yody trvá "hned" update devicu i 3 minuty.... Proto je tu důležitý další parametr. Existují dva různe topicy: topic ''start'' a topic ''status''.
 
-#### Subsubtopic "start" 
+#### Subsubtopic "start"
 
 Přistupuje se do něj takto
 
@@ -145,12 +143,9 @@ Význam tohoto topicu podle typu zařízení a typu binárky:
 "error"          : "SOME ERROR MESSAGE", // pouze pokud je status == error
 "error_code"     :  SOME NUMBER          // pouze pokud je status == error
 }
-
 ```
 
 #### Subtopic "status"
-
-
 
 Přistupuje se do něj takto
 
@@ -167,11 +162,7 @@ Topic platný pouze v případě, že jde o  ''"update\_state"   : "longTerm"'' 
 }
 ```
 
-
-
 **Reply:**
-
-
 
 ```
 {
@@ -183,11 +174,11 @@ Topic platný pouze v případě, že jde o  ''"update\_state"   : "longTerm"'' 
 }
 ```
 
-#### Subtopic "device" 
+#### Subtopic "device"
 
 Subtopic slouží k práci se seznamem zařízení, se kterými bude Yoda komunikovat.
 
-#### Subtopic "add" 
+#### Subtopic "add"
 
 Přistupuje se do něj takto
 
@@ -216,7 +207,7 @@ Slouží k přidání nového zařízení do Yody. \*\*Pokud už zařízení už
 }
 ```
 
-#### Subtopic "remove" 
+#### Subtopic "remove"
 
 Přistupuje se do něj takto
 
@@ -245,9 +236,7 @@ Slouží k odebrání zařízení z Yody pro potřeby Homera. Reálny vliv je ta
 }
 ```
 
-
-
-#### Subtopic "get" 
+#### Subtopic "get"
 
 Přistupuje se do něj takto
 
@@ -263,29 +252,20 @@ odpovídá ItfEnum\_TypeDef a StateEnum\_TypeDef v souboru DevList.h
 
 Pokud zařízení není reálně připojeno, jeho interface je unknown. Až se připojí, interface se přiřadí na aktuální hodnotu.
 
-&lt;code&gt;
 
-typedef enum \( Typy zařízení - jako je drátový nebo bezdrátový\)
-
-{
-
-ITF\_UNKNOWN   = 0x00,
-
-ITF\_NRF       = 0x01, \(Bezdrát\)
-
-ITF\_RS485     = 0x02, \(Drát\)
-
-ITF\_ERROR     = 0xFF
-
-} ItfEnum\_TypeDef;
-
-&lt;/code&gt;
-
-&lt;code&gt;
-
-typedef enum : unsigned char {
 
 ```
+typedef enum ( Typy zařízení - jako je drátový nebo bezdrátový)
+{
+ITF_UNKNOWN   = 0x00,
+ITF_NRF       = 0x01, (Bezdrát)
+ITF_RS485     = 0x02, (Drát)
+ITF_ERROR     = 0xFF
+} ItfEnum_TypeDef;
+```
+
+```
+typedef enum : unsigned char {
 DEV\_STATE\_UNKNOWN        = 0x00, // Device zatim nema nastaveny zadny stav, tj po startu.
 
 DEV\_STATE\_DISCONNECTED            = 0x01, // Device je odpojeno - Homer si s nim nechce povidat.
@@ -303,63 +283,49 @@ DEV\_STATE\_TIMEOUT        = 0x14, // Nekolikrat neodpovedelo, ale jeste neni pr
 DEV\_STATE\_DEAD            = 0x15, // Prohlaseno za mrtve - neodpovida. \(21 dekadické\)
 
 DEV\_STATE\_ERROR            = 0x20    // error \(32 dekadické\)
+} StateEnum_TypeDef;
 ```
 
-} StateEnum\_TypeDef;
 
-&lt;/code&gt;
 
-\*\*Request:\*\*
+**Request:**
 
-&lt;code Json&gt;
-
+```
 {
-
 "mid"             : "SOME ID",
-
-// Json musí obsahova buď "deviceId" nebo "device\_count" - nic jiného
-
+// Json musí obsahova buď "deviceId" nebo "device_count" - nic jiného
 "deviceId"         : "24 BYTES OF FULL ID"  vzdy to musi byt string
-
-"device\_count"     : "INDEX OF DEVICE"
-
+"device_count"     : "INDEX OF DEVICE"
 }
+```
 
-&lt;/code&gt;
 
-\*\*Reply:\*\*
 
-&lt;code Json&gt;
+**Reply:**
 
+
+
+```
 {
-
 "mid"            : "SOME ID",
-
 "status"         : "ok/error",
-
 "error"          : "SOME ERROR MESSAGE", // pouze pokud je status == error
-
-"error\_code"     :  SOME NUMBER,         // pouze pokud je status == error
-
-"full\_id"        : "SOME FULL ID",       // pouze pokud je status == ok
-
-"short\_id"       : "SOME SHORT ID",      // pouze pokud je status == ok
-
+"error_code"     :  SOME NUMBER,         // pouze pokud je status == error
+"full_id"        : "SOME FULL ID",       // pouze pokud je status == ok
+"short_id"       : "SOME SHORT ID",      // pouze pokud je status == ok
 "saved"          :  true/false,          // pouze pokud je status == ok
-
-"interface"      :  SOME NUMBER,         // pouze pokud je status == ok \(Viz typedef enum\)
-
+"interface"      :  SOME NUMBER,         // pouze pokud je status == ok (Viz typedef enum)
 "state"          :  SOME NUMBER          // pouze pokud je status == ok
-
 }
+```
 
-&lt;/code&gt;
 
-===== Subtopic "system" =====
+
+#### Subtopic "system" 
 
 Systémové příkazy. Viz níže.
 
-==== Subtopic "restart" ====
+#### Subtopic "restart" 
 
 Přistupuje se do něj takto
 
@@ -367,37 +333,26 @@ Přistupuje se do něj takto
 
 Slouží k restartování yody.
 
-\*\*Request:\*\*
+**Request:**
 
-&lt;code Json&gt;
-
+```
 {
-
 "mid"            : "SOME ID"
-
 }
+```
 
-&lt;/code&gt;
+**Reply:**
 
-\*\*Reply:\*\*
-
-&lt;code Json&gt;
-
+```
 {
-
 "mid"            : "SOME ID",
-
 "status"         : "ok/error",
-
 "error"          : "SOME ERROR MESSAGE", // pouze pokud je status == error
-
-"error\_code"     :  SOME NUMBER          // pouze pokud je status == error
-
+"error_code"     :  SOME NUMBER          // pouze pokud je status == error
 }
+```
 
-&lt;/code&gt;
-
-==== Subtopic "ping" ====
+#### Subtopic "ping" 
 
 Přistupuje se do něj takto
 
@@ -405,37 +360,28 @@ Přistupuje se do něj takto
 
 Slouží k pingnutí yody, otestování komunikace, atd...
 
-\*\*Request:\*\*
+**Request:**
 
-&lt;code Json&gt;
 
+
+```
 {
-
 "mid"            : "SOME ID"
-
 }
+```
 
-&lt;/code&gt;
+**Reply:**
 
-\*\*Reply:\*\*
-
-&lt;code Json&gt;
-
+```
 {
-
 "mid"            : "SOME ID",
-
 "status"         : "ok/error",
-
 "error"          : "SOME ERROR MESSAGE", // pouze pokud je status == error
-
-"error\_code"     :  SOME NUMBER          // pouze pokud je status == error
-
+"error_code"     :  SOME NUMBER          // pouze pokud je status == error
 }
+```
 
-&lt;/code&gt;
-
-==== Subtopic "blink" ====
+#### Subtopic "blink" 
 
 Přistupuje se do něj takto
 
@@ -445,35 +391,26 @@ Podobně jako ping slouží k otestování komunikace, ale při zaslání přík
 
 Pokud má člověk na stole např. 10 IODů a potřebuje si je nějak identifikovat, tohle se hodí.
 
-\*\*Request:\*\*
+**Request:**
 
-&lt;code Json&gt;
-
+```
 {
-
 "mid"            : "SOME ID"
-
 }
+```
 
-&lt;/code&gt;
+**Reply:**
 
-\*\*Reply:\*\*
-
-&lt;code Json&gt;
-
+```
 {
-
 "mid"            : "SOME ID",
-
 "status"         : "ok/error",
-
 "error"          : "SOME ERROR MESSAGE", // pouze pokud je status == error
-
-"error\_code"     :  SOME NUMBER          // pouze pokud je status == error
-
+"error_code"     :  SOME NUMBER          // pouze pokud je status == error
 }
+```
 
-====== Chybové stavy ======
+#### Chybové stavy 
 
 Každý příkaz může selhat s určitým chybovým kódem. Seznam takovýchto chybových kódů je v \[\[errorcodes:errorcodes\|přehledu chybových kódů\]\].
 
