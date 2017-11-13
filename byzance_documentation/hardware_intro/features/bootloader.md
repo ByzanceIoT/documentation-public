@@ -89,6 +89,7 @@ Terminologie:
 * Homer dříve \[\[Yoda:upload\| nahrál do device\]\] do části nového programu **nový** program.
 
 * Bootloader prohodí **aktuální** program s **novým** programem. Tím se z **nového** programu stane **aktuální**
+
 * Zapíše se informace o **aktuálním** programu v Yodovi do konfigurační paměti.
 * Na závěr bootloader skočí na začátek **aktuálního** programu a začne ho vykonávat.
 
@@ -175,6 +176,7 @@ Při prvním spuštění nebo při položce configured=0 bootloader skáče do c
 * ''_webport_'' - Port, na které poběží \[\[tutorial:webview\|webové rozhraní\]\]
 
 * ''_timeoffset_'' - Slouží pro lokalizovanou \[\[tutorial:timestamp\|práci s časem\]\]. Nastavení offsetu lokálního času od UTC času.
+
 * ''_timesync_'' - Slouží pro kontrolu synchronizace \[\[tutorial:timestamp\|času se servery\]\]. 
 * ''_lowpanbr_'' - Zap nebo vyp funkce \[\[feature:lowpanbr\|lowpan border router\]\]
 * ''_restartbl_'' - Identifikátor pro \[\[feature:restartbl\|restart zařízení do bootloaderu\]\]
@@ -207,8 +209,6 @@ Pokud se poprvé nahraje binárka bootloaderu do mikrokontroléru, bootloader s�
 ### Important notice
 
 > **Please keep in mind that what is stored in the database \(expected device setup\) is always superior to what is currently on the hardware. If you locally set a value and are not enabled \(Synchronize always with database = False\) in Portal. The system automatically synchronizes everything to the expected value.**
-
-
 
 ```cpp
 // MQTT defaults
@@ -259,15 +259,29 @@ DEFAULTS_BIN_STATE                    BINSTRUCT_STATE_INVALID  // ** managed by 
 >
 > **Static Backup: **You specify what static version of the backup you want on your device. We recommend using it in critical areas of industry. For example, when driving traffic lights. \(When the primary program fails - the backup is at least flashing orange\). The downside is that if the backup fails and bugs in backup does not allow the device to connect to server, you're fucked. You have to to fix the device yourself.
 
+
+
 **DEFAULTS\_CONF\_WEBVIEW**: For easier programming and overview, we've created a simple web page that shows current events and information on hardware. You have to enable this register to show it.  \(make it available on the local network\). Warning! \(Its not available from outside from public internet\) The IP address is assigned by your DHCP server. Remember that you can do this automatically with our portal. Or with Rest Api with our Core Server.
+
+
 
 **DEFAULTS\_CONF\_WEBPORT**: The web port is the port on which the device listens on local network. \(Its not available from outside from public internet\)  This default port is used only for default development portal with basic informations. You can make your own website but dont use, the same webpost. Our recommendation is also to avoid all known ports. For example, databases etc. Do not forget for webpage access, that it must be allowed by **DEFAULTS\_CONF\_WEBVIEW** constant. Remember that you can do this automatically with our portal. Or with Rest Api with our Core Server.
 
+
+
 **DEFAULTS\_CONF\_CONFIGURED**: After all values are configured,  you have to set Flag Register DEFAULTS\_CONF\_CONFIGURED to value "1" \(number\). This indicates that the device is fully configured. After restart of on every start, the device \(bootloader\) will automatically search for the main Firmware first or Backup. When Bootloader does not find the Main Firmware or Backup, Bootloader is automaticaly activated.
+
+
 
 **DEFAULTS\_CONF\_AUTOJUMP:** in some case, the device enters into configuration mode \(bootloader\). Therefore, there is this constant that automatically restarts and and switches the device back to the firmware. If this constant is not set, you risk that the device will be permanently active in the configuration mode and will not be able to update it remotely. Remember that you can do this automatically with our portal. Or with Rest Api with our Core Server
 
+
+
 **DEFAULTS\_CONF**_**ALIAS: **Alias is your own device name - Limited to 63 characters. For example "My Light" or "DEVICE\_X\_Y\_1". The Alias Name is accessible in firmware so you can used that for your private communication.  "MYCompany_\_LIGHT\_GENERATION1\_123423231". \_ Remember that you can do this automatically with our portal. Or with Rest Api with our Core Server. If you rename the device in the  our portal, or throw the API, It will automatically syncronizes with Hardware. Or the instructions are saved as soon as the device logs on.
+
+
+
+
 
 ---
 
