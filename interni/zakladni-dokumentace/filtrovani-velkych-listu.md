@@ -9,7 +9,7 @@
 
 ----
 
-==== Základní hlavička metody vracející seznam ====
+### Základní hlavička metody vracející seznam 
 
 ```
 // Doporučuje se u Routes vyžadovat kontrolu na @Integer 
@@ -26,7 +26,7 @@ public Result get_BigList( @ApiParam(value = "page_number is Integer. 1,2,3...n"
 ```
 
 ----
-==== Základní obsah metody vracející seznam ====
+### Základní obsah metody vracející seznam 
   * **Rozdíl oproti běžnému získání dat z DB je vytboření jen částečného Query - který je následně doplněn omezením na počet prvků a podle stránky. Viz kód.**  
   * Page number může být 0 i záporné číslo (je to ohlídáno dále) 
   * Povšimněte si, že Query zde netvoří list a ani počet prvků - query pouze definuje který objekt (Notification) a vlastnosti omezení seznamu (majitel objektu a setříděné podle stáří)
