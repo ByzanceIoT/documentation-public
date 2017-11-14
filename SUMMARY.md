@@ -4,9 +4,9 @@
 
 * [1. Welcome Page](articles/first-steps/welcome-page.md)
 * [2. Intrudoction \(Beginner's Guide\)](articles/first-steps/introduction.md)
-* [Oživení zařízení](articles/first-steps/oziveni_zarizeni.md)
-  * [IODAG3E](articles/first-steps/oziveni_zarizeni/iodag3e.md)
-  * [IODAG3W](articles/first-steps/oziveni_zarizeni/iodag3w.md)
+* [Oživení zařízení](articles/first-steps/oziveni-zarizeni.md)
+  * [IODAG3E](articles/first-steps/oziveni-zarizeni/iodag3e.md)
+  * [IODAG3W](articles/first-steps/oziveni-zarizeni/iodag3w.md)
 
 ## Programování
 
