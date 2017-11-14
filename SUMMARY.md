@@ -64,8 +64,8 @@
     * [Identifikace zařízení](articles/hardware/ioda/navody/identifikace-zarizeni.md)
       * [Full ID](articles/hardware/ioda/navody/identifikace-zarizeni/full-id.md)
       * [Alias](articles/hardware/ioda/navody/identifikace-zarizeni/alias.md)
-    * [Práce s datem a časem \(RTC\)](byzance_documentation/hardware_intro/navody/prace-s-datem-a-casem-rtc.md)
-    * [Bootloader](byzance_documentation/hardware_intro/features/bootloader.md)
+    * [Práce s datem a časem \(RTC\)](/articles/hardware/ioda/navody/prace-s-datem-a-casem-rtc.md)
+    * [Bootloader](/articles/hardware/ioda/navody/bootloader.md)
 * [DAPLink](articles/hardware/daplink.md)
 * [Přídavné moduly \(SHIELDS\)](/articles/hardware/pridavne-moduly.md)
 
