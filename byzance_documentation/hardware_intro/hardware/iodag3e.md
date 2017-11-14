@@ -2,30 +2,8 @@
 
 * todo: pár vět/odstavců s krátkým a stručným přehledem, co tato deska je, k čemu slouží a co umí a asi fotku, další detaily bych dal do podkapitol
 
-### Mikrokontrolér 
-* STM32F437IIH6 \([Datasheet](http://www.st.com/content/ccc/resource/technical/document/datasheet/fd/8c/0a/19/13/8f/41/99/DM00077036.pdf/files/DM00077036.pdf/jcr:content/translations/en.DM00077036.pdf)\)
-* 2 MB Flash
-* 192 kB SRAM \(včetně 64 KB CCM\)
-* Programování pomocí SWD
-* Periferie I2C, U\(S\)ART, SPI, CAN, SAI, USB2.0, Ethernet, Crypto hardware akcelerace, CRC jednotka
 
-### Ethernet
 
-* Budič LAN8720 \([Datasheet](http://ww1.microchip.com/downloads/en/DeviceDoc/8720a.pdf)\)
-* Podpora PoE 
-* Rychlost do 100Mbit
-
-### LowPAN
-
-viz \[\[lowpan:teoreticke\_informace\_lowpan\|Základní teoretické informace o použité technologii LoWPAN\]\] \(ticket HW-632\)
-
-* 868 MHz
-
-* přenosová rychlost až 10 kBps
-
-* možnost režimu border router \(sdílení Internetového připojení pro LowPAN síť - NAT64, DNS64\) viz. \[\[feature:lowpanbr\|Lowpan BR\]\]
-
-* možnost připojení k Internetu prostřednictvím LowPAN sítě viz. \[\[feature:lowpan\|6Lowpan\]\]
 
 ### Externí paměť
 
