@@ -41,9 +41,15 @@
 
 ## Hardware
 
-* IODA
-* DAPLink
-* Přídavné moduly \(SHIELDS\)
+* [IODA](hardware/ioda.md)
+  * [IODAG3E](byzance_documentation/hardware_intro/hardware/iodag3e.md)
+    * [Schémata](byzance_documentation/hardware_intro/hardware/iodag3e/schemata.md)
+    * [Pinout](byzance_documentation/hardware_intro/hardware/iodag3e/pinout.md)
+    * [Rozložení a využití paměti](byzance_documentation/hardware_intro/hardware/iodag3e/rozlozeni-a-vyuziti-pameti.md)
+    * [Revize](byzance_documentation/hardware_intro/hardware/iodag3e/revize.md)
+    * [LED signalizace](byzance_documentation/hardware_intro/hardware/iodag3e/led-signalizace.md)
+* [DAPLink](hardware/daplink.md)
+* [Přídavné moduly \(SHIELDS\)](hardware/pridavne-moduly-shields.md)
 
 ## Nezařazené
 
@@ -109,12 +115,6 @@
     * [6lowpan](byzance_documentation/hardware_intro/features/6lowpan.md)
     * [Měření přenosové rychlosti dosahu](byzance_documentation/hardware_intro/features/mereni-prenosove-rychlosti-dosahu.md)
 * [Hardware](byzance_documentation/hardware_intro/hardware.md)
-  * [IODAG3E](byzance_documentation/hardware_intro/hardware/iodag3e.md)
-    * [Schémata](byzance_documentation/hardware_intro/hardware/iodag3e/schemata.md)
-    * [Pinout](byzance_documentation/hardware_intro/hardware/iodag3e/pinout.md)
-    * [Rozložení a využití paměti](byzance_documentation/hardware_intro/hardware/iodag3e/rozlozeni-a-vyuziti-pameti.md)
-    * [Revize](byzance_documentation/hardware_intro/hardware/iodag3e/revize.md)
-    * [LED signalizace](byzance_documentation/hardware_intro/hardware/iodag3e/led-signalizace.md)
   * [DAPLink](byzance_documentation/hardware_intro/hardware/daplink.md)
   * [DevKit](byzance_documentation/hardware_intro/hardware/dk3g.md)
 
