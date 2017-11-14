@@ -1,90 +1,90 @@
 # Beginner's Guide
 
-Vítej ještì jednou v Byzance. Zde je seznam, co vše bìhem úvodního tutoriálu probereme.
+VÃ­tej jeÅ¡tÄ› jednou v Byzance. Zde je seznam, co vÅ¡e bÄ›hem ÃºvodnÃ­ho tutoriÃ¡lu probereme.
 
 ## List of Steps
 
-1. [Vlastní úèet](#own-account)
-2. [Vlastní Tariff](#own-tariff)
-3. [První Projekt](#first-project)
-   1. Základní pøehled
-   2. Vysvìtlení Menu
+1. [VlastnÃ­ ÃºÄet](#own-account)
+2. [VlastnÃ­ Tariff](#own-tariff)
+3. [PrvnÃ­ Projekt](#first-project)
+   1. ZÃ¡kladnÃ­ pÅ™ehled
+   2. VysvÄ›tlenÃ­ Menu
 4. [Registrace Hardwaru](#registrace-hardwaru)
-5. První program pro Hardware
-6. Nahrátí programu na Hardware
-7. První Blocko
-8. První Vlastní Bloèek
+5. PrvnÃ­ program pro Hardware
+6. NahrÃ¡tÃ­ programu na Hardware
+7. PrvnÃ­ Blocko
+8. PrvnÃ­ VlastnÃ­ BloÄek
 9. Integrace Blocko s Hardwarem
-10. První vlastní Instance
-11. První Aplikace v Gridu 
-12. První vlastní Widget
+10. PrvnÃ­ vlastnÃ­ Instance
+11. PrvnÃ­ Aplikace v Gridu 
+12. PrvnÃ­ vlastnÃ­ Widget
 13. Integrace s Blocko
 
 ---
 
-### Vlastní úèet {#own-account}
+### VlastnÃ­ ÃºÄet {#own-account}
 
-První vìc, kterou musíš udìlat je vytvoøit si úèet úèet na Portálu Byzance \([portal.byzance.cz](/portal.byzance.cz)\)
+PrvnÃ­ vÄ›c, kterou musÃ­Å¡ udÄ›lat je vytvoÅ™it si ÃºÄet ÃºÄet na PortÃ¡lu Byzance \([portal.byzance.cz](/portal.byzance.cz)\)
 
-V pøihlašovacím oknì se lze pøilásit s vyuitím úètu Facebook èi Github nebo se registrovat vytvoøením nového Byzance úètu kliknutím na tlaèítko **Create an account**. Pøi registraci nového byzance úètu je nutné vyplnit poadované údaje a vyèkat na potvrzovací email, kterı bude zaslán na zadanou adresu.
+V pÅ™ihlaÅ¡ovacÃ­m oknÄ› se lze pÅ™ilÃ¡sit s vyuÅ¾itÃ­m ÃºÄtu Facebook Äi Github nebo se registrovat vytvoÅ™enÃ­m novÃ©ho Byzance ÃºÄtu kliknutÃ­m na tlaÄÃ­tko **Create an account**. PÅ™i registraci novÃ©ho byzance ÃºÄtu je nutnÃ© vyplnit poÅ¾adovanÃ© Ãºdaje a vyÄkat na potvrzovacÃ­ email, kterÃ½ bude zaslÃ¡n na zadanou adresu.
 
-Po úspìšném pøihlášení se zobrazí Dashboard portálu Byzance.
+Po ÃºspÄ›Å¡nÃ©m pÅ™ihlÃ¡Å¡enÃ­ se zobrazÃ­ Dashboard portÃ¡lu Byzance.
 
-#### **Co je Portál**
+#### **Co je PortÃ¡l**
 
-Portál je internetová aplikace vytvoøená Byzance, která slouí jako brána pro všechna Byzance IoT zaøízení ke komunikaci s okolním svìtem. Portál zároveò uivateli slouí jako prostøedí, ve kterém vytváøí funkèní kód, uploaduje tento kód do síì svıch zaøízení a dochází k aktualizaci zaøízení. Dokumentace, krok po kroku vysvìtluje, jak provést základní konfiguraci.
+PortÃ¡l je internetovÃ¡ aplikace vytvoÅ™enÃ¡ Byzance, kterÃ¡ slouÅ¾Ã­ jako brÃ¡na pro vÅ¡echna Byzance IoT zaÅ™Ã­zenÃ­ ke komunikaci s okolnÃ­m svÄ›tem. PortÃ¡l zÃ¡roveÅˆ uÅ¾ivateli slouÅ¾Ã­ jako prostÅ™edÃ­, ve kterÃ©m vytvÃ¡Å™Ã­ funkÄnÃ­ kÃ³d, uploaduje tento kÃ³d do sÃ­Å¥Ä› svÃ½ch zaÅ™Ã­zenÃ­ a dochÃ¡zÃ­ k aktualizaci zaÅ™Ã­zenÃ­. Dokumentace, krok po kroku vysvÄ›tluje, jak provÃ©st zÃ¡kladnÃ­ konfiguraci.
 
 ---
 
-### Vlastní Tariff {#own-tariff}
+### VlastnÃ­ Tariff {#own-tariff}
 
-V levém Menu Najdi odkaz Financial \([portal.byzance.cz/financial](/portal.byzance.cz/financial)\)  
-Vytvoø si novı úèet a vyber si - kterı typ úètu ti nejvíce vyhovuje. **I do it for my self** or **I will be integrator**. Na stránce máš více rozepsané, co k èemu slouí.
+V levÃ©m Menu Najdi odkaz Financial \([portal.byzance.cz/financial](/portal.byzance.cz/financial)\)  
+VytvoÅ™ si novÃ½ ÃºÄet a vyber si - kterÃ½ typ ÃºÄtu ti nejvÃ­ce vyhovuje. **I do it for my self** or **I will be integrator**. Na strÃ¡nce mÃ¡Å¡ vÃ­ce rozepsanÃ©, co k Äemu slouÅ¾Ã­.
 
 #### **Co jsou to Tarify **
 
-Jeliko jsou nìkteré naše sluby placené a protoe chceme umonit i velkım firmám pracovat a spravovat své produkty ve sloité hierarchii, jsou všechny aktivity vázané na Tariffs. Tarify jsou Úèetní entity, která má vlasntíka \(neboli správce\) v podobì fyzické osoby \(zakladatel úètu\) nebo firmy \(lze nastavit\) a také fakturované jednotky buï jde o stejnou osobu / firmu - nebo externí firmu. Lze tedy Vytvoøit i Tarrif, kterého jsem vlastník - ale fakturuje se to tøetí osobì. Tento model je vhodnı pro Freelancery nebo Integrátory. Integrátor tak mùe vytváøet zakázkové projekty pro desítky svıch klientù a mít tak dokonalı pøehled o celkovıch nákladech kadého klienta. Tariff lze migrovat i na jiné úèty a firmy. Takto lze vytváøet rùzné kombinace desítek finanèních entit.
+JelikoÅ¾ jsou nÄ›kterÃ© naÅ¡e sluÅ¾by placenÃ© a protoÅ¾e chceme umoÅ¾nit i velkÃ½m firmÃ¡m pracovat a spravovat svÃ© produkty ve sloÅ¾itÃ© hierarchii, jsou vÅ¡echny aktivity vÃ¡zanÃ© na Tariffs. Tarify jsou ÃšÄetnÃ­ entity, kterÃ¡ mÃ¡ vlasntÃ­ka \(neboli sprÃ¡vce\) v podobÄ› fyzickÃ© osoby \(zakladatel ÃºÄtu\) nebo firmy \(lze nastavit\) a takÃ© fakturovanÃ© jednotky buÄ jde o stejnou osobu / firmu - nebo externÃ­ firmu. Lze tedy VytvoÅ™it i Tarrif, kterÃ©ho jsem vlastnÃ­k - ale fakturuje se to tÅ™etÃ­ osobÄ›. Tento model je vhodnÃ½ pro Freelancery nebo IntegrÃ¡tory. IntegrÃ¡tor tak mÅ¯Å¾e vytvÃ¡Å™et zakÃ¡zkovÃ© projekty pro desÃ­tky svÃ½ch klientÅ¯ a mÃ­t tak dokonalÃ½ pÅ™ehled o celkovÃ½ch nÃ¡kladech kaÅ¾dÃ©ho klienta. Tariff lze migrovat i na jinÃ© ÃºÄty a firmy. Takto lze vytvÃ¡Å™et rÅ¯znÃ© kombinace desÃ­tek finanÄnÃ­ch entit.
 
-#### ** Jakı je rozdíl v tariffech? **
+#### ** JakÃ½ je rozdÃ­l v tariffech? **
 
-Rozdíl není ádnı - jde jen o poèáteèní stav. To s èím na zaèátku zaèínáš.  Kadı Tariff se skládá z Extensions \(Extensions pro vyšší poèet HW, Extensions Pro vyšší objem pøenesenıch dat atd.\). Take na zaèátku máš nìkteré Tariffy, které u mají pøedplacenı vyšší objem dat, nebo vyšší poèet uivatelù, kteøí se mohou spravovat projekty. Naše zkušenosti nám øíkají, e nìkteøí zákazníci mají rádi u od zaèátku vše aktivní a tak jsme jim pøipravili ji pøedkonfigurované Tariffy obsahující dùleité funkce. Pokud si nevíš rady, prostì zaèni s tím základním a postupnì si pøidávej jednotlivé funkce. Nìkteré tariffy u od zaèátku vyadují plnohodnotnou registraci vèetnì emergency kontaktù a dalších. Tyto kontakty NIKDY NESLOUÍ K MARKETINGU! Ale jsou pouity vıluènì pro technickou a bezpeèností podporu. \(Naše servisní støedisko vás mùe v nìkterıch pøípadech kontaktovat pokud dojde k vánım incidentùm\)
+RozdÃ­l nenÃ­ Å¾Ã¡dnÃ½ - jde jen o poÄÃ¡teÄnÃ­ stav. To s ÄÃ­m na zaÄÃ¡tku zaÄÃ­nÃ¡Å¡.  KaÅ¾dÃ½ Tariff se sklÃ¡dÃ¡ z Extensions \(Extensions pro vyÅ¡Å¡Ã­ poÄet HW, Extensions Pro vyÅ¡Å¡Ã­ objem pÅ™enesenÃ½ch dat atd.\). TakÅ¾e na zaÄÃ¡tku mÃ¡Å¡ nÄ›kterÃ© Tariffy, kterÃ© uÅ¾ majÃ­ pÅ™edplacenÃ½ vyÅ¡Å¡Ã­ objem dat, nebo vyÅ¡Å¡Ã­ poÄet uÅ¾ivatelÅ¯, kteÅ™Ã­ se mohou spravovat projekty. NaÅ¡e zkuÅ¡enosti nÃ¡m Å™Ã­kajÃ­, Å¾e nÄ›kteÅ™Ã­ zÃ¡kaznÃ­ci majÃ­ rÃ¡di uÅ¾ od zaÄÃ¡tku vÅ¡e aktivnÃ­ a tak jsme jim pÅ™ipravili jiÅ¾ pÅ™edkonfigurovanÃ© Tariffy obsahujÃ­cÃ­ dÅ¯leÅ¾itÃ© funkce. Pokud si nevÃ­Å¡ rady, prostÄ› zaÄni s tÃ­m zÃ¡kladnÃ­m a postupnÄ› si pÅ™idÃ¡vej jednotlivÃ© funkce. NÄ›kterÃ© tariffy uÅ¾ od zaÄÃ¡tku vyÅ¾adujÃ­ plnohodnotnou registraci vÄetnÄ› emergency kontaktÅ¯ a dalÅ¡Ã­ch. Tyto kontakty NIKDY NESLOUÅ½Ã K MARKETINGU! Ale jsou pouÅ¾ity vÃ½luÄnÄ› pro technickou a bezpeÄnostÃ­ podporu. \(NaÅ¡e servisnÃ­ stÅ™edisko vÃ¡s mÅ¯Å¾e v nÄ›kterÃ½ch pÅ™Ã­padech kontaktovat pokud dojde k vÃ¡Å¾nÃ½m incidentÅ¯m\)
 
 #### ** Co jsou Extensions? **
 
-Extensions jsou balíèky, je lze kdykoliv nebo i na zaèátku pøikupovat do svého Tariffu. Na zaèátku kadı tariff obsahuje základní sadu balíèkù. Díky nim se nám snadno zpøístupòují jendnotlivé funkce pro naše zákazníky. Nìkteré jsou zdarma, jiné ve zpoplatnìnıch tariffech u mìsíènì nìco stojí. Vìtšina Extensions je zaloena na poplatcích na mìsíèní bázy. Nìkteré poskytuje pøímo Byzance, jiné jsou tøetích stran. Balíèky mají vlastní konfiguraci - zaloené na tom, co kterı balíèek umonuje. Napøíklad potøebuješ-li databázi k uskladnìní svıch dat, lze aktivovat balíèek "Databáze" s rùznou velikostí podle potøeb s rùznou cenou. U nìkterıch je aktivní sleva z rozsahu.
+Extensions jsou balÃ­Äky, jeÅ¾ lze kdykoliv nebo i na zaÄÃ¡tku pÅ™ikupovat do svÃ©ho Tariffu. Na zaÄÃ¡tku kaÅ¾dÃ½ tariff obsahuje zÃ¡kladnÃ­ sadu balÃ­ÄkÅ¯. DÃ­ky nim se nÃ¡m snadno zpÅ™Ã­stupÅˆujÃ­ jendnotlivÃ© funkce pro naÅ¡e zÃ¡kaznÃ­ky. NÄ›kterÃ© jsou zdarma, jinÃ© ve zpoplatnÄ›nÃ½ch tariffech uÅ¾ mÄ›sÃ­ÄnÄ› nÄ›co stojÃ­. VÄ›tÅ¡ina Extensions je zaloÅ¾ena na poplatcÃ­ch na mÄ›sÃ­ÄnÃ­ bÃ¡zy. NÄ›kterÃ© poskytuje pÅ™Ã­mo Byzance, jinÃ© jsou tÅ™etÃ­ch stran. BalÃ­Äky majÃ­ vlastnÃ­ konfiguraci - zaloÅ¾enÃ© na tom, co kterÃ½ balÃ­Äek umoÅ¾nuje. NapÅ™Ã­klad potÅ™ebujeÅ¡-li databÃ¡zi k uskladnÄ›nÃ­ svÃ½ch dat, lze aktivovat balÃ­Äek "DatabÃ¡ze" s rÅ¯znou velikostÃ­ podle potÅ™eb s rÅ¯znou cenou. U nÄ›kterÃ½ch je aktivnÃ­ sleva z rozsahu.
 
 ---
 
-### První Projekt {#first-project}
+### PrvnÃ­ Projekt {#first-project}
 
-Teï tì èeká vytvoøení tvého prvního projektu. Kadı projekt je vázanı na nìkterı z tvıch finanèních produktù \(Tariffech\). Pokud ho nemáš - vra se k bodu èíslo 2. **Tadááá - Máš svùj první projekt. Gratulujeme! &lt;3 **
+TeÄ tÄ› ÄekÃ¡ vytvoÅ™enÃ­ tvÃ©ho prvnÃ­ho projektu. KaÅ¾dÃ½ projekt je vÃ¡zanÃ½ na nÄ›kterÃ½ z tvÃ½ch finanÄnÃ­ch produktÅ¯ \(Tariffech\). Pokud ho nemÃ¡Å¡ - vraÅ¥ se k bodu ÄÃ­slo 2. **TadÃ¡Ã¡Ã¡ - MÃ¡Å¡ svÅ¯j prvnÃ­ projekt. Gratulujeme! &lt;3 **
 
 #### **Overview:**
 
-* **DashBoard**: je vıchozí obrazovka projektu, kde máš základní pøehled všeho.
+* **DashBoard**: je vÃ½chozÃ­ obrazovka projektu, kde mÃ¡Å¡ zÃ¡kladnÃ­ pÅ™ehled vÅ¡eho.
 
-* **Members**: Je správce úètù, které mohou s projektem manipulovat. Lze nastavit práva tak jak jednotlivım uivatelùm dùvìøuješ. Mùeš pozvat své kolegy, kteøí u úèet mají, nebo si ho díky pozvánce teprve vytvoøí. Pozvaní nemusejí ji vytváøet vlastní finanèní produkty a ani do nich nemají pøístup. \(Jen pokud by si je jmenoval i správcem Financial Tariff.\)
+* **Members**: Je sprÃ¡vce ÃºÄtÅ¯, kterÃ© mohou s projektem manipulovat. Lze nastavit prÃ¡va tak jak jednotlivÃ½m uÅ¾ivatelÅ¯m dÅ¯vÄ›Å™ujeÅ¡. MÅ¯Å¾eÅ¡ pozvat svÃ© kolegy, kteÅ™Ã­ uÅ¾ ÃºÄet majÃ­, nebo si ho dÃ­ky pozvÃ¡nce teprve vytvoÅ™Ã­. PozvanÃ­ nemusejÃ­ jiÅ¾ vytvÃ¡Å™et vlastnÃ­ finanÄnÃ­ produkty a ani do nich nemajÃ­ pÅ™Ã­stup. \(Jen pokud by si je jmenoval i sprÃ¡vcem Financial Tariff.\)
 
-* **HARDWARE**: Je Stránka, která ti zobrazuje tvùj zaregistrovanı Hardware a jeho manaerské nástroje. Na kadé stránce, která obsahuje seznam v tabulce \(všude v portálu\) lze vykreslit maximálnì 25 prvkù. Pro zobrazení dalších prvkù, pouívej šipky nebo parametry filtru.
+* **HARDWARE**: Je StrÃ¡nka, kterÃ¡ ti zobrazuje tvÅ¯j zaregistrovanÃ½ Hardware a jeho manaÅ¾erskÃ© nÃ¡stroje. Na kaÅ¾dÃ© strÃ¡nce, kterÃ¡ obsahuje seznam v tabulce \(vÅ¡ude v portÃ¡lu\) lze vykreslit maximÃ¡lnÄ› 25 prvkÅ¯. Pro zobrazenÃ­ dalÅ¡Ã­ch prvkÅ¯, pouÅ¾Ã­vej Å¡ipky nebo parametry filtru.
 
-  * **Hardware list**: Seznam tvého Hardwaru. Jako ho zaregistrovat se dozvíš níe.
+  * **Hardware list**: Seznam tvÃ©ho Hardwaru. Jako ho zaregistrovat se dozvÃ­Å¡ nÃ­Å¾e.
 
-  * **Hardware Groups**: Ti umoní vytváøet skupiny Hardwaru, které jsou si nìèím podobné nebo ti umoní speciální dìlení. Napøíklad "German Market", "Generation v1.3", "Office Flor 3". Díky skupinám mùeš vyuívat nástroje hromadného updatu.
+  * **Hardware Groups**: Ti umoÅ¾nÃ­ vytvÃ¡Å™et skupiny Hardwaru, kterÃ© jsou si nÄ›ÄÃ­m podobnÃ© nebo ti umoÅ¾nÃ­ speciÃ¡lnÃ­ dÄ›lenÃ­. NapÅ™Ã­klad "German Market", "Generation v1.3", "Office Flor 3". DÃ­ky skupinÃ¡m mÅ¯Å¾eÅ¡ vyuÅ¾Ã­vat nÃ¡stroje hromadnÃ©ho updatu.
 
-  * **Updates**: Je seznam všech tvıch updatù, jednotlivıch individuálních i tìch hromadnıch. Na této stránce díky tlaèítku "Release Firmware" mùeš aktualizovat skupinu, kde lze vybrat Program a jeho verzi, nebo Bootloader. Aktualizaèní proceduru lze i naplánovat na èas, kterı ti vyhovuje.
+  * **Updates**: Je seznam vÅ¡ech tvÃ½ch updatÅ¯, jednotlivÃ½ch individuÃ¡lnÃ­ch i tÄ›ch hromadnÃ½ch. Na tÃ©to strÃ¡nce dÃ­ky tlaÄÃ­tku "Release Firmware" mÅ¯Å¾eÅ¡ aktualizovat skupinu, kde lze vybrat Program a jeho verzi, nebo Bootloader. AktualizaÄnÃ­ proceduru lze i naplÃ¡novat na Äas, kterÃ½ ti vyhovuje.
 
-* **CODE**: Je první Cloud Tool v našem Portálu, kterı ti umonuje jednoduše programovat Hardware.
+* **CODE**: Je prvnÃ­ Cloud Tool v naÅ¡em PortÃ¡lu, kterÃ½ ti umoÅ¾nuje jednoduÅ¡e programovat Hardware.
 
-  * **Code Programs**:: Obsahuje dvì sekce. Tvé vlastní programy a programy vytvoøené Byzance, komunitou nebo jednotlivımi dodavately Hardwaru. Veøejné programy si mùeš zkopírovat a dále upravovat. Nezapomeò, e i ty mùeš jednotlivé programy v platformì sdílet s ostatními. Sdílení je jen kontrolováno administrátory.
+  * **Code Programs**:: Obsahuje dvÄ› sekce. TvÃ© vlastnÃ­ programy a programy vytvoÅ™enÃ© Byzance, komunitou nebo jednotlivÃ½mi dodavately Hardwaru. VeÅ™ejnÃ© programy si mÅ¯Å¾eÅ¡ zkopÃ­rovat a dÃ¡le upravovat. NezapomeÅˆ, Å¾e i ty mÅ¯Å¾eÅ¡ jednotlivÃ© programy v platformÄ› sdÃ­let s ostatnÃ­mi. SdÃ­lenÃ­ je jen kontrolovÃ¡no administrÃ¡tory.
 
-  * **Code Libraries**:: Knihovny jsou pøedpøipravené balíèky kodu, je ti umoní velmi snadno integrovat speciální funkce nebo obsluhu Shieldu pro tvùj Hardware.
+  * **Code Libraries**:: Knihovny jsou pÅ™edpÅ™ipravenÃ© balÃ­Äky kodu, jeÅ¾ ti umoÅ¾nÃ­ velmi snadno integrovat speciÃ¡lnÃ­ funkce nebo obsluhu Shieldu pro tvÅ¯j Hardware.
 
-* **GRID**: Je nástroj pro tvorbu jednoduchıch ovládacích aplikací pøímo na míru k jendomu HW nebo celé skupinì. Grid nemá za cíl udìlat dokonalé sexy vypadající aplikace pro vaše zákazníky - doporuèujeme dìlat nativní s podporou Rest-Api, ale umonit ti tvoøit jednoduché øídící aplikace pro prùmysl a prùmyslové øízení s prezentací dat.
+* **GRID**: Je nÃ¡stroj pro tvorbu jednoduchÃ½ch ovlÃ¡dacÃ­ch aplikacÃ­ pÅ™Ã­mo na mÃ­ru k jendomu HW nebo celÃ© skupinÄ›. Grid nemÃ¡ za cÃ­l udÄ›lat dokonalÃ© sexy vypadajÃ­cÃ­ aplikace pro vaÅ¡e zÃ¡kaznÃ­ky - doporuÄujeme dÄ›lat nativnÃ­ s podporou Rest-Api, ale umoÅ¾nit ti tvoÅ™it jednoduchÃ© Å™Ã­dÃ­cÃ­ aplikace pro prÅ¯mysl a prÅ¯myslovÃ© Å™Ã­zenÃ­ s prezentacÃ­ dat.
 
   * **Grid Apps**::
   * **Grid Widgets**::
 
-  Grid se skládá s kolekce aplikací - a s Widgetù
+  Grid se sklÃ¡dÃ¡ s kolekce aplikacÃ­ - a s WidgetÅ¯
 
 * BLOCKO: TODO
 
@@ -100,33 +100,33 @@ Teï tì èeká vytvoøení tvého prvního projektu. Kadı projekt je vázanı na nìkterı
 
 ---
 
-### První program pro Hardware
+### PrvnÃ­ program pro Hardware
 
 
 
 ---
 
-### Nahrátí programu na Hardware
+### NahrÃ¡tÃ­ programu na Hardware
 
 
 
 ---
 
-### První Blocko Program
+### PrvnÃ­ Blocko Program
 
 
 
 
 
-První Vlastní Bloèek
+PrvnÃ­ VlastnÃ­ BloÄek
 
 Integrace Blocko s Hardwarem
 
-První vlastní Instance
+PrvnÃ­ vlastnÃ­ Instance
 
-První Aplikace v Gridu
+PrvnÃ­ Aplikace v Gridu
 
-První vlastní Widget
+PrvnÃ­ vlastnÃ­ Widget
 
 Integrace s Blocko
 
@@ -134,5 +134,5 @@ Integrace s Blocko
 
 #### Konfigurace hardware
 
-Následující dokumentace pomáhá uivateli pøi prvním spuštìní a základní konfiguraci novì zakoupenıch zaøízení. Bliší informace a specifikace jednotlivıch zaøízení lze nalézt v [Hardwarové dokumentaci](Odkaz na Hardwarovou docu). Bìhem konigurace lze indentifikovat chování zaøízení pomocí LED signalizace, kterou zaøízení provádí. Vıznam tìchto LED signálù, lze vyhledat v Hardvarové dokumentaci jednotlivıch typù zaøízení v sekci [LED signalizace](/byzance_documentation/hardware_intro/hardware/iodag3e/led-signalizace.md)
+NÃ¡sledujÃ­cÃ­ dokumentace pomÃ¡hÃ¡ uÅ¾ivateli pÅ™i prvnÃ­m spuÅ¡tÄ›nÃ­ a zÃ¡kladnÃ­ konfiguraci novÄ› zakoupenÃ½ch zaÅ™Ã­zenÃ­. BliÅ¾Å¡Ã­ informace a specifikace jednotlivÃ½ch zaÅ™Ã­zenÃ­ lze nalÃ©zt v [HardwarovÃ© dokumentaci](Odkaz na Hardwarovou docu). BÄ›hem konigurace lze indentifikovat chovÃ¡nÃ­ zaÅ™Ã­zenÃ­ pomocÃ­ LED signalizace, kterou zaÅ™Ã­zenÃ­ provÃ¡dÃ­. VÃ½znam tÄ›chto LED signÃ¡lÅ¯, lze vyhledat v HardvarovÃ© dokumentaci jednotlivÃ½ch typÅ¯ zaÅ™Ã­zenÃ­ v sekci [LED signalizace](/byzance_documentation/hardware_intro/hardware/iodag3e/led-signalizace.md)
 
