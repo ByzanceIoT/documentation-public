@@ -41,6 +41,12 @@
 
 ## Hardware
 
+* IODA
+* DAPLink
+* Přídavné moduly \(SHIELDS\)
+
+## Nezařazené
+
 * [Úvod](byzance_documentation/hardware_intro/uvod.md)
   * [Kde začít](byzance_documentation/hardware_intro/obecne/kde-zacit.md)
   * [Struktura programu](byzance_documentation/hardware_intro/obecne/struktura-programu.md)
