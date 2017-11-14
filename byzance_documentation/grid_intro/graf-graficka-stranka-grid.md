@@ -94,7 +94,6 @@ Na začátek renderu si nadefinujeme několik pomocných promněných.
 začneme s
 
 ```js
-
 let chartPaddingX = 10;  
 let chartPaddingY = 10;
 ```
@@ -103,7 +102,6 @@ chceme nechat nějaký prostor na krajích.
 poté
 
 ```js
-
 let chartX = 30 + chartPaddingX;  
 let chartY = 10 + chartPaddingY;
 ```
@@ -113,7 +111,6 @@ jakožto "startovací bod" pro náš graf \(vlevo nahoře\). Odtud budeme začí
 nakonec
 
 ```js
-
 let chartWidth = context.root.visibleRect.size.width - chartPaddingX  
 let chartHeight = context.root.visibleRect.size.height - chartPaddingY;
 ```
@@ -148,8 +145,6 @@ Poté, co jsme si oveřili že vše vypadá OK, mohli bychom získat data z naš
 to uděláme smyčkou\(loop\).
 
 nejdříve najdeme nejvyšší hodnotu v poli, což uděláme jednoduše:
-
-
 
 ```js
 let max = 0;  
@@ -215,11 +210,9 @@ draw.lineTo(chartX + chartWidth, chartY + chartHeight);
 draw.stroke();
 ```
 
-  
 Zároveň, můžeme přidat i to, že se vykreslí "kolečka" na vrcholech. první část kódu známe
 
 ```js
-
  for(let i = Math.max(dataStorage.length - chartSize, 0), j = 0; i < dataStorage.length; i++, j++) {
         const x = chartX + (j / chartSize) * chartWidth;
         const y = chartY + chartHeight - (dataStorage[i] / max) * chartHeight;
@@ -233,16 +226,11 @@ Zároveň, můžeme přidat i to, že se vykreslí "kolečka" na vrcholech. prvn
     }
 ```
 
-  
-Pokud se zamyslíme tak zjistíme, že se hodnoty do grafu vykreslují ve chvíli, kdy se změní hodnota vstupu, což je poněkud k ničemu.  
-  
+Pokud se zamyslíme tak zjistíme, že se hodnoty do grafu vykreslují ve chvíli, kdy se změní hodnota vstupu, což je poněkud k ničemu.
+
 Vytvoříme si interval, který bude pravidělně číst a zapisovat do grafu:
 
-  
-
-
 ```js
-
 setInterval(function () {
     dataStorage.push(input.value); //přidáme hodnotu do pole
     context.root.invalidate(); //překreslíme widget
@@ -253,8 +241,9 @@ a listener smažeme, protože nechceme nadále zapisovat hodnoty pouze při změ
 
 ```js
 input.listenEvent("valueChanged", function (e) {});
-
 ```
 
 
+
+výsledný graf bude vypadat nějak takto ![](/assets/cede.png)
 
