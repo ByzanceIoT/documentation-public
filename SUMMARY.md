@@ -2,6 +2,7 @@
 
 ## First Steps
 
+* [Introduction](README.md)
 * [1. Welcome Page](articles/first-steps/welcome-page.md)
 * [2. Intrudoction \(Beginner's Guide\)](articles/first-steps/introduction.md)
 * [Oživení zařízení](articles/first-steps/oziveni-zarizeni.md)
@@ -44,7 +45,7 @@
 
 * [IODA](/articles/hardware/ioda.md)
   * [Datasheet](/articles/hardware/ioda/datasheet.md)
-    * [IODAG3E] (/articles/hardware/ioda/datasheet/iodag3e.md)
+    * [\[IODAG3E\] \(/articles/hardware/ioda/datasheet/iodag3e.md\)](articles/hardware/ioda/datasheet/iodag3e-articleshardwareiodadatasheetiodag3emd.md)
       * [Technické specifikace](/articles/hardware/ioda/datasheet/iodag3e/technicke-specifikace.md)
         * [Rozměry a váha](/articles/hardware/ioda/datasheet/iodag3e/technicke-specifikace/rozmery-a-vaha.md)
         * [Mezní hodnoty](/articles/hardware/ioda/datasheet/iodag3e/technicke-specifikace/mezni-hodnoty.md)
