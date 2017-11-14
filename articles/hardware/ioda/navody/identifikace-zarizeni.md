@@ -1,0 +1,1 @@
+# Identifikace zařízení
