@@ -1,0 +1,1 @@
+# Blokové schéma 
