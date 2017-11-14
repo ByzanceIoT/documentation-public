@@ -1,0 +1,1 @@
+# Upload programu do zařízení
