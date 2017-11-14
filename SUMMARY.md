@@ -62,8 +62,8 @@
       * [Revize](/articles/hardware/ioda/datasheet/iodag3e/revize.md)
   * [Návody](/articles/hardware/ioda/navody.md)
     * [Identifikace zařízení](articles/hardware/ioda/navody/identifikace-zarizeni.md)
-      * [Full ID](byzance_documentation/hardware_intro/features/identifikator-zarizeni.md)
-      * [Alias](byzance_documentation/hardware_intro/features/alias.md)
+      * [Full ID](articles/hardware/ioda/navody/identifikace-zarizeni/full-id.md)
+      * [Alias](articles/hardware/ioda/navody/identifikace-zarizeni/alias.md)
 * [DAPLink](articles/hardware/daplink.md)
 * [Přídavné moduly \(SHIELDS\)](/articles/hardware/pridavne-moduly.md)
 
