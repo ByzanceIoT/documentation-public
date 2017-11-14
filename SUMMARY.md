@@ -73,7 +73,6 @@
   * [RAM](byzance_documentation/hardware_intro/obecne/ram.md)
   * [Flash paměť](byzance_documentation/hardware_intro/obecne/flash-pamet.md)
     * [Žurnál](byzance_documentation/hardware_intro/obecne/flash-pamet/zurnal.md)
-  * [Ethernet](byzance_documentation/hardware_intro/obecne/ethernet.md)
 * [API](byzance_documentation/hardware_intro/api.md)
   * [Byzance API](byzance_documentation/hardware_intro/API/byzance-api.md)
   * [Byzance IO](byzance_documentation/hardware_intro/API/byzance-io.md)
@@ -127,9 +126,6 @@
     * [Lowpan BR](byzance_documentation/hardware_intro/features/lowpan-br.md)
     * [6lowpan](byzance_documentation/hardware_intro/features/6lowpan.md)
     * [Měření přenosové rychlosti dosahu](byzance_documentation/hardware_intro/features/mereni-prenosove-rychlosti-dosahu.md)
-* [Hardware](byzance_documentation/hardware_intro/hardware.md)
-  * [DAPLink](byzance_documentation/hardware_intro/hardware/daplink.md)
-  * [DevKit](byzance_documentation/hardware_intro/hardware/dk3g.md)
 
 ## Interní
 
