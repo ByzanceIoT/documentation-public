@@ -27,7 +27,8 @@ Tabulka oblastí je v následující tabulce
 
 Jak je patrné, oblasti .bss a .data \(veškeré globální a statické proměnné\) jsou v CCM. Nevýhodou tohoto řešení je fakt, že k těmto datům nemůže přistupovat DMA. Problém lze řešit tak, že data pro DMA budou dynamicky alokována v oblasti v heap.
 
-## FLASH
+## Externí paměť
 
+* 8MB \(64Mb\) externí flash paměť \(\[\[tutorial:nonvolatile\| dokumentace\]\]\) 
 
 
