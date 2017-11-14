@@ -1,8 +1,10 @@
 # Alias
 
-Alias slouží společně s [Full ID](full-id.md) k identifikaci zařízení. Narozdíl od Full ID, které je vždy unikátní z výroby a strojově dobře čitelné, Alias je nastavovaný uživatelsky pro lepší identifikaci člověkem. Při více zařízeních by měl být identifikátor Alias dostatečně popisný. Například při použití v osvětlení by měl Alias nést názvy typu "SVETLO-KUCHYN", "SVETLO-OBYVAK" a podobně. S identifikátorem Alias je možné pracovat několika způsoby.
+Alias slouží společně s [Full ID](full-id.md) k identifikaci zařízení.
 
-Omezení
+Narozdíl od Full ID, které je vždy unikátní z výroby a strojově dobře čitelné, Alias je nastavovaný uživatelsky pro lepší identifikaci člověkem. Při více zařízeních by měl být identifikátor Alias dostatečně popisný. Například při použití v osvětlení by měl Alias nést názvy typu "SVETLO-KUCHYN", "SVETLO-OBYVAK" a podobně. S identifikátorem Alias je možné pracovat několika způsoby.
+
+**Omezení:**
 
 * Alias může mít maximálně 63 znaků \(resp. 64 znaků včetně terminační nuly\)
 * Může nabývat libovolné ASCII hodnoty včetně mezer
