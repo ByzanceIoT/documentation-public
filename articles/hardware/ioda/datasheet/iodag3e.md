@@ -1,6 +1,6 @@
 # IODAG3E
 
-IODAG3E je zařízení které umožňuje vzdálené programování a zároveň funguje jako IoT brána komunikující s Cloudem skrze ethernetové rozhraní. Výsadou tohoto zařízení je velké množství výstupních a vstupních periférií, které umožňují vysokou variabilitu využití jak v průmyslu, tak domácí automatizaci či menších aplikacích.
+IODAG3E je zařízení které umožňuje vzdálené programování a zároveň funguje jako IoT brána komunikující s Cloudem skrze ethernetové rozhraní. Vlastností tohoto zařízení je velké množství výstupních a vstupních periférií, které umožňují vysokou variabilitu využití jak v průmyslu, tak domácí automatizaci či v menších aplikacích.
 
 
 ![ioda_board](/images/ioda_board_500.png)
@@ -12,12 +12,12 @@ IODAG3E je zařízení které umožňuje vzdálené programování a zároveň f
 * 2 MB Flash
 * 180 MHz
 * 192 kB SRAM \(včetně 64 KB CCM\)
-* Programování pomocí SWD
+* Programování pomocí SWD nebo z Cloudu
 * MAC adresa
 
 ## Periférie 
 
-* Etherent
+* Ethernet
 * Lowpan
 * GPIO Header (41 pinů) 
 * A/D, D/A převodníky
@@ -30,15 +30,13 @@ IODAG3E je zařízení které umožňuje vzdálené programování a zároveň f
 
 ## Další funkce
 
-* Programování v C++ a online v portálu Byzance
-* Integrované komunikační rozhraní s portálem
+* Online programování v C/C++ z webové aplikace Byzance
 * Vzdálená aktualizace uživatelského programu
 * Vestavěný webový server
 * Konektor na uchycení Lowpan modulu WEXP pro bezdrátovou komunikaci
-* Low power manegment
-* CRC výpočetní jednotka
-* Cryptografická hardwarová akcelerace
-* watchdog
+* Low power management
+* Hardwarová akcelerace CRC, šifrování
+* Hardwarový watchdog
 * Automatické zálohování uživatelského programu a jeho obnova při selhání
 * Možnost vestavění na vlastní PCB
 
