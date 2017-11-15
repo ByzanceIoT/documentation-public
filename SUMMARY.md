@@ -16,11 +16,10 @@
 * [MBED API ](programovani/mbed-api.md)
   * [Vstupy a výstupy ](programovani/mbed-api/vstupy-a-vystupy.md)
   * [Komunikační rozhraní](programovani/mbed-api/komunikacni-rozhrani.md)
-* [Byzance API ](programovani/byzance-api.md)
+* [Byzance Hardware API ](programovani/byzance-api.md)
   * [Funkce](programovani/byzance-api/funkce.md)
   * [Uživatelská makra](programovani/byzance-api/uzivatelska-makra.md)
   * [Digitální vstupy a výstupy ](programovani/byzance-api/digitalni-vstupy-a-vystupy.md)
-* [Programování funkčních bloků](programovani/programovani-funkcnich-bloku.md)
 * [Ukázkové programy ](programovani/ukazkove-programy.md)
 
 ## Portal Tools
@@ -40,6 +39,7 @@
 
 * [Cloud](byzance_documentation/cloud_intro.md)
 * [Instancies](byzance_documentation/instancies_intro.md)
+* [Rest-Api](byzance_documentation/instancies_intro/rest-api.md)
 
 ## Hardware
 
@@ -139,23 +139,6 @@
   * [Update modulu ESP8266 v Iodovi](interni/generace-g2/update-modulu-esp8266-v-iodovi.md)
   * [NRF905 timing](interni/generace-g2/nrf905-timing.md)
 * [Coding style](interni/coding-style.md)
-* [Homer](interni/homer.md)
-  * [Instalace homer-js na RPi](interni/homer/instalace-homer-js-na-rpi.md)
-  * [Instalace homer-js na Azure ](interni/homer/instalace-homer-js-na-azure.md)
-  * [Vývojářské příkazy pro Homera \(GRID\)](interni/homer/vyvojarske-prikazy-pro-homera-grid.md)
-  * [Vývojářské příkazy pro Homera \(HW\)](interni/homer/vyvojarske-prikazy-pro-homera-hw.md)
-* [Tyrion](interni/tyrion.md)
-  * [Základní grafické schéma](interni/zakladni-graficke-schema.md)
-  * [Základní dokumentace](interni/zakladni-dokumentace.md)
-    * [Pro nové členy týmu](interni/zakladni-dokumentace/pro-nove-cleny-tymu.md)
-    * [Transformace Json do Modelu \(objektu\)](interni/zakladni-dokumentace/transformace-json-do-modelu-objektu.md)
-    * [Logování chyb](interni/zakladni-dokumentace/logovani-chyb.md)
-    * [Centrum notifikací](interni/zakladni-dokumentace/centrum-notifikaci.md)
-    * [Oprávnění a validace uživatele](interni/zakladni-dokumentace/opravneni-a-validace-uzivatele.md)
-    * [Filtrování velkých Listů](interni/zakladni-dokumentace/filtrovani-velkych-listu.md)
-  * [Websoketová komunikace Tyrion - Homer](interni/websoketova-komunikace-tyrion-homer.md)
-  * [Weboketová komunikace grid - Tyrion](interni/weboketova-komunikace-grid-tyrion.md)
-  * [Kompilace code-serveru ](interni/kompilace-code-serveru.md)
 
 ## General
 
