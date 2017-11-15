@@ -467,6 +467,33 @@ TO DO
 }
 ```
 
+## Subtopic "netsource"
+
+Přistupuje se do něj takto`XXXXXXXXXXXXXXXXXXXXXXXX/settings_in/netsource`
+
+TO DO
+
+```
+{
+"mid" : "SOME ID",
+"value" : SOME NUMBER
+}
+```
+
+**Reply:**
+
+```
+{
+"mid" : "SOME ID",
+"status" : "ok/error",
+"error" : "SOME ERROR MESSAGE", // pouze pokud je status == error
+"error_code" : SOME NUMBER, // pouze pokud je status == error
+"value" : SOME NUMBER // pouze pokud je status == ok
+}
+```
+
+
+
 ## Chybové stavy: {#chybove_stavy}
 
 Každý příkaz může selhat s určitým chybovým kódem. Seznam takovýchto chybových kódů je v
