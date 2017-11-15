@@ -293,30 +293,179 @@ Příkaz slouží k nastavení portu pro[webové rozhraní](https://wiki.byzance
 
 ## Subtopic "blreport"
 
+Přistupuje se do něj takto`XXXXXXXXXXXXXXXXXXXXXXXX/settings_in/blreport`
+
 TO DO
+
+```
+{
+"mid" : "SOME ID",
+"value" : SOME NUMBER
+}
+```
+
+**Reply:**
+
+```
+{
+"mid" : "SOME ID",
+"status" : "ok/error",
+"error" : "SOME ERROR MESSAGE", // pouze pokud je status == error
+"error_code" : SOME NUMBER, // pouze pokud je status == error
+"value" : SOME NUMBER // pouze pokud je status == ok
+}
+```
 
 ## Subtopic "wdenable"
 
+Přistupuje se do něj takto`XXXXXXXXXXXXXXXXXXXXXXXX/settings_in/wdenable`
+
 TO DO
+
+```
+{
+"mid" : "SOME ID",
+"value" : SOME NUMBER
+}
+```
+
+**Reply:**
+
+```
+{
+"mid" : "SOME ID",
+"status" : "ok/error",
+"error" : "SOME ERROR MESSAGE", // pouze pokud je status == error
+"error_code" : SOME NUMBER, // pouze pokud je status == error
+"value" : SOME NUMBER // pouze pokud je status == ok
+}
+```
 
 ## Subtopic "wdtime" 
 
+Přistupuje se do něj takto`XXXXXXXXXXXXXXXXXXXXXXXX/settings_in/wdtime`
+
 TO DO
+
+```
+{
+"mid" : "SOME ID",
+"value" : SOME NUMBER
+}
+```
+
+**Reply:**
+
+```
+{
+"mid" : "SOME ID",
+"status" : "ok/error",
+"error" : "SOME ERROR MESSAGE", // pouze pokud je status == error
+"error_code" : SOME NUMBER, // pouze pokud je status == error
+"value" : SOME NUMBER // pouze pokud je status == ok
+}
+```
 
 ## Subtopic "backuptime"
 
+Přistupuje se do něj takto`XXXXXXXXXXXXXXXXXXXXXXXX/settings_in/backuptime`
+
 TO DO
+
+```
+{
+"mid" : "SOME ID",
+"value" : SOME NUMBER
+}
+```
+
+**Reply:**
+
+```
+{
+"mid" : "SOME ID",
+"status" : "ok/error",
+"error" : "SOME ERROR MESSAGE", // pouze pokud je status == error
+"error_code" : SOME NUMBER, // pouze pokud je status == error
+"value" : SOME NUMBER // pouze pokud je status == ok
+}
+```
+
 
 ## Subtopic "timeoffset"
 
+Přistupuje se do něj takto`XXXXXXXXXXXXXXXXXXXXXXXX/settings_in/timeoffset`
+
 TO DO 
+
+```
+{
+"mid" : "SOME ID",
+"value" : SOME NUMBER
+}
+```
+
+**Reply:**
+
+```
+{
+"mid" : "SOME ID",
+"status" : "ok/error",
+"error" : "SOME ERROR MESSAGE", // pouze pokud je status == error
+"error_code" : SOME NUMBER, // pouze pokud je status == error
+"value" : SOME NUMBER // pouze pokud je status == ok
+}
+```
+
 ## Subtopic "lowpanbr"
 
+Přistupuje se do něj takto`XXXXXXXXXXXXXXXXXXXXXXXX/settings_in/lowpanbr`
+
 TO DO
+
+```
+{
+"mid" : "SOME ID",
+"value" : SOME NUMBER
+}
+```
+
+**Reply:**
+
+```
+{
+"mid" : "SOME ID",
+"status" : "ok/error",
+"error" : "SOME ERROR MESSAGE", // pouze pokud je status == error
+"error_code" : SOME NUMBER, // pouze pokud je status == error
+"value" : SOME NUMBER // pouze pokud je status == ok
+}
+```
 
 ## Subtopic "autojump"
 
+Přistupuje se do něj takto`XXXXXXXXXXXXXXXXXXXXXXXX/settings_in/autojump`
+
 TO DO
+
+```
+{
+"mid" : "SOME ID",
+"value" : SOME NUMBER
+}
+```
+
+**Reply:**
+
+```
+{
+"mid" : "SOME ID",
+"status" : "ok/error",
+"error" : "SOME ERROR MESSAGE", // pouze pokud je status == error
+"error_code" : SOME NUMBER, // pouze pokud je status == error
+"value" : SOME NUMBER // pouze pokud je status == ok
+}
+```
 
 ## Chybové stavy: {#chybove_stavy}
 
