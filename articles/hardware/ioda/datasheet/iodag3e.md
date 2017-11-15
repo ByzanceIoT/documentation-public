@@ -4,7 +4,9 @@ IODAG3E je platforma sloužící pro přímou implementaci funkčního uživatel
 
 ## Hlavní funkce
 
+ * Integrované komunikační rozhraní s portálem
  * Vestavěný webový server
+ * 
 
 ## Mikroprocesor 
 
@@ -32,6 +34,7 @@ IODAG3E je platforma sloužící pro přímou implementaci funkčního uživatel
 * Low power manegment
 * CRC výpočetní jednotka
 * Cryptografická hardwarová akcelerace
+* watchdog
 
 ## Možnosti napájení 
 
