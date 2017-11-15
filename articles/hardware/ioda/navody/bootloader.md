@@ -4,55 +4,56 @@ Bootloader je firmware nahraný v zařízení Byzance, které udržuje **základ
 
 **Overview**
 
-1. [Spuštění Bootloaderu](zakladni-prehled)
-  1. [Činnost bootloaderu](#činnost-bootloaderu)
-   2. [Mód JUMP](#mód-jump)
-   3. [Mód FLASH](#mód-flash)
-2. [Command režim](#command-režim)
-3. [Default Configuration Values](#default-configuration-values)
+1. Základní přehled
+2. Činnost bootloaderu
+  * Mód JUMP
+  * Mód FLASH
+  * Mód RESTORE
+  * Mód COMMANDS
+  * Mód FACTORY RESET
+2. Command režim
+3. Default Configuration Values
 
 ## Základní Přehled
 
-FIXME jak ho vyvolat?!
-
-Vstup do bootloaderu je vizuálně signalizován [Led modulem TO DO odkaz na ledmodul](odkaz na ledmodul).
-
 Každé zařízení má v sobě nahraných více do jisté míry nezávislých programů. Typicky jde o tyto:
 
-* bootloader,
-* hlavní program,
-* záložní program,
-* programový buffer.
+* Bootloader
+* Hlavní program
+* Záložní program
+* Programový buffer
 
-Každý program má ve FLASH paměti vyhrazeno pevné místo, tj. má [danou počáteční adresu a max. velikost - TO DO odkaz](ODKAZ na adresaci).
+Každý program má ve FLASH paměti vyhrazeno pevné místo, tj. má danou počáteční adresu a max. velikost viz [adresaci paměti](ODKAZ na adresaci). 
 
-### Činnost bootloaderu
 
-Po zapnutí napájení zařízení vždy začne vykonávat instrukce z bootloaderu. Úkolem bootloaderu je zajistit aktualizaci hlavního programu zařízení, obnovení v případě nefunkčního hlavního firmware a nastavení některých konfiguračních dat.
+
+## Činnost bootloaderu
+
+Po zapnutí napájení zařízení vždy začne vykonávat instrukce z bootloaderu. Úkolem bootloaderu je zajistit aktualizaci hlavního programu zařízení, obnovení v případě nefunkčního hlavního firmware a nastavení některých konfiguračních dat. Bootloader může vykonávat různé funkce na základě módu ve kterém se nachází.
 
 ### Mód JUMP
 
-Pokud není nastaven jiný mód, bootloader se sám přepne do módu JUMP. Ten sestává z několika kroků:
+Pokud není speciálně nastaven jiný mód, bootloader se sám přepne do módu JUMP. Ten sestává z několika kroků:
 
-* Kontrola, jestli je přítomna hlavní aplikace - pokud není, dojde k přepnutí do command\_mode.
-* Zapnutí watchdogu \(pokud má být zapnut\) a případné nastavení na příslušnou hodnotu. Více v sekci [watchdog](link na watchdog).
+* Kontrola přitomnosti hlavní aplikace. Pokud hlavní aplikace není dostupná, dojde k přepnutí do command reřimu.
+* Spuštění watchdogu \(Pokud je nastaveno\) a případné nastavení na příslušnou hodnotu. Blíže vysvětleno v sekci [watchdog](link na watchdog).
 * **Skok do hlavní aplikace**
 
 ### Mód FLASH
 
 Do módu FLASH bootloader automaticky přechází, pokud je zapnutý ''flashflag'' \(více viz [aktualizace firmware TO DO](odkaz aktualizace firmware)\). V takovém případě potom následují tyto kroky:
 
-* načtení struktury s informacemi o novém firmware,
-* validace a případná oprava velikosti, je-li to možné a smyslné,
-* vymazání interní paměti
-* překopírování všech částí binárky z externí paměti do mikrokontroléru
-* aktualizace informací v příslušné struktuře o novém firmware v mikrokontroléru
+* Načtení struktury s informacemi o novém firmware
+* Validace a případná oprava velikosti, je-li to možné
+* Vymazání interní paměti
+* Překopírování všech částí binárky z externí paměti do mikrokontroléru
+* Aktualizace informací o novém firmware v mikrokontroléru
 
 Pokud všechny tyto kroky proběhnou v pořádku, následuje
 
-* vypnutí ''flashflag''
-* zapnutí ''launched'', který by se měl v naběhnutém firmware vypnout a pokud tak nenastane \(binárka je vadná\), \[\[feature:watchdog\| watchdog\]\]  restartuje mikrokontrolér a spustí obnovu poslední funkční binárky vyrobené pomocí procesem \[\[feature:autobackup\|autobackup\]\] 
-* vypnutí oprávnění udělené do proměnné ''trusted'', díky čemuž se firmware označí za potencionálně nefunkční. Oprávnění se zvýší až pokud běžící firmware splní příslušná kritéria procesu \[\[feature:autobackup\| autobackup\]\], kdy se automaticky může spustit záloha.
+* Vypnutí ''flashflag''
+* Zapnutí ''launched'', který slouží ke kontrole funkčnosti nového firmware. Nový firmware tento flag opětovně vypne a tím potvrdí svou funkčnost. Pokud tak nenasatane [watchdog](ODKAZ WATCHDOG)  restartuje mikrokontrolér a spustí poslední funkční verzi firmware pomocí funkce [autobackup](Odkaz na autobackup) 
+* Vypnutí oprávnění uděleného v proměnné ''trusted'', díky čemuž se firmware označí za potencionálně nefunkční. Firmware bude znovu označený za ověřený poté, co splní příslušná kritéria procesu [autobackup](odkaz autobackup). Poté  co je nový firmware označen flagem "trusted" záložní firmware je přepsan firmwarem aktuálním.
 
 ### Mód RESTORE
 
@@ -62,10 +63,10 @@ Tento mód je velmi podobný módu FLASH. Pokud bootloader detekuje zapnutý fla
 
 Do módu COMMANDS je možné vstoupit několika způsoby
 
-* první spuštění bootloaderu na novém mikrokontroléru
-* kombinací tlačítek \(viz [bootloader command režim TO DO ](odkaz na bootloader comand režim)\)
-* chybějící hlavní aplikace
-* bootloader není nakonfigurován \(vypnutá proměnná ''configured'' v [command režimu TO DO](odkaz na command režim).
+* První spuštění bootloaderu na novém mikrokontroléru
+* Kombinací tlačítek \(viz [command režim](odkaz na bootloader comand režim)\)
+* Chybí hlavní aplikace
+* Bootloader není nakonfigurován \(vypnutá proměnná ''configured'' v [command režimu TO DO](odkaz na command režim).
 
 ### Mód WIFIAP
 
@@ -77,12 +78,14 @@ Do módu FACTORY RESET se může dostat bootloader tak, že uživatel stiskne z�
 
 ### Proces aktualizace hlavního programu v Device
 
+TO DO
+
 FIXME aktuálně nevyužito a do budoucna device asi dostanou extmem a budou normálně pracovat s bufferem, je to bezpečnější a systematičtější
 
 Terminologie:
 
-* **aktuální** program je ten, který naposledy běžel z interní paměti Yody
-* **nový** program je ten, který v Yodovi zatím neběžel
+* **aktuální** program je ten, který naposledy běžel z interní paměti Iody
+* **nový** program je ten, který v Iodovi zatím neběžel
 
 * Bootolader provede načtení parametrů **nového** programu z konfig. paměti a provedene validaci.
 
@@ -92,19 +95,22 @@ Terminologie:
 
 * Bootloader prohodí **aktuální** program s **novým** programem. Tím se z **nového** programu stane **aktuální**
 
-* Zapíše se informace o **aktuálním** programu v Yodovi do konfigurační paměti.
+* Zapíše se informace o **aktuálním** programu v Iodovi do konfigurační paměti.
 
 * Na závěr bootloader skočí na začátek **aktuálního** programu a začne ho vykonávat.
 
 ### Aktualizace firmware
 
 Aktualizace firmware je zdokumentována v sekci [Aktualizace firmware TO DO ](odkaz na aktualizaci firmware).  
-Sestává ze 2 sad kroků
+Skládá se z dvou částí.
 
-* **upload**, kdy se binárka přenese z Homera do Yody a uloží se do jeho externí paměti.
-* **update**, kdy je yodovi specifikováno, co s danou binárkou má provést \(aktualizuje svůj firmware, nebo několik zařízení atd..\)
+* **upload**, kdy se binárka přenese z portálu do IODY a uloží se do jeho externí paměti.
+* **update**, kdy je IODOvi specifikováno, co s danou binárkou má provést \(aktualizuje svůj firmware, nebo několik zařízení atd..\)
 
 ### Vývojový diagram
+
+
+
 
 FIXME Zde bude obrázkový vývojový diagram co a jak
 

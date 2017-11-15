@@ -41,31 +41,6 @@
 * [Instancies](byzance_documentation/instancies_intro.md)
 * [Rest-Api](byzance_documentation/instancies_intro/rest-api.md)
 
-## Hardware
-
-* [Featury](articles/hardware/featury.md)
-  * [Bootloader](/articles/hardware/ioda/navody/bootloader.md)
-  * [Identifikace zařízení](articles/hardware/ioda/navody/identifikace-zarizeni.md)
-  * [Práce s datem a časem \(RTC\)](/articles/hardware/ioda/navody/prace-s-datem-a-casem-rtc.md)
-* [Návody](articles/hardware/navody.md)
-* [Datasheety ](articles/hardware/datasheety.md)
-  * [IODA](/articles/hardware/ioda.md)
-    * [IODAG3E](articles/hardware/ioda/datasheet/iodag3e.md)
-      * [Technické specifikace](/articles/hardware/ioda/datasheet/iodag3e/technicke-specifikace.md)
-      * [Rozhraní a periférie](/articles/hardware/ioda/datasheet/iodag3e/rozhrani-a-periferie.md)
-        * [Blokové schéma](/articles/hardware/ioda/datasheet/iodag3e/rozhrani-a-periferie/blokove-schema.md)
-        * [Metody napájení](/articles/hardware/ioda/datasheet/iodag3e/rozhrani-a-periferie/napajeni.md)
-        * [GPIO a sběrnice](/articles/hardware/ioda/datasheet/iodag3e/rozhrani-a-periferie/gpio-a-periferie.md)
-        * [Ethernet](/articles/hardware/ioda/datasheet/iodag3e/rozhrani-a-periferie/ethernet.md)
-        * [WEXP](/articles/hardware/ioda/datasheet/iodag3e/rozhrani-a-periferie/wexp.md)
-      * [Pinout](/articles/hardware/ioda/datasheet/iodag3e/pinout.md)
-      * [Rozložení a využití paměti](/articles/hardware/ioda/datasheet/iodag3e/rozlozeni-a-vyuziti-pameti.md)
-      * [LED signalizace](/articles/hardware/ioda/datasheet/iodag3e/led-signalizace.md)
-      * [Schémata](/articles/hardware/ioda/datasheet/iodag3e/schemata.md)
-      * [Revize](/articles/hardware/ioda/datasheet/iodag3e/revize.md)
-  * [DAPLink](articles/hardware/daplink.md)
-  * [Přídavné moduly \(SHIELDS\)](/articles/hardware/pridavne-moduly.md)
-
 ## Nezařazené
 
 * [API](byzance_documentation/hardware_intro/api.md)
@@ -90,7 +65,6 @@
   * [Revize](byzance_documentation/hardware_intro/features/revize.md)
   * [Události](byzance_documentation/hardware_intro/features/udalosti.md)
   * [Vytížení mikrokontroléru](byzance_documentation/hardware_intro/features/vytizeni-mikrokontroleru.md)
-  * [Watchdog](byzance_documentation/hardware_intro/features/watchdog.md)
   * [Zdroj internetu](byzance_documentation/hardware_intro/features/zdroj-internetu.md)
   * [LED modul](byzance_documentation/hardware_intro/features/led-modul.md)
   * [Error kódy](byzance_documentation/hardware_intro/features/error-kody.md)
@@ -112,6 +86,32 @@
     * [Upload kódu z konzole](byzance_documentation/hardware_intro/navody/offline-programovani/upload-kodu-z-konzole.md)
   * [Interní paměť mikrokontroléru](byzance_documentation/hardware_intro/navody/interni-pamet-mikrokontroleru.md)
   * [Externí paměť mikrokontroléru](byzance_documentation/hardware_intro/navody/externi-pamet-mikrokontroleru.md)
+
+## Hardware
+
+* [Featury](articles/hardware/featury.md)
+  * [Bootloader a Command režim](/articles/hardware/ioda/navody/bootloader.md)
+  * [Identifikace zařízení](articles/hardware/ioda/navody/identifikace-zarizeni.md)
+  * [Práce s datem a časem \(RTC\)](/articles/hardware/ioda/navody/prace-s-datem-a-casem-rtc.md)
+  * [Watchdog](byzance_documentation/hardware_intro/features/watchdog.md)
+* [Návody](articles/hardware/navody.md)
+* [Datasheety ](articles/hardware/datasheety.md)
+  * [IODA](/articles/hardware/ioda.md)
+    * [IODAG3E](articles/hardware/ioda/datasheet/iodag3e.md)
+      * [Technické specifikace](/articles/hardware/ioda/datasheet/iodag3e/technicke-specifikace.md)
+      * [Rozhraní a periférie](/articles/hardware/ioda/datasheet/iodag3e/rozhrani-a-periferie.md)
+        * [Blokové schéma](/articles/hardware/ioda/datasheet/iodag3e/rozhrani-a-periferie/blokove-schema.md)
+        * [Metody napájení](/articles/hardware/ioda/datasheet/iodag3e/rozhrani-a-periferie/napajeni.md)
+        * [GPIO a sběrnice](/articles/hardware/ioda/datasheet/iodag3e/rozhrani-a-periferie/gpio-a-periferie.md)
+        * [Ethernet](/articles/hardware/ioda/datasheet/iodag3e/rozhrani-a-periferie/ethernet.md)
+        * [WEXP](/articles/hardware/ioda/datasheet/iodag3e/rozhrani-a-periferie/wexp.md)
+      * [Pinout](/articles/hardware/ioda/datasheet/iodag3e/pinout.md)
+      * [Rozložení a využití paměti](/articles/hardware/ioda/datasheet/iodag3e/rozlozeni-a-vyuziti-pameti.md)
+      * [LED signalizace](/articles/hardware/ioda/datasheet/iodag3e/led-signalizace.md)
+      * [Schémata](/articles/hardware/ioda/datasheet/iodag3e/schemata.md)
+      * [Revize](/articles/hardware/ioda/datasheet/iodag3e/revize.md)
+  * [DAPLink](articles/hardware/daplink.md)
+  * [Přídavné moduly \(SHIELDS\)](/articles/hardware/pridavne-moduly.md)
 
 ## Interní
 
