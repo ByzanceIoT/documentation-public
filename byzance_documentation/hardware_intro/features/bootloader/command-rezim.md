@@ -2,10 +2,10 @@
 
 Do command režimu bootloaderu je možno vstopit následujícím způsobem
 
- 1. podržet RESET a USER tlačítko dohromady
- 2. pustit RESET tlačítko
- 3. počkat několik sekund, než zhasne červená LED
- 4. pustit USER tlačítko
+1. podržet RESET a USER tlačítko dohromady
+2. pustit RESET tlačítko
+3. počkat několik sekund, než zhasne červená LED
+4. pustit USER tlačítko
 
 Při prvním spuštění nebo při položce configured=0 bootloader skáče do command režimu automaticky.
 
@@ -60,7 +60,8 @@ Při prvním spuštění nebo při položce configured=0 bootloader skáče do c
 
 * ''_timestamp_'' - časové razítko pro obvod reálného času \(RTC\). Lze vyčíst funkcemi pro \[\[tutorial:timestamp\|práci s časem\]\].
 
-* ''_backuptime_'' - Nastavení času, po kterém se spustí \[\[feature:autobackup\|automatická záloha firmware\]\]. 
+* ''_backuptime_'' - Nastavení času, po kterém se spustí \[\[feature:autobackup\|automatická záloha firmware\]\].
+
 * ''_webview_'' - Zapnutí nebo vypnutí \[\[tutorial:webview\|webového rozhraní\]\]
 * ''_webport_'' - Port, na které poběží \[\[tutorial:webview\|webové rozhraní\]\]
 * ''_timeoffset_'' - Slouží pro lokalizovanou \[\[tutorial:timestamp\|práci s časem\]\]. Nastavení offsetu lokálního času od UTC času.

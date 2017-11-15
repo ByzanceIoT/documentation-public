@@ -47,8 +47,6 @@
   * [Datasheet](/articles/hardware/ioda/datasheet.md)
     * [IODAG3E](articles/hardware/ioda/datasheet/iodag3e.md)
       * [Technické specifikace](/articles/hardware/ioda/datasheet/iodag3e/technicke-specifikace.md)
-        * [Rozměry a váha](/articles/hardware/ioda/datasheet/iodag3e/technicke-specifikace/rozmery-a-vaha.md)
-        * [Mezní hodnoty](/articles/hardware/ioda/datasheet/iodag3e/technicke-specifikace/mezni-hodnoty.md)
       * [Rozhraní a periférie](/articles/hardware/ioda/datasheet/iodag3e/rozhrani-a-periferie.md)
         * [Blokové schéma](/articles/hardware/ioda/datasheet/iodag3e/rozhrani-a-periferie/blokove-schema.md)
         * [Metody napájení](/articles/hardware/ioda/datasheet/iodag3e/rozhrani-a-periferie/napajeni.md)
