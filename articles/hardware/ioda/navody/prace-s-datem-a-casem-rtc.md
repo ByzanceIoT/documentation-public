@@ -1,8 +1,8 @@
 # Práce s datem a časem \(RTC\)
 
-Každé Byzance zařízení je vybaveno obvodem pro udržování reálného času \(RTC\). Jeho obsluha je poměrně triviální a dodržuje [standardy C++](http://www.cplusplus.com/reference/ctime/time/).
+Každé Byzance zařízení je vybaveno obvodem pro udržování reálného času \(RTC\). Jeho obsluha  a dodržuje [standardy C++](http://www.cplusplus.com/reference/ctime/time/).
 
-Čas je synchronizován automaticky při připojení k Homerovi. Toto je možné vypnout v [bootloaderu](/byzance_documentation/hardware_intro/features/bootloader.md).
+Čas je synchronizován automaticky při připojení k portálu. Toto je možné vypnout v [bootloaderu](/byzance_documentation/hardware_intro/features/bootloader.md).
 
 Základní jednotkou je Unixové časové razítko, které reprezentuje počet sekund, které uplynuly od 1.1. 1970. K převodu jednotek je možné využít například jeden z mnoha [online nástrojů](http://www.onlineconversion.com/unix_time.htm).
 
