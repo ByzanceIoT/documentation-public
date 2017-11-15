@@ -751,7 +751,7 @@ TO DO
 "status" : "ok/error",
 "error" : "SOME ERROR MESSAGE", // pouze pokud je status == error
 "error_code" : SOME NUMBER, // pouze pokud je status == error
-"autojump" : "SOME REVISION" // pouze pokud je status == ok
+"netsource" : "SOME REVISION" // pouze pokud je status == ok
 }
 ```
 
