@@ -12,38 +12,44 @@ IODAG3E je platforma sloužící pro přímou implementaci funkčního uživatel
 
 ## Periférie 
 
-* GPIO Header  
+* Etherent
+* GPIO Header (41 pinů) 
 * SPI 
 * CAN
-* 
-*
-*
+* UART
+* I2C
+* SAI
+* USB 2.0
 
-### Uživatel
+## Další funkce
+
+* 2x 12-bitový A/D převodník
+* 8x D/A převodník
+* Low power manegment
+* CRC výpočetní jednotka
+* Cryptografická hardwarová akcelerace
+
+## Možnosti napájení 
+
+* MicroUSB 
+* Externí zdroj 6-60V AC/DC
+* POE (aktivní/pasivní)
+* Napájení z baterie
+
+## Tlačítka 
 
 * Tlačítko pro RESET
 * Tlačítko USER
-* RGB LED pro signalizaci
 
+## Led signalizace 
 
+* RGB LED modul
 
-### Rozměry a hmotnost
-
-* Rozměry samotného PCB jsou 41x63mm
-
-* Rozměry včetně přečnívajícího RJ45, napájecího a USB konektoru jsou 42,5x65,5mm
-
-* Celková výška včetně konektorů 11,5mm, výška od horní strany PCB 8,5mm
-
-* Váha 60g \(hrubý odhad\)
-
-* Rozměrové náčrtky:
-
-![Rozměry deska](/images/hardware/IODAG3E_170725_dimensions.png)
-![Rozměry Konektory](/images/hardware/IODAG3E_170725_connectors.png)
-
-
-
+## Rozměry a hmotnost
+  
+ * Rozměry desky včetně konektorů : 42,5 x 65,5 mm
+ * Výška včetně konektorů: 11.5 mm
+ * Hmotnost: 60g
 
 ### Software
 
