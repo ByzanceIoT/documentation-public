@@ -730,6 +730,33 @@ TO DO
 }
 ```
 
+## Informace o "netsource"
+
+Přistupuje se do něj takto
+''XXXXXXXXXXXXXXXXXXXXXXXX/info_in/netsource''
+
+
+TO DO
+
+**Request:**
+```
+{
+"mid" : "SOME ID"
+}
+```
+**Reply:**
+```
+{
+"mid" : "SOME ID"
+"status" : "ok/error",
+"error" : "SOME ERROR MESSAGE", // pouze pokud je status == error
+"error_code" : SOME NUMBER, // pouze pokud je status == error
+"autojump" : "SOME REVISION" // pouze pokud je status == ok
+}
+```
+
+
+
 ### Chybové stavy 
 
 Každý příkaz může selhat s určitým chybovým kódem. Seznam takovýchto chybových kódů je v [[errorcodes:errorcodes|přehledu chybových kódů]].
