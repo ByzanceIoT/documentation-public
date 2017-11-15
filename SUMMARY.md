@@ -112,12 +112,6 @@
     * [Upload kódu z konzole](byzance_documentation/hardware_intro/navody/offline-programovani/upload-kodu-z-konzole.md)
   * [Interní paměť mikrokontroléru](byzance_documentation/hardware_intro/navody/interni-pamet-mikrokontroleru.md)
   * [Externí paměť mikrokontroléru](byzance_documentation/hardware_intro/navody/externi-pamet-mikrokontroleru.md)
-  * [MQTT komunikace](byzance_documentation/hardware_intro/navody/mqtt-komunikace.md)
-    * [Byzance topicy ](byzance_documentation/hardware_intro/navody/mqtt-komunikace/byzance-topicy.md)
-    * [Topic Commands](byzance_documentation/hardware_intro/navody/mqtt-komunikace/mqtt-topic-commands.md)
-    * [Topic settings](byzance_documentation/hardware_intro/navody/mqtt-komunikace/mqtt-topic-settings.md)
-    * [Topic Info](byzance_documentation/hardware_intro/navody/mqtt-komunikace/topic-info.md)
-    * [Topic Report ](byzance_documentation/hardware_intro/navody/mqtt-komunikace/topic-report.md)
 
 ## Interní
 
@@ -126,6 +120,12 @@
 * [hardware](interni/hardware.md)
   * [Seznam hardware](interni/hardware/seznam-hardware.md)
   * [Aktualizace firmware](interni/hardware/aktualizace-firmware.md)
+  * [MQTT komunikace](byzance_documentation/hardware_intro/navody/mqtt-komunikace.md)
+    * [Byzance topicy ](byzance_documentation/hardware_intro/navody/mqtt-komunikace/byzance-topicy.md)
+    * [Topic Commands](byzance_documentation/hardware_intro/navody/mqtt-komunikace/mqtt-topic-commands.md)
+    * [Topic settings](byzance_documentation/hardware_intro/navody/mqtt-komunikace/mqtt-topic-settings.md)
+    * [Topic Info](byzance_documentation/hardware_intro/navody/mqtt-komunikace/topic-info.md)
+    * [Topic Report ](byzance_documentation/hardware_intro/navody/mqtt-komunikace/topic-report.md)
   * [Výsledky testů pingu na IODA](interni/hardware/vysledky-testu-pingu-na-ioda.md)
 * [Generace G2](interni/generace-g2.md)
   * [Update modulu ESP8266 v Iodovi](interni/generace-g2/update-modulu-esp8266-v-iodovi.md)

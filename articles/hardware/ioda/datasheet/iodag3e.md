@@ -2,8 +2,22 @@
 
 IODAG3E je platforma sloužící pro přímou implementaci funkčního uživatelského programu a zároveň funguje jako IoT Gateway přímo komunikující s Cloudem skrze ethernetové rozhraní. Výsadou tohoto zařízení je velké množství výstupních a vstupních periférií, které umožňují vysokou variabilitu využití jak v průmyslu, tak domácí automatizaci či menších aplikacích.
 
+## Mikroprocesor 
 
+* STM32F437IIH6 \([Datasheet](http://www.st.com/content/ccc/resource/technical/document/datasheet/fd/8c/0a/19/13/8f/41/99/DM00077036.pdf/files/DM00077036.pdf/jcr:content/translations/en.DM00077036.pdf)\)
+* 2 MB Flash
+* 180 MHz
+* 192 kB SRAM \(včetně 64 KB CCM\)
+* Programování pomocí SWD
 
+## Periférie 
+
+* GPIO Header  
+* SPI 
+* CAN
+* 
+*
+*
 
 ### Uživatel
 
