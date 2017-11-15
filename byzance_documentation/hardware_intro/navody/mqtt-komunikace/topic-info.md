@@ -21,7 +21,7 @@ Pokud vše proběhne v pořádku, v odpovědi se vytvoří label „status“, k
 * Pokud label „status“ nabývá hodnoty „error“, vytvoří se nový label „error“, v němž je popis chyby, která nastala.
 * Pokud label „status“ nabývá hodnoty „ok“, vytvoří se ostatní labely podle kontkrétní informace, která je zjišťována.
 
-### Informace o "target"
+## Informace o "target"
 
 Přistupuje se do něj takto`XXXXXXXXXXXXXXXXXXXXXXXX/info_in/target`
 
@@ -49,7 +49,7 @@ Seznam targetů je možné nalézt na [přehledu targetů](https://wiki.byzance.
  }
 ```
 
-### Informace o "cpuload"
+## Informace o "cpuload"
 
 Přistupuje se do něj takto`XXXXXXXXXXXXXXXXXXXXXXXX/info_in/cpuload`
 
@@ -77,7 +77,7 @@ Topic slouží k zjištění využití proceosoru v zařízení. Cpuload je orie
 
 
 
-### Informace o "version"
+## Informace o "version"
 
 Přistupuje se do něj takto`XXXXXXXXXXXXXXXXXXXXXXXX/info_in/version`
 
@@ -114,7 +114,7 @@ U Yody jsou validní 4 komponenty:`firmware`,`bootloader`,`backup`,`buffer`.
  }
 ```
 
-### Informace o "alias"
+## Informace o "alias"
 
 Přistupuje se do něj takto`XXXXXXXXXXXXXXXXXXXXXXXX/info_in/mac`
 
@@ -141,7 +141,7 @@ Topic slouží k zjištění mac adres jednotlivých komponent. Více informací
  }
 ```
 
-### Informace o "ip"
+## Informace o "ip"
 
 Přistupuje se do něj takto`XXXXXXXXXXXXXXXXXXXXXXXX/info_in/ip`
 
@@ -167,7 +167,7 @@ Topic slouží k zjištění ip adresy Yody. Více informací v článku o[ether
  }
 ```
 
-### Infromace o "memsize"
+## Infromace o "memsize"
 
 Přistupuje se do něj takto`XXXXXXXXXXXXXXXXXXXXXXXX/info_in/memsize`
 
@@ -195,7 +195,7 @@ Topic slouží k zjištění velikosti vnitřní paměti zařízení. Čísla js
  }
 ```
 
-### Informace o "datetime"
+## Informace o "datetime"
 
 Přistupuje se do něj takto`XXXXXXXXXXXXXXXXXXXXXXXX/info_in/datetime`
 
@@ -221,7 +221,7 @@ Topic slouží k zjištění aktuálního času z hodin, které má v sobě Yoda
  }
 ```
 
-### Informace o "timesync"
+## Informace o "timesync"
 
 Přistupuje se do něj takto`XXXXXXXXXXXXXXXXXXXXXXXX/info_in/timesync`
 
@@ -247,7 +247,7 @@ Topic slouží k zjištění, jestli je synchronizace času se serverem zapnutá
  }
 ```
 
-### Informace o "uptime"
+## Informace o "uptime"
 
 Přistupuje se do něj takto`XXXXXXXXXXXXXXXXXXXXXXXX/info_in/uptime`
 
@@ -273,7 +273,7 @@ Topic slouží k zjištění toho, jak dlouho zařízení běží. Při startu z
  }
 ```
 
-### Informace o  "autobackup"
+## Informace o  "autobackup"
 
 Přistupuje se do něj takto`XXXXXXXXXXXXXXXXXXXXXXXX/info_in/autobackup`
 
@@ -299,7 +299,7 @@ Topic slouží k zjištění stavu funkce autobackup. Funkce automaticky před n
  }
 ```
 
-### Informace o "state"
+## Informace o "state"
 
 Přistupuje se do něj takto`XXXXXXXXXXXXXXXXXXXXXXXX/info_in/state`
 
@@ -325,7 +325,7 @@ Topic slouží k zjištění stavu jednotlivých komponent yody. Více informac�
  }
 ```
 
-### Informace o "normal\_mqtt\_connection"
+## Informace o "normal\_mqtt\_connection"
 
 Přistupuje se do něj takto`XXXXXXXXXXXXXXXXXXXXXXXX/info_in/normal_mqtt_connection`
 
@@ -351,7 +351,7 @@ Zjištění aktuálního normal\_mqtt\_connection, který byl nastavený v topic
  }
 ```
 
-### Informace o "backup\_mqtt\_connection"
+## Informace o "backup\_mqtt\_connection"
 
 Přistupuje se do něj takto`XXXXXXXXXXXXXXXXXXXXXXXX/info_in/backup_mqtt_connection`
 
@@ -377,7 +377,7 @@ Zjištění aktuálního backup\_mqtt\_connection, který byl nastavený v topic
  }
 ```
 
-### Informace o "wifi"
+## Informace o "wifi"
 
 Přistupuje se do něj takto`XXXXXXXXXXXXXXXXXXXXXXXX/info_in/wifi_ssid`
 
@@ -411,7 +411,7 @@ Tento příkaz má smysl pouze při připojení kabelem. Více informací v čl�
    "flashspeed"     :  SOME NUMBER          // pouze pokud je status == ok
  }
 ```
-### Informace o "wifi_ssid" 
+## Informace o "wifi_ssid" 
 
 Přistupuje se do něj takto
 ''XXXXXXXXXXXXXXXXXXXXXXXX/info_in/wifi_ssid''
@@ -439,7 +439,7 @@ Tento příkaz má smysl pouze při připojení kabelem. Více informací v čl�
  }
 ```
 
-### Informace o "wifi_password" 
+## Informace o "wifi_password" 
 
 Přistupuje se do něj takto
 ''XXXXXXXXXXXXXXXXXXXXXXXX/info_in/wifi_password''
@@ -463,7 +463,7 @@ Zjištění aktuálního wifi_password, který byl nastavený v topicu ''XXXXXXX
  }
 ```
 
-### Informace o "console" 
+## Informace o "console" 
 
 Přistupuje se do něj takto
 ''XXXXXXXXXXXXXXXXXXXXXXXX/info_in/console''
@@ -486,7 +486,7 @@ Zjištění aktuálního stavu console, který byl nastavený v topicu ''XXXXXXX
    "console"        :  TRUE/FALSE           // pouze pokud je status == ok
  }
 ```
-### Informace o "webview" 
+## Informace o "webview" 
 
 Přistupuje se do něj takto
 ''XXXXXXXXXXXXXXXXXXXXXXXX/info_in/webview''
@@ -510,7 +510,7 @@ Zjištění, jestli je funkce webview zapnutá, což mohlo nastat v topicu ''XXX
  }
 ```
 
-### Informace o "webport" 
+## Informace o "webport" 
 
 Přistupuje se do něj takto
 ''XXXXXXXXXXXXXXXXXXXXXXXX/info_in/webport''
@@ -534,7 +534,7 @@ Zjištění aktuálního portu, na kterém bude nabíhat webview, přičemž por
  }
 ```
 
-### Informace o "revision" 
+## Informace o "revision" 
 
 Přistupuje se do něj takto
 ''XXXXXXXXXXXXXXXXXXXXXXXX/info_in/revision''
@@ -560,34 +560,175 @@ Zjištění aktuálního čísla revize. Položka je read-only a není možné j
  }
 ```
 
-## Subtopic "blreport"
+## Informace o "blreport"
+
+Přistupuje se do něj takto
+''XXXXXXXXXXXXXXXXXXXXXXXX/info_in/blreport''
 
 TO DO
 
-## Subtopic "wdenable"
+**Request:**
+```
+{
+"mid" : "SOME ID"
+}
+```
+**Reply:**
+```
+{
+"mid" : "SOME ID"
+"status" : "ok/error",
+"error" : "SOME ERROR MESSAGE", // pouze pokud je status == error
+"error_code" : SOME NUMBER, // pouze pokud je status == error
+"blreport" : "SOME REVISION" // pouze pokud je status == ok
+}
+```
+
+
+## Informace o "wdenable"
+
+Přistupuje se do něj takto
+''XXXXXXXXXXXXXXXXXXXXXXXX/info_in/wdenable''
 
 TO DO
 
-## Subtopic "wdtime" 
+**Request:**
+```
+{
+"mid" : "SOME ID"
+}
+```
+**Reply:**
+```
+{
+"mid" : "SOME ID"
+"status" : "ok/error",
+"error" : "SOME ERROR MESSAGE", // pouze pokud je status == error
+"error_code" : SOME NUMBER, // pouze pokud je status == error
+"wdenable" : "SOME REVISION" // pouze pokud je status == ok
+}
+```
+
+## Informace o "wdtime" 
+
+Přistupuje se do něj takto
+''XXXXXXXXXXXXXXXXXXXXXXXX/info_in/wdtime''
 
 TO DO
 
-## Subtopic "backuptime"
+**Request:**
+```
+{
+"mid" : "SOME ID"
+}
+```
+**Reply:**
+```
+{
+"mid" : "SOME ID"
+"status" : "ok/error",
+"error" : "SOME ERROR MESSAGE", // pouze pokud je status == error
+"error_code" : SOME NUMBER, // pouze pokud je status == error
+"wdtime" : "SOME REVISION" // pouze pokud je status == ok
+}
+```
+
+## Informace o "backuptime"
+
+Přistupuje se do něj takto
+''XXXXXXXXXXXXXXXXXXXXXXXX/info_in/backuptime''
 
 TO DO
 
-## Subtopic "timeoffset"
+**Request:**
+```
+{
+"mid" : "SOME ID"
+}
+```
+**Reply:**
+```
+{
+"mid" : "SOME ID"
+"status" : "ok/error",
+"error" : "SOME ERROR MESSAGE", // pouze pokud je status == error
+"error_code" : SOME NUMBER, // pouze pokud je status == error
+"backuptime" : "SOME REVISION" // pouze pokud je status == ok
+}
+```
+
+## Informace o "timeoffset"
+
+Přistupuje se do něj takto
+''XXXXXXXXXXXXXXXXXXXXXXXX/info_in/timeoffset''
 
 TO DO 
-## Subtopic "lowpanbr"
+
+**Request:**
+```
+{
+"mid" : "SOME ID"
+}
+```
+**Reply:**
+```
+{
+"mid" : "SOME ID"
+"status" : "ok/error",
+"error" : "SOME ERROR MESSAGE", // pouze pokud je status == error
+"error_code" : SOME NUMBER, // pouze pokud je status == error
+"timeoffset" : "SOME REVISION" // pouze pokud je status == ok
+}
+```
+
+## Informace o "lowpanbr"
+
+Přistupuje se do něj takto
+''XXXXXXXXXXXXXXXXXXXXXXXX/info_in/lowpanbr''
 
 TO DO
 
-## Subtopic "autojump"
+**Request:**
+```
+{
+"mid" : "SOME ID"
+}
+```
+**Reply:**
+```
+{
+"mid" : "SOME ID"
+"status" : "ok/error",
+"error" : "SOME ERROR MESSAGE", // pouze pokud je status == error
+"error_code" : SOME NUMBER, // pouze pokud je status == error
+"lowpanbr" : "SOME REVISION" // pouze pokud je status == ok
+}
+```
+
+## Informace o "autojump"
+
+Přistupuje se do něj takto
+''XXXXXXXXXXXXXXXXXXXXXXXX/info_in/autojump''
+
 
 TO DO
 
-
+**Request:**
+```
+{
+"mid" : "SOME ID"
+}
+```
+**Reply:**
+```
+{
+"mid" : "SOME ID"
+"status" : "ok/error",
+"error" : "SOME ERROR MESSAGE", // pouze pokud je status == error
+"error_code" : SOME NUMBER, // pouze pokud je status == error
+"autojump" : "SOME REVISION" // pouze pokud je status == ok
+}
+```
 
 ### Chybové stavy 
 
