@@ -291,6 +291,19 @@ Příkaz slouží k nastavení portu pro[webové rozhraní](https://wiki.byzance
  }
 ```
 
+### Subtopic "blreport"
+
+TO DO
+
+### Subtopic "wdenable"
+
+TO DO
+
+### Subtopic "wdtime" 
+
+, backuptime, timeoffset, timesync, lowpanbr, autojump
+
+
 # Chybové stavy: {#chybove_stavy}
 
 Každý příkaz může selhat s určitým chybovým kódem. Seznam takovýchto chybových kódů je v
