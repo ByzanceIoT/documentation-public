@@ -1,7 +1,6 @@
-# Bootloader
+# Bootloader a Command režim
 
-Bootloader je firmware nahraný v zařízení Byzance, které udržuje **základní konfiguraci zařízení** 
-
+Bootloader je firmware nahraný v zařízení Byzance, které udržuje **základní konfiguraci zařízení** a obsluhuje spuštění hlavního uživatelského programu. Bootloder umožňuje nastavení jeho parametrů v command režimu, zasíláním příkazů po sériové lince.
 
 **Overview**
 

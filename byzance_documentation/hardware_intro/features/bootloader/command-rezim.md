@@ -11,7 +11,7 @@ Při prvním spuštění nebo při položce configured=0 bootloader skáče do c
 
 ## Příkazy bez parametru
 
-* _''ping''_ - ping; pro testovací účely
+* _''ping''_ - ping - pro testovací účely
 * ''_help_'' - vypíše nápovědu do konzole
 * ''_overview_'' - vypíše aktuální hodnotu všech parametrů, které jsou v bootloaderu nastavovat
 * ''_restart_'' - restartuje Yodu. \[\[tutorial:restart\|Dokumentace k restartu\]\].
