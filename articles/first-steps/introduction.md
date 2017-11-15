@@ -84,7 +84,7 @@ Teď tě čeká vytvoření tvého prvního projektu. Každý projekt je vázan�
   * **Grid Apps**::
   * **Grid Widgets**::
 
-  Grid se skládá s kolekce aplikací - a s Widgetů
+  Grid se skládá s kolekce aplikací - a z jednotlivých Widgetů
 
 * BLOCKO: TODO
 
@@ -94,29 +94,27 @@ Teď tě čeká vytvoření tvého prvního projektu. Každý projekt je vázan�
 
 ### Registrace Hardwaru
 
+Hardware se registruje na základě  registračních klíčů \(Hash klíčů\). Tyto klíče jsou zvlášť generovány pro každý hardware. Veškerý HW, vyrobený Byzance je již v platformě zaregistrovaný a defaultně nakonfigurvaný. V případě registrace tvého vlastního HW, nevyrobeného Byzance prosím kontaktuj technickou podporu.
+
+#### Manuální registrace
 
 
 
+#### Registrace pomocí QR kodu
+
+#### Skupiny Hardwaru
 
 ---
 
 ### První program pro Hardware
 
-
-
 ---
 
 ### Nahrátí programu na Hardware
 
-
-
 ---
 
 ### První Blocko Program
-
-
-
-
 
 První Vlastní Bloček
 
