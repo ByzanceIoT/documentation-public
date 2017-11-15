@@ -1,9 +1,12 @@
 # Bootloader
 
+Bootloader je firmware nahraný v zařízení Byzance, které udržuje **základní konfiguraci zařízení** 
+
+
 **Overview**
 
-1. [Základní Přehled](##zakladni-prehled)
-   1. [Činnost bootloaderu](#činnost-bootloaderu)
+1. [Spuštění Bootloaderu](zakladni-prehled)
+  1. [Činnost bootloaderu](#činnost-bootloaderu)
    2. [Mód JUMP](#mód-jump)
    3. [Mód FLASH](#mód-flash)
 2. [Command režim](#command-režim)

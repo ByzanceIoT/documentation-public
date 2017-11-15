@@ -1,6 +1,7 @@
 # IODAG3E
 
-* todo: pár vět/odstavců s krátkým a stručným přehledem, co tato deska je, k čemu slouží a co umí a asi fotku, další detaily bych dal do podkapitol
+IODAG3E je platforma sloužící pro přímou implementaci funkčního uživatelského programu a zároveň funguje jako IoT Gateway přímo komunikující s Cloudem skrze ethernetové rozhraní. Výsadou tohoto zařízení je velké množství výstupních a vstupních periférií, které umožňují vysokou variabilitu využití jak v průmyslu, tak domácí automatizaci či menších aplikacích.
+
 
 
 
