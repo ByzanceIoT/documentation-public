@@ -4,7 +4,7 @@ IODAG3E je platforma sloužící pro přímou implementaci funkčního uživatel
 
 ## Hlavní funkce
 
- * 
+ * Vestavěný webový server
 
 ## Mikroprocesor 
 
