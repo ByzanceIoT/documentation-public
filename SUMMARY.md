@@ -43,6 +43,14 @@
 
 ## Hardware
 
+* [Featury](articles/hardware/featury.md)
+  * [Identifikace zařízení](articles/hardware/ioda/navody/identifikace-zarizeni.md)
+    * [Full ID](articles/hardware/ioda/navody/identifikace-zarizeni/full-id.md)
+    * [Alias](articles/hardware/ioda/navody/identifikace-zarizeni/alias.md)
+  * [Práce s datem a časem \(RTC\)](/articles/hardware/ioda/navody/prace-s-datem-a-casem-rtc.md)
+  * [Bootloader](/articles/hardware/ioda/navody/bootloader.md)
+* [Návody](articles/hardware/navody.md)
+* [Datasheety ](articles/hardware/datasheety.md)
 * [IODA](/articles/hardware/ioda.md)
   * [Datasheet](/articles/hardware/ioda/datasheet.md)
     * [IODAG3E](articles/hardware/ioda/datasheet/iodag3e.md)
@@ -58,12 +66,6 @@
       * [LED signalizace](/articles/hardware/ioda/datasheet/iodag3e/led-signalizace.md)
       * [Schémata](/articles/hardware/ioda/datasheet/iodag3e/schemata.md)
       * [Revize](/articles/hardware/ioda/datasheet/iodag3e/revize.md)
-  * [Návody](/articles/hardware/ioda/navody.md)
-    * [Identifikace zařízení](articles/hardware/ioda/navody/identifikace-zarizeni.md)
-      * [Full ID](articles/hardware/ioda/navody/identifikace-zarizeni/full-id.md)
-      * [Alias](articles/hardware/ioda/navody/identifikace-zarizeni/alias.md)
-    * [Práce s datem a časem \(RTC\)](/articles/hardware/ioda/navody/prace-s-datem-a-casem-rtc.md)
-    * [Bootloader](/articles/hardware/ioda/navody/bootloader.md)
 * [DAPLink](articles/hardware/daplink.md)
 * [Přídavné moduly \(SHIELDS\)](/articles/hardware/pridavne-moduly.md)
 
