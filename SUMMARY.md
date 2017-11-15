@@ -44,11 +44,9 @@
 ## Hardware
 
 * [Featury](articles/hardware/featury.md)
-  * [Identifikace zařízení](articles/hardware/ioda/navody/identifikace-zarizeni.md)
-    * [Full ID](articles/hardware/ioda/navody/identifikace-zarizeni/full-id.md)
-    * [Alias](articles/hardware/ioda/navody/identifikace-zarizeni/alias.md)
-  * [Práce s datem a časem \(RTC\)](/articles/hardware/ioda/navody/prace-s-datem-a-casem-rtc.md)
   * [Bootloader](/articles/hardware/ioda/navody/bootloader.md)
+  * [Identifikace zařízení](articles/hardware/ioda/navody/identifikace-zarizeni.md)
+  * [Práce s datem a časem \(RTC\)](/articles/hardware/ioda/navody/prace-s-datem-a-casem-rtc.md)
 * [Návody](articles/hardware/navody.md)
 * [Datasheety ](articles/hardware/datasheety.md)
   * [IODA](/articles/hardware/ioda.md)
