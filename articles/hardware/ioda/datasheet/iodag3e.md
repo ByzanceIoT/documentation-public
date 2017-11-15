@@ -2,7 +2,6 @@
 
 IODAG3E je platforma sloužící pro přímou implementaci funkčního uživatelského programu a zároveň funguje jako IoT Gateway přímo komunikující s Cloudem skrze ethernetové rozhraní. Výsadou tohoto zařízení je velké množství výstupních a vstupních periférií, které umožňují vysokou variabilitu využití jak v průmyslu, tak domácí automatizaci či menších aplikacích.
 
-## Hlavní funkce
 
 ## Mikroprocesor 
 
@@ -16,6 +15,7 @@ IODAG3E je platforma sloužící pro přímou implementaci funkčního uživatel
 ## Periférie 
 
 * Etherent
+* Lowpan
 * GPIO Header (41 pinů) 
 * A/D, D/A převodníky
 * SPI 
@@ -24,13 +24,13 @@ IODAG3E je platforma sloužící pro přímou implementaci funkčního uživatel
 * I2C
 * SAI
 * USB 2.0
-* 
 
 ## Další funkce
 
 * Integrované komunikační rozhraní s portálem
 * Vzdálená aktualizace uživatelského programu
 * Vestavěný webový server
+* Konektor na uchycení Lowpan modulu WEXP pro bezdrátovou komunikaci
 * Low power manegment
 * CRC výpočetní jednotka
 * Cryptografická hardwarová akcelerace
