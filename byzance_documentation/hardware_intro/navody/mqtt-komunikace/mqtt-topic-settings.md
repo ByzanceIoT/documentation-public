@@ -1,4 +1,4 @@
-## Mqtt Topic settings
+# Mqtt Topic settings
 
 Topic slouží k nastavování různých parametrů yody. Komunikuje se pomocí JSONů, které mají přesně dané parametry.
 
@@ -24,7 +24,7 @@ Pokud nastavení proběhne v pořádku, v odpovědi se vytvoří label „status
 
 Pokud je třeba zjistit hodnotu některé už nastavené položky, je třeba to zjistit v odpovídající položce přes topic [MQTT Topic Info](https://wiki.byzance.cz/wiki/doku.php?id=yoda:topic_info)
 
-### Subtopic "alias"
+## Subtopic "alias"
 
 Přistupuje se do něj takto`XXXXXXXXXXXXXXXXXXXXXXXX/settings_in/alias`
 
@@ -53,7 +53,7 @@ Topic slouží k nastavení aliasu zařízení. Alias je lidsky čitelnýASCIIst
  }
 ```
 
-### Subtopic "datetime" {#subtopic_datetime}
+## Subtopic "datetime" {#subtopic_datetime}
 
 Přistupuje se do něj takto`XXXXXXXXXXXXXXXXXXXXXXXX/settings_in/datetime`
 
@@ -88,7 +88,7 @@ sendJson i1 settings_in/datetime '{"value": 1471016024}'
  }
 ```
 
-### Subtopic "timesync"
+## Subtopic "timesync"
 
 Přistupuje se do něj takto`XXXXXXXXXXXXXXXXXXXXXXXX/settings_in/timesync`
 
@@ -117,7 +117,7 @@ Topic slouží k zapnutí nebo vypnutí synchronizace času Iody s Homerem.
  }
 ```
 
-### Subtopic "autobackup"
+## Subtopic "autobackup"
 
 Přistupuje se do něj takto`XXXXXXXXXXXXXXXXXXXXXXXX/settings_in/autobackup`
 
@@ -146,7 +146,7 @@ Topic slouží k zapnutí nebo vypnutí funkce autobackup. Funkce automaticky p�
  }
 ```
 
-### Subtipic "backup\_mqtt\_connection"
+## Subtipic "backup\_mqtt\_connection"
 
 Přistupuje se do něj takto`XXXXXXXXXXXXXXXXXXXXXXXX/settings_in/backup_mqtt_connection`
 
@@ -175,7 +175,7 @@ Příkaz slouží k nastavení záložní IP adresy a portu, na které se bude H
  }
 ```
 
-### Subtopic "wifi\_username"
+## Subtopic "wifi\_username"
 
 Přistupuje se do něj takto`XXXXXXXXXXXXXXXXXXXXXXXX/settings_in/wifi_username`
 
@@ -204,7 +204,7 @@ Příkaz slouží k nastavení uživatelského jména do[wifi](https://wiki.byza
  }
 ```
 
-### Subtopic "console"
+## Subtopic "console"
 
 Přistupuje se do něj takto`XXXXXXXXXXXXXXXXXXXXXXXX/settings_in/console`
 
@@ -233,7 +233,7 @@ Příkaz slouží k zapnutí nebo vypnutí[webové console](https://wiki.byzance
  }
 ```
 
-### Subtopic "webview"
+## Subtopic "webview"
 
 Přistupuje se do něj takto`XXXXXXXXXXXXXXXXXXXXXXXX/settings_in/webview`
 
@@ -262,7 +262,7 @@ Příkaz slouží k zapnutí nebo vypnutí[webového rozhraní](https://wiki.byz
  }
 ```
 
-### Subtopic "webport"
+## Subtopic "webport"
 
 Přistupuje se do něj takto`XXXXXXXXXXXXXXXXXXXXXXXX/settings_in/webport`
 
@@ -291,20 +291,34 @@ Příkaz slouží k nastavení portu pro[webové rozhraní](https://wiki.byzance
  }
 ```
 
-### Subtopic "blreport"
+## Subtopic "blreport"
 
 TO DO
 
-### Subtopic "wdenable"
+## Subtopic "wdenable"
 
 TO DO
 
-### Subtopic "wdtime" 
+## Subtopic "wdtime" 
 
-, backuptime, timeoffset, timesync, lowpanbr, autojump
+TO DO
 
+## Subtopic "backuptime"
 
-# Chybové stavy: {#chybove_stavy}
+TO DO
+
+## Subtopic "timeoffset"
+
+TO DO 
+## Subtopic "lowpanbr"
+
+TO DO
+
+## Subtopic "autojump"
+
+TO DO
+
+## Chybové stavy: {#chybove_stavy}
 
 Každý příkaz může selhat s určitým chybovým kódem. Seznam takovýchto chybových kódů je v
 

@@ -560,6 +560,34 @@ Zjištění aktuálního čísla revize. Položka je read-only a není možné j
  }
 ```
 
+## Subtopic "blreport"
+
+TO DO
+
+## Subtopic "wdenable"
+
+TO DO
+
+## Subtopic "wdtime" 
+
+TO DO
+
+## Subtopic "backuptime"
+
+TO DO
+
+## Subtopic "timeoffset"
+
+TO DO 
+## Subtopic "lowpanbr"
+
+TO DO
+
+## Subtopic "autojump"
+
+TO DO
+
+
 
 ### Chybové stavy 
 
