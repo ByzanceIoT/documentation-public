@@ -4,10 +4,6 @@ IODAG3E je platforma sloužící pro přímou implementaci funkčního uživatel
 
 ## Hlavní funkce
 
- * Integrované komunikační rozhraní s portálem
- * Vestavěný webový server
- * 
-
 ## Mikroprocesor 
 
 * STM32F437IIH6 \([Datasheet](http://www.st.com/content/ccc/resource/technical/document/datasheet/fd/8c/0a/19/13/8f/41/99/DM00077036.pdf/files/DM00077036.pdf/jcr:content/translations/en.DM00077036.pdf)\)
@@ -15,26 +11,33 @@ IODAG3E je platforma sloužící pro přímou implementaci funkčního uživatel
 * 180 MHz
 * 192 kB SRAM \(včetně 64 KB CCM\)
 * Programování pomocí SWD
+* MAC adresa
 
 ## Periférie 
 
 * Etherent
 * GPIO Header (41 pinů) 
+* A/D, D/A převodníky
 * SPI 
 * CAN
 * UART
 * I2C
 * SAI
 * USB 2.0
+* 
 
 ## Další funkce
 
-* 2x 12-bitový A/D převodník
-* 8x D/A převodník
+* Integrované komunikační rozhraní s portálem
+* Vzdálená aktualizace uživatelského programu
+* Vestavěný webový server
 * Low power manegment
 * CRC výpočetní jednotka
 * Cryptografická hardwarová akcelerace
 * watchdog
+* Automatické zálohování uživatelského programu a jeho obnova při selhání
+* Možnost vestavění na vlastní PCB
+
 
 ## Možnosti napájení 
 
