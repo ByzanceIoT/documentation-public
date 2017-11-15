@@ -29,7 +29,7 @@
 * [Grid](byzance_documentation/grid_intro.md)
   * [Základní Tlačítko \(základy GRID\)](byzance_documentation/grid_intro/tlacitko-zaklady-grid.md)
   * [vylepšený Přepínač \(stylování a pokročilé možnosti GRID\)](byzance_documentation/grid_intro/vylepsene-tlacitko-stylovani-a-pokrocile-moznosti-grid.md)
-  * [text generátor button](byzance_documentation/grid_intro/text-generator-button.md)
+  * [text generátor button \(messeage type, two elements one widget\)](byzance_documentation/grid_intro/text-generator-button.md)
   * [graf \(pokročilé funkce GRID\)](byzance_documentation/grid_intro/graf-graficka-stranka-grid.md)
   * [Styly a jejich použití](byzance_documentation/grid_intro/wk-elements-and-style.md)
   * [HOW TO: slider](byzance_documentation/grid_intro/how-to-slider.md)

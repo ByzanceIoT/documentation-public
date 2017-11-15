@@ -243,7 +243,11 @@ a listener smažeme, protože nechceme nadále zapisovat hodnoty pouze při změ
 input.listenEvent("valueChanged", function (e) {});
 ```
 
-
-
 výsledný graf bude vypadat nějak takto ![](/assets/cede.png)
+
+
+
+Pokud jste s grafem spokojeni. Můžete ho vesele používat kde potřebujete.  
+  
+Samozřejmě je zde hromada místa k zlepšení, jako např. možnost ukazovat více čar, možnost zobrazovat i čísla pod nulu...
 
