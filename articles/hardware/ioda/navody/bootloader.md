@@ -109,12 +109,7 @@ Skládá se z dvou částí.
 
 ### Vývojový diagram
 
-
-
-
-FIXME Zde bude obrázkový vývojový diagram co a jak
-
----
+![bootloader_schema](/images/hardware/bootloader_schema.png)
 
 ## Command režim
 
@@ -129,15 +124,15 @@ Při prvním spuštění nebo při položce configured=0 bootloader skáče do c
 
 ### Příkazy bez parametru
 
-* _''ping''_ - ping; pro testovací účely
-* ''_help_'' - vypíše nápovědu do konzole
-* ''_overview_'' - vypíše aktuální hodnotu všech parametrů, které jsou v bootloaderu nastavovat
-* ''_restart_'' - restartuje Yodu. \[\[tutorial:restart\|Dokumentace k restartu\]\].
-* ''_target_' -Typ desky. TODO: link
-* ''_fullid_'' - vypíše FULL ID procesoru. \[\[hardware:full\_id\|Dokumentace\]\]. 
-* ''_trusted_'' - Fuknce, která zjistí, jestli firmware je ověřený k běhu. \[\[feature:trusted\|Dokumentace k feature trusted\]\].
-* ''_launch\_reset_'' - Pokud bylo předchozí spuštění firmware neúspěšné a není žádná validní binárka k obnovení, je třeba nahrát validní binárku a poté napsat příkaz ''launch\_reset''.
-* ''_defaults_'' - Veškeré nastavení se obnoví do \[\[bootloader:defaults\|defaultních hodnot\]\].
+* **ping** - ping; pro testovací účely
+* **help** - vypíše nápovědu do konzole
+* **overview** - vypíše aktuální hodnotu všech parametrů, které jsou v bootloaderu nastavovat
+* **restart** - restartuje Yodu. \[\[tutorial:restart\|Dokumentace k restartu\]\].
+* **target** -Typ desky. TODO: link
+* **fullid** - vypíše FULL ID procesoru. \[\[hardware:full\_id\|Dokumentace\]\]. 
+* **trusted** - Fuknce, která zjistí, jestli firmware je ověřený k běhu. \[\[feature:trusted\|Dokumentace k feature trusted\]\].
+* **launch\_reset** - Pokud bylo předchozí spuštění firmware neúspěšné a není žádná validní binárka k obnovení, je třeba nahrát validní binárku a poté napsat příkaz ''launch\_reset''.
+* **defaults** - Veškeré nastavení se obnoví do \[\[bootloader:defaults\|defaultních hodnot\]\].
 
 **Pokud zařízení používá DevList**
 
