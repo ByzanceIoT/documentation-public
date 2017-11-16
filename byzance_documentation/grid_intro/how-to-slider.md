@@ -1,5 +1,5 @@
-Grid dokáže být až překvapivě tvárný a dají se v něm dělat i složitější věci, doslova od píky.  
-  
+Grid dokáže být až překvapivě tvárný a dají se v něm dělat i složitější věci, doslova od píky.
+
 Co třeba si udělat horizontální slider?
 
 ![](/assets/sliderFirst.png)
@@ -8,7 +8,7 @@ Co třeba si udělat horizontální slider?
 
 Začneme tím, že si vytvoříme Widget a pojmenujeme si ho Hslider.
 
-Vyjměčně nezačneme s `context.addSizeProfiles` ale s třídou Slider. 
+Vyjměčně nezačneme s `context.addSizeProfiles` ale s třídou Slider.
 
 ```js
 class Slider{
@@ -28,11 +28,16 @@ class Slider {
     protected _backgroundElement: WK.View; // na celkové podbarvení panelu
     protected _valueElement: WK.Element; // na podbarvení vybrání pod tlačítkem
     protected _buttonElement: WK.Button; // na vytvoření kulatého tlačítka
+
+    protected _reversed: boolean = false; // později budeme chtít možnost "invertovat graf" 
+    protected _moving = false; 
+    protected _movingOffset = 0; //je můžné, že tlačítko bude např. v půli grafu, zde si budeme ukládat aktuální posun tlačítka od 0 
+    protected _value = 0; 
     
     constructor(){
-    
+
     }
-    
+
     }
 ```
 
@@ -43,7 +48,7 @@ Samozřejmě pro vytvoření prvků potřebujeme context, proto si ho prřidáme
 constructor(context: WidgetContext){
         this._emitter = new WK.Emitter<WK.Event>(); //inicializaace emitoru
         this._rootView = new WK.View(context); //inicializace našeho root.view
-        
+
         //přidáme stylizaci
         this._rootView.style.padding = "22px"; // chceme, aby posuvník byl uprostřed 1 čtverečku
         this._rootView.style.background = "transparent"; // necheme pozadí, proto průhledná 
@@ -80,7 +85,7 @@ constructor(context: WidgetContext){
 }
 ```
 
-A nakonec přidáme několik listenerů do konstruktoru, abychom mohli manipulovat s posuvníkem
+A nakonec přidáme několik listenerů do _constructor_u, abychom mohli manipulovat s posuvníkem
 
 ```js
  this._buttonElement.listenEvent("mousedown",this.onButtonMouseDown); //reagování při kliknutí na button
@@ -99,13 +104,12 @@ Jistě jste si všimli, že místo kasického `e => { foo.bar() });` voláme fun
 
    protected onBackgroundMouseDown = (e) => {      
     }
-    
+
    protected onAppMouseUp = (e) => {
     }
 
    protected onAppMouseMove = (e: WK.MouseEvent) => { 
     }
-
 ```
 
 pokud si chceme otestovat, že náš widget je nastylovaný správně, přidáme getter do naší třídy
@@ -114,7 +118,6 @@ pokud si chceme otestovat, že náš widget je nastylovaný správně, přidáme
   public get rootElement(): WK.View {
         return this._rootView;
     }
-
 ```
 
 a poté úplně mimo třídu napíšeme
@@ -126,18 +129,16 @@ let slider = new Slider(context);
 slider.rootElement.style.width = "100%";
 slider.rootElement.style.height = "100%";
 context.root.add(slider.rootElement); //přidáme slider.rootElement, na který jsme napojili všechny ty prvky dohromady
-
 ```
 
 při testování dostaneme něco takového:  
 ![](/assets/slider2.png)
 
-Můžeme trochu upravit pozice všech objektů.   
-
+Můžeme trochu upravit pozice všech objektů.
 
 ### přidání getterů a pokrytí základní funkčnosti
 
-Upravíme naší třídu.  Přidáme do ní ještě několik getterů 
+Upravíme naší třídu.  Přidáme do ní ještě několik getterů
 
 ```js
     public getButtonElement(): WK.Button {
@@ -154,7 +155,6 @@ Upravíme naší třídu.  Přidáme do ní ještě několik getterů
       public get isMoving(): boolean {
         return this._moving;
     }
-
 ```
 
 Abychom později mohli měnit detaily jako barvy, zaoblení rohu apod.
@@ -185,7 +185,7 @@ Napíšeme si kód, jenž bude posouvat posuvník, pro širší využití budeme
      }
 ```
 
-Rovnou přidáme možnost umožnit mít posuvník "obráceně" 
+Rovnou přidáme možnost umožnit mít posuvník "obráceně"
 
 ```js
   public setReversed(reversed: boolean) {
@@ -221,10 +221,8 @@ Do budoucna ještě pro posun tlačítka
     }
 ```
 
-zaměříme se na let `newX = Math.min( Math.max(e.mousePosition.x - this._movingOffset, 0), max);`   
+zaměříme se na let `newX = Math.min( Math.max(e.mousePosition.x - this._movingOffset, 0), max);`  
 nejedná se o nic složitého, jenom menší číslo, abychom nevyjeli z pole, ze dvou možných, kde ještě upravujeme, abychom se nedostali pod nulu. Nejdříve vyhodnotíme zda je pozice posuvíku \(mínus offset pro správnou pozici\) větší než nula a později, jestli nepřekračujeme nejvyšší možnou.
-
-
 
 ### přidání funkcí
 
@@ -241,9 +239,7 @@ protected onButtonMouseDown = (e) => {
    }
 ```
 
-Zde nám pouze stačí "přepnout" boolean na přesun, změnu hodnoty provedeme v "onAppMouseMove". 
-
-
+Zde nám pouze stačí "přepnout" boolean na přesun, změnu hodnoty provedeme v "onAppMouseMove".
 
 samozřejmě, kromada uživatelů spíše než tahem tlačítka preferuje klikání přímo na lištu posuvníku, proto přepíšeme interaktivitu k němu
 
@@ -256,7 +252,7 @@ protected onBackgroundMouseDown = (e) => {
     }
 ```
 
-Všimněte si, že zde \_moving neupravujeme. přednostně kvůli tomu, že ve chvíli co se klikne na danou pozici 
+Všimněte si, že zde \_moving neupravujeme. přednostně kvůli tomu, že ve chvíli co se klikne na danou pozici
 
 Při puštění vypneme "moving" abychom neposouvali tačítko když nechceme
 
@@ -265,8 +261,6 @@ Při puštění vypneme "moving" abychom neposouvali tačítko když nechceme
         this._moving = false;
     }
 ```
-
-
 
 A samozřejmě, při posunu myší, pokud držíme posuvník
 
@@ -278,7 +272,12 @@ A samozřejmě, při posunu myší, pokud držíme posuvník
     }
 ```
 
-### 
+pokud klikneme na test, tlačítko by mělo býti posuvné a reagovat  
+![](/assets/pos.png)
+
+Až na ten detail, že z něj nedostáváme žádné hodnoty, doděláme ještě pár drobností.
+
+
 
 ### doladění detailů
 
@@ -299,8 +298,6 @@ Pro jednodušší práci si ještě přidáme několik "nastavovátek" na barvy,
             this.internalSetValue(this._value);
         }
     }
-
-   
 ```
 
 Zapínání/vypínání stínu
@@ -318,7 +315,6 @@ Zapínání/vypínání stínu
 kulatost hran
 
 ```js
-    
     public enableRadius(enabled: boolean) {
         if (!enabled) {
             this.getBackgroundElement().style.radius = "0";
@@ -330,30 +326,26 @@ kulatost hran
     }
 ```
 
-
+možnost nastavit pozadí jaké cheme my
 
 ```js
-   
     public setBackgroundColor(color: string) {
         this.getBackgroundElement().style.background = color;
     }
 ```
 
-
+včetně "value" barvy
 
 ```js
-
     public setFrontColor(color: string) {
         this.getValueBarElement().style.background = color;
         this.getButtonElement().style.background = color;
     }
-
 ```
 
-
+a bavy okraje
 
 ```js
-  
     public setBorder(color: string, width: number) {
         if (width == 0) {
             this.getButtonElement().style.border = "none";
@@ -372,5 +364,80 @@ Rovnou přidáme i Setter na value \(abychom mohli nastavit námi požadovanou h
     }
 ```
 
+a tímto máme celou Slider class hotovou.
 
+
+
+### Nastavení vstupu/výstupu a konečné řešení
+
+
+
+Mimo naší třídu, nejlépe tam, kde jsme nastavovali `conext.addProfile `přidáme Vstup a výstup
+
+```js
+let input = context.inputs.add("ain","analog","Analog input");
+let output = context.outputs.add("aout","analog","Analog output");
+```
+
+a můžeme využít možnosti nastavit prakticky **cokoliv** v naší třídě
+
+```js
+let backgroundColorProperty = context.configProperties.add('backgroundColor','color', 'Color of background', '#838383');
+let frontColorProperty = context.configProperties.add('frontColor','color', 'Color of front', '#2274ff');
+let outlineColorProperty = context.configProperties.add('outlineColor','color', 'Color of border', '#FFFFFF');
+let outlineWidthProperty = context.configProperties.add('outlineWidth','integer', 'Size of border', 5);
+let radiusProperty = context.configProperties.add('radius','boolean', 'Enable border radius', true);
+let shadowProperty = context.configProperties.add('shadow','boolean', 'Enable shadow', true);
+let reversedProperty = context.configProperties.add('reversed','boolean', 'Reversed', false); 
+```
+
+přidáme tyto dva pojistné řádky \(Widget by je měl automaticky povolovat, ale tímto se ujistíme, že vše funguje jak má\)
+
+```js
+context.enableGlobalMouseEvents(); //povolí globální mouse.event
+context.root.style.background = "transparent"; //nastaví root. componentu průhlednou
+```
+
+napíšeme si funkci na to, že pokud se stane změna v "_configuration_", tak změníme i slider
+
+```js
+
+function setupSliderFromProperties() {
+    slider.enableRadius(radiusProperty.value);
+    slider.setBackgroundColor(backgroundColorProperty.value);
+    slider.setFrontColor(frontColorProperty.value);
+    slider.setBorder(outlineColorProperty.value, outlineWidthProperty.value);
+    slider.enableShadow(shadowProperty.value);
+    slider.setReversed(reversedProperty.value);
+}
+
+```
+
+a hned si funkci zavoláme pro počáteční nastavení
+
+```js
+setupSliderFromProperties();
+
+```
+
+a nakonec jenom napíšeme listenery na náš slider:
+
+```js
+slider.listenEvent("valueChanged", function(e) { //posloucháme a pošleme veškeré .emit změny. 
+    output.value = (<Slider>e.target).value; // upravujeme typ objektů aby vše fungovalo. jak má
+});
+
+input.listenEvent("valueChanged", function(e) { //pokud nám příjde z input nějaká hodnota, prostě jí dosadíme do slideru
+    if (!slider.isMoving) {
+        slider.value = input.value;
+    }
+});
+
+
+context.configProperties.listenEvent("valueChanged", setupSliderFromProperties); //nastavování změn
+```
+
+  
+a můžeme finálně otestovat  
+![](/assets/sliderfinal.png)
 
