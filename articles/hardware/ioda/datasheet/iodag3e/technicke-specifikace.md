@@ -13,7 +13,7 @@
 
 
 
-## Mechanické vlastnosti 
+## Mechanické specifikace
 
 
 
