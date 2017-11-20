@@ -24,7 +24,7 @@ Technické parametry USB vstupu:
 
 Napájení po datovém síťovém kabelu, bez nutnosti přivést napájecí napětí k přístroji dalším samostatným kabelem. Rozlišuje se tzv. **aktivní **a **pasivní PoE**.
 
-![MicroUSB](/images/hardware/poe.png)
+![MicroUSB](/images/hardware/POE.png)
 
 ### Aktivní PoE 
 
