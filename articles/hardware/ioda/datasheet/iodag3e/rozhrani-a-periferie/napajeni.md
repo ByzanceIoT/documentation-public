@@ -12,6 +12,8 @@ Detailnější výsledky měření na napájecí kaskádě jsou dostupné v gitu
 
 Zařízení se spustí neprodleně po připojení microUSB kabelu.
 
+![MicroUSB](/images/hardware/microUSB.png)
+
 Technické parametry USB vstupu:
 
 * Doporučené vstupní napětí: 5.0V \(+-10% dle specifikací USB\)
@@ -21,6 +23,8 @@ Technické parametry USB vstupu:
 ## PoE (Power over Ethernet)
 
 Napájení po datovém síťovém kabelu, bez nutnosti přivést napájecí napětí k přístroji dalším samostatným kabelem. Rozlišuje se tzv. **aktivní **a **pasivní PoE**.
+
+![MicroUSB](/images/hardware/poe.png)
 
 ### Aktivní PoE 
 
