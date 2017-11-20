@@ -3,7 +3,7 @@
 IODAG3E je zařízení které umožňuje vzdálené programování a zároveň funguje jako IoT brána komunikující s Cloudem skrze ethernetové rozhraní. Vlastností tohoto zařízení je velké množství výstupních a vstupních periférií, které umožňují vysokou variabilitu využití jak v průmyslu, tak domácí automatizaci či v menších aplikacích.
 
 
-![ioda_board](/images/ioda_board_500.png)
+![ioda_board](/images/hardware/IODAG3E.png)
 
 
 ## Mikroprocesor 
