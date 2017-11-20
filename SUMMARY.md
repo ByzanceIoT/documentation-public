@@ -104,6 +104,7 @@
   * [Lowpan](articles/hardware/ioda/navody/lowpan.md)
   * [Události](articles/hardware/ioda/navody/udalosti.md)
   * [Vytížení CPU](articles/hardware/ioda/navody/vytizeni-cpu.md)
+  * [LED modul](articles/hardware/ioda/navody/led-modul.md)
 * [Návody](articles/hardware/navody.md)
 * [Datasheety ](articles/hardware/datasheety.md)
   * [IODAG3E](articles/hardware/ioda/datasheet/iodag3e.md)
