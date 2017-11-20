@@ -5,7 +5,7 @@ Bootloader je firmware nahraný v zařízení Byzance, které udržuje **základ
 **Overview**
 
 1. Základní přehled
-2. Činnost bootloaderu <a class="anchorjs-link " href="#Činnost bootloaderu" aria-label="Anchor link for: vývojový diagram" data-anchorjs-icon="#" style="opacity: 1; padding-left: 0.375em;"></a>
+2. Činnost bootloaderu 
   * Mód JUMP
   * Mód FLASH
   * Mód RESTORE
@@ -24,8 +24,6 @@ Každé zařízení má v sobě nahraných více do jisté míry nezávislých p
 * Programový buffer
 
 Každý program má ve FLASH paměti vyhrazeno pevné místo, tj. má danou počáteční adresu a max. velikost viz [adresaci paměti](ODKAZ na adresaci). 
-
-
 
 ## Činnost bootloaderu
 
