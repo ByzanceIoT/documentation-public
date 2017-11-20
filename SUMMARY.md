@@ -9,21 +9,6 @@
   * [IODAG3E](articles/first-steps/oziveni-zarizeni/iodag3e.md)
   * [IODAG3W](articles/first-steps/oziveni-zarizeni/iodag3w.md)
 
-## Programování
-
-* [Úvod](programovani/uvod.md)
-* [Struktura programu ](programovani/struktura-programu.md)
-* [MBED API ](programovani/mbed-api.md)
-  * [Vstupy a výstupy ](programovani/mbed-api/vstupy-a-vystupy.md)
-  * [Komunikační rozhraní](programovani/mbed-api/komunikacni-rozhrani.md)
-  * [Časování](programovani/mbed-api/casovani.md)
-  * [RTOS](programovani/mbed-api/rtos.md)
-* [Byzance Hardware API ](programovani/byzance-api.md)
-  * [Funkce](programovani/byzance-api/funkce.md)
-  * [Uživatelská makra](programovani/byzance-api/uzivatelska-makra.md)
-  * [Digitální vstupy a výstupy ](programovani/byzance-api/digitalni-vstupy-a-vystupy.md)
-* [Ukázkové programy ](programovani/ukazkove-programy.md)
-
 ## Portal Tools
 
 * [Blocko](byzance_documentation/blocko_intro.md)
@@ -36,6 +21,18 @@
   * [Slider \(User class v GRIDu\)](byzance_documentation/grid_intro/how-to-slider.md)
   * [Styly a jejich použití](byzance_documentation/grid_intro/wk-elements-and-style.md)
 * [Code](byzance_documentation/code_intro.md)
+  * [Úvod](programovani/uvod.md)
+  * [Struktura programu ](programovani/struktura-programu.md)
+  * [MBED API ](programovani/mbed-api.md)
+    * [Vstupy a výstupy ](programovani/mbed-api/vstupy-a-vystupy.md)
+    * [Komunikační rozhraní](programovani/mbed-api/komunikacni-rozhrani.md)
+    * [Časování](programovani/mbed-api/casovani.md)
+    * [RTOS](programovani/mbed-api/rtos.md)
+  * [Byzance Hardware API ](programovani/byzance-api.md)
+    * [Funkce](programovani/byzance-api/funkce.md)
+    * [Uživatelská makra](programovani/byzance-api/uzivatelska-makra.md)
+    * [Digitální vstupy a výstupy ](programovani/byzance-api/digitalni-vstupy-a-vystupy.md)
+  * [Ukázkové programy ](programovani/ukazkove-programy.md)
 
 ## Cloud
 
