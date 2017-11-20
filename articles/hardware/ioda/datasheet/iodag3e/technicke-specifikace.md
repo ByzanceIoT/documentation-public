@@ -7,7 +7,7 @@
 
 
 
-## Doporučené opeační podmínky 
+## Doporučené operační podmínky 
 
 
 
