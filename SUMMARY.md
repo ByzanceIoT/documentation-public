@@ -45,6 +45,7 @@
 
 ## Hardware
 
+* [Návody](articles/hardware/navody.md)
 * [Funkcionality](articles/hardware/featury.md)
   * [Bootloader a Command režim](/articles/hardware/ioda/navody/bootloader.md)
   * [Identifikace zařízení](articles/hardware/ioda/navody/identifikace-zarizeni.md)
@@ -64,7 +65,6 @@
   * [Vytížení CPU](articles/hardware/ioda/navody/vytizeni-cpu.md)
   * [LED modul](articles/hardware/ioda/navody/led-modul.md)
   * [Specifikace zdroje internetu](articles/hardware/ioda/navody/specifikace-zdroje-internetu.md)
-* [Návody](articles/hardware/navody.md)
 * [Datasheety ](articles/hardware/datasheety.md)
   * [IODAG3E](articles/hardware/ioda/datasheet/iodag3e.md)
     * [Technické specifikace](/articles/hardware/ioda/datasheet/iodag3e/technicke-specifikace.md)
