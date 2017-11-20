@@ -1,6 +1,6 @@
 # Summary
 
-## First Steps
+## Getting started
 
 * [Introduction](README.md)
 * [1. Welcome Page](articles/first-steps/welcome-page.md)
