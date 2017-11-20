@@ -9,7 +9,7 @@ Každé Byzance zařízení je vybaveno obvodem pro udržování reálného čas
 ```cpp
 #include "byzance.h"
 
-// serial line init
+// Inicializace sériové linky
 Serial pc(SERIAL_TX, SERIAL_RX);
 
 // time object
@@ -20,7 +20,7 @@ void init(){
     pc.baud(115200\);
     pc.printf("RTC test\n");
 
-    // unix timestamp setter
+    // Set device time manualy
     timestamp = 1234567890;    
     set_time(timestamp);    
     pc.printf("Time set\n");
