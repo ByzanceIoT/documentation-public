@@ -96,6 +96,7 @@
   * [Paměť zařízení](articles/hardware/ioda/navody/pamet-zarizeni.md)
   * [Připojení k PC](articles/hardware/ioda/navody/pripojeni-k-pc.md)
   * [Připojení zdroje k VBAT](articles/hardware/ioda/navody/pripojeni-zdroje-k-vbat.md)
+  * [Flash paměť](articles/hardware/ioda/navody/flash-pamet.md)
 * [Návody](articles/hardware/navody.md)
 * [Datasheety ](articles/hardware/datasheety.md)
   * [IODA](/articles/hardware/ioda.md)
