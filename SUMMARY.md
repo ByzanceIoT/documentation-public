@@ -98,6 +98,7 @@
   * [Připojení zdroje k VBAT](articles/hardware/ioda/navody/pripojeni-zdroje-k-vbat.md)
   * [Flash paměť](articles/hardware/ioda/navody/flash-pamet.md)
   * [Odložení restart](articles/hardware/ioda/navody/odlozeni-restart.md)
+  * [Revize](articles/hardware/ioda/navody/revize.md)
 * [Návody](articles/hardware/navody.md)
 * [Datasheety ](articles/hardware/datasheety.md)
   * [IODA](/articles/hardware/ioda.md)
