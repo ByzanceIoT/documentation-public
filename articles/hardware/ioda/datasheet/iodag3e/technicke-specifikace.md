@@ -1,3 +1,20 @@
+# Technické specifikace zařízení IODAG3E 
+
+
+## Mezní parametry 
+
+
+
+
+
+## Doporučené opeační podmínky 
+
+
+
+
+
+## Mechanické specifikace
+
 ## Technické specifikace
 
 ![Rozměry deska](/images/hardware/IODAG3E_170725_dimensions.png)
