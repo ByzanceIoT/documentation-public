@@ -9,7 +9,7 @@ Každé Byzance zařízení je vybaveno obvodem pro udržování reálného čas
 ```cpp
 #include "byzance.h"
 
-// Inicializace sériové linky
+// Init serial line
 Serial pc(SERIAL_TX, SERIAL_RX);
 
 // time object
@@ -77,7 +77,7 @@ void init(){
 ```
 
 
-K převodu jednotek je možné využít například jeden z mnoha [online nástrojů](http://www.onlineconversion.com/unix_time.htm).
+K převodu jednotek je možné dále využít například jeden z mnoha [online nástrojů](http://www.onlineconversion.com/unix_time.htm).
 
 Toto je možné vypnout v [bootloaderu](/byzance_documentation/hardware_intro/features/bootloader.md).
 
