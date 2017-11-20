@@ -94,6 +94,7 @@
   * [Identifikace zařízení](articles/hardware/ioda/navody/identifikace-zarizeni.md)
   * [Práce s datem a časem \(RTC\)](/articles/hardware/ioda/navody/prace-s-datem-a-casem-rtc.md)
   * [Watchdog](byzance_documentation/hardware_intro/features/watchdog.md)
+  * [Autobackup](articles/hardware/ioda/navody/autobackup.md)
 * [Návody](articles/hardware/navody.md)
 * [Datasheety ](articles/hardware/datasheety.md)
   * [IODA](/articles/hardware/ioda.md)
