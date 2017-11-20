@@ -144,67 +144,67 @@ Při prvním spuštění nebo při položce configured=0 bootloader skáče do c
 
 ### Příkazy s parametrem i bez
 
-* ''_normal\_mqtt\_hostname_'' - Hlavní hostname, na kterém běží Homer. \[\[yoda:mqtt\|Dokumentace MQTT\]\].
-* ''_normal\_mqtt\_port_'' -  Hlavní port, na kterém běží Homer. \[\[yoda:mqtt\|Dokumentace MQTT\]\].
-* ''_normal\_mqtt\_username_'' - Hlavní jméno pro přihlášení k Homerovi. \[\[yoda:mqtt\|Dokumentace MQTT\]\].
-* ''_normal\_mqtt\_password_'' - Hlavní heslo pro přihlášení k Homerovi. \[\[yoda:mqtt\|Dokumentace MQTT\]\].
+* **normal\_mqtt\_hostname** - Hlavní hostname, na kterém běží Homer. \[\[yoda:mqtt\|Dokumentace MQTT\]\].
+* **normal\_mqtt\_port** -  Hlavní port, na kterém běží Homer. \[\[yoda:mqtt\|Dokumentace MQTT\]\].
+* **normal\_mqtt\_username** - Hlavní jméno pro přihlášení k Homerovi. \[\[yoda:mqtt\|Dokumentace MQTT\]\].
+* **normal\_mqtt\_password** - Hlavní heslo pro přihlášení k Homerovi. \[\[yoda:mqtt\|Dokumentace MQTT\]\].
 
-* ''_backup\_mqtt\_hostname_'' - Záložní hostname, na kterém běží Homer. \[\[yoda:mqtt\|Dokumentace MQTT\]\].
+* **backup\_mqtt\_hostname** - Záložní hostname, na kterém běží Homer. \[\[yoda:mqtt\|Dokumentace MQTT\]\].
 
-* ''_backup\_mqtt\_port_'' - Záložní port, na kterém běží Homer. \[\[yoda:mqtt\|Dokumentace MQTT\]\].
+* **backup\_mqtt\_port** - Záložní port, na kterém běží Homer. \[\[yoda:mqtt\|Dokumentace MQTT\]\].
 
-* ''_backup\_mqtt\_username_'' - Záložní jméno pro přihlášení k Homerovi. \[\[yoda:mqtt\|Dokumentace MQTT\]\].
+* **backup\_mqtt\_username** - Záložní jméno pro přihlášení k Homerovi. \[\[yoda:mqtt\|Dokumentace MQTT\]\].
 
-* ''_backup\_mqtt\_password_'' - Záložní heslo pro přihlášení k Homerovi. \[\[yoda:mqtt\|Dokumentace MQTT\]\].
+* **backup\_mqtt\_password** - Záložní heslo pro přihlášení k Homerovi. \[\[yoda:mqtt\|Dokumentace MQTT\]\].
 
-* ''_alias_'' - Alias zařízení, který si každý může nastavit pro lepší rozpoznání zařízení. Více viz článek \[\[feature:alias\|alias\]\].
+* **alias** - Alias zařízení, který si každý může nastavit pro lepší rozpoznání zařízení. Více viz článek \[\[feature:alias\|alias\]\].
 
-* ''_mac_'' - Zjištění MAC adresy. Souvisí s \[\[feature:ethernet\|ethernetem\]\].
+* **mac** - Zjištění MAC adresy. Souvisí s \[\[feature:ethernet\|ethernetem\]\].
 
-* ''_blreport _- Bootloader report; zap nebo vyp textu do konzole, který píše \[\[bootloader:overview\|bootloader\]\].
+* **blreport** - Bootloader report; zap nebo vyp textu do konzole, který píše \[\[bootloader:overview\|bootloader\]\].
 
-* ''_wdenable_'' - Watchdog enable; zap nebo vyp \[\[feature:watchdog\|watchdogu\]\].
+* **wdenable** - Watchdog enable; zap nebo vyp \[\[feature:watchdog\|watchdogu\]\].
 
-* ''_wdtime_'' - Nastavení periody resetu watchdogu \[\[feature:watchdog\|watchdogu\]\].
+* **wdtime** - Nastavení periody resetu watchdogu \[\[feature:watchdog\|watchdogu\]\].
 
-* ''_autobackup_'' - \[\[feature:autobackup\|Funkce, která zajišťuje, že při nahrátí nové binárky se stará zálohuje\]\].
+* **autobackup** - \[\[feature:autobackup\|Funkce, která zajišťuje, že při nahrátí nové binárky se stará zálohuje\]\].
 
-* ''_netsource_'' - \[\[feature:netsource\|Zdroj internetu pro zařízení\]\].
+* **netsource** - \[\[feature:netsource\|Zdroj internetu pro zařízení\]\].
 
-* ''_configured_'' - při prvním spuštění bootloader naběhne vždy do Command režimu a čeká na konfiguraci všech parametrů. Až jsou parametry nastaveny, ''configured'' se přepne na 1 a tím se dá Yodovi najevo, že bude už nabíhat do normálního programu.
+* **configured** - při prvním spuštění bootloader naběhne vždy do Command režimu a čeká na konfiguraci všech parametrů. Až jsou parametry nastaveny, ''configured'' se přepne na 1 a tím se dá Yodovi najevo, že bude už nabíhat do normálního programu.
 
-* ''_timestamp_'' - časové razítko pro obvod reálného času \(RTC\). Lze vyčíst funkcemi pro \[\[tutorial:timestamp\|práci s časem\]\].
+* **timestamp** - časové razítko pro obvod reálného času \(RTC\). Lze vyčíst funkcemi pro \[\[tutorial:timestamp\|práci s časem\]\].
 
-* ''_backuptime_'' - Nastavení času, po kterém se spustí \[\[feature:autobackup\|automatická záloha firmware\]\].
+* **backuptime** - Nastavení času, po kterém se spustí \[\[feature:autobackup\|automatická záloha firmware\]\].
 
-* ''_webview_'' - Zapnutí nebo vypnutí \[\[tutorial:webview\|webového rozhraní\]\]
+* **webview** - Zapnutí nebo vypnutí \[\[tutorial:webview\|webového rozhraní\]\]
 
-* ''_webport_'' - Port, na které poběží \[\[tutorial:webview\|webové rozhraní\]\]
+* **webport** - Port, na které poběží \[\[tutorial:webview\|webové rozhraní\]\]
 
-* ''_timeoffset_'' - Slouží pro lokalizovanou \[\[tutorial:timestamp\|práci s časem\]\]. Nastavení offsetu lokálního času od UTC času.
+* **timeoffset** - Slouží pro lokalizovanou \[\[tutorial:timestamp\|práci s časem\]\]. Nastavení offsetu lokálního času od UTC času.
 
-* ''_timesync_'' - Slouží pro kontrolu synchronizace \[\[tutorial:timestamp\|času se servery\]\].
+* **timesync** - Slouží pro kontrolu synchronizace \[\[tutorial:timestamp\|času se servery\]\].
 
-* ''_lowpanbr_'' - Zap nebo vyp funkce \[\[feature:lowpanbr\|lowpan border router\]\]
+* **lowpanbr** - Zap nebo vyp funkce \[\[feature:lowpanbr\|lowpan border router\]\]
 
-* ''_restartbl_'' - Identifikátor pro \[\[feature:restartbl\|restart zařízení do bootloaderu\]\]
+* **restartbl** - Identifikátor pro \[\[feature:restartbl\|restart zařízení do bootloaderu\]\]
 
-* ''_revision_'' - Zjištění \[\[feature:revision\|revize zařízení\]\]
+* **revision** - Zjištění \[\[feature:revision\|revize zařízení\]\]
 
 **Pokud zařízení podporuje Wifi**
 
-* ''_wifi\_ssid_'' - Záložní jméno pro přihlášení k Homerovi. \[\[yoda:mqtt\|Dokumentace MQTT\]\].
-* ''_wifi\_password_'' - Záložní heslo pro přihlášení k Homerovi. \[\[yoda:mqtt\|Dokumentace MQTT\]\].
+* **wifi\_ssid** - Záložní jméno pro přihlášení k Homerovi. \[\[yoda:mqtt\|Dokumentace MQTT\]\].
+* **wifi\_password** - Záložní heslo pro přihlášení k Homerovi. \[\[yoda:mqtt\|Dokumentace MQTT\]\].
 
 ### Příkazy pouze s parametrem
 
-* ''_info_'' - Informace k dané komponentě.
+* **info** - Informace k dané komponentě.
   Parametry mohou být "bootloader", "firmware", "buffer", "backup".
-* ''_memsize_' - Velikost oddílu, který je vyhrazen pro danou komponentu.
+* **memsize** - Velikost oddílu, který je vyhrazen pro danou komponentu.
   Parametry mohou být "bootloader", "firmware", "buffer", "backup".
-* ''_intmem_'' - Zformátuje paměť.
+* **intmem** - Zformátuje paměť.
   Parametry mohou být "intmem" nebo "extmem". \[\[memory:internal\|Informace o interní paměti\]\].
-* ''_firmware_' - Práce si firmwarem.
+* **firmware** - Práce si firmwarem.
   Parametry mohou být "backup" pro zálohu, nebo "restore" pro obnovu.
 
 ---
