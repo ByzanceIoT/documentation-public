@@ -43,7 +43,7 @@
 ## Hardware
 
 * [Návody](articles/hardware/navody.md)
-* [Funkcionality](articles/hardware/featury.md)
+* [Features](articles/hardware/featury.md)
   * [Bootloader a Command režim](/articles/hardware/ioda/navody/bootloader.md)
   * [Identifikace zařízení](articles/hardware/ioda/navody/identifikace-zarizeni.md)
   * [Práce s datem a časem \(RTC\)](/articles/hardware/ioda/navody/prace-s-datem-a-casem-rtc.md)
