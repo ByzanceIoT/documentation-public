@@ -95,6 +95,7 @@
   * [Čas běhu zařízení](articles/hardware/ioda/navody/cas-behu-zarizeni.md)
   * [Paměť zařízení](articles/hardware/ioda/navody/pamet-zarizeni.md)
   * [Připojení k PC](articles/hardware/ioda/navody/pripojeni-k-pc.md)
+  * [Připojení zdroje k VBAT](articles/hardware/ioda/navody/pripojeni-zdroje-k-vbat.md)
 * [Návody](articles/hardware/navody.md)
 * [Datasheety ](articles/hardware/datasheety.md)
   * [IODA](/articles/hardware/ioda.md)
