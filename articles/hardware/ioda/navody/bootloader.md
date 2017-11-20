@@ -140,7 +140,7 @@ Při prvním spuštění nebo při položce configured=0 bootloader skáče do c
 
 * **devlist\_clear** - natvrdo smaže seznam všech uložených device v Idovi. Viz (devlist)[TO DO odkaz]
 * **devlist\_counter** - zjistí počet uložených device v Iodovi.
-* **devlist\_list** - vypíše seznam všech uložených device v Yodovi. \[\[feature:devlist\|Dokumentace k devlist\]\].
+* **devlist\_list** - vypíše seznam všech uložených device v Iodovi. 
 
 ### Příkazy s parametrem i bez
 
