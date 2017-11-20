@@ -16,8 +16,8 @@ Mezi podmínky spuštění automatického zálohování patří
 
 Autobackup přináší výhody i nevýhody.
 
-* Výhodou této varianty je, že pokud update zařízení selže, vždy se obnoví poměrně nedávná \(poslední funkční\) konfigurace.
-* Bohužel zálohovací proces spotřebovává procesorový výkon, a pouští se automaticky na základě výše popsaných podmínek, což může  negativně ovlivnit výkon probíhajícího kódu. Tato varianta není vhodná pro aplikace, které vyžadují kritické časování.
+* Výhodou této varianty je, že pokud aktualizace zařízení selže, vždy se obnoví poměrně poslední funkční konfigurace.
+* Nevýhodou je, že zálohovací proces spotřebovává procesorový výkon, a pouští se automaticky na základě výše popsaných podmínek, což může  negativně ovlivnit výkon probíhajícího kódu. Tato varianta není vhodná pro aplikace, které vyžadují kritické časování.
 
 V případě, že je autobackup **vypnutý**, zařízení spoléhá na to, že v záložním sektoru existuje platná **statická záloha,** která byla do zařízení při vypnutí autobackupu doručena. Pokud update binárky neproběhne v pořádku, statická záloha se automaticky obnoví.
 
