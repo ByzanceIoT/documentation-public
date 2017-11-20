@@ -16,6 +16,7 @@
 * [MBED API ](programovani/mbed-api.md)
   * [Vstupy a výstupy ](programovani/mbed-api/vstupy-a-vystupy.md)
   * [Komunikační rozhraní](programovani/mbed-api/komunikacni-rozhrani.md)
+  * [Časování](programovani/mbed-api/casovani.md)
 * [Byzance Hardware API ](programovani/byzance-api.md)
   * [Funkce](programovani/byzance-api/funkce.md)
   * [Uživatelská makra](programovani/byzance-api/uzivatelska-makra.md)
