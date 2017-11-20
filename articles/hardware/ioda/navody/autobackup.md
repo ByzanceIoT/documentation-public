@@ -2,11 +2,11 @@
 
 Autobackup je funkce, která se stará o automatickou zálohu zdrojového kódu na mikrokontroléru.
 
-Aktuálně běžící program vždy aktualizuje sám sebe. Pokud se běžící program z jakéhokoliv důvodu poškodí a nenaběhne, v té chvíli už by se zařízení nemohlo aktualizovat a to by nebylo možné bez použití programátoru nijak opravit,  čímž by se stalo "bricknuté". Proto je nutné mít záložní kód, který v takovém případě naběhne a zařízení zachrání i bez použití programátoru. Přesně k tomuto slouží vlastnost autobackup.
+Aktuálně běžící a funkční program vždy aktualizuje program autobackup. Pokud nově nahraný program správně nenaběhne, bez autobackupu by se zařízení nemohlo aktualizovat a nebylo by možné jej bez manualního programování opravit,  čímž by se stalo "bricknuté". Proto je nutné mít záložní kód, který v takovém případě naběhne a zařízení zachrání i bez použití programátoru. Přesně k tomuto slouží vlastnost autobackup.
 
 ## Vlastnosti autobackup
 
-Pokud je autobackup **zapnutý**, aktuálně běžící firmware se sám začne zálohovat a při chybě nové binárky se dokáže tato konfigurace obnovit. Tomuto typu zálohy se říká **dynamická záloha**.
+Pokud je autobackup **zapnutý**, aktuálně běžící funkční firmware se sám začne zálohovat a při chybě nové binárky se dokáže tato konfigurace obnovit. Tomuto typu zálohy se říká **dynamická záloha**.
 
 Mezi podmínky spuštění automatického zálohování patří
 
