@@ -113,6 +113,8 @@ Skládá se z dvou částí.
 
 ## Command režim
 
+V command režimu je možné pomocí příkazů po sériové lince ověřovat a nastavovat konfigurační parametry Bootloaderu.
+
 Do command režimu bootloaderu je možno vstopit následujícím způsobem
 
 1. podržet RESET a USER tlačítko dohromady
@@ -124,21 +126,21 @@ Při prvním spuštění nebo při položce configured=0 bootloader skáče do c
 
 ### Příkazy bez parametru
 
-* **ping** - ping; pro testovací účely
+* **ping** - ping, pro testovací účely
 * **help** - vypíše nápovědu do konzole
-* **overview** - vypíše aktuální hodnotu všech parametrů, které jsou v bootloaderu nastavovat
-* **restart** - restartuje Yodu. \[\[tutorial:restart\|Dokumentace k restartu\]\].
-* **target** -Typ desky. TODO: link
-* **fullid** - vypíše FULL ID procesoru. \[\[hardware:full\_id\|Dokumentace\]\]. 
-* **trusted** - Fuknce, která zjistí, jestli firmware je ověřený k běhu. \[\[feature:trusted\|Dokumentace k feature trusted\]\].
+* **overview** - vypíše aktuální hodnotu všech parametrů, které jsou v bootloaderu nastaveny
+* **restart** - restartuje Iodu. \[\[tutorial:restart\|Dokumentace k restartu\]\].
+* **target** -Typ desky. TODO 
+* **fullid** - vypíše FULL ID procesoru. [odkaz na fullid](TODO) 
+* **trusted** - Fuknce, která zjistí, jestli je nově nahraný firmware ověřený. 
 * **launch\_reset** - Pokud bylo předchozí spuštění firmware neúspěšné a není žádná validní binárka k obnovení, je třeba nahrát validní binárku a poté napsat příkaz ''launch\_reset''.
-* **defaults** - Veškeré nastavení se obnoví do \[\[bootloader:defaults\|defaultních hodnot\]\].
+* **defaults** - Veškeré nastavení se obnoví do [defaultního nastavení](TO DO ODKAZ).
 
 **Pokud zařízení používá DevList**
 
-* ''_devlist\_clear_'' - natvrdo smaže seznam všech uložených device v Yodovi. \[\[feature:devlist\|Dokumentace k devlist\]\].
-* ''_devlist\_counter_'' - zjistí počet uložených device v Yodovi. \[\[feature:devlist\|Dokumentace k devlist\]\].
-* ''_devlist\_list_'' - vypíše seznam všech uložených device v Yodovi. \[\[feature:devlist\|Dokumentace k devlist\]\].
+* **devlist\_clear** - natvrdo smaže seznam všech uložených device v Idovi. Viz (devlist)[TO DO odkaz]
+* **devlist\_counter** - zjistí počet uložených device v Iodovi.
+* **devlist\_list** - vypíše seznam všech uložených device v Yodovi. \[\[feature:devlist\|Dokumentace k devlist\]\].
 
 ### Příkazy s parametrem i bez
 
