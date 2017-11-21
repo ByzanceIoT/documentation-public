@@ -1,6 +1,6 @@
 # Beginner's Guide
 
-Vítej ještě jednou v Byzance. Zde je seznam, co vše během úvodního tutoriálu probereme.
+Vítej ještě jednou v Byzance. Zde je seznam, co vše během úvodního tutoriálu probereme. Pokusíme se ti i vysvětlit návaznosti a komponenty vývojového Flow Byzance. Aby jsi věděl nejen jak, ale také proč.
 
 ## List of Steps
 
@@ -59,7 +59,7 @@ Extensions jsou balíčky, jež lze kdykoliv nebo i na začátku přikupovat do 
 
 Teď tě čeká vytvoření tvého prvního projektu. Každý projekt je vázaný na některý z tvých finančních produktů \(Tariffech\). Pokud ho nemáš - vrať se k bodu číslo 2. **Tadááá - Máš svůj první projekt. Gratulujeme! &lt;3 **
 
-#### **Overview:**
+#### **Overview Menu:**
 
 * **DashBoard**: je výchozí obrazovka projektu, kde máš základní přehled všeho.
 
@@ -94,15 +94,49 @@ Teď tě čeká vytvoření tvého prvního projektu. Každý projekt je vázan�
 
 ### Registrace Hardwaru
 
-Hardware se registruje na základě  registračních klíčů \(Hash klíčů\). Tyto klíče jsou zvlášť generovány pro každý hardware. Veškerý HW, vyrobený Byzance je již v platformě zaregistrovaný a defaultně nakonfigurvaný. V případě registrace tvého vlastního HW, nevyrobeného Byzance prosím kontaktuj technickou podporu.
+Hardware se registruje na základě registračních klíčů \(Hash klíčů\). Tyto klíče jsou zvlášť generovány pro každý hardware - a to z důvodu toho, že jako identifikátor Hardwaru považujeme jeho 24 místné číslo procesoru. Veškerý HW, vyrobený Byzance je již v platformě zaregistrovaný a defaultně nakonfigurovaný. V případě registrace tvého vlastního HW, nevyrobeného Byzance, ale splňujícího základní požadavky kompatibility, prosím kontaktuj technickou podporu.
 
-#### Manuální registrace
+**Nákup na Eshopu: **Pokud jsi si kompatibilní Hardware zakoupil na našem Eshopu a systém automaticky našel tvojí objednávku  automaticky ti zaregistroval veškerý HW do účtu.  Jelikož tyto systémy nejsou přímo kvůli bezpečnosti propojené - Hledání probíhá pomocí shodného emailu registrace v našem portálu s registračním emailem na Eshopu.  Automatická registrace Hardwaru se provede jen v případě že máš vytvořený pouze jeden!  Finanční Tarif, v případě více tarifů, systém neví do kterého by měl HW zaregistrovat a proceduru pro jistotu neprovede. Pokud HW nevidíš a máš číslo objednávky můžeš si ho registrovat tlačítkem přidat hardware a vybrat třetí možnost registrace pomocí "ID Faktury". Pokud máš jakékoliv potíže, neboj se kontaktovat technickou podporu.
+
+#### ![](/assets/Snímek obrazovky 2017-11-21 v 17.54.50.png)
+
+#### Vytvoř Hardware Group
+
+V horním menu klikni na Hardware Group a vytvoř si svojí první skupinu - v dalších krocích si totiž ukážeme jak si vyzkoušet nanečisto naprogramovat a updatovat milion zařízení během 10 sekund. 
 
 
 
-#### Registrace pomocí QR kodu
+#### Manuální registrace \(Jeden HW\)
 
-#### Skupiny Hardwaru
+#### ![](/assets/Snímek obrazovky 2017-11-21 v 17.56.38.png)
+
+Klikni na tlačítko registrovat, kde je Label pro vyplnění registračního Hashe. Vyplň Hash kde validační formulář rovnou zkontroluje klíč a nezapomeň zakliknout svojí první vytvořenou skupinu.  
+
+![](/assets/Snímek obrazovky 2017-11-21 v 17.59.39.png)
+
+#### Registrace desítek až tisíců HW
+
+Vytvořili jsme speciální rozhraní pro množstevní registraci. Jedná se o pokročilou funkci a více se o ní dozvíš na [Hardware Registration.](/programovani/hardware-registration.md) 
+
+#### Registrace pomocí QR kódu \(Alfa\) 
+
+Pokud se přihlásíš do portálu na mobilním zařízení, jednoduchý průvodce pro výběr projektu a skupiny. Skenování je velmi příjemné, ale jelikož nemáme upravenou Light verzi portálu, je nutné s tím počítat. 
+
+
+
+**Výsledek registrace by měl vypadat takto:**![](/assets/Snímek obrazovky 2017-11-21 v 18.10.33.png)
+
+#### Alias Hardwaru
+
+Svůj Hardware si pro snazší identifikaci můžeš libovolně přejmenovat. Tento název se také automaticky vždy při změně automaticky propíše do Hardwaru kde si pomocí příkazu můžeš jméno načíst. Nadále jako unikátní identifikátor je použito číslo procesoru, ale vždy pro tvůj přehled je přiložen Alias zařízení. Alias je editovatelný i pomocí [Rest-Api. ](/Rest)Více informací o Aliasu najdeš na [Identifikace zařízení. ](/articles/hardware/ioda/navody/identifikace-zarizeni.md)
+
+![](/assets/hw_edit_alias.png)
+
+
+
+
+
+
 
 ---
 
