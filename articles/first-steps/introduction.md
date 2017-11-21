@@ -1,4 +1,4 @@
-# Beginner's Guide
+Beginner's Guide
 
 Vítej ještě jednou v Byzance. Zde je seznam, co vše během úvodního tutoriálu probereme. Pokusíme se ti i vysvětlit návaznosti a komponenty vývojového Flow Byzance. Aby jsi věděl nejen jak, ale také proč.
 
@@ -98,33 +98,25 @@ Hardware se registruje na základě registračních klíčů \(Hash klíčů\). 
 
 **Nákup na Eshopu: **Pokud jsi si kompatibilní Hardware zakoupil na našem Eshopu a systém automaticky našel tvojí objednávku  automaticky ti zaregistroval veškerý HW do účtu.  Jelikož tyto systémy nejsou přímo kvůli bezpečnosti propojené - Hledání probíhá pomocí shodného emailu registrace v našem portálu s registračním emailem na Eshopu.  Automatická registrace Hardwaru se provede jen v případě že máš vytvořený pouze jeden!  Finanční Tarif, v případě více tarifů, systém neví do kterého by měl HW zaregistrovat a proceduru pro jistotu neprovede. Pokud HW nevidíš a máš číslo objednávky můžeš si ho registrovat tlačítkem přidat hardware a vybrat třetí možnost registrace pomocí "ID Faktury". Pokud máš jakékoliv potíže, neboj se kontaktovat technickou podporu.
 
-#### ![](/assets/Snímek obrazovky 2017-11-21 v 17.54.50.png)
-
 #### Vytvoř Hardware Group
 
-V horním menu klikni na Hardware Group a vytvoř si svojí první skupinu - v dalších krocích si totiž ukážeme jak si vyzkoušet nanečisto naprogramovat a updatovat milion zařízení během 10 sekund. 
-
-
+V horním menu klikni na Hardware Group a vytvoř si svojí první skupinu - v dalších krocích si totiž ukážeme jak si vyzkoušet nanečisto naprogramovat a updatovat milion zařízení během 10 sekund.![](/assets/hw_group_create.png)
 
 #### Manuální registrace \(Jeden HW\)
 
-#### ![](/assets/Snímek obrazovky 2017-11-21 v 17.56.38.png)
+Klikni na tlačítko registrovat, kde je Label pro vyplnění registračního Hashe. Vyplň Hash kde validační formulář rovnou zkontroluje klíč a nezapomeň zakliknout svojí první vytvořenou skupinu.
 
-Klikni na tlačítko registrovat, kde je Label pro vyplnění registračního Hashe. Vyplň Hash kde validační formulář rovnou zkontroluje klíč a nezapomeň zakliknout svojí první vytvořenou skupinu.  
-
-![](/assets/Snímek obrazovky 2017-11-21 v 17.59.39.png)
+![](/assets/hw_registration_type_select.png)
 
 #### Registrace desítek až tisíců HW
 
-Vytvořili jsme speciální rozhraní pro množstevní registraci. Jedná se o pokročilou funkci a více se o ní dozvíš na [Hardware Registration.](/programovani/hardware-registration.md) 
+Vytvořili jsme speciální rozhraní pro množstevní registraci. Jedná se o pokročilou funkci a více se o ní dozvíš na [Hardware Registration.](/programovani/hardware-registration.md)
 
-#### Registrace pomocí QR kódu \(Alfa\) 
+#### Registrace pomocí QR kódu \(Alfa\)
 
-Pokud se přihlásíš do portálu na mobilním zařízení, jednoduchý průvodce pro výběr projektu a skupiny. Skenování je velmi příjemné, ale jelikož nemáme upravenou Light verzi portálu, je nutné s tím počítat. 
+Pokud se přihlásíš do portálu na mobilním zařízení, jednoduchý průvodce pro výběr projektu a skupiny. Skenování je velmi příjemné, ale jelikož nemáme upravenou Light verzi portálu, je nutné s tím počítat.
 
-
-
-**Výsledek registrace by měl vypadat takto:**![](/assets/Snímek obrazovky 2017-11-21 v 18.10.33.png)
+**Výsledek registrace by měl vypadat takto:**![](/assets/registration_hw_result.png)
 
 #### Alias Hardwaru
 
@@ -132,9 +124,7 @@ Svůj Hardware si pro snazší identifikaci můžeš libovolně přejmenovat. Te
 
 ![](/assets/hw_edit_alias.png)
 
-
-
-
+* Nápověda - Pokud přejedeš myší přes tlačítko - po chvíli se ti zobrazí nápověda k čemu tlačítko slouží. 
 
 
 
