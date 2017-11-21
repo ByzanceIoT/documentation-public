@@ -183,7 +183,7 @@ Pokud program uložíš s chybou - například proto, že na něm pracuješ, ser
 
 #### Dodatek: Verze Core Knihovny
 
-Jak sis asi všiml, kód lze zkompilovat několika verzemi Core Knihovny. Jedná se o naší připravenou sadu jednotlivých knihoven připojených k Embed OS. Tak jako Embed OS vydává nové verze, my je integrujeme a přidáváme další rozšíření usnadňující ti programovat. Každý nový update obsahuje kritické záplaty, nové funkcionality a další. Běžně ve výchozím stavu vidíš programy verze v1.0.2 nebo v1.30.31.. V případě zájmu, můžeš volitelně vybrat i knihovny s příponou beta. v1.0.3-beta, v1.0.4-beta.2 \(Vše podle standardu[ https://semver.org](https://semver.org)\). Knihovny Alpha jsou určeny pouze pro vybrané vývojáře a aktivní členy komunity.  
+Jak sis asi všiml, kód lze zkompilovat několika verzemi Core Knihovny. Jedná se o naší připravenou sadu jednotlivých knihoven připojených k Embed OS. Tak jako Embed OS vydává nové verze, my je integrujeme a přidáváme další rozšíření usnadňující ti programovat. Každý nový update obsahuje kritické záplaty, nové funkcionality a další. Běžně ve výchozím stavu vidíš programy verze v1.0.2 nebo v1.30.31.. V případě zájmu můžeš volitelně vybrat i knihovny s příponou "-beta". v1.0.3-beta, v1.0.4-beta.2 \(Vše podle standardu[ https://semver.org](https://semver.org)\). Knihovny Alpha jsou určeny pouze pro vybrané vývojáře a aktivní členy komunity. U verzí Alpha se doporučuje mít Hardware připájený na Dev-Kitu pro jeho opravu v případě kritického selhání.   
 
 ![](/assets/lib_selector.png)
 
@@ -198,6 +198,20 @@ Jak sis asi všiml, kód lze zkompilovat několika verzemi Core Knihovny. Jedná
 ### Nahrátí programu na Hardware
 
 Pokud vidíš nepřehlédnutelné tlačítko DEPLOY TO HARDWARE, můžeme rovnou program nahrát na tvůj Hardware. Každý Update, který provedeš má neomezenou platnost. Čeká, dokud se Hardware nepřihlásí k serveru a nestáhne si nový Firmware. 
+
+Žádná funkcionalita ti nikdy nezabrání nahrát na Hardware co chceš a to přesto, že by to bylo v konfliktu s jinou částí systému - například byl Hardware integrován do vzájemně komunikující sítě. Na tyto konflikty jsi pouze pokud se Back-End serveru podaří kolizi najít upozorněn. Zároveň nám takto upravené opatření přišlo správné. To aby si mohl pohotově nasazovat kritické patche, a nemusel řešit desítky možných konfliktů. 
+
+
+Vyzkoušíme si dva typy updatu a to rychlou volbou **DEPLOY TO HARDWARE** přímo z Code Editoru a pomocí **Release Manageru**.
+
+
+DEPLOY TO HARDWARE
+
+
+
+Release Manageru
+
+  
 
 
 
