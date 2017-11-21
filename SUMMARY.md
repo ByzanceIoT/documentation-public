@@ -23,6 +23,8 @@
   * [Styly a jejich použití](byzance_documentation/grid_intro/wk-elements-and-style.md)
 * [Code](byzance_documentation/code_intro.md)
   * [Úvod](programovani/uvod.md)
+  * [Release Manager](programovani/release-manager.md)
+  * [Hardware Registration ](programovani/hardware-registration.md)
   * [Struktura programu ](programovani/struktura-programu.md)
   * [MBED API ](programovani/mbed-api.md)
     * [Vstupy a výstupy ](programovani/mbed-api/vstupy-a-vystupy.md)
