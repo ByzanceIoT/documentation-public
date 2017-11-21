@@ -1,4 +1,4 @@
-Beginner's Guide
+# Beginner's Guide
 
 Vítej ještě jednou v Byzance. Zde je seznam, co vše během úvodního tutoriálu probereme. Pokusíme se ti i vysvětlit návaznosti a komponenty vývojového Flow Byzance. Aby jsi věděl nejen jak, ale také proč.
 
@@ -188,10 +188,6 @@ Vyzkoušíme si dva typy updatu a to rychlou volbou **DEPLOY TO HARDWARE** pří
 #### 
 
 #### Release Manageru
-
- 
-
- 
 
 ---
 
