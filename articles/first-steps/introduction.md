@@ -126,15 +126,81 @@ Svůj Hardware si pro snazší identifikaci můžeš libovolně přejmenovat. Te
 
 * Nápověda - Pokud přejedeš myší přes tlačítko - po chvíli se ti zobrazí nápověda k čemu tlačítko slouží. 
 
-
-
 ---
 
 ### První program pro Hardware
 
+Nejdříve si naprogramujeme Hardware. To lze jednoduše Online IDE jménem [Code.](/byzance_documentation/code_intro.md) Ten byl navržen pro jednodušší programy, jež nepotřebují složité funkce profesionálních IDE. Pokud už na začátku víš, že chceš používat své lokální desktop IDE, připravili jsme pro tento případ samostatný toturial. \[TODO  Doplnit link\]
+
+Sekce **My Program**, je seznam tvých programů a **Public Program** je seznam komunitou vytvořených programů k přímému nahráti do Hardwaru. Aby si mohl požívat veřejné programy, je nutné z nich vytvořit vlastní kopii. Místo klasické reference jsme k tomuto přistoupili zejména z důvodů velmi komplexní historie a tvorbě statistik, takže pokud by byl veřejný program upraven nebo smazán, došlo by ke komplikacím co kde a jak zobrazovat.  
+
+....   
+![](/assets/create_cprogram.png)
+
+
+
+
+
+Vytvoření Programu předchází výběr správné desky. Jelikož ti chceme zjednodušit život, výběrem desky ti selektujeme přesně ty funkce, které podporují periferie Hardwaru. Umožňujeme však psát kód nezávisle na hardwaru zejména díky využití Embed OS, kompilace více typů hardwaru je vysvětlena v samostatné kapitole. 
+
+![](/assets/create_c_program_modal.png)
+
+Po vytvoření programu, klikni na název programu v seznamu, kde se ti následně zobrazí Code editor. Jeho všechny Funkcionality jsou popsány v samostatné kapitole. Nám teď stačí využít předvyplněný první program, který v editoru vidíš. Naším úkolem bude tento program jednoduše upravit, vytvořit Build a uložit. 
+
+#### Nejdříve připíšeme funkci pro blikání ledkou
+
+
+
+#### Klikneme na Tlačíko Build
+
+Tlačítkem Build se tvůj kód zabezpečenou formou pošle na jeden z několika kompilačních serverů spravovaných Byzance, které obsahují veškeré knihovny. Server po 5-20 sekundách \(podle vytížení\) vytvoří soubor, které lze nahrát na hardware. Jedná se o balíček kodu, který ti umožňuje velmi jednoduše desku řídit, vzdáleně programovat a spravovat. Tak aby jsi se mohl soustředit jen na kód který ti přináší užitek. To ostatní má na starosti Byzance. 
+
+
+
+Po úspěšném Buildu se zobrazí Notifikace. To je indikace, že vše proběhlo v pořádku. V opačném případě ti pod editorem zobrazíme seznam chyb i řádku, na kterém došlo k problému. 
+
+![](/assets/build_success.png)
+
+
+
+#### Program uložíme
+
+Uložení programu následuje jeho automatické znovu zkompilování. A ověření.  
+
+![](/assets/save_c_program.png)
+
+
+Výsledek uložení bude vypadat nějak takto:
+
+![](/assets/c_program_versions.png)
+
+
+
+Pokud program uložíš s chybou - například proto, že na něm pracuješ, server ho vždy zkusí zkompilovat ale ikonou ti zobrazí jeho stav. 
+
+![](/assets/c_program_versions_bug.png)
+
+
+#### Dodatek: Verze Core Knihovny
+
+Jak sis asi všiml, kód lze zkompilovat několika verzemi Core Knihovny. Jedná se o naší připravenou sadu jednotlivých knihoven připojených k Embed OS. Tak jako Embed OS vydává nové verze, my je integrujeme a přidáváme další rozšíření usnadňující ti programovat. Každý nový update obsahuje kritické záplaty, nové funkcionality a další. Běžně ve výchozím stavu vidíš programy verze v1.0.2 nebo v1.30.31.. V případě zájmu, můžeš volitelně vybrat i knihovny s příponou beta. v1.0.3-beta, v1.0.4-beta.2 \(Vše podle standardu[ https://semver.org](https://semver.org)\). Knihovny Alpha jsou určeny pouze pro vybrané vývojáře a aktivní členy komunity.  
+
+![](/assets/lib_selector.png)
+
+
+
+
+
+
+
 ---
 
 ### Nahrátí programu na Hardware
+
+Pokud vidíš nepřehlédnutelné tlačítko DEPLOY TO HARDWARE, můžeme rovnou program nahrát na tvůj Hardware. Každý Update, který provedeš má neomezenou platnost. Čeká, dokud se Hardware nepřihlásí k serveru a nestáhne si nový Firmware. 
+
+
+
 
 ---
 
