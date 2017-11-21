@@ -27,7 +27,7 @@ kde první argument označuje **jednoslovně** jméno výstupu \(pro práci v bl
 
 let `valueDigOutput`definuje promněnou abychom mohli k daménu outputu přistupovat v kódu  ![](/assets/code1.png)
 
-Poté definujeme rozměry widgetu, **definice rozměrů je povinná ve všech widgetech.            
+Poté definujeme rozměry widgetu, **definice rozměrů je povinná ve všech widgetech.              
 **Můžeme použít  
 `context.addSizeProfile(1,1);`kde v parametrech definujeme výšku a šířku widgetu \(v pevně daných čtvercích, tudíž widgety vypadají všude stejně. Jeden  čtverec má zhruba 1 cm\).
 
@@ -54,7 +54,6 @@ Protože Widgety jsou od toho, abychom poskytnuli uživateli grafickou vazbu na 
 Přidáme jednoduchý _button_ element, z WK objektů
 
 ```js
-
 let button = new WK.Button(context,"push");
 ```
 
@@ -65,13 +64,12 @@ Pokud znovu klikneme na _test_, nic se nestane, protože tlačítko nená ani st
 pro přidání tlačítka do Widgetu použijeme
 
 ```js
-
 context.root.add(button);
 ```
 
 ![](/assets/code6.png)prvný argument je element, který přidáváme.  
 Root můžeme považovat za **základní **element, který je rozšířen o několik funkcionalit a je přítomný vždy ve všech widgetech.  
-Klikneme na tlačítko _test.            
+Klikneme na tlačítko _test.              
 _![](/assets/code7.png)pokud si tlačítko zvětšíme, zjistíme že je defalutně nastylované, avšak vzhedově je naprosto ošklivé.  
 ![](/assets/code8.png)
 
@@ -83,7 +81,6 @@ Připomínám, že widgetů budeme mít v aplikaci několik a jeden widget by m�
 Úprava stylu elementu je jednoduchá. Šířku a výšku \_button \_elementu upravíme snadno pomocí
 
 ```js
-
 button.style.height = "100%";
 button.style.width = "100%";
 ```

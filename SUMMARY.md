@@ -14,6 +14,7 @@
 * [Blocko](byzance_documentation/blocko_intro.md)
   * [bla bla bla](byzance_documentation/dsafdf.md)
 * [Grid](byzance_documentation/grid_intro.md)
+  * [Úvod do GRID](byzance_documentation/grid_intro/uvod-do-grid.md)
   * [Základní Tlačítko \(základy GRID\)](byzance_documentation/grid_intro/tlacitko-zaklady-grid.md)
   * [vylepšený Přepínač \(stylování a pokročilé možnosti GRID\)](byzance_documentation/grid_intro/vylepsene-tlacitko-stylovani-a-pokrocile-moznosti-grid.md)
   * [text generátor button \(messeage type, two elements one widget\)](byzance_documentation/grid_intro/text-generator-button.md)
