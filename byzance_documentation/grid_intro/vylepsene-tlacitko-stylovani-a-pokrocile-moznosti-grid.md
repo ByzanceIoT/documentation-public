@@ -1,15 +1,32 @@
+# přepínač:
+
 Po chvíli testování jistě zjistíte, že naše základní tlačítko je vlastně veskrze hloupé, neintuitivní a vzhledově špatné.
 
 Proto si vytvoříme hezký, barvičky měnící, ikonkový přepínač pro komunikaci s uživatelem.
 
 ---
 
+## programová část:
+
 Založíme si nový Widget a přidáme output, sizeProfile a button element  
 ![](/assets/code13.png)
 
+```js
+let digOut = context.outputs.add("digOut","digital","digital output");
+context.addSizeProfiles(2,2,5,5,true);
+
+let iconTrue = context.configProperities.add("iconTrue","fa-icon","icon when true","fa-check");
+
+let button = new WK.Button(context,"[fa]"+ iconTrue.value+"[/]");
+
+context.root.add(button);
+```
+
+
+
 Stejně jakožto v minulé kapitole, avšak s několika vylepšeními:
 
-* poslední argument u `addSizeProfiles donutí widget` držet tvar čterce \(pouze čtverce\).
+* poslední argument u `addSizeProfiles `donutí widget držet tvar čterce \(pouze čtverce\).
 
 * `let iconTrue = context.configProperties.add("iconTrue","fa-icon","icon when true","fa-check");`  
   může být překvapující. Jedná se o přidání další položky jenž se dá nastavit při rozkliknutí _confurigations. \_Argumenty jsou podobné jako u \_Inputu_/_outputu_. **První** argument je jednoslovné pojmenování, **druhý** je typ dané property , **třetí** je pojmenování v nastavení a **poslední** je defalutní hodnota.
@@ -20,6 +37,10 @@ Stejně jakožto v minulé kapitole, avšak s několika vylepšeními:
 
 * iconTrue.value bere hodnotu z config properities, v tomto případě se jedná o ikonu
 
+---
+
+### testování:
+
 Klikneme na test  
 ![](/assets/code14.png)
 
@@ -28,7 +49,22 @@ Pro nastavení ikonky klikneme na _configuration_
 ![](/assets/code16.png)  
 Zde vidíme co vše lze nastavit ve Widgetu. Toto se hodí do Grid Projektů, kdy můžete nastavit vícero instancím stejného widgetu různé ikonky a barvy.
 
-Protože budeme chtít jiné barvy a ikony při posílání true/false, přidáme ještě napíšeme ještě několik řádků, ![](/assets/code17.png)U `colorTrue`používáme typ "_color_" a jako defalutní hodnotu můžeme použít jak barvy v hexadecimálu, tak i můžeme napsat _rgb_ hodnoty.
+---
+
+### přidání vícero možností stylizace
+
+Protože budeme chtít jiné barvy a ikony při posílání true/false, přidáme ještě napíšeme ještě několik řádků, ![](/assets/code17.png)
+
+```js
+let iconTrue = context.configProperties.add("iconTrue","fa-icon","icon when true","fa-check");
+let iconFalse = context.configProperties.add("iconFalse","fa-icon","icon when false","fa-check");
+let colorTrue = context.configProperties.add("colorTrue","color","color when true","#00FF00");
+let colorFalse = context.configProperties.add("colorFalse","color","color when false","rgb(255,0,0)");
+```
+
+U `colorTrue`používáme typ "_color_" a jako defalutní hodnotu můžeme použít jak barvy v hexadecimálu, tak i můžeme napsat _rgb_ hodnoty.
+
+---
 
 ## stylizace
 
@@ -39,7 +75,6 @@ všechny možnosti které mohou být v daném stylu napovídá našeptávač \(c
 Můžeme i upravit pozici elementu pomocí_          _
 
 ```
-
  button.style.originX          
  button.style.originY
  button.style.x           
@@ -47,6 +82,8 @@ Můžeme i upravit pozici elementu pomocí_          _
 ```
 
 Ale v našem případě to není třeba, více informací najdeme v [Styly a jejich použití](/byzance_documentation/grid_intro/wk-elements-and-style.md).
+
+---
 
 ## Reaktivní stylyzování a Interakce s widgetem
 
@@ -88,6 +125,8 @@ function changeIconAndText(){_if(digOut.value){
 
 protože digOut je boolean, můžeme zkrátit zápis. Při změně textu nesmíme zapomenout že pracujeme s ikonami a je třeba připsat dané ohraničení.
 
+---
+
 nakonec napíšeme event listener na button, že ve chvíli kdy je na button kliknuto, obrátíme hodnotu \_digOut \_a zavoláme naší funkci.
 
 ```js
@@ -112,6 +151,10 @@ v tomto případě můžeme zavolat `changeIconAndText();`protože tam již nast
 hodí se poznamenat, že pokud posloucháme konkrétní property, vrátí se nám její hodnota po změně. pokud nasloucháme celému context.configProperities, vrátí se nám objekt která ve value obsahuje \`tag\_property:hodnota\_property.
 
 \`![](/assets/code23.png)
+
+---
+
+### slovo závěrem:
 
 Tímto máme funkční přepínač, jenž se ná změnit dle potřeby a mění svůj vzhed
 

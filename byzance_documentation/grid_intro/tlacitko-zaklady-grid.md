@@ -1,4 +1,10 @@
+# začínáme:
+
+## vytvoření projektu
+
 Jakožto první příklad si vytvoříme jednoduché tlačítko, které při stisknutí pošle digitální hodnotu `true`a při puštění `false`
+
+---
 
 začneme novým, čistým widgetem:
 
@@ -10,6 +16,8 @@ a stiskneme "create new grid widget"
 ![](/assets/last.png)
 
 vytvoříme widget a otevřeme ho: ![](/assets/import.png)
+
+---
 
 ## Programová část:
 
@@ -27,7 +35,7 @@ kde první argument označuje **jednoslovně** jméno výstupu \(pro práci v bl
 
 let `valueDigOutput`definuje promněnou abychom mohli k daménu outputu přistupovat v kódu  ![](/assets/code1.png)
 
-Poté definujeme rozměry widgetu, **definice rozměrů je povinná ve všech widgetech.              
+Poté definujeme rozměry widgetu, **definice rozměrů je povinná ve všech widgetech.                
 **Můžeme použít  
 `context.addSizeProfile(1,1);`kde v parametrech definujeme výšku a šířku widgetu \(v pevně daných čtvercích, tudíž widgety vypadají všude stejně. Jeden  čtverec má zhruba 1 cm\).
 
@@ -46,6 +54,8 @@ Přidáváním síze profilů přidáváme povolené \(možné\) rozměry widget
 připomínám že \*\*Musíme přidat jakýkoliv kladný a nenulový sizeProfile každému widgetu.
 
 **Pokud kliknete na **_**test**_**, zobrazí se toto:**![](/assets/code4.png)**Protože ačkoliv máme definované velikosti, **nemáme definované jakékoliv grafické prvky\*\*. Musíme je do Widgetu přidat.
+
+---
 
 ### Přidání grafického elementu:
 
@@ -69,7 +79,11 @@ context.root.add(button);
 
 ![](/assets/code6.png)prvný argument je element, který přidáváme.  
 Root můžeme považovat za **základní **element, který je rozšířen o několik funkcionalit a je přítomný vždy ve všech widgetech.  
-Klikneme na tlačítko _test.              
+Klikneme na tlačítko _test.     _
+
+---
+
+_           
 _![](/assets/code7.png)pokud si tlačítko zvětšíme, zjistíme že je defalutně nastylované, avšak vzhedově je naprosto ošklivé.  
 ![](/assets/code8.png)
 
