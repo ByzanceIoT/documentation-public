@@ -1,21 +1,39 @@
-Založíme si nový projekt a pojmenujeme si hi LineGraph.
+# LineGraph
+
+Založíme si nový projekt a pojmenujeme si LineGraph.
+
+---
+
+## Úvodní kód:
 
 vytvoříme Analogový vstup.  
 Analog je reprezontován \(desetiným\) číslem. které může jít i do záporných hodnot.  
 \(Poslední datový typ messeage, si ukážeme později.\)
 
-`let anaIn = context.inputs.add("analin","analog","Analog Input");`
+```js
+let anaIn = context.inputs.add("analin","analog","Analog Input");
+```
 
-a přidáme sizeProfile  
-`context.addSizeProfiles(3,2,20,20);`
+a přidáme sizeProfile
+
+```js
+context.addSizeProfiles(3,2,20,20);
+```
 
 a nakonec přidáme "generický element", na kterém budeme pracovat.
 
-```let element = new WK.Element(context);``
+```js
+let element = new WK.Element(context);
+```
 
-\`![](/assets/code24.png)
+![](/assets/code24.png)
 
-Tímto jsme si vytvořili bílý obdélník jenž vyplňuje celou plochu widgetu.  
+Tímto jsme si vytvořili bílý obdélník jenž vyplňuje celou plochu widgetu.
+
+---
+
+### uchování hodnot:
+
 Určitě budeme chtít zaznamenat hodnoty, které pak vykreslíme do widgetu jako graf. Proto si vytvoříme pole., do kterého si budeme ukládat hodnoty.  
 \(připomínám, že pole v Javascriptu\(typescriptu\) fungují jinak než v Javě,C\(++/\#\) apod.\)
 
@@ -34,6 +52,8 @@ anaIn.listenEvent("valueChanged", e => {
 tímto při každé změně uložíme novou hodnotu do pole.  
 ![](/assets/code25.png)  
 Nyní je třeba začít s vykreslováním  na element.
+
+---
 
 ## Event render a kreslení
 
@@ -69,7 +89,7 @@ draw.beginPath();
 
 ![](/assets/code28.png)
 
-a klikneme na test
+a klikneme na **test**
 
 ![](/assets/code26.png)
 
@@ -80,6 +100,8 @@ Např. při změně velikosti widgetu, nebo když ho zavoláme my s tím že chc
 když už jsme dali dohromady základy práce s canvasem, jsem si udělat graf z hodnot co ukládáme do pole.
 
 ---
+
+### více práce s kreslením
 
 Pro snažší práci si zabarvíme pozadí na bílo a vytvoříme si několik promněných pro snažší práci.
 
@@ -129,7 +151,7 @@ draw.moveTo(0,0);
 na
 
 ```js
-draw.moveTo(chartX, chartY);  
+ draw.moveTo(chartX, chartY);  
  draw.lineTo(chartWidth, chartHeight);
 ```
 
@@ -140,6 +162,8 @@ klikneme na test a podíváme se, zda se všechno povedlo dle plánu.
 ![](/assets/code30.png)
 
 ---
+
+### zakreslování hodnot
 
 Poté, co jsme si oveřili že vše vypadá OK, mohli bychom získat data z našeho pole, a zakreslit je do widgetu.  
 to uděláme smyčkou\(loop\).
@@ -179,17 +203,26 @@ poté napíšeme smyčku na vykreslování grafu jako takového:
 
 ![](/assets/code31.png)
 
-To nejdůležitější je hotovo. Pokud jste ještě nedopsali to, že při změně hodnoty se má překreslit widget, nyní je správná chvíle na to
+## překreslení hodnot \(re-render\)
 
-\`anaIn.listenEvent\("valueChanged", e =&gt; {  
-    context.root.invalidate\(\);  
-    dataStorage.push\(anaIn.value\);  
-}\);
+To nejdůležitější je hotovo. Pokud jste ještě nedopsali to, že při změně hodnoty se má překreslit widget, nyní je správná chvíle
+
+```js
+anaIn.listenEvent("valueChanged", e => {
+    context.root.invalidate();
+    dataStorage.push(anaIn.value);
+});
+```
 
 \`a můžeme náš widget otestovat.  
 ![](/assets/code32.png)
 
-widget by měl při každé změně hodnoty nakreslit nový graf, který se postupně posouvá.  
+widget by měl při každé změně hodnoty nakreslit nový graf, který se postupně posouvá.
+
+---
+
+## Vodící čáry grafu:
+
 Avšak, graf bez hodnot je užitečný jako bezdrátová myš bez baterek.  
 Přidáme text a "vodící čáry'
 
@@ -226,6 +259,10 @@ Zároveň, můžeme přidat i to, že se vykreslí "kolečka" na vrcholech. prvn
     }
 ```
 
+---
+
+### změna četnosti vykreslování
+
 Pokud se zamyslíme tak zjistíme, že se hodnoty do grafu vykreslují ve chvíli, kdy se změní hodnota vstupu, což je poněkud k ničemu.
 
 Vytvoříme si interval, který bude pravidělně číst a zapisovat do grafu:
@@ -245,9 +282,11 @@ input.listenEvent("valueChanged", function (e) {});
 
 výsledný graf bude vypadat nějak takto ![](/assets/cede.png)
 
+Pokud jste s grafem spokojeni. Můžete ho vesele používat kde potřebujete.
 
+---
 
-Pokud jste s grafem spokojeni. Můžete ho vesele používat kde potřebujete.  
-  
+### konečné slovo:
+
 Samozřejmě je zde hromada místa k zlepšení, jako např. možnost ukazovat více čar, možnost zobrazovat i čísla pod nulu...
 
