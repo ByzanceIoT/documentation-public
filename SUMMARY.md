@@ -12,7 +12,8 @@
 ## Portal Tools
 
 * [Blocko](byzance_documentation/blocko_intro.md)
-  * [bla bla bla](byzance_documentation/dsafdf.md)
+  * Ůvod do blocka
+  * [REST-API bloček](byzance_documentation/blocko_intro/rest-api-blocek.md)
 * [Grid](byzance_documentation/grid_intro.md)
   * [Úvod do GRID](byzance_documentation/grid_intro/uvod-do-grid.md)
   * [Základní Tlačítko \(základy GRID\)](byzance_documentation/grid_intro/tlacitko-zaklady-grid.md)
