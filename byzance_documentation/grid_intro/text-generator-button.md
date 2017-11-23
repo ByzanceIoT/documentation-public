@@ -1,33 +1,42 @@
-Jednoho dne se stane, že si budeme chtít zobrazit ři posílat text, protože né vše se dá vyjádřit v číslech.  
-  
+# Tlačítko na potvrzení textu:
+
+Jednoho dne se stane, že si budeme chtít zobrazit či posílat text, protože né vše se dá vyjádřit v číslech.
+
+---
+
+## myšlenka:
+
 Pro pozdější užití, veškeré možnosti co můžeme dostat do "messeage" jsou:
 
 ```js
 let textOutput = context.inputs.add("textMsgOut","message","text sender",["string","float","boolean","integer"]);
-
 ```
 
 Ale protentokrát si vystačíme jenom se string.
 
 V tomto návodu si uděláme tlačítko, které přijme hodnotu, ukáže jí, a při kliknutí na něj pošle jeho upravenou hodnotu  
-Založíme si nový Widget a pojmenujeme ho např **text display/sender.**  
+Založíme si nový Widget a pojmenujeme ho např **text display/sender.**
 
+---
 
-Začneme se vstupem a výstupem 
+## Úvodní řádky kódu:
+
+Začneme se vstupem a výstupem
 
 ```js
 let textInput = context.inputs.add("textMsgIn", "message", "text input", ["string"]);
 let textOutput = context.outputs.add("textMsgOut", "message", "text output", ["string"]);
 ```
 
-Messeage type je poněkud specifická, a to tím, že je třeba jako poslední argument vypsat do pole všechny hodnoty co se budou posílat. \(seznam všech možných hodnot je vypsán výše\). Počet prvků v poli by měl být dostatečný pro všechny případy.  
-  
-Nesmíme samozřejmě zapomenout na `sizeProfiles` 
+Messeage type je poněkud specifická, a to tím, že je třeba jako poslední argument vypsat do pole všechny hodnoty co se budou posílat. \(seznam všech možných hodnot je vypsán výše\). Počet prvků v poli by měl být dostatečný pro všechny případy.
+
+Nesmíme samozřejmě zapomenout na `sizeProfiles`
 
 ```js
-context.addSizeProfiles(2, 2, 10, 10); 
-
+context.addSizeProfiles(2, 2, 10, 10);
 ```
+
+---
 
 Protože v tomto návodu chci složit Widget ze dvou elementů, kterům budu nastavovat barvu, připravím si configProperities
 
@@ -41,13 +50,17 @@ let fcTextColor = context.configProperties.add("frontElementIconColor", "color",
 let fcIcon = context.configProperties.add("Icon", "fa-icon", "Icon", "fa-paper-plane");
 ```
 
+---
+
+## background element a jeho stylyzace
+
 přidáme "background" alement, na kterém budeme vykreslovat přijatý text \(a později na něj dáme tlačítko\)
 
 ```js
 let backPan = new WK.Label(context, "awaiting");
 ```
 
- nastylujeme ho a přidáme 
+nastylujeme ho a přidáme
 
 ```js
 backPan.style.background = bcColor.value; //z config property
@@ -66,6 +79,10 @@ context.root.add(backPan);
 
 Při testu dostaneme něco takového:  
 ![](/assets/code33.png)
+
+---
+
+## tlačítko \(vrchní element\) a jeho stylizace:
 
 Nyní přidáme druhý element, tlačítko. Postup je pořád stejný
 
@@ -96,7 +113,9 @@ Pokud teď klikneme na test, uzřeme něco podobného tomuto
 
 ![](/assets/code34.png)
 
+---
 
+### interaktivita:
 
 Pokud ale změníme cokoliv v c_onfiguration_, nic se nestane. Proto přidáme event-listener na změny v nastavení
 
@@ -118,12 +137,11 @@ bcColor.listenEvent("valueChanged", e=>{
 })
 ```
 
----
+#### změna velikosti textu apod.:
 
 Doděláme zbytek drobností jako například dynamickou velikost textu a prostřední ikony:
 
 ```js
-
 backPan.listenEvent("resize", e => {
     backPan.style.fontSize = (backPan.visibleRect.size.height * 0.20) + "px";
 });
@@ -132,20 +150,21 @@ backPan.listenEvent("resize", e => {
 U backPan měníme velikost textu na dvacet procent výšky celého backPan, kvůli tomu, že máme ještě tlačítko uprostřed, jenž by zakrylo text.
 
 ```js
-
 button.listenEvent("resize", e => {
     button.style.fontSize = button.visibleRect.size.height * 0.8 + "px";
 });
 ```
 
-Připomínám, že visibleRect vrací údaje v pixelech.   
-  
+Připomínám, že **visibleRect vrací údaje v pixelech**.
+
 Výhodou Resize je že se automaticky zavolá při spuštění testu.
 
 Tlačítko by nyní mělo být schopno měnit velikost textu a ikonky, dle naší vůle  
 ![](/assets/35.png)
 
 ---
+
+## interakce s uživatelem:
 
 Vrhneme se na poslední část, Interaktivitu s uživatelem.
 
@@ -159,8 +178,6 @@ textInput.listenEvent("messageReceived", e => {
 
 S messeage pracujeme jako s polem, pořadí jsme si určili již na začátku v posledním argumentu v input/output. Protože víme, že první věc v poli je string \(a pouze string\), rovnou si ho vypíšeme.
 
-
-
 Ještě přidáme to, že při kliknutí na **tlačítko uprostřed **pošleme poslední zprávu co nám přišla z inputu a přidáme k ní text.
 
 ```js
@@ -171,7 +188,6 @@ button.listenEvent("mousedown", e => {
         text += ".Byz";
     }
 });
-
 ```
 
 button.isHover kontroluje, zda je kurzor opravdu nad daným elementem, bez něj reaguje automaticky na mouse.down.  
@@ -179,8 +195,7 @@ button.isHover kontroluje, zda je kurzor opravdu nad daným elementem, bez něj 
 
 
 
+## závěr:
 
-
-  
 Klikneme na test a otestujeme tlačitko na všechny způsoby.
 
