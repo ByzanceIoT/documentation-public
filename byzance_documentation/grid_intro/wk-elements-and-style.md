@@ -24,22 +24,14 @@ label.style.textShadow = 'null'|'none';
 "rgb(255,255,255,1)" = rgb, poslední hodnota je alpha (1 - solid, 0.5 poloprůhledné, 0 = průhledné)
 ```
 
-
-
 button.style.x = '50%';  
 ![](/assets/widget50x.png)
-
-
 
 button.style.x = '-50%';  
 ![](/assets/posun-50x.png)
 
-
-
 button.style.y = '-50%';  
 ![](/assets/posuny50.png)
-
-
 
 button.style.originX = '0.5';  
 ![](/assets/orginposunx.png)
@@ -48,7 +40,18 @@ button.style.originY = '0.5';
 
 ![](/assets/posunoriginy.png)
 
-
-
 Z přiloženého sloupce musí být jasné, jaký je rozdíl mezi X/Y pozicí, která pracuje buďto s pixely nebo s procenty a s origin, která pracuje na celočíselná čísla.
+
+
+
+kombinaci 
+
+```js
+label.style.width = '100%';                              
+label.style.height = '100%';                             
+label.style.originX = '0.5';                               
+label.style.originY = '0.5';
+```
+
+používáme pro to, abychom daný prvek s jistotou vycentrovali. \(na střed\).
 
