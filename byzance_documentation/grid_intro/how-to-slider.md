@@ -1,10 +1,14 @@
+# Slider na Gridu
+
 Grid dokáže být až překvapivě tvárný a dají se v něm dělat i složitější věci, doslova od píky.
 
-Co třeba si udělat horizontální slider?
+Co udělat horizontální slider, jako třeba tento?
 
 ![](/assets/sliderFirst.png)
 
 ---
+
+## Začátek třídy 
 
 Začneme tím, že si vytvoříme Widget a pojmenujeme si ho Hslider.
 
@@ -33,13 +37,17 @@ class Slider {
     protected _moving = false; 
     protected _movingOffset = 0; //je můžné, že tlačítko bude např. v půli grafu, zde si budeme ukládat aktuální posun tlačítka od 0 
     protected _value = 0; 
-    
+
     constructor(){
 
     }
 
     }
 ```
+
+---
+
+## Konstruktor třídy:
 
 a v kontsruktoru je vytvoříme a nastylujeme.  
 Samozřejmě pro vytvoření prvků potřebujeme context, proto si ho prřidáme do konstruktoru.
@@ -85,7 +93,7 @@ constructor(context: WidgetContext){
 }
 ```
 
-A nakonec přidáme několik listenerů do _constructor_u, abychom mohli manipulovat s posuvníkem
+A nakonec přidáme několik listenerů do \_constructor\_u, abychom mohli manipulovat s posuvníkem
 
 ```js
  this._buttonElement.listenEvent("mousedown",this.onButtonMouseDown); //reagování při kliknutí na button
@@ -93,6 +101,10 @@ A nakonec přidáme několik listenerů do _constructor_u, abychom mohli manipul
  context.root.listenEvent("appmouseup",this.onAppMouseUp); //ve chvíli kdy uživatel pustí tlačítko
  context.root.listenEvent("appmousemove",this.onAppMouseMove); //kvůli celemů posuvníku je třeba vyřešit co jak moc uživatel posunul
 ```
+
+---
+
+### Mock funkce pro listenery:
 
 Jistě jste si všimli, že místo kasického `e => { foo.bar() });` voláme funkci, proto si rovno vytvoříme prázdé funkce, později se k ním vrátíme.
 
@@ -111,6 +123,10 @@ Jistě jste si všimli, že místo kasického `e => { foo.bar() });` voláme fun
    protected onAppMouseMove = (e: WK.MouseEvent) => { 
     }
 ```
+
+---
+
+### Přidání Slideru do widgetu
 
 pokud si chceme otestovat, že náš widget je nastylovaný správně, přidáme getter do naší třídy
 
@@ -136,6 +152,8 @@ při testování dostaneme něco takového:
 
 Můžeme trochu upravit pozice všech objektů.
 
+---
+
 ### přidání getterů a pokrytí základní funkčnosti
 
 Upravíme naší třídu.  Přidáme do ní ještě několik getterů
@@ -158,6 +176,10 @@ Upravíme naší třídu.  Přidáme do ní ještě několik getterů
 ```
 
 Abychom později mohli měnit detaily jako barvy, zaoblení rohu apod.
+
+---
+
+### event listenery ve třídě:
 
 Přidáme možnost poslouchat události ve třídě
 
@@ -224,6 +246,8 @@ Do budoucna ještě pro posun tlačítka
 zaměříme se na let `newX = Math.min( Math.max(e.mousePosition.x - this._movingOffset, 0), max);`  
 nejedná se o nic složitého, jenom menší číslo, abychom nevyjeli z pole, ze dvou možných, kde ještě upravujeme, abychom se nedostali pod nulu. Nejdříve vyhodnotíme zda je pozice posuvíku \(mínus offset pro správnou pozici\) větší než nula a později, jestli nepřekračujeme nejvyšší možnou.
 
+---
+
 ### přidání funkcí
 
 Když už jsme si konečně dopsali veškeré potřebné drobnosti pro barvení a posuv tlačítek, přidáme interaktivitu.
@@ -277,7 +301,7 @@ pokud klikneme na test, tlačítko by mělo býti posuvné a reagovat
 
 Až na ten detail, že z něj nedostáváme žádné hodnoty, doděláme ještě pár drobností.
 
-
+---
 
 ### doladění detailů
 
@@ -366,13 +390,11 @@ Rovnou přidáme i Setter na value \(abychom mohli nastavit námi požadovanou h
 
 a tímto máme celou Slider class hotovou.
 
-
+---
 
 ### Nastavení vstupu/výstupu a konečné řešení
 
-
-
-Mimo naší třídu, nejlépe tam, kde jsme nastavovali `conext.addProfile `přidáme Vstup a výstup
+Mimo naší třídu, nejlépe tam, kde jsme nastavovali `conext.addProfile`přidáme Vstup a výstup
 
 ```js
 let input = context.inputs.add("ain","analog","Analog input");
@@ -388,7 +410,7 @@ let outlineColorProperty = context.configProperties.add('outlineColor','color', 
 let outlineWidthProperty = context.configProperties.add('outlineWidth','integer', 'Size of border', 5);
 let radiusProperty = context.configProperties.add('radius','boolean', 'Enable border radius', true);
 let shadowProperty = context.configProperties.add('shadow','boolean', 'Enable shadow', true);
-let reversedProperty = context.configProperties.add('reversed','boolean', 'Reversed', false); 
+let reversedProperty = context.configProperties.add('reversed','boolean', 'Reversed', false);
 ```
 
 přidáme tyto dva pojistné řádky \(Widget by je měl automaticky povolovat, ale tímto se ujistíme, že vše funguje jak má\)
@@ -401,7 +423,6 @@ context.root.style.background = "transparent"; //nastaví root. componentu průh
 napíšeme si funkci na to, že pokud se stane změna v "_configuration_", tak změníme i slider
 
 ```js
-
 function setupSliderFromProperties() {
     slider.enableRadius(radiusProperty.value);
     slider.setBackgroundColor(backgroundColorProperty.value);
@@ -410,14 +431,12 @@ function setupSliderFromProperties() {
     slider.enableShadow(shadowProperty.value);
     slider.setReversed(reversedProperty.value);
 }
-
 ```
 
 a hned si funkci zavoláme pro počáteční nastavení
 
 ```js
 setupSliderFromProperties();
-
 ```
 
 a nakonec jenom napíšeme listenery na náš slider:
@@ -437,7 +456,6 @@ input.listenEvent("valueChanged", function(e) { //pokud nám příjde z input n�
 context.configProperties.listenEvent("valueChanged", setupSliderFromProperties); //nastavování změn
 ```
 
-  
 a můžeme finálně otestovat  
 ![](/assets/sliderfinal.png)
 
