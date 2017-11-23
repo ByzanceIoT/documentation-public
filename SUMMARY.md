@@ -13,6 +13,7 @@
 
 * [Blocko](byzance_documentation/blocko_intro.md)
   * Ůvod do blocka
+  * [Flip-flop \(žádný žabky\)](byzance_documentation/blocko_intro/flip-flop-zadny-zabky.md)
   * [REST-API bloček](byzance_documentation/blocko_intro/rest-api-blocek.md)
 * [Grid](byzance_documentation/grid_intro.md)
   * [Úvod do GRID](byzance_documentation/grid_intro/uvod-do-grid.md)
