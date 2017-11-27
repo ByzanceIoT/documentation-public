@@ -16,7 +16,7 @@ Polozka ''"name"'' obsahuje volitelny textovy popisek \(napr. ve zkratce, co dan
 
 Položka ''"build_id"'' ma rovněž maximálně 31 znaků.
 
-Položka ''"version"'' se skladá následujícím způsobem: "v1.2.3-alpha","v1.2.3-beta" nebo "v1.2.3" 
+Položka ''"version"'' se skladá: "v1.2.3-alpha","v1.2.3-beta" nebo "v1.2.3" 
 
 Odpověď na příkaz přijde okamžitě, nicméně to neznamená, že je Yoda připraven binárku přijmout. Je třeba potom kouknout na stav jednotlivých vnitřních komponent, jestli jsou OK.
 
