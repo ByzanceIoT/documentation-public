@@ -16,7 +16,7 @@ Polozka ''"name"'' obsahuje volitelny textovy popisek \(napr. ve zkratce, co dan
 
 Položka ''"build_id"'' ma rovněž maximálně 31 znaků.
 
-Položka ''"version"'' se sklada ze čtyř části: \*\*jeden\*\* znak \(písmeno\) a pak tři čísla v rozmezí 0-255. Oddělovačem je \*\*povinně\*\* tečka. Jinými slovy každá ze čtyř části se ukládá do proměnné o velikosti 1B a proto nelze uložit jiné hodnoty. \*\*Neplatné\*\* jsou verze jako "VER0.0.0", "V0.278.0", "AB1580" nebo "V1.01". Sparvne jsou verze "a0.0.0" až "Z255.255.255".
+Položka ''"version"'' se skladá následujícím způsobem: "v1.2.3-alpha","v1.2.3-beta" nebo "v1.2.3" 
 
 Odpověď na příkaz přijde okamžitě, nicméně to neznamená, že je Yoda připraven binárku přijmout. Je třeba potom kouknout na stav jednotlivých vnitřních komponent, jestli jsou OK.
 
