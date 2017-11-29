@@ -12,11 +12,11 @@ Přistupuje se do něj takto
 
 ''XXXXXXXXXXXXXXXXXXXXXXXX/command\_in/upload/start''
 
-Polozka ''"name"'' obsahuje volitelny textovy popisek \(napr. ve zkratce, co dany program dela - je to uzivatelska informace\). Maximalni delka je 64B včetně ukončovacího znaku.
+Položka ''"usr\_name"'' obsahuje volitelny textovy popisek \(napr. ve zkratce, co dany program dela - je to uzivatelska informace\). Maximalni delka je 64B včetně ukončovacího znaku.
 
-Položka ''"build_id"'' ma rovněž maximálně 31 znaků.
+Položka ''"build\_id"'' ma rovněž maximálně 31 znaků.
 
-Položka ''"version"'' se skladá: "v1.2.3-alpha","v1.2.3-beta" nebo "v1.2.3" 
+Položka ''"version"'' se skladá: "v1.2.3-alpha","v1.2.3-beta" nebo "v1.2.3"
 
 Odpověď na příkaz přijde okamžitě, nicméně to neznamená, že je Yoda připraven binárku přijmout. Je třeba potom kouknout na stav jednotlivých vnitřních komponent, jestli jsou OK.
 
@@ -142,172 +142,6 @@ Význam tohoto topicu podle typu zařízení a typu binárky:
 "status"         : "ok/error",
 "error"          : "SOME ERROR MESSAGE", // pouze pokud je status == error
 "error_code"     :  SOME NUMBER          // pouze pokud je status == error
-}
-```
-
-#### Subtopic "status"
-
-Přistupuje se do něj takto
-
-''XXXXXXXXXXXXXXXXXXXXXXXX/command\_in/update/status''
-
-Topic platný pouze v případě, že jde o  ''"update\_state"   : "longTerm"'' typ nahrávání firmwaru, tj. přenos binárky z Yody na Device, který je časově náročnější. Homer se dotazuje na progress updatu, kde chce znát procentuální stav nahrávání. \(Homer se ptá, Yoda odpovídá\)
-
-**Request:**
-
-```
-{
-"mid"            : "SOME ID",
-"device"         : "FULL ID DEVICE, kterého aktuálně Yoda updatuje"
-}
-```
-
-**Reply:**
-
-```
-{
-"mid"            : "SAME ID",
-"status"         : "ok/error",
-"progress"       : 14   <----- int číslo, od 0 do 100 zastupující % update
-"error"          : "SOME ERROR MESSAGE", // pouze pokud je status == error
-"error_code"     :  SOME NUMBER          // pouze pokud je status == error
-}
-```
-
-#### Subtopic "device"
-
-Subtopic slouží k práci se seznamem zařízení, se kterými bude Yoda komunikovat.
-
-#### Subtopic "add"
-
-Přistupuje se do něj takto
-
-''XXXXXXXXXXXXXXXXXXXXXXXX/command\_in/device/add''
-
-Slouží k přidání nového zařízení do Yody. \*\*Pokud už zařízení už v yodovi existuje, návratový JSON obsahuje status "ok", a result "existing". Pokud zařízení neexistuje, status="ok" a result="new". Result "error" může nastat pouze v případě, že se něco vyloženě pokazí\*\*.
-
-**Request:**
-
-```
-{
-"mid"           : "SOME ID",
-"deviceId"      : "24 BYTES OF FULL ID"
-}
-```
-
-**Reply:**
-
-```
-{
-"mid"            : "SOME ID",
-"status"         : "ok/error",
-"error"          : "SOME ERROR MESSAGE", // pouze pokud je status == error
-"error_code"     :  SOME NUMBER,         // pouze pokud je status == error
-"result"         : "new/existing"        // pouze pokud je status == ok
-}
-```
-
-#### Subtopic "remove"
-
-Přistupuje se do něj takto
-
-''XXXXXXXXXXXXXXXXXXXXXXXX/command\_in/device/remove''
-
-Slouží k odebrání zařízení z Yody pro potřeby Homera. Reálny vliv je takový, že device \*\*není\*\* ze seznamu zařízení smazán, ale je mu nastaven status ''saved'' na ''false'' a také je jeho ''state'' na ''DISCONNECTED'' \(číselně ''0x01''\).
-
-**Request:**
-
-```
-{
-"mid"              : "SOME ID",
-"deviceId"         : "24 BYTES FULL ID" (Index není podporován ze strany homera!! Homer neumí pořadí pole!
-}
-```
-
-**Reply:**
-
-```
-{
-"mid"            : "SOME ID",
-"status"         : "ok/error",
-"error"          : "SOME ERROR MESSAGE", // pouze pokud je status == error
-"error_code"     :  SOME NUMBER,         // pouze pokud je status == error
-"result"         : "removed/missing"     // pouze pokud je status == ok
-}
-```
-
-#### Subtopic "get"
-
-Přistupuje se do něj takto
-
-''XXXXXXXXXXXXXXXXXXXXXXXX/command\_in/device/get''
-
-Pokud zařízení není saved, snažilo se připojit k Yodovi a existuje v síti.
-
-Yoda se s ním ale nebaví, dokud nedostane pokyn.
-
-interface, state:
-
-odpovídá ItfEnum\_TypeDef a StateEnum\_TypeDef v souboru DevList.h
-
-Pokud zařízení není reálně připojeno, jeho interface je unknown. Až se připojí, interface se přiřadí na aktuální hodnotu.
-
-```
-typedef enum ( Typy zařízení - jako je drátový nebo bezdrátový)
-{
-ITF_UNKNOWN   = 0x00,
-ITF_NRF       = 0x01, (Bezdrát)
-ITF_RS485     = 0x02, (Drát)
-ITF_ERROR     = 0xFF
-} ItfEnum_TypeDef;
-```
-
-```
-typedef enum : unsigned char {
-DEV\_STATE\_UNKNOWN        = 0x00, // Device zatim nema nastaveny zadny stav, tj po startu.
-
-DEV\_STATE\_DISCONNECTED            = 0x01, // Device je odpojeno - Homer si s nim nechce povidat.
-
-DEV\_STATE\_ADD            = 0x02, // Device se bude enumerovat \(prechodny stav\), Yoda poslal prikaz add.
-
-DEV\_STATE\_ALIVE          = 0x03, // Enumerace probiha \(prechodny stav\).
-
-DEV\_STATE\_ENUMERATED            = 0x04,    // Je enumerovano a normalne zije a komunikuje.
-
-DEV\_STATE\_REMOVE        = 0x05,    // Device se ma zakazat \(prechodny stav\), Yoda poslal prikaz remove.
-
-DEV\_STATE\_TIMEOUT        = 0x14, // Nekolikrat neodpovedelo, ale jeste neni prohlaseno za mrtve. \(20 dekadické\) 
-
-DEV\_STATE\_DEAD            = 0x15, // Prohlaseno za mrtve - neodpovida. \(21 dekadické\)
-
-DEV\_STATE\_ERROR            = 0x20    // error \(32 dekadické\)
-} StateEnum_TypeDef;
-```
-
-**Request:**
-
-```
-{
-"mid"             : "SOME ID",
-// Json musí obsahova buď "deviceId" nebo "device_count" - nic jiného
-"deviceId"         : "24 BYTES OF FULL ID"  vzdy to musi byt string
-"device_count"     : "INDEX OF DEVICE"
-}
-```
-
-**Reply:**
-
-```
-{
-"mid"            : "SOME ID",
-"status"         : "ok/error",
-"error"          : "SOME ERROR MESSAGE", // pouze pokud je status == error
-"error_code"     :  SOME NUMBER,         // pouze pokud je status == error
-"full_id"        : "SOME FULL ID",       // pouze pokud je status == ok
-"short_id"       : "SOME SHORT ID",      // pouze pokud je status == ok
-"saved"          :  true/false,          // pouze pokud je status == ok
-"interface"      :  SOME NUMBER,         // pouze pokud je status == ok (Viz typedef enum)
-"state"          :  SOME NUMBER          // pouze pokud je status == ok
 }
 ```
 
