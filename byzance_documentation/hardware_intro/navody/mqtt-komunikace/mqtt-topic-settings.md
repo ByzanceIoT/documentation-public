@@ -61,12 +61,6 @@ Pokud je třeba zjistit už nastavenou hodnotu, je třeba poslat dotaz do topicu
 
 Topic slouží k nastavení hodin v Yodovi. Používá se klasický unixový timestamp.
 
-Požadavek přímo přes konzoli v Homerovi takto
-
-```
-sendJson i1 settings_in/datetime '{"value": 1471016024}'
-```
-
 **Request:**
 
 ```
@@ -86,6 +80,31 @@ sendJson i1 settings_in/datetime '{"value": 1471016024}'
    "error_code"     :  SOME NUMBER,         // pouze pokud je status == error
    "value"          :  SOME NUMBER          // pouze pokud je status == ok
  }
+```
+
+## Subtopic "timeoffset"
+
+Přistupuje se do něj takto`XXXXXXXXXXXXXXXXXXXXXXXX/settings_in/timeoffset`
+
+TO DO
+
+```
+{
+"mid" : "SOME ID",
+"value" : SOME NUMBER
+}
+```
+
+**Reply:**
+
+```
+{
+"mid" : "SOME ID",
+"status" : "ok/error",
+"error" : "SOME ERROR MESSAGE", // pouze pokud je status == error
+"error_code" : SOME NUMBER, // pouze pokud je status == error
+"value" : SOME NUMBER // pouze pokud je status == ok
+}
 ```
 
 ## Subtopic "timesync"
@@ -146,7 +165,186 @@ Topic slouží k zapnutí nebo vypnutí funkce autobackup. Funkce automaticky p�
  }
 ```
 
-## Subtipic "backup\_mqtt\_connection"
+## Subtopic "blreport"
+
+Přistupuje se do něj takto`XXXXXXXXXXXXXXXXXXXXXXXX/settings_in/blreport`
+
+TO DO
+
+```
+{
+"mid" : "SOME ID",
+"value" : SOME NUMBER
+}
+```
+
+**Reply:**
+
+```
+{
+"mid" : "SOME ID",
+"status" : "ok/error",
+"error" : "SOME ERROR MESSAGE", // pouze pokud je status == error
+"error_code" : SOME NUMBER, // pouze pokud je status == error
+"value" : SOME NUMBER // pouze pokud je status == ok
+}
+```
+
+## Subtopic "wdenable"
+
+Přistupuje se do něj takto`XXXXXXXXXXXXXXXXXXXXXXXX/settings_in/wdenable`
+
+TO DO
+
+```
+{
+"mid" : "SOME ID",
+"value" : SOME NUMBER
+}
+```
+
+**Reply:**
+
+```
+{
+"mid" : "SOME ID",
+"status" : "ok/error",
+"error" : "SOME ERROR MESSAGE", // pouze pokud je status == error
+"error_code" : SOME NUMBER, // pouze pokud je status == error
+"value" : SOME NUMBER // pouze pokud je status == ok
+}
+```
+
+## Subtopic "wdtime"
+
+Přistupuje se do něj takto`XXXXXXXXXXXXXXXXXXXXXXXX/settings_in/wdtime`
+
+TO DO
+
+```
+{
+"mid" : "SOME ID",
+"value" : SOME NUMBER
+}
+```
+
+**Reply:**
+
+```
+{
+"mid" : "SOME ID",
+"status" : "ok/error",
+"error" : "SOME ERROR MESSAGE", // pouze pokud je status == error
+"error_code" : SOME NUMBER, // pouze pokud je status == error
+"value" : SOME NUMBER // pouze pokud je status == ok
+}
+```
+
+## Subtopic "backuptime"
+
+Přistupuje se do něj takto`XXXXXXXXXXXXXXXXXXXXXXXX/settings_in/backuptime`
+
+TO DO
+
+```
+{
+"mid" : "SOME ID",
+"value" : SOME NUMBER
+}
+```
+
+**Reply:**
+
+```
+{
+"mid" : "SOME ID",
+"status" : "ok/error",
+"error" : "SOME ERROR MESSAGE", // pouze pokud je status == error
+"error_code" : SOME NUMBER, // pouze pokud je status == error
+"value" : SOME NUMBER // pouze pokud je status == ok
+}
+```
+
+## Subtopic "lowpanbr"
+
+Přistupuje se do něj takto`XXXXXXXXXXXXXXXXXXXXXXXX/settings_in/lowpanbr`
+
+TO DO
+
+```
+{
+"mid" : "SOME ID",
+"value" : SOME NUMBER
+}
+```
+
+**Reply:**
+
+```
+{
+"mid" : "SOME ID",
+"status" : "ok/error",
+"error" : "SOME ERROR MESSAGE", // pouze pokud je status == error
+"error_code" : SOME NUMBER, // pouze pokud je status == error
+"value" : SOME NUMBER // pouze pokud je status == ok
+}
+```
+
+## Subtopic "autojump"
+
+Přistupuje se do něj takto`XXXXXXXXXXXXXXXXXXXXXXXX/settings_in/autojump`
+
+TO DO
+
+```
+{
+"mid" : "SOME ID",
+"value" : SOME NUMBER
+}
+```
+
+**Reply:**
+
+```
+{
+"mid" : "SOME ID",
+"status" : "ok/error",
+"error" : "SOME ERROR MESSAGE", // pouze pokud je status == error
+"error_code" : SOME NUMBER, // pouze pokud je status == error
+"value" : SOME NUMBER // pouze pokud je status == ok
+}
+```
+
+## Subtopic "normal\_mqtt\_connection"
+
+Přistupuje se do něj takto`XXXXXXXXXXXXXXXXXXXXXXXX/settings_in/normal_mqtt_connection`
+
+Pokud je třeba zjistit už nastavenou hodnotu, je třeba poslat dotaz do topicu[MQTT Topic Info](https://wiki.byzance.cz/wiki/doku.php?id=yoda:topic_info)`XXXXXXXXXXXXXXXXXXXXXXXX/info_in/normal_mqtt_connection`
+
+Příkaz slouží k nastavení normální IP adresy a portu, na které se bude Homer připojovat.
+
+**Request:**
+
+```
+{
+   "mid"            : "SOME ID",
+   "value"          : "192.168.065.179:1881"
+ }
+```
+
+**Reply:**
+
+```
+ {
+   "mid"            : "SOME ID",
+   "status"         : "ok/error",
+   "error"          : "SOME ERROR MESSAGE", // pouze pokud je status == error
+   "error_code"     :  SOME NUMBER,         // pouze pokud je status == error   
+   "value"          : "SOME VALUE"          // pouze pokud je status == ok
+ }
+```
+
+## Subtopic "backup\_mqtt\_connection"
 
 Přistupuje se do něj takto`XXXXXXXXXXXXXXXXXXXXXXXX/settings_in/backup_mqtt_connection`
 
@@ -175,27 +373,56 @@ Příkaz slouží k nastavení záložní IP adresy a portu, na které se bude H
  }
 ```
 
-## Subtopic "wifi\_username"
+## Subtopic "mqtt\_username"
 
-Přistupuje se do něj takto`XXXXXXXXXXXXXXXXXXXXXXXX/settings_in/wifi_username`
+Přistupuje se do něj takto`XXXXXXXXXXXXXXXXXXXXXXXX/settings`_`in/mqtt`_`username`
 
-Pokud je třeba zjistit už nastavenou hodnotu, je třeba poslat dotaz do topicu[MQTT Topic Info](https://wiki.byzance.cz/wiki/doku.php?id=yoda:topic_info)`XXXXXXXXXXXXXXXXXXXXXXXX/info_in/wifi_username`
+Příkaz slouží k nastavení uživatelského jména do MQTT brokeru.
 
-Příkaz slouží k nastavení uživatelského jména do[wifi](https://wiki.byzance.cz/wiki/doku.php?id=feature:wifi).
+Nastavená hodnota nelze zjistit, je možné ji pouze znovu přenastavit.
 
 **Request:**
 
 ```
- {
+{
    "mid"            : "SOME ID",
-   "value"          : "username"
+   "value"          : "SOME USERNAME"
  }
 ```
 
 **Reply:**
 
 ```
+ {
+   "mid"            : "SOME ID",
+   "status"         : "ok/error",
+   "error"          : "SOME ERROR MESSAGE", // pouze pokud je status == error
+   "error_code"     :  SOME NUMBER,         // pouze pokud je status == error   
+   "value"          : "SOME VALUE"          // pouze pokud je status == ok
+ }
+```
+
+## Subtopic "mqtt\_password"
+
+Přistupuje se do něj takto`XXXXXXXXXXXXXXXXXXXXXXXX/settings_in/`_`mqtt_password`_
+
+Příkaz slouží k nastavení uživatelského hesla do MQTT brokeru.
+
+Nastavená hodnota nelze zjistit, je možné ji pouze znovu přenastavit.
+
+**Request:**
+
+```
 {
+   "mid"            : "SOME ID",
+   "value"          : "SOME PASSWORD"
+ }
+```
+
+**Reply:**
+
+```
+ {
    "mid"            : "SOME ID",
    "status"         : "ok/error",
    "error"          : "SOME ERROR MESSAGE", // pouze pokud je status == error
@@ -291,182 +518,6 @@ Příkaz slouží k nastavení portu pro[webové rozhraní](https://wiki.byzance
  }
 ```
 
-## Subtopic "blreport"
-
-Přistupuje se do něj takto`XXXXXXXXXXXXXXXXXXXXXXXX/settings_in/blreport`
-
-TO DO
-
-```
-{
-"mid" : "SOME ID",
-"value" : SOME NUMBER
-}
-```
-
-**Reply:**
-
-```
-{
-"mid" : "SOME ID",
-"status" : "ok/error",
-"error" : "SOME ERROR MESSAGE", // pouze pokud je status == error
-"error_code" : SOME NUMBER, // pouze pokud je status == error
-"value" : SOME NUMBER // pouze pokud je status == ok
-}
-```
-
-## Subtopic "wdenable"
-
-Přistupuje se do něj takto`XXXXXXXXXXXXXXXXXXXXXXXX/settings_in/wdenable`
-
-TO DO
-
-```
-{
-"mid" : "SOME ID",
-"value" : SOME NUMBER
-}
-```
-
-**Reply:**
-
-```
-{
-"mid" : "SOME ID",
-"status" : "ok/error",
-"error" : "SOME ERROR MESSAGE", // pouze pokud je status == error
-"error_code" : SOME NUMBER, // pouze pokud je status == error
-"value" : SOME NUMBER // pouze pokud je status == ok
-}
-```
-
-## Subtopic "wdtime" 
-
-Přistupuje se do něj takto`XXXXXXXXXXXXXXXXXXXXXXXX/settings_in/wdtime`
-
-TO DO
-
-```
-{
-"mid" : "SOME ID",
-"value" : SOME NUMBER
-}
-```
-
-**Reply:**
-
-```
-{
-"mid" : "SOME ID",
-"status" : "ok/error",
-"error" : "SOME ERROR MESSAGE", // pouze pokud je status == error
-"error_code" : SOME NUMBER, // pouze pokud je status == error
-"value" : SOME NUMBER // pouze pokud je status == ok
-}
-```
-
-## Subtopic "backuptime"
-
-Přistupuje se do něj takto`XXXXXXXXXXXXXXXXXXXXXXXX/settings_in/backuptime`
-
-TO DO
-
-```
-{
-"mid" : "SOME ID",
-"value" : SOME NUMBER
-}
-```
-
-**Reply:**
-
-```
-{
-"mid" : "SOME ID",
-"status" : "ok/error",
-"error" : "SOME ERROR MESSAGE", // pouze pokud je status == error
-"error_code" : SOME NUMBER, // pouze pokud je status == error
-"value" : SOME NUMBER // pouze pokud je status == ok
-}
-```
-
-
-## Subtopic "timeoffset"
-
-Přistupuje se do něj takto`XXXXXXXXXXXXXXXXXXXXXXXX/settings_in/timeoffset`
-
-TO DO 
-
-```
-{
-"mid" : "SOME ID",
-"value" : SOME NUMBER
-}
-```
-
-**Reply:**
-
-```
-{
-"mid" : "SOME ID",
-"status" : "ok/error",
-"error" : "SOME ERROR MESSAGE", // pouze pokud je status == error
-"error_code" : SOME NUMBER, // pouze pokud je status == error
-"value" : SOME NUMBER // pouze pokud je status == ok
-}
-```
-
-## Subtopic "lowpanbr"
-
-Přistupuje se do něj takto`XXXXXXXXXXXXXXXXXXXXXXXX/settings_in/lowpanbr`
-
-TO DO
-
-```
-{
-"mid" : "SOME ID",
-"value" : SOME NUMBER
-}
-```
-
-**Reply:**
-
-```
-{
-"mid" : "SOME ID",
-"status" : "ok/error",
-"error" : "SOME ERROR MESSAGE", // pouze pokud je status == error
-"error_code" : SOME NUMBER, // pouze pokud je status == error
-"value" : SOME NUMBER // pouze pokud je status == ok
-}
-```
-
-## Subtopic "autojump"
-
-Přistupuje se do něj takto`XXXXXXXXXXXXXXXXXXXXXXXX/settings_in/autojump`
-
-TO DO
-
-```
-{
-"mid" : "SOME ID",
-"value" : SOME NUMBER
-}
-```
-
-**Reply:**
-
-```
-{
-"mid" : "SOME ID",
-"status" : "ok/error",
-"error" : "SOME ERROR MESSAGE", // pouze pokud je status == error
-"error_code" : SOME NUMBER, // pouze pokud je status == error
-"value" : SOME NUMBER // pouze pokud je status == ok
-}
-```
-
 ## Subtopic "netsource"
 
 Přistupuje se do něj takto`XXXXXXXXXXXXXXXXXXXXXXXX/settings_in/netsource`
@@ -492,13 +543,9 @@ TO DO
 }
 ```
 
-
-
 ## Chybové stavy: {#chybove_stavy}
 
 Každý příkaz může selhat s určitým chybovým kódem. Seznam takovýchto chybových kódů je v
 
 [přehledu chybových kódů](https://wiki.byzance.cz/wiki/doku.php?id=errorcodes:errorcodes)
-
-
 
