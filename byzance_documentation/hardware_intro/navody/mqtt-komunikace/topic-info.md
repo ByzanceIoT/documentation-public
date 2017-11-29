@@ -1,7 +1,5 @@
 ## Topic Info
 
-
-
 Topic slouží k zjišťování informací a hodnot různcýh nastavení v Yodovi. Komunikuje se pomocí JSONů, které mají přesně dané parametry.
 
 JSON z Homera do Yody má 1 povinný label, který vypadají takto:
@@ -75,7 +73,194 @@ Topic slouží k zjištění využití proceosoru v zařízení. Cpuload je orie
  }
 ```
 
+## Informace o "alias"
 
+Přistupuje se do něj takto`XXXXXXXXXXXXXXXXXXXXXXXX/info_in/mac`
+
+Topic slouží k zjištění mac adres jednotlivých komponent. Více informací v článku o[ethernetu](https://wiki.byzance.cz/wiki/doku.php?id=feature:ethernet).
+
+**Request:**
+
+```
+{
+   "mid"            : "SOME ID"
+ }
+```
+
+**Reply:**
+
+```
+ {
+   "mid"            : "SOME ID"
+   "status"         : "ok/error",
+   "error"          : "SOME ERROR MESSAGE", // pouze pokud je status == error
+   "error_code"     :  SOME NUMBER,         // pouze pokud je status == error
+   "mac-eth"        : "SOME VALUE"          // pouze pokud je status == ok
+   "mac-wifi"       : "SOME VALUE"          // pouze pokud je status == ok
+ }
+```
+
+## Informace o "blreport"
+
+Přistupuje se do něj takto  
+''XXXXXXXXXXXXXXXXXXXXXXXX/info\_in/blreport''
+
+TO DO
+
+**Request:**
+
+```
+{
+"mid" : "SOME ID"
+}
+```
+
+**Reply:**
+
+```
+{
+"mid" : "SOME ID"
+"status" : "ok/error",
+"error" : "SOME ERROR MESSAGE", // pouze pokud je status == error
+"error_code" : SOME NUMBER, // pouze pokud je status == error
+"blreport" : "SOME REVISION" // pouze pokud je status == ok
+}
+```
+
+## Informace o "wdenable"
+
+Přistupuje se do něj takto  
+''XXXXXXXXXXXXXXXXXXXXXXXX/info\_in/wdenable''
+
+TO DO
+
+**Request:**
+
+```
+{
+"mid" : "SOME ID"
+}
+```
+
+**Reply:**
+
+```
+{
+"mid" : "SOME ID"
+"status" : "ok/error",
+"error" : "SOME ERROR MESSAGE", // pouze pokud je status == error
+"error_code" : SOME NUMBER, // pouze pokud je status == error
+"wdenable" : "SOME REVISION" // pouze pokud je status == ok
+}
+```
+
+## Informace o "wdtime"
+
+Přistupuje se do něj takto  
+''XXXXXXXXXXXXXXXXXXXXXXXX/info\_in/wdtime''
+
+TO DO
+
+**Request:**
+
+```
+{
+"mid" : "SOME ID"
+}
+```
+
+**Reply:**
+
+```
+{
+"mid" : "SOME ID"
+"status" : "ok/error",
+"error" : "SOME ERROR MESSAGE", // pouze pokud je status == error
+"error_code" : SOME NUMBER, // pouze pokud je status == error
+"wdtime" : "SOME REVISION" // pouze pokud je status == ok
+}
+```
+
+## Informace o "backuptime"
+
+Přistupuje se do něj takto  
+''XXXXXXXXXXXXXXXXXXXXXXXX/info\_in/backuptime''
+
+TO DO
+
+**Request:**
+
+```
+{
+"mid" : "SOME ID"
+}
+```
+
+**Reply:**
+
+```
+{
+"mid" : "SOME ID"
+"status" : "ok/error",
+"error" : "SOME ERROR MESSAGE", // pouze pokud je status == error
+"error_code" : SOME NUMBER, // pouze pokud je status == error
+"backuptime" : "SOME REVISION" // pouze pokud je status == ok
+}
+```
+
+## Informace o "lowpanbr"
+
+Přistupuje se do něj takto  
+''XXXXXXXXXXXXXXXXXXXXXXXX/info\_in/lowpanbr''
+
+TO DO
+
+**Request:**
+
+```
+{
+"mid" : "SOME ID"
+}
+```
+
+**Reply:**
+
+```
+{
+"mid" : "SOME ID"
+"status" : "ok/error",
+"error" : "SOME ERROR MESSAGE", // pouze pokud je status == error
+"error_code" : SOME NUMBER, // pouze pokud je status == error
+"lowpanbr" : "SOME REVISION" // pouze pokud je status == ok
+}
+```
+
+## Informace o "autojump"
+
+Přistupuje se do něj takto  
+''XXXXXXXXXXXXXXXXXXXXXXXX/info\_in/autojump''
+
+TO DO
+
+**Request:**
+
+```
+{
+"mid" : "SOME ID"
+}
+```
+
+**Reply:**
+
+```
+{
+"mid" : "SOME ID"
+"status" : "ok/error",
+"error" : "SOME ERROR MESSAGE", // pouze pokud je status == error
+"error_code" : SOME NUMBER, // pouze pokud je status == error
+"autojump" : "SOME REVISION" // pouze pokud je status == ok
+}
+```
 
 ## Informace o "version"
 
@@ -114,16 +299,16 @@ U Yody jsou validní 4 komponenty:`firmware`,`bootloader`,`backup`,`buffer`.
  }
 ```
 
-## Informace o "alias"
+## Informace o "mac"
 
 Přistupuje se do něj takto`XXXXXXXXXXXXXXXXXXXXXXXX/info_in/mac`
 
-Topic slouží k zjištění mac adres jednotlivých komponent. Více informací v článku o[ethernetu](https://wiki.byzance.cz/wiki/doku.php?id=feature:ethernet).
+Topic slouží k zjištění mac adresy Yody. Více informací v článku o [ethernetu](https://wiki.byzance.cz/wiki/doku.php?id=feature:ethernet).
 
 **Request:**
 
 ```
-{
+ {
    "mid"            : "SOME ID"
  }
 ```
@@ -136,8 +321,7 @@ Topic slouží k zjištění mac adres jednotlivých komponent. Více informací
    "status"         : "ok/error",
    "error"          : "SOME ERROR MESSAGE", // pouze pokud je status == error
    "error_code"     :  SOME NUMBER,         // pouze pokud je status == error
-   "mac-eth"        : "SOME VALUE"          // pouze pokud je status == ok
-   "mac-wifi"       : "SOME VALUE"          // pouze pokud je status == ok
+   "mac"            : "SOME VALUE"          // pouze pokud je status == ok
  }
 ```
 
@@ -219,6 +403,33 @@ Topic slouží k zjištění aktuálního času z hodin, které má v sobě Yoda
    "error_code"     :  SOME NUMBER,         // pouze pokud je status == error   
    "datetime"       :  SOME NUMBER          // pouze pokud je status == ok
  }
+```
+
+## Informace o "timeoffset"
+
+Přistupuje se do něj takto  
+''XXXXXXXXXXXXXXXXXXXXXXXX/info\_in/timeoffset''
+
+TO DO
+
+**Request:**
+
+```
+{
+"mid" : "SOME ID"
+}
+```
+
+**Reply:**
+
+```
+{
+"mid" : "SOME ID"
+"status" : "ok/error",
+"error" : "SOME ERROR MESSAGE", // pouze pokud je status == error
+"error_code" : SOME NUMBER, // pouze pokud je status == error
+"timeoffset" : "SOME REVISION" // pouze pokud je status == ok
+}
 ```
 
 ## Informace o "timesync"
@@ -377,15 +588,12 @@ Zjištění aktuálního backup\_mqtt\_connection, který byl nastavený v topic
  }
 ```
 
-## Informace o "wifi"
+## Informace o "console"
 
-Přistupuje se do něj takto`XXXXXXXXXXXXXXXXXXXXXXXX/info_in/wifi_ssid`
+Přistupuje se do něj takto  
+''XXXXXXXXXXXXXXXXXXXXXXXX/info\_in/console''
 
-Zjištění aktuálního wifi\_ssid, který byl nastavený v topicu`XXXXXXXXXXXXXXXXXXXXXXXX/settings_in/wifi_ssid`.
-
-Wifi SSID by se mělo dát nastavit, pokud je Yoda nakonfigurovaný jako wifi host. Potom se přepne jako wifi klient.
-
-Tento příkaz má smysl pouze při připojení kabelem. Více informací v článku o[wifi](https://wiki.byzance.cz/wiki/doku.php?id=feature:wifi).
+Zjištění aktuálního stavu console, který byl nastavený v topicu ''XXXXXXXXXXXXXXXXXXXXXXXX/settings\_in/console''. Více informací v článku o \[\[tutorial:console\|Webová konzole\]\].
 
 **Request:**
 
@@ -397,86 +605,6 @@ Tento příkaz má smysl pouze při připojení kabelem. Více informací v čl�
 
 **Reply:**
 
-```
- {
-   "mid"            : "SOME ID"
-   "status"         : "ok/error",
-   "error"          : "SOME ERROR MESSAGE", // pouze pokud je status == error
-   "error_code"     :  SOME NUMBER,         // pouze pokud je status == error   
-   "firmware"       : "SOME VALUE"          // pouze pokud je status == ok
-   "mac"            : "SOME VALUE"          // pouze pokud je status == ok
-   "espid"          :  SOME NUMBER          // pouze pokud je status == ok
-   "flashid"        :  SOME NUMBER          // pouze pokud je status == ok
-   "flashsize"      :  SOME NUMBER          // pouze pokud je status == ok
-   "flashspeed"     :  SOME NUMBER          // pouze pokud je status == ok
- }
-```
-## Informace o "wifi_ssid" 
-
-Přistupuje se do něj takto
-''XXXXXXXXXXXXXXXXXXXXXXXX/info_in/wifi_ssid''
-
-Zjištění aktuálního wifi_ssid, který byl nastavený v topicu ''XXXXXXXXXXXXXXXXXXXXXXXX/settings_in/wifi_ssid''.
-
-Wifi SSID by se mělo dát nastavit, pokud je Yoda nakonfigurovaný jako wifi host. Potom se přepne jako wifi klient.
-
-Tento příkaz má smysl pouze při připojení kabelem. Více informací v článku o [[feature:wifi|wifi]].
-
-**Request:**
-```
- {
-   "mid"            : "SOME ID"
- }
-```
-**Reply:**
-```
- {
-   "mid"            : "SOME ID"
-   "status"         : "ok/error",
-   "error"          : "SOME ERROR MESSAGE", // pouze pokud je status == error
-   "error_code"     :  SOME NUMBER,         // pouze pokud je status == error   
-   "ssid"           : "SOME VALUE"          // pouze pokud je status == ok
- }
-```
-
-## Informace o "wifi_password" 
-
-Přistupuje se do něj takto
-''XXXXXXXXXXXXXXXXXXXXXXXX/info_in/wifi_password''
-
-Zjištění aktuálního wifi_password, který byl nastavený v topicu ''XXXXXXXXXXXXXXXXXXXXXXXX/settings_in/wifi_password''. Více informací v článku o [[feature:wifi|wifi]].
-
-**Request:**
-```
- {
-   "mid"            : "SOME ID"
- }
-```
-**Reply:**
-```
- {
-   "mid"            : "SOME ID"
-   "status"         : "ok/error",
-   "error"          : "SOME ERROR MESSAGE", // pouze pokud je status == error
-   "error_code"     :  SOME NUMBER,         // pouze pokud je status == error   
-   "password"       : "SOME VALUE"          // pouze pokud je status == ok
- }
-```
-
-## Informace o "console" 
-
-Přistupuje se do něj takto
-''XXXXXXXXXXXXXXXXXXXXXXXX/info_in/console''
-
-Zjištění aktuálního stavu console, který byl nastavený v topicu ''XXXXXXXXXXXXXXXXXXXXXXXX/settings_in/console''. Více informací v článku o [[tutorial:console|Webová konzole]].
-
-**Request:**
-```
- {
-   "mid"            : "SOME ID"
- }
-```
-**Reply:**
 ```
  {
    "mid"            : "SOME ID"
@@ -486,20 +614,24 @@ Zjištění aktuálního stavu console, který byl nastavený v topicu ''XXXXXXX
    "console"        :  TRUE/FALSE           // pouze pokud je status == ok
  }
 ```
-## Informace o "webview" 
 
-Přistupuje se do něj takto
-''XXXXXXXXXXXXXXXXXXXXXXXX/info_in/webview''
+## Informace o "webview"
 
-Zjištění, jestli je funkce webview zapnutá, což mohlo nastat v topicu ''XXXXXXXXXXXXXXXXXXXXXXXX/settings_in/webview''. Více informací v článku o [[tutorial:webview|Webové rozhraní]].
+Přistupuje se do něj takto  
+''XXXXXXXXXXXXXXXXXXXXXXXX/info\_in/webview''
+
+Zjištění, jestli je funkce webview zapnutá, což mohlo nastat v topicu ''XXXXXXXXXXXXXXXXXXXXXXXX/settings\_in/webview''. Více informací v článku o \[\[tutorial:webview\|Webové rozhraní\]\].
 
 **Request:**
+
 ```
  {
    "mid"            : "SOME ID"
  }
 ```
+
 **Reply:**
+
 ```
  {
    "mid"            : "SOME ID"
@@ -510,20 +642,23 @@ Zjištění, jestli je funkce webview zapnutá, což mohlo nastat v topicu ''XXX
  }
 ```
 
-## Informace o "webport" 
+## Informace o "webport"
 
-Přistupuje se do něj takto
-''XXXXXXXXXXXXXXXXXXXXXXXX/info_in/webport''
+Přistupuje se do něj takto  
+''XXXXXXXXXXXXXXXXXXXXXXXX/info\_in/webport''
 
-Zjištění aktuálního portu, na kterém bude nabíhat webview, přičemž port byl nastaven v topicu ''XXXXXXXXXXXXXXXXXXXXXXXX/settings_in/webport''.  Více informací v článku o [[tutorial:webview|Webové rozhraní]].
+Zjištění aktuálního portu, na kterém bude nabíhat webview, přičemž port byl nastaven v topicu ''XXXXXXXXXXXXXXXXXXXXXXXX/settings\_in/webport''.  Více informací v článku o \[\[tutorial:webview\|Webové rozhraní\]\].
 
 **Request:**
+
 ```
  {
    "mid"            : "SOME ID"
  }
 ```
+
 **Reply:**
+
 ```
  {
    "mid"            : "SOME ID"
@@ -534,217 +669,23 @@ Zjištění aktuálního portu, na kterém bude nabíhat webview, přičemž por
  }
 ```
 
-## Informace o "revision" 
-
-Přistupuje se do něj takto
-''XXXXXXXXXXXXXXXXXXXXXXXX/info_in/revision''
-
-Zjištění aktuálního čísla revize. Položka je read-only a není možné ji nastavit žádným [[yoda:topic_settings|settings topicem]].
- Více informací v článku o [[feature:revision|Revision]].
-
-**Request:**
-```
- {
-   "mid"            : "SOME ID"
- }
- 
-```
-**Reply:**
-```
- {
-   "mid"            : "SOME ID"
-   "status"         : "ok/error",
-   "error"          : "SOME ERROR MESSAGE", // pouze pokud je status == error
-   "error_code"     :  SOME NUMBER,         // pouze pokud je status == error   
-   "revision"       : "SOME REVISION"       // pouze pokud je status == ok
- }
-```
-
-## Informace o "blreport"
-
-Přistupuje se do něj takto
-''XXXXXXXXXXXXXXXXXXXXXXXX/info_in/blreport''
-
-TO DO
-
-**Request:**
-```
-{
-"mid" : "SOME ID"
-}
-```
-**Reply:**
-```
-{
-"mid" : "SOME ID"
-"status" : "ok/error",
-"error" : "SOME ERROR MESSAGE", // pouze pokud je status == error
-"error_code" : SOME NUMBER, // pouze pokud je status == error
-"blreport" : "SOME REVISION" // pouze pokud je status == ok
-}
-```
-
-
-## Informace o "wdenable"
-
-Přistupuje se do něj takto
-''XXXXXXXXXXXXXXXXXXXXXXXX/info_in/wdenable''
-
-TO DO
-
-**Request:**
-```
-{
-"mid" : "SOME ID"
-}
-```
-**Reply:**
-```
-{
-"mid" : "SOME ID"
-"status" : "ok/error",
-"error" : "SOME ERROR MESSAGE", // pouze pokud je status == error
-"error_code" : SOME NUMBER, // pouze pokud je status == error
-"wdenable" : "SOME REVISION" // pouze pokud je status == ok
-}
-```
-
-## Informace o "wdtime" 
-
-Přistupuje se do něj takto
-''XXXXXXXXXXXXXXXXXXXXXXXX/info_in/wdtime''
-
-TO DO
-
-**Request:**
-```
-{
-"mid" : "SOME ID"
-}
-```
-**Reply:**
-```
-{
-"mid" : "SOME ID"
-"status" : "ok/error",
-"error" : "SOME ERROR MESSAGE", // pouze pokud je status == error
-"error_code" : SOME NUMBER, // pouze pokud je status == error
-"wdtime" : "SOME REVISION" // pouze pokud je status == ok
-}
-```
-
-## Informace o "backuptime"
-
-Přistupuje se do něj takto
-''XXXXXXXXXXXXXXXXXXXXXXXX/info_in/backuptime''
-
-TO DO
-
-**Request:**
-```
-{
-"mid" : "SOME ID"
-}
-```
-**Reply:**
-```
-{
-"mid" : "SOME ID"
-"status" : "ok/error",
-"error" : "SOME ERROR MESSAGE", // pouze pokud je status == error
-"error_code" : SOME NUMBER, // pouze pokud je status == error
-"backuptime" : "SOME REVISION" // pouze pokud je status == ok
-}
-```
-
-## Informace o "timeoffset"
-
-Přistupuje se do něj takto
-''XXXXXXXXXXXXXXXXXXXXXXXX/info_in/timeoffset''
-
-TO DO 
-
-**Request:**
-```
-{
-"mid" : "SOME ID"
-}
-```
-**Reply:**
-```
-{
-"mid" : "SOME ID"
-"status" : "ok/error",
-"error" : "SOME ERROR MESSAGE", // pouze pokud je status == error
-"error_code" : SOME NUMBER, // pouze pokud je status == error
-"timeoffset" : "SOME REVISION" // pouze pokud je status == ok
-}
-```
-
-## Informace o "lowpanbr"
-
-Přistupuje se do něj takto
-''XXXXXXXXXXXXXXXXXXXXXXXX/info_in/lowpanbr''
-
-TO DO
-
-**Request:**
-```
-{
-"mid" : "SOME ID"
-}
-```
-**Reply:**
-```
-{
-"mid" : "SOME ID"
-"status" : "ok/error",
-"error" : "SOME ERROR MESSAGE", // pouze pokud je status == error
-"error_code" : SOME NUMBER, // pouze pokud je status == error
-"lowpanbr" : "SOME REVISION" // pouze pokud je status == ok
-}
-```
-
-## Informace o "autojump"
-
-Přistupuje se do něj takto
-''XXXXXXXXXXXXXXXXXXXXXXXX/info_in/autojump''
-
-
-TO DO
-
-**Request:**
-```
-{
-"mid" : "SOME ID"
-}
-```
-**Reply:**
-```
-{
-"mid" : "SOME ID"
-"status" : "ok/error",
-"error" : "SOME ERROR MESSAGE", // pouze pokud je status == error
-"error_code" : SOME NUMBER, // pouze pokud je status == error
-"autojump" : "SOME REVISION" // pouze pokud je status == ok
-}
-```
-
 ## Informace o "netsource"
 
-Přistupuje se do něj takto
-''XXXXXXXXXXXXXXXXXXXXXXXX/info_in/netsource''
-
+Přistupuje se do něj takto  
+''XXXXXXXXXXXXXXXXXXXXXXXX/info\_in/netsource''
 
 TO DO
 
 **Request:**
+
 ```
 {
 "mid" : "SOME ID"
 }
 ```
+
 **Reply:**
+
 ```
 {
 "mid" : "SOME ID"
@@ -755,11 +696,35 @@ TO DO
 }
 ```
 
+## Informace o "revision"
 
+Přistupuje se do něj takto  
+''XXXXXXXXXXXXXXXXXXXXXXXX/info\_in/revision''
 
-### Chybové stavy 
+Zjištění aktuálního čísla revize. Položka je read-only a není možné ji nastavit žádným \[\[yoda:topic\_settings\|settings topicem\]\].  
+ Více informací v článku o \[\[feature:revision\|Revision\]\].
 
-Každý příkaz může selhat s určitým chybovým kódem. Seznam takovýchto chybových kódů je v [[errorcodes:errorcodes|přehledu chybových kódů]].
+**Request:**
 
+```
+ {
+   "mid"            : "SOME ID"
+ }
+```
 
+**Reply:**
+
+```
+ {
+   "mid"            : "SOME ID"
+   "status"         : "ok/error",
+   "error"          : "SOME ERROR MESSAGE", // pouze pokud je status == error
+   "error_code"     :  SOME NUMBER,         // pouze pokud je status == error   
+   "revision"       : "SOME REVISION"       // pouze pokud je status == ok
+ }
+```
+
+### Chybové stavy
+
+Každý příkaz může selhat s určitým chybovým kódem. Seznam takovýchto chybových kódů je v \[\[errorcodes:errorcodes\|přehledu chybových kódů\]\].
 
