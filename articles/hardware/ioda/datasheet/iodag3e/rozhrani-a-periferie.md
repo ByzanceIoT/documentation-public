@@ -14,3 +14,4 @@
 ## Metody napájení {#power}
 
 
+## GPIO a sběrnice {#GPIO}
