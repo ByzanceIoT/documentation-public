@@ -169,11 +169,14 @@ GPIO obsahuje možnost definovat až** 3 komunikační rozhraní SPI najednou**.
 
 ### CAN
 
-Dále je možné definovat dvě sběrnice typu CAN na pinech: 
+Dále je možné definovat dvě sběrnice typu CAN na pinech:
 
 | Funkce | Pin |
 | :--- | :--- |
-|  |  |
+| CAN1\_TX | X13 |
+| CAN1\_RX | X15 |
+| CAN2\_TX | X06 |
+| CAN2\_RX | X14 |
 
 ## Ethernet {#Ethernet}
 
