@@ -1,7 +1,7 @@
 # Rozhraní a periférie
 
 
-* Blokové schéma 
+* [Blokové schéma](#block-diagram)
 * Metody napájení 
 * GPIO a sběrnice
 * Ethernet
