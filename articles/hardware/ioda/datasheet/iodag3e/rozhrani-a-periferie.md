@@ -94,7 +94,6 @@ Sběrnice GPIO je rozdělena na dvě části a to **X-Konektor** a **Y-Konektor*
 
 #### Y-konektor
 
-
 ### Analogové výstupy
 
 ### Analogové vstupy
@@ -114,9 +113,20 @@ Zařízení IODA má na GPIO sběrnici k dispozici dvě sběrnice I2C. Obě sbě
 
 IODA umožňuje komunikovat po několika sériových linkách. Na jeho sběrnici GPIO lze definovat až 4x komunikační rozhraní typu **UART** a jedno komunikační rozhraní **USART**
 
-
-
-
+| Funkce  | Pin |
+| :--- | :--- |
+| UART1\_TX | X06 |
+| UART1\_RX | X07 |
+| UART3\_TX | X11 |
+| UART3\_RX  | X09 |
+| UART4\_TX | Y00 |
+| UART4\_RX  | Y01 |
+| UART5\_TX | Y03 |
+| UART5\_RX | Y18 |
+| USART6\_TX | Y10 |
+| USART6\_RX | Y09 |
+| USART6\_RTS | Y11 |
+| USART6\_CTS | Y15 |
 
 ### SPI
 
