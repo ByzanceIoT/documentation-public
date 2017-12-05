@@ -89,7 +89,7 @@ Zařízení IODA dispouje sběrnicí GPIO s celkem 54 piny. Na GPIO lze definova
 
 Sběrnice GPIO je rozdělena na dvě části a to **X-Konektor** a **Y-Konektor**
 
-#### X-konektor
+#### X-Konektor
 
 
 
