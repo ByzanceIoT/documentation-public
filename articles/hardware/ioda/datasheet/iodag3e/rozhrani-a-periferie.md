@@ -15,3 +15,5 @@
 
 
 ## GPIO a sběrnice {#GPIO}
+
+## Ethernet
