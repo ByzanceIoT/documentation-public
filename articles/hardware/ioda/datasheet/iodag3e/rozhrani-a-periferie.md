@@ -180,9 +180,9 @@ Dále je možné definovat dvě sběrnice typu CAN na pinech:
 
 ### Timers \(PWM\)
 
-IODA má na své GPIO sběrnici dále k dispozici sadu timerů, které se primárně používají k vytváření PWM signálů. Procesor má k dispozici několik různých Timerů, které mají různé kanály. 
+IODA má na své GPIO sběrnici dále k dispozici sadu timerů, které se primárně používají k vytváření PWM signálů. Procesor má k dispozici několik různých Timerů, které mají různé kanály.
 
-| Funkce  | Pin |
+| Funkce | Pin |
 | :--- | :--- |
 | TIM1\_CH3,TIM3\_CH4,TIM8\_CH3 | X00 |
 | TIM1\_CH2,TIM3\_CH3,TIM8\_CH2 | X01 |
@@ -206,6 +206,13 @@ IODA má na své GPIO sběrnici dále k dispozici sadu timerů, které se primá
 | TIM2\_CH3 | Y26 |
 
 ## Ethernet {#Ethernet}
+
+Budič LAN8720 \([Datasheet](http://ww1.microchip.com/downloads/en/DeviceDoc/8720a.pdf)\)
+
+* Podpora PoE
+* Rychlost do 100Mbit
+
+
 
 ## WEXP module \(Lowpan\) {#WEXP}
 
