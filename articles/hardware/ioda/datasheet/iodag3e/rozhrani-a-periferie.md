@@ -8,4 +8,6 @@
 * WEXP (LOWpan)
 
 
-## Blokové schéma 
+## Blokové schéma {#block-diagram}
+
+
