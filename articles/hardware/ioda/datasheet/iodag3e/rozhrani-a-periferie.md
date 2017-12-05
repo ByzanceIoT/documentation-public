@@ -178,6 +178,33 @@ Dále je možné definovat dvě sběrnice typu CAN na pinech:
 | CAN2\_TX | X06 |
 | CAN2\_RX | X14 |
 
+### Timers \(PWM\)
+
+IODA má na své GPIO sběrnici dále k dispozici sadu timerů, které se primárně používají k vytváření PWM signálů. Procesor má k dispozici několik různých Timerů, které mají různé kanály. 
+
+| Funkce  | Pin |
+| :--- | :--- |
+| TIM1\_CH3,TIM3\_CH4,TIM8\_CH3 | X00 |
+| TIM1\_CH2,TIM3\_CH3,TIM8\_CH2 | X01 |
+| TIM1\_CH1 | X02 |
+| TIM2\_CH4,TIM5\_CH4,TIM9\_CH2 | X04 |
+| TIM1\_BKIN,TIM3\_CH1,TIM8\_BKIN | X05 |
+| TIM4\_CH1 | X06 |
+| TIM4\_CH4, TIM11\_CH1 | X13 |
+| TIM3\_CH2 | X14 |
+| TIM4\_CH3,TIM10\_CH1 | X15 |
+| TIM5\_CH4 | Y05 |
+| TIM3\_CH4,TIM8\_CH4 | Y06 |
+| TIM1\_CH1 | Y07 |
+| TIM3\_CH3, TIM8\_CH3 | Y08 |
+| TIM3\_CH2,TIM8\_CH2 | Y09 |
+| TIM3\_CH1,TIM8\_CH1 | Y10 |
+| TIM5\_CH3 | Y12 |
+| TIM5\_CH2 | Y13 |
+| TIM5\_CH1 | Y14 |
+| TIM2\_CH1/TIM2\_ETR,TIM8\_CH1N | Y25 |
+| TIM2\_CH3 | Y26 |
+
 ## Ethernet {#Ethernet}
 
 ## WEXP module \(Lowpan\) {#WEXP}
