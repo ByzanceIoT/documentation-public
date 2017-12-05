@@ -8,8 +8,7 @@
 
 ## Blokové schéma {#block-diagram}
 
-
-TO DO 
+TO DO
 
 ## Metody napájení {#power}
 
@@ -83,25 +82,32 @@ Technické vlastností napájení signálem VBUS:
 
 ## GPIO a sběrnice {#GPIO}
 
-Zařízení IODA dispouje sběrnicí GPIO s celkem 54 piny. Na GPIO lze definovat digitální i analogové vstupy a výstupy a další komunikační rozhraní 
+Zařízení IODA dispouje sběrnicí GPIO s celkem 54 piny. Na GPIO lze definovat digitální i analogové vstupy a výstupy a další komunikační rozhraní
 
-### Pinout 
+### Pinout
 
 Sběrnice GPIO je rozdělena na dvě části a to **X-Konektor** a **Y-Konektor**
 
 #### X-Konektor
 
+#### Y-konektor
 
+### I2C
 
+Zařízení IODA má na GPIO sběrnici k dispozici dvě sběrnice I2C. Obě sběrnice nabízejí možnost využití alternativního zapojení na jiné dvojici pinů.
 
-### I2C 
+| **Funkce ** | **Pin** | **Alternativní pin** |
+| :--- | :--- | :--- |
+| **I2C1 SCL** | **X06** | **X15** |
+| **I2C1 SDA** | **X07** | **X13** |
+| **I2C3 SCL** | **Y07** | **Y21** |
+| **I2C3 SDA** | **Y06** | **Y20** |
 
 ### UART/USART
 
-### SPI 
+### SPI
 
 ### CAN
-
 
 ## Ethernet {#Ethernet}
 
