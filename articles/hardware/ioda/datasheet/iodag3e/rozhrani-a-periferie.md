@@ -96,7 +96,29 @@ Sběrnice GPIO je rozdělena na dvě části a to **X-Konektor** a **Y-Konektor*
 
 ### Analogové výstupy
 
+Na GPIO lze definovat 8 analogových výstupů a to na následujících pinech :
+
+
+
+| Pin |
+| :--- |
+| X00 |
+| X01 |
+| X04 |
+| Y19 |
+| Y22 |
+| Y23 |
+| Y24 |
+| Y25 |
+
 ### Analogové vstupy
+
+Jako analogové vstupy lze použít následující dva piny:
+
+| Pin |
+| :--- |
+| Y23 |
+| Y24 |
 
 ### I2C
 
