@@ -83,12 +83,17 @@ Technické vlastností napájení signálem VBUS:
 
 ## GPIO a sběrnice {#GPIO}
 
-Zařízení IODA dispouje sběrnicí GPIO s celkem 
+Zařízení IODA dispouje sběrnicí GPIO s celkem 54 piny. Na GPIO lze definovat digitální i analogové vstupy a výstupy a další komunikační rozhraní 
 
 ### Pinout 
 
+### I2C 
 
+### UART/USART
 
+### SPI 
+
+### CAN
 
 
 ## Ethernet {#Ethernet}
