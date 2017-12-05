@@ -67,6 +67,10 @@
   * [Vytížení CPU](articles/hardware/ioda/navody/vytizeni-cpu.md)
   * [LED modul](articles/hardware/ioda/navody/led-modul.md)
   * [Specifikace zdroje internetu](articles/hardware/ioda/navody/specifikace-zdroje-internetu.md)
+  * Komunikace přes I2C
+  * Komunikace přes SPI
+  * Komunikace přes CAN
+  * Komunikace po sériové lince
 * [Datasheety ](articles/hardware/datasheety.md)
   * [IODAG3E](articles/hardware/ioda/datasheet/iodag3e.md)
     * [Technické specifikace](/articles/hardware/ioda/datasheet/iodag3e/technicke-specifikace.md)
