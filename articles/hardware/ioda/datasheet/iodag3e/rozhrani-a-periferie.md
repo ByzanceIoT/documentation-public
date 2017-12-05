@@ -104,23 +104,23 @@ Zařízení IODA má na GPIO sběrnici k dispozici dvě sběrnice I2C. Obě sbě
 
 | **Funkce ** | **Pin** | **Alternativní pin** |
 | :--- | :--- | :--- |
-| **I2C1 SCL** | **X06** | **X15** |
-| **I2C1 SDA** | **X07** | **X13** |
-| **I2C3 SCL** | **Y07** | **Y21** |
-| **I2C3 SDA** | **Y06** | **Y20** |
+| I2C1 SCL | X06 | X15 |
+| I2C1 SDA | X07 | X13 |
+| I2C3 SCL | Y07 | Y21 |
+| I2C3 SDA | Y06 | Y20 |
 
 ### UART/USART
 
 IODA umožňuje komunikovat po několika sériových linkách. Na jeho sběrnici GPIO lze definovat až 4x komunikační rozhraní typu **UART** a jedno komunikační rozhraní **USART**
 
-| Funkce  | Pin |
+| **Funkce** | **Pin** |
 | :--- | :--- |
 | UART1\_TX | X06 |
 | UART1\_RX | X07 |
 | UART3\_TX | X11 |
-| UART3\_RX  | X09 |
+| UART3\_RX | X09 |
 | UART4\_TX | Y00 |
-| UART4\_RX  | Y01 |
+| UART4\_RX | Y01 |
 | UART5\_TX | Y03 |
 | UART5\_RX | Y18 |
 | USART6\_TX | Y10 |
