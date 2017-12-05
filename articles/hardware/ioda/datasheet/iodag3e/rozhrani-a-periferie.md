@@ -5,7 +5,7 @@
 * [Metody napájení](#power) 
 * [GPIO a sběrnice](#GPIO)
 * [Ethernet](#Ethernet)
-* WEXP (LOWpan)
+* [WEXP (LOWpan)](#WEXP)
 
 
 ## Blokové schéma {#block-diagram}
