@@ -113,10 +113,10 @@ Na GPIO lze definovat 8 analogových výstupů a to na následujících pinech :
 
 Jako analogové vstupy lze použít následující dva piny:
 
-| Pin |
-| :--- |
-| Y23 |
-| Y24 |
+| Funkce  | Pin |
+| :--- | :--- |
+| DAC\_OUT1 | Y23 |
+| DAC\_OUT2 | Y24 |
 
 ### I2C
 
@@ -149,6 +149,23 @@ IODA umožňuje komunikovat po několika sériových linkách. Na jeho sběrnici
 | USART6\_CTS | Y15 |
 
 ### SPI
+
+GPIO obsahuje možnost definovat až** 3 komunikační rozhraní SPI najednou**. 
+
+| Funkce  | Pin |
+| :--- | :--- |
+| SPI1\_MISO | X12 |
+| SPI1\_MOSI | X14 |
+| SPI1\_SCK | X10 |
+| SPI1\_NSS | X08 |
+| SPI3\_MISO | Y01 |
+| SPI3\_MOSI | Y03 |
+| SPI3\_SCK | Y00 |
+| SPI3\_NSS | Y23 |
+| SPI6\_MISO | Y17 |
+| SPI6\_MOSI | Y16 |
+| SPI6\_SCK | Y15 |
+| SPI6\_NSS | Y11 |
 
 ### CAN
 
