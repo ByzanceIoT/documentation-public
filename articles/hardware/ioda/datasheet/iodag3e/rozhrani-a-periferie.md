@@ -2,11 +2,14 @@
 
 * [Blokové schéma](#block-diagram)
 * [Metody napájení](#power) 
-* [GPIO a sběrnice](#GPIO) [Blokové schéma](#block-diagram)
+* [GPIO a sběrnice](#GPIO) 
 * [Ethernet](#Ethernet)
 * [WEXP module \(Lowpan\)](#WEXP)
 
 ## Blokové schéma {#block-diagram}
+
+
+TO DO 
 
 ## Metody napájení {#power}
 
@@ -79,6 +82,14 @@ Technické vlastností napájení signálem VBUS:
 * Pro použití nutno vodivě spojit pájecí propojku SJ1 \(vedle tlačítka RST\)
 
 ## GPIO a sběrnice {#GPIO}
+
+Zařízení IODA dispouje sběrnicí GPIO s celkem 
+
+### Pinout 
+
+
+
+
 
 ## Ethernet {#Ethernet}
 
