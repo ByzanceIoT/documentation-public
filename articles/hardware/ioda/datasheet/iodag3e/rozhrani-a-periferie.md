@@ -11,3 +11,6 @@
 ## Blokové schéma {#block-diagram}
 
 
+## Metody napájení {#power}
+
+
