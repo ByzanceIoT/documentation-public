@@ -1,5 +1,7 @@
 # Rozhraní a periférie
 
+**Obsah:**
+
 * [Blokové schéma](#block-diagram)
 * [Metody napájení](#power) 
 * [GPIO a sběrnice](#GPIO) 
