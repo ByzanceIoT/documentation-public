@@ -3,7 +3,7 @@
 
 * [Blokové schéma](#block-diagram)
 * [Metody napájení](#power) 
-* GPIO a sběrnice
+* [GPIO a sběrnice](#GPIO)
 * Ethernet
 * WEXP (LOWpan)
 
