@@ -4,17 +4,17 @@ Bootloader je firmware nahraný v zařízení Byzance, které udržuje **základ
 
 **Overview**
 
-1. Základní přehled
-2. Činnost bootloaderu 
-  * Mód JUMP
-  * Mód FLASH
-  * Mód RESTORE
-  * Mód COMMANDS
-  * Mód FACTORY RESET
-2. Command režim
-3. Default Configuration Values
+1. [Základní přehled](#základní-přehled-)
+2. [Činnost bootloaderu ](#činnost-bootloaderu)
+   * [Mód JUMP](#mód-jump)
+   * [Mód FLASH](#mód-flash)
+   * [Mód RESTORE](#mód-restore)
+   * [Mód COMMANDS](#mód-commands)
+   * [Mód FACTORY RESET](#mód-factory-reset)
+3. [Command režim](#command-režim)
+4. [Default Configuration Values](#default-configuration-values)
 
-## Základní Přehled
+## Základní Přehled 
 
 Každé zařízení má v sobě nahraných více do jisté míry nezávislých programů. Typicky jde o tyto:
 
@@ -23,7 +23,7 @@ Každé zařízení má v sobě nahraných více do jisté míry nezávislých p
 * Záložní program
 * Programový buffer
 
-Každý program má ve FLASH paměti vyhrazeno pevné místo, tj. má danou počáteční adresu a max. velikost viz [adresaci paměti](ODKAZ na adresaci). 
+Každý program má ve FLASH paměti vyhrazeno pevné místo, tj. má danou počáteční adresu a max. velikost viz [adresaci paměti](ODKAZ na adresaci).
 
 ## Činnost bootloaderu
 
@@ -107,7 +107,7 @@ Skládá se z dvou částí.
 
 ### Vývojový diagram
 
-![bootloader_schema](/images/hardware/bootloader_schema.png)
+![bootloader\_schema](/images/hardware/bootloader_schema.png)
 
 ## Command režim
 
@@ -136,7 +136,7 @@ Při prvním spuštění nebo při položce configured=0 bootloader skáče do c
 
 **Pokud zařízení používá DevList**
 
-* **devlist\_clear** - natvrdo smaže seznam všech uložených device v Idovi. Viz (devlist)[TO DO odkaz]
+* **devlist\_clear** - natvrdo smaže seznam všech uložených device v Idovi. Viz \(devlist\)\[TO DO odkaz\]
 * **devlist\_counter** - zjistí počet uložených device v Iodovi.
 * **devlist\_list** - vypíše seznam všech uložených device v Iodovi. 
 
