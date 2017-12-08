@@ -212,8 +212,6 @@ Budič LAN8720 \([Datasheet](http://ww1.microchip.com/downloads/en/DeviceDoc/872
 * Podpora PoE
 * Rychlost do 100Mbit
 
-
-
 ## WEXP module \(Lowpan\) {#WEXP}
 
 
