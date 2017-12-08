@@ -32,7 +32,7 @@ Nastavená minimální hodnota by měla být alespoň 60 sekund, aby bylo při z
 
 ## Proměnna Trusted
 
-dopsat
+TO DO 
 
 ## Nastavování a zjišťování hodnot
 
