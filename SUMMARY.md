@@ -81,7 +81,6 @@
       * [Ethernet](/articles/hardware/ioda/datasheet/iodag3e/rozhrani-a-periferie/ethernet.md)
       * [WEXP](/articles/hardware/ioda/datasheet/iodag3e/rozhrani-a-periferie/wexp.md)
     * [Rozložení a využití paměti](/articles/hardware/ioda/datasheet/iodag3e/rozlozeni-a-vyuziti-pameti.md)
-    * [Pinout](/articles/hardware/ioda/datasheet/iodag3e/pinout.md)
     * [LED signalizace](/articles/hardware/ioda/datasheet/iodag3e/led-signalizace.md)
     * [Schémata](/articles/hardware/ioda/datasheet/iodag3e/schemata.md)
     * [Revize](/articles/hardware/ioda/datasheet/iodag3e/revize.md)
