@@ -1,16 +1,20 @@
-# Volatilní paměť
+# Paměť zařízení 
+
+
+
+## Volatilní paměť#
 
 Voalitní paměť je na mikrokontrolérech STM32 tvořena jedním či dvěma moduly:
 
-## RAM
+### RAM
 
 plnohodnotná paměť pro náhodný přístup
 
-## CCM \(Core Coupled Memory\)
+### CCM \(Core Coupled Memory\)
 
 Jedná se o neplnohodnotnou RAM, její omezení plyne především z toho, že není schopna pracovat s DMA; lze ji například použít pro různé překladové tabulky, jejichž výčet z paměti FLASH by byl časově náročný a je proto proveden jen jednou při startu procesoru
 
-# Rozložení paměti v C a linkování
+## Rozložení paměti v C a linkování
 
 Z hlediska programování v jazyce C je možné rozdělit proměnné dle platnosti:
 
@@ -47,7 +51,7 @@ Oblast stack a heap vyplňuje zbytek paměti RAM. Stack je využíván pro loká
 
 Oblast .text je určená pro read-only \(nebo alespoň read-mostly\) operace. Čtení z této paměti může být pomalejší.
 
-# Mapa paměti daného zařízení
+## Mapa paměti 
 
 Mapa paměti je závislá na konkrétním zařízení. Konkrétní informace jsou vždy u daných zařízení v sekci [Hardware](/Hardware).
 

@@ -55,7 +55,7 @@
   * [Watchdog](byzance_documentation/hardware_intro/features/watchdog.md)
   * [Autobackup](articles/hardware/ioda/navody/autobackup.md)
   * [Webové rozhraní a konzole](articles/hardware/ioda/navody/webove-rozhrani-a-konzole.md)
-  * [Čas běhu zařízení](articles/hardware/ioda/navody/cas-behu-zarizeni.md)
+  * [Čas běhu zařízení \(Uptime\)](articles/hardware/ioda/navody/cas-behu-zarizeni.md)
   * [Paměť zařízení](articles/hardware/ioda/navody/pamet-zarizeni.md)
   * [Připojení k PC](articles/hardware/ioda/navody/pripojeni-k-pc.md)
   * [Připojení zdroje k VBAT](articles/hardware/ioda/navody/pripojeni-zdroje-k-vbat.md)
