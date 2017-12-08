@@ -4,7 +4,7 @@
   * [RAM](#ram)
   * [CCM](#ccm-core-coupled-memory)
 * [Rozložení paměti v C a linkování](#rozložení-paměti-v-c-a-linkování)
-* Mapa paměti zařízení
+* [Mapa paměti zařízení](#mapa-paměti-zařízení)
 
 ## Volatilní paměť
 
@@ -57,5 +57,5 @@ Oblast .text je určená pro read-only \(nebo alespoň read-mostly\) operace. Č
 
 ## Mapa paměti zařízení
 
-Mapa paměti je závislá na konkrétním zařízení. Konkrétní informace jsou vždy u daných zařízení v sekci [Hardware](/Hardware).
+Každé zařízení byzance má zpracovanou svou vlastní mapu paměti, kterou lze dohledat v datasheetu konkrétního zařízení v sekci [Datasheety](/articles/hardware/datasheety.md)
 
