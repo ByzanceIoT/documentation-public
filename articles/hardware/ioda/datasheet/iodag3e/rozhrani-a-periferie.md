@@ -92,7 +92,11 @@ Sběrnice GPIO je rozdělena na dvě části a to **X-Konektor** a **Y-Konektor*
 
 #### X-Konektor
 
+![](/images/hardware/ioda_xbus.png)
+
 #### Y-Konektor
+
+![](/images/hardware/ioda_ybus.png)
 
 ### Analogové výstupy
 
