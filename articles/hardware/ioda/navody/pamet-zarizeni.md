@@ -1,8 +1,13 @@
 # Paměť zařízení 
 
+* Volatilní paměť
+ * RAM
+ * CCM
+* Rozložení paměti v C a linkování
+* Mapa paměti zařízení
 
 
-## Volatilní paměť#
+## Volatilní paměť
 
 Voalitní paměť je na mikrokontrolérech STM32 tvořena jedním či dvěma moduly:
 
