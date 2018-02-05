@@ -30,8 +30,8 @@ Po správném zapojení sériové linky je nutné v kódu linku inicializovat. P
 První inicializace se provádí příkazem
 
 ```
-#define pin_TX    Y00   // could be for example X11 or SERIAL_TX 
-#define pin_RX    Y01   // could be for example X09 or SERIAL_RX
+#define pin_TX    Y00   // Y00 for UART4, could be for example X11 or SERIAL_TX 
+#define pin_RX    Y01   // Y01 for UART4, could be for example X09 or SERIAL_RX
 
 int baudrate = 115200;  //
 
