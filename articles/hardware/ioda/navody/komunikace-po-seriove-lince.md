@@ -45,7 +45,25 @@ Předchozí kód inicializuje sériovou linku pod názvem **pc** na pinech **Y00
 Baudrate sériové linky můžeme dodatečně upravovat pomocí 
 
 ```
-pc.baud(newbaudrate);
+pc.baud(9600);
+```
+
+Sériová komunikace je tvořena takzvanými pakety, které se zkládají z několika bitů. Každý paket obsahuje start bit, datové bity, paritní bity a stop bity.  
+
+![](/assets/UART-Packet.png)
+
+**Formát** paketu musí být u obou komunikujících zařízení společně s **baudrate** definována **totožně**, jinak si zařízení neporozumí. 
+
+Při inicializaci se defaultně nastaví 8 datových bitů, žádná parita a jeden stop bit. Pokud by aplikace či komunikace vyžadovala jiný formát, lze ho nastavit pomocí 
+
+
+```
+#define parity Odd     // Options: Even, None, Forced0, Forced1 
+
+int data_bits = 8;   // has to be in range 5 - 8 
+int stop_bits = 2;   // 1 or 2
+
+pc.format(data_bits, Parity parity=SerialBase::None, stop_bits);
 ```
 
 
