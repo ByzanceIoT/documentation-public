@@ -7,7 +7,7 @@ Obsah:
 * [Odesílání dat](#sent)
 * [Zpracování dat](#recieve)
 
-## Zapojení (#zapojeni)
+## Zapojení {#zapojeni}
 
 
 
