@@ -5,12 +5,16 @@ Zařízení Ioda umožňuje na své GPIO sběrnici definovat až 3 sériové lin
 Obsah:
 
 * [Zapojení](#zapojeni)
+* [Inicializace](#inicializace)
 * [Odesílání dat](#sent)
 * [Zpracování dat](#zpracování-příchozích-dat)
 
 ## Zapojení {#zapojeni}
 
 K zapojení sériové linky jsou potřeba pouze 3 vodiče připojené na piny RX, TX a GND, přičemž linky RX (recieve data) a TX (Transfere data) se kříží viz schéma 
+
+## Inicializace 
+
 
 
 ## Odeslání dat {#sent}
