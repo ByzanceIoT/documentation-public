@@ -58,21 +58,44 @@ Při inicializaci se defaultně nastaví 8 datových bitů, žádná parita a je
 
 
 ```
-#define parity Odd     // Options: Even, None, Forced0, Forced1 
+#define PARITY Odd     // Options: Even, None, Forced0, Forced1 
 
-int data_bits = 8;   // has to be in range 5 - 8 
+int data_bits = 8;   // Has to be in range 5 - 8 
 int stop_bits = 2;   // 1 or 2
 
-pc.format(data_bits, Parity parity=SerialBase::None, stop_bits);
+pc.format(data_bits, PARITY, stop_bits);
 ```
-
-
-
-
 
 ## Odeslání dat {#sent}
 
+Odesílání dat po sériové lince 
+
 ## Zpracování příchozích dat
+
+Ke zpracování příchozího znaku po sériové lince lze využít základní jednoduchý program 
+
+
+
+```
+
+#include "byzance.h"
+ 
+Serial pc(SERIAL_TX, SERIAL_RX); // tx, rx
+Serial device(X11, X09);  // tx, rx
+ 
+int main() {
+    while(1) {
+        if(pc.readable()) {
+            device.putc(pc.getc());
+        }
+        if(device.readable()) {
+            pc.putc(device.getc());
+        }
+    }
+}
+
+```
+
 
 
 
