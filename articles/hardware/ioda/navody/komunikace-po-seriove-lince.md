@@ -23,9 +23,9 @@ Na kterých pinech lze definovat sériovou linku lze zjistit z [dokumentace](//a
 
 Po správném zapojení sériové linky je nutné v kódu linku inicializovat. Parametry inicializace sériové linky jsou 
 
-* Piny GPIO sběrnice na kterých se linka definuje 
-* Rychlost přenosu (Baudrate)
-* Formát
+* **Piny GPIO sběrnice na kterých se linka definuje** 
+* **Rychlost přenosu (Baudrate)**
+* **Formát**
 
 První inicializace se provádí příkazem
 
@@ -33,12 +33,20 @@ První inicializace se provádí příkazem
 #define pin_TX    Y00   // Y00 for UART4, could be for example X11 or SERIAL_TX 
 #define pin_RX    Y01   // Y01 for UART4, could be for example X09 or SERIAL_RX
 
-int baudrate = 115200;  //
+int baudrate = 115200;  // Depends on device - higher means faster (typically 9600, 28800, 57600 etc ..)
 
 // Init serail line
 Serial pc(pin_TX,pin_RX, baudrate);
+
 ```
 
+Předchozí kód inicializuje sériovou linku pod názvem **pc** na pinech **Y00** a **Y01** s přenosovou rychlostí **115200** baudů za sekundu. Místo definovaných pinů je také možné použít makra **SERIAL_TX** a **SERIAL_RX**, které odkazují na piny totožné sériové linky, nebo libovolně vybrat jinou sériovou linku podle [dokumentace](//articles/hardware/ioda/datasheet/iodag3e/rozhrani-a-periferie.md).
+
+Baudrate sériové linky můžeme dodatečně upravovat pomocí 
+
+```
+pc.baud(newbaudrate);
+```
 
 
 
