@@ -21,7 +21,27 @@ Na kterých pinech lze definovat sériovou linku lze zjistit z [dokumentace](//a
 
 ## Inicializace
 
-Po správném zapojení sériové linky je nutné v kódu
+Po správném zapojení sériové linky je nutné v kódu linku inicializovat. Parametry inicializace sériové linky jsou 
+
+* Piny GPIO sběrnice na kterých se linka definuje 
+* Rychlost přenosu (Baudrate)
+* Formát
+
+První inicializace se provádí příkazem
+
+```
+#define pin_TX    Y00   // could be for example X11 or SERIAL_TX 
+#define pin_RX    Y01   // could be for example X09 or SERIAL_RX
+
+int baudrate = 115200;  //
+
+// Init serail line
+Serial pc(pin_TX,pin_RX, baudrate);
+```
+
+
+
+
 
 ## Odeslání dat {#sent}
 
