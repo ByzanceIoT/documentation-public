@@ -69,6 +69,7 @@ pc.format(data_bits, Parity parity=SerialBase::None, stop_bits);
 
 
 
+
 ## Odeslání dat {#sent}
 
 ## Zpracování příchozích dat
