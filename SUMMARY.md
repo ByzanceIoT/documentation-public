@@ -70,7 +70,7 @@
   * Komunikace přes I2C
   * Komunikace přes SPI
   * Komunikace přes CAN
-  * Komunikace po sériové lince
+  * [Komunikace po sériové lince](articles/hardware/ioda/navody/komunikace-po-seriove-lince.md)
 * [Datasheety ](articles/hardware/datasheety.md)
   * [IODAG3E](articles/hardware/ioda/datasheet/iodag3e.md)
     * [Technické specifikace](/articles/hardware/ioda/datasheet/iodag3e/technicke-specifikace.md)
