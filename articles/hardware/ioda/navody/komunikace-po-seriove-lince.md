@@ -17,11 +17,11 @@ K zapojení sériové linky jsou potřeba pouze 3 vodiče připojené na piny RX
 
 Při zapojování je nutné dbát na napěťové úrovně, které obě zařízení používají. Zařízení Ioda definuje logickou jedničku napěťovou úrovní 3,3V. V případě, že by aplikaci vyžadovala komunikaci například s Arduinem, které definuje logickou jedničku 5V, bylo by nutné mezi zařízení vsadit napěťový převodník, který sníží 5V Arduina na požadovaných 3,3V. V jiném případě by mohlo dojít k poškození Iody.
 
-Na kterých pinech lze definovat sériovou linku lze zjistit z [dokumentace](//articles/hardware/ioda/datasheet/iodag3e/rozhrani-a-periferie.md) periférií zařízení IODAG3E
+Na kterých pinech lze definovat sériovou linku lze zjistit z [dokumentace](//articles/hardware/ioda/datasheet/iodag3e/rozhrani-a-periferie.md) periférií zařízení IODAG3E.
 
 ## Inicializace
 
-Po správném zapojení sériové linky je nutné v kódu 
+Po správném zapojení sériové linky je nutné v kódu
 
 ## Odeslání dat {#sent}
 
