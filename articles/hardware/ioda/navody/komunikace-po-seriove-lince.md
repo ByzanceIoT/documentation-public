@@ -119,46 +119,20 @@ float voltage;
 float temp;
 
 
-
-/*
-void read_line(){
-
-
-	char line[SERIAL_BUFFER_SIZE];
-	// disable interrupts for critical section
-	NVIC_DisableIRQ(UART_IRQn);
-
-
-	// process buffer
-
-
-	ip = strtok(buffer,":");
-	uptime = strtok(0,":");
-	parser = strtok(0,":");
-	voltage = atof(parser);
-	parser = strtok(0,":");
-	temp = atof(parser);
-
-	buff_pointer = 0;
-
-	serial.printf(" Voltage : %f , CPU TEMP %f", voltage+1, temp+2);
-
-	// enable interrupts - end of the critical section
-	NVIC_EnableIRQ(UART_IRQn);
-
-
-}
+/**
+* Function attached to serial recieve data interrupt
+*
 */
-
 void rx_interrupt(){
 
+	// Loop until there is something to read or line is complete
 	while((serial.readable()) && ((buff_pointer < SERIAL_BUFFER_SIZE) && (complete_line == 0))){
 
 		// Read char from serial
 		c = serial.getc();
-
+	
 		// detect end of line
-		if ((c == ';') && (complete_line == 0)){
+		if ((c == '\n') && (complete_line == 0)){
 
 			complete_line = 1;
 
