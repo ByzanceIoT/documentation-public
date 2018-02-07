@@ -220,7 +220,7 @@ void loop() {
 
 ```
 
-Vykonání funkce připojené k interruptu bude mít vždy větší prioritu než hlavní funkce. Může se tedy stát, že oba budou přistupovat k paměti bufferu ve stejnou chvíli. Za tímto účelem je nutné v tzv. kritické sekci, kdy hlavní smyčka přistupuje k bufferu zakázat přerušení vyvolávané sériovou linkou. To lze provést funkcemi.
+Vykonání funkce připojené k přerušení bude mít vždy větší prioritu než hlavní funkce. Může se tedy stát, že oba budou přistupovat k paměti bufferu ve stejnou chvíli. Za tímto účelem je nutné v tzv. kritické sekci, kdy hlavní smyčka přistupuje k bufferu zakázat přerušení vyvolávané sériovou linkou. To lze provést funkcemi.
 
 
 ```
