@@ -51,6 +51,7 @@
 * [Features](articles/hardware/featury.md)
   * [Bootloader a Command režim](/articles/hardware/ioda/navody/bootloader.md)
   * [Identifikace zařízení](articles/hardware/ioda/navody/identifikace-zarizeni.md)
+  * Autojump
   * [Práce s datem a časem \(RTC\)](/articles/hardware/ioda/navody/prace-s-datem-a-casem-rtc.md)
   * [Watchdog](byzance_documentation/hardware_intro/features/watchdog.md)
   * [Autobackup](articles/hardware/ioda/navody/autobackup.md)
@@ -70,7 +71,7 @@
   * Komunikace přes I2C
   * Komunikace přes SPI
   * [Komunikace přes CAN](articles/hardware/ioda/navody/komunikace-pres-can.md)
-  * [Komunikace po sériové lince](articles/hardware/ioda/navody/komunikace-po-seriove-lince.md)
+  * Autojump
 * [Datasheety ](articles/hardware/datasheety.md)
   * [IODAG3E](articles/hardware/ioda/datasheet/iodag3e.md)
     * [Technické specifikace](/articles/hardware/ioda/datasheet/iodag3e/technicke-specifikace.md)
