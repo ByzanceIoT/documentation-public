@@ -48,7 +48,7 @@ Baudrate sériové linky můžeme dodatečně upravovat pomocí
 pc.baud(9600);
 ```
 
-Sériová komunikace je tvořena takzvanými pakety, které se zkládají z několika bitů. Každý paket obsahuje start bit, datové bity, paritní bity a stop bity.  
+Sériová komunikace je tvořena takzvanými pakety, které se skládají z několika bitů. Každý paket obsahuje start bit, datové bity, paritní bity a stop bity.  
 
 ![](/assets/UART-Packet.png)
 
