@@ -133,11 +133,13 @@ void rx_interrupt(){
 	
 		// detect end of line
 		if ((c == '\n') && (complete_line == 0)){
-
+			
+			// Complete line flag
 			complete_line = 1;
 
 		}else if (complete_line == 0) {
-
+			
+			// Add char to buffer
 			buffer[buff_pointer] = c;
 			buff_pointer++;
 
