@@ -101,27 +101,20 @@ Pokud má hlavní program konat náročnější funkci, je nutné příchozí da
 #include "byzance.h"
 
 #define SERIAL_BUFFER_SIZE  100
-#define BYZANCE_OVER_USB 	0
 
+// Serial definition
 Serial serial(SERIAL_TX,SERIAL_RX); // tx, rx
-
-MESSAGE_OUTPUT(message_out_counter, STRING);
-
 
 // Global variables
 char buffer[SERIAL_BUFFER_SIZE];
 char line_buffer[SERIAL_BUFFER_SIZE+1];
-char *parser;
 int buff_pointer;
 char c;
 bool complete_line;
-float voltage;
-float temp;
 
 
 /**
 * Function attached to serial recieve data interrupt
-*
 */
 void rx_interrupt(){
 
@@ -131,7 +124,7 @@ void rx_interrupt(){
 		// Read char from serial
 		c = serial.getc();
 	
-		// detect end of line
+		// Detect end of line
 		if ((c == '\n') && (complete_line == 0)){
 			
 			// Complete line flag
@@ -147,25 +140,13 @@ void rx_interrupt(){
 	}
 }
 
-
-void pre_init(){
-
-	#if BYZANCE_OVER_USB
-		ByzanceLogger::init(&usb);
-	#else
-		ByzanceLogger::init(&serial);
-		serial.baud(115200);
-	#endif
-
-	ByzanceLogger::set_level(DEBUG_LEVEL_TRACE);
-	ByzanceLogger::enable_prefix(false);
-
-}
-
 void init(){
-
-	complete_line = false;
-
+	
+	// Init serial line
+	serial.baud(115200);
+	complete_line = 0;
+	
+	// Attach function rx_interrupt to serial RX interrupt 
 	serial.attach(&rx_interrupt, Serial::RxIrq);
 
 }
@@ -176,7 +157,7 @@ void loop() {
 	// If the line is ready copy buffer and process the line
 	if (complete_line || (buff_pointer == (SERIAL_BUFFER_SIZE-1))){
 
-		// Disable serial line interrupts
+		// Disable serial line interrupts   ---- CRITICAL SECTION 
 		NVIC_DisableIRQ(UART4_IRQn);
 
 		if (buff_pointer > 0){
@@ -187,23 +168,11 @@ void loop() {
 		buff_pointer = 0;
 
 		// Enadble serial interrupts
-		NVIC_EnableIRQ(UART4_IRQn);
+		NVIC_EnableIRQ(UART4_IRQn);   ---- END OF CRITICAL SECTION 
 
 		// process line
-
-		//ip = strtok(line_buffer,":");
-		//uptime = strtok(0,":");
-		parser = strtok(line_buffer,":");
-		voltage = atof(parser);
-		parser = strtok(0,":");
-		temp = atof(parser);
-
-		serial.printf("%f % \n", voltage);
+			
 	}
-
-    //serial->printf("ip=%s\n", Byzance::get_ip_address());
-    Console::log("Test console\n");
-    serial.printf("test console \n");
 
 	Thread::wait(200);
 
