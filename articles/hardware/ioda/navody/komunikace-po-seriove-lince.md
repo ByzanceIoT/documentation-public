@@ -68,7 +68,45 @@ pc.format(data_bits, PARITY, stop_bits);
 
 ## Odeslání dat {#sent}
 
-Odesílání dat po sériové lince 
+Odesílání dat po sériové lze provádět pomocí dvou základních funkcí.
+
+```
+
+serial.putc('c'); 				// Send char 'c'
+serial.printf("This is the serial test \n");  // Send a whole string
+
+```
+Funkce _serial.printf()_ používá klasické formátování funkce _printf_ 
+
+
+
+```
+
+// init serial
+Serial serial(SERIAL_TX,SERIAL_RX);
+
+void init(){
+
+	serial.baud(115200);
+
+}
+
+void loop(){
+
+	
+	float voltage = 3.3; 
+	int pin_number = 15;
+	
+	serial.printf("Voltage on pin number %d is %f V", pin_number, voltage);	
+
+	Thread::wait(200);
+
+}
+
+```
+
+
+
 
 ## Zpracování příchozích dat
 
@@ -173,12 +211,25 @@ void loop() {
 		// process line
 			
 	}
-
+	
+	// Do anything else
+	
 	Thread::wait(200);
 
 }
 
 ```
+
+Vykonání funkce připojené k interruptu bude mít vždy větší prioritu než hlavní funkce. Může se tedy stát, že oba budou přistupovat k paměti bufferu ve stejnou chvíli. Za tímto účelem je nutné v tzv. kritické sekci, kdy hlavní smyčka přistupuje k bufferu zakázat přerušení vyvolávané sériovou linkou. To lze provést funkcemi.
+
+
+```
+NVIC_DisableIRQ(UART4_IRQn); 
+NVIC_EnableIRQ(UART4_IRQn);
+```
+ 
+Jejichž argument se liší podle použité linky. Kritická sekce by měla být co nejkratší, aby neblokovala sériovou linku na příliš dlouhou dobu.
+
 
 
 
