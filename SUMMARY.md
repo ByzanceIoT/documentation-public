@@ -51,7 +51,7 @@
 * [Features](articles/hardware/featury.md)
   * [Bootloader a Command režim](/articles/hardware/ioda/navody/bootloader.md)
   * [Identifikace zařízení](articles/hardware/ioda/navody/identifikace-zarizeni.md)
-  * Autojump
+  * [Autojump](articles/hardware/ioda/navody/autojump.md)
   * [Práce s datem a časem \(RTC\)](/articles/hardware/ioda/navody/prace-s-datem-a-casem-rtc.md)
   * [Watchdog](byzance_documentation/hardware_intro/features/watchdog.md)
   * [Autobackup](articles/hardware/ioda/navody/autobackup.md)
