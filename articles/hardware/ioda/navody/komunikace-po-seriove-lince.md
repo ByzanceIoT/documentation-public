@@ -222,12 +222,11 @@ void loop() {
 
 Vykonání funkce připojené k přerušení bude mít vždy větší prioritu než hlavní funkce. Může se tedy stát, že oba budou přistupovat k paměti bufferu ve stejnou chvíli. Za tímto účelem je nutné v tzv. kritické sekci, kdy hlavní smyčka přistupuje k bufferu zakázat přerušení vyvolávané sériovou linkou. To lze provést funkcemi.
 
-
 ```
 NVIC_DisableIRQ(UART4_IRQn); 
 NVIC_EnableIRQ(UART4_IRQn);
 ```
- 
+
 Jejichž argument se liší podle použité linky. Kritická sekce by měla být co nejkratší, aby neblokovala sériovou linku na příliš dlouhou dobu.
 
 
