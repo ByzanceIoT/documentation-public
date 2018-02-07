@@ -11,7 +11,7 @@ Obsah:
 
 ## Zapojení {#zapojeni}
 
-K zapojení sériové linky jsou potřeba pouze 3 vodiče připojené na piny RX, TX a GND, přičemž linky RX \(recieve data\) a TX \(Transfer data\) se kříží viz schéma
+K zapojení sériové linky jsou potřeba pouze 3 vodiče připojené na piny RX, TX a GND, přičemž linky RX \(Recieve data\) a TX \(Transfer data\) se kříží viz schéma
 
 ![](/images/hardware/uart_bus.jpg)
 
@@ -72,9 +72,7 @@ Odesílání dat po sériové lince
 
 ## Zpracování příchozích dat
 
-Ke zpracování příchozího znaku po sériové lince lze využít základní jednoduchý program 
-
-
+Ke zpracování příchozího znaku po sériové lince lze využít základní jednoduchý program.  
 
 ```
 
@@ -95,6 +93,153 @@ int main() {
 }
 
 ```
+
+Pokud má hlavní program konat náročnější funkci, je nutné příchozí data zpracovávat asynchronně. V tomto případě lze využít toho, že příchozí znak vyvolá na procesu přerušení. Na toto přerušení lze připojit funkci, která příchozí znak zpracuje do bufferu a v případě, že je věta kompletní, nechat hlavní program tento buffer zpracovat. Příklad takového kódu může vypadat následovně
+
+
+```
+#include "byzance.h"
+
+#define SERIAL_BUFFER_SIZE  100
+#define BYZANCE_OVER_USB 	0
+
+Serial serial(SERIAL_TX,SERIAL_RX); // tx, rx
+
+MESSAGE_OUTPUT(message_out_counter, STRING);
+
+
+// Global variables
+char buffer[SERIAL_BUFFER_SIZE];
+char line_buffer[SERIAL_BUFFER_SIZE+1];
+char *parser;
+int buff_pointer;
+char c;
+bool complete_line;
+float voltage;
+float temp;
+
+
+
+/*
+void read_line(){
+
+
+	char line[SERIAL_BUFFER_SIZE];
+	// disable interrupts for critical section
+	NVIC_DisableIRQ(UART_IRQn);
+
+
+	// process buffer
+
+
+	ip = strtok(buffer,":");
+	uptime = strtok(0,":");
+	parser = strtok(0,":");
+	voltage = atof(parser);
+	parser = strtok(0,":");
+	temp = atof(parser);
+
+	buff_pointer = 0;
+
+	serial.printf(" Voltage : %f , CPU TEMP %f", voltage+1, temp+2);
+
+	// enable interrupts - end of the critical section
+	NVIC_EnableIRQ(UART_IRQn);
+
+
+}
+*/
+
+void rx_interrupt(){
+
+	while((serial.readable()) && ((buff_pointer < SERIAL_BUFFER_SIZE) && (complete_line == 0))){
+
+		// Read char from serial
+		c = serial.getc();
+
+		// detect end of line
+		if ((c == ';') && (complete_line == 0)){
+
+			complete_line = 1;
+
+		}else if (complete_line == 0) {
+
+			buffer[buff_pointer] = c;
+			buff_pointer++;
+
+		}
+	}
+}
+
+
+void pre_init(){
+
+	#if BYZANCE_OVER_USB
+		ByzanceLogger::init(&usb);
+	#else
+		ByzanceLogger::init(&serial);
+		serial.baud(115200);
+	#endif
+
+	ByzanceLogger::set_level(DEBUG_LEVEL_TRACE);
+	ByzanceLogger::enable_prefix(false);
+
+}
+
+void init(){
+
+	complete_line = false;
+
+	serial.attach(&rx_interrupt, Serial::RxIrq);
+
+}
+
+
+void loop() {
+
+	// If the line is ready copy buffer and process the line
+	if (complete_line || (buff_pointer == (SERIAL_BUFFER_SIZE-1))){
+
+		// Disable serial line interrupts
+		NVIC_DisableIRQ(UART4_IRQn);
+
+		if (buff_pointer > 0){
+			memcpy(&line_buffer, &buffer,buff_pointer);
+		}
+		// Set buffer pointer
+		complete_line = 0;
+		buff_pointer = 0;
+
+		// Enadble serial interrupts
+		NVIC_EnableIRQ(UART4_IRQn);
+
+		// process line
+
+		//ip = strtok(line_buffer,":");
+		//uptime = strtok(0,":");
+		parser = strtok(line_buffer,":");
+		voltage = atof(parser);
+		parser = strtok(0,":");
+		temp = atof(parser);
+
+		serial.printf("%f % \n", voltage);
+	}
+
+    //serial->printf("ip=%s\n", Byzance::get_ip_address());
+    Console::log("Test console\n");
+    serial.printf("test console \n");
+
+	Thread::wait(200);
+
+}
+
+```
+
+
+
+
+
+
 
 
 
