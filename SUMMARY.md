@@ -68,8 +68,8 @@
   * [Vytížení CPU](articles/hardware/ioda/navody/vytizeni-cpu.md)
   * [LED modul](articles/hardware/ioda/navody/led-modul.md)
   * [Specifikace zdroje internetu](articles/hardware/ioda/navody/specifikace-zdroje-internetu.md)
-  * Komunikace přes I2C
-  * Komunikace přes SPI
+  * [Komunikace přes I2C](articles/hardware/ioda/navody/komunikace-pres-i2c.md)
+  * [Komunikace přes SPI](articles/hardware/ioda/navody/komunikace-pres-spi.md)
   * [Komunikace přes CAN](articles/hardware/ioda/navody/komunikace-pres-can.md)
   * Autojump
 * [Datasheety ](articles/hardware/datasheety.md)
