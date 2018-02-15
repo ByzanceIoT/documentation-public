@@ -16,7 +16,7 @@ Uživatelská funkce připojená ke callbacku je volána pokaždé když se změ
 
 
 ```
-// Function attached to busy callback
+// Function attached to busy callback - called when the busy state change
 void busy_function(bool busy){
 
     if(busy){
