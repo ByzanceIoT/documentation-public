@@ -19,11 +19,20 @@ Uživatelská funkce připojená ke callbacku je volána pokaždé když se změ
 // Function attached to busy callback
 void busy_function(bool busy){
 
-if(busy){
-
-
-}
-
+    if(busy){
+    
+      // Disable interrupts  
+      // Detach tickers 
+      // Turn off actuators (Motors, pumps, )
+      // etc ..  
+      
+    }else{
+    
+      // Enable interrupts
+      // Attach tickers again 
+      // etc ..     
+    
+    }
 
 }
 
