@@ -72,6 +72,7 @@
   * [Komunikace přes SPI](articles/hardware/ioda/navody/komunikace-pres-spi.md)
   * [Komunikace přes CAN](articles/hardware/ioda/navody/komunikace-pres-can.md)
   * Autojump
+  * [Callback Busy](articles/hardware/ioda/navody/callback-binbusy.md)
 * [Datasheety ](articles/hardware/datasheety.md)
   * [IODAG3E](articles/hardware/ioda/datasheet/iodag3e.md)
     * [Technické specifikace](/articles/hardware/ioda/datasheet/iodag3e/technicke-specifikace.md)
