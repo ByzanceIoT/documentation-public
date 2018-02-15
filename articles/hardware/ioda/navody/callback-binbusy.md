@@ -19,17 +19,7 @@ void bin_busy(bool busy){
 
 void init() {
 
-	pc.baud(115200);
-	ioda2.baud(115200);
-	ioda2.attach(&rx_interrupt, Serial::RxIrq);
-
-	// Add callback to button 1  
-	btn.fall(&test_liveness);
-	btn.mode(PullUp); 					// toto musi byt za attachnuti callbacku
-
-	// Turn on state monitor
-	state_monitor.start(statemonitor_function);
-	state_monitor.set_priority(osPriorityIdle);
+Byzance::attach_bin_busy(&bin_busy);    
 
 }
 
