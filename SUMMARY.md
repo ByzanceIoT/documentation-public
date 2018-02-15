@@ -71,7 +71,7 @@
   * [Komunikace přes I2C](articles/hardware/ioda/navody/komunikace-pres-i2c.md)
   * [Komunikace přes SPI](articles/hardware/ioda/navody/komunikace-pres-spi.md)
   * [Komunikace přes CAN](articles/hardware/ioda/navody/komunikace-pres-can.md)
-  * Autojump
+  * [Autojump](articles/hardware/ioda/navody/autojump.md)
   * [Callback Busy](articles/hardware/ioda/navody/callback-binbusy.md)
 * [Datasheety ](articles/hardware/datasheety.md)
   * [IODAG3E](articles/hardware/ioda/datasheet/iodag3e.md)

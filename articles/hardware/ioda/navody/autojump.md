@@ -10,7 +10,11 @@ Autojump lze nastavit přímo v Portálu v nastavení konkrétního hardware (vi
 
 V návaznosti na Autojump je možné zařízení přímo restartovat do bootloaderu, ve kterém setrvá bez ohledu na Autojump pomocí funkce **Restart to bootloader**  
    
-Nastavení času funkce **Autojump** se provádí v sekci **_Developer Settings_**
+Restart do bootloaderu lze provést přímo v portálu (viz obrázek) v [command režimu](//articles/hardware/ioda/navody/bootloader.md) a [Byzance Hardware API](/programovani/byzance-api.md)    
+
+![](/assets/restartbl.PNG)
+   
+
 
 
 
