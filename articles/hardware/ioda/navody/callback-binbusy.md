@@ -12,7 +12,24 @@ Byzance::attach_bin_busy(&<user-function-name>);
 Využití callbacku Busy je vhodné v případě, kdy je v programu často voláno přerušení(ISR), které by mohlo odebrat většinu 
 procesorového času procesům v pozadí. Takovým případem může být například velmi často volaný Ticker. Dále je vhodné callback využít v případě, kdy je nutné ošetřit chování zařízení a ostatních připojených systémů v případě restartu. Takovým případem může být libovolný aktuátor, který se automaticky nevypne při restartu IODY a mohl by se stát neovladatelným.
 
-Uživatelská funkce 
+Uživatelská funkce připojená ke callbacku je volána pokaždé když se změní stav busy a tento stav je zároveň předán v argumentu volané funkce 
+
+
+```
+// Function attached to busy callback
+void busy_function(bool busy){
+
+if(busy){
+
+
+}
+
+
+}
+
+```
+
+
  
   
   V tomto stavu se zařízení nachází pokud je prováděn nějaký časově náročnější proces jako například update nového firmware nebo jeho [záloha](/articles/hardware/ioda/navody/autobackup.md). Využití callbacku busy je vhodné v případě, kdy je v uživatelském programu velmi často voláno přerušení (například časté volání tickeru). Tím může by dojít k situaci, ve které procesy probíhající v pozadí nebudou mít k dispozici dostatek procesorového času (Nemusí se provést update nového firmware, nebo může trvat několikrát déle). 
