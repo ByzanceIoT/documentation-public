@@ -44,6 +44,10 @@ void busy_function(bool busy){
 
 ```
 
+Ticker tic;
+Serial pc(SERIAL_TX, SERIAL_RX).
+
+
 // Function called when the device is in busy state 
 void bin_busy(bool busy){
     if(busy){
@@ -62,6 +66,7 @@ void bin_busy(bool busy){
 void init() {
 
     // Attach function "bin_busy" to Busy callback
+    
     Byzance::attach_bin_busy(&bin_busy);    
 
 }
