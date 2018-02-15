@@ -4,8 +4,11 @@ Autojump je funkce bootloaderu, která zajišťuje **skok do hlavního programu*
 
 ![](/assets/autojump.png)
 
-
+Autojump lze nastavit přímo v Portálu v nastavení konkrétního hardware (viz obrázek), v [command režimu](//articles/hardware/ioda/navody/bootloader.md) nebo přímo v uživatelském programu pomocí [Byzance Hardware API](/programovani/byzance-api.md)
  
+## Restart to bootloader
+
+V návaznosti na Autojump je možné zařízení přímo restartovat do bootloaderu, ve kterém setrvá bez ohledu na Autojump pomocí funkce **Restart to bootloader**  
    
 Nastavení času funkce **Autojump** se provádí v sekci **_Developer Settings_**
 
