@@ -45,8 +45,7 @@ void busy_function(bool busy){
 ```
 
 Ticker tic;
-Serial pc(SERIAL_TX, SERIAL_RX).
-
+Serial pc(SERIAL_TX, SERIAL_RX);
 
 // Function called when the device is in busy state 
 void bin_busy(bool busy){
