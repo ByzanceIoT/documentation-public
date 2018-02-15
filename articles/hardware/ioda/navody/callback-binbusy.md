@@ -70,9 +70,11 @@ void bin_busy(bool busy){
 }
 
 void init() {
-
+    
+    // Attach ticker function 
+    tic.attach(&ticker_fnc,);
+    
     // Attach function "bin_busy" to Busy callback
-    tic.attach(&ticker_fnc);
     Byzance::attach_bin_busy(&bin_busy);    
 
 }
