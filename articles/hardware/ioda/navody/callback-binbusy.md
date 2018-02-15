@@ -10,15 +10,23 @@ Pomocí tohoto callbacku lze tedy ve stavu busy zavolat uživatelskou funkci, ve
 
 ```
 
+// Function called when the device is in busy state 
 void bin_busy(bool busy){
     if(busy){
+    
         to_computer("*** BUSY: detaching ticker\n");
-        RGB_matrix::detach_ticker();
+        Display_controler::detach_ticker();
+        
+        // Disble other interrupts 
+        // Turn motors off
+        // etc .. 
+    
     }
 }
 
 void init() {
 
+// Attach function "bin_busy" to Busy callback
 Byzance::attach_bin_busy(&bin_busy);    
 
 }
