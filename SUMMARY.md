@@ -7,7 +7,6 @@
 * [2. Intrudoction \(Beginner's Guide\)](articles/first-steps/introduction.md)
 * [Oživení zařízení](articles/first-steps/oziveni-zarizeni.md)
   * [IODAG3E](articles/first-steps/oziveni-zarizeni/iodag3e.md)
-  * [IODAG3W](articles/first-steps/oziveni-zarizeni/iodag3w.md)
 
 ## Portal Tools
 
@@ -25,7 +24,6 @@
   * [Styly a jejich použití](byzance_documentation/grid_intro/wk-elements-and-style.md)
 * [Code](byzance_documentation/code_intro.md)
   * [Úvod](programovani/uvod.md)
-  * [Release Manager](programovani/release-manager.md)
   * [Hardware Registration ](programovani/hardware-registration.md)
   * [Struktura programu ](programovani/struktura-programu.md)
   * [MBED API ](programovani/mbed-api.md)

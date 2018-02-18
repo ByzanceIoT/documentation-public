@@ -4,7 +4,7 @@ V této sekci jsou zdokumentovány funkce z knihovny MBED API, sloužící k ovl
 
 ## AnalogIn
 
-Převede napětí na pinu analogového vstupu v rozmezí 0 - 3.3V do digitální podoby a interpretujep ho číslem na škále 0-4095. Rozlišení převodníku je 2.44 mV. 
+Převede napětí na pinu analogového vstupu v rozmezí 0 - 3.3V do digitální podoby a interpretujep ho číslem na škále 0-4095. Rozlišení převodníku je 2.44 mV.
 
 ```cpp
 AnalogIn ain(pin_name);
@@ -13,10 +13,9 @@ printf(”ain value = %3.3f%%\n”, ain.read());
 
 ## AnalogOut
 
-Funkce **AnalogOut** umožňuje definovat analogový výstup, který pomocí digitáně analogového převodníku dokáže na základě vstupní hodnoty této funkce měnit hodnotu napětí na výstupním pinu v rozsahu **0 - 3.3V** . Procesor umožňuje definovat dva analogové výstupy a to na pinech **Y23** a **Y25**. Velikost napětí na výstupu je škálováno zápisem v rozsahu **0 - 1**, kdy 1 je maximální napětí 3.3V.  
+Funkce **AnalogOut** umožňuje definovat analogový výstup, který pomocí digitáně analogového převodníku dokáže na základě vstupní hodnoty této funkce měnit hodnotu napětí na výstupním pinu v rozsahu **0 - 3.3V** . Procesor umožňuje definovat dva analogové výstupy a to na pinech **Y23** a **Y25**. Velikost napětí na výstupu je škálováno zápisem v rozsahu **0 - 1**, kdy 1 je maximální napětí 3.3V.
 
 ```cpp
-
 //Definice analogového výstupu na pinu Y25
 AnalogOut aout(Y25);
 
@@ -28,7 +27,6 @@ aout = 0.5f;
 
 // Čtení aktuální hodnoty napětí na 
 aout.read();
-
 ```
 
 ## DigitalIn
@@ -51,7 +49,7 @@ dout=1;
 
 ## DigitalInOut
 
-Obousměrný digitální pin, kombinace digitálního vstupu a digitálního výstupu. 
+Obousměrný digitální pin, kombinace digitálního vstupu a digitálního výstupu.
 
 ```cpp
 DigitalInOut diout(pin_name);
@@ -71,11 +69,9 @@ pc.printf("diout value = %d \n", diout.read());
 
 ## BusIn
 
-Funkcí BusIn lze vést libovolný počet digitálních vstupů jako bus, což umožňuje přečíst digitální hodnotu těchto vstupů jako jedno číslo. 
+Funkcí BusIn lze vést libovolný počet digitálních vstupů jako bus, což umožňuje přečíst digitální hodnotu těchto vstupů jako jedno číslo.
 
- 
 ```cpp
-
 // Tři přepínače vedené jako BUS připojené na vstupy X1,X2,X3
 BusIn switches(X01,X02,X03);
 
@@ -89,7 +85,7 @@ void loop(){
   // Přečte digitální vstupy a    
   switch(switches.read()){
   // na základě hodnoty vypíše, která kombinace přepínačů je navolená.
-  
+
       case 0x0: printf("everything LOW\n"); break;
       case 0x1: printf("X01-UP X02-DOWN X03-DOWN\n"); break;
       case 0x2: printf("X01-DOWN X02-UP X03-DOWN\n"); break;
@@ -105,7 +101,7 @@ void loop(){
 
 ## BusOut
 
-Funkce BusOut definuje z libovolného počtu digitálních výstupů bus, který lze ovládat zápisem jedné hodnoty. 
+Funkce BusOut definuje z libovolného počtu digitálních výstupů bus, který lze ovládat zápisem jedné hodnoty.
 
 ```cpp
 //Definicu busu ze trí výstupů - X01,X02,X03, kde X01 je nejnižší bit
@@ -145,7 +141,6 @@ X03 -> LOW
 Definuje bus, ze kterého je možné jak číst, tak do něj i zapisovat.
 
 ```cpp
-
 BusInOut io_bus(X01, X02, X03);
 
 void loop(){
@@ -163,10 +158,9 @@ void loop(){
 
 ## PortIn
 
-PortIn má stejnou funkci jako BusIn, je o dost rychlejší ale méně flexibilnější 
+PortIn má stejnou funkci jako BusIn, je o dost rychlejší ale méně flexibilnější
 
 ```cpp
-
 // Argumentem konstruktoru je číslo portu a číslem určené piny tohoto portu
 PortIn p2(port2, 0x0000003F); // pin 21 - 26  
 
@@ -180,7 +174,6 @@ void loop(){
     printf("At least one switch is turned on");
   }
 }
-
 ```
 
 ## PortOut
@@ -203,8 +196,8 @@ void loop(){
 
 ## PortInOut
 
-Třída PortInOut kombinuje funkce PortIn a PortOut a mód této funkce lze nastavovat za běhu programu. 
- 
+Třída PortInOut kombinuje funkce PortIn a PortOut a mód této funkce lze nastavovat za běhu programu.
+
 ```cpp
 #define LED_SHIELD 0x00B40000
 PortOut port(Port2, LED_SHIELD);
@@ -219,7 +212,6 @@ void loop(){
   wait(1);
 
 }
-
 ```
 
 ## PwmOut
@@ -227,27 +219,25 @@ void loop(){
 Funkce PwmOut umožňuje na pinu vytvářet pulzně šířkovou modulaci, regulovat její periodu a šířku jejich pulsů.
 
 ```cpp
-
 PwmOut pwm(X04);
 
 void loop(){
-    
+
   pwm.period(4.0f);  //Natavení periody 4s 
   pwm.write(0.50f);  //50% duty cycle, vzhledem k periodě
-  
+
   wait(10);
-  
+
   pwm.period(4.0f);   //nastavení periody 4s
   pwm.pulsewidth(2);  //dvouvteřinový puls -> stejné jako 50% duty cycle
-  
-  
-}
 
+
+}
 ```
 
 ## InterruptIn
 
-Funkce InterruptIn umožňuje uživateli okamžitě reagovat na změnu logické úrovně libovolného pinu (na náběžnou i sestupnou hranu) a na základě této změny zavolat libovolnou funkci.
+Funkce InterruptIn umožňuje uživateli okamžitě reagovat na změnu logické úrovně libovolného pinu \(na náběžnou i sestupnou hranu\) a na základě této změny zavolat libovolnou funkci.
 
 ```cpp
 InterruptIn button(X08); //Připojení interruptu k pinu X08
@@ -265,7 +255,6 @@ void init(){
 button.rise(&pushed_button); 
 
 }
-
 ```
 
 
