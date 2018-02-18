@@ -1,8 +1,8 @@
 # Práce s datem a časem \(RTC\)
 
-Každé Byzance zařízení je vybaveno obvodem pro udržování reálného času \(RTC\). Obsluha této funkce dodržuje [standardy C++](http://www.cplusplus.com/reference/ctime/time/). Čas udržovaný v RTC obvodu je synchronizován automaticky pokaždé při připojení k portálu. 
+Každé Byzance zařízení je vybaveno obvodem pro udržování reálného času \(RTC\). Obsluha této funkce dodržuje [standardy C++](http://www.cplusplus.com/reference/ctime/time/). Čas udržovaný v RTC obvodu je synchronizován automaticky pokaždé při připojení k portálu.
 
-Čas je interpretován jako Unixové časové razítko \(timestemp\), které reprezentuje počet sekund uplynulých od 1.1. 1970. K obsluze tohoto času se využívají funkce ze standartní knihovny [ctime](http://www.cplusplus.com/reference/ctime/).
+Čas je interpretován jako Unixové časové razítko \(timestamp\), které reprezentuje počet sekund uplynulých od 1.1. 1970. K obsluze tohoto času se využívají funkce ze standartní knihovny [ctime](http://www.cplusplus.com/reference/ctime/).
 
 ## Práci s Unix timestamp
 
@@ -75,7 +75,6 @@ void init(){
     pc.printf("Local time = %2d:%02d\n", (p_local-&gt;tm_hour)%24, p_local-&gt;tm_min\);
 }
 ```
-
 
 K převodu jednotek je možné dále využít například jeden z mnoha [online nástrojů](http://www.onlineconversion.com/unix_time.htm).
 

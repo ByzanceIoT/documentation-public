@@ -12,7 +12,7 @@
 ## Portal Tools
 
 * [Blocko](byzance_documentation/blocko_intro.md)
-  * Ůvod do blocka
+  * [Ůvod do blocka](byzance_documentation/blocko_intro/uvod-do-blocka.md)
   * [Flip-flop \(žádný žabky\)](byzance_documentation/blocko_intro/flip-flop-zadny-zabky.md)
   * [REST-API bloček](byzance_documentation/blocko_intro/rest-api-blocek.md)
 * [Grid](byzance_documentation/grid_intro.md)
@@ -83,8 +83,6 @@
 
 ## Interní
 
-* [mbed](interni/mbed.md)
-  * [Konfigurace MBED na Windows](interni/mbed/konfigurace-mbed-na-windows.md)
 * [hardware](interni/hardware.md)
   * [Seznam hardware](interni/hardware/seznam-hardware.md)
   * [Interní paměť mikrokontroléru](byzance_documentation/hardware_intro/navody/interni-pamet-mikrokontroleru.md)
@@ -94,12 +92,10 @@
     * [Vlastní IDE](byzance_documentation/hardware_intro/navody/offline-programovani/vlastni-ide.md)
     * [Upload kódu z GUI](byzance_documentation/hardware_intro/navody/offline-programovani/upload-kodu-z-gui.md)
     * [Upload kódu z konzole](byzance_documentation/hardware_intro/navody/offline-programovani/upload-kodu-z-konzole.md)
-  * [Výsledky testů pingu na IODA](interni/hardware/vysledky-testu-pingu-na-ioda.md)
   * [Error kody](interni/hardware/error-kody.md)
 * [Generace G2](interni/generace-g2.md)
   * [Update modulu ESP8266 v Iodovi](interni/generace-g2/update-modulu-esp8266-v-iodovi.md)
   * [NRF905 timing](interni/generace-g2/nrf905-timing.md)
-* [Coding style](interni/coding-style.md)
 
 ## General
 
