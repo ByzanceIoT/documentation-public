@@ -130,50 +130,35 @@ Při prvním spuštění nebo při položce configured=0 bootloader skáče do c
 * **restart** - restartuje Iodu. \[\[tutorial:restart\|Dokumentace k restartu\]\].
 * **target** -Typ desky. TODO 
 * **fullid** - vypíše FULL ID procesoru. [odkaz na fullid](TODO) 
-* **trusted** - Fuknce, která zjistí, jestli je nově nahraný firmware ověřený. 
 * **launch\_reset** - Pokud bylo předchozí spuštění firmware neúspěšné a není žádná validní binárka k obnovení, je třeba nahrát validní binárku a poté napsat příkaz ''launch\_reset''.
 * **defaults** - Veškeré nastavení se obnoví do [defaultního nastavení](TO DO ODKAZ).
 
-**Pokud zařízení používá DevList**
-
-* **devlist\_clear** - natvrdo smaže seznam všech uložených device v Idovi. Viz \(devlist\)\[TO DO odkaz\]
-* **devlist\_counter** - zjistí počet uložených device v Iodovi.
-* **devlist\_list** - vypíše seznam všech uložených device v Iodovi. 
-
 ### Příkazy s parametrem i bez
 
-* **normal\_mqtt\_hostname** - Hlavní hostname, na kterém běží Homer. \[\[yoda:mqtt\|Dokumentace MQTT\]\].
-* **normal\_mqtt\_port** -  Hlavní port, na kterém běží Homer. \[\[yoda:mqtt\|Dokumentace MQTT\]\].
-* **normal\_mqtt\_username** - Hlavní jméno pro přihlášení k Homerovi. \[\[yoda:mqtt\|Dokumentace MQTT\]\].
-* **normal\_mqtt\_password** - Hlavní heslo pro přihlášení k Homerovi. \[\[yoda:mqtt\|Dokumentace MQTT\]\].
+Více informací k MQTT připojení je možno nalézt v sekci [Komunikace se servery](/articles/hardware/komunikace-se-servery.md).
 
-* **backup\_mqtt\_hostname** - Záložní hostname, na kterém běží Homer. \[\[yoda:mqtt\|Dokumentace MQTT\]\].
+* **normal\_mqtt\_hostname** - Hostname, na kterém běží hlavní Homer.
+* **normal\_mqtt\_port** -  Hlavní port, na kterém běží Homer.
+* **backup\_mqtt\_hostname** - Záložní hostname, na kterém běží Homer.
+* **backup\_mqtt\_port** - Záložní port, na kterém běží Homer. 
+* **mqtt\_username** - Záložní jméno pro přihlášení k Homerovi.
+* **backup\_mqtt\_password** - Záložní heslo pro přihlášení k Homerovi. 
 
-* **backup\_mqtt\_port** - Záložní port, na kterém běží Homer. \[\[yoda:mqtt\|Dokumentace MQTT\]\].
+* **alias** - Alias zařízení, který si každý může nastavit pro lepší [identifikaci zařízení](/articles/hardware/ioda/navody/identifikace-zarizeni.md).
 
-* **backup\_mqtt\_username** - Záložní jméno pro přihlášení k Homerovi. \[\[yoda:mqtt\|Dokumentace MQTT\]\].
+* **mac** - Zjištění MAC adresy.
 
-* **backup\_mqtt\_password** - Záložní heslo pro přihlášení k Homerovi. \[\[yoda:mqtt\|Dokumentace MQTT\]\].
+* **blreport** - Bootloader report. Zapnutí, nebo vypnutí výpisu hlavičky [bootloader](//articles/hardware/ioda/navody/bootloader.md)u do konzole.
 
-* **alias** - Alias zařízení, který si každý může nastavit pro lepší rozpoznání zařízení. Více viz článek \[\[feature:alias\|alias\]\].
+* **wdenable** - Zapnutí [watchdogu](/byzance_documentation/hardware_intro/features/watchdog.md).
 
-* **mac** - Zjištění MAC adresy. Souvisí s \[\[feature:ethernet\|ethernetem\]\].
+* **wdtime** - Nastavení periody resetu [watchdogu](/byzance_documentation/hardware_intro/features/watchdog.md).
 
-* **blreport** - Bootloader report; zap nebo vyp textu do konzole, který píše \[\[bootloader:overview\|bootloader\]\].
+* **autobackup** - Funkce, která zajišťuje, že při nahrátí nové binárky se stará zálohuje.
 
-* **wdenable** - Watchdog enable; zap nebo vyp \[\[feature:watchdog\|watchdogu\]\].
+* **netsource** - Zdroj, odkud bere zařízení internet.
 
-* **wdtime** - Nastavení periody resetu watchdogu \[\[feature:watchdog\|watchdogu\]\].
-
-* **autobackup** - \[\[feature:autobackup\|Funkce, která zajišťuje, že při nahrátí nové binárky se stará zálohuje\]\].
-
-* **netsource** - \[\[feature:netsource\|Zdroj internetu pro zařízení\]\].
-
-* **configured** - při prvním spuštění bootloader naběhne vždy do Command režimu a čeká na konfiguraci všech parametrů. Až jsou parametry nastaveny, ''configured'' se přepne na 1 a tím se dá Yodovi najevo, že bude už nabíhat do normálního programu.
-
-* **timestamp** - časové razítko pro obvod reálného času \(RTC\). Lze vyčíst funkcemi pro \[\[tutorial:timestamp\|práci s časem\]\].
-
-* **backuptime** - Nastavení času, po kterém se spustí \[\[feature:autobackup\|automatická záloha firmware\]\].
+* **configured** - při prvním spuštění bootloader naběhne vždy do Command režimu a čeká na konfiguraci všech parametrů. Až jsou parametry nastaveny, ''configured'' se přepne na 1 a tím se dá zařítzení najevo, že je již plně nakonfigurováno a příště bude už nabíhat do normálního programu.
 
 * **webview** - Zapnutí nebo vypnutí \[\[tutorial:webview\|webového rozhraní\]\]
 
