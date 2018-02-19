@@ -10,7 +10,11 @@ Jejím smyslem je možnost nahrazení klasické sériové linky. Její výstup j
 
 Výhodou webové konzole je, že je díky ní možno monitorovat libovolné zařízení na dálku, či si vypisovat průběhy kódu. Není nutná fyzická přítomnost zařízení a připojení k počítači USB kabelem, či použití FTDI převodníku. Odpadají problémy s instalací driveru sériové linky, nastavení baud rate, parity a dalších.
 
-Je implementována jako statická třída, funguje automaticky od začátku běhu programu a obsahuje následující veřejné metody dostupné uživateli.
+Nevýhodou je, že vyžaduje, aby bylo zařízení stále připojeno k internetu. Dalším problémem může být fakt, že příliš velké množství logů může velmi zpomalovat běh programu, zvláště při pomalém připojení.
+
+# Použití
+
+Konzole je implementována jako statická třída, funguje automaticky od začátku běhu programu \(není nutná její inicializace\) a obsahuje následující veřejné metody dostupné uživateli.
 
 ```cpp
 // zalogování erroru
@@ -28,6 +32,8 @@ static bool log(const char* format, ...);
 // je konzole aktivovaná?
 static bool enabled();
 ```
+
+# 
 
 # Vlastnosti konzole
 
