@@ -30,7 +30,7 @@ Po nainstalování utility \*\*CoolTerm\*\* a spuštění konfiguračního soubo
 * Potvrďte stisknutím "OK"
 * Stiskněte tlačítko "Connect" v horním menu
 
-![mac_connection](/images/mac_connection.png)
+![mac\_connection](/images/mac_connection.png)
 
 Nyní by se měl vypisovat log do okna aplikace.
 
@@ -51,8 +51,6 @@ Na některých distribucích je nutné přidat uživatele do skupiny dialout pro
 # Programování sériové linky
 
 Konkrétní ukázky kódu pro komunikaci s počítačem je možné nalézt v sekcích [komunikace pomocí USB](/byzance_documentation/hardware_intro/navody/pripojeni-k-pc/pomoci-usb.md) či [komunikace pomocí sériové linky](/byzance_documentation/hardware_intro/navody/pripojeni-k-pc/pomoci-seriove-linky.md).
-
-
 
 # Připojení k PC pomocí USB
 
@@ -125,10 +123,6 @@ void loop(){
    Thread::wait(500);
 }
 ```
-
-
-
-
 
 
 

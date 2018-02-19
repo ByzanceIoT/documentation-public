@@ -1,32 +1,35 @@
 # Identifikace zařízení
 
-Všechny zařízení IODA mají ve FLASH paměti svého mikrokontroléru STM32 z výroby naprogramovaný **jedinečný identifikátor čipu**, který se vyskytuje na specifické adrese v paměti (liší se podle rodiny mikrokontroléru) a lze ho pouze číst. Toto číslo je Byzance interně označováno jako **Full ID**.
+Všechny zařízení IODA mají ve FLASH paměti svého mikrokontroléru STM32 z výroby naprogramovaný **jedinečný identifikátor **, který se vyskytuje na specifické adrese v paměti \(liší se podle rodiny mikrokontroléru\) a lze ho pouze číst. Toto číslo je Byzance interně označováno jako **Full ID**. Full ID je pro člověka obtížně zapamatovatelné a slouží především k strojovému zpracovávání.
 
-Každé zařízení dále umožňuje nastavit vlastní **Alias**, který uživateli ulehčí začízení identifikovat ve vlastní síti.
+Každé zařízení dále umožňuje nastavit vlastní **Alias**, který slouží k jednodušší identifikaci člověkem. Název Alias může být například "kuchyn-svetlo".
 
 ## Full ID
 
-Jedná se o 96 bitů dlouhé číslo reprezentované **24 hexadecimálními ASCII znaky**. Full ID se zapisuje **velkými písmeny a bez oddělujícíh znaků**. Např. ''0123456789AB0123456789AB''. Toto číslo se liší od MAC adresy, které je reprezentováno 48b číslem zapsaném jako 
+Jedná se o 96 bitů dlouhé číslo reprezentované **24 hexadecimálními ASCII znaky**. Full ID se zapisuje **velkými písmeny a bez oddělujícíh znaků**. Např. ''0123456789AB0123456789AB''. 
 
-Lze to teoreticky přirovnat například k MAC adrese - ta je 48b dlouhá a zapisuje se jako šestice dvojciferných hexadecimálních čísel oddělených pomlčkami nebo dvojtečkami (např. ''01-23-45-67-89-AB'' nebo ''01:23:45:67:89:AB'').
+Lze to teoreticky přirovnat například k MAC adrese - ta je 48 bitů dlouhá a zapisuje se jako šestice dvojciferných hexadecimálních čísel oddělených pomlčkami nebo dvojtečkami \(např. ''01-23-45-67-89-AB'' nebo ''01:23:45:67:89:AB''\).
 
 #### Jak zjistit Full ID
 
-Online v sekci Projects -> Hardware
+Existuje několik způsobů, jak zjistit Full ID. Pokud je zařízení nové a nikdy nebylo použito, Full ID lze zjistit společně s kódem pro přidání do uživatelského účtu z nálepky na zařízení, nebo na jeho obalu.
+
+
+
+Online v sekci Projects -&gt; Hardware
 
 ![](/images/hardware/fullid.png)
 
-Na zařízení přímo z [[bootloader:overview|bootloaderu]] výpisem přes [[tutorial:serial|sériovou linku]] nebo [[tutorial:usb|USB]].
+Na zařízení přímo z \[\[bootloader:overview\|bootloaderu\]\] výpisem přes \[\[tutorial:serial\|sériovou linku\]\] nebo \[\[tutorial:usb\|USB\]\].
 
 ![](/images/hardware/fullid_bootloader.png)
 
-
-Pomocí [[tutorial:public_functions|veřejné metody]] třídy Byzance ''Byzance::get_full_id()'' výpisem přes [[tutorial:serial|sériovou linku]] nebo [[tutorial:usb|USB]].
+Pomocí \[\[tutorial:public\_functions\|veřejné metody\]\] třídy Byzance ''Byzance::get\_full\_id\(\)'' výpisem přes \[\[tutorial:serial\|sériovou linku\]\] nebo \[\[tutorial:usb\|USB\]\].
 
 ```
 #include "byzance.h"
 
-Serial	pc(SERIAL_TX, SERIAL_RX); // tx, rx
+Serial    pc(SERIAL_TX, SERIAL_RX); // tx, rx
 
 void init(){
     pc.baud(115200);
@@ -39,9 +42,6 @@ void loop(){
 ```
 
 ![](/images/hardware/full_id_code.png)
-
-
-
 
 ## Alias
 
@@ -59,7 +59,7 @@ Narozdíl od Full ID, které je vždy unikátní z výroby a strojově dobře č
 
 Je možné jej zjistit při startu zařízení vyčtením při startu [bootloaderu](/byzance_documentation/hardware_intro/features/bootloader.md).
 
-![alias_bootloader](/images/alias_bootloader.png)
+![alias\_bootloader](/images/alias_bootloader.png)
 
 Je možné jej zjistit či nastavit v [command režimu bootloaderu](/byzance_documentation/hardware_intro/features/bootloader/command-rezim.md). V případě nastavení z bootloaderu není garantována funkčnost, protože zařízení při startu zařízení žádá o nastavení Aliasu a v případě, že je název s Tyrionem kolizní, za správnou variantu je považovana varianta Tyrionu.
 
@@ -84,7 +84,5 @@ void loop(){
 
 Jediná správná možnost editace aliasu je pomocí Byzance Code \(Becki\). V sekci hardware uživatele je možné Alias jak zjistit, tak změnit.
 
-![alias_edit](/images/alias_edit.png)
-
-
+![alias\_edit](/images/alias_edit.png)
 
