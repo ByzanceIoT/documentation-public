@@ -21,7 +21,7 @@ static bool enabled();
 
 ### Vlastnosti konzole
 
-Fukkce **error**, **warning**, **info** a **log** slouží k logování různých úrovní různých vlastních událostí, parametricky jsou shodné s C/C++ fukcí \[\[[http://www.cplusplus.com/reference/cstdio/printf/\|](http://www.cplusplus.com/reference/cstdio/printf/|) printf\]\]. Logy konzole se automaticky přenášejí do webového rozhraní Becki pomocí protokolu \[\[Yoda:MQTT\|MQTT\]\], kde zařízení může uživatel sledovat. Návratovou hodnotou fukncí konzole je možné detekovat, jestli informace dorazila do webového rozhraní.
+Fukkce **error**, **warning**, **info** a **log** slouží k logování různých úrovní různých vlastních událostí, parametricky jsou shodné s C/C++ fukcí [printf](http://www.cplusplus.com/reference/cstdio/printf/). Logy konzole se automaticky přenášejí do webového rozhraní Becki pomocí protokolu [MQTT](/articles/hardware/komunikace-se-servery.md), kde zařízení může uživatel sledovat. Návratovou hodnotou je možné detekovat, jestli informace dorazila do webového rozhraní.
 
-Fukce **enabled** slouží k zjištění, jestli je logování do webové konzole zapnuto. Logování se automaticky vypíná, pokud logy nikdo neodebírá. Je možné logy archivovat a odebírat, do budoucna asi za poplatek FIXME doplnit pak.
+Fukce **enabled** slouží k zjištění, jestli je logování do webové konzole zapnuto. Logování se automaticky vypíná, pokud logy nikdo neodebírá.
 
