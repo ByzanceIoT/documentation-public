@@ -6,7 +6,7 @@ Každé zařízení dále umožňuje nastavit vlastní **Alias**, který slouž�
 
 ## Full ID
 
-Jedná se o 96 bitů dlouhé číslo reprezentované **24 hexadecimálními ASCII znaky**. Full ID se zapisuje **velkými písmeny a bez oddělujícíh znaků**. Např. ''0123456789AB0123456789AB''. 
+Jedná se o 96 bitů dlouhé číslo reprezentované **24 hexadecimálními ASCII znaky**. Full ID se zapisuje **velkými písmeny a bez oddělujícíh znaků**. Např. ''0123456789AB0123456789AB''.
 
 Lze to teoreticky přirovnat například k MAC adrese - ta je 48 bitů dlouhá a zapisuje se jako šestice dvojciferných hexadecimálních čísel oddělených pomlčkami nebo dvojtečkami \(např. ''01-23-45-67-89-AB'' nebo ''01:23:45:67:89:AB''\).
 
@@ -14,19 +14,19 @@ Lze to teoreticky přirovnat například k MAC adrese - ta je 48 bitů dlouhá a
 
 Existuje několik způsobů, jak zjistit Full ID. Pokud je zařízení nové a nikdy nebylo použito, Full ID lze zjistit společně s kódem pro přidání do uživatelského účtu z nálepky na zařízení, nebo na jeho obalu.
 
+![](/assets/IMG_20180219_195409.jpg)
 
+Pokud je zařízení připojeno k internetu a je přidáno v nějakém projektu, Full ID je možné zjistit online v sekci Projects -&gt; \(název projektu\) -&gt; Hardware
 
-Online v sekci Projects -&gt; Hardware
+![](/assets/fullid.PNG)
 
-![](/images/hardware/fullid.png)
+Bez využití internetu je Full ID možno zjistit z bootloaderu výpisem přes sériovou linku nebo USB.
 
-Na zařízení přímo z \[\[bootloader:overview\|bootloaderu\]\] výpisem přes \[\[tutorial:serial\|sériovou linku\]\] nebo \[\[tutorial:usb\|USB\]\].
+![](/assets/fullid-cmd.PNG)
 
-![](/images/hardware/fullid_bootloader.png)
+Pomocí veřejné metody třídy Byzance ''Byzance::get\_full\_id\(\)'' výpisem přes sériovou linku nebo USB.
 
-Pomocí \[\[tutorial:public\_functions\|veřejné metody\]\] třídy Byzance ''Byzance::get\_full\_id\(\)'' výpisem přes \[\[tutorial:serial\|sériovou linku\]\] nebo \[\[tutorial:usb\|USB\]\].
-
-```
+```cpp
 #include "byzance.h"
 
 Serial    pc(SERIAL_TX, SERIAL_RX); // tx, rx
@@ -41,13 +41,11 @@ void loop(){
 }
 ```
 
-![](/images/hardware/full_id_code.png)
-
 ## Alias
 
 Alias slouží společně s [Full ID](full-id.md) k identifikaci zařízení.
 
-Narozdíl od Full ID, které je vždy unikátní z výroby a strojově dobře čitelné, Alias je nastavovaný uživatelsky pro lepší identifikaci člověkem. Při více zařízeních by měl být identifikátor Alias dostatečně popisný. Například při použití v osvětlení by měl Alias nést názvy typu "SVETLO-KUCHYN", "SVETLO-OBYVAK" a podobně. S identifikátorem Alias je možné pracovat několika způsoby.
+Narozdíl od Full ID, které je vždy unikátní z výroby a strojově dobře čitelné, Alias je nastavovaný uživatelsky pro lepší identifikaci člověkem. Při více zařízeních by měl být identifikátor Alias dostatečně popisný, nemusí však být nutně unikátní. Například při použití v osvětlení by měl Alias nést názvy typu "SVETLO-KUCHYN", "SVETLO-OBYVAK" a podobně. S identifikátorem Alias je možné pracovat několika způsoby.
 
 **Omezení:**
 
