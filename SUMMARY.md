@@ -69,6 +69,7 @@
   * [Specifikace zdroje internetu](articles/hardware/ioda/navody/specifikace-zdroje-internetu.md)
   * [Autojump](articles/hardware/ioda/navody/autojump.md)
   * [Callback Busy](articles/hardware/ioda/navody/callback-binbusy.md)
+  * [Webová konzole](articles/hardware/ioda/navody/webova-konzole.md)
 * [Datasheety ](articles/hardware/datasheety.md)
   * [IODAG3E](articles/hardware/ioda/datasheet/iodag3e.md)
     * [Technické specifikace](/articles/hardware/ioda/datasheet/iodag3e/technicke-specifikace.md)
