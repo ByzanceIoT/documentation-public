@@ -46,6 +46,7 @@
 ## Hardware
 
 * [Návody](articles/hardware/navody.md)
+* [Komunikace se servery](articles/hardware/komunikace-se-servery.md)
 * [Features](articles/hardware/featury.md)
   * [Bootloader a Command režim](/articles/hardware/ioda/navody/bootloader.md)
   * [Identifikace zařízení](articles/hardware/ioda/navody/identifikace-zarizeni.md)
