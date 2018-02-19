@@ -17,6 +17,12 @@ Nevýhodou je, že vyžaduje, aby bylo zařízení stále připojeno k internetu
 Konzole je implementována jako statická třída, funguje automaticky od začátku běhu programu \(není nutná její inicializace\) a obsahuje následující veřejné metody dostupné uživateli.
 
 ```cpp
+// je konzole zapnutá? (tj., odebírá ji někdo v Portálu?)
+static bool enabled();
+
+
+
+
 // zalogování erroru
 static bool error(const char* format, ...);
 
@@ -28,12 +34,13 @@ static bool info(const char* format, ...);
 
 // zalogování logu
 static bool log(const char* format, ...);
-
-// je konzole aktivovaná?
-static bool enabled();
 ```
 
-# 
+Jednoduchý příklad kódu, který využívá Konzoli může být například takovýto
+
+```cpp
+ukázkový program
+```
 
 # Vlastnosti konzole
 
