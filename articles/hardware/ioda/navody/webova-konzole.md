@@ -16,30 +16,26 @@ Nevýhodou je, že vyžaduje, aby bylo zařízení stále připojeno k internetu
 
 Konzole je implementována jako statická třída, funguje automaticky od začátku běhu programu \(není nutná její inicializace\) a obsahuje následující veřejné metody dostupné uživateli.
 
-```cpp
-// je konzole zapnutá? (tj., odebírá ji někdo v Portálu?)
-static bool enabled();
-
-
-
-
-// zalogování erroru
-static bool error(const char* format, ...);
-
-// zalogování warningu
-static bool warn(const char* format, ...);
-
-// zalogování info
-static bool info(const char* format, ...);
-
-// zalogování logu
-static bool log(const char* format, ...);
-```
-
 Jednoduchý příklad kódu, který využívá Konzoli může být například takovýto
 
 ```cpp
-ukázkový program
+#include "byzance.h"
+
+void loop(){
+
+	if(Console::enabled()){
+		printf("console is enabled\n");
+		Console::log("this is some log\n");
+		Console::error("this is some error\n");
+		Console::warn("this is some warning\n");
+		Console::info("this is some info\n");
+	} else {
+		to_computer("console is disabled\n");
+	}
+
+	Thread::wait(1000);
+
+}
 ```
 
 # Vlastnosti konzole
