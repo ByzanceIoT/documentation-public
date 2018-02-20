@@ -8,7 +8,7 @@ Uživatelská funkce \(callback\), která má být provedena v případě přepn
 Byzance::attach_bin_busy(&<user-function-name>);
 ```
 
-Využití callbacku Busy je vhodné v případě, kdy je v programu často voláno přerušení\(ISR\), které by mohlo odebrat většinu   
+Využití callbacku Busy je vhodné v případě, kdy je v programu často voláno přerušení\(ISR\), které by mohlo odebrat většinu  
 procesorového času procesům v pozadí. Takovým případem může být například velmi často volaný Ticker. Dále je vhodné callback využít v případě, kdy je nutné ošetřit chování zařízení a ostatních připojených systémů v případě restartu. Takovým případem může být libovolný aktuátor, který se automaticky nevypne při restartu IODY a mohl by se stát neovladatelným.
 
 Uživatelská funkce připojená ke callbacku je volána pokaždé když se změní stav busy a tento stav je zároveň předán v argumentu volané funkce
