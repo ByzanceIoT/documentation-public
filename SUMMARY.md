@@ -71,6 +71,7 @@
   * [Callback Busy](articles/hardware/ioda/navody/callback-binbusy.md)
   * [Webová konzole](articles/hardware/ioda/navody/webova-konzole.md)
   * Podpora float
+  * [OTP paměť](articles/hardware/ioda/navody/otp-pamet.md)
 * [Datasheety ](articles/hardware/datasheety.md)
   * [IODAG3E](articles/hardware/ioda/datasheet/iodag3e.md)
     * [Technické specifikace](/articles/hardware/ioda/datasheet/iodag3e/technicke-specifikace.md)
