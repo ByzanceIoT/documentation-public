@@ -14,10 +14,7 @@ TODO - obrázek připojení přes TTL převodník
 
 Zařízení lze k PC připojit pouze pokud je v zařízení IODAG3E spuštěný firmware, který má sériovou linku inicializovanou. Jak sériovou linku inicializovat v programu se lze dozvědět v sekci [Komunikace po sériové lince](/articles/hardware/komunikace-se-servery/komunikace-po-seriove-lince-uart.md). V případě, že provádíme nastavení zařízení v command režimu (Zařízení je přepnuto v bootloaderu), sériová linka je inicializována automaticky.
 
-
-
-
-## Windows
+### Konfigurace na Windows
 
 Každé sériové zařízení se standardně přihlašuje jako nový COM port. Seznam těchto portů je možné získat ve správci zařízení. To je možné zavolat například zkratkou ''WIN+X'' -&gt; ''Device Manager''. Je-li zařízeních víc, číslo konkrétního se dá zjistit například tak, že se zařízení několikrát fyzicky připojí a odpojí a přitom se jeho číslo objeví v seznamu a zase zmizí.
 
@@ -33,7 +30,7 @@ Po potvrzení nastavení je možné se zařízením začít komunikovat.
 
 ![](/images/hello_world.png)
 
-## MAC
+### Konfigurace sériové linky na MAC
 
 Nové zařízení se v případě macOS přihlašuje přes porty s názvem "usbmodem" pro USB nebo "usbserial" pro sériovou linku. Pro snadné připojení je nejdříve vhodné nainstalovat utilitu // utilita coolterm. V odkazovaném ZIP souboru je jak samotný program DMG a konfigurační soubor \*\*Yoda.stc\*\*.
 
@@ -51,7 +48,7 @@ Nyní by se měl vypisovat log do okna aplikace.
 
 V případě přepnutí na Bootloader v zařízení Yoda není nutné měnit port.
 
-## Linux
+### Konfigurace sériové linky na Linux
 
 Připojením zařízení k PC je v adresáři ''/dev/'' vytvořen soubor ''ttyUSBx'' nebo ''ttyACMx'', kde ''x'' je číslo. Výpis zařízení je tedy možné zobrazit pomocí správce souborů nebo příkazu ''ls /dev/tty\*''.
 
