@@ -12,7 +12,7 @@ TODO - obrázek připojení přes TTL převodník
 
 ## Konfigurace sériového linky v PC
 
-Sériovou komunikaci lze v PC inicializovat pouze, pokud je v zařízení IODAG3E spuštěný firmware, který má sériovou linku inicializovanou. Jak sériovou linku inicializovat v programu se lze dozvědět v sekci Komunikace po sériové lince
+Zařízení lze k PC připojit pouze pokud je v zařízení IODAG3E spuštěný firmware, který má sériovou linku inicializovanou. Jak sériovou linku inicializovat v programu se lze dozvědět v sekci [Komunikace po sériové lince](/articles/hardware/komunikace-se-servery/komunikace-po-seriove-lince-uart.md). V případě, že provádíme nastavení zařízení v command režimu (Zařízení je přepnuto v bootloaderu), sériová linka je inicializována automaticky.
 
 
 

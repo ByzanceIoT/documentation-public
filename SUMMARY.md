@@ -47,9 +47,9 @@
 
 * [Návody](articles/hardware/navody.md)
   * [Servo](articles/hardware/navody/servo.md)
-* [Připojení k PC](articles/hardware/ioda/navody/pripojeni-k-pc.md)
+* [Připojení zařízení k PC](articles/hardware/ioda/navody/pripojeni-k-pc.md)
 * [Komunikace se servery](articles/hardware/komunikace-se-servery.md)
-* Komunikace 
+* [Komunikace ](articles/hardware/komunikace.md)
   * [Komunikace po sériové lince \(UART\)](articles/hardware/komunikace-se-servery/komunikace-po-seriove-lince-uart.md)
 * [Features](articles/hardware/featury.md)
   * [Bootloader a Command režim](/articles/hardware/ioda/navody/bootloader.md)
