@@ -1,4 +1,4 @@
-# Komunikace po sériové lince
+# Komunikace po sériové lince (UART)
 
 Zde bude návod
 * Jak zapojit sériovou linku (stručně schéma s grafikou IODY! a stručně vysvětlit nebo odkázat někam kde je vysvětleno )
