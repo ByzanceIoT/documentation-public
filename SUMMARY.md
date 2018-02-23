@@ -47,6 +47,7 @@
 
 * [Návody](articles/hardware/navody.md)
   * [Servo](articles/hardware/navody/servo.md)
+* [Připojení k PC](articles/hardware/ioda/navody/pripojeni-k-pc.md)
 * [Komunikace se servery](articles/hardware/komunikace-se-servery.md)
 * [Features](articles/hardware/featury.md)
   * [Bootloader a Command režim](/articles/hardware/ioda/navody/bootloader.md)
@@ -58,7 +59,6 @@
   * [Webové rozhraní a konzole](articles/hardware/ioda/navody/webove-rozhrani-a-konzole.md)
   * [Čas běhu zařízení \(Uptime\)](articles/hardware/ioda/navody/cas-behu-zarizeni.md)
   * [Paměť zařízení](articles/hardware/ioda/navody/pamet-zarizeni.md)
-  * [Připojení k PC](articles/hardware/ioda/navody/pripojeni-k-pc.md)
   * [Připojení zdroje k VBAT](articles/hardware/ioda/navody/pripojeni-zdroje-k-vbat.md)
   * [Flash paměť](articles/hardware/ioda/navody/flash-pamet.md)
   * [Odložení restart](articles/hardware/ioda/navody/odlozeni-restart.md)
