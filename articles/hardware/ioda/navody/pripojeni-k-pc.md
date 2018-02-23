@@ -2,6 +2,8 @@
 
 Se zařízením IODAG3E lze komunikovat z PC pomocí sériové linky. To je užitečné například při nastavování zařízení v [command režimu](//articles/hardware/ioda/navody/bootloader.md), debugování, nebo logování do PC. 
 
+Zaříznení je možné připojit přímo přes USB, 
+
 Zařízení se dá k počítači připojit buď pomocí [sériové linky](/byzance_documentation/hardware_intro/navody/pripojeni-k-pc/pomoci-seriove-linky.md) s použitím FTDI převodníku, nebo se tato linka dá [softwarově emulovat přes USB](/byzance_documentation/hardware_intro/navody/pripojeni-k-pc/pomoci-usb.md). Ze strany počítače je tento přístup stejný a postup je jednotný.
 
 ## Windows
