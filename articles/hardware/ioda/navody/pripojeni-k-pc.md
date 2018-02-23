@@ -10,11 +10,12 @@ nebo pomocí převodníku TTL/USB,
 
 TODO - obrázek připojení přes TTL převodník 
 
-  
+## Konfigurace sériového linky v PC
+
+Sériovou komunikaci lze v PC inicializovat pouze, pokud je v zařízení IODAG3E spuštěný firmware, který má sériovou linku inicializovanou. Jak sériovou linku inicializovat v programu se lze dozvědět v sekci Komunikace po sériové lince
 
 
 
-Zařízení se dá k počítači připojit buď pomocí [sériové linky](/byzance_documentation/hardware_intro/navody/pripojeni-k-pc/pomoci-seriove-linky.md) s použitím FTDI převodníku, nebo se tato linka dá [softwarově emulovat přes USB](/byzance_documentation/hardware_intro/navody/pripojeni-k-pc/pomoci-usb.md). Ze strany počítače je tento přístup stejný a postup je jednotný.
 
 ## Windows
 
