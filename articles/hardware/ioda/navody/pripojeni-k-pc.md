@@ -7,7 +7,7 @@ Zařízení je možné připojit pomocí USB kabelu
 ![](/assets/20180223_182214_1024.jpg)
 
 
-
+nebo pomoc
 
 Zařízení se dá k počítači připojit buď pomocí [sériové linky](/byzance_documentation/hardware_intro/navody/pripojeni-k-pc/pomoci-seriove-linky.md) s použitím FTDI převodníku, nebo se tato linka dá [softwarově emulovat přes USB](/byzance_documentation/hardware_intro/navody/pripojeni-k-pc/pomoci-usb.md). Ze strany počítače je tento přístup stejný a postup je jednotný.
 
