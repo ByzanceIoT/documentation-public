@@ -2,7 +2,7 @@
 
 Se zařízením IODAG3E lze komunikovat z PC pomocí sériové linky. To je užitečné například při nastavování zařízení v [command režimu](//articles/hardware/ioda/navody/bootloader.md), debugování, nebo logování do PC. 
 
-Zařízení je možné připojit pomocí USB kabelu
+Zařízení je možné připojit pomocí USB kabelu o
 
 ![](/assets/20180223_182214_1024.jpg)
 
