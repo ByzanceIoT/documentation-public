@@ -48,7 +48,7 @@
 * [Návody](articles/hardware/navody.md)
   * [Servo](articles/hardware/navody/servo.md)
 * [Připojení zařízení k PC](articles/hardware/ioda/navody/pripojeni-k-pc.md)
-* [Komunikace se servery](articles/hardware/komunikace-se-servery.md)
+* [Komunikace s portálem](articles/hardware/komunikace-se-servery.md)
 * [Komunikace ](articles/hardware/komunikace.md)
   * [Komunikace po sériové lince \(UART\)](articles/hardware/komunikace-se-servery/komunikace-po-seriove-lince-uart.md)
 * [Features](articles/hardware/featury.md)

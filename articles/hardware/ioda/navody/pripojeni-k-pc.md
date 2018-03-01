@@ -30,7 +30,7 @@ Zvolený COM port je třeba v nastavení terminálu společně s ukončovánímk
 ](/assets/termite_nastaveni_4.png)
 Po potvrzení nastavení je možné se zařízením začít komunikovat.
 
-![](/images/hello_world.png)
+![](/assets/termite_zpravy.png)
 
 ### Konfigurace sériové linky na MAC
 

@@ -1,4 +1,4 @@
-# Komunikace se servery
+# Komunikace s portálem 
 
 Kde nastavit připojení k serverům?
 
