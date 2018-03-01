@@ -2,7 +2,7 @@
 
 Se zařízením IODAG3E lze komunikovat z PC pomocí sériové linky. To je užitečné například při nastavování zařízení v [command režimu](//articles/hardware/ioda/navody/bootloader.md), debugování, nebo logování do PC. 
 
-Zařízení je možné připojit pomocí USB, kdy je sériová linka softwarově emulována přímo v IODAG3E
+Zařízení je možné připojit **pomocí USB**, kdy je sériová linka softwarově emulována přímo v IODAG3E
 
 ![](/assets/Seriova_komunikace.png)
 
@@ -14,7 +14,7 @@ nebo pomocí převodníku **TTL/USB**,
 
 ## Konfigurace sériového linky v PC
 
-Zařízení lze k PC připojit pouze pokud je v zařízení IODAG3E spuštěný firmware, který má sériovou linku inicializovanou. Jak sériovou linku inicializovat v programu se lze dozvědět v sekci [Komunikace po sériové lince](/articles/hardware/komunikace-se-servery/komunikace-po-seriove-lince-uart.md). V případě, že provádíme nastavení zařízení v command režimu (Zařízení je přepnuto v bootloaderu), sériová linka je inicializována automaticky.
+Zařízení lze k PC připojit pouze pokud je v zařízení IODAG3E spuštěný firmware, který má **sériovou linku inicializovanou**. Jak sériovou linku inicializovat v programu se lze dozvědět v sekci [Komunikace po sériové lince](/articles/hardware/komunikace-se-servery/komunikace-po-seriove-lince-uart.md). V případě, že provádíme nastavení zařízení v command režimu (Zařízení je přepnuto v bootloaderu), sériová linka je inicializována automaticky.
 
 ### Konfigurace na Windows
 
