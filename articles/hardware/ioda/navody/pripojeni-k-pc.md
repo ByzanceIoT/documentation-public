@@ -6,7 +6,7 @@ Zařízení je možné připojit pomocí USB, kdy je sériová linka softwarově
 
 ![](/assets/Seriova_komunikace.png)
 
-nebo pomocí převodníku TTL/USB,
+nebo pomocí převodníku **TTL/USB**,
 
 ![](/assets/Seriova_komunikace_ttl.png)
 
