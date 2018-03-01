@@ -18,7 +18,7 @@ Zařízení lze k PC připojit pouze pokud je v zařízení IODAG3E spuštěný 
 
 ### Konfigurace na Windows
 
-Po připojení zařízení Ioda k PC se zařízení přihlásí jako nový COM port. Seznam těchto portů je možné získat ve správci zařízení
+Po připojení zařízení Ioda k PC se zařízení přihlásí jako nový COM port. Seznam těchto portů je možné získat ve správci zařízení (**Ovládací panely -> Hardware a zvuk -> Správce zařízení**)
 
 Každé sériové zařízení se standardně přihlašuje jako nový COM port. Seznam těchto portů je možné získat ve správci zařízení. To je možné zavolat například zkratkou ''WIN+X'' -&gt; ''Device Manager''. Je-li zařízeních víc, číslo konkrétního se dá zjistit například tak, že se zařízení několikrát fyzicky připojí a odpojí a přitom se jeho číslo objeví v seznamu a zase zmizí.
 
