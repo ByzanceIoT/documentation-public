@@ -4,7 +4,7 @@ Se zařízením IODAG3E lze komunikovat z PC pomocí sériové linky. To je uži
 
 Zařízení je možné připojit pomocí USB, kdy je sériová linka softwarově emulována přímo v IODAG3E
 
-![](/assets/20180223_182214_1024.jpg)
+![](/assets/Serial_connection.png)
 
 nebo pomocí převodníku TTL/USB,
 
