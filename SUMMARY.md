@@ -38,7 +38,7 @@
   * [Ukázkové programy ](programovani/ukazkove-programy.md)
     * [Analog Read Serial](programovani/ukazkove-programy/analog-read-serial.md)
     * [Fade](programovani/ukazkove-programy/fade.md)
-  * [Digital Read Serial](programovani/digital-read-serial.md)
+    * [Digital Read Serial](programovani/ukazkove-programy/digital-read-serial.md)
 
 ## Cloud
 
