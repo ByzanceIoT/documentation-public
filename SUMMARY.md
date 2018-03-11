@@ -36,9 +36,9 @@
     * [Uživatelská makra](programovani/byzance-api/uzivatelska-makra.md)
     * [Digitální vstupy a výstupy ](programovani/byzance-api/digitalni-vstupy-a-vystupy.md)
   * [Ukázkové programy ](programovani/ukazkove-programy.md)
-  * [Digital Read Serial](programovani/ukazkove-programy/digital-read-serial.md)
-  * [Analog Read Serial](programovani/ukazkove-programy/analog-read-serial.md)
-  * [Fade](programovani/ukazkove-programy/fade.md)
+    * [Digital Read Serial](programovani/ukazkove-programy/digital-read-serial.md)
+    * Analog Read Serial
+    * Fade
 
 ## Cloud
 
