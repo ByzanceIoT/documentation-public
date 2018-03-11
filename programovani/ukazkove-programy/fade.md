@@ -19,6 +19,7 @@ Připojte anodu (delší, pozitivní kontakt) své LED na analogový výstupní 
 
 ## Schéma
 
+![](/assets/Fade_schematic.PNG)
 
 ## Code
 
