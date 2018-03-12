@@ -40,6 +40,7 @@
     * [Analog Read Serial](programovani/ukazkove-programy/analog-read-serial.md)
     * [Fade](programovani/ukazkove-programy/fade.md)
     * [Blink Without Delay](programovani/ukazkove-programy/blink-without-delay.md)
+    * [State Change Detection](programovani/ukazkove-programy/state-change-detection.md)
 
 ## Cloud
 
