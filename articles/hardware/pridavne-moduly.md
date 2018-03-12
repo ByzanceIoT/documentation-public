@@ -38,7 +38,7 @@ int i = 0;
 
 void init(){
 	pc.baud(115200);
-    	pc.printf("Hello world from serial test\n");
+	pc.printf("Hello world from serial test\n");
     
 }
 
