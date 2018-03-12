@@ -2,7 +2,7 @@
 
 Shield slouží jako převodník mezi sběrnicemi UART - RS-232 \(plně duplexní\) nebo UART - RS-485 \(poloduplexní\).
 
-![](/assets/serial_b1_l.png)
+![](/assets/serial_b1_b.png)
 
 ## Hardware
 
