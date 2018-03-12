@@ -2,7 +2,7 @@
 
 Tento příklad ukazuje, jak monitorovat hodnotu na tlačítku přes sériovou komunikaci mezi IODA a PC.
 
-## Potřebný Hardwere
+## Hardware
 * IODA 
 * tlačítko
 * kabely

@@ -5,7 +5,7 @@ Průchodem napětí potenciometrem do analogového vstupu na desce lze měnit mn
 
 
 
-## Potřebný hardwer 
+## Hardware
 
 - 10kΩ potenciometr
 - IODA
