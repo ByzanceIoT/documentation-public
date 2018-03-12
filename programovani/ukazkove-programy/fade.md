@@ -3,7 +3,7 @@
 
 Tento příklad demonstruje použití funkce analogWrite() pro vypnutí a zapnutí LED. AnalogWrite využívá modulaci šířky impulzů (PWM), které velmi rychle zapíná a vypíná digitální pin s jiným poměrem mezi zapnutou a vypnutou částí, čímž se vytvoří efekt blednutí.
 
-## Hardwere 
+## Hardware 
 * IODA
 * 220Ω rezistor
 * LED

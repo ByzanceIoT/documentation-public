@@ -2,8 +2,7 @@
 
 Tento příklad ukazuje, jak monitorovat stav na tlačítku přes sériovou komunikaci mezi IODA a PC.
 
-## Potřebný Hardwere
-
+## Hardware
 * IODA 
 * tlačítko
 * kabely
@@ -11,12 +10,11 @@ Tento příklad ukazuje, jak monitorovat stav na tlačítku přes sériovou komu
 * nepájivé kontaktní pole
 
 ## Obvod
-
-Do desky jsou zapojené tři kabely. První dva - černý a červený jsou zapojeny do GND a 3V3 pinu na desce. Třetí jde z pinu X01 na kontakt tlačítka, na protější kontakt připojíme  10kΩ rezistor na zem \(GND\). 3.3 voltu \(3V3\) připojíme na poslední kontakt vedle země \(GND\).
+Do desky jsou zapojené tři kabely. První dva - černý a červený jsou zapojeny do GND a 3V3 pinu na desce. Třetí jde z pinu X01 na kontakt tlačítka, na protější kontakt připojíme  10kΩ rezistor na zem (GND). 3.3 voltu (3V3) připojíme na poslední kontakt vedle země (GND).
 
 ### Tlačítko
 
-Stisknutím tlačítka, nebo přepínače se propojí dva body v obvodu. Když je tlačítko otevřeno \(není stisknuto\), nedojde k žádnému spojení mezi oběma kontakty tlačítka, takže kontakt je připojen k uzemnění \(pomocí tažného odporu\) a čte jako LOW nebo 0. Když je tlačítko zavřené \(stisknuto\), vytváří spojení mezi oběma kontakty, připojuje pin na 3.3 voltů tak, aby kontakt četl jako HIGH, nebo 1.
+Stisknutím tlačítka, nebo přepínače se propojí dva body v obvodu. Když je tlačítko otevřeno (není stisknuto), nedojde k žádnému spojení mezi oběma kontakty tlačítka, takže kontakt je připojen k uzemnění (pomocí tažného odporu) a čte jako LOW nebo 0. Když je tlačítko zavřené (stisknuto), vytváří spojení mezi oběma kontakty, připojuje pin na 3.3 voltů tak, aby kontakt četl jako HIGH, nebo 1.
 
 ![](/assets/DigitalReadSerial.PNG)
 
@@ -25,20 +23,16 @@ Stisknutím tlačítka, nebo přepínače se propojí dva body v obvodu. Když j
 ![](/assets/DigitalReadSerial_schematic.PNG)
 
 ## Code
-
-### init\(\)
-
-V první části programu se musí nastavit knihovny, seriová komunikace a vstup pinu X01. Ve funkci `init()` se nastaví modulační rychlost.  
-Zbytek programu už probíhá ve funkci `loop()`.
-
-### loop\(\)
-
+### init()
+V první části programu se musí nastavit knihovny, seriová komunikace a vstup pinu X01. Ve funkci ```init()``` se nastaví modulační rychlost.
+Zbytek programu už probíhá ve funkci ```loop()```.
+### loop()
 První věc, kterou je potřeba provést v hlavní smyčce programu, je načíst hodnotu na pinu X01, přicházející z vašeho přepínače. Vzhledem k tomu, že informace přicházející z přepínače budou buď "1", nebo "0", není potřeba používat jiný datový typ než int.
 
-`pc.printf("\n button value is : %d",button.read());`  
+``` pc.printf("\n button value is : %d",button.read()); ```
 Tento příkaz načítá hodnotu tlačítka a nasledně ji vypíše na seriový monitor.
 
-```
+``` 
   /**DigitalReadSerial
     * This example shows you how to monitor the state of a switch
     * by establishing serial communication between
@@ -55,7 +49,6 @@ void loop(){   // the loop routine runs over and over agin forever:
   pc.printf("\n button value is : %d",button.read());   // Read button value and print it.
   Thread::wait(100);   // Wait for 1000ms.
 }
+
+
 ```
-
-
-
