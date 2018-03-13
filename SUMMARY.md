@@ -26,15 +26,6 @@
   * [Úvod](programovani/uvod.md)
   * [Hardware Registration ](programovani/hardware-registration.md)
   * [Struktura programu ](programovani/struktura-programu.md)
-  * [MBED API ](programovani/mbed-api.md)
-    * [Vstupy a výstupy ](programovani/mbed-api/vstupy-a-vystupy.md)
-    * [Komunikační rozhraní](programovani/mbed-api/komunikacni-rozhrani.md)
-    * [Časování](programovani/mbed-api/casovani.md)
-    * [RTOS](programovani/mbed-api/rtos.md)
-  * [Byzance Hardware API ](programovani/byzance-api.md)
-    * [Funkce](programovani/byzance-api/funkce.md)
-    * [Uživatelská makra](programovani/byzance-api/uzivatelska-makra.md)
-    * [Digitální vstupy a výstupy ](programovani/byzance-api/digitalni-vstupy-a-vystupy.md)
 
 ## Cloud
 
@@ -115,8 +106,17 @@
     * [Blink Without Delay](programovani/ukazkove-programy/blink-without-delay.md)
     * [State Change Detection](programovani/ukazkove-programy/state-change-detection.md)
   * [Pokročilé](programovani/pokrocile.md)
-* Popis HW
+* [Popis HW](hardware-a-programovani/popis-hw.md)
 * Architektura FW
+* [Byzance Hardware API ](programovani/byzance-api.md)
+  * [Funkce](programovani/byzance-api/funkce.md)
+  * [Uživatelská makra](programovani/byzance-api/uzivatelska-makra.md)
+  * [Digitální vstupy a výstupy ](programovani/byzance-api/digitalni-vstupy-a-vystupy.md)
+* [MBED API ](programovani/mbed-api.md)
+  * [Vstupy a výstupy ](programovani/mbed-api/vstupy-a-vystupy.md)
+  * [Komunikační rozhraní](programovani/mbed-api/komunikacni-rozhrani.md)
+  * [Časování](programovani/mbed-api/casovani.md)
+  * [RTOS](programovani/mbed-api/rtos.md)
 * Programování HW
 * Funkcionality
 
