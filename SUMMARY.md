@@ -6,7 +6,7 @@
 * [1. Welcome Page](articles/first-steps/welcome-page.md)
 * [2. Intrudoction \(Beginner's Guide\)](articles/first-steps/introduction.md)
 * [Oživení zařízení](articles/first-steps/oziveni-zarizeni.md)
-  * [IODAG3E](articles/first-steps/oziveni-zarizeni/iodag3e.md)
+* [IODAG3E](articles/first-steps/oziveni-zarizeni/iodag3e.md)
 
 ## Portal Tools
 
@@ -46,7 +46,6 @@
 
 * [Komunikace s portálem](articles/hardware/komunikace-se-servery.md)
 * [Komunikace ](articles/hardware/komunikace.md)
-  * [Komunikace po sériové lince \(UART\)](articles/hardware/komunikace-se-servery/komunikace-po-seriove-lince-uart.md)
   * [Features](articles/hardware/featury.md)
     * [Bootloader a Command režim](/articles/hardware/ioda/navody/bootloader.md)
     * [Identifikace zařízení](articles/hardware/ioda/navody/identifikace-zarizeni.md)
@@ -108,6 +107,7 @@
 * Signalizace
 * Tutoriály
   * [Připojení zařízení k PC](articles/hardware/ioda/navody/pripojeni-k-pc.md)
+  * [Komunikace po sériové lince \(UART\)](articles/hardware/komunikace-se-servery/komunikace-po-seriove-lince-uart.md)
   * [Základy](programovani/ukazkove-programy.md)
     * [Digital Read Serial](programovani/ukazkove-programy/digital-read-serial.md)
     * [Analog Read Serial](programovani/ukazkove-programy/analog-read-serial.md)
