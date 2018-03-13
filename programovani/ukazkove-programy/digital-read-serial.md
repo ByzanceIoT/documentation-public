@@ -29,10 +29,12 @@ Zbytek programu už probíhá ve funkci ```loop()```.
 ### loop()
 První věc, kterou je potřeba provést v hlavní smyčce programu, je načíst hodnotu na pinu X01, přicházející z vašeho přepínače. Vzhledem k tomu, že informace přicházející z přepínače budou buď "1", nebo "0", není potřeba používat jiný datový typ než int.
 
-``` pc.printf("\n button value is : %d",button.read()); ```
+``` cpp
+pc.printf("\n button value is : %d",button.read()); 
+```
 Tento příkaz načítá hodnotu tlačítka a nasledně ji vypíše na seriový monitor.
 
-``` 
+``` cpp
   /**DigitalReadSerial
     * This example shows you how to monitor the state of a switch
     * by establishing serial communication between
