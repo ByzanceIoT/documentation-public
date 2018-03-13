@@ -4,7 +4,7 @@
 * [Analog Read Serial](https://docu.byzance.cz/programovani/ukazkove-programy/analog-read-serial.html)
 * [Fade](https://docu.byzance.cz/programovani/ukazkove-programy/fade.html)
 * [Blink Without Delay](https://docu.byzance.cz/programovani/ukazkove-programy/blink-without-delay.html)
-
+* [State Change Detection](https://docu.byzance.cz/programovani/ukazkove-programy/state-change-detection.html)
 
 
 
