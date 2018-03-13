@@ -35,12 +35,6 @@
     * [Funkce](programovani/byzance-api/funkce.md)
     * [Uživatelská makra](programovani/byzance-api/uzivatelska-makra.md)
     * [Digitální vstupy a výstupy ](programovani/byzance-api/digitalni-vstupy-a-vystupy.md)
-  * [Ukázkové programy ](programovani/ukazkove-programy.md)
-    * [Digital Read Serial](programovani/ukazkove-programy/digital-read-serial.md)
-    * [Analog Read Serial](programovani/ukazkove-programy/analog-read-serial.md)
-    * [Fade](programovani/ukazkove-programy/fade.md)
-    * [Blink Without Delay](programovani/ukazkove-programy/blink-without-delay.md)
-    * [State Change Detection](programovani/ukazkove-programy/state-change-detection.md)
 
 ## Cloud
 
@@ -50,8 +44,6 @@
 
 ## Hardware
 
-* [Návody](articles/hardware/navody.md)
-  * [Servo](articles/hardware/navody/servo.md)
 * [Připojení zařízení k PC](articles/hardware/ioda/navody/pripojeni-k-pc.md)
 * [Komunikace s portálem](articles/hardware/komunikace-se-servery.md)
 * [Komunikace ](articles/hardware/komunikace.md)
@@ -116,6 +108,13 @@
 * Úvod
 * Signalizace
 * Tutoriály
+  * Pokročilé
+* [Základy](programovani/ukazkove-programy.md)
+  * [Digital Read Serial](programovani/ukazkove-programy/digital-read-serial.md)
+  * [Analog Read Serial](programovani/ukazkove-programy/analog-read-serial.md)
+  * [Fade](programovani/ukazkove-programy/fade.md)
+  * [Blink Without Delay](programovani/ukazkove-programy/blink-without-delay.md)
+  * [State Change Detection](programovani/ukazkove-programy/state-change-detection.md)
 * Popis HW
 * Architektura FW
 * Programování HW
