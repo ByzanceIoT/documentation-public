@@ -39,26 +39,16 @@
 * [Komunikace ](articles/hardware/komunikace.md)
   * [Features](articles/hardware/featury.md)
     * [Bootloader a Command režim](/articles/hardware/ioda/navody/bootloader.md)
-    * [Identifikace zařízení](articles/hardware/ioda/navody/identifikace-zarizeni.md)
     * [Autojump](articles/hardware/ioda/navody/autojump.md)
     * [Práce s datem a časem \(RTC\)](/articles/hardware/ioda/navody/prace-s-datem-a-casem-rtc.md)
-    * [Watchdog](byzance_documentation/hardware_intro/features/watchdog.md)
     * [Autobackup](articles/hardware/ioda/navody/autobackup.md)
-    * [Webové rozhraní a konzole](articles/hardware/ioda/navody/webove-rozhrani-a-konzole.md)
     * [Čas běhu zařízení \(Uptime\)](articles/hardware/ioda/navody/cas-behu-zarizeni.md)
     * [Paměť zařízení](articles/hardware/ioda/navody/pamet-zarizeni.md)
     * [Připojení zdroje k VBAT](articles/hardware/ioda/navody/pripojeni-zdroje-k-vbat.md)
     * [Flash paměť](articles/hardware/ioda/navody/flash-pamet.md)
-    * [Odložení restart](articles/hardware/ioda/navody/odlozeni-restart.md)
-    * [Revize](articles/hardware/ioda/navody/revize.md)
-    * [Lowpan](articles/hardware/ioda/navody/lowpan.md)
     * [Události](articles/hardware/ioda/navody/udalosti.md)
-    * [Vytížení CPU](articles/hardware/ioda/navody/vytizeni-cpu.md)
-    * [LED modul](articles/hardware/ioda/navody/led-modul.md)
-    * [Specifikace zdroje internetu](articles/hardware/ioda/navody/specifikace-zdroje-internetu.md)
     * [Autojump](articles/hardware/ioda/navody/autojump.md)
     * [Callback Busy](articles/hardware/ioda/navody/callback-binbusy.md)
-    * [Webová konzole](articles/hardware/ioda/navody/webova-konzole.md)
     * Podpora float
     * [OTP paměť](articles/hardware/ioda/navody/otp-pamet.md)
 * [Datasheety ](articles/hardware/datasheety.md)
@@ -66,7 +56,6 @@
     * [Technické specifikace](/articles/hardware/ioda/datasheet/iodag3e/technicke-specifikace.md)
     * [Rozhraní a periférie](/articles/hardware/ioda/datasheet/iodag3e/rozhrani-a-periferie.md)
     * [Rozložení a využití paměti](/articles/hardware/ioda/datasheet/iodag3e/rozlozeni-a-vyuziti-pameti.md)
-    * [LED signalizace](/articles/hardware/ioda/datasheet/iodag3e/led-signalizace.md)
     * [Schémata](/articles/hardware/ioda/datasheet/iodag3e/schemata.md)
     * [Revize](/articles/hardware/ioda/datasheet/iodag3e/revize.md)
   * [DAPLink](articles/hardware/daplink.md)
@@ -95,7 +84,11 @@
 ## Hardware a programování
 
 * Úvod
-* Signalizace
+* [LED signalizace](/articles/hardware/ioda/datasheet/iodag3e/led-signalizace.md)
+  * [LED modul](articles/hardware/ioda/navody/led-modul.md)
+* Konektivita
+  * [Specifikace zdroje internetu](articles/hardware/ioda/navody/specifikace-zdroje-internetu.md)
+  * [Lowpan](articles/hardware/ioda/navody/lowpan.md)
 * Tutoriály
   * [Připojení zařízení k PC](articles/hardware/ioda/navody/pripojeni-k-pc.md)
   * [Komunikace po sériové lince \(UART\)](articles/hardware/komunikace-se-servery/komunikace-po-seriove-lince-uart.md)
@@ -108,15 +101,21 @@
   * [Pokročilé](programovani/pokrocile.md)
 * [Popis HW](hardware-a-programovani/popis-hw.md)
 * Architektura FW
-* [Byzance Hardware API ](programovani/byzance-api.md)
-  * [Funkce](programovani/byzance-api/funkce.md)
+* Programování HW
+  * [Byzance Hardware API ](programovani/byzance-api.md)
   * [Uživatelská makra](programovani/byzance-api/uzivatelska-makra.md)
   * [Digitální vstupy a výstupy ](programovani/byzance-api/digitalni-vstupy-a-vystupy.md)
-* [MBED API ](programovani/mbed-api.md)
-  * [Vstupy a výstupy ](programovani/mbed-api/vstupy-a-vystupy.md)
-  * [Komunikační rozhraní](programovani/mbed-api/komunikacni-rozhrani.md)
-  * [Časování](programovani/mbed-api/casovani.md)
-  * [RTOS](programovani/mbed-api/rtos.md)
-* Programování HW
+  * [MBED API ](programovani/mbed-api.md)
+    * [Vstupy a výstupy ](programovani/mbed-api/vstupy-a-vystupy.md)
+    * [Komunikační rozhraní](programovani/mbed-api/komunikacni-rozhrani.md)
+    * [Časování](programovani/mbed-api/casovani.md)
+    * [RTOS](programovani/mbed-api/rtos.md)
 * Funkcionality
+  * [Watchdog](byzance_documentation/hardware_intro/features/watchdog.md)
+  * [Webové rozhraní a konzole](articles/hardware/ioda/navody/webove-rozhrani-a-konzole.md)
+  * [Webová konzole](articles/hardware/ioda/navody/webova-konzole.md)
+  * [Vytížení CPU](articles/hardware/ioda/navody/vytizeni-cpu.md)
+  * [Odložení restart](articles/hardware/ioda/navody/odlozeni-restart.md)
+  * [Identifikace zařízení](articles/hardware/ioda/navody/identifikace-zarizeni.md)
+  * [Revize](articles/hardware/ioda/navody/revize.md)
 
