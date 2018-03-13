@@ -44,7 +44,6 @@
 
 ## Hardware
 
-* [Připojení zařízení k PC](articles/hardware/ioda/navody/pripojeni-k-pc.md)
 * [Komunikace s portálem](articles/hardware/komunikace-se-servery.md)
 * [Komunikace ](articles/hardware/komunikace.md)
   * [Komunikace po sériové lince \(UART\)](articles/hardware/komunikace-se-servery/komunikace-po-seriove-lince-uart.md)
@@ -108,8 +107,7 @@
 * Úvod
 * Signalizace
 * Tutoriály
-  * [Připojení k PC](programovani/pripojeni-k-pc.md)
-    * [1](programovani/ukazkove-programy/digital-read-serial.md)
+  * [Připojení zařízení k PC](articles/hardware/ioda/navody/pripojeni-k-pc.md)
   * [Základy](programovani/ukazkove-programy.md)
     * [Digital Read Serial](programovani/ukazkove-programy/digital-read-serial.md)
     * [Analog Read Serial](programovani/ukazkove-programy/analog-read-serial.md)
