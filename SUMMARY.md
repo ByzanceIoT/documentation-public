@@ -108,7 +108,8 @@
 * Úvod
 * Signalizace
 * Tutoriály
-  * Pokročilé
+  * [Pokročilé](programovani/pokrocile.md)
+* Připojení k PC
 * [Základy](programovani/ukazkove-programy.md)
   * [Digital Read Serial](programovani/ukazkove-programy/digital-read-serial.md)
   * [Analog Read Serial](programovani/ukazkove-programy/analog-read-serial.md)
