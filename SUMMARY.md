@@ -108,14 +108,15 @@
 * Úvod
 * Signalizace
 * Tutoriály
+  * [Připojení k PC](programovani/pripojeni-k-pc.md)
+    * [1](programovani/ukazkove-programy/digital-read-serial.md)
+  * [Základy](programovani/ukazkove-programy.md)
+    * [Digital Read Serial](programovani/ukazkove-programy/digital-read-serial.md)
+    * [Analog Read Serial](programovani/ukazkove-programy/analog-read-serial.md)
+    * [Fade](programovani/ukazkove-programy/fade.md)
+    * [Blink Without Delay](programovani/ukazkove-programy/blink-without-delay.md)
+    * [State Change Detection](programovani/ukazkove-programy/state-change-detection.md)
   * [Pokročilé](programovani/pokrocile.md)
-* Připojení k PC
-* [Základy](programovani/ukazkove-programy.md)
-  * [Digital Read Serial](programovani/ukazkove-programy/digital-read-serial.md)
-  * [Analog Read Serial](programovani/ukazkove-programy/analog-read-serial.md)
-  * [Fade](programovani/ukazkove-programy/fade.md)
-  * [Blink Without Delay](programovani/ukazkove-programy/blink-without-delay.md)
-  * [State Change Detection](programovani/ukazkove-programy/state-change-detection.md)
 * Popis HW
 * Architektura FW
 * Programování HW
