@@ -111,3 +111,13 @@
 
 * [What we plan](byzance_documentation/general_intro.md)
 
+## Hardware a programování
+
+* Úvod
+* Signalizace
+* Tutoriály
+* Popis HW
+* Architektura FW
+* Programování HW
+* Funkcionality
+
