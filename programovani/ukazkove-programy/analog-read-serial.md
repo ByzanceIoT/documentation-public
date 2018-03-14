@@ -23,26 +23,26 @@ Pro zapojení LED se použijí 2 vodiče a jeden 100Ω rezistor.
 
 ## Code
 ### Komunikační rozhraní
- ```
+ ```cpp
  Serial pc(SERIAL_TX, SERIAL_RX);  
  ```
 Tato funkce slouží k definici sériového rozhraní a komunikaci po sériové lince. Ke komunikaci jsou zapotřebí dva piny - RX(recieve data) a TX(transfer data).
 
 ### Knihovny
  Na začátku každého programu se musí načíst potřebné knihovny. Jako základní knihovnu požíváme byzance.h.
- ```
+ ```cpp
  #include "byzance.h"
  ```
  ### Analogový vstup (AnalogIn)
  Převede napětí na pinu analogového vstupu v rozmezí 0 - 3.3V do digitální podoby a interpretuje ho číslem na škále 0-4095. Rozlišení převodníku je 2.44 mV.
-  ```
+  ```cpp
  AnalogIn ain(pin_name);
 printf(”ain value = %3.3f%%\n”, ain.read());
   ```
 
  ### Analogový výstup (AnalogOut)
  Funkce AnalogOut umožňuje definovat analogový výstup, který pomocí digitáně analogového převodníku dokáže na základě vstupní hodnoty této funkce měnit hodnotu napětí na výstupním pinu v rozsahu 0 - 3.3V . Procesor umožňuje definovat dva analogové výstupy, a to na pinech Y23 a Y25. Velikost napětí na výstupu je škálováno zápisem v rozsahu 0 - 1, kdy 1 je maximální napětí 3.3V.
-  ```
+  ```cpp
  //Definice analogového výstupu na pinu Y25
 AnalogOut aout(Y25);
 
@@ -64,7 +64,7 @@ aout.read();
  Jakýkoliv řádek, který začíná dvěma lomítky(//), kompilátor nečte, tudíž slouží k okomentování části programu, nebo-li pro vysvětlení co danná část kodu dělá.
 
 
- ```
+ ```cpp
  void init{
     // nastavení programu, spustí se pouze jednou
  } 
@@ -76,17 +76,26 @@ aout.read();
  ```
 ### Nastavení modulační rychlosti
  V programu (viz.níže) se provádí jedínný příkaz v init() funkci, jednotka modulační rychlosti 115200 bitů za sekundu.
-```
+```cpp
 pc.baud(115200);
 ```
 
 ### Výpis hodnot
-Příkaz ``` pc.printf("ain value =%3.3f%%\n",ain.read());``` slouží k vypsání hodnot z potenciometru na seriový monitor.
+
+ ```cpp 
+ pc.printf("ain value =%3.3f%%\n",ain.read());
+ ```
+Slouží k vzpání vypsání hodnot z potenciometru na seriový monitor.
+
+
 
 ### Pozastavení programu 
-Příkaz ```Thread::wait(100);``` slouží k pozastavení programu na 100ms.
+ ```cpp
+ Thread::wait(100);
+ ``` 
+Slouží k pozastavení programu na 100ms.
 
-```
+```cpp
 
   /**AnalogOutInSerial
     * Reads an analog input pin, maps the result to a range from 0 to 1 and uses

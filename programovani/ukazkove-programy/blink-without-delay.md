@@ -27,7 +27,7 @@ Else se umisťuje vždy na konec. Je to de facto to samé, jako byste uvedli na 
 
 
 
-```
+```cpp
    /**BlinkWithoutDelay
      *Turns on and off a light emitting diode (LED) connected to a digital pin,
      *without using the delay() function. This means that other code can run at the
