@@ -24,7 +24,7 @@ Stisknutím tlačítka, nebo přepínače se propojí dva body v obvodu. Když j
 
 Program kontroluje kolikrát bylo stisknuto tlačítko. Pokud bylo stisknuto 4krát - rozsvítí se LED dioda. 
 
-```
+```cpp
 
 #include "byzance.h"   // Include libraries for IODA
 Serial pc(SERIAL_TX, SERIAL_RX);   // Defines the comunication interface if the serial line , SPI, CAN is needen in the program.

@@ -30,7 +30,7 @@ zvyšuje o hodnotu proměnné fadeAmount.
 Je-li proměnná brightness na jedné z koncových hodnot (buď 0 nebo 1), změní se fadeAmount na negativní. Jinými slovy, pokud je ```fadeAmount=0,01;``` pak je nastavena na -0,01. Pokud je hodnota ```fadeAmount=-0,01;```, pak je nastavena na hodnotu 0,01.
 
 
-```
+```cpp
 /**Fade
   *This example shows how to fade an LED on pin 9 using the analogWrite()
   *function.
