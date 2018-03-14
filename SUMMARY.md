@@ -83,13 +83,13 @@
 
 ## Hardware a programování
 
-* [Úvod](/)
+* [Úvod](/byzance_documentation/uvod.md)
 * [LED signalizace](/articles/hardware/ioda/datasheet/iodag3e/led-signalizace.md)
   * [LED modul](articles/hardware/ioda/navody/led-modul.md)
-* [Konektivita](/)
+* [Konektivita](/byzance_documentation/konektivita.md)
   * [Specifikace zdroje internetu](articles/hardware/ioda/navody/specifikace-zdroje-internetu.md)
   * [Lowpan](articles/hardware/ioda/navody/lowpan.md)
-* [Tutoriály](/)
+* [Tutoriály](byzance_documentation/tutorialy.md)
   * [Připojení zařízení k PC](articles/hardware/ioda/navody/pripojeni-k-pc.md)
   * [Komunikace po sériové lince \(UART\)](articles/hardware/komunikace-se-servery/komunikace-po-seriove-lince-uart.md)
   * [Základy](programovani/ukazkove-programy.md)
