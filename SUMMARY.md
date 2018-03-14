@@ -83,13 +83,13 @@
 
 ## Hardware a programování
 
-* Úvod
+* [Úvod](/)
 * [LED signalizace](/articles/hardware/ioda/datasheet/iodag3e/led-signalizace.md)
   * [LED modul](articles/hardware/ioda/navody/led-modul.md)
-* Konektivita
+* [Konektivita]
   * [Specifikace zdroje internetu](articles/hardware/ioda/navody/specifikace-zdroje-internetu.md)
   * [Lowpan](articles/hardware/ioda/navody/lowpan.md)
-* Tutoriály
+* [Tutoriály]
   * [Připojení zařízení k PC](articles/hardware/ioda/navody/pripojeni-k-pc.md)
   * [Komunikace po sériové lince \(UART\)](articles/hardware/komunikace-se-servery/komunikace-po-seriove-lince-uart.md)
   * [Základy](programovani/ukazkove-programy.md)
@@ -100,8 +100,8 @@
     * [State Change Detection](programovani/ukazkove-programy/state-change-detection.md)
   * [Pokročilé](programovani/pokrocile.md)
 * [Popis HW](hardware-a-programovani/popis-hw.md)
-* Architektura FW
-* Programování HW
+* [Architektura FW]
+* [Programování HW]
   * [Byzance Hardware API ](programovani/byzance-api.md)
   * [Uživatelská makra](programovani/byzance-api/uzivatelska-makra.md)
   * [Digitální vstupy a výstupy ](programovani/byzance-api/digitalni-vstupy-a-vystupy.md)
@@ -110,7 +110,7 @@
     * [Komunikační rozhraní](programovani/mbed-api/komunikacni-rozhrani.md)
     * [Časování](programovani/mbed-api/casovani.md)
     * [RTOS](programovani/mbed-api/rtos.md)
-* Funkcionality
+* [Funkcionality]
   * [Watchdog](byzance_documentation/hardware_intro/features/watchdog.md)
   * [Webové rozhraní a konzole](articles/hardware/ioda/navody/webove-rozhrani-a-konzole.md)
   * [Webová konzole](articles/hardware/ioda/navody/webova-konzole.md)
