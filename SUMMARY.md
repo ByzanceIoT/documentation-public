@@ -93,7 +93,7 @@
   * [Pokročilé](programovani/pokrocile.md)
 * [Hardware](hardware-a-programovani/popis-hw.md)
   * [Základní jednotky](hardware-a-programovani/popis-hw/zakladni-jednotky.md)
-  * Rozšiřující moduly
+  * [Rozšiřující moduly](hardware-a-programovani/popis-hw/rozsirujici-moduly.md)
   * Ostatní
 * [Architektura FW](byzance_documentation/architektura-fw.md)
   * [Hierarchie FW](byzance_documentation/architektura-fw/hierarchie.md)
