@@ -29,19 +29,6 @@
 * [Instancies](byzance_documentation/instancies_intro.md)
 * [Rest-Api](byzance_documentation/instancies_intro/rest-api.md)
 
-## Hardware
-
-* [Komunikace ](articles/hardware/komunikace.md)
-  * [Features](articles/hardware/featury.md)
-    * [Práce s datem a časem \(RTC\)](/articles/hardware/ioda/navody/prace-s-datem-a-casem-rtc.md)
-    * [Čas běhu zařízení \(Uptime\)](articles/hardware/ioda/navody/cas-behu-zarizeni.md)
-    * [Paměť zařízení](articles/hardware/ioda/navody/pamet-zarizeni.md)
-    * [Připojení zdroje k VBAT](articles/hardware/ioda/navody/pripojeni-zdroje-k-vbat.md)
-    * [Flash paměť](articles/hardware/ioda/navody/flash-pamet.md)
-    * [Události](articles/hardware/ioda/navody/udalosti.md)
-    * [Callback Busy](articles/hardware/ioda/navody/callback-binbusy.md)
-    * Podpora float
-
 ## General
 
 * [What we plan](byzance_documentation/general_intro.md)
@@ -97,6 +84,7 @@
     * [Komunikační rozhraní](programovani/mbed-api/komunikacni-rozhrani.md)
     * [Časování](programovani/mbed-api/casovani.md)
     * [RTOS](programovani/mbed-api/rtos.md)
+* [Práce s datem a časem \(RTC\)](/articles/hardware/ioda/navody/prace-s-datem-a-casem-rtc.md)
 * [Funkcionality](byzance_documentation/funkcionality.md)
   * [Watchdog](byzance_documentation/hardware_intro/features/watchdog.md)
   * [Webové rozhraní a konzole](articles/hardware/ioda/navody/webove-rozhrani-a-konzole.md)
@@ -106,6 +94,16 @@
   * [Identifikace zařízení](articles/hardware/ioda/navody/identifikace-zarizeni.md)
   * [Revize](articles/hardware/ioda/navody/revize.md)
   * [OTP paměť](articles/hardware/ioda/navody/otp-pamet.md)
+  
+## Hardware (old)
+* [Features (přemigrovat)](articles/hardware/featury.md)
+  * [Čas běhu zařízení \(Uptime\)](articles/hardware/ioda/navody/cas-behu-zarizeni.md)
+  * [Paměť zařízení](articles/hardware/ioda/navody/pamet-zarizeni.md)
+  * [Připojení zdroje k VBAT](articles/hardware/ioda/navody/pripojeni-zdroje-k-vbat.md)
+  * [Flash paměť](articles/hardware/ioda/navody/flash-pamet.md)
+  * [Události](articles/hardware/ioda/navody/udalosti.md)
+  * [Callback Busy](articles/hardware/ioda/navody/callback-binbusy.md)
+  * Podpora float
 
 ## Interní
 
