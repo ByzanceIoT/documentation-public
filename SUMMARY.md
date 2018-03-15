@@ -22,7 +22,6 @@
   * [graf \(pokročilé funkce GRID\)](byzance_documentation/grid_intro/graf-graficka-stranka-grid.md)
   * [Slider \(User class v GRIDu\)](byzance_documentation/grid_intro/how-to-slider.md)
   * [Styly a jejich použití](byzance_documentation/grid_intro/wk-elements-and-style.md)
-* [Code](byzance_documentation/code_intro.md)
 
 ## Cloud
 
