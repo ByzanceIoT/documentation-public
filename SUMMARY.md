@@ -43,15 +43,6 @@
     * [Události](articles/hardware/ioda/navody/udalosti.md)
     * [Callback Busy](articles/hardware/ioda/navody/callback-binbusy.md)
     * Podpora float
-* [Datasheety ](articles/hardware/datasheety.md)
-  * [IODAG3E](articles/hardware/ioda/datasheet/iodag3e.md)
-    * [Technické specifikace](/articles/hardware/ioda/datasheet/iodag3e/technicke-specifikace.md)
-    * [Rozhraní a periférie](/articles/hardware/ioda/datasheet/iodag3e/rozhrani-a-periferie.md)
-    * [Rozložení a využití paměti](/articles/hardware/ioda/datasheet/iodag3e/rozlozeni-a-vyuziti-pameti.md)
-    * [Schémata](/articles/hardware/ioda/datasheet/iodag3e/schemata.md)
-    * [Revize](/articles/hardware/ioda/datasheet/iodag3e/revize.md)
-  * [DAPLink](articles/hardware/daplink.md)
-  * [Přídavné moduly \(SHIELDS\)](/articles/hardware/pridavne-moduly.md)
 
 ## Interní
 
@@ -93,8 +84,15 @@
   * [Pokročilé](programovani/pokrocile.md)
 * [Hardware](hardware-a-programovani/popis-hw.md)
   * [Základní jednotky](hardware-a-programovani/popis-hw/zakladni-jednotky.md)
-  * [Rozšiřující moduly](hardware-a-programovani/popis-hw/rozsirujici-moduly.md)
-  * [Ostatní](hardware-a-programovani/popis-hw/ostatni.md)
+    * [IODAG3E](articles/hardware/ioda/datasheet/iodag3e.md)
+      * [Technické specifikace](/articles/hardware/ioda/datasheet/iodag3e/technicke-specifikace.md)
+      * [Rozhraní a periférie](/articles/hardware/ioda/datasheet/iodag3e/rozhrani-a-periferie.md)
+      * [Rozložení a využití paměti](/articles/hardware/ioda/datasheet/iodag3e/rozlozeni-a-vyuziti-pameti.md)
+      * [Schémata](/articles/hardware/ioda/datasheet/iodag3e/schemata.md)
+    * [Rozšiřující moduly](hardware-a-programovani/popis-hw/rozsirujici-moduly.md)
+      * [Přídavné moduly \(SHIELDS\)](/articles/hardware/pridavne-moduly.md)
+    * [Ostatní](hardware-a-programovani/popis-hw/ostatni.md)
+      * [DAPLink](articles/hardware/daplink.md)  
 * [Architektura FW](byzance_documentation/architektura-fw.md)
   * [Hierarchie FW](byzance_documentation/architektura-fw/hierarchie.md)
   * [Autobackup](articles/hardware/ioda/navody/autobackup.md)
