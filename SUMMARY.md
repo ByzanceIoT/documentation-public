@@ -33,7 +33,6 @@
 
 ## Hardware
 
-* [Komunikace s portálem](articles/hardware/komunikace-se-servery.md)
 * [Komunikace ](articles/hardware/komunikace.md)
   * [Features](articles/hardware/featury.md)
     * [Práce s datem a časem \(RTC\)](/articles/hardware/ioda/navody/prace-s-datem-a-casem-rtc.md)
@@ -96,6 +95,7 @@
 * [Architektura FW](byzance_documentation/architektura-fw.md)
   * [Hierarchie FW](byzance_documentation/architektura-fw/hierarchie.md)
   * [Autobackup](articles/hardware/ioda/navody/autobackup.md)
+  * [Komunikace s portálem](articles/hardware/komunikace-se-servery.md)
   * [Bootloader](byzance_documentation/architektura-fw/bootloader.md)
     * [Režimy bootloaderu](byzance_documentation/architektura-fw/bootloader/rezimy-bootloaderu.md)
     * [Command mód](byzance_documentation/architektura-fw/bootloader/command-mod.md)
