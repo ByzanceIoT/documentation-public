@@ -23,8 +23,6 @@
   * [Slider \(User class v GRIDu\)](byzance_documentation/grid_intro/how-to-slider.md)
   * [Styly a jejich použití](byzance_documentation/grid_intro/wk-elements-and-style.md)
 * [Code](byzance_documentation/code_intro.md)
-  * [Úvod](programovani/uvod.md)
-  * [Hardware Registration ](programovani/hardware-registration.md)
   * [Struktura programu ](programovani/struktura-programu.md)
 
 ## Cloud
