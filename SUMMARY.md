@@ -42,22 +42,6 @@
     * [Callback Busy](articles/hardware/ioda/navody/callback-binbusy.md)
     * Podpora float
 
-## Interní
-
-* [hardware](interni/hardware.md)
-  * [Seznam hardware](interni/hardware/seznam-hardware.md)
-  * [Interní paměť mikrokontroléru](byzance_documentation/hardware_intro/navody/interni-pamet-mikrokontroleru.md)
-  * [Externí paměť mikrokontroléru](byzance_documentation/hardware_intro/navody/externi-pamet-mikrokontroleru.md)
-  * [Aktualizace firmware](interni/hardware/aktualizace-firmware.md)
-  * [Offline programování](byzance_documentation/hardware_intro/navody/offline-programovani.md)
-    * [Vlastní IDE](byzance_documentation/hardware_intro/navody/offline-programovani/vlastni-ide.md)
-    * [Upload kódu z GUI](byzance_documentation/hardware_intro/navody/offline-programovani/upload-kodu-z-gui.md)
-    * [Upload kódu z konzole](byzance_documentation/hardware_intro/navody/offline-programovani/upload-kodu-z-konzole.md)
-  * [Error kody](interni/hardware/error-kody.md)
-* [Generace G2](interni/generace-g2.md)
-  * [Update modulu ESP8266 v Iodovi](interni/generace-g2/update-modulu-esp8266-v-iodovi.md)
-  * [NRF905 timing](interni/generace-g2/nrf905-timing.md)
-
 ## General
 
 * [What we plan](byzance_documentation/general_intro.md)
@@ -122,4 +106,20 @@
   * [Identifikace zařízení](articles/hardware/ioda/navody/identifikace-zarizeni.md)
   * [Revize](articles/hardware/ioda/navody/revize.md)
   * [OTP paměť](articles/hardware/ioda/navody/otp-pamet.md)
+
+## Interní
+
+* [hardware](interni/hardware.md)
+  * [Seznam hardware](interni/hardware/seznam-hardware.md)
+  * [Interní paměť mikrokontroléru](byzance_documentation/hardware_intro/navody/interni-pamet-mikrokontroleru.md)
+  * [Externí paměť mikrokontroléru](byzance_documentation/hardware_intro/navody/externi-pamet-mikrokontroleru.md)
+  * [Aktualizace firmware](interni/hardware/aktualizace-firmware.md)
+  * [Offline programování](byzance_documentation/hardware_intro/navody/offline-programovani.md)
+    * [Vlastní IDE](byzance_documentation/hardware_intro/navody/offline-programovani/vlastni-ide.md)
+    * [Upload kódu z GUI](byzance_documentation/hardware_intro/navody/offline-programovani/upload-kodu-z-gui.md)
+    * [Upload kódu z konzole](byzance_documentation/hardware_intro/navody/offline-programovani/upload-kodu-z-konzole.md)
+  * [Error kody](interni/hardware/error-kody.md)
+* [Generace G2](interni/generace-g2.md)
+  * [Update modulu ESP8266 v Iodovi](interni/generace-g2/update-modulu-esp8266-v-iodovi.md)
+  * [NRF905 timing](interni/generace-g2/nrf905-timing.md)
 
