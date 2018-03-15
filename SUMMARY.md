@@ -92,6 +92,9 @@
     * [State Change Detection](programovani/ukazkove-programy/state-change-detection.md)
   * [Pokročilé](programovani/pokrocile.md)
 * [Popis HW](hardware-a-programovani/popis-hw.md)
+  * Základní jednotky
+  * Rozšiřující moduly
+  * Ostatní
 * [Architektura FW](byzance_documentation/architektura-fw.md)
   * [Hierarchie FW](byzance_documentation/architektura-fw/hierarchie.md)
   * [Autobackup](articles/hardware/ioda/navody/autobackup.md)
