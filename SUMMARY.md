@@ -92,7 +92,7 @@
     * [State Change Detection](programovani/ukazkove-programy/state-change-detection.md)
   * [Pokročilé](programovani/pokrocile.md)
 * [Hardware](hardware-a-programovani/popis-hw.md)
-  * Základní jednotky
+  * [Základní jednotky](hardware-a-programovani/popis-hw/zakladni-jednotky.md)
   * Rozšiřující moduly
   * Ostatní
 * [Architektura FW](byzance_documentation/architektura-fw.md)
