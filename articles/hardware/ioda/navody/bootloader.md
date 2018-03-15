@@ -1,16 +1,14 @@
-## 
-
 ### Mód JUMP
 
 Pokud není speciálně nastaven jiný mód, bootloader se sám přepne do módu JUMP. Ten sestává z několika kroků:
 
 * Kontrola přitomnosti hlavní aplikace. Pokud hlavní aplikace není dostupná, dojde k přepnutí do command reřimu.
-* Spuštění watchdogu \(Pokud je nastaveno\) a případné nastavení na příslušnou hodnotu. Blíže vysvětleno v sekci [watchdog](link na watchdog).
+* Spuštění watchdogu \(pokud je nastaveno\) a případné nastavení na příslušnou hodnotu. Blíže vysvětleno v sekci [watchdog](link na watchdog).
 * **Skok do hlavní aplikace**
 
 ### Mód FLASH
 
-Do módu FLASH bootloader automaticky přechází, pokud je zapnutý ''flashflag'' \(více viz [aktualizace firmware TO DO](odkaz aktualizace firmware)\). V takovém případě potom následují tyto kroky:
+Do módu FLASH bootloader automaticky přechází, pokud je zapnutý ''flashflag'' \(více viz [aktualizace firmware](odkaz aktualizace firmware)\). V takovém případě potom následují tyto kroky:
 
 * Načtení struktury s informacemi o novém firmware
 * Validace a případná oprava velikosti, je-li to možné
@@ -37,25 +35,13 @@ Do módu COMMANDS je možné vstoupit několika způsoby
 * Chybí hlavní aplikace
 * Bootloader není nakonfigurován \(vypnutá proměnná ''configured'' v [command režimu TO DO](odkaz na command režim).
 
-### Mód WIFIAP
-
-FIXME Nyní nepoužito
-
 ### Mód FACTORY RESET
 
-Do módu FACTORY RESET se může dostat bootloader tak, že uživatel stiskne zároveň tlačítka ''restart'' a ''user'', pustí ''restart'' a tlačítko ''user'' drží dlouhou dobu, zpravidla více jak 10 sekund. Mikrokontrolér je nastaven do [defaultních hodnot TO DO](odkaz na defaultní hodnoty) a po této proceduře se přepne do režimu COMMANDS, stejně jako by byl mikrokontrolér poprvé spuštěn.
-
-### Aktualizace firmware
-
-Aktualizace firmware je zdokumentována v sekci [Aktualizace firmware TO DO ](odkaz na aktualizaci firmware).  
-Skládá se z dvou částí.
-
-* **upload**, kdy se binárka přenese z portálu do IODY a uloží se do jeho externí paměti.
-* **update**, kdy je IODOvi specifikováno, co s danou binárkou má provést \(aktualizuje svůj firmware, nebo několik zařízení atd..\)
+Do módu FACTORY RESET se může dostat bootloader tak, že uživatel stiskne zároveň tlačítka ''restart'' a ''user'', pustí ''restart'' a tlačítko ''user'' drží dlouhou dobu, zpravidla více jak 10 sekund. Mikrokontrolér je nastaven do [defaultních hodnot](odkaz na defaultní hodnoty) a po této proceduře se přepne do režimu COMMANDS, stejně jako by byl mikrokontrolér poprvé spuštěn.
 
 ### Vývojový diagram
 
-![bootloader\_schema](/images/hardware/bootloader_schema.png)
+
 
 ## Command režim
 
@@ -148,7 +134,7 @@ Pokud se poprvé nahraje binárka bootloaderu do mikrokontroléru, bootloader s�
 
 ### Important notice !!!
 
-**Please keep in mind that what is stored in the database \(expected device setup\) is always superior to what is currently on the hardware. If you locally set a value and are not enabled \(Synchronize always with database = False\) in Portal. Core system \(server\) automatically synchronizes everything to the expected value by database.**
+
 
 ```cpp
 // MQTT defaults
@@ -191,33 +177,7 @@ DEFAULTS_BIN_NAME                    "DEFAULT"                 // ** managed by 
 DEFAULTS_BIN_STATE                    BINSTRUCT_STATE_INVALID  // ** managed by byzance (String 32 chars max) - Automatic update
 ```
 
-### Technical Description
 
-**DEFAULTS\_CONF\_AUTOBACKUP**: The Backup feature was designed to protect you against your own **mistakes** in Firmware while\(true\) {} for example. You have 2 options to have an active backup. The first is** Auto Backup **and second is **Static Backup. Value 1 for Auto backup, 0 for Static Backup \(If you are doing this manualy - we recomend set Backup Firmware immidiately\). **Remember that you can do this automatically with "Releas Manager" on our portal. Or with Rest Api with our Core Server.
 
-* **Auto Backup: ** Which is a mode that always keeps the firmware running for at least 30 seconds and successfully sommunicated with main Server in Cloud. Firmware will automaticaly make a copy of you actual running firmware to  backup part of memmory. So when you upload a new firmware that contains errors, Bootloader will automaticaly start the previous one from Backup. The version you uploaded is also marked i Portal by the server as unstable.
-* **Static Backup: **You specify what static version of the backup you want on your device. We recommend using it in critical areas of industry. For example, when driving traffic lights. \(When the primary program fails - the backup is at least flashing orange\). The downside is that if the backup fails and bugs in backup does not allow the device to connect to server, you're fucked. You have to to fix the device yourself.
 
-**DEFAULTS\_CONF\_WEBVIEW**: For easier programming and overview, we've created a simple web page that shows current events and information on hardware. You have to enable this register to show it.  \(make it available on the local network\). Warning! \(Its not available from outside from public internet\) The IP address is assigned by your DHCP server. Remember that you can do this automatically with our portal. Or with Rest Api with our Core Server.
-
-**DEFAULTS\_CONF\_WEBPORT**: The web port is the port on which the device listens on local network. \(Its not available from outside from public internet\)  This default port is used only for default development portal with basic informations. You can make your own website but dont use, the same webpost. Our recommendation is also to avoid all known ports. For example, databases etc. Do not forget for webpage access, that it must be allowed by **DEFAULTS\_CONF\_WEBVIEW** constant. Remember that you can do this automatically with our portal. Or with Rest Api with our Core Server.
-
-**DEFAULTS\_CONF\_CONFIGURED**: After all values are configured,  you have to set Flag Register DEFAULTS\_CONF\_CONFIGURED to value "1" \(number\). This indicates that the device is fully configured. After restart of on every start, the device \(bootloader\) will automatically search for the main Firmware first or Backup. When Bootloader does not find the Main Firmware or Backup, Bootloader is automaticaly activated.
-
-**DEFAULTS\_CONF\_AUTOJUMP:** in some case, the device enters into configuration mode \(bootloader\). Therefore, there is this constant that automatically restarts and and switches the device back to the firmware. If this constant is not set, you risk that the device will be permanently active in the configuration mode and will not be able to update it remotely. Remember that you can do this automatically with our portal. Or with Rest Api with our Core Server
-
-**DEFAULTS\_CONF**_**ALIAS: **Alias is your own device name - Limited to 63 characters. For example "My Light" or "DEVICE\_X\_Y\_1". The Alias Name is accessible in firmware so you can used that for your private communication.  "MYCompany_\_LIGHT\_GENERATION1\_123423231". \_ Remember that you can do this automatically with our portal. Or with Rest Api with our Core Server. If you rename the device in the  our portal, or throw the API, It will automatically syncronizes with Hardware. Or the instructions are saved as soon as the device logs on.
-
----
-
-### Princip detekce a nastavení nevalidních hodnot v bootloaderu
-
-Proces detekce nevalidních hodnot se spouští ihned po startu bootloaderu při každém spuštění. Existují 2 typy detekce nevalidních hodnot
-
-* nevalidní \(celá\) struktura
-* nevalidní položka struktury
-
-Pokud je detekována celá nevalidní struktura \(je složena z hodnot 0xFF → smazaná flash paměť\), tak se celá struktura nahradí defaultními daty \(viz tabulka výše\) a uloží do flash paměti. Tato možnost nastává zpravidla při prvním spuštění bootloaderu na novém mikrokontroléru. Výhodou tohoto režimu je, že je poměrně rychlý.
-
-Druhá možnost je oprava nevalidní položky struktury. V tomto případě se načítají, porovnávají, opravují a ukládají jednotlivé položky struktur, což zabere řádově více času a brzdí to bootloader před skokem do programu. Tato varianta může nastat buď při havárii programu \(nemělo by se to stávat kvůli zápisu přes žurnál\), nebo častěji při aktualizaci bootloaderu, kdy v nové verzi bootloaderu přibyde v některé struktuře nová položka, se kterou se dříve nepočítalo. Tímto způsobem se automaticky nastaví na rozumnou defaultní hodnotu.
 
