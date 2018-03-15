@@ -1,6 +1,6 @@
 ## Command mód
 
-V command režimu je možné pomocí příkazů po sériové lince ověřovat a nastavovat konfigurační parametry Bootloaderu.
+V command režimu je možné pomocí příkazů posílaných po sériové lince ověřovat a nastavovat konfigurační parametry.
 
 Do command režimu bootloaderu je možno vstopit následujícím způsobem
 

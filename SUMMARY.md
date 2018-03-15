@@ -36,7 +36,6 @@
 * [Komunikace s portálem](articles/hardware/komunikace-se-servery.md)
 * [Komunikace ](articles/hardware/komunikace.md)
   * [Features](articles/hardware/featury.md)
-    * [Bootloader a Command režim](/articles/hardware/ioda/navody/bootloader.md)
     * [Autojump](articles/hardware/ioda/navody/autojump.md)
     * [Práce s datem a časem \(RTC\)](/articles/hardware/ioda/navody/prace-s-datem-a-casem-rtc.md)
     * [Autobackup](articles/hardware/ioda/navody/autobackup.md)
@@ -103,6 +102,7 @@
     * [Režimy bootloaderu](byzance_documentation/architektura-fw/bootloader/rezimy-bootloaderu.md)
     * [Command mód](byzance_documentation/architektura-fw/bootloader/command-mod.md)
     * [Výchozí hodnoty](byzance_documentation/architektura-fw/bootloader/vychozi-hodnoty.md)
+    * Další vlastnosti
 * [Programování HW](byzance_documentation/programovani-hw.md)
   * [Byzance Hardware API ](programovani/byzance-api.md)
   * [Uživatelská makra](programovani/byzance-api/uzivatelska-makra.md)
