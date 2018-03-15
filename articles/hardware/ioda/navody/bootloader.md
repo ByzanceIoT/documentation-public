@@ -1,33 +1,4 @@
-# Bootloader a Command režim
-
-Bootloader je firmware nahraný v zařízení Byzance, které udržuje **základní konfiguraci zařízení** a obsluhuje spuštění hlavního uživatelského programu. Bootloader umožňuje nastavení jeho parametrů v command režimu, zasíláním příkazů po sériové lince.
-
-**Overview**
-
-1. [Základní přehled](#základní-přehled-)
-2. [Činnost bootloaderu ](#činnost-bootloaderu)
-   * [Mód JUMP](#mód-jump)
-   * [Mód FLASH](#mód-flash)
-   * [Mód RESTORE](#mód-restore)
-   * [Mód COMMANDS](#mód-commands)
-   * [Mód FACTORY RESET](#mód-factory-reset)
-3. [Command režim](#command-režim)
-4. [Default Configuration Values](#default-configuration-values)
-
-## Základní Přehled
-
-Každé zařízení má v sobě nahraných více do jisté míry nezávislých programů. Typicky jde o tyto:
-
-* Bootloader
-* Hlavní program
-* Záložní program
-* Programový buffer
-
-Každý program má ve FLASH paměti vyhrazeno pevné místo, tj. má danou počáteční adresu a max. velikost viz [adresaci paměti](ODKAZ na adresaci).
-
-## Činnost bootloaderu
-
-Po zapnutí napájení zařízení vždy začne vykonávat instrukce z bootloaderu. Úkolem bootloaderu je zajistit aktualizaci hlavního programu zařízení, obnovení v případě nefunkčního hlavního firmware a nastavení některých konfiguračních dat. Bootloader může vykonávat různé funkce na základě módu ve kterém se nachází.
+## 
 
 ### Mód JUMP
 
@@ -74,29 +45,6 @@ FIXME Nyní nepoužito
 
 Do módu FACTORY RESET se může dostat bootloader tak, že uživatel stiskne zároveň tlačítka ''restart'' a ''user'', pustí ''restart'' a tlačítko ''user'' drží dlouhou dobu, zpravidla více jak 10 sekund. Mikrokontrolér je nastaven do [defaultních hodnot TO DO](odkaz na defaultní hodnoty) a po této proceduře se přepne do režimu COMMANDS, stejně jako by byl mikrokontrolér poprvé spuštěn.
 
-### Proces aktualizace hlavního programu v Device
-
-TO DO
-
-FIXME aktuálně nevyužito a do budoucna device asi dostanou extmem a budou normálně pracovat s bufferem, je to bezpečnější a systematičtější
-
-Terminologie:
-
-* **aktuální** program je ten, který naposledy běžel z interní paměti Iody
-* **nový** program je ten, který v Iodovi zatím neběžel
-
-* Bootolader provede načtení parametrů **nového** programu z konfig. paměti a provedene validaci.
-
-* Funkce autobackup je u device vždy zapnutá a nedá se vypnout.
-
-* Homer dříve \[\[Yoda:upload\| nahrál do device\]\] do části nového programu **nový** program.
-
-* Bootloader prohodí **aktuální** program s **novým** programem. Tím se z **nového** programu stane **aktuální**
-
-* Zapíše se informace o **aktuálním** programu v Iodovi do konfigurační paměti.
-
-* Na závěr bootloader skočí na začátek **aktuálního** programu a začne ho vykonávat.
-
 ### Aktualizace firmware
 
 Aktualizace firmware je zdokumentována v sekci [Aktualizace firmware TO DO ](odkaz na aktualizaci firmware).  
@@ -142,7 +90,7 @@ Více informací k MQTT připojení je možno nalézt v sekci [Komunikace se ser
 * **backup\_mqtt\_hostname** - Záložní hostname, na kterém běží Homer.
 * **backup\_mqtt\_port** - Záložní port, na kterém běží Homer. 
 * **mqtt\_username** - Záložní jméno pro přihlášení k Homerovi.
-* **backup\_mqtt\_password** - Záložní heslo pro přihlášení k Homerovi. 
+* **backup\_mqtt\_password** - Záložní heslo pro přihlášení k Homerovi.
 
 * **alias** - Alias zařízení, který si každý může nastavit pro lepší [identifikaci zařízení](/articles/hardware/ioda/navody/identifikace-zarizeni.md).
 
