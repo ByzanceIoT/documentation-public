@@ -102,6 +102,7 @@
   * [Bootloader](byzance_documentation/architektura-fw/bootloader.md)
     * [Režimy bootloaderu](byzance_documentation/architektura-fw/bootloader/rezimy-bootloaderu.md)
     * [Command mód](byzance_documentation/architektura-fw/bootloader/command-mod.md)
+    * [Výchozí hodnoty](byzance_documentation/architektura-fw/bootloader/vychozi-hodnoty.md)
 * [Programování HW](byzance_documentation/programovani-hw.md)
   * [Byzance Hardware API ](programovani/byzance-api.md)
   * [Uživatelská makra](programovani/byzance-api/uzivatelska-makra.md)

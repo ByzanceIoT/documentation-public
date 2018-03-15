@@ -1,12 +1,6 @@
-### Default Configuration Values
-
-"_If you are in the configuration mode, the LED lights up blue"_
+### Výchozí hodnoty
 
 Pokud se poprvé nahraje binárka bootloaderu do mikrokontroléru, bootloader sám umí detekovat, že target není zatím nakonfigurován. Nastala-li porucha některé hodnoty, bootloader danou hodnotu umí opravit. K nastavení výchozích vlastností slouží soubor`struct_defaults.h`s podobným obsahem tomuto
-
-### Important notice !!!
-
-
 
 ```cpp
 // MQTT defaults
