@@ -90,7 +90,6 @@
       * [Rozložení a využití paměti](/articles/hardware/ioda/datasheet/iodag3e/rozlozeni-a-vyuziti-pameti.md)
       * [Schémata](/articles/hardware/ioda/datasheet/iodag3e/schemata.md)
   * [Rozšiřující moduly](hardware-a-programovani/popis-hw/rozsirujici-moduly.md)
-    * [Přídavné moduly \(SHIELDS\)](/articles/hardware/pridavne-moduly.md)
     * [Serial shield](articles/hardware/serial-shield.md)
     * [LED shield](articles/hardware/led-shield.md)
     * [Ultrasonic shield](articles/hardware/ultrasonic-shield.md)
