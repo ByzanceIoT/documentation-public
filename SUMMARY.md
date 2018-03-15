@@ -36,7 +36,6 @@
 * [Komunikace s portálem](articles/hardware/komunikace-se-servery.md)
 * [Komunikace ](articles/hardware/komunikace.md)
   * [Features](articles/hardware/featury.md)
-    * [Autojump](articles/hardware/ioda/navody/autojump.md)
     * [Práce s datem a časem \(RTC\)](/articles/hardware/ioda/navody/prace-s-datem-a-casem-rtc.md)
     * [Autobackup](articles/hardware/ioda/navody/autobackup.md)
     * [Čas běhu zařízení \(Uptime\)](articles/hardware/ioda/navody/cas-behu-zarizeni.md)
@@ -44,10 +43,8 @@
     * [Připojení zdroje k VBAT](articles/hardware/ioda/navody/pripojeni-zdroje-k-vbat.md)
     * [Flash paměť](articles/hardware/ioda/navody/flash-pamet.md)
     * [Události](articles/hardware/ioda/navody/udalosti.md)
-    * [Autojump](articles/hardware/ioda/navody/autojump.md)
     * [Callback Busy](articles/hardware/ioda/navody/callback-binbusy.md)
     * Podpora float
-    * [OTP paměť](articles/hardware/ioda/navody/otp-pamet.md)
 * [Datasheety ](articles/hardware/datasheety.md)
   * [IODAG3E](articles/hardware/ioda/datasheet/iodag3e.md)
     * [Technické specifikace](/articles/hardware/ioda/datasheet/iodag3e/technicke-specifikace.md)
@@ -120,4 +117,5 @@
   * [Odložení restart](articles/hardware/ioda/navody/odlozeni-restart.md)
   * [Identifikace zařízení](articles/hardware/ioda/navody/identifikace-zarizeni.md)
   * [Revize](articles/hardware/ioda/navody/revize.md)
+* [OTP paměť](articles/hardware/ioda/navody/otp-pamet.md)
 
