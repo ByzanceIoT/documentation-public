@@ -23,7 +23,6 @@
   * [Slider \(User class v GRIDu\)](byzance_documentation/grid_intro/how-to-slider.md)
   * [Styly a jejich použití](byzance_documentation/grid_intro/wk-elements-and-style.md)
 * [Code](byzance_documentation/code_intro.md)
-  * [Struktura programu ](programovani/struktura-programu.md)
 
 ## Cloud
 
@@ -106,7 +105,8 @@
     * [Výchozí hodnoty](byzance_documentation/architektura-fw/bootloader/vychozi-hodnoty.md)
     * [Další vlastnosti](byzance_documentation/architektura-fw/bootloader/dalsi-vlastnosti.md)
 * [Programování HW](byzance_documentation/programovani-hw.md)
-  * [Byzance Hardware API ](programovani/byzance-api.md)
+  * [Struktura programu](programovani/struktura-programu.md)
+  * [Byzance Hardware API](programovani/byzance-api.md)
   * [Uživatelská makra](programovani/byzance-api/uzivatelska-makra.md)
   * [Digitální vstupy a výstupy ](programovani/byzance-api/digitalni-vstupy-a-vystupy.md)
   * [MBED API ](programovani/mbed-api.md)
