@@ -91,7 +91,7 @@
     * [Blink Without Delay](programovani/ukazkove-programy/blink-without-delay.md)
     * [State Change Detection](programovani/ukazkove-programy/state-change-detection.md)
   * [Pokročilé](programovani/pokrocile.md)
-* [Popis HW](hardware-a-programovani/popis-hw.md)
+* [Hardware](hardware-a-programovani/popis-hw.md)
   * Základní jednotky
   * Rozšiřující moduly
   * Ostatní
