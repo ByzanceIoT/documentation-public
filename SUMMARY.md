@@ -51,6 +51,7 @@
     * [Fade](programovani/ukazkove-programy/fade.md)
     * [Blink Without Delay](programovani/ukazkove-programy/blink-without-delay.md)
     * [State Change Detection](programovani/ukazkove-programy/state-change-detection.md)
+    * [BusOut](programovani/ukazkove-programy/busout.md)
   * [Pokročilé](programovani/pokrocile.md)
 * [Hardware](hardware-a-programovani/popis-hw.md)
   * [Základní jednotky](hardware-a-programovani/popis-hw/zakladni-jednotky.md)
