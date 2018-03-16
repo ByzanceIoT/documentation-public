@@ -67,7 +67,7 @@
   * [Ostatní](hardware-a-programovani/popis-hw/ostatni.md)
     * [DAPLink](articles/hardware/daplink.md)
 * [Architektura FW](byzance_documentation/architektura-fw.md)
-  * [Hierarchie FW](byzance_documentation/architektura-fw/hierarchie.md)
+  * [Hierarchie FW, aktualizace](byzance_documentation/architektura-fw/hierarchie.md)
   * [Autobackup](articles/hardware/ioda/navody/autobackup.md)
   * [Komunikace s portálem](articles/hardware/komunikace-se-servery.md)
   * [Bootloader](byzance_documentation/architektura-fw/bootloader.md)
@@ -94,9 +94,10 @@
   * [Identifikace zařízení](articles/hardware/ioda/navody/identifikace-zarizeni.md)
   * [Revize](articles/hardware/ioda/navody/revize.md)
   * [OTP paměť](articles/hardware/ioda/navody/otp-pamet.md)
-  
-## Hardware (old)
-* [Features (přemigrovat)](articles/hardware/featury.md)
+
+## Hardware \(old\)
+
+* [Features \(přemigrovat\)](articles/hardware/featury.md)
   * [Čas běhu zařízení \(Uptime\)](articles/hardware/ioda/navody/cas-behu-zarizeni.md)
   * [Paměť zařízení](articles/hardware/ioda/navody/pamet-zarizeni.md)
   * [Připojení zdroje k VBAT](articles/hardware/ioda/navody/pripojeni-zdroje-k-vbat.md)
