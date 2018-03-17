@@ -51,6 +51,7 @@
     * [Fade](programovani/ukazkove-programy/fade.md)
     * [Blink Without Delay](programovani/ukazkove-programy/blink-without-delay.md)
     * [State Change Detection](programovani/ukazkove-programy/state-change-detection.md)
+    * [BusOut](programovani/ukazkove-programy/busout.md)
   * [Pokročilé](programovani/pokrocile.md)
 * [Hardware](hardware-a-programovani/popis-hw.md)
   * [Základní jednotky](hardware-a-programovani/popis-hw/zakladni-jednotky.md)
@@ -94,9 +95,10 @@
   * [Identifikace zařízení](articles/hardware/ioda/navody/identifikace-zarizeni.md)
   * [Revize](articles/hardware/ioda/navody/revize.md)
   * [OTP paměť](articles/hardware/ioda/navody/otp-pamet.md)
-  
-## Hardware (old)
-* [Features (přemigrovat)](articles/hardware/featury.md)
+
+## Hardware \(old\)
+
+* [Features \(přemigrovat\)](articles/hardware/featury.md)
   * [Čas běhu zařízení \(Uptime\)](articles/hardware/ioda/navody/cas-behu-zarizeni.md)
   * [Paměť zařízení](articles/hardware/ioda/navody/pamet-zarizeni.md)
   * [Připojení zdroje k VBAT](articles/hardware/ioda/navody/pripojeni-zdroje-k-vbat.md)
