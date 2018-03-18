@@ -5,7 +5,6 @@
 * [Introduction](README.md)
 * [1. Welcome Page](articles/first-steps/welcome-page.md)
 * [2. Intrudoction \(Beginner's Guide\)](articles/first-steps/introduction.md)
-* [Oživení zařízení](articles/first-steps/oziveni-zarizeni.md)
 * [IODAG3E](articles/first-steps/oziveni-zarizeni/iodag3e.md)
 
 ## Portal Tools
@@ -36,6 +35,7 @@
 ## Hardware a programování
 
 * [Úvod](/byzance_documentation/uvod.md)
+  * [Oživení zařízení](byzance_documentation/uvod/oziveni-zarizeni.md)
 * [LED modul](/articles/hardware/ioda/datasheet/iodag3e/led-signalizace.md)
   * [Automatická signalizace](articles/hardware/ioda/navody/automaticka.md)
   * [Vlastní ovládání](articles/hardware/ioda/navody/led-modul.md)
