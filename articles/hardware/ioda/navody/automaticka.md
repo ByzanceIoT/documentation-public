@@ -1,5 +1,5 @@
 #Automatická LED signalizace
-LED signalizace je implementována s využitím LED modulu. V defaultním nastavení bez zásahu uživatele **slouží k vizuální reprezentaci stavů zařízení**. Funkci LED modulu lze přeprogramovat vlastní funkcionalitou. Tato generace použivá k signalizaci stavu jednu RGB LED diodu. Stavy jsou proto dány jako kombinace blikání a barvy.
+LED signalizace využívá interní LED modul, který je součástí všech Byzance zařízení. Ve výchozím nastavení bez zásahu uživatele **slouží k vizuální reprezentaci stavů zařízení**. Funkci LED modulu lze přeprogramovat vlastní funkcionalitou. Generace IODAG3E použivá k signalizaci stavu jednu RGB LED diodu. Stavy jsou proto dány jako kombinace blikání s určitou časovou sekvencí a barvou.
 
 ## Stav CONNECTED
 
