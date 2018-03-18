@@ -14,16 +14,10 @@ V takovém případě je nutné nastavit několik údajů - je to především h
 
 Každé zařízení může mít hlavní a záložní broker, ke kterému se připojuje.
 
-
-```
-normal_mqtt_hostname
-```
-
 Dále je třeba vygenerovat přihlašovací údaje k danému Portálu. Toto je možné provést online u daného zařízení kliknutím na tlačítko "Restart MQTT Password".
 
 
-
-
+![](/assets/mqtt_credentials.PNG)
 
 
 
