@@ -20,7 +20,7 @@ V rámci procesu upload probíhá nahrávání binárky z Cloudu do sekce ''buff
 Až je binárka nahraná v Iodovi, ještě je stále třeba ji z externí paměti překopírovat na určité místo, což může být například hlavní firmware, bootloader nebo backup.
 
 ### Komponenta firmware
-Pokud je updatována komponenta firmware, automaticky se zapne signalizátor ''flashflag''  spravovaný bootloaderem a po volitelném restartu **bootloader** provede přeflashování hlavního programu z externí paměti ''buffer'' do interní ''firmware''.
+Pokud je updatována komponenta firmware, automaticky se zapne signalizátor ''flashflag''  spravovaný bootloaderem a po volitelném restartu **bootloader** provede přeflashování hlavního programu z externí paměti ''buffer'' do interní ''firmware''. V této chvíli se může spustit i funkce autobackup popsaná v samostatném článku.
 
 ### Komponenta backup nebo bootloader
 Pokud má být updatována záloha nebo bootloader, kopírování z ''buffer'' do ''backup'' nebo ''bootloader'' se provede v **hlavním firmware** bez nutnosti restartu zařízení.
