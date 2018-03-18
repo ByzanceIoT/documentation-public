@@ -4,32 +4,28 @@ Autobackup je funkce, která se stará o automatickou zálohu aktuálního funk�
 
 ## Vlastnosti autobackup
 
-Pokud je autobackup **zapnutý**, aktuálně běžící funkční firmware se sám začne zálohovat a při chybě nové binárky se dokáže tato konfigurace obnovit. Tomuto typu zálohy se říká **dynamická záloha**.
+Pokud je funkce autobackup **zapnutá**, při nahrávání nového firmware se původně běžící firmware zazálohuje a při chybě nové binárky se dokáže tato konfigurace obnovit. Tomuto typu zálohy se říká **dynamická záloha**. V případě, že je automatická záloha posledního funkčního firmware nežádoucí a je třeba jeden záložní firmware pro všechny situace, funkce autobackup je **vypnutá** a tomuto typu se říká **statická záloha**.
 
-Mezi podmínky spuštění automatického zálohování patří
+##Dynamická záloha
 
-* úspěšné naběhnutí
-* úspěšné připojení k serverům
-* bezpečnostní běhový čas backuptime \(viz dále\)
+Zapnutý autobackup, tedy dynamická záloha přináší určité výhody i nevýhody.
 
-Autobackup přináší výhody i nevýhody.
+* Výhodou této varianty je, že pokud aktualizace zařízení selže, vždy se obnoví poslední funkční konfigurace.
+* Nevýhodou je, že při každé aktualizaci na novou verzi firmware musí proběhnout ještě záloha původního firmware. Toto může trvat nějaký čas. Řádově se jedná zhruba o 20 sekund navíc při každé aktualizaci.
 
-* Výhodou této varianty je, že pokud aktualizace zařízení selže, vždy se obnoví poměrně poslední funkční konfigurace.
-* Nevýhodou je, že zálohovací proces spotřebovává procesorový výkon, a pouští se automaticky na základě výše popsaných podmínek, což může  negativně ovlivnit výkon probíhajícího kódu. Tato varianta není vhodná pro aplikace, které vyžadují kritické časování.
+##Statická záloha
 
 V případě, že je autobackup **vypnutý**, zařízení spoléhá na to, že v záložním sektoru existuje platná **statická záloha,** která byla do zařízení při vypnutí autobackupu doručena. Pokud update binárky neproběhne v pořádku, statická záloha se automaticky obnoví.
 
-* Výhodou je, že stačí zálohu nahrát jednou a zařízení si ji "navždy" pamatuje \(případně do doby než je autobackup zapnutý, čímž se záloha se automaticky přepíše na dynamickou\). Při běhu uživatelského firmware se tak nepouští žádný automatický proces.
+* Výhodou je, že stačí zálohu nahrát jednou a zařízení si ji "navždy" pamatuje \(případně do doby než je autobackup zapnutý, čímž se záloha se automaticky přepíše na dynamickou\).
 * Nevýhoda je to, že pokud update selže, může se obnovit velmi stará fukční konfigurace, která v aktuálním kontextu nemusí být dávno platná.
-
-TO DO 
 
 ## Nastavování a zjišťování hodnot
 
 Pokud je nutné režim autobackup změnit, existuje několik možností, jak toho docílit.
 
-* Jediná správná možnost je přepnout režim z Tyriona/Becki. Ostatní režimy můžou být v libovolnou dobu, popř. při restartu "přebity" dle libovůle Tyriona, jehož konfigurace se upřednostňuje v případě konfliktů. Při nahrátí statické zálohy z Tyriona/Becki se automaticky autobackup vypíná nezávisle na okolnostech.
-* Další možnost je přepnutí autobackup=1/0 v command režimu bootloaderu a nastavení příkazem backuptime=XXX na určitý počet sekund.
+* Pomocí Portálu Byzance online
+* V Command režimu Bootloaderu
 
 
 
