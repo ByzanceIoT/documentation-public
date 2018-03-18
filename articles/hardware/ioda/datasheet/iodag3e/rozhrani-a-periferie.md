@@ -20,8 +20,6 @@ Zařízení IODAG3E disponuje **třemi **standartními **napájecími vstupy** \
 
 **Příkon ** zařízení se v zásvislost na stavu, činnosti a zvoleném vstupu pohybuje od 0.6W do 0.9W \(Měřeno bez rozšiřujících desek a dalších připojených komponent\). Příkon je dále také ovlivněn amplitudou napájecího napětí. Všechny uváděné proudy jsou bezpečné proudy pro dlouhodobější provoz s ohledem na výkonové ztráty v systému \(zahřívání komponent\). Překročení **horní** hranice uvedených napětí může vést k **poškození **zařízení. Naopak **podpětí** a **nedostatečně dimenzovaný **vstup zdroje energie může zpusobit **nepředvídatelné chování **a nestabilitu.
 
-Detailnější výsledky měření na napájecí kaskádě jsou dostupné v gitu \(rezpozitář _hardware/G3/IODAG3E/Measurements/22062017\_psu_\).
-
 ### USB
 
 Zařízení se spustí neprodleně po připojení microUSB kabelu.
@@ -31,7 +29,7 @@ Zařízení se spustí neprodleně po připojení microUSB kabelu.
 Technické parametry USB vstupu:
 
 * Doporučené vstupní napětí: 5.0V \(+-10% dle specifikací USB\)
-* Doporučený maximální proud vstupem: 1.0A
+* Doporučený proud vstupem: 0.5A
 * Vstup je vybaven přepěťovou ochranou: max. vstupní napětí je 6.0V
 
 ### PoE \(Power over Ethernet\)
