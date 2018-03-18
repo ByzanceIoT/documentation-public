@@ -1,3 +1,3 @@
-Základní jednotky
+#Základní jednotky
 
-Vysvětlení toho, co je to IODA (základní jednotka)
+Základní jednotka je zařízení

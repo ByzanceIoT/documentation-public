@@ -29,6 +29,6 @@ Jak je patrné, oblasti .bss a .data \(veškeré globální a statické proměnn
 
 ## Externí paměť
 
-* 8MB \(64Mb\) externí flash paměť \(\[\[tutorial:nonvolatile\| dokumentace\]\]\) 
+* 8MB \(64Mb\) externí flash paměť
 
 
