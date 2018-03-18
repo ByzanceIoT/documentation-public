@@ -10,6 +10,20 @@ Zařízení se mohou pomocí LOWPAN síťovat do virtuálních sítí a tvořit 
 
 Zařízení se s Portálem spojuje automaticky na základě výchozích údajů uložených v Bootloaderu. Je-li třeba změnit připojení k jinému Portálu, je možné k tomu využít například Command režim Bootloaderu.
 
-**popis, jak získat username a password z Becki**
+V takovém případě je nutné nastavit několik údajů - je to především hostname, na který se bude zařízení připojovat a port, na kterém na serveru běží služba Broker.
+
+Každé zařízení může mít hlavní a záložní broker, ke kterému se připojuje.
+
+
+```
+normal_mqtt_hostname
+```
+
+Dále je třeba vygenerovat přihlašovací údaje k danému Portálu. Toto je možné provést online u daného zařízení kliknutím na tlačítko "Restart MQTT Password".
+
+
+
+
+
 
 
