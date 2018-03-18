@@ -1,8 +1,6 @@
 # Autobackup
 
-Autobackup je funkce, která se stará o automatickou zálohu zdrojového kódu na mikrokontroléru.
-
-Aktuálně běžící a funkční program vždy aktualizuje program autobackup. Pokud nově nahraný program správně nenaběhne, bez autobackupu by se zařízení nemohlo aktualizovat a nebylo by možné jej bez manualního programování opravit,  čímž by se stalo "bricknuté". Proto je nutné mít záložní kód, který v takovém případě naběhne a zařízení zachrání i bez použití programátoru. Přesně k tomuto slouží vlastnost autobackup.
+Autobackup je funkce, která se stará o automatickou zálohu aktuálního funkčního kódu na mikrokontroléru pro případ selhání.
 
 ## Vlastnosti autobackup
 
@@ -23,14 +21,6 @@ V případě, že je autobackup **vypnutý**, zařízení spoléhá na to, že v
 
 * Výhodou je, že stačí zálohu nahrát jednou a zařízení si ji "navždy" pamatuje \(případně do doby než je autobackup zapnutý, čímž se záloha se automaticky přepíše na dynamickou\). Při běhu uživatelského firmware se tak nepouští žádný automatický proces.
 * Nevýhoda je to, že pokud update selže, může se obnovit velmi stará fukční konfigurace, která v aktuálním kontextu nemusí být dávno platná.
-
-## Proměnná backuptime
-
-Pokud je autobackup **zapnutý**, firmware začne brát v potaz proměnnou backuptime. Tato proměnná vyjadřuje ochranný čas od startu programu a následného připojení k serverům Byzance do spuštění procesu automatického backupu \(vyjádřeném v sekundách\).
-
-Nastavená minimální hodnota by měla být alespoň 60 sekund, aby bylo při zálohování aktuálně probíhajícího firmware ověřeno, že firmware dokáže bez pádu daný čas běžet, tudíž je velká pravděpodobnost, že se dokáže během daného času i updatovat. Optimální hodhota je 5 minut a víc.
-
-## Proměnna Trusted
 
 TO DO 
 
