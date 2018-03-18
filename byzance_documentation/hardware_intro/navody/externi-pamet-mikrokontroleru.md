@@ -7,8 +7,8 @@ Velikost externí paměti na všech targetech je 8 MiB (32 Mb). Adresuje se od a
 
 Paměť je virtuálně rozdělena na několik sekcí. Jejich velikosti jsou následující:
   * Buffer - 0x00200000 (2 MiB). Slouží pro příjem binárky firmware při [[yoda:aktualizace_firmware|aktualizaci firmware]].
-  * Backup - 0x00200000 (2 MiB). Sem se ukládá binárka, která prošla procesem ověření a bude sloužit jako záložní program pro případ selhání hlavního.
-  * User   - 0x00200000 (2 MiB). Část přístupná uživateli.
+  * Backup - 0x00200000 (2 MiB). Sem se ukládá binárka, bude sloužit jako záložní program pro případ selhání hlavního.
+  * User   - 0x00200000 (2 MiB). Část přístupná uživateli k ukládání vlastních dat.
   * Config - 0x001FD000 (2 MiB - 12 KiB). Konfigurační údaje.
   * Journal index - 0x00001000 (4 KiB). [[memory:journal|Index žurnálu]].
   * Journal data  - 0x00002000 (8 KiB). [[memory:journal|Data žurnálu]].
