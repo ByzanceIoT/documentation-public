@@ -1,6 +1,6 @@
 # Zdroj internetu
 
-Pokud má zařízení více rozhraní, je třeba určit, které rozhraní bude výchozí pro připojení k internetu. Tato položka se jmenuje "netsource". 
+Pokud má zařízení více rozhraní, je třeba určit, které rozhraní bude výchozí pro připojení k internetu. Tato položka se jmenuje "netsource".
 
 * Vypnuto
 * Ethernet

@@ -36,8 +36,9 @@
 ## Hardware a programování
 
 * [Úvod](/byzance_documentation/uvod.md)
-* [LED signalizace](/articles/hardware/ioda/datasheet/iodag3e/led-signalizace.md)
-  * [LED modul](articles/hardware/ioda/navody/led-modul.md)
+* [LED modul](/articles/hardware/ioda/datasheet/iodag3e/led-signalizace.md)
+  * [Automatická signalizace](articles/hardware/ioda/navody/automaticka.md)
+  * [Vlastní ovládání](articles/hardware/ioda/navody/led-modul.md)
 * [Konektivita](/byzance_documentation/konektivita.md)
   * [Specifikace zdroje internetu](articles/hardware/ioda/navody/specifikace-zdroje-internetu.md)
   * [Lowpan](articles/hardware/ioda/navody/lowpan.md)
@@ -113,7 +114,6 @@
 * [hardware](interni/hardware.md)
   * [Interní paměť mikrokontroléru](byzance_documentation/hardware_intro/navody/interni-pamet-mikrokontroleru.md)
   * [Externí paměť mikrokontroléru](byzance_documentation/hardware_intro/navody/externi-pamet-mikrokontroleru.md)
-  * [Aktualizace firmware](interni/hardware/aktualizace-firmware.md)
   * [Offline programování](byzance_documentation/hardware_intro/navody/offline-programovani.md)
     * [Vlastní IDE](byzance_documentation/hardware_intro/navody/offline-programovani/vlastni-ide.md)
     * [Upload kódu z GUI](byzance_documentation/hardware_intro/navody/offline-programovani/upload-kodu-z-gui.md)

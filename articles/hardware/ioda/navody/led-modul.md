@@ -2,11 +2,11 @@
 
 LED modul je součást každého Byzance zařízení. Slouží k signalizaci různých vnitřních stavů. Defaultní chování je řízeno [Byzance knihovnou](/byzance_documentation/hardware_intro/API/byzance-api.md), která se spouští automaticky po startu zařízení, či [bootloaderem](/byzance_documentation/hardware_intro/features/bootloader.md).
 
-Automatický mód je popsán v článku[ LED signalizace](/byzance_documentation/hardware_intro/API/led-signalizace.md). Je možné však ale i převzít kontrolu nad LED modulem z uživatelského hlediska.
+Automatický mód je popsán v článku[ LED signalizace](/byzance_documentation/hardware_intro/API/led-signalizace.md). Je možné však ale i převzít vlastní kontrolu nad LED modulem.
 
 ## Vlastní ovládání LED modulu
 
-Nejdříve je třeba zakázat řízení LED modulu Byzance knihovnou. K tomu slouží funkce [Byzance API](/byzance_documentation/hardware_intro/API/byzance-api.md) ''led\_module\(false\)''. Pro případné opětovné zapnutí kontroly Byzance knihovnou stačí analogicky použít ''led\_module\(true\)''.
+Nejdříve je třeba zakázat řízení LED modulu Byzance knihovnou. K tomu slouží funkce [Byzance API](/byzance_documentation/hardware_intro/API/byzance-api.md) příkaz ''led\_module\(false\)''. Pro případné opětovné zapnutí kontroly Byzance knihovnou stačí analogicky použít ''led\_module\(true\)''.
 
 Dále je třeba inicializovat si LED modul dle vlastních potřeb. V závislosti na targetu je třeba zjistit typ LED modulu.
 
@@ -18,7 +18,7 @@ DigitalOut ledGrn(LED_GREEN);
 DigitalOut ledBlu(LED_BLUE);
 ```
 
-Jednoduchý zdrojový kód může vypadat například takto
+Jednoduchý zdrojový kód může například následovný
 
 ```cpp
 #include "byzance.h"
