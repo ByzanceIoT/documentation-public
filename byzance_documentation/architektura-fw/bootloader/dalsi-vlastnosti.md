@@ -1,6 +1,6 @@
 # Autojump 
 
-Autojump je funkce bootloaderu, která zajišťuje **skok do hlavního programu** pokud uživatel neprovedl **žádnou interakci** se zařízením po nastavenou dobu. 
+Autojump je funkce bootloaderu, která zajišťuje **skok do hlavního programu**, pokud uživatel neprovedl **žádnou interakci** se zařízením po nastavenou dobu. 
 
 ![](/assets/autojump.png)
 
