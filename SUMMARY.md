@@ -68,7 +68,8 @@
   * [Ostatní](hardware-a-programovani/popis-hw/ostatni.md)
     * [DAPLink](articles/hardware/daplink.md)
 * [Architektura FW](byzance_documentation/architektura-fw.md)
-  * [Hierarchie FW, aktualizace](byzance_documentation/architektura-fw/hierarchie.md)
+  * [Hierarchie FW](byzance_documentation/architektura-fw/hierarchie.md)
+  * [Aktualizace FW](byzance_documentation/architektura-fw/aktualizace-fw.md)
   * [Autobackup](articles/hardware/ioda/navody/autobackup.md)
   * [Komunikace s portálem](articles/hardware/komunikace-se-servery.md)
   * [Bootloader](byzance_documentation/architektura-fw/bootloader.md)
@@ -110,7 +111,6 @@
 ## Interní
 
 * [hardware](interni/hardware.md)
-  * [Seznam hardware](interni/hardware/seznam-hardware.md)
   * [Interní paměť mikrokontroléru](byzance_documentation/hardware_intro/navody/interni-pamet-mikrokontroleru.md)
   * [Externí paměť mikrokontroléru](byzance_documentation/hardware_intro/navody/externi-pamet-mikrokontroleru.md)
   * [Aktualizace firmware](interni/hardware/aktualizace-firmware.md)
