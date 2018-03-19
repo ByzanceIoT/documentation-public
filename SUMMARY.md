@@ -100,7 +100,7 @@
     * [Správce firmware](articles/hardware/ioda/navody/webove-rozhrani-a-konzole/spravce-firmware.md)
     * [Vlákna](articles/hardware/ioda/navody/webove-rozhrani-a-konzole/vlakna.md)
     * [Definované vstupy](articles/hardware/ioda/navody/webove-rozhrani-a-konzole/definovane-vstupy.md)
-    * Konfigurace MQTT
+    * [Konfigurace MQTT](articles/hardware/ioda/navody/webove-rozhrani-a-konzole/konfigurace-mqtt.md)
     * Nastavení
   * [Webová konzole](articles/hardware/ioda/navody/webova-konzole.md)
   * [Vytížení CPU](articles/hardware/ioda/navody/vytizeni-cpu.md)
