@@ -3,19 +3,19 @@ LED signalizace využívá interní LED modul, který je součástí všech Byza
 
 ## Stav CONNECTED
 
-* Yoda úspěšně připojený a subscribovaný k Homerovi
-* rychlé blikání se střídou 50%
+* Yoda úspěšně připojený do internetu
+* rychlé blikání se střídou 50% - 200ms ON, 200ms OFF
 * barva: LED_COLOR_GREEN
 
 ## Stav DISCONNECTED
 
 * Yoda není připojen/subscribovaný k Homerovi
-* pomalé blikání s převahou rozsvícení
+* pomalé blikání s převahou rozsvícení - 1700ms ON, 600ms OFF
 * barva: LED_COLOR_GREEN
 
 ## Stav BUSY
 * Probíhá upload nové binárky, popř. záloha aktuální
-* rychlé blikání se střídou 50%
+* rychlé blikání se střídou 50% - 100ms ON, 100ms OFF
 * barva: LED_COLOR_VIOLET
 
 ## Stav ERROR/DEAD
@@ -26,5 +26,5 @@ LED signalizace využívá interní LED modul, který je součástí všech Byza
 
 * Při vstupu do bootloaderu se na RGB modulu rozsvítí **žlutá barva**.
 * Po přepnutí do Command režimu se LED modul přepne do **modré barvy**, kde trvale svítí.
-* Pokud se v bootloaderu začne vykonávat časově náročnější operace (typicky flashování firmware, záloha atd.), bootloader přeblikává **žlutě**.
+* Pokud se v bootloaderu začne vykonávat časově náročnější operace (typicky flashování firmware, záloha atd.), bootloader nepravidelně přeblikává **žlutě**.
 
