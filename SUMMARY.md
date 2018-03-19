@@ -98,7 +98,7 @@
   * [Webové rozhraní](articles/hardware/ioda/navody/webove-rozhrani-a-konzole.md)
     * [Základní přehled](articles/hardware/ioda/navody/webove-rozhrani-a-konzole/zakladni-informace.md)
     * [Správce firmware](articles/hardware/ioda/navody/webove-rozhrani-a-konzole/spravce-firmware.md)
-    * Vlákna
+    * [Vlákna](articles/hardware/ioda/navody/webove-rozhrani-a-konzole/vlakna.md)
     * Definované vstupy
     * Konfigurace MQTT
     * Nastavení
