@@ -49,6 +49,7 @@
       * [Technické specifikace](/articles/hardware/ioda/datasheet/iodag3e/technicke-specifikace.md)
       * [Rozhraní a periférie](/articles/hardware/ioda/datasheet/iodag3e/rozhrani-a-periferie.md)
       * [Rozložení a využití paměti](/articles/hardware/ioda/datasheet/iodag3e/rozlozeni-a-vyuziti-pameti.md)
+      * [Interní paměť mikrokontroléru](byzance_documentation/hardware_intro/navody/interni-pamet-mikrokontroleru.md)
       * [Schémata](/articles/hardware/ioda/datasheet/iodag3e/schemata.md)
   * [Rozšiřující moduly](hardware-a-programovani/popis-hw/rozsirujici-moduly.md)
     * [Serial shield](articles/hardware/serial-shield.md)
@@ -116,6 +117,5 @@
 ## Interní
 
 * [hardware](interni/hardware.md)
-  * [Interní paměť mikrokontroléru](byzance_documentation/hardware_intro/navody/interni-pamet-mikrokontroleru.md)
   * [Externí paměť mikrokontroléru](byzance_documentation/hardware_intro/navody/externi-pamet-mikrokontroleru.md)
 
