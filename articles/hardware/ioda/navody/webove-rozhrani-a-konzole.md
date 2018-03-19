@@ -22,8 +22,8 @@ Webové rozhraní je funkce, která je součástí každého zařízení Byzance
 * Zjištění stavu softwarového restartu.
 * Zjištění verzí jednotlivých komponent firmware.
 * Využití výkonu mikrokontroléru a stav jednotlivých vláken.
-* Výpis aktuálních hodnot konfigurace, případně změna
-* Zaregistrované Byzance digitální/analogové/message vstupy a výstupy
+* Výpis aktuálních hodnot konfigurace, případně změna.
+* Zaregistrované Byzance digitální/analogové/message vstupy a výstupy.
 
 
 
