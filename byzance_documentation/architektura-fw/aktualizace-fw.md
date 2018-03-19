@@ -25,7 +25,5 @@ Pokud je updatována komponenta firmware, automaticky se zapne signalizátor ''f
 ### Komponenta backup nebo bootloader
 Pokud má být updatována záloha nebo bootloader, kopírování z ''buffer'' do ''backup'' nebo ''bootloader'' se provede v **hlavním firmware** bez nutnosti restartu zařízení.
 
-
-
-![](/assets/img_20180316_204757.jpg)
+![](/assets/aktualizace_hw.jpg)
 
