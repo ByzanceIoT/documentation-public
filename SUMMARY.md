@@ -97,7 +97,7 @@
   * [Watchdog](byzance_documentation/hardware_intro/features/watchdog.md)
   * [Webové rozhraní](articles/hardware/ioda/navody/webove-rozhrani-a-konzole.md)
     * [Základní přehled](articles/hardware/ioda/navody/webove-rozhrani-a-konzole/zakladni-informace.md)
-    * Správce firmware
+    * [Správce firmware](articles/hardware/ioda/navody/webove-rozhrani-a-konzole/spravce-firmware.md)
     * Vlákna
     * Definované vstupy
     * Konfigurace MQTT
