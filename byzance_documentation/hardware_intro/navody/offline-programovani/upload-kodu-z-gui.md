@@ -1,12 +1,12 @@
-## Offline programování z GUI
+# Offline programování z GUI
 
-#### Ruční programování zařízení 
+## Ruční programování zařízení 
 
 Programování je možné pomocí Byzance serverů s využitím ethernetu, ale někdy je tento postup nežádoucí. V případě vývoje, nebo tzv. ''bricknutí'' je třeba použít programátor - jak na bootloader, tak na hlavní firmware. K tomu je na desce připraveno rozhraní SWD. 
 
 Toto rozhraní je třeba napojit do programátoru, který je zapojený v počítači. K tomu je možné využít například programátor [[http://www.st.com/en/development-tools/st-link-v2.html|ST-LINK]] a utilitu [[http://www.st.com/content/st_com/en/products/embedded-software/development-tool-software/stsw-link004.html|ST-LINK UTILITY]]. Místo programátoru ST-LINK může posloužit i například libovolná deska STM32, která programátor obsahuje (tyto desky bývají velmi levné a dostupné).
 
-#### Utilita ST-LINK 
+## Utilita ST-LINK 
 
 Utilita se po kliknutí na ikonu ''blesk'' (třetí zleva v menu) nakomunikuje s programátorem, skrz který zjistí verzi připojeného mikrokontroléru. Pokud toto neproběhne správně, není programátor připojen v PC, není v PC nainstalován příslušný driver, nebo je rozpojeno SWD rozhraní mezi programovaným zařízením a programátorem. Chyba je detekována takto. Někdy k chybě dochází samovolně a třeba odpojit a zapojit všechny konektory, popřípadě zkontrolovat zapojení SWD, kvůli případném prohození pinů (nebo otočení konektoru).
 
