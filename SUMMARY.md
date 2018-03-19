@@ -95,7 +95,13 @@
   * [Pokročilé](programovani/pokrocile.md)
 * [Funkcionality](byzance_documentation/funkcionality.md)
   * [Watchdog](byzance_documentation/hardware_intro/features/watchdog.md)
-  * [Webové rozhraní a konzole](articles/hardware/ioda/navody/webove-rozhrani-a-konzole.md)
+  * [Webové rozhraní](articles/hardware/ioda/navody/webove-rozhrani-a-konzole.md)
+    * [Základní přehled](articles/hardware/ioda/navody/webove-rozhrani-a-konzole/zakladni-informace.md)
+    * Správce firmware
+    * Vlákna
+    * Definované vstupy
+    * Konfigurace MQTT
+    * Nastavení
   * [Webová konzole](articles/hardware/ioda/navody/webova-konzole.md)
   * [Vytížení CPU](articles/hardware/ioda/navody/vytizeni-cpu.md)
   * [Odložení restart](articles/hardware/ioda/navody/odlozeni-restart.md)
