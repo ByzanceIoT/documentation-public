@@ -1,8 +1,8 @@
-## Oživení zařízení IODAG3E 
+# Oživení zařízení IODAG3E 
 
 ![IODAG3E BOARD](/images/ioda_board_500.png)
 
-### Připojení napájení <a name="sometext"></a>
+## Připojení napájení
 
 Zařízení se automaticky spustí po připojení napájení. Zařízení lze napájet několika různými způsoby, které jsou zdokumentovány v [Harwarové specifikaci](/byzance_documentation/hardware_intro/hardware/iodag3e.md/#napajeni) v odstavci **Napájení**. Při prvním spuštění ovšem doporučujeme napájet zařízení pomocí kabelu micro USB ze zdroje s maximalním proudem alespoň 1000mA.
 
@@ -14,7 +14,7 @@ Po připojení USB kabelu lze pozorovat rozsvícení několika indikačních LED
 
 /- Obrázek indikující blikající ledku po startu
 
-### Připojení k portálu
+## Připojení k portálu
 
 Všechna zařízení Byzance jsou nastavena již z výroby, tudíž pro připojení k portálu stačí k zařízení připojit Ethernetový kabel a zařízení se samo připojí. Úspěšné připojení zařízení indikuje rychlým blikáním led modulu
 
