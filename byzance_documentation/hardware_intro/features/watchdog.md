@@ -1,6 +1,6 @@
 # Watchdog
 
-Watchdog je vlastnost mikrokontroléru, která se zapíná a konfiguruje v bootloaderu před startem uživatelského programu.
+Watchdog (IWDG) je interní periferie mikrokontroléru, která se zapíná a konfiguruje v bootloaderu před startem uživatelského programu.
 
 Pokud je watchdog zapnutý a nastavený na určitý čas, musí se pravidelně softwarově nulovat. Pokud není watchdog softwarově nulovaný, resetuje automaticky celý procesor. To může být způsobeno například zamrznutím firmware. O automatické nulování se stará Byzance knihovna.
 
