@@ -2,7 +2,7 @@
 
 Watchdog (IWDG) je interní periferie mikrokontroléru, která se zapíná a konfiguruje v bootloaderu před startem uživatelského programu.
 
-Pokud je watchdog zapnutý a nastavený na určitý čas, musí se pravidelně softwarově nulovat. Pokud není watchdog softwarově nulovaný, resetuje automaticky celý procesor. To může být způsobeno například zamrznutím firmware. O automatické nulování se stará Byzance knihovna.
+Watchdog se jednou zapne a již není možno jej v rámci běhu programu vypnout. Vnitřní implementace odpovídá čítači, kterému se pravidelně nastaví hodnota na určitý čas a čítač se postupně automaticky dekrementuje. Než čítač doteče do nuly, je nutné jej opět restovat do výchozí hodnoty. Pokud není watchdog softwarově resetovaný, resetuje automaticky celý mikrokontrolér. To může být způsobeno například zamrznutím firmware. O automatické resetování se stará Byzance knihovna.
 
 ## Nastavení
 

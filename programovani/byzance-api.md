@@ -1,5 +1,6 @@
 # Byzance API
 
+Nějaká omáčka na začátek o tom, co je to Byzance API.
 
 ```cpp
 
