@@ -9,3 +9,7 @@ Watchdog se jednou zapne a již není možno jej v rámci běhu programu vypnout
 Vlastnosti watchdogu se dají konfigurovat z command režimu bootloaderu. K tomu slouží položky 
 * wdenable - 0 \(vypnuto\) a 1 \(zapnuto - výchozí\)
 * wdtime - defaultní hodnota wdtime je 30 \(v sekundách\). Při nastavení na 0 se watchdog nezapíná, i když je wdwnable zapnuto.
+
+## Schéma
+
+![](/assets/iwdg.png)
