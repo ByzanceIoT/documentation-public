@@ -101,7 +101,7 @@
     * [Vlákna](articles/hardware/ioda/navody/webove-rozhrani-a-konzole/vlakna.md)
     * [Definované vstupy](articles/hardware/ioda/navody/webove-rozhrani-a-konzole/definovane-vstupy.md)
     * [Konfigurace MQTT](articles/hardware/ioda/navody/webove-rozhrani-a-konzole/konfigurace-mqtt.md)
-    * Nastavení
+    * [Nastavení](articles/hardware/ioda/navody/webove-rozhrani-a-konzole/nastaveni.md)
   * [Webová konzole](articles/hardware/ioda/navody/webova-konzole.md)
   * [Vytížení CPU](articles/hardware/ioda/navody/vytizeni-cpu.md)
   * [Odložení restart](articles/hardware/ioda/navody/odlozeni-restart.md)
