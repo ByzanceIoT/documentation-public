@@ -1,6 +1,7 @@
 # BusOut
-
 Tento program mění barvu RGB LED diody pomocí funkce ```BusOut```.
+Barevný model RGB neboli červená-zelená-modrá je aditivní způsob míchání barev používaný v barevných monitorech a projektorech.
+
 
 ## Hardware 
 * IODA
