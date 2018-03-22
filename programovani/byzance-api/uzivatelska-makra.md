@@ -1,22 +1,44 @@
 # Uživatelská makra
 
+Zjištění informací o buildu binárky
 
-
-```
-__BUILD_MONTH__
-
-__BUILD_YEAR_LEN2__
-
-__BUILD_YEAR_LEN4__
-
-__BUILD_DAY__
-
-__BUILD_HOUR__
-
-__BUILD_MINUTE__
-
-__BUILD_SECOND__
-
+```cpp
+__BUILD_YEAR_LEN4__  // build year as 4-digit number, e.g 2018
+__BUILD_YEAR_LEN2__  // build year as 2-digit number, e.g. 18
+__BUILD_MONTH__      // build month 1 to 12
+__BUILD_DAY__        // build day 1 to 31
+__BUILD_HOUR__       // build hour, 24h format
+__BUILD_MINUTE__     // build minute, 0 to 59
+__BUILD_SECOND__     // build second, 0 to 59
 ```
 
+Zjištění verze kompilátoru (ARM GCC NONEABI)
+
+```
+TOSTRING(__GNUC__)
+TOSTRING(__GNUC_MINOR__)
+TOSTRING(__GNUC_PATCHLEVEL__));
+```
+
+Zjištění verze MBED
+```
+MBED_MAJOR_VERSION
+MBED_MINOR_VERSION
+MBED_PATCH_VERSION
+```
+
+Zjištění typu targetu
+```
+TOSTRING(__BUILD_TARGET__)
+```
+
+Build ID
+```
+__BUILD_ID__
+```
+
+Okamžité zaseknutí programu a kritická chyba (slouží pro testování).
+```
+__TOMAS_ZARUBA__
+```
 
