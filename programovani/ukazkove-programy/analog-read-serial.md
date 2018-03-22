@@ -18,7 +18,6 @@ Pro zapojení LED se použijí 2 vodiče a jeden 100Ω rezistor.
 
 ![](/assets/AnalogReadSerial.png)
 
-
 ## Schéma!
 ![](/assets/sche.png)
 
