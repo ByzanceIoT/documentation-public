@@ -4,7 +4,6 @@ Tento příklad ukazuje, jak číst z analogického vstupu pomocí potenciometru
 Průchodem napětí potenciometrem do analogového vstupu na desce lze měnit množství odporu, které se převede na analogovou hodnotu. V tomto příkladu monitoruje stav potenciometru po zavedení seriové komunikace mezi IODA a počítačem.
 
 
-
 ## Hardware
 
 - 10kΩ potenciometr
@@ -17,8 +16,11 @@ Průchodem napětí potenciometrem do analogového vstupu na desce lze měnit mn
 Pro přípojení potenciometru se použijí 3 vodiče. První vychází z vnějšího pinu potenciometru na zem. Druhá část vychází z druhého vnějšího pinu na 3.3 voltu. Třetí vychází ze středního pinu potenciometru na analogový pin Y25.
 Pro zapojení LED se použijí 2 vodiče a jeden 100Ω rezistor.
 
-![](/assets/obr.png)
-## Schéma![](/assets/sche.png)
+![](assets/AnalogReadSerial.png)
+
+
+## Schéma!
+![](/assets/sche.png)
 
 ## Code
 ### Komunikační rozhraní
