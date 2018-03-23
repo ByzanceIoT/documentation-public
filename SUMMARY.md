@@ -119,7 +119,6 @@
 * [Features \(přemigrovat\)](articles/hardware/featury.md)
   * [Paměť zařízení](articles/hardware/ioda/navody/pamet-zarizeni.md)
   * [Flash paměť](articles/hardware/ioda/navody/flash-pamet.md)
-  * Podpora float
 
 ## Interní
 
