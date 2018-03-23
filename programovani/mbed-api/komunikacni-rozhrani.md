@@ -7,20 +7,17 @@ V této sekci jsou zdokumentované funkce MBED API sloužící ke komunikaci s p
 
 Tato funkce slouží k definici sériového rozhraní a komunikaci po sériové lince. Ke komunikaci jsou zapotřebí dva piny - RX(recieve data) a TX(transfer data)
 ```cpp
-//Defince sériového rozhraní 
-Serial pc(PIN_TX, PIN_RX);
+    //Defince sériového rozhraní 
+    Serial pc(PIN_TX, PIN_RX);
 
-void init(){
-
-pc.baud(9600); //Nastavení baudové rychlosti
-pc.printf("Serial connection\n"); //Send to serial line
-
-}
-void loop(){
-
-pc.printf("Hello world\n");
-
-}
+    void init(){
+        pc.baud(9600); //Nastavení baudové rychlosti
+        pc.printf("Serial connection\n"); //Send to serial line
+    }
+    
+    void loop(){
+        pc.printf("Hello world\n");
+    }
 
 ```
 
