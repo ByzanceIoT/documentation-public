@@ -43,6 +43,7 @@
   * [Komunikace s portálem](articles/hardware/komunikace-se-servery.md)
   * [Specifikace zdroje internetu](articles/hardware/ioda/navody/specifikace-zdroje-internetu.md)
   * [Lowpan](articles/hardware/ioda/navody/lowpan.md)
+  * [GSM](articles/hardware/gsm.md)
 * [Hardware](hardware-a-programovani/popis-hw.md)
   * [Základní jednotky](hardware-a-programovani/popis-hw/zakladni-jednotky.md)
     * [IODAG3E](articles/hardware/ioda/datasheet/iodag3e.md)
