@@ -48,7 +48,7 @@ Vstup typu 'message' je trochu odlišný od předchozích dvou variant. Umožňu
 Message vstup s jedním argumentem typu 'string'
 ```cpp
 // message input with 1 argument - string
-MESSAGE_INPUT(message_input_str, STRING, {
+MESSAGE_INPUT(custom_message_input_str, STRING, {
 	printf("received message input string %s\n", arg1);
 });
 ```
@@ -56,11 +56,18 @@ MESSAGE_INPUT(message_input_str, STRING, {
 Message vstup s jedním argumentem typu 'integer'
 ```cpp
 // message input with 1 argument - integer
-MESSAGE_INPUT(message_input_int, INTEGER, {
+MESSAGE_INPUT(custom_message_input_int, INTEGER, {
 	printf("received message input integer %d\n", arg1);
 });
 ```
 
+Kombinovaný message vstup se čtyřmi argumenty typu 'bool', 'int', 'float' a 'string'
+```cpp
+// message input with 4 arguments - bool, int, float a string
+MESSAGE_INPUT(custom_message_input_combi, BOOLEAN, INTEGER, FLOAT, STRING {
+	printf("received message input bool %d, int %d, float %f, string %s\n", arg1, arg2, arg3, arg4);
+});
+```
 
 ##Výstupy
 
