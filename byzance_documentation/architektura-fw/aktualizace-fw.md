@@ -11,6 +11,9 @@ Komponenta může být následující
   * bootloader - bootloader zařízení
   * backup - záložní program
 
+![](/assets/aktualizace_hw.jpg)
+
+
 ## Proces upload 
 
 V rámci procesu upload probíhá nahrávání binárky z Cloudu do sekce ''buffer'' zařízení. Tento postup je odolný proti výpadku internetového připojení - pokud dojde k poškození přenášených dat či k výpadku, data v sekci ''buffer'' budou automaticky označena za neplatná a není je možné potom nasadit jako jednu z hlavních komponent.
@@ -25,5 +28,4 @@ Pokud je updatována komponenta firmware, automaticky se zapne signalizátor ''f
 ### Komponenta backup nebo bootloader
 Pokud má být updatována záloha nebo bootloader, kopírování z ''buffer'' do ''backup'' nebo ''bootloader'' se provede v **hlavním firmware** bez nutnosti restartu zařízení.
 
-![](/assets/aktualizace_hw.jpg)
 
