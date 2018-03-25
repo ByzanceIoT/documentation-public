@@ -1,6 +1,6 @@
 # Digitální vstupy a výstupy 
 
-![](/assets/input_output.jpg)
+![](/assets/hw IN OUTs _ porty na lince.png)
 
 ##Vstupy
 
