@@ -15,6 +15,8 @@ LED signalizace využívá interní LED modul, který je součástí všech Byza
 * pomalé blikání s převahou rozsvícení - 1700ms ON, 600ms OFF
 * barva: LED_COLOR_GREEN
 
+![](/assets/ezgif.com-optimize.gif)
+
 ## Stav BUSY
 * Probíhá upload nové binárky, popř. záloha aktuální
 * rychlé blikání se střídou 50% - 100ms ON, 100ms OFF
@@ -25,6 +27,8 @@ LED signalizace využívá interní LED modul, který je součástí všech Byza
 ## Stav ERROR/DEAD
 - LED modul bliká červeně. Většinou SOS.
 - Většinou fatalita, totální selhání nějaké komponenty, problém s pamětí, chyba která nikdy neměla nastat a podobně
+
+![](/assets/ezgif.com-optimize-2.gif)
 
 ## Signalizace Bootloaderu
 
