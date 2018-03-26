@@ -13,37 +13,36 @@ Pro programování ve vlastním IDE je třeba zajistit následující
 Pro prostředí Eclipse či jeho deriváty typu SW4STM32 je postup následující. Ve složce se staženými knihovnami z GITu se vytvoří nová podsložka s vlastním názvem dle projektu a v ní se udělá soubor main.cpp. V IDE je nutno kliknout na 
 
 ```
-File-&gt;New-&gt;Makefile Project with Existing Code
+File -> New -> Makefile Project with Existing Code
 
 ```
 
 viz screenshot níže.
 
-![ide_start](/images/hardware/ide_start.png)
+![](/assets/ide_new_project.png)
 
 Dále je třeba vyplnit název projektu, který by se měl shodovat s názvem složky s projektem a vybrat umístění složky
 
-![ide_project](/images/hardware/ide_project.png)
-
+![](/assets/import_project.png)
 
 V nastavení projektu je třeba nastavit vlastní build command, který může vypadat následovně
 
 ```
-node ...
+node ../../_makescript_.js custom/custom_project BYZANCE_IODAG3E
 ```
 
 který se skládá z následujících částí
 
-* node - příkaz pro interpreter Javascriptu \[\[[https://nodejs.org/en/\|Node.JS\]\](https://nodejs.org/en/|Node.JS]\)\]
+* node - příkaz pro [interpreter Javascriptu](https://nodejs.org/en/Node.JS])
 * ../\_makescript\_.js -&gt; cesta k build scriptu
-* byzance -&gt; název projektu
+* custom/custom_project -&gt; cesta k projektu a název projektu
 * BYZANCE\_YODAG3E -&gt; build makro pro identifikaci targetu
 
-![build_command](/images/hardware/build_command.png)
+![](/assets/ide_custom_project.png)
 
-Také nezapomeňte na propojení vašeho projektu s knihovnami.
+Důležité je prolinkovat projekt s knihovnami.
 
-![project_references](/images/hardware/project_references.png)
+![](/assets/ide_libs.png)
 
 # Programování
 
