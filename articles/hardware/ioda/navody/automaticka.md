@@ -7,6 +7,8 @@ LED signalizace využívá interní LED modul, který je součástí všech Byza
 * rychlé blikání se střídou 50% - 200ms ON, 200ms OFF
 * barva: LED_COLOR_GREEN
 
+![](/assets/state connected.gif)
+
 ## Stav DISCONNECTED
 
 * Yoda není připojen/subscribovaný k Homerovi
@@ -17,6 +19,8 @@ LED signalizace využívá interní LED modul, který je součástí všech Byza
 * Probíhá upload nové binárky, popř. záloha aktuální
 * rychlé blikání se střídou 50% - 100ms ON, 100ms OFF
 * barva: LED_COLOR_VIOLET
+
+![](/assets/state busy.gif)
 
 ## Stav ERROR/DEAD
 - LED modul bliká červeně. Většinou SOS.
