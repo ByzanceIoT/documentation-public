@@ -8,6 +8,6 @@ Mikrokontrolér je založen na architektuře ARM a vykonává uživatelský prog
 ## USB
 USB slouží k připojení IODA do počítače. Může implementovat funkce virtuální sériové linky či jiné třídy USB.
 
-##
+##Blokové schéma
 
-![](/assets/IMG_20180318_175809.jpg)
+![](/assets/ZAKLADNI JEDNOTKY A1.png)
