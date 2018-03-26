@@ -10,4 +10,4 @@ USB slouží k připojení IODA do počítače. Může implementovat funkce virt
 
 ##Blokové schéma
 
-![](/assets/ZAKLADNI JEDNOTKY A1.png)
+![](/assets/ioda_blokove_schema.jpg)
