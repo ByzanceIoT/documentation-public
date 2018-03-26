@@ -6,7 +6,7 @@ Autobackup je funkce, která se stará o automatickou zálohu aktuálního funk�
 
 Pokud je funkce autobackup **zapnutá**, při nahrávání nového firmware se původně běžící firmware zazálohuje a při chybě nové binárky se dokáže tato konfigurace obnovit. Tomuto typu zálohy se říká **dynamická záloha**. V případě, že je automatická záloha posledního funkčního firmware nežádoucí a je třeba jeden záložní firmware pro všechny situace, funkce autobackup je **vypnutá** a tomuto typu se říká **statická záloha**.
 
-![](/assets/autobackup.jpg)
+![](/assets/AUTOBACKUP.png)
 
 ##Dynamická záloha
 
