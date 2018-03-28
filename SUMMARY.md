@@ -93,6 +93,7 @@
     * [Blink Without Delay](programovani/ukazkove-programy/blink-without-delay.md)
     * [State Change Detection](programovani/ukazkove-programy/state-change-detection.md)
     * [BusOut](programovani/ukazkove-programy/busout.md)
+    * [HC-SR04 Senzor](programovani/ukazkove-programy/hc-sr04-senzor.md)
   * [Pokročilé](programovani/pokrocile.md)
 * [Funkcionality](byzance_documentation/funkcionality.md)
   * [Watchdog](byzance_documentation/hardware_intro/features/watchdog.md)
