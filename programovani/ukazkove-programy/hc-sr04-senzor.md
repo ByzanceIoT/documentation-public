@@ -79,7 +79,7 @@ void loop(){
           sonar.start();
           while (echo==1) {};
           sonar.stop();
-          distance = (sonar.read_us())/0,017315;
+          distance = (sonar.read_us())*0,017315;
 
           if(distance>min&&distance<max&&timer==0){
             pc.printf("dela se kava\n");
