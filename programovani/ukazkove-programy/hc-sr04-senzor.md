@@ -19,7 +19,7 @@ Tento program slouží na měření vzdálenost pomocí ultrazvukového modulu H
 
 Trigger: spouštěcí signál impuls TTL(5V) >10us 
 
-Echo: výstupní signál TTL(5V) -> vzdálenost[cm] = doba_Echo[us] / 58
+Echo: výstupní signál TTL(5V) -> vzdálenost[cm] = doba_Echo[us] * 0.017315
 
 
 ![](/assets/obrázek 14.png)  
