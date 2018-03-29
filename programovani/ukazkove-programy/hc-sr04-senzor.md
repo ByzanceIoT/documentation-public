@@ -58,6 +58,7 @@ void bzucak(){
         pwm.write(0.5f);
         Thread::wait(100);
         pwm.write(0.0f);
+        wait(0);
 }
 void init(){
   pc.baud(115200);

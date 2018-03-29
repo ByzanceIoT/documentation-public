@@ -14,13 +14,13 @@ Do desky jsou zapojené tři kabely. První dva - černý a červený jsou zapoj
 
 ### Tlačítko
 
-Stisknutím tlačítka, nebo přepínače se propojí dva body v obvodu. Když je tlačítko otevřeno (není stisknuto), nedojde k žádnému spojení mezi oběma kontakty tlačítka, takže kontakt je připojen k uzemnění (pomocí tažného odporu) a čte jako LOW nebo 0. Když je tlačítko zavřené (stisknuto), vytváří spojení mezi oběma kontakty, připojuje pin na 3.3 voltů tak, aby kontakt četl jako HIGH, nebo 1.
+Stisknutím tlačítka, nebo přepínače se propojí dva body v obvodu. Když je tlačítko otevřeno (není stisknuto), nedojde k žádnému spojení mezi oběma kontakty tlačítka, takže kontakt je připojen k uzemnění (pomocí pull-down) a čte jako LOW nebo 0. Když je tlačítko zavřené (stisknuto), vytváří spojení mezi oběma kontakty, připojuje pin na 3.3 voltů tak, aby kontakt četl jako HIGH, nebo 1.
 
-![](/assets/DigitalReadSerial.PNG)
+![](/assets/DigitalReadSerial.png)
 
 ## Schéma
 
-![](/assets/DigitalReadSerial_schematic.PNG)
+![](/assets/DigitalReadSerial_schematic.png)
 
 ## Code
 ### init()
