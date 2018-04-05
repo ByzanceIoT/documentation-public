@@ -23,24 +23,26 @@ Jednoduchý příklad kódu, který využívá Konzoli může být například t
 
 void loop(){
 
-	if(Console::enabled()){
-		printf("console is enabled\n");
-		Console::log("this is some log\n");
-		Console::error("this is some error\n");
-		Console::warn("this is some warning\n");
-		Console::info("this is some info\n");
-	} else {
-		to_computer("console is disabled\n");
-	}
+    if(Console::enabled()){
+        printf("console is enabled\n");
+        Console::log("this is some log\n");
+        Console::error("this is some error\n");
+        Console::warn("this is some warning\n");
+        Console::info("this is some info\n");
+        Console::debug("this is some debug\n");
+        Console::trace("this is some trace\n");
+    } else {
+        to_computer("console is disabled\n");
+    }
 
-	Thread::wait(1000);
+    Thread::wait(1000);
 
 }
 ```
 
 # Vlastnosti konzole
 
-Fukce **error**, **warning**, **info** a **log** slouží k logování různých úrovní různých vlastních událostí, parametricky jsou shodné s C/C++ fukcí [printf](http://www.cplusplus.com/reference/cstdio/printf/). Logy konzole se automaticky přenášejí do webového rozhraní Becki pomocí protokolu [MQTT](/articles/hardware/komunikace-se-servery.md), kde zařízení může uživatel sledovat. Návratovou hodnotou je možné detekovat, jestli informace dorazila do webového rozhraní.
+Fukce **error**, **warning**, **info,** **log, debug a trace** slouží k logování různých úrovní různých vlastních událostí, parametricky jsou shodné s C/C++ fukcí [printf](http://www.cplusplus.com/reference/cstdio/printf/). Logy konzole se automaticky přenášejí do webového rozhraní Becki pomocí protokolu [MQTT](/articles/hardware/komunikace-se-servery.md), kde zařízení může uživatel sledovat. Návratovou hodnotou je možné detekovat, jestli informace dorazila do webového rozhraní.
 
 Fukce **enabled** slouží k zjištění, jestli je logování do webové konzole zapnuto. Logování se automaticky vypíná, pokud logy nikdo neodebírá.
 
