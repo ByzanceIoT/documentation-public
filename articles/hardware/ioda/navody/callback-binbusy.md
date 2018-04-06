@@ -1,6 +1,6 @@
 # Callback Busy
 
-Tento callback je funkcí knihovny Byzance, která slouží ke zpětné informaci o tom, že zařízení je ve stavu **busy**. Stav **busy** indikuje, že zařízení provádí update nového firmware, nebo zálohu aktuálního firmware v rámci fukce [Autobackup](/articles/hardware/ioda/navody/autobackup.md). V tomto stavu v pozadí probíhá časově náročnější datový přenos, který ovšem může být přerušen aktuálně probíhajícím uživatelským programem. Callback Busy slouží k ošetření uživatelského programu, aby nepřerušoval procesy probíhající v pozadí a k přípravě zařízení na restart, který je proveden po updatu nového firmware.
+Tento callback je funkcí knihovny Byzance, která slouží k oznamování, že zařízení je ve stavu **busy**. Stav **busy** indikuje, že zařízení provádí update nového firmware, nebo přípravu na tento update. V tomto stavu v pozadí probíhá procesorově náročnější operace, která ovšem může být přerušována aktuálně probíhajícím uživatelským programem. Callback Busy slouží k ošetření uživatelského programu, aby neblokoval procesy probíhající v pozadí a k přípravě zařízení na restart, který je proveden po updatu nového firmware. K zavolání callbacku může dojít v průběhu vykonávání programu i několikrát po sobě - typicky při přípravě na update a posléze při aktualizaci samotné. Po dokončení update uživatelského programu může dojít k restartu zařízení.
 
 Uživatelská funkce \(callback\), která má být provedena v případě přepnutí do stavu "busy", se připojí pomocí následující konstrukce
 
@@ -8,10 +8,9 @@ Uživatelská funkce \(callback\), která má být provedena v případě přepn
 Byzance::attach_bin_busy(&<user-function-name>);
 ```
 
-Využití callbacku Busy je vhodné v případě, kdy je v programu často voláno přerušení\(ISR\), které by mohlo odebrat většinu  
-procesorového času procesům v pozadí. Takovým případem může být například velmi často volaný Ticker. Dále je vhodné callback využít v případě, kdy je nutné ošetřit chování zařízení a ostatních připojených systémů v případě restartu. Takovým případem může být libovolný aktuátor, který se automaticky nevypne při restartu IODY a mohl by se stát neovladatelným.
+Využití callbacku Busy je vhodné v případě, kdy je v programu často voláno přerušení\(ISR\), které by mohlo potřebovat většinu procesorového času na pozadí. Takovým případem může být například velmi často volaný Ticker. Dále je vhodné callback využít v případě, kdy je nutné ošetřit chování zařízení a ostatních připojených systémů v případě aktualizace. Takovým případem může být libovolný aktuátor, který by se v nejhorším případě mohl v průběhu update stát neovladatelným.
 
-Uživatelská funkce připojená ke callbacku je volána pokaždé když se změní stav busy a tento stav je zároveň předán v argumentu volané funkce
+Uživatelská funkce připojená ke callbacku je volána pokaždé, když se změní stav busy a tato informace je zároveň předána v argumentu volané funkce
 
 ```cpp
 // Function attached to busy callback - called when the busy state change
