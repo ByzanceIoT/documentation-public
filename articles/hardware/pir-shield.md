@@ -2,7 +2,7 @@
 
 Shield slouží k detekci pohybu.
 
-// obrázek
+![](/assets/shield_pir_b1.png)
 
 ## Hardware
 
@@ -31,6 +31,39 @@ Detekční vzdálenost - pohybuje se v rozmezí 3-7 metrů. Opět záleží na s
 
 ```cpp
 #include "byzance.h"
+
+Serial pc(SERIAL_TX, SERIAL_RX); // tx, rx
+
+DigitalIn pir_out(X13);
+
+void init(){   
+
+	pc.baud(115200);
+	pc.printf("Sensor initialised\n");
+
+}
+
+bool state_current = false;
+bool state_previous = false;
+
+void loop(){
+
+	state_current = pir_out.read();
+
+	if(state_current!=state_previous){
+
+		if(state_current){
+			pc.printf("motion detected\n");
+		} else {
+			pc.printf("motion ended\n");
+		}
+
+		state_previous = state_current;
+	}
+
+	Thread::wait(10);
+
+}
 
 ```
 
