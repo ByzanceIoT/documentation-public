@@ -57,6 +57,7 @@
     * [LED shield](articles/hardware/led-shield.md)
     * [Ultrasonic shield](articles/hardware/ultrasonic-shield.md)
     * [Meteo shield](articles/hardware/meteo-shield.md)
+    * [PIR shield](articles/hardware/pir-shield.md)
   * [Ostatní](hardware-a-programovani/popis-hw/ostatni.md)
     * [DAPLink](articles/hardware/daplink.md)
 * [Architektura FW](byzance_documentation/architektura-fw.md)
