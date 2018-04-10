@@ -12,13 +12,13 @@ připojujícího kabelu
 
 Po připojení USB kabelu lze pozorovat rozsvícení několika indikačních LED diod a speciálně pomalé blikání zelené diody LED modulu, které indikuje stav zařízení nepřipojeného k internetu.
 
-/- Obrázek indikující blikající ledku po startu
+![](/assets/ezgif.com-optimize.gif)
 
 ## Připojení k portálu
 
 Všechna zařízení Byzance jsou nastavena již z výroby, tudíž pro připojení k portálu stačí k zařízení připojit Ethernetový kabel a zařízení se samo připojí. Úspěšné připojení zařízení indikuje rychlým blikáním led modulu
 
-\- klipart s blikajícím modulem po připojení k homeru
+![](/assets/state connected.gif)
 
 Pokud vše proběhlo úspěšně, zařízení je připraveno na upload prvního funkčního programu.
 
