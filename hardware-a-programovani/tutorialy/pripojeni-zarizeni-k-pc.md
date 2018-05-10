@@ -28,7 +28,7 @@ Zvolený COM port je třeba nastavit v terminálu společně s ukončováním ř
 
 Po potvrzení nastavení je možné se zařízením začít komunikovat kliknutím na tlačítko **Disconnected - click to connect**.
 
-![](../../.gitbook/assets/termite_zpravy.png)
+![](../../.gitbook/assets/termite_zpravy%20%281%29.png)
 
 ### Konfigurace sériové linky na MAC
 
