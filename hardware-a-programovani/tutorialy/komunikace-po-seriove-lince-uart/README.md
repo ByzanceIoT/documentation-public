@@ -9,7 +9,7 @@ V řadě aplikací je potřebné zavést komunikační kanál mezi zařízením,
 
 ## Konfigurace PC
 
-Abychom mohli v PC zobrazovat zprávy přijaté po sériové lince, je nutné nakonfigurovat libovolný sériový terminál. Více informací o instalaci terminálu lze získat v sekci [Konfigurace PC](konfigurace-pc.md)
+Abychom mohli v PC zobrazovat zprávy přijaté po sériové lince, je nutné nakonfigurovat libovolný sériový terminál. Více informací o instalaci terminálu lze získat v sekci [Konfigurace sériové linky v PC](konfigurace-pc.md)
 
 {% page-ref page="konfigurace-pc.md" %}
 
