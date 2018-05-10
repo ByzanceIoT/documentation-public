@@ -28,9 +28,7 @@ Serial pc(SERIAL_TX, SERIAL_RX);
 
 Zařízení IODA umožňuje inicializovat několik sériových linek. Na kterých pinech se tyto linky dají inicializovat se lze dozvědět s dokumentace zařízení v sekci [Rozhraní a periférie](../../hardware/zakladni-jednotky/iodag3e/rozhrani-a-periferie.md) v oddíle UART/USART. V příkladu jsou místo jmen pinů použita makra **SERIALTX a SERIALRX**, tyto makra vedou na sériovou linku na pinech **Y00 a Y01.**
 
-
-
-Dále je třeba zvolit baudovou rychlost. K tomu je vyhrazena sekce init\(\). Baudová rychlost může být různá, záleží na uživateli a pohybuje se většinou v rozmezí 1200 - 230400 baud. Stejnou rychlost je třeba nastavit [na straně počítače při připojení](https://github.com/byzance/public-documentation/tree/38b460c46404c197299c0f0a84e3402a9b74c8d7/byzance_documentation/hardware_intro/navody/pripojeni-k-pc.md).
+Dále je třeba zvolit baudovou rychlost, která určuje komunikační rychlost linky. To je nejvhodnější provést v sekci **init\(\)**. Baudová rychlost může být různá, záleží na uživateli a pohybuje se většinou v rozmezí 1200 - 230400 baud. Stejnou rychlost je třeba nastavit [na straně počítače při připojení](konfigurace-pc.md#konfigurace-na-windows).
 
 ```cpp
 pc.baud(115200);
@@ -38,7 +36,7 @@ pc.baud(115200);
 
 ### Ukázkový kód
 
-Jednoduchý kód pro výpis ''hello word'' přes sériovou linku.
+Jednoduchý kód pro výpis ''Hello word'' přes sériovou linku.
 
 ```cpp
 #include "byzance.h"
@@ -50,14 +48,14 @@ void init(){
 }
 
 void loop(){
-   pc.printf("hello world\n");
+   pc.printf("Hello world\n");
    Thread::wait(500);
 }
 ```
 
 ## Komunikace pomocí USB
 
-Některá Byzance zařízení je možné připojit pomocí USB. USB je koncipováno především k tomu, aby nahradilo standardní sériovou linku, čímž odpadne nutnost použití převodníku s FTDI čipem. Všeobecné informace, jak zprovoznit komunikaci ze strany počítače jsou popsány v článku [Připojení k PC](https://github.com/byzance/public-documentation/tree/38b460c46404c197299c0f0a84e3402a9b74c8d7/byzance_documentation/hardware_intro/navody/pripojeni-k-pc.md). Nevýhoda je taková, že při každém restartu zařízení se USB odpojí a připojí k počítači a je třeba v ovládací aplikaci znovu otevřít COM port.
+Zařízení IODA je dále schopné emulovat komunikaci po sériové lince přímo na konektoru microUSB tak ,aby nahradilo standardní sériovou linku a uživateli tak umožnilo komunikovat s PC bez nutnosti použít TTL převodník. Nevýhoda této komunikace je, že při každém restartu zařízení IODA je nutné zavřít a otevřít COM port, což prakticky znamená odpojit a znovu připojit sériový terminál.
 
 ![P&#x159;ipojen&#xED; s&#xE9;riov&#xE9; linky pomoc&#xED; microUSB](../../../.gitbook/assets/seriova_komunikace%20%282%29.png)
 
@@ -69,20 +67,20 @@ Konstruktor USB linky může zůstat bez parametrů. V takovém případě se do
 USBSerial usb;
 ```
 
-Vhodnější může být volba, aby USB konstruktor neblokoval kód, přičemž produktové kódy se musí dosadit do předchozích parametrů.
+Vhodnější může být volba, aby USB konstruktor neblokoval kód, přičemž do parametrů konstruktoru je nutné připsat i produktové kódy zařízení. Konstruktor bude mít poté podobu. 
 
 ```cpp
 USBSerial usb(0x1f00, 0x2012, 0x0001, false);
 ```
 
-V případě USB se narozdíl od sériové linky nenastavuje baudová rychlost.
+V případě USB se narozdíl od sériové linky **nenastavuje baudová rychlost**.
 
 ## Ukázkový kód
 
 Velmi jednoduchý kód pro výpis ''hello world'' pomocí USB může vypadat například takto
 
 ```cpp
-USBSerial usb;
+USBSerial usb(0x1f00, 0x2012, 0x0001, false);
 
 void loop(){
    usb.printf("hello world\n");
