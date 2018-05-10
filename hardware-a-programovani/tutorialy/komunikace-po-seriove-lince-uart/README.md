@@ -1,11 +1,29 @@
 # Komunikace po sériové lince \(UART\) s PC
 
   
-V řadě aplikací ať už z debugovacích důvodů nebo z důvodu logování do PC je potřeba vytvořit komunikační kanál mezi zařízením IODA a PC. Na to je nejvhodnější sériová linka, která se dá velice jednodu
+V řadě aplikací je potřebné zavést komunikační kanál mezi zařízením, které programujeme a PC ať už za účelem debugování nebo logování. Pro tyto účely je nejlepší využít sériovou linku, kterou lze velmi jednoduše nakonfigurovat. 
 
 ![](../../../.gitbook/assets/seriova_komunikace_schema.png)
 
-Komunikace po sériové lince \(UART\)
+
+
+## Konfigurace PC
+
+Abychom mohli v PC zobrazovat zprávy přijaté po sériové lince, je nutné nakonfigurovat libovolný sériový terminál. Více informací o instalaci terminálu lze získat v sekci [Konfigurace PC](konfigurace-pc.md)
+
+{% page-ref page="konfigurace-pc.md" %}
+
+##  Programování sériové linky
+
+Na straně zařízení se chování sériové komunikace programuje přímo v programu a je možnost sériovou linku inicializovat 
+
+
+
+
+
+
+
+
 
 Zde bude návod
 

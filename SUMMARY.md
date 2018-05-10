@@ -96,7 +96,7 @@
   * [Připojení zařízení k PC](hardware-a-programovani/tutorialy/pripojeni-zarizeni-k-pc.md)
   * [Komunikace po sériové lince \(UART\) s PC](hardware-a-programovani/tutorialy/komunikace-po-seriove-lince-uart/README.md)
     * Konfigurace PC
-    * Programování sériové linky
+    * [Programování sériové linky](hardware-a-programovani/tutorialy/komunikace-po-seriove-lince-uart/untitled.md)
   * [Práce s datem a časem \(RTC\)](hardware-a-programovani/tutorialy/prace-s-datem-a-casem-rtc.md)
   * [Základní](hardware-a-programovani/tutorialy/zaklady/README.md)
     * [Digital Read Serial](hardware-a-programovani/tutorialy/zaklady/digital-read-serial.md)
