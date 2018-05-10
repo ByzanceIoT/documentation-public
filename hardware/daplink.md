@@ -1,11 +1,11 @@
-## DAPLink
+﻿## DAPLink
 
 Jedná se o otevřený projekt, který si klade za cíl vytvořit univerzální programátor/debugger, projekt je hostován na  [githubu Daplinku](https://github.com/mbedmicro/DAPLink). Mezi hlavní přednosti patří:
   * drag and drop programování - nahrávání binárních dat do FLASH paměti cílového procesoru
   * převodník sériové linky USB <-> UART
   * debugger (gdb klient)
 
-![Daplink schema](/images/hardware/daplink.png)
+![Daplink schema](/images/hardware/daplink.png =100x100)
 
 Z hlediska hardwarové a softwarové architektury je třeba rozlišit programující a programovaný mikroprocesor. Programující mikroprocesor (na obrázku konkrétně LPC11U35) má za úkol komunikovat s PC prostřednictvím sběrnice USB a vytvořit virtuální sériový port, MSD zařízení (vyměnitelný disk), případně GDB klienta. Pro programování programovaného mikroprocesoru využívá SWD/JTAG rozhraní, dále nabízí piny RX a TX virtuálního sériového portu. Z hlediska programovaného mikroprocesoru není Daplink univerzální - **jeden konkrétní firmware pro programující MCU je kompatibilní pouze s jedním nebo užší množinou programovaných MCU** - závislost na flashovacím algoritmu, oblasti RAM, velikost a pozice paměti flash aj..
 
