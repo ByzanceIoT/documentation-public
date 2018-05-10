@@ -93,7 +93,6 @@
     * [Upload kódu z konzole](hardware-a-programovani/programovani-hw/offline-programovani/upload-kodu-z-konzole.md)
     * Upload kódu pomocí ZPP
 * [Tutoriály](hardware-a-programovani/tutorialy/README.md)
-  * [Připojení zařízení k PC](hardware-a-programovani/tutorialy/pripojeni-zarizeni-k-pc.md)
   * [Komunikace po sériové lince \(UART\) s PC](hardware-a-programovani/tutorialy/komunikace-po-seriove-lince-uart/README.md)
     * [Konfigurace sériové linky v PC](hardware-a-programovani/tutorialy/komunikace-po-seriove-lince-uart/konfigurace-pc.md)
     * [Programování sériové linky](hardware-a-programovani/tutorialy/komunikace-po-seriove-lince-uart/untitled.md)

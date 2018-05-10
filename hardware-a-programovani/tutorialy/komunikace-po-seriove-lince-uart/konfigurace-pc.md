@@ -18,3 +18,32 @@ Po potvrzení nastavení je možné se zařízením začít komunikovat kliknut�
 
 ![](../../../.gitbook/assets/termite_zpravy.png)
 
+## Konfigurace na MAC
+
+Nové zařízení se v případě macOS přihlašuje přes porty s názvem "usbmodem" pro USB nebo "usbserial" pro sériovou linku. Pro snadné připojení je nejdříve vhodné nainstalovat utilitu // utilita coolterm. V odkazovaném ZIP souboru je jak samotný program DMG a konfigurační soubor \*\*Yoda.stc\*\*.
+
+Po nainstalování utility \*\*CoolTerm\*\* a spuštění konfiguračního souboru \*\*Yoda.stc\*\* je vhodné postupovat v následujících pěti krocích \(viz přiložený screenshot\):
+
+* Stiskněte tlačítko Options v horním menu
+* Re-Scanujte dostupné sériové porty
+* Zvolte port "usbmodemXXXXX"/"usbserialXXXX" \(měl by být jediný\)
+* Potvrďte stisknutím "OK"
+* Stiskněte tlačítko "Connect" v horním menu
+
+​![](https://blobscdn.gitbook.com/v0/b/gitbook-28427.appspot.com/o/assets%2F-L9jHroT0UirGp5ehgdL%2F-L9jHscu9GvyhE9FERgj%2F-L9jI5fdFbpfR0tHdpi5%2Fmac_connection.png?generation=1523359451322296&alt=media)
+
+Nyní by se měl vypisovat log do okna aplikace.
+
+V případě přepnutí na Bootloader v zařízení Yoda není nutné měnit port.
+
+### Konfigurace sériové linky na Linux {#konfigurace-seriove-linky-na-linux}
+
+Připojením zařízení k PC je v adresáři ''/dev/'' vytvořen soubor ''ttyUSBx'' nebo ''ttyACMx'', kde ''x'' je číslo. Výpis zařízení je tedy možné zobrazit pomocí správce souborů nebo příkazu ''ls /dev/tty\*''.
+
+Jako komunikační terminál lze použít například cutecom či moserial.​![](https://blobscdn.gitbook.com/v0/b/gitbook-28427.appspot.com/o/assets%2F-L9jHroT0UirGp5ehgdL%2F-L9jHscu9GvyhE9FERgj%2F-L9jI5fpoHSmodp-BGAD%2Fmoserial.png?generation=1523359451319257&alt=media)
+
+Na některých distribucích je nutné přidat uživatele do skupiny dialout pro přístup k sériovému portu. To je možné učinit příkazem
+
+''sudo adduser už\_jméno dialout''.  
+
+
