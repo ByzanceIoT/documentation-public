@@ -71,7 +71,7 @@ Technické vlastností napájení signálem VBUS:
 * Doporučený maximální proud vstupem: 1.2A \(dáno šířkou spoje, 0.6mm/18um\)
 * Pro použití nutno vodivě spojit pájecí propojku SJ1 \(vedle tlačítka RST\)
 
-### GPIO a sběrnice
+## GPIO a sběrnice
 
 Zařízení IODA dispouje sběrnicí GPIO s celkem 54 piny. Na GPIO lze definovat digitální i analogové vstupy a výstupy a další komunikační rozhraní
 
@@ -198,12 +198,12 @@ IODA má na své GPIO sběrnici dále k dispozici sadu timerů, které se primá
 | TIM2\_CH1/TIM2\_ETR,TIM8\_CH1N | Y25 |
 | TIM2\_CH3 | Y26 |
 
-## Ethernet {#Ethernet}
+## Ethernet
 
 Budič LAN8720 \([Datasheet](http://ww1.microchip.com/downloads/en/DeviceDoc/8720a.pdf)\)
 
 * Podpora PoE
 * Rychlost do 100Mbit
 
-### WEXP module \(Lowpan\)
+## WEXP module \(Lowpan\)
 
