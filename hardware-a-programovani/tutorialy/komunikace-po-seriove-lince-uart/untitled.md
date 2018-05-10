@@ -16,6 +16,8 @@ Pokud chceme komunikovat po sériové lince s PC, nebo s libovolným dalším za
 
 Sériová linka je poměrně standardní rozhraní využívané v oblasti mikrokontrolérů. Pro připojení se využívá [MBED-OS API](https://github.com/byzance/public-documentation/tree/38b460c46404c197299c0f0a84e3402a9b74c8d7/byzance_documentation/hardware_intro/API/mbed-api.md) pro [komunikační rozhraní](https://github.com/byzance/public-documentation/tree/38b460c46404c197299c0f0a84e3402a9b74c8d7/byzance_documentation/hardware_intro/API/mbed-api/komunikacni-rozhrani.md). Pro správnou funkčnost je třeba sériovou komunikaci [zprovoznit ze strany počítače](https://github.com/byzance/public-documentation/tree/38b460c46404c197299c0f0a84e3402a9b74c8d7/byzance_documentation/hardware_intro/navody/pripojeni-k-pc.md).
 
+![P&#x159;ipojen&#xED; s&#xE9;riov&#xE9; linky pomoc&#xED; v&#xFD;vod&#x16F; XY konektoru](../../../.gitbook/assets/seriova_komunikace_ttl.png)
+
 ### Inicializace
 
 Většina zařízení je vybavena více sériovými linkami, což je třeba specifikovat při inicializaci. Je nutné zjistit konkrétní piny, které disponují touto periferií. Tyto informace se dají zjistit v sekci [Hardware](https://github.com/byzance/public-documentation/tree/38b460c46404c197299c0f0a84e3402a9b74c8d7/Hardware/README.md) vždy pro konkrétní zařízení.
@@ -54,6 +56,8 @@ void loop(){
 ## Komunikace pomocí USB
 
 Některá Byzance zařízení je možné připojit pomocí USB. USB je koncipováno především k tomu, aby nahradilo standardní sériovou linku, čímž odpadne nutnost použití převodníku s FTDI čipem. Všeobecné informace, jak zprovoznit komunikaci ze strany počítače jsou popsány v článku [Připojení k PC](https://github.com/byzance/public-documentation/tree/38b460c46404c197299c0f0a84e3402a9b74c8d7/byzance_documentation/hardware_intro/navody/pripojeni-k-pc.md). Nevýhoda je taková, že při každém restartu zařízení se USB odpojí a připojí k počítači a je třeba v ovládací aplikaci znovu otevřít COM port.
+
+![P&#x159;ipojen&#xED; s&#xE9;riov&#xE9; linky pomoc&#xED; microUSB](../../../.gitbook/assets/seriova_komunikace%20%282%29.png)
 
 ## Inicializace
 

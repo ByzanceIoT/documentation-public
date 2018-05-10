@@ -8,7 +8,7 @@ Zařízení je možné připojit **pomocí USB**, kdy je sériová linka softwar
 
 nebo pomocí převodníku **TTL/USB**,
 
-![](../../.gitbook/assets/seriova_komunikace_ttl.png)
+![](../../.gitbook/assets/seriova_komunikace_ttl%20%281%29.png)
 
 ## Konfigurace sériového linky v PC
 
