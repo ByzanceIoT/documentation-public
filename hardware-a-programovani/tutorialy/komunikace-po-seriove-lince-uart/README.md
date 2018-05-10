@@ -15,11 +15,9 @@ Abychom mohli v PC zobrazovat zprávy přijaté po sériové lince, je nutné na
 
 ##  Programování sériové linky
 
-Na straně zařízení se chování sériové komunikace programuje přímo v programu a je možnost sériovou linku inicializovat 
+Na straně zařízení se sériová komunikace obsluhuje přímo v programu a je možné ji inicializovat dvěma způsoby. Buď můžeme využít třídy [Serial](untitled.md#komunikace-pomoci-serial), nebo sériovou linku emulovat přes [microUSB](untitled.md#komunikace-pomoci-usb). Všechny potřebné informace se nacházejí v článku [Programování sériové linky](untitled.md).
 
-
-
-
+{% page-ref page="untitled.md" %}
 
 
 
