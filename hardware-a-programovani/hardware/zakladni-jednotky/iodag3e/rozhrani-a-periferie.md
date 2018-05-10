@@ -207,3 +207,5 @@ Budič LAN8720 \([Datasheet](http://ww1.microchip.com/downloads/en/DeviceDoc/872
 
 ## WEXP module \(Lowpan\)
 
+ \#TODO \(Dopsat specifikace modulu WEXP + něco například k anténám\)
+
