@@ -6,7 +6,3 @@ Pro úplné nováčky přejděte na [Beginner's Guide](https://github.com/byzanc
 
 [Administration](https://www.gitbook.com/book/byzance/public-documentation/edit)
 
-
-
-
-
