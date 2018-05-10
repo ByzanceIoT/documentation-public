@@ -2,7 +2,7 @@
 
 ## Blokové schéma {#block-diagram}
 
-TO DO
+  \#TODO
 
 ## Metody napájení
 
@@ -132,7 +132,7 @@ IODA umožňuje komunikovat po několika sériových linkách. Na jeho sběrnici
 | UART1\_RX | X07 |
 | UART3\_TX | X11 |
 | UART3\_RX | X09 |
-| UART4\_TX | Y00 |
+| UART4\__TX  _ | Y00 |
 | UART4\_RX | Y01 |
 | UART5\_TX | Y03 |
 | UART5\_RX | Y18 |
