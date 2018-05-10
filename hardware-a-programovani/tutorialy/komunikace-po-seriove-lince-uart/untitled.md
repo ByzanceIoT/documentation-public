@@ -10,23 +10,25 @@ Zde bude návod
 
 
 
-Pokud chceme komunikovat po sériové lince s PC, nebo s libovolným dalším zařízením, je třeba vytvořit program, který sériovou linku inicializuje a dále bude odesílat a přijímat požadované zprávy. Zařízení IODA umožňuje incializovat sériovou linku dvěma způsoby, buď pomocí jeho vývodů na konektoru X a Y
+Pro komunikaci po sériové lince s PC, nebo s libovolným dalším zařízením, je třeba vytvořit program, který sériovou linku inicializuje a dále bude odesílat a přijímat požadované zprávy. Zařízení IODA umožňuje incializovat sériovou linku dvěma způsoby, buď pomocí jeho [vývodů na konektoru XY](../../hardware/zakladni-jednotky/iodag3e/rozhrani-a-periferie.md).
 
 ## Komunikace pomocí Serial
 
-Sériová linka je poměrně standardní rozhraní využívané v oblasti mikrokontrolérů. Pro připojení se využívá [MBED-OS API](https://github.com/byzance/public-documentation/tree/38b460c46404c197299c0f0a84e3402a9b74c8d7/byzance_documentation/hardware_intro/API/mbed-api.md) pro [komunikační rozhraní](https://github.com/byzance/public-documentation/tree/38b460c46404c197299c0f0a84e3402a9b74c8d7/byzance_documentation/hardware_intro/API/mbed-api/komunikacni-rozhrani.md). Pro správnou funkčnost je třeba sériovou komunikaci [zprovoznit ze strany počítače](https://github.com/byzance/public-documentation/tree/38b460c46404c197299c0f0a84e3402a9b74c8d7/byzance_documentation/hardware_intro/navody/pripojeni-k-pc.md).
+Serial je konstruktor z knihovny [MBED API](../../programovani-hw/mbed-api/), který inicializuje Sériovou linku přímo na vývodech XY konektoru. Abychom mohli takto vytvořit linku mezi zařízením a PC, je potřeba využít TTL převodník, který  interpretuje komunikaci na USB. 
 
 ![P&#x159;ipojen&#xED; s&#xE9;riov&#xE9; linky pomoc&#xED; v&#xFD;vod&#x16F; XY konektoru](../../../.gitbook/assets/seriova_komunikace_ttl.png)
 
 ### Inicializace
 
-Většina zařízení je vybavena více sériovými linkami, což je třeba specifikovat při inicializaci. Je nutné zjistit konkrétní piny, které disponují touto periferií. Tyto informace se dají zjistit v sekci [Hardware](https://github.com/byzance/public-documentation/tree/38b460c46404c197299c0f0a84e3402a9b74c8d7/Hardware/README.md) vždy pro konkrétní zařízení.
-
-V konstruktoru se zadávají parametry pinů TX a RX.
+V programu se nejprve sériová linka inicializuje pomocí třídy **Serial** z knihovny [MBED API](../../programovani-hw/mbed-api/). Argumenty konstruktoru jsou jména pinů **TX** a **RX**, na kterých se linka inicializuje.
 
 ```cpp
 Serial pc(SERIAL_TX, SERIAL_RX);
 ```
+
+Zařízení IODA umožňuje inicializovat několik sériových linek. Na kterých pinech se tyto linky dají inicializovat se lze dozvědět s dokumentace zařízení v sekci [Rozhraní a periférie](../../hardware/zakladni-jednotky/iodag3e/rozhrani-a-periferie.md) v oddíle UART/USART
+
+
 
 Dále je třeba zvolit baudovou rychlost. K tomu je vyhrazena sekce init\(\). Baudová rychlost může být různá, záleží na uživateli a pohybuje se většinou v rozmezí 1200 - 230400 baud. Stejnou rychlost je třeba nastavit [na straně počítače při připojení](https://github.com/byzance/public-documentation/tree/38b460c46404c197299c0f0a84e3402a9b74c8d7/byzance_documentation/hardware_intro/navody/pripojeni-k-pc.md).
 
