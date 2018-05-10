@@ -2,15 +2,7 @@
 
 
 
-Zde bude návod
-
-* Jak zapojit sériovou linku \(stručně schéma s grafikou IODY! a stručně vysvětlit nebo odkázat někam kde je vysvětleno \)
-* Vysvětlit makra SERIAL TX, SERIAL\_RX a jejich použití při komunikaci přes microUSB !! Vysvětlit, že pokud inicializuji jinou sériovou linku někde na pinech \(Krom Y00 a Y01\) tak nebude fungovat
-* Krátký stručný kód
-
-
-
-Pro komunikaci po sériové lince s PC, nebo s libovolným dalším zařízením, je třeba vytvořit program, který sériovou linku inicializuje a dále bude odesílat a přijímat požadované zprávy. Zařízení IODA umožňuje incializovat sériovou linku dvěma způsoby, buď pomocí jeho [vývodů na konektoru XY](../../hardware/zakladni-jednotky/iodag3e/rozhrani-a-periferie.md).
+Pro komunikaci po sériové lince s PC, nebo s libovolným dalším zařízením, je třeba vytvořit program, který sériovou linku inicializuje a dále bude odesílat a přijímat požadované zprávy. Zařízení IODA umožňuje incializovat sériovou linku dvěma způsoby, buď pomocí jeho [vývodů na konektoru XY](../../hardware/zakladni-jednotky/iodag3e/rozhrani-a-periferie.md), nebo pomocí emulátoru na konektoru microUSB.
 
 ## Komunikace pomocí Serial
 
