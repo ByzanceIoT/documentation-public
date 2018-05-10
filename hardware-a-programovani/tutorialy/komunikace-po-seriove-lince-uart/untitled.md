@@ -26,7 +26,7 @@ V programu se nejprve sériová linka inicializuje pomocí třídy **Serial** z 
 Serial pc(SERIAL_TX, SERIAL_RX);
 ```
 
-Zařízení IODA umožňuje inicializovat několik sériových linek. Na kterých pinech se tyto linky dají inicializovat se lze dozvědět s dokumentace zařízení v sekci [Rozhraní a periférie](../../hardware/zakladni-jednotky/iodag3e/rozhrani-a-periferie.md) v oddíle UART/USART
+Zařízení IODA umožňuje inicializovat několik sériových linek. Na kterých pinech se tyto linky dají inicializovat se lze dozvědět s dokumentace zařízení v sekci [Rozhraní a periférie](../../hardware/zakladni-jednotky/iodag3e/rozhrani-a-periferie.md) v oddíle UART/USART. V příkladu jsou místo jmen pinů použita makra **SERIALTX a SERIALRX**, tyto makra vedou na sériovou linku na pinech **Y00 a Y01.**
 
 
 
