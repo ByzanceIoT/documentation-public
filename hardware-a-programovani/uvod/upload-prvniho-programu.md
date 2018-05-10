@@ -30,9 +30,9 @@ void loop(){
 
 ## Jak zkompilovat první program?
 
-Předtím, než je možné do zařízení program nahrát a spustit, je potřeba ho nejprve zkompilovat a vytvořit tak strojově čitelný binární kód. To je možné provést přímo v PC ručně, kdy si nejprve musíme potřebné knihovny a kompilátor viz sekci [Offline programován](../programovani-hw/offline-programovani/).  Nebo použijeme portál, kde lze program zkompilovat online viz Kompilace programu v portálu \( \#TODO odkaz na článek viz ticket  [BECKI-408](https://youtrack.byzance.cz/youtrack/issue/BECKI-408)\)
+Předtím, než je možné do zařízení program nahrát a spustit, je potřeba ho nejprve zkompilovat a vytvořit tak strojově čitelný binární kód. To je možné provést přímo v PC ručně, kdy si nejprve musíme nakonfigurovat potřebné knihovny viz sekci [Offline programování](../programovani-hw/offline-programovani/), nebo použijeme portál, kde lze program zkompilovat online viz Kompilace programu v portálu \( \#TODO odkaz na článek viz ticket  [BECKI-408](https://youtrack.byzance.cz/youtrack/issue/BECKI-408)\)
 
-## Jak nahrát program do zařízení
+## Jak nahrát program do zařízení?
 
 Poté co získáme zkompilovaný program v binárním podobě,  můžeme kód  nahrát do zařízení. Pokud obsluhujeme zařízení přes portál,  postupujeme podle návodu Upload programu z portálu \( \#TODO odkaz na článek viz ticket  [BECKI-409](https://youtrack.byzance.cz/youtrack/issue/BECKI-409)\). 
 
@@ -46,9 +46,9 @@ K programování můžeme použít zařízení [Byzance ZPPG3](../hardware/ostat
 
 Podrobný návod programování pomocí ZPP lze nalézt v sekci [Upload kódu pomocí ZPP](../programovani-hw/offline-programovani/upload-kodu-pomoci-zpp.md). 
 
-### Programování zařízení Dev-Kit
+### Programování zařízení DevKit
 
-Zařízení Dev-Kit, má v sobě programátor zabudovaný, tudíž není nutné k programování využívat žádné další zařízení. Dev-Kit stačí připojit k PC usb kabelem a v počítači se inicializuje nový flash disk, na který stačí binární kód přetáhnout drag&drop stejně jako pomocí ZPP.
+Zařízení DevKit, má v sobě programátor zabudovaný, tudíž není nutné k programování využívat žádné další zařízení. DevKit stačí připojit k PC usb kabelem a v počítači se inicializuje nový flash disk, na který stačí binární kód přetáhnout drag&drop stejně jako pomocí ZPP.
 
 ### Programování pomocí programátoru ST-link
 
