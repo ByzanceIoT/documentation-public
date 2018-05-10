@@ -1,7 +1,7 @@
 # Komunikace po sériové lince \(UART\) s PC
 
   
-V řadě aplikací je potřebné zavést komunikační kanál mezi zařízením, které programujeme a PC, ať už za účelem debugování nebo logování. Pro tyto účely je nejlepší využít sériovou linku, kterou lze velmi jednoduše nakonfigurovat. 
+V řadě aplikací je potřebné zavést komunikační kanál mezi zařízením, které programujeme a PC. To je potřeba primárně za účelem debugování a logování nebo také v případě obsluhy zařízení v [command režimu](../../architektura-fw/bootloader/command-mod.md). Pro tyto účely se využívá sériová linka, kterou lze velmi jednoduše nakonfigurovat. 
 
 ![](../../../.gitbook/assets/seriova_komunikace_schema.png)
 
