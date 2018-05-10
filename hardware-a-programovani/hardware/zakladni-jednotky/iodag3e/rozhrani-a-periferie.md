@@ -4,7 +4,7 @@
 
 TO DO
 
-## Metody napájení {#power}
+## Metody napájení
 
 Zařízení IODAG3E disponuje **třemi **standartními **napájecími vstupy** \(USB, PoE a napájení z externího zdroje\) s širokém rozsahem akceptovaného napájecího napětí. Všechny tři výše uvedené varianty mohou být bezpečně použity současně a lze je zapínat nezávisle na sobě.
 
