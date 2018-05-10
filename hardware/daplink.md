@@ -4,6 +4,9 @@ Jedná se o otevřený projekt, který si klade za cíl vytvořit univerzální 
   * drag and drop programování - nahrávání binárních dat do FLASH paměti cílového procesoru
   * převodník sériové linky USB <-> UART
   * debugger (gdb klient)
+  * neco se změnilo
+
+text
 
 ![Daplink schema](/images/hardware/daplink.png =100x100)
 
