@@ -34,12 +34,15 @@ Tento mód navazuje na mód FLASH.  Pokud se hlavní program po posledním nafla
 
 ## Mód COMMANDS
 
+Mód COMMANDS slouží k offline konfiguraci zařízení pomocí [sériové linky.](../../tutorialy/komunikace-po-seriove-lince-uart/) Tomuto módu je věnován samostatný článek.
+
+{% page-ref page="command-mod.md" %}
+
 Do módu COMMANDS je možné vstoupit několika způsoby
 
-* První spuštění bootloaderu na novém mikrokontroléru
-* Kombinací tlačítek \(viz [command režim](https://github.com/byzance/public-documentation/tree/38b460c46404c197299c0f0a84e3402a9b74c8d7/byzance_documentation/architektura-fw/bootloader/odkaz%20na%20bootloader%20comand%20režim/README.md)\)
+* Kombinací tlačítek
 * Chybí hlavní aplikace
-* Bootloader není nakonfigurován \(vypnutá proměnná ''configured'' v [command režimu](command-mod.md)\).
+* Bootloader není nakonfigurován \(vypnutá proměnná ''configured''\)
 
 ## Mód FACTORY RESET
 
