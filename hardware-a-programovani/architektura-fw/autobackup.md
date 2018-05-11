@@ -24,8 +24,9 @@ V případě, že je autobackup **vypnutý**, zařízení spoléhá na to, že v
 
 ## Nastavování a zjišťování hodnot
 
-Pokud je nutné režim autobackup změnit, existuje několik možností, jak toho docílit.
+Pokud je nutné režim autobackup změnit, existuje několik možností, jak toho docílit. Podrobnější popis je v kapitole konfigurace, přičemž doporučováno je měnit nastavení pomocí nástroje v Portalu Byzance.
 
-* Pomocí Portálu Byzance online
-* V Command režimu Bootloaderu
+{% page-ref page="../uvod/konfigurace-zarizeni.md" %}
+
+
 
