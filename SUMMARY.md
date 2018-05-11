@@ -69,7 +69,6 @@
     * TK3G
     * [ZPPG3](hardware-a-programovani/hardware/ostatni/daplink.md)
 * [Architektura FW](hardware-a-programovani/architektura-fw/README.md)
-  * [Hierarchie FW](hardware-a-programovani/architektura-fw/hierarchie-fw.md)
   * [Aktualizace FW](hardware-a-programovani/architektura-fw/aktualizace-fw.md)
   * [Autobackup](hardware-a-programovani/architektura-fw/autobackup.md)
   * [Bootloader](hardware-a-programovani/architektura-fw/bootloader/README.md)
