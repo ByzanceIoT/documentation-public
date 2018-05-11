@@ -1,7 +1,3 @@
----
-description: '#TODO (článek viz ticket HW-1055)'
----
-
 # Upload kódu pomocí ZPP
 
 [ZPPG3](../../hardware/ostatni/daplink.md) je zařízení učené k flashování programu do zařízení IODA jednoduše pomocí drag&drop na virtuální disk, který se vytvoří po připojení do PC.
@@ -27,4 +23,6 @@ Pokud potřebujeme do zařízení nahrát novou verzi [Bootloaderu](../../archit
 V případě, že se během uploadu programu vyskytne chyba a ZPP nedokončí program firmware, objeví se na virtuálním disku soubor **FAIL.txt**, ve kterém se vyskytuje chybová hláška. 
 
 ![](../../../.gitbook/assets/zpp_fail.png)
+
+ Programátor je dále možné ovládat pomocí MSD příkazů. Jejich zadávání spočívá v tom, že jsou na flashdisk nahrávány soubory s různými názvy. Ve výchozím nastavení jsou příkazy prováděny pouze pokud je současně stisknuto tlačítko ISP/RST \(mód automation je vypnutý\). Podrobnosti viz.: [MSD Commands](https://github.com/mbedmicro/DAPLink/blob/master/docs/MSD_COMMANDS.md).
 
