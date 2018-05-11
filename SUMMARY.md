@@ -91,7 +91,7 @@
     * [Vlastní IDE](hardware-a-programovani/programovani-hw/offline-programovani/vlastni-ide.md)
     * [Upload kódu z GUI](hardware-a-programovani/programovani-hw/offline-programovani/upload-kodu-z-gui.md)
     * [Upload kódu z konzole](hardware-a-programovani/programovani-hw/offline-programovani/upload-kodu-z-konzole.md)
-    * Upload kódu pomocí ZPP
+    * [Upload kódu pomocí ZPP](hardware-a-programovani/programovani-hw/offline-programovani/upload-kodu-pomoci-zpp.md)
 * [Tutoriály](hardware-a-programovani/tutorialy/README.md)
   * [Komunikace po sériové lince \(UART\) s PC](hardware-a-programovani/tutorialy/komunikace-po-seriove-lince-uart/README.md)
     * [Konfigurace sériové linky v PC](hardware-a-programovani/tutorialy/komunikace-po-seriove-lince-uart/konfigurace-pc.md)
