@@ -1,8 +1,8 @@
 # Digital Read Serial
 
-Tento příklad ukazuje, jak monitorovat stav na tlačítku přes sériovou komunikaci mezi IODA a PC.
+Tento příklad ukazuje, jak monitorovat stav stisknutí tlačítka přes sériovou linku mezi IODA a PC.
 
-## Hardware
+## Použitý hardware
 
 * IODA 
 * tlačítko
@@ -10,19 +10,17 @@ Tento příklad ukazuje, jak monitorovat stav na tlačítku přes sériovou komu
 * 10kΩ rezistor
 * nepájivé kontaktní pole
 
-## Obvod
+## Schéma zapojení
 
 Do desky jsou zapojené tři kabely. První dva - černý a červený jsou zapojeny do GND a 3V3 pinu na desce. Třetí jde z pinu X01 na kontakt tlačítka, na protější kontakt připojíme 10kΩ rezistor na zem \(GND\). 3.3 voltu \(3V3\) připojíme na poslední kontakt vedle země \(GND\).
 
-### Tlačítko
+
+
+## Schéma
 
 Stisknutím tlačítka, nebo přepínače se propojí dva body v obvodu. Když je tlačítko otevřeno \(není stisknuto\), nedojde k žádnému spojení mezi oběma kontakty tlačítka, takže kontakt je připojen k uzemnění \(pomocí pull-down\) a čte jako LOW nebo 0. Když je tlačítko zavřené \(stisknuto\), vytváří spojení mezi oběma kontakty, připojuje pin na 3.3 voltů tak, aby kontakt četl jako HIGH, nebo 1.
 
 ![](../../../.gitbook/assets/digitalreadserial.png)
-
-## Schéma
-
-![](../../../.gitbook/assets/digitalreadserial_schematic.png)
 
 ## Code
 
