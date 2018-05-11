@@ -4,6 +4,5 @@ Firmware vyvíjený v prostředí Byzance Code je založen na otevřeném opera�
 
 Součástí MBED API jsou ARM low level ovladače CMSIS a ovladače HAL výrobce mikrokontroléru. K tomu MBED přidává množství užitečných knihoven na šifrování, konektivitu k internetu a operační systém RTOS
 
-  
-
+![](../../.gitbook/assets/architektura_fw.jpg)
 
