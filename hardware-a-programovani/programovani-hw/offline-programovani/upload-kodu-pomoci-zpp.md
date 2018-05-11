@@ -1,6 +1,6 @@
 # Upload kódu pomocí ZPP
 
-[ZPPG3](../../hardware/ostatni/daplink.md) je zařízení učené k flashování programu do zařízení IODA jednoduše pomocí drag&drop na virtuální disk, který se vytvoří po připojení do PC.
+[ZPPG3](../../hardware/ostatni/daplink.md) je zařízení učené k jednoduchému drag&drop flashování programu do zařízení IODA pomocí virtuálního disku, který se vytvoří po připojení ZPP do PC.
 
 ## Upload hlavního programu
 
