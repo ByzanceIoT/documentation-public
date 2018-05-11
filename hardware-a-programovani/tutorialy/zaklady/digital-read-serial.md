@@ -12,9 +12,9 @@ Tento příklad ukazuje, jak monitorovat stav stisknutí tlačítka přes sério
 
 ## Schéma zapojení
 
-Do desky jsou zapojené tři kabely. První dva - černý a červený jsou zapojeny do GND a 3V3 pinu na desce. Třetí jde z pinu X01 na kontakt tlačítka, na protější kontakt připojíme 10kΩ rezistor na zem \(GND\). 3.3 voltu \(3V3\) připojíme na poslední kontakt vedle země \(GND\).
+Tlačítko SW1 připojíme mezi pin X01 a zem GND, dále připojíme pullup rezistor R1 o nominální hodnotě 10K mezi pin X01 a pin 3V3. 
 
-
+![](../../../.gitbook/assets/schema_pullup%20%281%29.png)
 
 ## Schéma
 
