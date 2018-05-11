@@ -10,5 +10,9 @@ pokec
 
 ## Konfigurace z Byzance API
 
-Konfigurace z webového rozhraní
+pokec
+
+## Konfigurace z webového rozhraní
+
+
 
