@@ -34,15 +34,17 @@ Tento mód navazuje na mód FLASH.  Pokud se hlavní program po posledním nafla
 
 ## Mód COMMANDS
 
-Mód COMMANDS slouží k offline konfiguraci zařízení pomocí [sériové linky.](../../tutorialy/komunikace-po-seriove-lince-uart/) Tomuto módu je věnován samostatný článek.
-
-{% page-ref page="command-mod.md" %}
+Mód COMMANDS slouží k offline konfiguraci zařízení pomocí [sériové linky.](../../tutorialy/komunikace-po-seriove-lince-uart/) 
 
 Do módu COMMANDS je možné vstoupit několika způsoby
 
 * Kombinací tlačítek
 * Chybí hlavní aplikace
 * Bootloader není nakonfigurován \(vypnutá proměnná ''configured''\)
+
+Tyto a mnoho dalších informací jsou zpracovány v samostatném článku.
+
+{% page-ref page="command-mod.md" %}
 
 ## Mód FACTORY RESET
 
