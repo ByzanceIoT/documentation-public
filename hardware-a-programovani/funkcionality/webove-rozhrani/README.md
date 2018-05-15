@@ -2,6 +2,15 @@
 
 Webové rozhraní je funkce, která je součástí každého zařízení Byzance a slouží k zjištění, konfiguraci a monitorování základních funkcí a vlastností zařízení.
 
+## Funkce webového rozhraní
+
+* Zjištění stavu firmware či probíhajících procedur na pozadí.
+* Zjištění stavu softwarového restartu.
+* Zjištění verzí jednotlivých komponent firmware.
+* Využití výkonu mikrokontroléru a stav jednotlivých vláken.
+* Výpis aktuálních hodnot konfigurace, případně změna.
+* Zaregistrované Byzance digitální/analogové/message vstupy a výstupy.
+
 ## Nároky po zapnutí
 
 * 1 vlákno
@@ -16,12 +25,5 @@ Webové rozhraní je funkce, která je součástí každého zařízení Byzance
 * Je třeba zjistit IP adresu Iody \(například z routeru, nebo při běhu firmware metodou get\_ip\).
 * Nakonec je třeba zadat IP adresu do webového prohlížeče
 
-## Funkce webového rozhraní
-
-* Zjištění stavu firmware či probíhajících procedur na pozadí.
-* Zjištění stavu softwarového restartu.
-* Zjištění verzí jednotlivých komponent firmware.
-* Využití výkonu mikrokontroléru a stav jednotlivých vláken.
-* Výpis aktuálních hodnot konfigurace, případně změna.
-* Zaregistrované Byzance digitální/analogové/message vstupy a výstupy.
+## 
 
