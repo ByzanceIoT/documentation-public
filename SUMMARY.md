@@ -37,7 +37,7 @@
 
 * [Úvod](hardware-a-programovani/uvod/README.md)
   * [Oživení zařízení](hardware-a-programovani/uvod/oziveni-zarizeni.md)
-  * [Upload prvního programu](hardware-a-programovani/uvod/upload-prvniho-programu.md)
+  * [Nahrání prvního programu](hardware-a-programovani/uvod/upload-prvniho-programu.md)
   * [Konfigurace zařízení](hardware-a-programovani/uvod/konfigurace-zarizeni.md)
 * [Konektivita](hardware-a-programovani/konektivita/README.md)
   * [Komunikace s portálem](hardware-a-programovani/konektivita/komunikace-s-portalem.md)

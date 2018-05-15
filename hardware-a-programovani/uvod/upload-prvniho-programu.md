@@ -5,7 +5,7 @@ description: >-
   nebo několika způsoby offline přímo z PC.
 ---
 
-# Upload prvního programu
+# Nahrání prvního programu
 
 ## Jak vytvořit první program? 
 
