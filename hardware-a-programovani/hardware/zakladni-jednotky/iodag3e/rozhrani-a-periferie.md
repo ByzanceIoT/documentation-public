@@ -61,9 +61,9 @@ Technické vlastností vstupu externího napájení:
 
 ### VBUS
 
-Jde o signál na liště X/Y, jehož **použití není** pro běžného uživatele **bezpečné **a a může vést ke zničení desky či připojeného zdroje. Na pin **VBUS** je možné aplikovat napětí přímo na **nechráněný** vstup spínanného zdroje a dosáhnout tak spuštění desky již od napětí typ. 4.0V.
+Jde o signál na **konektoru X/Y**, jehož **použití pro napájení jednotky není** pro běžného uživatele **bezpečné **a a může vést ke zničení desky či připojeného zdroje. Na pin **VBUS** je možné aplikovat napětí přímo na **nechráněný** vstup spínanného zdroje a dosáhnout tak spuštění desky již od napětí typ. 4.0V.
 
-Smyslem je umožnit běh desky z externího 5V zdroje \(typicky při vestavbě do existujícího 5V systému\). Tato věc je technicky možná, nicméně se silně **nedoporučuje** \(Spíše jen pro interní info\). Běžně **VBUS** slouží jako výstup pro napájení externích zařízení pomocí IODAG3E.
+Smyslem je umožnit běh desky z externího 5V zdroje \(typicky při vestavbě do existujícího 5V systému\). Tato věc je technicky možná, nicméně se silně **nedoporučuje**. Běžně **VBUS** slouží jako výstup pro napájení externích zařízení pomocí IODAG3E.
 
 Technické vlastností napájení signálem VBUS:
 
@@ -73,19 +73,9 @@ Technické vlastností napájení signálem VBUS:
 
 ## GPIO a sběrnice
 
-Zařízení IODA dispouje sběrnicí GPIO s celkem 54 piny. Na GPIO lze definovat digitální i analogové vstupy a výstupy a další komunikační rozhraní
+Zařízení IODA disponuje sběrnicí celkem 54 piny vstupně výstupními piny na **X a Y konektoru**. Na GPIO lze definovat digitální i analogové vstupy a výstupy, další komunikační sběrnice a nebo používat napájecí vývody. Souhrné informace k **X a Y konektorům** jsou dostupné v [obecném popisu](../#vstupy-a-vystupy) základních jednotek.
 
-### Pinout
-
-Sběrnice GPIO je rozdělena na dvě části a to **X-Konektor** a **Y-Konektor**
-
-#### X-Konektor
-
-![](../../../../.gitbook/assets/ioda_xbus.png)
-
-#### Y-Konektor
-
-![](../../../../.gitbook/assets/ioda_ybus.png)
+![P&#x159;&#xED;klad X konektoru \(vlevo\) a Y konektory \(vpravo\) na z&#xE1;kladn&#xED; desce IODAG3E.](../../../../.gitbook/assets/x_y_conn%20%281%29.png)
 
 ### Analogové vstupy
 
