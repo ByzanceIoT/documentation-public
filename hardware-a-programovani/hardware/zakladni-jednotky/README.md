@@ -28,6 +28,26 @@ Mikrokontrolér založený na ARM architektuře je mozkem celého zařízení, v
 
 **Část periferií **mikrokontroléru je vyhrazena na obsluhu dalších obvodů na desce základní jednotky \(externí FLASH paměť, vodiče obvodů ethernetu atp.\), další část je dostupná uživateli na konektorech X a Y a část nemusí být ani z mikrokontroléru vyvedena. Podrobnější popis lze nalézt v popisu každé základní jednotky.
 
+### Konektivita do cloudu
+
+Pro připojení základní jednotky do cloudu se používají různé technologie \(ethernet, GSM,  6LoWPAN\) a každá z nich vyžaduje další specifické hardwarové komponenty. Z tohoto důvodu je v blokovém schématu uvedena komponenta Konektivita do internetu \(\#TODO přejmenovat na ang. výraz\) a její implementace se odvíjí od typu jednotky.
+
+### Tlačítka, LED
+
+Každá základní jednotka je zpravidla osazena několika **tlačítky **a signalizačními **LED **diodami. Jejich účelem je usnadnit ovládaní jednotek a jednoduše vizualizovat vnitřní stavy zařízení. Fyzické umístění tlačítek a LED diod může být odlišné pro jednotlivé základní jednotky.
+
+Všechny jednotky mají v základu _User_  a _Reset_ tlačítko. Tlačítko _Reset _slouží k hardwarovému restartu mikrokontroléru jednotky a hodí se zejména při vývoji. Po jeho stisku základní jednotka přeruší veškeré operace a řídicí program mikrokontroléru se začne vykonávat znovu od začátku. Tlačítko _User _se hodí pro napojení na libovolnou v programu definovanou funkcionalitu \(vykonání něčeho po stisku tlačítka\). Během startu základních jednotek slouží _User _tlačítko pro vstup do [Bootloaderu](../../architektura-fw/bootloader/).
+
+
+
+
+
+
+
+
+
+
+
 ## Typy základních jednotek
 
 ddd
