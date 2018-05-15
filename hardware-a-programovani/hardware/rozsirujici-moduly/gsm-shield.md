@@ -10,7 +10,7 @@ GSM shield si klade za cíl připojit základní jednotku k Internetu pomocí bu
 
 | **X01** | **X03** | **X05** | **X07** | **X09** | **X11** | **X13** | **X15** | **USR** | **VBUS** |
 | --- | --- | --- | --- |
-| ​RESET | ​ | ​ | ​ | RX | TX | ​ | ​ | ​ | ​ |
+| ​RESET | ​ | ​ | ​ | RX | TX | ​ | ​ | ​ | ​&gt;= 5 V |
 | **X00** | **X02** | **X04** | **X06** | **X08** | **X10** | **X12** | **X14** | **3V3** | **GND** |
 | ​ | ​ | ​ | ​ | \(​DCD\) | ​ |  | ​ | ​ | ​ |
 
@@ -20,11 +20,13 @@ GSM shield si klade za cíl připojit základní jednotku k Internetu pomocí bu
 
 ### Konfigrace a zapojení
 
-* propojka SJ1 - volba napájení 3,3 V ze základní jednotky \(spojení vlevo\); vlastní měnič \(spojení vpravo\)
-* propojka SJ5 - spojeno: pin DCD je připojen na X08 \(výchozí stav\)
-* X4 - koniktor mini SIM karty; může být vložena pouze, pokud není osazena eSIM
-* IC1 - zabudovaná SIM \(eSIM\); může být osazena pouze, pokud není vložena mini SIM
-* X2 - u.fl konektor pro připojení GSM antény \(50 ohm\)
+* propojka _SJ1 _- volba napájení 3,3 V ze základní jednotky \(spojení vlevo\); vlastní měnič \(spojení vpravo\)
+* propojka _SJ5 _- spojeno: pin DCD je připojen na X08 \(výchozí stav\)
+* _X4 _- koniktor mini SIM karty; může být vložena pouze, pokud není osazena eSIM
+* _IC1 _- zabudovaná SIM \(eSIM\); může být osazena pouze, pokud není vložena mini SIM
+* _X2 _- u.fl konektor pro připojení GSM antény \(50 ohm\)
+* _3V _- indikace napájení GSM modulu
+* _D2 _- indikace stavu sítě
 
 ## Schéma
 
