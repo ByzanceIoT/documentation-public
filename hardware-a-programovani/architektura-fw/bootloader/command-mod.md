@@ -1,6 +1,6 @@
 # Command mód
 
-V command režimu je možné pomocí příkazů posílaných po sériové lince ověřovat a nastavovat konfigurační parametry.
+V command režimu je možné pomocí příkazů posílaných po [sériové lince](../../tutorialy/komunikace-po-seriove-lince-uart/) ověřovat a nastavovat konfigurační parametry.
 
 Do command režimu bootloaderu je možno vstopit následujícím způsobem
 
@@ -8,6 +8,8 @@ Do command režimu bootloaderu je možno vstopit následujícím způsobem
 2. pustit RESET tlačítko
 3. počkat několik sekund, než zhasne červená LED
 4. pustit USER tlačítko
+
+![](../../../.gitbook/assets/bootloader.gif)
 
 Při prvním spuštění nebo při položce configured=0 bootloader skáče do command režimu automaticky.
 
