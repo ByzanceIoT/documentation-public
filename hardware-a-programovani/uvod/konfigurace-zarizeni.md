@@ -10,7 +10,7 @@ Dojde-li ke konfliktu mezi jednotlivými konfiguračními soubory, soubor v IODA
 
 ## Konfigurace z Portálu
 
-Preferovaný způsob při konfiguraci zařízení. 
+Preferovaný způsob při změně konfigurace. Přehled jednotlivých parametrů je možno nalézt v online Portálu v možnostech daného zařízení, záložka Developer Settings.
 
 ![](../../.gitbook/assets/config_portal.PNG)
 

@@ -61,9 +61,9 @@
     * [RFID shield](hardware-a-programovani/hardware/rozsirujici-moduly/rfid-shield.md)
     * [Ultrasonic shield](hardware-a-programovani/hardware/rozsirujici-moduly/ultrasonic-shield.md)
     * [Meteo shield](hardware-a-programovani/hardware/rozsirujici-moduly/meteo-shield.md)
-    * Movement shield
+    * [Movement shield](hardware-a-programovani/hardware/rozsirujici-moduly/movement-shield.md)
     * [PIR shield](hardware-a-programovani/hardware/rozsirujici-moduly/pir-shield.md)
-    * RGB Displej shield
+    * [RGB Displej shield](hardware-a-programovani/hardware/rozsirujici-moduly/rgb-displej-shield.md)
     * [Serial shield](hardware-a-programovani/hardware/rozsirujici-moduly/serial-shield.md)
   * [Ostatní](hardware-a-programovani/hardware/ostatni/README.md)
     * [DevKitG3](hardware-a-programovani/hardware/ostatni/devkitg3.md)
