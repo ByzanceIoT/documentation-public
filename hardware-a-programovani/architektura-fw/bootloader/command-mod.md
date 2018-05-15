@@ -41,19 +41,14 @@ Více informací k MQTT připojení je možno nalézt v sekci [Komunikace se ser
 * **wdtime** - Nastavení periody resetu [watchdogu](../../funkcionality/watchdog.md).
 * **autobackup** - Funkce, která zajišťuje, že při nahrátí nové binárky se stará zálohuje.
 * **netsource** - Zdroj, odkud bere zařízení internet.
-* **configured** - při prvním spuštění bootloader naběhne vždy do Command režimu a čeká na konfiguraci všech parametrů. Až jsou parametry nastaveny, ''configured'' se přepne na 1 a tím se dá zařítzení najevo, že je již plně nakonfigurováno a příště bude už nabíhat do normálního programu.
-* **webview** - Zapnutí nebo vypnutí \[\[tutorial:webview\|webového rozhraní\]\]
-* **webport** - Port, na které poběží \[\[tutorial:webview\|webové rozhraní\]\]
-* **timeoffset** - Slouží pro lokalizovanou \[\[tutorial:timestamp\|práci s časem\]\]. Nastavení offsetu lokálního času od UTC času.
-* **timesync** - Slouží pro kontrolu synchronizace \[\[tutorial:timestamp\|času se servery\]\].
-* **lowpanbr** - Zap nebo vyp funkce \[\[feature:lowpanbr\|lowpan border router\]\]
-* **restartbl** - Identifikátor pro \[\[feature:restartbl\|restart zařízení do bootloaderu\]\]
-* **revision** - Zjištění \[\[feature:revision\|revize zařízení\]\]
-
-**Pokud zařízení podporuje Wifi**
-
-* **wifi\_ssid** - Záložní jméno pro přihlášení k Homerovi. \[\[yoda:mqtt\|Dokumentace MQTT\]\].
-* **wifi\_password** - Záložní heslo pro přihlášení k Homerovi. \[\[yoda:mqtt\|Dokumentace MQTT\]\].
+* **configured** - při prvním spuštění bootloader naběhne vždy do Command režimu a čeká na konfiguraci všech parametrů. Až jsou parametry nastaveny, ''configured'' se přepne na 1 a tím se dá zařízení najevo, že je již plně nakonfigurováno a příště bude už nabíhat do normálního programu.
+* **webview** - Zapnutí nebo vypnutí funkcionality [webového rozhraní](../../funkcionality/webove-rozhrani/).
+* **webport** - Port, na kterém bude přístupno [webové rozhraní](../../funkcionality/webove-rozhrani/).
+* **timeoffset** - Slouží pro lokalizovanou [práci s časem](../../prace-s-datem-a-casem-rtc.md). Nastavení offsetu lokálního času RTC od UTC.
+* **timesync** - Slouží pro zapnutí [synchronizace času](../../prace-s-datem-a-casem-rtc.md) mezi servery Byzance a RTC.
+* **lowpanbr** - Zapnutí funkce [lowpan border router](../../konektivita/6lowpan.md).
+* **restartbl** - Identifikátor pro [restart zařízení do bootloaderu](./).
+* **revision** - Zjištění [revize zařízení](../../funkcionality/revize.md)
 
 ## Příkazy pouze s parametrem
 
