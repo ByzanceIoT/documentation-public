@@ -4,7 +4,9 @@ Autobackup je funkce, která se stará o automatickou zálohu aktuálního funk�
 
 ## Vlastnosti autobackup
 
-Pokud je funkce autobackup **zapnutá**, při nahrávání nového firmware se původně běžící firmware zazálohuje a při chybě nové binárky se dokáže tato konfigurace obnovit. Tomuto typu zálohy se říká **dynamická záloha**. V případě, že je automatická záloha posledního funkčního firmware nežádoucí a je třeba jeden záložní firmware pro všechny situace, funkce autobackup je **vypnutá** a tomuto typu se říká **statická záloha**.
+Pokud je funkce autobackup **zapnutá**, při nahrávání nového firmware se původně běžící firmware zazálohuje a při chybě nové binárky se dokáže tato konfigurace obnovit. Tomuto typu zálohy se říká [**dynamická záloha**](autobackup.md#dynamicka-zaloha).
+
+V případě, že je automatická záloha posledního funkčního firmware nežádoucí a je třeba jeden záložní firmware pro všechny situace, funkce autobackup je **vypnutá** a tomuto typu se říká [**statická záloha**](autobackup.md#staticka-zaloha).
 
 ![](../../.gitbook/assets/autobackup.png)
 
@@ -17,7 +19,7 @@ Zapnutý autobackup, tedy dynamická záloha přináší určité výhody i nev�
 
 ## Statická záloha
 
-V případě, že je autobackup **vypnutý**, zařízení spoléhá na to, že v záložním sektoru existuje platná **statická záloha,** která byla do zařízení při vypnutí autobackupu doručena. Pokud update binárky neproběhne v pořádku, statická záloha se automaticky obnoví.
+V případě, že je autobackup **vypnutý**, zařízení spoléhá na to, že v záložním sektoru existuje platná **statická záloha,** která byla do zařízení před vypnutím autobackupu doručena. Pokud aktualizace binárky neproběhne v pořádku, statická záloha se automaticky obnoví.
 
 * Výhodou je, že stačí zálohu nahrát jednou a zařízení si ji "navždy" pamatuje \(případně do doby než je autobackup zapnutý, čímž se záloha se automaticky přepíše na dynamickou\).
 * Nevýhoda je to, že pokud update selže, může se obnovit velmi stará fukční konfigurace, která v aktuálním kontextu nemusí být dávno platná.
