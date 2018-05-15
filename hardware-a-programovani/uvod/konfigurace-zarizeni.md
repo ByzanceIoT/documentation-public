@@ -2,15 +2,15 @@
 
 ## Základní informace
 
-Všechna zařízení IODAG3E jsou konfigurovatelná .
+Všechna zařízení IODAG3E jsou konfigurovatelná. Je-li třeba změnit výchozí konfiguraci, je třeba chápat synchronizační mechanismus a uvědomit si možné důsledky. Konfigurační parametry existují na dvou místech - online v Cloudu a offline v IODAG3E.
 
-
+Dojde-li ke konfliktu mezi jednotlivými konfiguračními soubory, soubor v IODAG3E je při připojení k internetu automaticky přepsán konfigurací z Portálu. Proto je nutno konfiguraci provádět primárně z Portálu a ostatní metody brát jako doplňkové pro případ, že bude zařízení offline. 
 
 ![](../../.gitbook/assets/config_overview.jpg)
 
 ## Konfigurace z Portálu
 
-pokec
+Preferovaný způsob při konfiguraci zařízení. 
 
 ![](../../.gitbook/assets/config_portal.PNG)
 
