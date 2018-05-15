@@ -4,6 +4,10 @@
 
 Všechna zařízení IODAG3E jsou konfigurovatelná .
 
+
+
+![](../../.gitbook/assets/config_overview.jpg)
+
 ## Konfigurace z Portálu
 
 pokec
