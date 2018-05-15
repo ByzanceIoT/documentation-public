@@ -76,7 +76,7 @@
   * [Bootloader](hardware-a-programovani/architektura-fw/bootloader/README.md)
     * [Režimy bootloaderu](hardware-a-programovani/architektura-fw/bootloader/rezimy-bootloaderu.md)
     * [Command mód](hardware-a-programovani/architektura-fw/bootloader/command-mod.md)
-    * [Další vlastnosti](hardware-a-programovani/architektura-fw/bootloader/dalsi-vlastnosti.md)
+    * [Další vlastnosti bootloaderu](hardware-a-programovani/architektura-fw/bootloader/dalsi-vlastnosti.md)
     * [Výchozí hodnoty](hardware-a-programovani/architektura-fw/bootloader/vychozi-hodnoty.md)
 * [Programování HW](hardware-a-programovani/programovani-hw/README.md)
   * [Struktura programu](hardware-a-programovani/programovani-hw/struktura-programu.md)

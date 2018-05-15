@@ -1,4 +1,4 @@
-# Další vlastnosti
+# Další vlastnosti bootloaderu
 
 ## Autojump
 
