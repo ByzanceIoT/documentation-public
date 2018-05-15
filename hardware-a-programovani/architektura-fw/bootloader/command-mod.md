@@ -1,12 +1,12 @@
 # Command mód
 
-V command režimu je možné pomocí příkazů posílaných po [sériové lince](../../tutorialy/komunikace-po-seriove-lince-uart/) ověřovat a nastavovat konfigurační parametry.
+Command mód je jeden z režimů [bootloaderu](./), kde je možné pomocí příkazů posílaných po [sériové lince](../../tutorialy/komunikace-po-seriove-lince-uart/) ověřovat a [nastavovat konfigurační parametry](../../uvod/konfigurace-zarizeni.md). Ostatní režimy jsou popsány v [příslušné kapitole](rezimy-bootloaderu.md).
 
 Do command režimu bootloaderu je možno vstopit následujícím způsobem
 
 1. podržet RESET a USER tlačítko dohromady
 2. pustit RESET tlačítko
-3. počkat několik sekund, než zhasne červená LED
+3. počkat několik sekund, než zhasne žlutá LED
 4. pustit USER tlačítko
 
 ![](../../../.gitbook/assets/bootloader.gif)
