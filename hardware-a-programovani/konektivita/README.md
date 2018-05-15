@@ -9,8 +9,10 @@ Pro plné využití IoT platformy je nutné připojit všechny její části k I
 Jednotku IODAG3E je možné připojit k Internetu pomocí:
 
 * Ethernetu
-* GSM shieldu
-* technologie 6LowPAN
+* [GSM](https://docu.byzance.cz/~/edit/primary/hardware-a-programovani/konektivita)
+* technologie [6LowPAN](https://docu.byzance.cz/~/edit/primary/hardware-a-programovani/konektivita)
 
 \#TODO nějaký marketingový obrázek s IODY, jak se připojují k portálu pomocí Ethernetu/GSM/6lowpan
+
+
 
