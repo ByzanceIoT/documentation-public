@@ -109,7 +109,7 @@ Jako analogové výstupy lze použít následující dva piny:
 | Funkce | Pin |
 | :--- | :--- |
 | DAC\_OUT1 | Y23 |
-| DAC\_OUT2 | Y24 |
+| DAC\_OUT2 | Y25 |
 
 ### I2C
 
