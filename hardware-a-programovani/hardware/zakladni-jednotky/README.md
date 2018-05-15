@@ -44,7 +44,7 @@ Fyzicky jsou výstupy rozděleny do dvou skupin, tzn. na **X konektor **a **Y ko
 
 Oproti tomu **Y konektor** není fyzicky vyveden na žádný konektor, ale vývody jsou dostupné pouze na hranách základních jednotek ve frézovaných prokovech. Vývody slouží pro další rozšíření vstupů a výstupů.
 
-Popis jednotlivých výstupů je závislý na typu základní jednotky - různé základní jednotky se mohou mírně odlišovat v dostupných pinech/funkcích \(tzn. pin X05 může být hardwarově připojen na různý pin mikrokontroléru na různých základních jednotkách\). Ukázka zapojení vývodů pro jednotku IODAG3E [zde](iodag3e/rozhrani-a-periferie.md#gpio-a-sbernice).
+Popis jednotlivých výstupů je závislý na typu základní jednotky - různé základní jednotky se mohou mírně odlišovat v dostupných pinech/funkcích \(tzn. pin X05 může být hardwarově připojen na různý pin mikrokontroléru na různých základních jednotkách\). Ukázka konkrétního zapojení vývodů pro jednotku IODAG3E [zde](iodag3e/rozhrani-a-periferie.md#gpio-a-sbernice).
 
 ![P&#x159;&#xED;klad X konektoru \(vlevo\) a Y konektory \(vpravo\) na z&#xE1;kladn&#xED; desce IODAG3E.](../../../.gitbook/assets/x_y_conn.png)
 
