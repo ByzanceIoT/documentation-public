@@ -22,7 +22,26 @@ Konfigurace probíhá pomocí [sériové linky](../tutorialy/komunikace-po-serio
 
 ## Konfigurace z Byzance API
 
-pokec
+Pro zjištění či nastavení jednotlivých konfiguračních parametrů v průběhu běhu firmware je možno využít Byzance API. 
+
+```cpp
+#include "byzance.h"
+
+char alias[64];
+
+void init(){
+
+	Byzance::get_alias(alias);
+	printf("alias: %s\n", alias);
+
+}
+
+void loop(){
+
+	Thread::wait(500);
+
+}
+```
 
 ## Konfigurace z webového rozhraní
 
