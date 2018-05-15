@@ -1,5 +1,7 @@
 # Režimy bootloaderu
 
+Bootloader \(tzv. zavaděč\) je softwarová komponenta, která se spouští jako první při zapnutí zařízení. Jejím úkolem je většinou pouze skok do hlavního programu. Má ale i několik dalších módů, které popisuje tato kapitola. Speciálním režimem je [mód commands](command-mod.md), díky němuž je možno [konfigurovat zařízení](../../uvod/konfigurace-zarizeni.md).
+
 ## Mód JUMP
 
 Jedná se o výchozí mód, pokud není nastaveno jinak. Cílem je pouze spustit hlavní firmware.
@@ -52,7 +54,7 @@ Mód FACTORY RESET slouží k nastavený [výchozích hodnot](vychozi-hodnoty.md
 
 ## Výběr režimu
 
-Výběr režimu se řídí pravidly popsanými výše.  Popis doplňuje následující ilustrace stavového automatu mezi jednotlivými režimy.
+Výběr režimu se řídí pravidly popsanými výše. Ucelený přehled a přechody mezi jednotlivými režimy shrnuje následující ilustrace stavového automatu bootloaderu.
 
 
 
