@@ -1,32 +1,30 @@
 # Aktualizace FW
 
-Pokud je třeba aktualizovat některou z komponent Ioda, je třeba provést následující kroky
+Každé zařízení IODAG3E umožňuje vytvářet vlastní hlavní i záložní firmware, kterými je možno vzdáleně aktualizovat zařízení. Podporována je i vzdálená aktualizace [bootloaderu](bootloader/).
 
-* IODA se musí připravit na příjem nové binárky. V tomto kroku probíhá většinou mazání sekce ''buffer'', je-li to třeba. Tento krok se nazývá **prepare**.
-* Nahrátí samotné binárky do IODA - proces **upload**. Binárka se v této chvíli uloží do sekce ''buffer''.
-* Aktualizace příslušné komponenty binárkou uloženou v sekci ''buffer''. Krok se nazývá **update**.
+Postup nahrávání je vždy stejný. Nová aktualizace se nahrává do sekce Buffer a teprve poté se rozhoduje, kam bude aktualizace zkopírována. Celý proces mezi Portálem a zařízením IODAG3E se tedy pro jednotlivé komponenty neliší a je možno jej postupně popsat následujícími kroky:
 
-Komponenta může být následující
+* Zařízení potřebuje sekci Buffer před příjmem nejprve smazat - tento krok se nazývá **prepare**. 
+* Nahrátí samotné binárky do IODA - proces [**upload**](aktualizace-fw.md#proces-upload)** **\(podrobněji popsán dále\). Binárka se v této chvíli uloží do sekce ''buffer''.
+* Aktualizace jedné z příslušných komponent aktualizací uloženou v sekci ''buffer''. Krok se nazývá [**update**](aktualizace-fw.md#proces-update)** **\(podrobněji popsán dále\).
 
-* firmware - hlavní program
-* bootloader - bootloader zařízení
-* backup - záložní program
+
 
 ![](../../.gitbook/assets/aktualizace_hw.jpg)
 
 ## Proces upload
 
-V rámci procesu upload probíhá nahrávání binárky z Cloudu do sekce ''buffer'' zařízení. Tento postup je odolný proti výpadku internetového připojení - pokud dojde k poškození přenášených dat či k výpadku, data v sekci ''buffer'' budou automaticky označena za neplatná a není je možné potom nasadit jako jednu z hlavních komponent.
+V rámci procesu upload probíhá nahrávání binárky z Cloudu do sekce ''buffer'' zařízení. Tento postup je odolný proti výpadku internetového připojení - pokud dojde k poškození přenášených dat či k výpadku, data v sekci ''buffer'' budou automaticky označena za neplatná a není je možné potom nasadit jako jednu z hlavních komponent. Tím je zamezeno poškození firmware při aktualizaci.
 
 ## Proces update
 
-Až je binárka nahraná v Iodovi, ještě je stále třeba ji z externí paměti překopírovat na určité místo, což může být například hlavní firmware, bootloader nebo backup.
+Až je binárka nahraná v Iodovi, ještě je stále třeba ji z externí paměti překopírovat na požadované místo, což může být jedna z komponent - hlavní či záložní firmware, nebo bootloader. 
 
 ### Komponenta firmware
 
-Pokud je updatována komponenta firmware, automaticky se zapne signalizátor ''flashflag'' spravovaný bootloaderem a po volitelném restartu **bootloader** provede přeflashování hlavního programu z externí paměti ''buffer'' do interní ''firmware''. V této chvíli se může spustit i funkce autobackup popsaná v samostatném článku.
+Pokud je aktualizována komponenta firmware, automaticky se v průběhu vykonávání normálního programu zapne interní signalizátor ''flashflag''. Tento signalizátor je po restartu detekován [bootloaderem](bootloader/). Na základě toho se poté v bootloaderu spustí proces aktualizace.  může provést zálohu aktuálního firmware \(je-li aktivována funkce [autobackup](autobackup.md)\). Nakonec dojde přeflashování hlavního programu z externí paměti ''buffer'' do interní ''firmware''. 
 
 ### Komponenta backup nebo bootloader
 
-Pokud má být updatována záloha nebo bootloader, kopírování z ''buffer'' do ''backup'' nebo ''bootloader'' se provede v **hlavním firmware** bez nutnosti restartu zařízení.
+Pokud má být aktualizován záložní program nebo bootloader, kopírování z ''buffer'' do ''backup'' nebo ''bootloader'' se provede v **hlavním firmware** bez nutnosti restartu zařízení.
 
