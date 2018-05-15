@@ -2,17 +2,29 @@
 
 ## Autojump
 
-Autojump je funkce bootloaderu, která zajišťuje **skok do hlavního programu**, pokud uživatel neprovedl **žádnou interakci** se zařízením po nastavenou dobu.
+Autojump je funkce bootloaderu, která zajišťuje **skok do hlavního programu**, pokud uživatel neprovedl **žádnou interakci** se zařízením [po sériové lince](../../tutorialy/komunikace-po-seriove-lince-uart/konfigurace-pc.md) v průběhu nastavené doby. Vyjadřuje se ve **vteřinách **jako celé číslo.
 
 ![](../../../.gitbook/assets/autojump.png)
 
-Autojump lze nastavit přímo v Portálu v nastavení konkrétního hardware \(viz obrázek\), v [command režimu](https://github.com/byzance/public-documentation/tree/38b460c46404c197299c0f0a84e3402a9b74c8d7/articles/hardware/ioda/navody/bootloader.md) nebo přímo v uživatelském programu pomocí [Byzance Hardware API](../../programovani-hw/byzance-hardware-api.md)
+Čas Autojump lze konfigurovat jedním ze způsobů popsaným v kapitole konfigurace zařízení.
+
+{% page-ref page="../../uvod/konfigurace-zarizeni.md" %}
 
 ## Restart to bootloader
 
-V návaznosti na Autojump je možné zařízení přímo restartovat do bootloaderu, ve kterém setrvá bez ohledu na Autojump pomocí funkce **Restart to bootloader**
+V určitých případech \(kdy na zařízení běží uživatelský program\) může být pořeba vzdáleně přepnout zařízení do bootloaderu. Právě k tomu slouží funkce "restartbl". Ovládání funkce může probíhat dvěma způsoby. 
 
-Restart do bootloaderu lze provést přímo v portálu \(viz obrázek\) v [command režimu](https://github.com/byzance/public-documentation/tree/38b460c46404c197299c0f0a84e3402a9b74c8d7/articles/hardware/ioda/navody/bootloader.md) a [Byzance Hardware API](../../programovani-hw/byzance-hardware-api.md)
+### **Automaticky online pomocí Portálu**
+
+Toto je doporučovaná varianta. Stačí v Portálu kliknout na tlačítko "restart to bootloader" v záložce Developer Settings u daného zařízení.
 
 ![](../../../.gitbook/assets/restartbl.PNG)
+
+Další možnost, jak docílit restartování zařízení do bootloaderu, je **offline postup** . Funkce je implementována jako signalizátor "restartbl", který je nutno ručně zapnout a potom libovolnou možností vyvolat restart zařízení \(restart po zapnutí "restartbl" není automatický\). Po restartu najde bootloader signalizátor "restartbl" zapnutý, přičemž jej automaticky vypne a zůstane v [command režimu](command-mod.md).
+
+Ruční metody ovládání restartbl jsou popsány v kapitole konfigurace zařízení.
+
+{% page-ref page="../../uvod/konfigurace-zarizeni.md" %}
+
+
 
