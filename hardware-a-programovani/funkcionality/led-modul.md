@@ -42,6 +42,8 @@ Pokud je vyžadováno, uživatelský kód může převzít kontrolu nad LED modu
 
 ## Signalizace Bootloaderu
 
+Bootloader disponuje vlastní vizuální signalizací. Více informací ohledně přechodu do [command režimu](../architektura-fw/bootloader/command-mod.md) před startem firmware či pro obnovení [továrního nastavení ](../architektura-fw/bootloader/rezimy-bootloaderu.md#mod-restore)je možno nalézt v kapitole bootloader.
+
 * Při vstupu do bootloaderu se na RGB modulu rozsvítí **žlutá barva**.
 * Po přepnutí do Command režimu se LED modul přepne do **modré barvy**, kde trvale svítí.
 * Pokud se v bootloaderu začne vykonávat časově náročnější operace \(typicky flashování firmware, záloha atd.\), bootloader nepravidelně přeblikává **žlutě**.
