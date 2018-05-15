@@ -1,16 +1,16 @@
 # Struktura programu
 
-Zařízení Byznce se programují v jazyce **C++** a využívají knihoven **MBED API** a **Byzance API**. Pro správnou funkčnost programu v Byzance zařízení je nutné importovat knihovnu Byzance API příkazem
+Zařízení Byznce se programují v jazyce **C++** a využívají [**MBED API**](https://os.mbed.com/docs/latest/reference/apis.html) a [**Byzance API**](byzance-hardware-api.md). Pro správnou funkčnost programu je nutné na první řádek nejprve importovat knihovnu "byzance.h" příkazem
 
 ```cpp
 #include "byzance.h"
 ```
 
-Tato knihovna má za úkol automaticky inicializovat periferie, připojit zařízení k internetu a inicializovat vlákna, která se starají o update zdrojového kódu a připojení k serverům. Importem knihovny se také zpřístupní [funkce](https://github.com/byzance/public-documentation/tree/38b460c46404c197299c0f0a84e3402a9b74c8d7/programovani/byzance-api/funkce.md) a [uživatelská makra](https://github.com/byzance/public-documentation/tree/38b460c46404c197299c0f0a84e3402a9b74c8d7/programovani/byzance-api/uzivateska-makra/README.md) Byzance API.
+Tato knihovna má za úkol automaticky inicializovat periferie, připojit zařízení k internetu a inicializovat vlákna, která se starají o [aktualizaci firmware](../architektura-fw/aktualizace-fw.md) a připojení k serverům. Importem knihovny se také zpřístupní [funkce](https://github.com/byzance/public-documentation/tree/38b460c46404c197299c0f0a84e3402a9b74c8d7/programovani/byzance-api/funkce.md) a [uživatelská makra](https://github.com/byzance/public-documentation/tree/38b460c46404c197299c0f0a84e3402a9b74c8d7/programovani/byzance-api/uzivateska-makra/README.md) Byzance API.
 
 ## Definice fyzických vstupů a výstupů
 
-Následně po importu všech potřebných knihoven, je v případě jejich použití nutné definovat fyzické vstupy a výstupy, které se budou v programu používat. Zařízení Byzance na své GPIO sběrnici disponují Analogovými i digitálními vstupy a výstupy.
+Po importu všech potřebných knihoven je možno začít používat objekty definované v knihovnách. Může se jednat o vytvoření konstuktorů, periferie, nebo fyzické [vstupy a výstupy](../hardware/zakladni-jednotky/iodag3e/rozhrani-a-periferie.md), které se budou v programu používat. 
 
 ```cpp
 // Definice fyzických vstupů a výstupů
