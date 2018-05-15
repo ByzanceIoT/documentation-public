@@ -9,7 +9,9 @@ description: >-
 
 ## Jak vytvořit první program? 
 
-Hardware Byzance se programuje v jazyce C++ a k programování má dostupné všechny standartní knihovny, knihovny [Mbed API](../programovani-hw/mbed-api/) a [Byzance Hardware API](../programovani-hw/byzance-hardware-api.md)**.** Jak má vypadat tělo programu pro Byzance Hardware se lze dozvědět v sekci [Struktura programu](../programovani-hw/struktura-programu.md), nicméně na úvod lze použít následující **Hello World** program. Každý program, který chceme do zařízení IODA nahrávat musí být uložen jako **main.cpp**, jinak se kompilace neprovede správně.
+Hardware Byzance se programuje v jazyce C++ a k programování má dostupné všechny standartní knihovny, knihovny [Mbed API](../programovani-hw/mbed-api/) a [Byzance Hardware API](../programovani-hw/byzance-hardware-api.md)**.** Jak má vypadat tělo programje možno se dozvědět v sekci [Struktura programu](../programovani-hw/struktura-programu.md). Každý program musí obsahovat alespoň jeden hlavní soubor **main.cpp**, jinak se kompilace neprovede správně. 
+
+Vhodnou ukázkou prvního programu může být například známý **Hello World**, který pravidelně vypisuje pozdrav přes [sériovou linku](../tutorialy/komunikace-po-seriove-lince-uart/#konfigurace-pc).
 
 ```cpp
 #include "byzance.h"
