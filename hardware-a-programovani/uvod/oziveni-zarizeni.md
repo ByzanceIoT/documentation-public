@@ -14,9 +14,15 @@ Po připojení USB kabelu lze pozorovat rozsvícení několika indikačních LED
 
 ## Připojení k portálu
 
-Všechna zařízení Byzance jsou nastavena již z výroby, tudíž pro připojení k portálu stačí k zařízení připojit Ethernetový kabel a zařízení se samo připojí. Úspěšné připojení zařízení indikuje rychlým blikáním led modulu
+Všechna zařízení Byzance jsou nakonfigurována již z výroby, tudíž pro komunikaci s Portálem stačí k zařízení již pouze připojit ethernetový kabel. Úspěšná komunikace je indikována rychlým blikáním LED modulu.
 
 ![](../../.gitbook/assets/connected%20%281%29.gif)
 
-Pokud vše proběhlo úspěšně, zařízení je připraveno na upload prvního funkčního programu.
+Pokud vše proběhlo úspěšně, zařízení je připraveno na [nahrání prvního programu](../architektura-fw/aktualizace-fw.md).
+
+Nastal-li jakýkoliv problém, zařízení jej může detekovat jedním z dalších možných blikacích kódů LED modulu.
+
+{% page-ref page="../funkcionality/led-modul.md" %}
+
+
 
