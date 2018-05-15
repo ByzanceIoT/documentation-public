@@ -56,7 +56,7 @@
       * [Konektor X a Y](hardware-a-programovani/hardware/zakladni-jednotky/iodag3e/konektor-x-a-y.md)
     * IODAG3L
   * [Rozšiřující moduly](hardware-a-programovani/hardware/rozsirujici-moduly/README.md)
-    * GSM shield
+    * [GSM shield](hardware-a-programovani/hardware/rozsirujici-moduly/gsm-shield.md)
     * [LED shield](hardware-a-programovani/hardware/rozsirujici-moduly/led-shield.md)
     * [Relay shield](hardware-a-programovani/hardware/rozsirujici-moduly/untitled.md)
     * [RFID shield](hardware-a-programovani/hardware/rozsirujici-moduly/rfid-shield.md)
