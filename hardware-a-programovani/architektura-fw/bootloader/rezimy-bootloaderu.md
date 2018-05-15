@@ -50,3 +50,11 @@ Tyto a mnoho dalších informací jsou zpracovány v samostatném článku.
 
 Mód FACTORY RESET slouží k nastavený [výchozích hodnot](vychozi-hodnoty.md). Je možno jej vyvolat tak, že uživatel stiskne zároveň tlačítka ''restart'' a ''user'', pustí ''restart'' a tlačítko ''user'' drží dlouhou dobu, zpravidla více jak 10 sekund. V této chvíli nastává vymazání paměti a nastavení [výchozích hodnot](vychozi-hodnoty.md), načež se spustí režim COMMANDS, stejně jako by byl mikrokontrolér poprvé spuštěn.
 
+## Výběr režimu
+
+Výběr režimu se řídí pravidly popsanými výše.  Popis doplňuje následující ilustrace stavového automatu mezi jednotlivými režimy.
+
+
+
+![](../../../.gitbook/assets/rezimy%20%281%29.png)
+

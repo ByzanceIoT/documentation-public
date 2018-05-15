@@ -4,5 +4,5 @@ Bootloader je firmwarová komponenta nahraná v každém zařízení Byzance. Au
 
 Jednotlivé režimy jsou popsány v kapitolách [režimy bootloaderu](rezimy-bootloaderu.md), přičemž nejrozsáhlejší část - [command mode](command-mod.md) - má vyhrazenou vlastní kapitolu.
 
-![bootloader\_schema](../../../.gitbook/assets/bootloader_schema.png)
+![](../../../.gitbook/assets/img_20180515_124756.jpg)
 
