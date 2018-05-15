@@ -13,7 +13,7 @@ Webové rozhraní je funkce, která je součástí každého zařízení Byzance
 
 ## Jak získat přístup do webového rozhraní
 
-* Webové rozhraní musí být povoleno v [bootloaderu příkazy](../../architektura-fw/bootloader/) ''webview'' a nakonfigurováno na konrétní port příkazem ''webport''.
+* Webové rozhraní musí být povoleno v [bootloaderu příkazy](../../architektura-fw/bootloader/) ''webview=1'' a nakonfigurováno na konrétní port příkazem ''webport''=80.
 * Je třeba zjistit IP adresu Iody \(například z routeru, nebo při běhu firmware metodou get\_ip\).
 * Nakonec je třeba zadat IP adresu a případný port do webového prohlížeče.
 
