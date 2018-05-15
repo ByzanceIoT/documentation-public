@@ -4,7 +4,7 @@
 
 Základní jednotka je zařízení, které slouží jako hlavní součást chytrého zařízení. Většinou je označováno jako IODA.
 
-Základní jednotka je samostatně fungující plnohodnotý kus hardware, který je schopný připojení do cloudu a autonomní funkce. Základní jednotky mají programovatelné vstupy a výstupy, nejrůznější sběrnice a rozhraní a po napojení jednotek na cloud slouží jednotky jako IoT prvky. V závislosti na na konkrétním typu jednotky se liší druh připojení do cloudu \(ethernet, GSM,  6LoWPAN\). 
+Základní jednotka je samostatně fungující plnohodnotý kus hardware, který je schopný připojení do cloudu a autonomní funkce. Základní jednotky mají programovatelné vstupy a výstupy, nejrůznější sběrnice a rozhraní a po napojení jednotek na cloud slouží jednotky jako IoT prvky. V závislosti na na konkrétním typu jednotky se liší druh [připojení do cloudu](../../konektivita/) \(ethernet, GSM,  6LoWPAN\). 
 
 ![Z&#xE1;kladn&#xED; jednotkya typu IODAG3E.](../../../.gitbook/assets/maly_ioda.png)
 
