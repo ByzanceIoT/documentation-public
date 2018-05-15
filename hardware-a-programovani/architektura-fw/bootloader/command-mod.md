@@ -39,7 +39,7 @@ Více informací k MQTT připojení je možno nalézt v sekci [Komunikace se ser
 * **blreport** - Bootloader report. Zapnutí, nebo vypnutí výpisu hlavičky [bootloader](https://github.com/byzance/public-documentation/tree/38b460c46404c197299c0f0a84e3402a9b74c8d7/articles/hardware/ioda/navody/bootloader.md)u do konzole.
 * **wdenable** - Zapnutí [watchdogu](../../funkcionality/watchdog.md).
 * **wdtime** - Nastavení periody resetu [watchdogu](../../funkcionality/watchdog.md).
-* **autobackup** - Funkce, která zajišťuje, že při nahrátí nové binárky se stará zálohuje.
+* **autobackup** - Funkce, která zajišťuje, zajišťuje zálohu starého firmware při doručení nového.
 * **netsource** - Zdroj, odkud bere zařízení internet.
 * **configured** - při prvním spuštění bootloader naběhne vždy do Command režimu a čeká na konfiguraci všech parametrů. Až jsou parametry nastaveny, ''configured'' se přepne na 1 a tím se dá zařízení najevo, že je již plně nakonfigurováno a příště bude už nabíhat do normálního programu.
 * **webview** - Zapnutí nebo vypnutí funkcionality [webového rozhraní](../../funkcionality/webove-rozhrani/).
