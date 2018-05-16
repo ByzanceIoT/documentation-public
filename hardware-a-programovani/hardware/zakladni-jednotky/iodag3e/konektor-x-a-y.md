@@ -1,6 +1,6 @@
 # Konektor X a Y
 
-Podrobný popis konektorů X a Y včetně všech periferií \(sběrnice UART, I2C, SPI, CAN, dále pak časovač TIM, dostupnost ADC a DAC\). Umístění a pinout kounektorů viz. [GPIO a sběrnice](https://docu.byzance.cz/hardware-a-programovani/hardware/zakladni-jednotky/iodag3e/rozhrani-a-periferie#gpio-a-sbernice).
+Stránka obsahuje podrobný popis zapojení [konektorů X a Y ](../../rozsirujici-moduly/#x-konektor-a-y-konektor)na mikrokontrolér jednotky.  včetně všech dostupných periferií \(sběrnice UART, I2C, SPI, CAN, časovač TIM, ADC, DAC, ...\). Umístění a pinout kounektorů viz. [GPIO a sběrnice](https://docu.byzance.cz/hardware-a-programovani/hardware/zakladni-jednotky/iodag3e/rozhrani-a-periferie#gpio-a-sbernice).
 
 ## Konektor X
 

@@ -22,7 +22,7 @@ Napájení PoE \(Power Over Ethernet\) je napájením po datovém síťovém kab
 
 ### Aktivní PoE
 
-Aktivní PoE existuje ve více standardech a jedním z nich je i standard IEEE 802.3af se kterým je IODAG3E kompatibilní. Přesněji řečeno IODAG3E v revizi 170725 je kompatibilní se standardem IODAG3E IEEE  802.3af PoE Mode A. Z tohoto důvodu se pro napájení hodí aktivní switche se zmíněným standardem a nebo standardem IEEE  802.3at. Switch standardu IEEE  802.3af PoE Mode B použít v dané revizi nelze. 
+Aktivní PoE existuje ve více standardech a jedním z nich je i standard IEEE 802.3af se kterým je IODAG3E kompatibilní. Přesněji řečeno IODAG3E v revizi 170725 je kompatibilní se standardem IODAG3E IEEE  802.3af PoE Mode A. Z tohoto důvodu se pro napájení hodí aktivní switch se zmíněným standardem a nebo standardem IEEE  802.3at. Switch standardu IEEE  802.3af PoE Mode B použít v dané revizi nelze. 
 
 IODAG3E je Class 0 zařízení, tudíž přes PoE může odebírat max. 12.95W energie a akceptuje napětí od 37 do 57V.
 
