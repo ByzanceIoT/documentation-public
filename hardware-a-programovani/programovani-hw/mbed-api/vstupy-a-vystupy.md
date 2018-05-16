@@ -242,20 +242,28 @@ void loop(){
 Funkce InterruptIn umožňuje uživateli okamžitě reagovat na změnu logické úrovně libovolného pinu \(na náběžnou i sestupnou hranu\) a na základě této změny zavolat libovolnou funkci.
 
 ```cpp
-InterruptIn button(X08); //Připojení interruptu k pinu X08
-DigitalOut led(X05);
+#include "byzance.h"
 
+InterruptIn button(USR); //InterruptIn on USR button
+DigitalOut led(LED_BLUE);
 
-//Při stisknutí tlačítka změn logickou hodnotu na pinu X05
 void pushed_button(){
- led = !led;
+    led = 1;		//on pushed button, turn on blue LED
+}
+
+void released_button(){
+    led = 0;		//on released button, turn off blue LED
 }
 
 void init(){
+    Byzance::led_module(false);  	//disable LED module for Byzance
+    button.fall(&pushed_button);	//attach pusehed_button function on rising edge
+    button.rise(&released_button);	//attach released_button function on falling edge
+}
 
-//Připojení adresy funkce pushed_button na náběžnou hranu pinu X08 
-button.rise(&pushed_button); 
-
+void loop(){
+	printf("im running!\n");
+	Thread::wait(1000);
 }
 ```
 
