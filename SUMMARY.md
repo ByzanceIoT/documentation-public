@@ -132,12 +132,5 @@
 
 ## Hardware \(old\)
 
-* [Features \(přemigrovat\)](hardware-old/features-premigrovat/README.md)
-  * [Paměť zařízení](hardware-old/features-premigrovat/pamet-zarizeni.md)
-  * [Flash paměť](hardware-old/features-premigrovat/flash-pamet.md)
-
 ## Interní
-
-* [hardware](interni/hardware/README.md)
-  * [Externí paměť mikrokontroléru](interni/hardware/externi-pamet-mikrokontroleru.md)
 
