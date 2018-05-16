@@ -1,4 +1,4 @@
-# Základní návody
+# Základní tutoriály
 
 Základní tutoriály, vyzkoušejte nějaký z následujících komentovaných příkladů:
 

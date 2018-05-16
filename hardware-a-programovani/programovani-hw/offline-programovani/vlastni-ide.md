@@ -4,7 +4,6 @@
 
 Pro programování ve vlastním IDE je třeba zajistit následující
 
-* Instalace MBED a Python
 * Instalace vlastního IDE, např. [SW4STM32](http://www.st.com/en/development-tools/sw4stm32.html), nebo [Eclipse](https://www.eclipse.org/downloads/?)
 * Stažení GITu Byzance FIXME zatím nepodporujeme
 * Vytvoření projektu
@@ -26,7 +25,13 @@ Dále je třeba vyplnit název projektu, který by se měl shodovat s názvem sl
 
 ![](../../../.gitbook/assets/import_project.png)
 
-V nastavení projektu je třeba nastavit vlastní build command, který může vypadat následovně
+Po vytvoření projektu je třeba dostat se do jeho nastavení kliknutím pravého tlačítka na název, případně v horním menu pod položkou 
+
+> Project -&gt; Properties
+
+![](../../../.gitbook/assets/nastaveni_projektu.png)
+
+V nastavení projektu v sekci **C/C++ Build** je třeba nastavit vlastní build command, který může vypadat následovně
 
 ```text
 node ../../_makescript_.js custom/custom_project BYZANCE_IODAG3E
@@ -41,9 +46,17 @@ který se skládá z následujících částí
 
 ![](../../../.gitbook/assets/ide_custom_project.png)
 
-Důležité je prolinkovat projekt s knihovnami.
+Důležité je referencovat projekt s knihovnami.
 
 ![](../../../.gitbook/assets/ide_libs.png)
+
+Tímto je nastavení nového projektu dokončeno. Po kliknutí na položku v menu
+
+> Project -&gt; Build Project
+
+by mělo dojít k buildu projektu. Pokud neobsahuje chyby \(exit code 0\), výsledkem by měla být informace o úspěšném dokončení a přehled využití jednotlivých částí paměti, oboje vypsané do konzole.
+
+![](../../../.gitbook/assets/compile.PNG)
 
 ## Programování
 

@@ -98,7 +98,7 @@
   * [Komunikace po sériové lince \(UART\) s PC](hardware-a-programovani/tutorialy/komunikace-po-seriove-lince-uart/README.md)
     * [Konfigurace sériové linky v PC](hardware-a-programovani/tutorialy/komunikace-po-seriove-lince-uart/konfigurace-pc.md)
     * [Programování sériové linky](hardware-a-programovani/tutorialy/komunikace-po-seriove-lince-uart/untitled.md)
-  * [Základní návody](hardware-a-programovani/tutorialy/zaklady/README.md)
+  * [Základní tutoriály](hardware-a-programovani/tutorialy/zaklady/README.md)
     * [Digital Read Serial](hardware-a-programovani/tutorialy/zaklady/digital-read-serial.md)
     * [Analog Read Serial](hardware-a-programovani/tutorialy/zaklady/analog-read-serial.md)
     * [Fade](hardware-a-programovani/tutorialy/zaklady/fade.md)
