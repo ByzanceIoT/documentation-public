@@ -61,8 +61,18 @@ void loop(){
 Nastaví na digitálním vástupu logickou úroveň.
 
 ```cpp
-DigitalOut dout(pin_name);
-dout=1;
+#include "byzance.h"
+
+DigitalOut dout(LED_BLUE);
+
+void init(){
+    Byzance::led_module(false);  	//disable LED module for Byzance
+}
+
+void loop(){
+	dout = !dout;				//read the value, invert it and store again
+	Thread::wait(1000);
+}
 ```
 
 ## DigitalInOut
@@ -90,8 +100,9 @@ pc.printf("diout value = %d \n", diout.read());
 Funkcí BusIn lze vést libovolný počet digitálních vstupů jako bus, což umožňuje přečíst digitální hodnotu těchto vstupů jako jedno číslo.
 
 ```cpp
+#include "byzance.h"
 // Tři přepínače vedené jako BUS připojené na vstupy X1,X2,X3
-BusIn switches(X01,X02,X03);
+BusIn switches(X01,X02,USR);
 
 void init(){
 
@@ -104,14 +115,14 @@ void loop(){
   switch(switches.read()){
   // na základě hodnoty vypíše, která kombinace přepínačů je navolená.
 
-      case 0x0: printf("everything LOW\n"); break;
-      case 0x1: printf("X01-UP X02-DOWN X03-DOWN\n"); break;
-      case 0x2: printf("X01-DOWN X02-UP X03-DOWN\n"); break;
-      case 0x3: printf("X01-UP X02-UP X03-DOWN\n"); break;
-      case 0x4: printf("X01-DOWN X02-DOWN X03-UP\n"); break;
-      case 0x5: printf("X01-UP X02-DOWN X03-UP\n"); break;
-      case 0x6: printf("X01-DOWN X02-UP X03-UP\n"); break;
-      case 0x7: printf("X01-UP X02-UP X03-UP\n"); break;
+      case 0x0: printf("X01-DOWN X02-DOWNW USR-not-pressed\n"); break;
+      case 0x1: printf("X01-UP X02-DOWN USR-not-pressed\n"); break;
+      case 0x2: printf("X01-DOWN X02-UP USR-not-pressed\n"); break;
+      case 0x3: printf("X01-UP X02-UP USR-not-pressed\n"); break;
+      case 0x4: printf("X01-DOWN X02-DOWN USR-pressed\n"); break;
+      case 0x5: printf("X01-UP X02-DOWN USR-pressed\n"); break;
+      case 0x6: printf("X01-DOWN X02-UP USR-pressed\n"); break;
+      case 0x7: printf("X01-UP X02-UP USR-pressed\n"); break;
   }
 
 }
@@ -124,20 +135,24 @@ Třída BusOut definuje z libovolného počtu digitálních výstupů výstupní
 ```cpp
 #include "byzance.h"
 
-BusOut leds(LED_BLUE, LED_GREEN, LED_RED);	//BusOut as RGB LED
+BusIn switches(X01,X02,USR);	//bus is defined X01, X02 and USR button
 
 void init(){
-    Byzance::led_module(false);  	//disable LED module for Byzance
+	switches.mode(PullDown);	//set all pins as pull-down
 }
 
 void loop(){
-	for(uint8_t i = 0; i < 8; i++){
-		if(i%2)
-			leds.write(i);	//set the color with method
-		else
-			leds = i;		//using operator =
-		Thread::wait(1000);		//wait for a second
+	switch(switches.read()){	//switch according to bus state	
+		case 0x0: printf("X01-DOWN X02-DOWNW USR-not-pressed\n"); break;
+		case 0x1: printf("X01-UP X02-DOWN USR-not-pressed\n"); break;
+		case 0x2: printf("X01-DOWN X02-UP USR-not-pressed\n"); break;
+		case 0x3: printf("X01-UP X02-UP USR-not-pressed\n"); break;
+		case 0x4: printf("X01-DOWN X02-DOWN USR-pressed\n"); break;
+		case 0x5: printf("X01-UP X02-DOWN USR-pressed\n"); break;
+		case 0x6: printf("X01-DOWN X02-UP USR-pressed\n"); break;
+		case 0x7: printf("X01-UP X02-UP USR-pressed\n"); break;
 	}
+	Thread::wait(500);
 }
 ```
 

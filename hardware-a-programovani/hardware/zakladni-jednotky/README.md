@@ -45,15 +45,17 @@ Všechny jednotky mají v základu _User_  a _Reset_ tlačítko. Tlačítko _Res
 
 Jak již bylo naznačeno v části o [mikrokontroléru](./#mikrokontroler), základní jednotky disponují množinou vstupů a výstupů. Obecně můžeme mluvit o **signálových** vstupech/výstupech a o **napájecích** vývodech. **Signálové** vstupy a výstupy jsou typicky vyvedeny přímo z mikrokontroléru a zahrnují nejrůznější sběrnice \(UART, I2C, SPI, ...\), AD či DA převodníky, PWM výstupy, obecné GPIO \(General-purpose input/output\) atp. Na tyto piny uživatel připojuje další aplikačně specifické obvody \(akční členy, senzory, jiné jednotky, atp.\). **Napájecí** vývody umožňují vyvést interní napájecí větvě i mimo základní jednotku \(3V3, VBUS\) případně skrze ně základní jednotku napájet. 
 
-Základní jednotky disponují **X a Y konektory**, na které jsou popsané signály vyvedeny. Více o vlasnostech a použití v části [X konektor a Y konektor](../rozsirujici-moduly/#x-konektor-a-y-konektor).
+Základní jednotky disponují **X a Y konektory**, na které jsou popsané signály vyvedeny. Více o vlastnostech a použití v části [X konektor a Y konektor](../rozsirujici-moduly/#x-konektor-a-y-konektor).
+
+![P&#x159;&#xED;klad X konektoru \(vlevo\) a Y konektory \(vpravo\) na z&#xE1;kladn&#xED; desce IODAG3E.](../../../.gitbook/assets/x_y_conn%20%282%29.png)
 
 ### SWD
 
-Rozhraním SWD \(Serial Wire Debug\) je vybavena každá základní jednotka a hodí se při vývoji na zařízení. Přes SWD rozhraní je možné do základních jednotek nahrávat zkompilovaný firmware nebo debugovat běžící program. Více informací o možnostech programování je v článku \#TODO článek o programování.
+Rozhraním SWD \(Serial Wire Debug\) je vybavena každá základní jednotka a hodí se při vývoji na zařízení. Přes SWD rozhraní je možné do základních jednotek nahrávat zkompilovaný firmware nebo debugovat běžící program. Více informací o možnostech programování je v článku o [offline programování](../../programovani-hw/offline-programovani/).
 
 ### Konektivita do cloudu
 
-Pro připojení základní jednotky do cloudu se používají různé technologie \(ethernet, GSM,  6LoWPAN\) a každá z nich vyžaduje další specifické hardwarové komponenty. Z tohoto důvodu je v blokovém schématu uvedena komponenta Konektivita do internetu \(\#TODO přejmenovat na ang. výraz\) a její implementace se odvíjí od typu jednotky.
+Pro připojení základní jednotky do cloudu se používají [různé technologie ](../../konektivita/)\(ethernet, GSM,  6LoWPAN\) a každá z nich vyžaduje další specifické hardwarové komponenty. Z tohoto důvodu je v blokovém schématu uvedena komponenta Konektivita do internetu \(\#TODO přejmenovat na ang. výraz\) a její implementace se odvíjí od typu jednotky.
 
 ## Typy základních jednotek
 

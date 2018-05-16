@@ -33,6 +33,17 @@ Sem je napojen dělič, jehož výstup PWR\_MEAS je připojen do mikrokontrolér
 
 Napájecí napětí je však pouze orientační. Na základě zvolené větve napájení je třeba pro zjištění skutečné hodnoty k naměřené hodnotě přičíst úbytky na usměrňovací kaskádě - zhruba 0,7 voltu při průchodu každou diodou.
 
+## Teplota jádra
+
+| Symbol | Rozsah | Přesnost |
+| --- | --- |
+| Vsense | -40°C až 125°C | 1,5°C |
+
+Teplotu jádra je možno získat
+
+* ve [webovém rozhraní](webove-rozhrani/)
+* pomocí uživatelského kódu a [Byzance API](../programovani-hw/byzance-hardware-api.md).
+
 ## Referenční napětí
 
 | Symbol | Podmínky | Min | Typ | Max | Jednotka |
@@ -44,18 +55,9 @@ Hodnotu referenčního napětí je možno získat
 * ve [webovém rozhraní](webove-rozhrani/)
 * pomocí uživatelského kódu a [Byzance API](../programovani-hw/byzance-hardware-api.md).
 
-## Teplota jádra
+![](../../.gitbook/assets/measure.png)
 
-R
-
-| Rozsah teplot | -40°C až 125°C |
-| --- | --- |
-| Přesnost | ± 1,5°C |
-
-Teplotu jádra je možno získat
-
-* ve [webovém rozhraní](webove-rozhrani/)
-* pomocí uživatelského kódu a [Byzance API](../programovani-hw/byzance-hardware-api.md).
+## 
 
 
 

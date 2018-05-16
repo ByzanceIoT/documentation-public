@@ -10,7 +10,7 @@ Na [základní jednotky](../zakladni-jednotky/) se připojují v této kapitole 
 
 Fyzicky jsou vstupy a výstupy základních jednotek rozděleny do dvou skupin, tzn. na **X konektor** a **Y konektor**. Tyto konektory obsahují vybrané na základní jednotce dostupné periferie \(UART, I2C, PWM, ...\), napájecí signály a nebo signály pro [SWD ](../../programovani-hw/offline-programovani/)či reset. 
 
-![P&#x159;&#xED;klad X konektoru \(vlevo\) a Y konektory \(vpravo\) na z&#xE1;kladn&#xED; desce IODAG3E.](../../../.gitbook/assets/x_y_conn%20%282%29.png)
+![P&#x159;&#xED;klad X konektoru \(vlevo\) a Y konektory \(vpravo\) na z&#xE1;kladn&#xED; desce IODAG3E.](../../../.gitbook/assets/x_y_conn%20%283%29.png)
 
 ### X konektor
 
@@ -63,7 +63,7 @@ Elektrická kompatibilita se odvíjí od sdílení pinů X konektoru mezi jednot
 
 V případě elektrické kompatibility shieldů je níže dostupná tabulka kompatibility, kde je kompatibilita patrná. 
 
-![Tabulka elektrick&#xE9; kompatibility shield&#x16F;.](../../../.gitbook/assets/xconn_docu%20%281%29.svg)
+![](../../../.gitbook/assets/xconn.svg)
 
 ## Firmware
 
