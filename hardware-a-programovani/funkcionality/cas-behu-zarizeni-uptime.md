@@ -15,7 +15,23 @@ uptime kód
 * Ve [webovém rozhraní](webove-rozhrani/)
 * Pomocí uživatelského kódu a [Byzance API](../programovani-hw/byzance-hardware-api.md)
 
-## Connected time
+## Čas připojení k serverům
+
+bla
+
+## Napájecí napětí
+
+bla
+
+## Referenční napětí
+
+bla
+
+## Teplota jádra
+
+bla
+
+
 
 
 
