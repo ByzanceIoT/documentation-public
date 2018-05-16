@@ -118,7 +118,7 @@
     * [Konfigurace MQTT](hardware-a-programovani/funkcionality/webove-rozhrani/konfigurace-mqtt.md)
     * [Nastavení](hardware-a-programovani/funkcionality/webove-rozhrani/nastaveni.md)
   * [Webová konzole](hardware-a-programovani/funkcionality/webova-konzole.md)
-  * [Vytížení CPU](hardware-a-programovani/funkcionality/vytizeni-cpu.md)
+  * [Vytížení zařízení](hardware-a-programovani/funkcionality/vytizeni-cpu.md)
   * [Odložený restart](hardware-a-programovani/funkcionality/odlozeni-restart.md)
   * [Identifikace zařízení](hardware-a-programovani/funkcionality/identifikace-zarizeni.md)
   * [Revize](hardware-a-programovani/funkcionality/revize.md)
