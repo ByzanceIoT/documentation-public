@@ -26,17 +26,23 @@ Hodnotu "connected time" je možno zjistit
 
 bla
 
+\#TODO: referencovat potom na napájení iody
+
 ## Referenční napětí
 
 bla
 
+
+
 ## Teplota jádra
 
-bla
+R
 
-## Ukázka 
+| Rozsah teplot | -40°C až 125°C |
+| --- | --- |
+| Přesnost | ± 1,5°C |
 
-nějaký kód, který vše měří a vypisuje
+## 
 
 
 
