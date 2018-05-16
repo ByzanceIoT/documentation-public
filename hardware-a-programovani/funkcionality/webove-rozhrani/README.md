@@ -42,11 +42,3 @@ Adresa i s portem pak může vypadat například následovně
 
 > [http://192.168.67.4:1234/](http://192.168.67.4:1234/)
 
-## Nároky po zapnutí
-
-* 1 vlákno
-* 2kB stack RAM
-* zhruba 2kB heap RAM
-* 1 socket TCPSocket a 1 socket TCPServer
-* několik KB flash paměti \(+- 40kB\), převážně pro HTML kód
-
