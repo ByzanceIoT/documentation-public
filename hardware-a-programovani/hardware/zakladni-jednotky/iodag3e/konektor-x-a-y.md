@@ -2,7 +2,9 @@
 
 Každá [základní jednotka ](../)může mít piny [X a Y konektoru](../../rozsirujici-moduly/#x-konektor-a-y-konektor) zapojeny na mikrokontrolér odlišně. Tato stránka obsahuje podrobný a na typu jednotky závislý popis zapojení pinů [konektorů X a Y. ](../../rozsirujici-moduly/#x-konektor-a-y-konektor) Jednotka [IODAG3E](./) disponuje vývody periferií jako např. UART, I2C, SPI, CAN, TIM, ADC, DAC a přesné zapojení je v tabulce níže.
 
-![Kompletn&#xED; zapojen&#xED; pin&#x16F; X konektoru na desce IODAG3E.](../../../../.gitbook/assets/xconn_x_conn%20%281%29.svg)
+![](../../../../.gitbook/assets/x_conn_komplet%20%281%29.svg)
+
+![](../../../../.gitbook/assets/y_conn_komplet.svg)
 
 ## Konektor X
 
