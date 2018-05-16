@@ -106,35 +106,19 @@ void loop(){
 Funkce BusOut definuje z libovolného počtu digitálních výstupů bus, který lze ovládat zápisem jedné hodnoty.
 
 ```cpp
-//Definicu busu ze trí výstupů - X01,X02,X03, kde X01 je nejnižší bit
-BusOut leds(X01, X02, X03); 
+#include "byzance.h"
 
+BusOut leds(LED_BLUE, LED_GREEN, LED_RED);	//BusOut as RGB LED
+
+void init(){
+    Byzance::led_module(false);  	//disable LED module for Byzance
+}
 
 void loop(){
-
-/* 
-Příklad: 
-Zápis čísla 3 na bus "leds"
-*/
-leds = 3 
-/*
-číslo 3 -> v binární podobě 110 
-
-Logické urovně na pinech busu:
-X01 -> HIGH 
-X02 -> HIGH
-X03 -> LOW
-
-*/
-
-
-
-//Postupné zobrazení čísla 0-8 v binární podobě na LED
-  for(int i = 0; i < 8, i++){
-    leds = i; 
-    wait(0.25);
-  }
-
+	for(uint8_t i = 0; i < 8; i++){
+		leds = i;				//set the color
+		Thread::wait(1000);		//wait for a second
+	}
 }
 ```
 
