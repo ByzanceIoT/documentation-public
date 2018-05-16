@@ -39,15 +39,13 @@ Oproti tomu **Y konektor** není fyzicky vyveden na žádný konektor, ale vývo
 
 \#TODO Pro Y konektor platí podobné věci jako výše popsané pro X.
 
-
-
-
-
 ## Rozměry
 
 Shieldy existují ve dvou velikostech: plná a poloviční. Shield plné velikost má rozměry totožné jako základní jednotka [IODAG3E](../zakladni-jednotky/iodag3e/). Poloviční shield je zcela shodný s plným shieldem pouze s tím rozdílem, že má poloviční délku. Rozměrový nákres je níže \(v milimetrech\).
 
-![](../../../.gitbook/assets/shields_both_sizes_dimensions.png)
+Vlevo je na nákresu vidět umístění X konektoru a dále jsou na shieldech dva resp. čtyři otvory pro M3 šrouby v závislosti na velikosti shieldu.
+
+![Vlevo shield polovi&#x10D;n&#xED; velikosti, vpravo pln&#xE1; velikost.](../../../.gitbook/assets/shields_both_sizes_dimensions.png)
 
 
 

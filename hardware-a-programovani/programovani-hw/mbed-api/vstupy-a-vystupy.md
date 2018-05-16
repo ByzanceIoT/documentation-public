@@ -103,7 +103,7 @@ void loop(){
 
 ## BusOut
 
-Funkce BusOut definuje z libovolného počtu digitálních výstupů bus, který lze ovládat zápisem jedné hodnoty.
+Třída BusOut definuje z libovolného počtu digitálních výstupů výstupní sběrnici.  Na sběrnici je pak možné jednoduše zapisovat. 
 
 ```cpp
 #include "byzance.h"
@@ -116,7 +116,10 @@ void init(){
 
 void loop(){
 	for(uint8_t i = 0; i < 8; i++){
-		leds = i;				//set the color
+		if(i%2)
+			leds.write(i);	//set the color with method
+		else
+			leds = i;		//using operator =
 		Thread::wait(1000);		//wait for a second
 	}
 }
