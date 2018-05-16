@@ -18,7 +18,7 @@ Základní jednotky podporující připojení [shieldů ](./)musí mít integrov
 
 Popis jednotlivých vstupů a výstupů je závislý na typu základní jednotky - různé základní jednotky se mohou mírně odlišovat v dostupných pinech/funkcích \(tzn. pin X05 může být hardwarově připojen na různý pin mikrokontroléru na různých základních jednotkách\). Přesto X konektor definuje např. dostupný UART vždy na pinech X09 a X11 a I2C sběrnici vždy dostupnou na vývodech X06 a X07. 
 
-V tabulce níže je uveden seznam dostupných periferií na každé [základní jednotce ](../zakladni-jednotky/)bez ohledu na její typ. Ukázka konkrétního zapojení vývodů na mikrokontrolér pro jednotku IODAG3E [zde](../zakladni-jednotky/iodag3e/rozhrani-a-periferie.md#gpio-a-sbernice).
+V tabulce níže je uveden seznam dostupných periferií na každé [základní jednotce ](../zakladni-jednotky/)bez ohledu na její typ. Ukázka konkrétního zapojení vývodů na mikrokontrolér pro jednotku IODAG3E [zde](../zakladni-jednotky/iodag3e/konektor-x-a-y.md).
 
 | Pin | Funkce |  | Pin | Funkce |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
