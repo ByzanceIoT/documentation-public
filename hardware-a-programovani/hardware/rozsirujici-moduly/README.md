@@ -10,13 +10,15 @@ Na [základní jednotky](../zakladni-jednotky/) se připojují v této kapitole 
 
 Fyzicky jsou vstupy a výstupy základních jednotek rozděleny do dvou skupin, tzn. na **X konektor** a **Y konektor**. Tyto konektory obsahují vybrané na základní jednotce dostupné periferie \(UART, I2C, PWM, ...\), napájecí signály a nebo signály pro [SWD ](../../programovani-hw/offline-programovani/)či reset. 
 
-Popis jednotlivých vstupů a výstupů je závislý na typu základní jednotky - různé základní jednotky se mohou mírně odlišovat v dostupných pinech/funkcích \(tzn. pin X05 může být hardwarově připojen na různý pin mikrokontroléru na různých základních jednotkách\). Přesto X konektor definuje např. dostupný UART vždy na pinech X09 a X11 a I2C sběrnici vždy dostupnou na vývodech X06 a X07 \([tabulka](./#x-konektor)\). Ukázka konkrétního zapojení vývodů na mikrokontrolér pro jednotku IODAG3E [zde](../zakladni-jednotky/iodag3e/rozhrani-a-periferie.md#gpio-a-sbernice).
-
 ![P&#x159;&#xED;klad X konektoru \(vlevo\) a Y konektory \(vpravo\) na z&#xE1;kladn&#xED; desce IODAG3E.](../../../.gitbook/assets/x_y_conn%20%282%29.png)
 
 ### X konektor
 
-Základní jednotky podporující připojení [shieldů ](./)musí mít integrovaný tzv. **X konektor** \(např. [IODAG3E](../zakladni-jednotky/iodag3e/)\). Jde o standardní 20 pinový header s roztečí 2.54mm a rozložením 2x10 pinů \(samice\). Do tohoto headeru se shora připojují všechny shieldy. Kromě toho jsou vývody dostupné na hranách základních jednotek ve frézovaných prokovech. Rozteč prokovů je standardních 1.27mm.
+Základní jednotky podporující připojení [shieldů ](./)musí mít integrovaný tzv. **X konektor** \(např. [IODAG3E](../zakladni-jednotky/iodag3e/)\). Jde o standardní 20 pinový header s roztečí 2.54mm a rozložením 2x10 pinů \(samice\). Do tohoto headeru se shora připojují všechny shieldy. Kromě toho jsou vývody dostupné na hranách základních jednotek ve frézovaných prokovech. Rozteč prokovů je standardních 1.27mm. Rozšiřující moduly mají stejný typ konektoru včetně rozložení vývodů \(samec\).
+
+Popis jednotlivých vstupů a výstupů je závislý na typu základní jednotky - různé základní jednotky se mohou mírně odlišovat v dostupných pinech/funkcích \(tzn. pin X05 může být hardwarově připojen na různý pin mikrokontroléru na různých základních jednotkách\). Přesto X konektor definuje např. dostupný UART vždy na pinech X09 a X11 a I2C sběrnici vždy dostupnou na vývodech X06 a X07. 
+
+V tabulce níže je uveden seznam dostupných periferií na každé [základní jednotce ](../zakladni-jednotky/)bez ohledu na její typ. Ukázka konkrétního zapojení vývodů na mikrokontrolér pro jednotku IODAG3E [zde](../zakladni-jednotky/iodag3e/rozhrani-a-periferie.md#gpio-a-sbernice).
 
 | Pin | Funkce |  | Pin | Funkce |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -34,6 +36,8 @@ Základní jednotky podporující připojení [shieldů ](./)musí mít integrov
 ### **Y konektor**
 
 Oproti tomu **Y konektor** není fyzicky vyveden na žádný konektor, ale vývody jsou dostupné pouze na hranách základních jednotek ve frézovaných prokovech. Vývody slouží pro další rozšíření vstupů a výstupů. Rozteč a velikosti prokovů jsou shodné s X konektorem.
+
+\#TODO Pro Y konektor platí podobné věci jako výše popsané pro X.
 
 
 
