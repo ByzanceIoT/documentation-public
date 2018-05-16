@@ -20,7 +20,7 @@ Popis jednotlivých vstupů a výstupů je závislý na typu základní jednotky
 
 V tabulce níže je uveden seznam dostupných periferií na každé [základní jednotce ](../zakladni-jednotky/)bez ohledu na její typ. Ukázka konkrétního zapojení vývodů na mikrokontrolér pro jednotku IODAG3E [zde](../zakladni-jednotky/iodag3e/konektor-x-a-y.md).
 
-| Pin | Funkce |  | Pin | Funkce |
+| **Pin** | **Funkce** |  | **Pin** | **Funkce** |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | X00 |  |               | X10 | SPI SCK |
 | X01 |  |  | X11 | USART TX |
@@ -61,17 +61,13 @@ Obecně lze shieldy na sebe skládat jako stavebnici a zapojovat jeden do druhé
 
 Elektrická kompatibilita se odvíjí od sdílení pinů X konektoru mezi jednotlivými shieldy. Jinými slovy jde o to, že jeden pin [X konektoru](../zakladni-jednotky/iodag3e/rozhrani-a-periferie.md#pinout) mohou využívat dva důzné shieldy a takové shieldy nebude možné použít najednou. Teoreticky to možné být může, ale přinese to komplikace ve firmware. Pro jednoduchost však mluvíme o tom, že **shieldy není možné použít najednou**, tzn. **shieldy nejsou spolu** kompatibilní.
 
-V případě elektrické kompatibility shieldů je dostupná tabulka kompatibility, kde je kompatibilita patrná. 
+V případě elektrické kompatibility shieldů je níže dostupná tabulka kompatibility, kde je kompatibilita patrná. 
 
 ![Tabulka elektrick&#xE9; kompatibility shield&#x16F;.](../../../.gitbook/assets/xconn_docu%20%281%29.svg)
 
+## Firmware
 
-
-
-
-### Firmware
-
-Zpravidla na všechny shieldy jsou vytvořený example projekty pro jednoduché vyzkoušení funcionality hardware. Všechny examply jsou dostupné v k tomu určeném repozitáři.
+Zpravidla na všechny shieldy jsou vytvořené example projekty pro jednoduché vyzkoušení funkcionality hardware. Projekty stačí pouze zkompilovat, nahrát do zařízení a vyzkoušet. Všechny projekty jsou dostupné v k tomu určeném repozitáři. \#TODO zajistit dostupnost projektů
 
 
 
