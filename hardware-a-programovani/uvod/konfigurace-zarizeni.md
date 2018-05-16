@@ -20,6 +20,8 @@ Preferovaný způsob při změně konfigurace. Přehled jednotlivých parametrů
 
 Konfigurace probíhá pomocí [sériové linky](../tutorialy/komunikace-po-seriove-lince-uart/#konfigurace-pc). Dojde-li ke konfliktu mezi nastavením provedeným z Bootloaderu a z Portálu, přednost má Portál a lokální nastavení v IODA je přepsáno. 
 
+{% page-ref page="../architektura-fw/bootloader/" %}
+
 ## Konfigurace z Byzance API
 
 Pro zjištění či nastavení jednotlivých konfiguračních parametrů v průběhu běhu firmware je možno využít [Byzance API](../programovani-hw/byzance-hardware-api.md). 
