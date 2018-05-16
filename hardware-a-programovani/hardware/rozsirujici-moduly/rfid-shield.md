@@ -1,6 +1,13 @@
 # RFID shield
 
-RFID shield slouží k obousměrné komunikaci s NFC zařízení \(RFID nálepky, karty, ..\). Shield má integrovanou anténu a využívá obvod **NXP MFRC522**. Tento čip podporuje práci se zařízeními fungujících na identifikačních protokolech MIFARE Mini, MIFARE 1K, MIFARE 4K, MIFARE Ultralight, MIFARE DESFire EV1 a MIFARE Plus.
+RFID shield slouží k obousměrné komunikaci s NFC zařízení \(RFID nálepky, karty, ..\). Shield má integrovanou anténu a využívá obvod **NXP MFRC522**. Tento čip podporuje práci se zařízeními fungujících na identifikačních protokolech
+
+* MIFARE Mini
+* MIFARE 1K
+* MIFARE 4K
+* MIFARE Ultralight
+*  MIFARE DESFire EV1
+* MIFARE Plus
 
 ![](../../../.gitbook/assets/shield_rfid_b1.png)
 
@@ -23,7 +30,7 @@ RFID shield slouží k obousměrné komunikaci s NFC zařízení \(RFID nálepky
 
 Shield nevyžaduje žádnou další komunikaci.
 
-## Schema
+## Schéma
 
 ![](../../../.gitbook/assets/shieldb1l_rfid_180101.png)
 
@@ -50,10 +57,7 @@ int rc = 0;
 
 void init(){
 
-#if BYZANCE_OVER_USB
-	ByzanceLogger::init(&usb);
-#else
-	ByzanceLogger::init(&pc);
+#if !BYZANCE_OVER_USB
 	pc.baud(115200);
 #endif
 
