@@ -45,13 +45,7 @@ Všechny jednotky mají v základu _User_  a _Reset_ tlačítko. Tlačítko _Res
 
 Jak již bylo naznačeno v části o [mikrokontroléru](./#mikrokontroler), základní jednotky disponují množinou vstupů a výstupů. Obecně můžeme mluvit o **signálových** vstupech/výstupech a o **napájecích** vývodech. **Signálové** vstupy a výstupy jsou typicky vyvedeny přímo z mikrokontroléru a zahrnují nejrůznější sběrnice \(UART, I2C, SPI, ...\), AD či DA převodníky, PWM výstupy, obecné GPIO \(General-purpose input/output\) atp. Na tyto piny uživatel připojuje další aplikačně specifické obvody \(akční členy, senzory, jiné jednotky, atp.\). **Napájecí** vývody umožňují vyvést interní napájecí větvě i mimo základní jednotku \(3V3, VBUS\) případně skrze ně základní jednotku napájet. 
 
-#### **X konektor** a **Y konektor**
-
-Fyzicky jsou výstupy rozděleny do dvou skupin, tzn. na **X konektor** a **Y konektor**. Základní jednotky podporující připojení [shieldů ](../rozsirujici-moduly/)musí mít integrovaný tzv. **X konektor** \(např. [IODAG3E](iodag3e/)\). Jde o standardní 20 pinový header s roztečí 2.54mm a rozložením 2x10 pinů \(samice\). Do tohoto headeru se připojují všechny shieldy. Kromě toho jsou vývody dostupné na hranách základních jednotek ve frézovaných prokovech. Rozteč prokovů je standardních 1.27mm.
-
-Oproti tomu **Y konektor** není fyzicky vyveden na žádný konektor, ale vývody jsou dostupné pouze na hranách základních jednotek ve frézovaných prokovech. Vývody slouží pro další rozšíření vstupů a výstupů.
-
-Popis jednotlivých výstupů je závislý na typu základní jednotky - různé základní jednotky se mohou mírně odlišovat v dostupných pinech/funkcích \(tzn. pin X05 může být hardwarově připojen na různý pin mikrokontroléru na různých základních jednotkách\). Ukázka konkrétního zapojení vývodů pro jednotku IODAG3E [zde](iodag3e/rozhrani-a-periferie.md#gpio-a-sbernice).
+Základní jednotky disponují **X a Y konektory**, na které jsou popsané signály vyvedeny. Více o vlasnostech a použití v části [X konektor a Y konektor](../rozsirujici-moduly/#x-konektor-a-y-konektor).
 
 ### SWD
 
