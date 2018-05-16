@@ -23,20 +23,19 @@ void loop(){
 
 ## AnalogOut
 
-Funkce **AnalogOut** umožňuje definovat analogový výstup, který pomocí digitáně analogového převodníku dokáže na základě vstupní hodnoty této funkce měnit hodnotu napětí na výstupním pinu v rozsahu **0 - 3.3V** . Procesor umožňuje definovat dva analogové výstupy a to na pinech **Y23** a **Y25**. Velikost napětí na výstupu je škálováno zápisem v rozsahu **0 - 1**, kdy 1 je maximální napětí 3.3V.
+Funkce **AnalogOut** umožňuje definovat analogový výstup, který pomocí digitáně analogového převodníku dokáže na základě vstupní hodnoty této funkce měnit hodnotu napětí na výstupním pinu v rozsahu **0 - 3.3V** . Velikost napětí na výstupu je škálováno zápisem v rozsahu **0 - 1**, kdy 1 je maximální napětí 3.3V.
 
 ```cpp
-//Definice analogového výstupu na pinu Y25
-AnalogOut aout(Y25);
+#include "byzance.h"
 
-// Nastavení maximálního napětí
-aout = 1.0f;
+AnalogOut aout(Y23);
 
-// Nastavení poloviny VCC
-aout = 0.5f; 
-
-// Čtení aktuální hodnoty napětí na 
-aout.read();
+void loop(){
+	aout = 1.0;		//setting supply voltage on pin Y23
+	Thread::wait(200);
+	aout = 0.5;		//setting half of supply voltage on pin Y23
+	Thread::wait(1000);
+}
 ```
 
 ## DigitalIn
