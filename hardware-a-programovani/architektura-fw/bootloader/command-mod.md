@@ -44,8 +44,8 @@ Více informací k MQTT připojení je možno nalézt v sekci [Komunikace se ser
 * **configured** - při prvním spuštění bootloader naběhne vždy do Command režimu a čeká na konfiguraci všech parametrů. Až jsou parametry nastaveny, ''configured'' se přepne na 1 a tím se dá zařízení najevo, že je již plně nakonfigurováno a příště bude už nabíhat do normálního programu.
 * **webview** - Zapnutí nebo vypnutí funkcionality [webového rozhraní](../../funkcionality/webove-rozhrani/).
 * **webport** - Port, na kterém bude přístupno [webové rozhraní](../../funkcionality/webove-rozhrani/).
-* **timeoffset** - Slouží pro lokalizovanou [práci s časem](../../prace-s-datem-a-casem-rtc.md). Nastavení offsetu lokálního času RTC od UTC.
-* **timesync** - Slouží pro zapnutí [synchronizace času](../../prace-s-datem-a-casem-rtc.md) mezi servery Byzance a RTC.
+* **timeoffset** - Slouží pro lokalizovanou [práci s časem](../../tutorialy/prace-s-datem-a-casem-rtc.md). Nastavení offsetu lokálního času RTC od UTC.
+* **timesync** - Slouží pro zapnutí [synchronizace času](../../tutorialy/prace-s-datem-a-casem-rtc.md) mezi servery Byzance a RTC.
 * **lowpanbr** - Zapnutí funkce [lowpan border router](../../konektivita/6lowpan.md).
 * **restartbl** - Identifikátor pro [restart zařízení do bootloaderu](./).
 * **revision** - Zjištění [revize zařízení](../../funkcionality/revize.md)
