@@ -35,9 +35,14 @@ Napájecí napětí je však pouze orientační. Na základě zvolené větve na
 
 ## Referenční napětí
 
-bla
+| Symbol | Podmínky | Min | Typ | Max | Jednotka |
+| --- | --- |
+| Vrefint | -40°C - 105°C | 1.18 | 1.21 | 1.24 | Volty |
 
+Hodnotu referenčního napětí je možno získat
 
+* ve [webovém rozhraní](webove-rozhrani/)
+* pomocí uživatelského kódu a [Byzance API](../programovani-hw/byzance-hardware-api.md).
 
 ## Teplota jádra
 
@@ -47,7 +52,10 @@ R
 | --- | --- |
 | Přesnost | ± 1,5°C |
 
-## 
+Teplotu jádra je možno získat
+
+* ve [webovém rozhraní](webove-rozhrani/)
+* pomocí uživatelského kódu a [Byzance API](../programovani-hw/byzance-hardware-api.md).
 
 
 

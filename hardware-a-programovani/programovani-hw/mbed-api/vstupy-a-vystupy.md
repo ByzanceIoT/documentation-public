@@ -43,8 +43,17 @@ void loop(){
 Přečte hodnotu digitálního vstupu
 
 ```cpp
-DigitalIn din(pin_name);
-printf("pin has value : %d \n", din.read());
+#include "byzance.h"
+
+DigitalIn din(USR);
+
+void loop(){
+	if(din.read() == 1){
+		printf("button is pressed\n");
+	else{
+		printf("button is not pressed\n");
+	Thread::wait(1000);
+}
 ```
 
 ## DigitalOut
