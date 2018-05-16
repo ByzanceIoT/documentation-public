@@ -61,7 +61,13 @@ Obecně lze shieldy na sebe skládat jako stavebnici a zapojovat jeden do druhé
 
 Elektrická kompatibilita se odvíjí od sdílení pinů X konektoru mezi jednotlivými shieldy. Jinými slovy jde o to, že jeden pin [X konektoru](../zakladni-jednotky/iodag3e/rozhrani-a-periferie.md#pinout) mohou využívat dva důzné shieldy a takové shieldy nebude možné použít najednou. Teoreticky to možné být může, ale přinese to komplikace ve firmware. Pro jednoduchost však mluvíme o tom, že **shieldy není možné použít najednou**, tzn. **shieldy nejsou spolu** kompatibilní.
 
-V případě elektrické kompatibility shieldů je dostupná tabulka kompatibility, kde je kompatibilita patrná. _**TODO: přidat pdf s tabulkou kompatibility**_
+V případě elektrické kompatibility shieldů je dostupná tabulka kompatibility, kde je kompatibilita patrná. 
+
+![Tabulka elektrick&#xE9; kompatibility shield&#x16F;.](../../../.gitbook/assets/xconn_docu%20%281%29.svg)
+
+
+
+
 
 ### Firmware
 
