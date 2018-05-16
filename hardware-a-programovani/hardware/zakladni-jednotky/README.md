@@ -53,8 +53,6 @@ Oproti tomu **Y konektor** není fyzicky vyveden na žádný konektor, ale vývo
 
 Popis jednotlivých výstupů je závislý na typu základní jednotky - různé základní jednotky se mohou mírně odlišovat v dostupných pinech/funkcích \(tzn. pin X05 může být hardwarově připojen na různý pin mikrokontroléru na různých základních jednotkách\). Ukázka konkrétního zapojení vývodů pro jednotku IODAG3E [zde](iodag3e/rozhrani-a-periferie.md#gpio-a-sbernice).
 
-![P&#x159;&#xED;klad X konektoru \(vlevo\) a Y konektory \(vpravo\) na z&#xE1;kladn&#xED; desce IODAG3E.](../../../.gitbook/assets/x_y_conn.png)
-
 ### SWD
 
 Rozhraním SWD \(Serial Wire Debug\) je vybavena každá základní jednotka a hodí se při vývoji na zařízení. Přes SWD rozhraní je možné do základních jednotek nahrávat zkompilovaný firmware nebo debugovat běžící program. Více informací o možnostech programování je v článku \#TODO článek o programování.
