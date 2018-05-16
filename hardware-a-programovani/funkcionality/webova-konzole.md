@@ -33,7 +33,7 @@ void loop(){
         Console::debug("this is some debug\n");
         Console::trace("this is some trace\n");
     } else {
-        to_computer("console is disabled\n");
+        printf("console is disabled\n");
     }
 
     Thread::wait(1000);
