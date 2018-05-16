@@ -19,14 +19,19 @@ Při každém odpojení od serverů se čítač přestane inkrementovat a resetu
 
 Hodnotu "connected time" je možno zjistit
 
-* Ve [webovém rozhraní](webove-rozhrani/)
-* Pomocí uživatelského kódu a [Byzance API](../programovani-hw/byzance-hardware-api.md)
+* ve [webovém rozhraní](webove-rozhrani/)
+* pomocí uživatelského kódu a [Byzance API](../programovani-hw/byzance-hardware-api.md).
 
 ## Napájecí napětí
 
-bla
+Každé zařízení IODA je možno napájet mnoha způsoby - záleží na konkrétním použití. Jednotlivé napájecí větve se však vždy přes usměrňovače sbíhají do jednoho bodu - v případě IODAG3E je to větev VBUS. 
 
-\#TODO: referencovat potom na napájení iody
+Sem je napojen dělič, jehož výstup PWR\_MEAS je připojen do mikrokontroléru a vzorkován ADC převodníkem. Aktuální napětí ve voltech je možno získat
+
+* ve [webovém rozhraní](webove-rozhrani/)
+* pomocí uživatelského kódu a [Byzance API](../programovani-hw/byzance-hardware-api.md).
+
+Napájecí napětí je však pouze orientační. Na základě zvolené větve napájení je třeba k naměřené hodnotě přičíst úbytky na usměrňovací kaskádě - zhruba 0,7 voltu při průchodu každou diodou.
 
 ## Referenční napětí
 
