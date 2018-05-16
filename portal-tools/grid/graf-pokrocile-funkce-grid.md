@@ -43,7 +43,7 @@ anaIn.listenEvent("valueChanged", e => {
 });
 ```
 
-**Pozn.: **kvůli bugu v GRID se nová hodnota nedá získat z callbacku \(e\).
+**Pozn.:** kvůli bugu v GRID se nová hodnota nedá získat z callbacku \(e\).
 
 tímto při každé změně uložíme novou hodnotu do pole.
 

@@ -166,7 +166,7 @@ textInput.listenEvent("messageReceived", e => {
 
 S messeage pracujeme jako s polem, pořadí jsme si určili již na začátku v posledním argumentu v input/output. Protože víme, že první věc v poli je string \(a pouze string\), rovnou si ho vypíšeme.
 
-Ještě přidáme to, že při kliknutí na **tlačítko uprostřed **pošleme poslední zprávu co nám přišla z inputu a přidáme k ní text.
+Ještě přidáme to, že při kliknutí na **tlačítko uprostřed** pošleme poslední zprávu co nám přišla z inputu a přidáme k ní text.
 
 ```javascript
 button.listenEvent("mousedown", e => {

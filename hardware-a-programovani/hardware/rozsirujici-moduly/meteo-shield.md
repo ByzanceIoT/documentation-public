@@ -2,7 +2,7 @@
 
 Shield slouží k měření různých \(meteorolických\) veličin: teplota \(až 3x\), relativní vlhkost, atmosferický tlak a intenzitu osvětlení. 
 
-Měření teploty a vlhkosti obstarává digitální obvod **SHT21 **s níže uvedenými charakteristikami:
+Měření teploty a vlhkosti obstarává digitální obvod **SHT21** s níže uvedenými charakteristikami:
 
 * 0,04%RH \(12bit\) rozlišení relativní vlhkosti \(RH - Relative Humidity\)
 * přesnost relativní vlhkosti ±2%RH
@@ -11,7 +11,7 @@ Měření teploty a vlhkosti obstarává digitální obvod **SHT21 **s níže uv
 * přesnost teploty ±0,3 °C
 * měřený rozsah teploty  -40 až +125 °C \(extended range\)
 
-Měření teploty a atmosferického tlaku zajišťuje rovněž digitálně řízený obvod **MS5637 **s následujícími charakteristikami:
+Měření teploty a atmosferického tlaku zajišťuje rovněž digitálně řízený obvod **MS5637** s následujícími charakteristikami:
 
 * měřený rozsah tlaku 10 až 2000 mbar
 * 0.11 až 0.016 mbar rozlišení tlaku 
@@ -19,7 +19,7 @@ Měření teploty a atmosferického tlaku zajišťuje rovněž digitálně říz
 * 0,01°C rozlišení teploty
 * přesnost teploty ±1°C 
 
-Součástí je také analogový obvod pro vyhodocování teploty ze senzorů typu **PT1000**. Poslední součástí je **fotodioda **se zesilovačem pro snímání intenzity okolního osvětlení.
+Součástí je také analogový obvod pro vyhodocování teploty ze senzorů typu **PT1000**. Poslední součástí je **fotodioda** se zesilovačem pro snímání intenzity okolního osvětlení.
 
 ![](../../../.gitbook/assets/shield_meteo_b1.png)
 

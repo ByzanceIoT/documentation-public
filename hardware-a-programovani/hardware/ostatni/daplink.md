@@ -168,7 +168,7 @@ Programátor je velmi jednoduchý na použití. Připojením programátoru k PC 
 * vyměnitelný disk s názvem ''BYZG3\__\*\*_'' 
 * nový virtuální port
 
-  Přesunutím souboru _.bin nebo _.hex na vyměnitelný disk započne přenos souboru a jeho programování do cílového procesoru. Pokud je potřeba program nahrát do oblasti bootloaderu \(tj. na začátek paměti\), je třeba na flash disku vytvořit soubor s názvem ''BOOTLOAD.txt'' a poté započít přenos binárního souboru standartním způsobem. 
+  Přesunutím souboru _.bin nebo_ .hex na vyměnitelný disk započne přenos souboru a jeho programování do cílového procesoru. Pokud je potřeba program nahrát do oblasti bootloaderu \(tj. na začátek paměti\), je třeba na flash disku vytvořit soubor s názvem ''BOOTLOAD.txt'' a poté započít přenos binárního souboru standartním způsobem. 
 
 V případě, že nestane při nahrávání jakákoli chyba, je vyměnitelný disk odpojen a znovu připojen a v souboru FAIL.txt je chyba popsána.
 

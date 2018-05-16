@@ -14,7 +14,7 @@ Shield je určen pro sledování veličin zrychlení \(akcelerometr\), rotace \(
 | **X00** | **X02** | **X04** | **X06** | **X08** | **X10** | **X12** | **X14** | **3V3** | **GND** |
 |  | ​ | ​ | SCL | ​ | ​ | ​ |  | 3.3 V | GND |
 
-* _SCL _a _SDA_ - komnikace po sběrnice I2C s MPU-9250
+* _SCL_ a _SDA_ - komnikace po sběrnice I2C s MPU-9250
 * _3V_ - detekce napětí 3,3 V
 
 ### Konfigurace a zapojení

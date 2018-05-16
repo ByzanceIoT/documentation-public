@@ -76,7 +76,7 @@ ctrl + mezerník
 
  při psaní daného stylu.
 
-Můžeme i upravit pozici elementu pomocí_ _
+Můžeme i upravit pozici elementu pomocí __
 
 ```text
  button.style.originX          
@@ -138,7 +138,7 @@ button.listenEvent("mousedown", e => {
 
 ![](../../.gitbook/assets/17.png)
 
-**Pozn.: **`if(button.isHover)` funguje jakožto pojistka při vícero prvcích která potvrdí, že je kurzor opravdu nad naším elementem \(prvkem\). Je dobré o ní vědět a psát jí do vetšiny event listenerů, jenž mají spojitost s myší.
+**Pozn.:** `if(button.isHover)` funguje jakožto pojistka při vícero prvcích která potvrdí, že je kurzor opravdu nad naším elementem \(prvkem\). Je dobré o ní vědět a psát jí do vetšiny event listenerů, jenž mají spojitost s myší.
 
 nyní klikneme na test a otestujeme naše tlačítko:
 
@@ -152,7 +152,7 @@ Pokud se vše povedlo, mělo by se tlačítko při zvetšení zvětšit i text a
 
  Widget se při změně v 
 
-_Configuration _
+_Configuration_ 
 
  sám nezmění, je třeba přidat event listener.
 

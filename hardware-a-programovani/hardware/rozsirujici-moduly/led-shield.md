@@ -22,7 +22,7 @@ Shield slouží k zobrazení dat pomocí trojmístného sedmisegmentového displ
 
 * _X3_ - svorkovnice pro připojení LED pásku \(5 V, GND a datový vodič\) s řadičem WS2812; datový vodič chráněn rezistorem, proudová pojistka pro 5 V \(1 A\)
 * _LED2 - LED11_ - LED diody pro zobrazení bargrafu 
-* _LED1 _- trojmístný sedmisegmentový displej
+* _LED1_ - trojmístný sedmisegmentový displej
 * _D1, D2_ - RGB LED diody
 * _3V_ - detekce napětí 3,3 V
 * _5V_ - detekce 5 V napájení

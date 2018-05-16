@@ -16,7 +16,7 @@ RFID shield slouží k obousměrné komunikaci s NFC zařízení \(RFID nálepky
 | **X00** | **X02** | **X04** | **X06** | **X08** | **X10** | **X12** | **X14** | **3V3** | **GND** |
 |  | ​ | ​ | SCL | ​ | ​ | ​ | ​ | 3.3 V | GND |
 
-* _SDA _a_ SCL _- I2C komunikace s MFRC522
+* _SDA_ a _SCL_ - I2C komunikace s MFRC522
 * _3V_ - detekce napětí 3,3 V
 
 ### Konfigurace a zapojení

@@ -43,13 +43,13 @@ Rozložení pinů je stejné, jako na základní desce IODAG3E. Popis jednotliv�
 
 ## Konfigurace
 
-Jumperová propojka _JPL _slouží k připojení uživatelských LED následujícím způsobem:
+Jumperová propojka _JPL_ slouží k připojení uživatelských LED následujícím způsobem:
 
 * Y12 - UL1 \(zelená\)
 * Y13 - UL2 \(modrá\)
 * Y14 - UL3 \(červená\)
 
-Jumperová propojka _JPB _slouží k připojení uživatelských tlačítek následujícím způsobem:
+Jumperová propojka _JPB_ slouží k připojení uživatelských tlačítek následujícím způsobem:
 
 * UB1 - Y04
 * UB2 - Y05

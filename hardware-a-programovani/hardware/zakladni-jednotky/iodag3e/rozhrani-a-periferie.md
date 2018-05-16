@@ -6,11 +6,11 @@
 
 ## Metody napájení
 
-Zařízení IODAG3E disponuje **třemi **standartními **napájecími vstupy** \(USB, PoE a napájení z externího zdroje\) s širokém rozsahem akceptovaného napájecího napětí. Všechny tři výše uvedené varianty mohou být bezpečně použity současně a lze je zapínat nezávisle na sobě.
+Zařízení IODAG3E disponuje **třemi** standartními **napájecími vstupy** \(USB, PoE a napájení z externího zdroje\) s širokém rozsahem akceptovaného napájecího napětí. Všechny tři výše uvedené varianty mohou být bezpečně použity současně a lze je zapínat nezávisle na sobě.
 
-Čtvrtou možností je použití signálu _**VBUS**_, který je vyveden na X a Y liště desky. Jeho použití **není **pro běžného uživatele **bezpečné **a není doporučené ho používat. Všechny možnosti jsou dále detailněji rozebrány.
+Čtvrtou možností je použití signálu _**VBUS**_, který je vyveden na X a Y liště desky. Jeho použití **není** pro běžného uživatele **bezpečné** a není doporučené ho používat. Všechny možnosti jsou dále detailněji rozebrány.
 
-**Příkon ** zařízení se v zásvislost na stavu, činnosti a zvoleném vstupu pohybuje od 0.6W do 0.9W \(Měřeno bez rozšiřujících desek a dalších připojených komponent\). Příkon je dále také ovlivněn amplitudou napájecího napětí. Všechny uváděné proudy jsou bezpečné proudy pro dlouhodobější provoz s ohledem na výkonové ztráty v systému \(zahřívání komponent\). Překročení **horní** hranice uvedených napětí může vést k **poškození **zařízení. Naopak **podpětí** a **nedostatečně dimenzovaný **vstup zdroje energie může zpusobit **nepředvídatelné chování **a nestabilitu.
+**Příkon**  zařízení se v zásvislost na stavu, činnosti a zvoleném vstupu pohybuje od 0.6W do 0.9W \(Měřeno bez rozšiřujících desek a dalších připojených komponent\). Příkon je dále také ovlivněn amplitudou napájecího napětí. Všechny uváděné proudy jsou bezpečné proudy pro dlouhodobější provoz s ohledem na výkonové ztráty v systému \(zahřívání komponent\). Překročení **horní** hranice uvedených napětí může vést k **poškození** zařízení. Naopak **podpětí** a **nedostatečně dimenzovaný** vstup zdroje energie může zpusobit **nepředvídatelné chování** a nestabilitu.
 
 ### USB
 
@@ -26,7 +26,7 @@ Technické parametry USB vstupu:
 
 ### PoE \(Power over Ethernet\)
 
-Napájení po datovém síťovém kabelu, bez nutnosti přivést napájecí napětí k přístroji dalším samostatným kabelem. Rozlišuje se tzv. **aktivní **a **pasivní PoE**.
+Napájení po datovém síťovém kabelu, bez nutnosti přivést napájecí napětí k přístroji dalším samostatným kabelem. Rozlišuje se tzv. **aktivní** a **pasivní PoE**.
 
 ![MicroUSB](../../../../.gitbook/assets/poe.png)
 
@@ -61,7 +61,7 @@ Technické vlastností vstupu externího napájení:
 
 ### VBUS
 
-Jde o signál na **konektoru X/Y**, jehož **použití pro napájení jednotky není** pro běžného uživatele **bezpečné **a a může vést ke zničení desky či připojeného zdroje. Na pin **VBUS** je možné aplikovat napětí přímo na **nechráněný** vstup spínanného zdroje a dosáhnout tak spuštění desky již od napětí typ. 4.0V.
+Jde o signál na **konektoru X/Y**, jehož **použití pro napájení jednotky není** pro běžného uživatele **bezpečné** a a může vést ke zničení desky či připojeného zdroje. Na pin **VBUS** je možné aplikovat napětí přímo na **nechráněný** vstup spínanného zdroje a dosáhnout tak spuštění desky již od napětí typ. 4.0V.
 
 Smyslem je umožnit běh desky z externího 5V zdroje \(typicky při vestavbě do existujícího 5V systému\). Tato věc je technicky možná, nicméně se silně **nedoporučuje**. Běžně **VBUS** slouží jako výstup pro napájení externích zařízení pomocí IODAG3E.
 
@@ -105,7 +105,7 @@ Jako analogové výstupy lze použít následující dva piny:
 
 Zařízení IODA má na GPIO sběrnici k dispozici dvě sběrnice I2C. Obě sběrnice nabízejí možnost využití alternativního zapojení na jiné dvojici pinů.
 
-| **Funkce ** | **Pin** | **Alternativní pin** |
+| **Funkce**  | **Pin** | **Alternativní pin** |
 | :--- | :--- | :--- |
 | I2C1 SCL | X06 | X15 |
 | I2C1 SDA | X07 | X13 |
@@ -122,7 +122,7 @@ IODA umožňuje komunikovat po několika sériových linkách. Na jeho sběrnici
 | UART1\_RX | X07 |
 | UART3\_TX | X11 |
 | UART3\_RX | X09 |
-| UART4\__TX  _ | Y00 |
+| UART4\__TX_   | Y00 |
 | UART4\_RX | Y01 |
 | UART5\_TX | Y03 |
 | UART5\_RX | Y18 |
@@ -133,7 +133,7 @@ IODA umožňuje komunikovat po několika sériových linkách. Na jeho sběrnici
 
 ### SPI
 
-GPIO obsahuje možnost definovat až** 3 komunikační rozhraní SPI najednou**.
+GPIO obsahuje možnost definovat až **3 komunikační rozhraní SPI najednou**.
 
 | Funkce | Pin |
 | :--- | :--- |

@@ -1,6 +1,6 @@
 # Ultrasonic shield
 
-Shield slouží k** měření vzdálenosti** pomocí odrazu akustického signálu od měřeného objektu. Shield využívá známý ultrazvukový senzor HYSRF04 od čehož se odvíjí i vlastnosti měřiče. Rozsah detekce sje udáván v rozmezí 2 až 400 cm, v praxi je zejména spodní hranice posunutá výše \(cca 20 cm\). Závisí od softwarevé implementace řídicího programu. Detekční úhel je měnší než 15 stupňů.  
+Shield slouží k **měření vzdálenosti** pomocí odrazu akustického signálu od měřeného objektu. Shield využívá známý ultrazvukový senzor HYSRF04 od čehož se odvíjí i vlastnosti měřiče. Rozsah detekce sje udáván v rozmezí 2 až 400 cm, v praxi je zejména spodní hranice posunutá výše \(cca 20 cm\). Závisí od softwarevé implementace řídicího programu. Detekční úhel je měnší než 15 stupňů.  
 
 
 ![](../../../.gitbook/assets/shield_ultrasonic_b1.png)

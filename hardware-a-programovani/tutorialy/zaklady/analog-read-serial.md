@@ -8,7 +8,7 @@ Zařízení IODA je vybavené ADC převodníky a na některých svých vstupech 
 
 
 
-Tato hodnota interpretuje napětí v rozsahu **0 - 3.3V **  
+Tato hodnota interpretuje napětí v rozsahu **0 - 3.3V**   
 
 
 

@@ -2,7 +2,7 @@
 
 ## Autojump
 
-Autojump je funkce bootloaderu, která zajišťuje **skok do hlavního programu**, pokud uživatel neprovedl **žádnou interakci** se zařízením [po sériové lince](../../tutorialy/komunikace-po-seriove-lince-uart/konfigurace-pc.md) v průběhu nastavené doby. Vyjadřuje se ve **vteřinách **jako celé číslo.
+Autojump je funkce bootloaderu, která zajišťuje **skok do hlavního programu**, pokud uživatel neprovedl **žádnou interakci** se zařízením [po sériové lince](../../tutorialy/komunikace-po-seriove-lince-uart/konfigurace-pc.md) v průběhu nastavené doby. Vyjadřuje se ve **vteřinách** jako celé číslo.
 
 ![](../../../.gitbook/assets/autojump.png)
 

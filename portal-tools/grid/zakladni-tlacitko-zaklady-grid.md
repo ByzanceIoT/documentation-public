@@ -42,8 +42,8 @@ definuje promněnou abychom mohli k daménu outputu přistupovat v kódu
 
 ![](../../.gitbook/assets/code1.png)
 
-Poté definujeme rozměry widgetu, **definice rozměrů je povinná ve všech widgetech.    
-**Můžeme použít  
+Poté definujeme rozměry widgetu, **definice rozměrů je povinná ve všech widgetech.**    
+Můžeme použít  
 `context.addSizeProfile(1,1);`kde v parametrech definujeme výšku a šířku widgetu \(v pevně daných čtvercích, tudíž widgety vypadají všude stejně. Jeden čtverec má zhruba 1 cm\).
 
 Tímto definujeme velikost napevno, bez možností jí změnit.
@@ -70,7 +70,7 @@ Přidáváním síze profilů přidáváme povolené \(možné\) rozměry widget
 
 připomínám že \*\*Musíme přidat jakýkoliv kladný a nenulový sizeProfile každému widgetu.
 
-**Pokud kliknete na **
+**Pokud kliknete na** 
 
 _**test**_
 
@@ -78,7 +78,7 @@ _**test**_
 
 ![](../../.gitbook/assets/code4.png)
 
-**Protože ačkoliv máme definované velikosti, **
+**Protože ačkoliv máme definované velikosti,** 
 
 nemáme definované jakékoliv grafické prvky
 
@@ -124,13 +124,13 @@ prvný argument je element, který přidáváme.
 
 Root můžeme považovat za 
 
-**základní **
+**základní** 
 
 element, který je rozšířen o několik funkcionalit a je přítomný vždy ve všech widgetech.
 
 Klikneme na tlačítko 
 
-_test. _
+_test._ 
 
 ![](../../.gitbook/assets/code7.png)
 

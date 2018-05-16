@@ -5,8 +5,8 @@ Každé zařízení IODAG3E umožňuje vytvářet vlastní hlavní i záložní 
 Postup nahrávání je vždy stejný. Nová aktualizace se nahrává do sekce Buffer a teprve poté se rozhoduje, kam bude aktualizace zkopírována. Celý proces mezi Portálem a zařízením IODAG3E se tedy pro jednotlivé komponenty neliší a je možno jej postupně popsat následujícími kroky:
 
 * Zařízení potřebuje sekci Buffer před příjmem nejprve smazat - tento krok se nazývá **prepare**. 
-* Nahrátí samotné binárky do IODA - proces [**upload**](aktualizace-fw.md#proces-upload)** **\(podrobněji popsán dále\). Binárka se v této chvíli uloží do sekce ''buffer''.
-* Aktualizace jedné z příslušných komponent aktualizací uloženou v sekci ''buffer''. Krok se nazývá [**update**](aktualizace-fw.md#proces-update)** **\(podrobněji popsán dále\).
+* Nahrátí samotné binárky do IODA - proces [**upload**](aktualizace-fw.md#proces-upload) ****\(podrobněji popsán dále\). Binárka se v této chvíli uloží do sekce ''buffer''.
+* Aktualizace jedné z příslušných komponent aktualizací uloženou v sekci ''buffer''. Krok se nazývá [**update**](aktualizace-fw.md#proces-update) ****\(podrobněji popsán dále\).
 
 
 

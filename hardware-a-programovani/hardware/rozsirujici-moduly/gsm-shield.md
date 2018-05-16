@@ -14,19 +14,19 @@ GSM shield si klade za cíl připojit základní jednotku k Internetu pomocí bu
 | **X00** | **X02** | **X04** | **X06** | **X08** | **X10** | **X12** | **X14** | **3V3** | **GND** |
 | ​ | ​ | ​ | ​ | \(​DCD\) | ​ |  | ​ | ​ | ​ |
 
-* _RESET _- pin resetu modul; musí být ve stavu open-drain
-* _DCD _- Data Carrier Detection indikace dostupných dat ve směru shield &gt; základní jednotka
-* _RX _a _TX _- vysílání a příjem dat po sériové lince
+* _RESET_ - pin resetu modul; musí být ve stavu open-drain
+* _DCD_ - Data Carrier Detection indikace dostupných dat ve směru shield &gt; základní jednotka
+* _RX_ a _TX_ - vysílání a příjem dat po sériové lince
 
 ### Konfigrace a zapojení
 
-* propojka _SJ1 _- volba napájení 3,3 V ze základní jednotky \(spojení vlevo\); vlastní měnič \(spojení vpravo\)
-* propojka _SJ5 _- spojeno: pin DCD je připojen na X08 \(výchozí stav\)
-* _X4 _- koniktor mini SIM karty; může být vložena pouze, pokud není osazena eSIM
-* _IC1 _- zabudovaná SIM \(eSIM\); může být osazena pouze, pokud není vložena mini SIM
-* _X2 _- u.fl konektor pro připojení GSM antény \(50 ohm\)
-* _3V _- indikace napájení GSM modulu
-* _D2 _- indikace stavu sítě
+* propojka _SJ1_ - volba napájení 3,3 V ze základní jednotky \(spojení vlevo\); vlastní měnič \(spojení vpravo\)
+* propojka _SJ5_ - spojeno: pin DCD je připojen na X08 \(výchozí stav\)
+* _X4_ - koniktor mini SIM karty; může být vložena pouze, pokud není osazena eSIM
+* _IC1_ - zabudovaná SIM \(eSIM\); může být osazena pouze, pokud není vložena mini SIM
+* _X2_ - u.fl konektor pro připojení GSM antény \(50 ohm\)
+* _3V_ - indikace napájení GSM modulu
+* _D2_ - indikace stavu sítě
 
 ## Schéma
 
