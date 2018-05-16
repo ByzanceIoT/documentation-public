@@ -6,7 +6,7 @@ Zařízení Byznce se programují v jazyce **C++** a využívají [**MBED API**]
 #include "byzance.h"
 ```
 
-Tato knihovna má za úkol automaticky inicializovat periferie, připojit zařízení k internetu a inicializovat vlákna, která se starají o [aktualizaci firmware](../architektura-fw/aktualizace-fw.md) a připojení k serverům. Importem knihovny se také zpřístupní funkce [Byzance API](byzance-hardware-api.md) a [uživatelská makra](https://github.com/byzance/public-documentation/tree/38b460c46404c197299c0f0a84e3402a9b74c8d7/programovani/byzance-api/uzivateska-makra/README.md).
+Tato knihovna má za úkol automaticky inicializovat periferie, připojit zařízení k internetu a inicializovat vlákna, která se starají o [aktualizaci firmware](../architektura-fw/aktualizace-fw.md) a připojení k serverům. Importem knihovny se také zpřístupní funkce [Byzance API](byzance-hardware-api.md) a [uživatelská makra](uzivatelska-makra.md).
 
 ## Definice fyzických vstupů a výstupů
 
@@ -18,9 +18,10 @@ DigitalOut DI1(X02);
 DigitalIn DO1(X05);
 AnalogOut AO1(Y23);
 AnalogIn AI1(Y22)
+
 ```
 
-Bližší informace o fyzických vstupech a výstupech lze získat v [MBED API - Vstupy a výstupy](mbed-api/vstupy-a-vystupy.md).
+Další informace je možno naleznout v sekci [MBED API](mbed-api/).
 
 ## Definice virtuálních vstupů a výstupů
 
@@ -38,7 +39,9 @@ ANALOG_INPUT(ain_name, {
 })
 ```
 
-Bližší informace o významu a funkci virtuálních vstupů/výstupů a programování funkčních bloků lze dohledat v sekci [Prograování funkčních bloků](vstupy-a-vystupy-do-portalu.md)
+Bližší informace o významu a funkci virtuálních vstupů/výstupů a jejich programování je možno naleznout v příslušné kapitole.
+
+{% page-ref page="vstupy-a-vystupy-do-portalu.md" %}
 
 ## Definice komunikačních rozhraní
 
@@ -103,10 +106,6 @@ AnalogOut AO1(Y23);
 AnalogOut AI1(Y22);
 
 Serial pc(SERIAL_TX, SERIAL_RX); // tx, rx
-
-void pre_init(){
-    //Funkce pre_init - proběhne právě jednou
-}
 
 void init(){
     // Hello world se vypise jednou pri startu

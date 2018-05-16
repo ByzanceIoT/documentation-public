@@ -24,7 +24,11 @@ void my_function(){
 }
 ```
 
-Dotazování na stav restartu je možné i periodicky funkcí ''Byzance::restart\_pending\(\)'', jejíž návratovou hodnotou je čas, kolik zbývá do restartu.
+Dotazování na stav restartu je možné i periodicky funkcí ''Byzance::restart\_pending\(\)'', jejíž návratovou hodnotou je čas v sekundách, které zbývají do restartu.
 
-Více informací je na stránce \[\[tutorial:public\_functions\|veřejných funkcí Byzance\]\].
+Více informací v příslušné části dokumentace.
+
+{% page-ref page="../programovani-hw/byzance-hardware-api.md" %}
+
+
 

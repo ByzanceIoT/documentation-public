@@ -45,7 +45,7 @@ void loop(){
 
 ### Alias
 
-Alias slouží společně s [Full ID](https://github.com/byzance/public-documentation/tree/38b460c46404c197299c0f0a84e3402a9b74c8d7/articles/hardware/ioda/navody/full-id.md) k identifikaci zařízení.
+Alias slouží společně s Full ID k identifikaci zařízení.
 
 Narozdíl od Full ID, které je vždy unikátní z výroby a strojově dobře čitelné, Alias je nastavovaný uživatelsky pro lepší identifikaci člověkem. Při více zařízeních by měl být identifikátor Alias dostatečně popisný, nemusí však být nutně unikátní. Například při použití v osvětlení by měl Alias nést názvy typu "SVETLO-KUCHYN", "SVETLO-OBYVAK" a podobně. S identifikátorem Alias je možné pracovat několika způsoby.
 
@@ -57,13 +57,13 @@ Narozdíl od Full ID, které je vždy unikátní z výroby a strojově dobře č
 
 ## Jak s Alias pracovat?
 
-Je možné jej zjistit při startu zařízení vyčtením při startu [bootloaderu](https://github.com/byzance/public-documentation/tree/38b460c46404c197299c0f0a84e3402a9b74c8d7/byzance_documentation/hardware_intro/features/bootloader.md).
+Je možné jej zjistit při startu zařízení vyčtením při startu [bootloaderu](../architektura-fw/bootloader/).
 
 ![alias\_bootloader](../../.gitbook/assets/alias_bootloader.png)
 
-Je možné jej zjistit či nastavit v [command režimu bootloaderu](https://github.com/byzance/public-documentation/tree/38b460c46404c197299c0f0a84e3402a9b74c8d7/byzance_documentation/hardware_intro/features/bootloader/command-rezim.md). V případě nastavení z bootloaderu není garantována funkčnost, protože zařízení při startu zařízení žádá o nastavení Aliasu a v případě, že je název s Tyrionem kolizní, za správnou variantu je považovana varianta Tyrionu.
+Je možné jej zjistit či nastavit v [command režimu bootloaderu](../architektura-fw/bootloader/command-mod.md). V případě nastavení z bootloaderu není garantována funkčnost, protože zařízení při startu zařízení žádá o nastavení Aliasu a v případě, že je název s Tyrionem kolizní, za správnou variantu je považovana varianta Tyrionu.
 
-Alias je možné také zjistit v rámci uživatelského kódu dotazem pomocí [Byzance API](https://github.com/byzance/public-documentation/tree/38b460c46404c197299c0f0a84e3402a9b74c8d7/byzance_documentation/hardware_intro/API/byzance-api.md) funkcí ''Byzance::get\_alias\(\);''.
+Alias je možné také zjistit v rámci uživatelského kódu dotazem pomocí [Byzance API](../programovani-hw/byzance-hardware-api.md) funkcí ''Byzance::get\_alias\(\);''.
 
 Jednoduchý kód může vypadat například takto:
 

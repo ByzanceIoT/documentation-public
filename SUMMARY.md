@@ -48,6 +48,7 @@
 * [Hardware](hardware-a-programovani/hardware/README.md)
   * [Základní jednotky](hardware-a-programovani/hardware/zakladni-jednotky/README.md)
     * [IODAG3E](hardware-a-programovani/hardware/zakladni-jednotky/iodag3e/README.md)
+      * [Napájení](hardware-a-programovani/hardware/zakladni-jednotky/iodag3e/napajeni.md)
       * [Technické specifikace](hardware-a-programovani/hardware/zakladni-jednotky/iodag3e/technicke-specifikace.md)
       * [Rozhraní a periférie](hardware-a-programovani/hardware/zakladni-jednotky/iodag3e/rozhrani-a-periferie.md)
       * [Rozložení a využití paměti](hardware-a-programovani/hardware/zakladni-jednotky/iodag3e/rozlozeni-a-vyuziti-pameti.md)
