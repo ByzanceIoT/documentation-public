@@ -62,7 +62,7 @@ Více informací k MQTT připojení je možno nalézt v sekci [Komunikace se ser
 
 * **intmem** - Zformátuje paměť.
 
-  Parametry mohou být "intmem" nebo "extmem". \[\[memory:internal\|Informace o interní paměti\]\].
+  Parametry mohou být "intmem" nebo "extmem".
 
 * **firmware** - Práce si firmwarem.
 
