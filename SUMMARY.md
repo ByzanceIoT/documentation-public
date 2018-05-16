@@ -123,7 +123,7 @@
   * [Identifikace zařízení](hardware-a-programovani/funkcionality/identifikace-zarizeni.md)
   * [Revize](hardware-a-programovani/funkcionality/revize.md)
   * [OTP paměť](hardware-a-programovani/funkcionality/otp-pamet.md)
-  * [Provozní informace](hardware-a-programovani/funkcionality/cas-behu-zarizeni-uptime.md)
+  * [Provozní informace](hardware-a-programovani/funkcionality/provozni-informace.md)
   * [Připojení zdroje k VBAT](hardware-a-programovani/funkcionality/pripojeni-zdroje-k-vbat.md)
   * [Události](hardware-a-programovani/funkcionality/udalosti.md)
   * [Callback Busy](hardware-a-programovani/funkcionality/callback-busy.md)
