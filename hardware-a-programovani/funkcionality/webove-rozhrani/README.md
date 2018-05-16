@@ -2,7 +2,9 @@
 
 Webové rozhraní je funkce, která je součástí každého zařízení Byzance disponujícím Ethernetem. Slouží k zjištění, konfiguraci a monitorování základních funkcí a vlastností zařízení.
 
-Pokud je zdrojem internetu 6lowpan či GSM, zařízení je schováno za NAT a webové rozhraní není dostupné.
+Pokud je zdrojem internetu 6lowpan či GSM, zařízení je schováno za NAT a webové rozhraní není dostupné. Možné zdroje internetu jsou dále vypsány v příslušné kapitole.
+
+{% page-ref page="../../konektivita/specifikace-zdroje-internetu.md" %}
 
 ## Funkce webového rozhraní
 

@@ -1,6 +1,8 @@
 # Konektor X a Y
 
-Stránka obsahuje podrobný popis zapojení [konektorů X a Y ](../../rozsirujici-moduly/#x-konektor-a-y-konektor)na mikrokontrolér jednotky.  včetně všech dostupných periferií \(sběrnice UART, I2C, SPI, CAN, časovač TIM, ADC, DAC, ...\). Umístění a pinout kounektorů viz. [GPIO a sběrnice](https://docu.byzance.cz/hardware-a-programovani/hardware/zakladni-jednotky/iodag3e/rozhrani-a-periferie#gpio-a-sbernice).
+Každá [základní jednotka ](../)může mít piny [X a Y konektoru](../../rozsirujici-moduly/#x-konektor-a-y-konektor) zapojeny na mikrokontrolér odlišně. Tato stránka obsahuje podrobný a na typu jednotky závislý popis zapojení pinů [konektorů X a Y. ](../../rozsirujici-moduly/#x-konektor-a-y-konektor) Jednotka [IODAG3E](./) disponuje vývody periferií jako např. UART, I2C, SPI, CAN, TIM, ADC, DAC a přesné zapojení je v tabulce níže.
+
+![](../../../../.gitbook/assets/xconn_x_conn.svg)
 
 ## Konektor X
 
