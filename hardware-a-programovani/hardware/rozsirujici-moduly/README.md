@@ -1,10 +1,43 @@
 # Rozšiřující moduly
 
-Na [základní jednotky](../zakladni-jednotky/) se připojují v této kapitole rozebrané rozšiřující moduly \(shieldy\). Smyslem rozšiřujících jednotek je přinést konkrétní funkcionalitu bez nutnosti vyvíjet vlastní hardware. Jedná se o předpřipravené desky, které se pouze připojí na základní jednotky a bez dodatečné kabeléže nebo drátování na nepájivém poli lze vyzkoušet intereakci s reálným světem. Dobře slouží pro rychlé vytvoření ukázek na nejčastěji řešené aplikace jako je měření teploty a nebo spínání relé. Lze s nimi rychle bez větší námahy postavit funkční prototyp. Těmto jednotklám se alternativně říká **shieldy**.
+## Přehled
 
-[Základní jednotky](../zakladni-jednotky/) podporující připojení shieldů musí mít integrovaný tzv. X konektor \(např. [IODAG3E](../zakladni-jednotky/iodag3e/)\). Jde o standartní 20 pinový header s roztečí 2.54mm a rozložením 2x10 pinů \(samice\). Do tohoto headeru se připojují všechny shieldy. Rozložení a popis vstupů/výstupů X konektoru je [zde](../zakladni-jednotky/iodag3e/rozhrani-a-periferie.md#pinout).
+Na [základní jednotky](../zakladni-jednotky/) se připojují v této kapitole rozebrané rozšiřující moduly \(shieldy\). Smyslem rozšiřujících jednotek je přinést konkrétní funkcionalitu bez nutnosti vyvíjet vlastní hardware. Jedná se o předpřipravené desky, které se pouze připojí na základní jednotky a bez dodatečné kabeléže nebo drátování na nepájivém poli lze vyzkoušet interakci s reálným světem. Dobře slouží pro rychlé vytvoření ukázek na nejčastěji řešené aplikace jako je měření teploty a nebo spínání relé. Lze s nimi rychle bez větší námahy postavit funkční prototyp. Těmto jednotkám se alternativně říká **shieldy**.
 
-### Rozměry
+[Základní jednotky](../zakladni-jednotky/) podporující připojení shieldů musí mít integrovaný tzv. [X konektor](./#x-konektor-a-y-konektor) \(např. [IODAG3E](../zakladni-jednotky/iodag3e/)\). 
+
+## X konektor a Y konektor
+
+Fyzicky jsou vstupy a výstupy základních jednotek rozděleny do dvou skupin, tzn. na **X konektor** a **Y konektor**. Tyto konektory obsahují na základní jednotce dostupné periferie \(UART, I2C, PWM, ...\), napájecí signály a nebo signály pro [SWD ](../../programovani-hw/offline-programovani/)či reset. 
+
+Popis jednotlivých vstupů a výstupů je závislý na typu základní jednotky - různé základní jednotky se mohou mírně odlišovat v dostupných pinech/funkcích \(tzn. pin X05 může být hardwarově připojen na různý pin mikrokontroléru na různých základních jednotkách\). Přesto X konektor definuje např. dostupný UART vždy na pinech X09 a X11 a I2C sběrnici vždy dostupnou na vývodech X06 a X07. Ukázka konkrétního zapojení vývodů na mikrokontrolér pro jednotku IODAG3E [zde](../zakladni-jednotky/iodag3e/rozhrani-a-periferie.md#gpio-a-sbernice).
+
+### X konektor
+
+Základní jednotky podporující připojení [shieldů ](./)musí mít integrovaný tzv. **X konektor** \(např. [IODAG3E](../zakladni-jednotky/iodag3e/)\). Jde o standardní 20 pinový header s roztečí 2.54mm a rozložením 2x10 pinů \(samice\). Do tohoto headeru se shora připojují všechny shieldy. Kromě toho jsou vývody dostupné na hranách základních jednotek ve frézovaných prokovech. Rozteč prokovů je standardních 1.27mm.
+
+| Pin | Funkce |  | Pin | Funkce |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| X00 |  |               | X10 | SPI SCK |
+| X01 |  |  | X11 | USART TX |
+| X02 |  |  | X12 | SPI MISO |
+| X03 |  |  | X13 | CAN TX |
+| X04 |  |  | X14 | SPI MOSI |
+| X05 |  |  | X15 | CAN RX |
+| X06 | I2C SCL |  | 3V3 |  |
+| X07 | I2C SDA |  | USR |  |
+| X08 | SPI NSS |  | GND |  |
+| X09 | USART RX |  | VBUS |  |
+
+### **Y konektor**
+
+Oproti tomu **Y konektor** není fyzicky vyveden na žádný konektor, ale vývody jsou dostupné pouze na hranách základních jednotek ve frézovaných prokovech. Vývody slouží pro další rozšíření vstupů a výstupů. Rozteč a velikosti prokovů jsou shodné s X konektorem.
+
+
+
+
+
+## Rozměry
 
 Shieldy existují ve dvou velikostech: plná a poloviční. Shield plné velikost má rozměry totožné jako základní jednotka [IODAG3E](../zakladni-jednotky/iodag3e/). Poloviční shield je zcela shodný s plným shieldem pouze s tím rozdílem, že má poloviční délku. Rozměrový nákres je níže \(v milimetrech\).
 
