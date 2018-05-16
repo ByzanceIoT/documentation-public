@@ -1,22 +1,22 @@
 # Základní přehled
 
-Webové rozhraní nabízí přehled informací o daném zařízení.
+Webové rozhraní nabízí přehled informací o daném zařízení. Mezi tyto informace se řadí
 
-Mezi tyto informace se řadí
-
-* Revize
-* Napájecí napětí
-* Vnitřní refereční napětí jádra
-* Teplota jádra
+* [Revize](../revize.md)
+* [Napájecí napětí](../provozni-informace.md#napajeci-napeti)
+* [Vnitřní refereční napětí jádra](../provozni-informace.md#referencni-napeti)
+* [Teplota jádra](../provozni-informace.md#teplota-jadra)
 * MAC adresa
 * FULL\_ID identifikátor
-* Stav webové konzole
+* Stav [webové konzole](../webova-konzole.md)
 
 Další informace jsou
 
-* Stav připojení k serverům
-* Aktuální čas
-* Přehled o plánovaném restartu
+* [Stav připojení k serverům](../provozni-informace.md#cas-pripojeni-k-serverum)
+* [Čas, jak dlouho je zařízení připojeno k serverům](../provozni-informace.md#cas-pripojeni-k-serverum)
+* [Aktuální čas z RTC](../../tutorialy/prace-s-datem-a-casem-rtc.md)
+* [Čas od startu zařízení](../provozni-informace.md#cas-behu-zarizeni)
+* [Přehled o plánovaném restartu](../odlozeni-restart.md)
 
 ![](../../../.gitbook/assets/web_general.png)
 
