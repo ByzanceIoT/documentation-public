@@ -39,7 +39,7 @@ node ../../_makescript_.js custom/custom_project BYZANCE_IODAG3E
 
 který se skládá z následujících částí
 
-* node - příkaz pro [interpreter Javascriptu](https://nodejs.org/en/Node.JS])
+* node - příkaz pro [interpreter Javascriptu](https://nodejs.org/en/)
 * ../\_makescript\_.js -&gt; cesta k build scriptu
 * custom/custom\_project -&gt; cesta k projektu a název projektu
 * BYZANCE\_YODAG3E -&gt; build makro pro identifikaci targetu
