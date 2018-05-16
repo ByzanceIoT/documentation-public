@@ -18,9 +18,9 @@ Při prvním spuštění nebo při položce configured=0 bootloader skáče do c
 * **ping** - ping, pro testovací účely
 * **help** - vypíše nápovědu do konzole
 * **overview** - vypíše aktuální hodnotu všech parametrů, které jsou v bootloaderu nastaveny
-* **restart** - restartuje Iodu. \[\[tutorial:restart\|Dokumentace k restartu\]\].
-* **target** -Typ desky. TODO 
-* **fullid** - vypíše FULL ID procesoru. [odkaz na fullid](https://github.com/byzance/public-documentation/tree/38b460c46404c197299c0f0a84e3402a9b74c8d7/byzance_documentation/architektura-fw/bootloader/TODO/README.md) 
+* **restart** - restartuje zařízení.
+* **target** -Typ desky. 
+* **fullid** - vypíše FULL ID zařízení.  
 * **launch\_reset** - Pokud bylo předchozí spuštění firmware neúspěšné a není žádná validní binárka k obnovení, je třeba nahrát validní binárku a poté napsat příkaz ''launch\_reset''.
 * **defaults** - Veškeré nastavení se obnoví do [defaultního nastavení](https://github.com/byzance/public-documentation/tree/38b460c46404c197299c0f0a84e3402a9b74c8d7/byzance_documentation/architektura-fw/bootloader/TO%20DO%20ODKAZ/README.md).
 
