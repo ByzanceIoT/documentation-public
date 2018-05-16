@@ -49,17 +49,17 @@ Vlevo je na nákresu vidět umístění X konektoru a dále jsou na shieldech dv
 
 
 
-### Kompatibilita shieldů
+## Kompatibilita shieldů
 
 Každý z shieldů využivá určité datové piny z [X konektoru](../zakladni-jednotky/iodag3e/rozhrani-a-periferie.md#pinout) a zároveň žádný shield nevyužívá všechny najednou. Je tedy možné použít více shieldů najednou. V tétou sovislosti lze mluvit o kompatibilitě shiledů elektrické a mechanické.
 
-#### Mechanická kompatibilita
+### Mechanická kompatibilita
 
-Obecně lze shieldy na sebe skládat jako stavebnici a zapojovat jeden do druhého. Může se však stát, že např. [Ultrazvukový shield ](ultrasonic-shield.md)a [PIR shield ](pir-shield.md)na sebe dát nejdou. Nejdou na sebe dát z duvodu, že oba shieldy pro svou činnost potřebují volný prostor nad shieldem. Obdobně jiné shieldy mohou mít vysoké svorkovnice, které zabrání dalšímu skládání shieldů na sebe.
+Obecně lze shieldy na sebe skládat jako stavebnici a zapojovat jeden do druhého. Může se však stát, že např. [Ultrazvukový shield ](ultrasonic-shield.md)a [PIR shield ](pir-shield.md)na sebe dát nejdou. Nejdou na sebe dát z důvodu, že oba shieldy pro svou činnost potřebují volný prostor nad shieldem. Obdobně jiné shieldy mohou mít vysoké svorkovnice, které zabrání dalšímu skládání shieldů na sebe. 
 
-#### Elektrická kompatibilita 
+### Elektrická kompatibilita 
 
-Elektrická kompatibilita se odvíjí od sdílení pinů mezi jednotlivými shieldy. Jinými slovy jde o to, že jeden pin [X konektoru](../zakladni-jednotky/iodag3e/rozhrani-a-periferie.md#pinout) mohou využívat dva důzné shieldy a takové shieldy nebude možné použít najednou. Teoreticky to možné být může, ale přinese to komplikace ve firmware. Pro jednoduchost však mluvíme o tom, že **shieldy není možné použít najednou**, tzn. **shieldy nejsou spolu** komatibilní.
+Elektrická kompatibilita se odvíjí od sdílení pinů X konektoru mezi jednotlivými shieldy. Jinými slovy jde o to, že jeden pin [X konektoru](../zakladni-jednotky/iodag3e/rozhrani-a-periferie.md#pinout) mohou využívat dva důzné shieldy a takové shieldy nebude možné použít najednou. Teoreticky to možné být může, ale přinese to komplikace ve firmware. Pro jednoduchost však mluvíme o tom, že **shieldy není možné použít najednou**, tzn. **shieldy nejsou spolu** kompatibilní.
 
 V případě elektrické kompatibility shieldů je dostupná tabulka kompatibility, kde je kompatibilita patrná. _**TODO: přidat pdf s tabulkou kompatibility**_
 

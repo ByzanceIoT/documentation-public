@@ -9,8 +9,16 @@ V této sekci jsou zdokumentovány funkce z knihovny MBED API, sloužící k ovl
 Převede napětí na pinu analogového vstupu v rozmezí 0 - 3.3V do digitální podoby a interpretujep ho číslem na škále 0-4095. Rozlišení převodníku je 2.44 mV.
 
 ```cpp
-AnalogIn ain(pin_name);
-printf(”ain value = %3.3f%%\n”, ain.read());
+#include "byzance.h"
+
+#define SUPPLY_VOLTAGE 3.3
+
+AnalogIn ain(X00);
+
+void loop(){
+	printf("voltage on pin X00 is %d V\n",ain.read()*SUPPLY_VOLTAGE);
+	Thread::wait(1000);
+}
 ```
 
 ## AnalogOut
