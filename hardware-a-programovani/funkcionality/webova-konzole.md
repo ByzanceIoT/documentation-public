@@ -27,7 +27,6 @@ void loop(){
 
     if(Console::enabled()){
         printf("console is enabled\n");
-        // Console::log("this is some log\n"); - No longer supported
         Console::error("this is some error\n");
         Console::warn("this is some warning\n");
         Console::info("this is some info\n");
