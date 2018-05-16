@@ -46,28 +46,11 @@ uint32_t tmp32 = 0;
  */
 void to_computer(const char* format, ...);
 
-
-// speciální funkce, do které program skočí dřív než do initu
-// slouží hlavně k zapnutí ByzanceLoggeru, aby se mohly logovat i hlášky z Byzance::init a connect
-void pre_init(){
-
-	#if BYZANCE_OVER_USB
-		ByzanceLogger::init(&usb);
-	#else
-		ByzanceLogger::init(&pc);
-		pc.baud(115200);
-	#endif
-
-	ByzanceLogger::set_level(DEBUG_LEVEL_TRACE);
-	ByzanceLogger::enable_prefix(false);
-}
-
 void init(){
 
-	to_computer("Compiled on %02d. %02d. %04d - %02d:%02d:%02d\n", __BUILD_DAY__, __BUILD_MONTH__, __BUILD_YEAR_LEN4__, __BUILD_HOUR__, __BUILD_MINUTE__, __BUILD_SECOND__);
-	to_computer("Waiting for init...\n");
-	to_computer("ARM GCC NONEABI = %s.%s.%s\n", TOSTRING(__GNUC__), TOSTRING(__GNUC_MINOR__), TOSTRING(__GNUC_PATCHLEVEL__));
-
+	#if !BYZANCE_OVER_USB
+		pc.baud(115200);
+	#endif
 
 }
 
