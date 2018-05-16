@@ -2,30 +2,64 @@
 
 ## Ticker
 
-Calls a function repeatedly and at a specified rate
+Umožňuje periodické volání funkcí s mikrosekundovou přesností.
 
 ```cpp
+#include "byzance.h"
 Ticker ticker;
+DigitaOut led(LED_BLUE);
+
+void flip() {        led = !led;    //blue led is blinking}void init(){    Byzance::led_module(false);  //disable LED module for Byzance    ticker.attach(&flip,2.0);    //call fnciton flip every 2 seconds}void loop(){    printf("im running\n");    Thread::wait(1000);}
 ```
-
-## Time
-
-Date and time manipulation functions. Support for time acquisition, conversion between date formats and formatted output to strings. Více informací je popsáno ve zvláštním článku [Práce s datem a časem \(RTC\).](https://github.com/byzance/public-documentation/tree/38b460c46404c197299c0f0a84e3402a9b74c8d7/byzance_documentation/hardware_intro/navody/prace-s-datem-a-casem-rtc.md)
 
 ## Timeout
 
-Set up an interrupt to call a function after a specified delay
+Umožňuje zpožděné volání příslušné funkce s mikrosekundovou přesností.
 
 ```cpp
+#include "byzance.h"
 Timeout timeout;
+DigitaOut led(LED_BLUE);
+
+void turn_off() {    
+    led = 0;    //turn off blue led
+}
+
+void init(){
+    Byzance::led_module(false);      //disable LED module for Byzance
+    led = 1;                         //turn on blue led
+    timeout.attach(&turn_off,2.0);    //call funciton turn_off after 2 seconds
+}
+
+void loop(){
+    printf("im running\n");
+    Thread::wait(1000);
+}
 ```
 
 ## Timer
 
-Create, start, stop and read a timer for measuring small times \(between microseconds and seconds\)
+Umožňuje měření časových úseků až s mikrosekundovou přesností. 
 
 ```cpp
+#include "byzance.h"
+DigitaOut led(LED_BLUE);
 Timer timer;
+
+void init(){
+    Byzance::led_module(false);      //disable LED module for Byzance
+    timer.start();                   //start the timer
+}
+
+void loop(){
+    if(timer.read_ms() > 2000){    //if timer exceedes 2000ms
+        timer.stop();    //stop the timer
+        timer.reset();   //reset the timer to zero
+        led = !led;      //flip the LED  
+        timer.start();   //and start timer again
+    }
+    Thread::wait(50);
+}
 ```
 
 ## Wait
