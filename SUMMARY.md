@@ -119,7 +119,7 @@
     * [Nastavení](hardware-a-programovani/funkcionality/webove-rozhrani/nastaveni.md)
   * [Webová konzole](hardware-a-programovani/funkcionality/webova-konzole.md)
   * [Vytížení CPU](hardware-a-programovani/funkcionality/vytizeni-cpu.md)
-  * [Odložení restart](hardware-a-programovani/funkcionality/odlozeni-restart.md)
+  * [Odložený restart](hardware-a-programovani/funkcionality/odlozeni-restart.md)
   * [Identifikace zařízení](hardware-a-programovani/funkcionality/identifikace-zarizeni.md)
   * [Revize](hardware-a-programovani/funkcionality/revize.md)
   * [OTP paměť](hardware-a-programovani/funkcionality/otp-pamet.md)
@@ -129,8 +129,4 @@
   * [Callback Busy](hardware-a-programovani/funkcionality/callback-busy.md)
   * [LED modul](hardware-a-programovani/funkcionality/led-modul.md)
   * [Náhodná čísla](hardware-a-programovani/funkcionality/generator-nahodnych-cisel.md)
-
-## Hardware \(old\)
-
-## Interní
 

@@ -1,4 +1,4 @@
-# Odložení restart
+# Odložený restart
 
 Zařízení je možné na dálku softwarově restartovat.
 
