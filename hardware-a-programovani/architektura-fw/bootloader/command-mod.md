@@ -22,7 +22,7 @@ Při prvním spuštění nebo při položce configured=0 bootloader skáče do c
 * **target** -Typ desky. 
 * **fullid** - vypíše FULL ID zařízení.  
 * **launch\_reset** - Pokud bylo předchozí spuštění firmware neúspěšné a není žádná validní binárka k obnovení, je třeba nahrát validní binárku a poté napsat příkaz ''launch\_reset''.
-* **defaults** - Veškeré nastavení se obnoví do [defaultního nastavení](https://github.com/byzance/public-documentation/tree/38b460c46404c197299c0f0a84e3402a9b74c8d7/byzance_documentation/architektura-fw/bootloader/TO%20DO%20ODKAZ/README.md).
+* **defaults** - Veškeré nastavení se obnoví do [výchozích hodnot](vychozi-hodnoty.md).
 
 ## Příkazy s parametrem i bez
 
@@ -36,7 +36,7 @@ Více informací k MQTT připojení je možno nalézt v sekci [Komunikace se ser
 * **backup\_mqtt\_password** - Záložní heslo pro přihlášení k Homerovi.
 * **alias** - Alias zařízení, který si každý může nastavit pro lepší [identifikaci zařízení](../../funkcionality/identifikace-zarizeni.md).
 * **mac** - Zjištění MAC adresy.
-* **blreport** - Bootloader report. Zapnutí, nebo vypnutí výpisu hlavičky [bootloader](https://github.com/byzance/public-documentation/tree/38b460c46404c197299c0f0a84e3402a9b74c8d7/articles/hardware/ioda/navody/bootloader.md)u do konzole.
+* **blreport** - Bootloader report. Zapnutí, nebo vypnutí výpisu hlavičky [bootloaderu](./) do konzole.
 * **wdenable** - Zapnutí [watchdogu](../../funkcionality/watchdog.md).
 * **wdtime** - Nastavení periody resetu [watchdogu](../../funkcionality/watchdog.md).
 * **autobackup** - Funkce, která zajišťuje, zajišťuje zálohu starého firmware při doručení nového.

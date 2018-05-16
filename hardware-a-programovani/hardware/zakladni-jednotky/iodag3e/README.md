@@ -1,6 +1,14 @@
+---
+description: >-
+  Stránka se věnuje technickému popisu základní jednotky IODAG3E a slouží jako
+  rozcestník na stránky s detailnějšími informacemi.
+---
+
 # IODAG3E
 
-IODAG3E je zařízení které umožňuje vzdálené programování a zároveň funguje jako IoT brána komunikující s Cloudem skrze ethernetové rozhraní. Vlastností tohoto zařízení je velké množství výstupních a vstupních periférií, které umožňují vysokou variabilitu využití jak v průmyslu, tak domácí automatizaci či v menších aplikacích.
+## Přehled
+
+IODAG3E je základní jednotka vybavená vestavěným ethernetovým rozhraním pro připojení do [Cloudu](../../../../cloud/cloud.md). Volitelně nabízí [GSM ](../../../konektivita/gsm.md)a/nebo [6LowPAN](https://docu.byzance.cz/~/edit/primary/hardware-a-programovani/konektivita/6lowpan)​ konektivitu. Jednotka disponuje bohatými možnostmi napájení \(aktivní/pasivní PoE, USB, AC/DC vstup\) a velkým množstvím vstupně výstupních signálů na [X a Y konektorech](../../rozsirujici-moduly/#x-konektor-a-y-konektor). Jednotka se hodí pro řízení uživatelského zařízení a je možné ji vestavět do nového či existujícího systému.
 
 ![ioda\_board](../../../../.gitbook/assets/iodag3e.png)
 
