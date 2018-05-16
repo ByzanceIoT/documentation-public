@@ -31,7 +31,7 @@ Sem je napojen dělič, jehož výstup PWR\_MEAS je připojen do mikrokontrolér
 * ve [webovém rozhraní](webove-rozhrani/)
 * pomocí uživatelského kódu a [Byzance API](../programovani-hw/byzance-hardware-api.md).
 
-Napájecí napětí je však pouze orientační. Na základě zvolené větve napájení je třeba k naměřené hodnotě přičíst úbytky na usměrňovací kaskádě - zhruba 0,7 voltu při průchodu každou diodou.
+Napájecí napětí je však pouze orientační. Na základě zvolené větve napájení je třeba pro zjištění skutečné hodnoty k naměřené hodnotě přičíst úbytky na usměrňovací kaskádě - zhruba 0,7 voltu při průchodu každou diodou.
 
 ## Referenční napětí
 
