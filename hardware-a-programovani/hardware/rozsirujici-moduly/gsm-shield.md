@@ -1,6 +1,6 @@
 # GSM shield
 
-GSM shield si klade za cíl připojit základní jednotku k Internetu pomocí buňkové sítě GSM. Jádro shieldu tvoří modul ublox SRA-U201, což jej činí globálně použitelným. Je možné využít jak klasickou mini SIM, tak zabudovanou eSIM. Shield pracuje ve 3G HSPA/GSM síti.
+GSM shield si klade za cíl připojit základní jednotku k Internetu pomocí buňkové sítě GSM. Jádro shieldu tvoří modul ublox SARA-U201, což jej činí globálně použitelným. Je možné využít jak klasickou mini SIM, tak zabudovanou eSIM. Shield pracuje ve 3G HSPA/GSM síti.
 
 ![](../../../.gitbook/assets/shield_gsm_b1.png)
 

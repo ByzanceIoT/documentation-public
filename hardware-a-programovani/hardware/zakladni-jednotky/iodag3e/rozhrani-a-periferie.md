@@ -138,5 +138,9 @@ Mikrokontrolér jednotky má k dispozici sadu také skupinu timerů, které se p
 
 ## SWD
 
+SWD \(Serial Wire Debug\) konektor slouží k ručnímu naprogramování a ladění mikrokontroléru zařízení. Pro jeho využití je potřeba nezbytný hardware a počítač s patřičným softwarem. Informace o tomto druhu programování hardware je v článku o [offline programování](../../../programovani-hw/offline-programovani/) \(pomocí [ZPP ](../../../programovani-hw/offline-programovani/upload-kodu-pomoci-zpp.md)či [ST-linku](../../../programovani-hw/offline-programovani/upload-kodu-z-gui.md)\).
+
+![Spodn&#xED; polovina desky IODAG3E s um&#xED;st&#x11B;n&#xED;m SWD konektoru a vyzna&#x10D;en&#xFD;m pinem &#x10D;&#xED;slo 1.](../../../../.gitbook/assets/nakres-ioda-swd_pin_1.svg)
+
 
 

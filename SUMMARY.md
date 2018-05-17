@@ -131,7 +131,7 @@
   * [Náhodná čísla](hardware-a-programovani/funkcionality/nahodna-cisla.md)
 * Správa zařízení
   * [Identifikace zařízení](hardware-a-programovani/sprava-zarizeni/identifikace-zarizeni.md)
+  * [Monitoring parametrů](hardware-a-programovani/sprava-zarizeni/provozni-informace.md)
   * [Konfigurace zařízení](hardware-a-programovani/sprava-zarizeni/konfigurace-zarizeni.md)
-  * [Provozní informace](hardware-a-programovani/sprava-zarizeni/provozni-informace.md)
   * [Omezení konfigurace](hardware-a-programovani/sprava-zarizeni/omezeni-konfigurace.md)
 

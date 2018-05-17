@@ -90,6 +90,8 @@ Jediná správná možnost editace aliasu je pomocí Byzance Code \(Becki\). V s
 
 pokec o blink
 
+\#TODO animace 
+
 ## Revize
 
 Revize \(revision\) je jeden z dalších identifikátorů každého zařízení.

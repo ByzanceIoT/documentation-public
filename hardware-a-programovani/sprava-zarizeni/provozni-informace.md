@@ -1,4 +1,4 @@
-# Provozní informace
+# Monitoring parametrů
 
 ## Čas běhu zařízení
 
