@@ -2,20 +2,42 @@
 
 ## Přehled
 
-IODAG3E je základní jednotka vybavená vestavěným ethernetovým rozhraním pro připojení do [Cloudu](../../../../cloud/cloud.md). Volitelně nabízí [GSM ](../../../konektivita/gsm.md)a/nebo [6LowPAN](https://docu.byzance.cz/~/edit/primary/hardware-a-programovani/konektivita/6lowpan)​ konektivitu. Jednotka disponuje bohatými možnostmi napájení \(aktivní/pasivní PoE, USB, AC/DC vstup\) a velkým množstvím vstupně výstupních signálů na [X a Y konektorech](../../rozsirujici-moduly/#x-konektor-a-y-konektor). Jednotka se hodí pro řízení uživatelského zařízení a je možné ji vestavět do nového či existujícího systému.
+IODAG3E je základní jednotka vybavená vestavěným ethernetovým rozhraním pro připojení do [Cloudu](../../../../cloud/cloud.md). Volitelně nabízí [GSM ](../../../konektivita/gsm.md)a/nebo [6LowPAN](https://docu.byzance.cz/~/edit/primary/hardware-a-programovani/konektivita/6lowpan)​ konektivitu. Jednotka disponuje bohatými možnostmi napájení \(aktivní/pasivní PoE, USB, AC/DC vstup\), velkým množstvím vstupně výstupních signálů na [X a Y konektorech](../../rozsirujici-moduly/#x-konektor-a-y-konektor) a výkonným mikrokontrolérem ARM Cortex M4. Jednotka se hodí pro řízení uživatelského zařízení a je možné ji vestavět do nového či existujícího systému. Alternativně lze na základě dokumentace navrhnout vlastní zařízení, která bude již jednotku IODAG3 mít přímo integrovanou v sobě.
+
+
 
 ![ioda\_board](../../../../.gitbook/assets/iodag3e.png)
 
-## Mikroprocesor
+## Funkcionality
 
-* STM32F437IIH6 \([Datasheet](http://www.st.com/content/ccc/resource/technical/document/datasheet/fd/8c/0a/19/13/8f/41/99/DM00077036.pdf/files/DM00077036.pdf/jcr:content/translations/en.DM00077036.pdf)\)
-* 2 MB Flash
-* 180 MHz
-* 192 kB SRAM \(včetně 64 KB CCM\)
-* Programování pomocí SWD nebo z Cloudu
-* MAC adresa
+* mikrokontrolér STM32F437IIH6 \([Datasheet](http://www.st.com/content/ccc/resource/technical/document/datasheet/fd/8c/0a/19/13/8f/41/99/DM00077036.pdf/files/DM00077036.pdf/jcr:content/translations/en.DM00077036.pdf)\)
+  * 2 MB FLASH
+  * 192 kB SRAM \(včetně 64 kB CCM\)
+  * 180 MHz 
+* vestavěný ethernet
+  * navíc volitelně GSM a/nebo 6LoWPAN 
+* napájení 4 až 60 V AC/DC
+  * čtyři napájecí vstupy
+  * integrované PoE
+* 43 vstupně výstupních pinů
+* externí FLASH pamět 64Mb
+* RGB stavová LED dioda
+* dvě tlačítka \(_reset_ a _user_ tlačítko\) 
+* opensource návrh
 
-## Periférie
+## Další funkce
+
+* online programování v C/C++ z webové aplikace Byzance
+* vzdálená aktualizace uživatelského programu
+* vestavěný webový server
+* konektor na uchycení 6LoWPAN modulu WEXP pro bezdrátovou komunikaci
+* low power management
+* hardwarová akcelerace CRC, šifrování
+* hardwarový watchdog
+* automatické zálohování uživatelského programu a jeho obnova při selhání
+* možnost vestavění na vlastní PCB
+
+## Periferie
 
 * Ethernet
 * Lowpan
@@ -27,18 +49,6 @@ IODAG3E je základní jednotka vybavená vestavěným ethernetovým rozhraním p
 * I2C
 * SAI
 * USB 2.0
-
-## Další funkce
-
-* Online programování v C/C++ z webové aplikace Byzance
-* Vzdálená aktualizace uživatelského programu
-* Vestavěný webový server
-* Konektor na uchycení Lowpan modulu WEXP pro bezdrátovou komunikaci
-* Low power management
-* Hardwarová akcelerace CRC, šifrování
-* Hardwarový watchdog
-* Automatické zálohování uživatelského programu a jeho obnova při selhání
-* Možnost vestavění na vlastní PCB
 
 ## Možnosti napájení
 
