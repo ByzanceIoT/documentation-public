@@ -45,7 +45,7 @@ void led_thread() {
     	for(uint8_t i=0; i<10; i++){	//blink 10 times fast
 			led = 1;	//flip blue led
 			Thread::wait(50);
-			led=0;
+			led = 0;
 			Thread::wait(50);
     	}
     	led_protection.unlock();
@@ -62,7 +62,7 @@ void loop(){
 	for(uint8_t i=0; i<10; i++){	//blink 5 times slow
 		led = 1;	//flip blue led
 		Thread::wait(200);	//wait for a second
-		led=0;
+		led = 0;
 		Thread::wait(200);
 	}
 	led_protection.unlock();
@@ -82,7 +82,36 @@ Semaphore semaphore;
 Each Thread can wait for signals and to be notified of events.
 
 ```cpp
-Signal
+#include "byzance.h"
+
+#define BLINK_SIGNAL 0x01
+
+DigitalOut led(LED_BLUE);
+Thread thread;
+
+void led_thread() {
+    while (true) {	//loop the thread
+    	osEvent event = Thread::signal_wait(0);	//wait for any signal forever
+    	if(event.status == osEventSignal && (event.value.signals & BLINK_SIGNAL)){	//if event was signal and signal is BLINK_SIGNAL
+			for(uint8_t i=0; i<10; i++){	//blink 10 times fast
+				led = 0;
+				Thread::wait(50);
+				led = 1;
+				Thread::wait(50);
+			}
+    	}
+    }
+}
+
+void init() {
+	Byzance::led_module(false);  //disable LED module for Byzance
+    thread.start(led_thread);	 //start the thread
+}
+
+void loop(){	//set signal for thread once in 5 seconds
+	thread.signal_set(BLINK_SIGNAL);	//set signal for thread
+	Thread::wait(5000);					//wait for 5s
+}
 ```
 
 ## Queue
