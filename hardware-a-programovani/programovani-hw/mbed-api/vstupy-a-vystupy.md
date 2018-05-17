@@ -224,22 +224,34 @@ void loop(){
 
 ## PwmOut
 
-Funkce PwmOut umožňuje na pinu vytvářet pulzně šířkovou modulaci, regulovat její periodu a šířku jejich pulsů.
+Třída PwmOut umožňuje na pinu vytvářet pulzně šířkovou modulaci, regulovat její periodu a šířku jejich pulsů.
 
 ```cpp
-PwmOut pwm(X04);
+#include "byzance.h"
+
+PwmOut led(LED_BLUE);	//bus is defined by all RGB LED
+
+void init(){
+    Byzance::led_module(false);  //disable LED module for Byzance
+    led.period_ms(1);			 //set frequency to 1kHz (period 1ms)
+}
 
 void loop(){
+	//breathe in
+	float value=0.0;
+	while(value < 1.0){
+		led = value;		//write duty cycle
+		value += 0.01;		//increase value
+		Thread::wait(10);	//wait for 10ms
+	}
 
-  pwm.period(4.0f);  //Natavení periody 4s 
-  pwm.write(0.50f);  //50% duty cycle, vzhledem k periodě
-
-  wait(10);
-
-  pwm.period(4.0f);   //nastavení periody 4s
-  pwm.pulsewidth(2);  //dvouvteřinový puls -> stejné jako 50% duty cycle
-
-
+	//breathe out
+	value = 1.0;
+	while(value > 0.0){
+		led = value;		//write duty cycle
+		value -= 0.01;		//decrease value
+		Thread::wait(10);	//wait for 10ms
+	}
 }
 ```
 
