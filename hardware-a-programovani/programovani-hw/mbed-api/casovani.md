@@ -1,6 +1,6 @@
 # Časování
 
-## Ticker
+## [Ticker](https://os.mbed.com/docs/latest/reference/ticker.html)
 
 Umožňuje periodické volání funkcí s mikrosekundovou přesností.
 
@@ -26,7 +26,7 @@ void loop(){
 }
 ```
 
-## Timeout
+## [Timeout](https://os.mbed.com/docs/latest/reference/timeout.html)
 
 Umožňuje zpožděné volání příslušné funkce s mikrosekundovou přesností.
 
@@ -53,7 +53,7 @@ void loop(){
 }
 ```
 
-## Timer
+## [Timer](https://os.mbed.com/docs/latest/reference/timer.html)
 
 Umožňuje měření časových úseků až s mikrosekundovou přesností. 
 
@@ -80,11 +80,5 @@ void loop(){
 }
 ```
 
-## Wait
 
-Simple wait capabilities
-
-```cpp
-Example
-```
 
