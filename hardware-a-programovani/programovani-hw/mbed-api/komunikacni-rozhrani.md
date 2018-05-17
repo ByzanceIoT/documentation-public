@@ -4,7 +4,7 @@
 
 V této sekci jsou zdokumentované funkce MBED API sloužící ke komunikaci s počítačem a externími zařízeními.
 
-## Serial
+## [Serial](https://os.mbed.com/docs/latest/reference/serial.html)
 
 Tato třída slouží k využití sériového rozhraní a komunikaci po sériové lince. Ke komunikaci jsou zapotřebí dva piny - RX\(recieve data\) a TX\(transfer data\).
 
@@ -23,7 +23,7 @@ void loop(){
 }
 ```
 
-## SPI
+## [SPI](https://os.mbed.com/docs/latest/reference/spi.html)
 
 Serial Peripheral Interface Master.
 
@@ -51,7 +51,7 @@ void loop(){
 }
 ```
 
-## SPISlave
+## [SPISlave](https://os.mbed.com/docs/latest/reference/spislave.html)
 
 Serial Peripheral Interface Slave.
 
@@ -59,7 +59,7 @@ Serial Peripheral Interface Slave.
 SPISlave spislave;
 ```
 
-## I2C
+## [I2C](https://os.mbed.com/docs/latest/reference/i2c.html)
 
 Třída I2C poskytuje funkcionalitu I2C sběrnice v roli master. 
 
@@ -93,7 +93,7 @@ void loop(){
 }
 ```
 
-## I2CSlave
+## [I2CSlave](https://os.mbed.com/docs/latest/reference/i2cslave.html)
 
 Use to communicate with I2C Master.
 
@@ -101,7 +101,7 @@ Use to communicate with I2C Master.
 I2CSlave i2cslave;
 ```
 
-## CAN
+## [CAN](https://os.mbed.com/docs/latest/reference/can.html)
 
 Controller-Area Network bus standard support.
 
