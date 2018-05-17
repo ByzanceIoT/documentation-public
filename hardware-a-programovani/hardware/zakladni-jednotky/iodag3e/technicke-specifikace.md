@@ -6,19 +6,21 @@ Stránka se zabývá mechanickým popisem desky [IODAG3E](./), uvádí důležit
 
 ## Absolute maximum ratings
 
-| Parametr | Min | Typ | Max |
+| **Parametr** | **Min** | **Typ** | **Max** |
 | --- | --- | --- | --- |
 | Napájecí napětí \[A\] | 4.0 |  | 60.0 |
 | Napájecí proud \[V\] |  |  | 1.2 |
 | Provozní rozsah \[°C\] | -40 |  | -85 |
 | Skladovací rozsah \[°C\] | -40 |  | -85 |
 | ESD \(human body model\) \[V\] |  |  | 2000 |
+| Proud libovolným I/O nebo řídicím pinem \[mA\] | -25 |  | 25 |
+| Celkový proud přes všechny I/O nebo řídicí piny \[mA\] | -120  |            | 120        |
 
 Jednotka [IODAG3E](./) je postavena z běžně dostupných komerčních komponent přičemž každá komponenta má výrobcem daný rozsah provozních teplot. Většina komponenta pracuje v průmyslovém rozsahu -40°C až +85°C. Použitý ethernetový budič LAN8720A-CP pracuje až od teploty 0°C nicméně lze použít i variantu LAN8720Ai-CP s rozšířeným rozsahem -40°C až +85°C. Všechny ostatní komponenty plně splňují průmyslový rozsah -40°C až +85°C.
 
 ## Doporučené operační podmínky
 
-| Parametr | Min | Typ | Max |
+| **Parametr** | **Min** | **Typ** | **Max** |
 | --- | --- | --- | --- |
 | Napájecí napětí \[V\] | 5.0 |  | 57.0 |
 | Napájecí proud \[A\] |  | 0.5 | 1.0 |
