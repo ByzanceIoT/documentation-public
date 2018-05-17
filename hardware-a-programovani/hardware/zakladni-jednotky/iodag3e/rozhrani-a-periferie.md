@@ -2,9 +2,7 @@
 
 [IODAG3E ](./)disponuje mnoha vstupy a výstupy vyvedenými na svém těle buď v podobě [X a Y konektorů](../../rozsirujici-moduly/#x-konektor-a-y-konektor) a nebo jako další konektory přímo na PCB. Mezi tyto rozhraní patří plnohodnotný mikro USB port, volitelný konektor externího napájení, volitelný [SWD](../../../programovani-hw/offline-programovani/) konektor, konektor pro připojení [WEXP ](../../ostatni/wexp.md)modulu a zapuštěný konektor ethernetu.
 
-## Blokové schéma {#block-diagram}
-
-![](../../../../.gitbook/assets/ioda_blokove_schema%20%281%29.jpg)
+![Rozm&#xED;st&#x11B;n&#xED; komponent na z&#xE1;kladn&#xED; jednotce IODAG3E.](../../../../.gitbook/assets/nakres-ioda-viktor.svg)
 
 ## GPIO a sběrnice
 
