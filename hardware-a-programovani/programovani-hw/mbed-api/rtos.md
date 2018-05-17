@@ -1,6 +1,6 @@
 # RTOS
 
-## Thread
+## [Thread](https://os.mbed.com/docs/latest/reference/thread.html)
 
 Defining, creating and controlling thread functions in the system.
 
@@ -29,7 +29,7 @@ void loop(){
 }
 ```
 
-## Mutex
+## [Mutex](https://os.mbed.com/docs/latest/reference/mutex.html)
 
 Synchronize execution of threads, for example to protect access to a shared resource.
 
@@ -71,7 +71,7 @@ void loop(){
 }
 ```
 
-## Semaphore
+## [Semaphore](https://os.mbed.com/docs/latest/reference/semaphore.html)
 
 Manages thread access to a pool of shared resources of a certain type.
 
@@ -117,7 +117,7 @@ void loop(){    //set signal for thread once in 5 seconds
 }
 ```
 
-## Queue
+## [Queue](https://os.mbed.com/docs/latest/reference/queue.html)
 
 Allows queue pointers to data from producer threads to consumer threads.
 
@@ -156,7 +156,7 @@ void loop(){
 
 ```
 
-## MemoryPool
+## [MemoryPool](https://os.mbed.com/docs/latest/reference/memorypool.html)
 
 Define and manage fixed-size memory pools.
 
@@ -205,12 +205,51 @@ void loop() {
 }
 ```
 
-## Mail
+## [Mail](https://os.mbed.com/docs/latest/reference/mail.html)
 
-Like queue, with the added benefit of providing a memory pool for allocating messages.
+Like queue, with the added benefit of providing a memory pool for allocating messages - combination of MemoryPool and Queue.
 
 ```cpp
-Mail
+#include "byzance.h"
+
+typedef struct {
+    float    voltage;   /* AD result of measured voltage */
+    float    current;   /* AD result of measured current */
+    uint32_t counter;   /* A counter value               */
+} message_t;
+
+Serial pc(SERIAL_TX, SERIAL_RX);	//USBSerial pc(0x1f00, 0x2012, 0x0001, false);
+Mail<message_t, 16> mail_box;
+Thread thread;
+
+void send_thread (void) {
+    uint32_t i = 0;
+    while (true) {		//every 5 seconds queue 4 msgs
+        for(uint8_t j = 0; j < 5; j++){
+        	i++; // fake data update
+			message_t *message = mail_box.alloc();	//alloc memory for message
+			message->voltage = (i * 0.1) * 33;
+			message->current = (i * 0.1) * 11;
+			message->counter = i;
+			mail_box.put(message);		//queue the message
+        }
+        pc.printf("sent 4 mails from send thread\n");
+        Thread::wait(5000);
+    }
+}
+
+void init(){
+	thread.start(callback(send_thread));
+}
+
+void loop() {
+	osEvent evt = mail_box.get();
+	if (evt.status == osEventMail) {
+		message_t *message = (message_t*)evt.value.p;
+		pc.printf("received mail no. %d voltage: %f V, current: %f A\n",message->counter, message->voltage, message->current);
+		mail_box.free(message);	//free msg from memory
+	}
+}
 ```
 
 ## Interrupts
