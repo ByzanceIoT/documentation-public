@@ -131,5 +131,5 @@
   * [Callback Busy](hardware-a-programovani/funkcionality/callback-busy.md)
   * [LED modul](hardware-a-programovani/funkcionality/led-modul.md)
   * [Náhodná čísla](hardware-a-programovani/funkcionality/nahodna-cisla.md)
-  * Omezení konfigurace
+  * [Omezení konfigurace](hardware-a-programovani/funkcionality/omezeni-konfigurace.md)
 
