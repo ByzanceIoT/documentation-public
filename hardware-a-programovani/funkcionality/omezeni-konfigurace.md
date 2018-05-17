@@ -6,49 +6,67 @@
 
 Hostname nebo IP adresa hlavního serveru.
 
-| Typ | char\[128\] |
-| --- | --- |
-| Omezení | tisknutelné ASCII znaky zakončené terminační nulou |
+| typ | char\[128\] |
+| --- | --- | --- | --- | --- |
+| omezení | tisknutelné ASCII znaky zakončené terminační nulou |
+| výchozí hodnota | 192.168.65.179 |
+| možnost číst | ano, uživatel |
+| možnost nastavit | ano, uživatel |
 
 ### **normal\_mqtt\_port**
 
 MQTT port hlavního serveru.
 
-| Typ | 16 bit unsigned integer |
-| --- | --- |
-| Rozsah | 0 - 65535 |
+| typ | 16 bit unsigned integer |
+| --- | --- | --- | --- | --- |
+| omezení | 0 - 65535 |
+| výchozí hodnota | 1881 |
+| možnost číst | ano, uživatel |
+| možnost nastavit | ano, uživatel |
 
 ### **backup\_mqtt\_hostname**
 
 Hostname nebo IP adresa záložního serveru.
 
-| Typ | char\[128\] |
-| --- | --- |
-| Omezení | tisknutelné ASCII znaky zakončené terminační nulou |
+| typ | char\[128\] |
+| --- | --- | --- | --- | --- |
+| omezení | tisknutelné ASCII znaky zakončené terminační nulou |
+| výchozí hodnota | 192.168.65.179 |
+| možnost číst | ano, uživatel |
+| možnost nastavit | ano, uživatel |
 
 ### **backup\_mqtt\_port**
 
 MQTT port záložního serveru.
 
-| Typ | 16 bit unsigned integer |
-| --- | --- |
-| Rozsah | 0 - 65535 |
+| typ | 16 bit unsigned integer |
+| --- | --- | --- | --- | --- |
+| omezení | 0 - 65535 |
+| výchozí hodnota | 1881 |
+| možnost číst | ano, uživatel |
+| možnost nastavit | ano, uživatel |
 
 ### **mqtt\_username**
 
 Přihlašovací jméno do MQTT brokeru.
 
-| Typ | char\[48\] |
-| --- | --- |
-| Omezení | tisknutelné ASCII znaky zakončené terminační nulou |
+| typ | char\[48\] |
+| --- | --- | --- | --- | --- |
+| omezení | tisknutelné ASCII znaky zakončené terminační nulou |
+| výchozí hodnota | user |
+| možnost číst | uživatelsky ne, pouze interně |
+| možnost zapisovat | ano, uživatel |
 
 ### **mqtt\_password**
 
 Přihlašovací heslo do MQTT brokeru.
 
-| Typ | char\[48\] |
-| --- | --- |
-| Omezení | tisknutelné ASCII znaky zakončené terminační nulou |
+| typ | char\[48\] |
+| --- | --- | --- | --- | --- |
+| omezení | tisknutelné ASCII znaky zakončené terminační nulou |
+| výchozí hodnota | pass |
+| možnost číst | uživatelsky ne, pouze interně |
+| možnost zapisovat | ano, uživatel |
 
 ## Ostatní
 
@@ -56,9 +74,12 @@ Přihlašovací heslo do MQTT brokeru.
 
 Alias zařízení, který si každý může nastavit pro lepší [identifikaci zařízení](identifikace-zarizeni.md).
 
-| Typ | char\[64\] |
-| --- | --- |
-| Omezení | tisknutelné ASCII znaky zakončené terminační nulou |
+| typ | char\[64\] |
+| --- | --- | --- | --- | --- |
+| omezení | tisknutelné ASCII znaky zakončené terminační nulou |
+| výchozí hodnota | BYZANCE |
+| možnost číst | ano, uživatel |
+| možnost zapisovat | ano, uživatel |
 
 ### **mac**
 
@@ -68,9 +89,12 @@ Zjištění MAC adresy.
 
 Bootloader report. Zapnutí, nebo vypnutí výpisu hlavičky [bootloaderu](../architektura-fw/bootloader/) do konzole.
 
-| Typ | boolean |
-| --- | --- |
-| Omezení | 0 nebo 1 |
+| typ | boolean |
+| --- | --- | --- | --- | --- |
+| omezení | 0, 1 |
+| výchozí hodnota | 0 |
+| možnost číst | ano, uživatel |
+| možnost zapisovat | ano, uživatel |
 
 ### **wdenable**
 
