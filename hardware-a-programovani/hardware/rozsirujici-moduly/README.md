@@ -10,6 +10,14 @@ Na [základní jednotky](../zakladni-jednotky/) se připojují v této kapitole 
 
 Fyzicky jsou vstupy a výstupy základních jednotek rozděleny do dvou skupin, tzn. na **X konektor** a **Y konektor**. Tyto konektory obsahují vybrané na základní jednotce dostupné periferie \(UART, I2C, PWM, ...\), napájecí signály a nebo signály pro [SWD ](../../programovani-hw/offline-programovani/)či reset. 
 
+Kromě vstupně výstupních pinů jsou na konektorech dostupné i napájecí vývody a signály _user_ tlačítka a tlačítka _reset_. Jmenovitě jde o signály 3V3, USR, GND, VBUS, VBAT a RST.
+
+* 3V3 - výstupní napájecí pin s napětím 3.3 V pro napájení externích periferií
+* USR - signál _user_ tlačítka \(emulace _user_ tlačítka z externího zařízení\)
+* GND - nulový potenciál jednotky, referenční nulový potenciál pro všechny ostatní signály
+* VBUS - napájecí výstup určený pro výstup napájecího napětí ze základní jednotky, více v sekci s napájením pro danou[ základní jednotku](../zakladni-jednotky/#prehled) \(konkrétně pro IODAG3E v [této části](../zakladni-jednotky/iodag3e/#moznosti-napajeni)\).
+* VBAT - vstupní napájení do [RTC obvodu](../../tutorialy/prace-s-datem-a-casem-rtc.md) základní jednotky 
+
 ![P&#x159;&#xED;klad X konektoru \(vlevo\) a Y konektory \(vpravo\) na z&#xE1;kladn&#xED; desce IODAG3E.](../../../.gitbook/assets/x_y_conn%20%283%29.png)
 
 ### X konektor
