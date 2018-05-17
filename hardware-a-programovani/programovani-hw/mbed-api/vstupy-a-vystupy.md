@@ -101,39 +101,6 @@ Funkcí BusIn lze vést libovolný počet digitálních vstupů jako bus, což u
 
 ```cpp
 #include "byzance.h"
-// Tři přepínače vedené jako BUS připojené na vstupy X1,X2,X3
-BusIn switches(X01,X02,USR);
-
-void init(){
-
-//Nastavení módu přepínačů (PullUp/PullDown/PullNone/OpenDrain)
-switches.mode(PullNone);
-}
-void loop(){
-
-  // Přečte digitální vstupy a    
-  switch(switches.read()){
-  // na základě hodnoty vypíše, která kombinace přepínačů je navolená.
-
-      case 0x0: printf("X01-DOWN X02-DOWNW USR-not-pressed\n"); break;
-      case 0x1: printf("X01-UP X02-DOWN USR-not-pressed\n"); break;
-      case 0x2: printf("X01-DOWN X02-UP USR-not-pressed\n"); break;
-      case 0x3: printf("X01-UP X02-UP USR-not-pressed\n"); break;
-      case 0x4: printf("X01-DOWN X02-DOWN USR-pressed\n"); break;
-      case 0x5: printf("X01-UP X02-DOWN USR-pressed\n"); break;
-      case 0x6: printf("X01-DOWN X02-UP USR-pressed\n"); break;
-      case 0x7: printf("X01-UP X02-UP USR-pressed\n"); break;
-  }
-
-}
-```
-
-## BusOut
-
-Třída BusOut definuje z libovolného počtu digitálních výstupů výstupní sběrnici.  Na sběrnici je pak možné jednoduše zapisovat. 
-
-```cpp
-#include "byzance.h"
 
 BusIn switches(X01,X02,USR);	//bus is defined X01, X02 and USR button
 
@@ -153,6 +120,27 @@ void loop(){
 		case 0x7: printf("X01-UP X02-UP USR-pressed\n"); break;
 	}
 	Thread::wait(500);
+}
+```
+
+## BusOut
+
+Třída BusOut definuje z libovolného počtu digitálních výstupů výstupní sběrnici.  Na sběrnici je pak možné jednoduše zapisovat. 
+
+```cpp
+#include "byzance.h"
+
+BusOut leds(LED_BLUE,LED_RED,LED_GREEN);	//bus is defined by all RGB LED
+
+void init(){
+    Byzance::led_module(false);  		//disable LED module for Byzance
+}
+
+void loop(){
+	for(uint8_t i = 0; i < 8; i++){		//for each combination on bus
+		leds = i;						//write color on bus
+		Thread::wait(1000);
+	}
 }
 ```
 
