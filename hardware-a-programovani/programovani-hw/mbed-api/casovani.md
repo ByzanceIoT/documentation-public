@@ -55,7 +55,7 @@ Umožňuje měření časových úseků až s mikrosekundovou přesností.
 
 ```cpp
 #include "byzance.h"
-DigitaOut led(LED_BLUE);
+DigitalOut led(LED_BLUE);
 Timer timer;
 
 void init(){
