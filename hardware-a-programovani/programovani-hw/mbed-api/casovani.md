@@ -6,6 +6,8 @@ Umožňuje periodické volání funkcí s mikrosekundovou přesností.
 
 ```cpp
 #include "byzance.h"
+
+Serial pc(SERIAL_TX, SERIAL_RX);	//USBSerial pc(0x1f00, 0x2012, 0x0001, false); //
 Ticker ticker;
 DigitalOut led(LED_BLUE);
 ​
@@ -19,7 +21,7 @@ void init(){
 }
 ​
 void loop(){
-    printf("im running\n");
+    pc.printf("im running\n");
     Thread::wait(1000);
 }
 ```
@@ -30,6 +32,8 @@ Umožňuje zpožděné volání příslušné funkce s mikrosekundovou přesnost
 
 ```cpp
 #include "byzance.h"
+
+Serial pc(SERIAL_TX, SERIAL_RX);	//USBSerial pc(0x1f00, 0x2012, 0x0001, false); //
 Timeout timeout;
 DigitalOut led(LED_BLUE);    //led control is inverted
 
@@ -44,7 +48,7 @@ void init(){
 }
 
 void loop(){
-    printf("im running\n");
+    pc.printf("im running\n");
     Thread::wait(1000);
 }
 ```
@@ -56,6 +60,7 @@ Umožňuje měření časových úseků až s mikrosekundovou přesností.
 ```cpp
 #include "byzance.h"
 
+Serial pc(SERIAL_TX, SERIAL_RX);	//USBSerial pc(0x1f00, 0x2012, 0x0001, false); //
 DigitalOut led(LED_BLUE);
 Timer timer;
 
