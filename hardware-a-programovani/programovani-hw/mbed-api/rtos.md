@@ -109,8 +109,8 @@ void init() {
 }
 
 void loop(){	//set signal for thread once in 5 seconds
-	thread.signal_set(BLINK_SIGNAL);	//set signal for thread
-	Thread::wait(5000);					//wait for 5s
+	thread.signal_set(BLINK_SIGNAL);
+	Thread::wait(5000);
 }
 ```
 
