@@ -4,7 +4,9 @@ Každá [základní jednotka ](../)může mít piny [X a Y konektoru](../../rozs
 
 ![](../../../../.gitbook/assets/x_conn_komplet%20%281%29.svg)
 
-![](../../../../.gitbook/assets/y_conn_komplet.svg)
+![](../../../../.gitbook/assets/y_conn_y00_y13.svg)
+
+![](../../../../.gitbook/assets/y_conn_y13_y26%20%282%29.svg)
 
 ## Konektor X
 
