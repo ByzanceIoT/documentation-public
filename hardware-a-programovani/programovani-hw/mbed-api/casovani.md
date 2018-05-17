@@ -8,8 +8,20 @@ Umožňuje periodické volání funkcí s mikrosekundovou přesností.
 #include "byzance.h"
 Ticker ticker;
 DigitaOut led(LED_BLUE);
-
-void flip() {        led = !led;    //blue led is blinking}void init(){    Byzance::led_module(false);  //disable LED module for Byzance    ticker.attach(&flip,2.0);    //call fnciton flip every 2 seconds}void loop(){    printf("im running\n");    Thread::wait(1000);}
+​
+void flip() {    
+    led = !led;    //blue led is blinking
+}
+​
+void init(){
+    Byzance::led_module(false);  //disable LED module for Byzance
+    ticker.attach(&flip,2.0);    //call fnciton flip every 2 seconds
+}
+​
+void loop(){
+    printf("im running\n");
+    Thread::wait(1000);
+}
 ```
 
 ## Timeout
