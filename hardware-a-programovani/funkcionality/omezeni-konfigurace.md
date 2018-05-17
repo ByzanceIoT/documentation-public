@@ -2,11 +2,17 @@
 
 ## MQTT
 
+Připojení zařízení k serverům Byzance využívá technologii MQTT. 
+
+{% page-ref page="../konektivita/komunikace-s-portalem.md" %}
+
+Z hlediska bezpečnosti se používá hlavní a záložní MQTT server. 
+
+{% page-ref page="../konektivita/prepinani-mezi-servery.md" %}
+
 ### **normal\_mqtt\_hostname**
 
 Hostname nebo IP adresa hlavního serveru.
-
-{% page-ref page="../konektivita/komunikace-s-portalem.md" %}
 
 | typ | char\[128\] |
 | --- | --- | --- | --- | --- |
@@ -19,8 +25,6 @@ Hostname nebo IP adresa hlavního serveru.
 
 MQTT port hlavního serveru.
 
-{% page-ref page="../konektivita/komunikace-s-portalem.md" %}
-
 | typ | 16 bit unsigned integer |
 | --- | --- | --- | --- | --- |
 | omezení | 0 - 65535 |
@@ -31,8 +35,6 @@ MQTT port hlavního serveru.
 ### **backup\_mqtt\_hostname**
 
 Hostname nebo IP adresa záložního serveru.
-
-{% page-ref page="../konektivita/komunikace-s-portalem.md" %}
 
 | typ | char\[128\] |
 | --- | --- | --- | --- | --- |
@@ -45,8 +47,6 @@ Hostname nebo IP adresa záložního serveru.
 
 MQTT port záložního serveru.
 
-{% page-ref page="../konektivita/komunikace-s-portalem.md" %}
-
 | typ | 16 bit unsigned integer |
 | --- | --- | --- | --- | --- |
 | omezení | 0 - 65535 |
@@ -58,8 +58,6 @@ MQTT port záložního serveru.
 
 Přihlašovací jméno do MQTT brokeru.
 
-{% page-ref page="../konektivita/komunikace-s-portalem.md" %}
-
 | typ | char\[48\] |
 | --- | --- | --- | --- | --- |
 | omezení | tisknutelné ASCII znaky zakončené terminační nulou |
@@ -70,8 +68,6 @@ Přihlašovací jméno do MQTT brokeru.
 ### **mqtt\_password**
 
 Přihlašovací heslo do MQTT brokeru.
-
-{% page-ref page="../konektivita/komunikace-s-portalem.md" %}
 
 | typ | char\[48\] |
 | --- | --- | --- | --- | --- |
