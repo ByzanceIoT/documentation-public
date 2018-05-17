@@ -55,6 +55,7 @@ Umožňuje měření časových úseků až s mikrosekundovou přesností.
 
 ```cpp
 #include "byzance.h"
+
 DigitalOut led(LED_BLUE);
 Timer timer;
 
@@ -67,7 +68,7 @@ void loop(){
     if(timer.read_ms() > 2000){    //if timer exceedes 2000ms
         timer.stop();    //stop the timer
         timer.reset();   //reset the timer to zero
-        led = !led;      //flip the LED  
+        led = !led;      //flip the LED
         timer.start();   //and start timer again
     }
     Thread::wait(50);
