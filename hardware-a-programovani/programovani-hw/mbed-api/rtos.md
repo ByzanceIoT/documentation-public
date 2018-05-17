@@ -60,8 +60,8 @@ void init() {
 void loop(){
     led_protection.lock();    //lock or wait forever for unlock
     for(uint8_t i=0; i<10; i++){    //blink 5 times slow
-        led = 1;    //flip blue led
-        Thread::wait(200);    //wait for a second
+        led = 1; 
+        Thread::wait(200); 
         led = 0;
         Thread::wait(200);
     }
