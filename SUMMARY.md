@@ -38,7 +38,6 @@
 * [Úvod](hardware-a-programovani/uvod/README.md)
   * [Oživení zařízení](hardware-a-programovani/uvod/oziveni-zarizeni.md)
   * [Nahrání prvního programu](hardware-a-programovani/uvod/nahrani-prvniho-programu.md)
-  * [Konfigurace zařízení](hardware-a-programovani/uvod/konfigurace-zarizeni.md)
 * [Konektivita](hardware-a-programovani/konektivita/README.md)
   * [Komunikace s portálem](hardware-a-programovani/konektivita/komunikace-s-portalem.md)
   * [Přepínání mezi servery](hardware-a-programovani/konektivita/prepinani-mezi-servery.md)
@@ -126,11 +125,13 @@
   * [Identifikace zařízení](hardware-a-programovani/funkcionality/identifikace-zarizeni.md)
   * [Revize](hardware-a-programovani/funkcionality/revize.md)
   * [OTP paměť](hardware-a-programovani/funkcionality/otp-pamet.md)
-  * [Provozní informace](hardware-a-programovani/funkcionality/provozni-informace.md)
   * [Připojení zdroje k VBAT](hardware-a-programovani/funkcionality/pripojeni-zdroje-k-vbat.md)
   * [Události](hardware-a-programovani/funkcionality/udalosti.md)
   * [Callback Busy](hardware-a-programovani/funkcionality/callback-busy.md)
   * [LED modul](hardware-a-programovani/funkcionality/led-modul.md)
   * [Náhodná čísla](hardware-a-programovani/funkcionality/nahodna-cisla.md)
-  * [Omezení konfigurace](hardware-a-programovani/funkcionality/omezeni-konfigurace.md)
+* Správa zařízení
+  * [Konfigurace zařízení](hardware-a-programovani/sprava-zarizeni/konfigurace-zarizeni.md)
+  * [Provozní informace](hardware-a-programovani/sprava-zarizeni/provozni-informace.md)
+  * [Omezení konfigurace](hardware-a-programovani/sprava-zarizeni/omezeni-konfigurace.md)
 

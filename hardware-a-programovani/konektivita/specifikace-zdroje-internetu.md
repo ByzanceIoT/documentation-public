@@ -12,9 +12,9 @@ Mezi možné validní zdroje internetu je možno zařadit tyto
 * 6lowpan
 * gsm
 
-Konfigurace může proběhnout několika způsoby, více viz kapitola "[konfigurace zařízení](../uvod/konfigurace-zarizeni.md)".
+Konfigurace může proběhnout několika způsoby, více viz kapitola "[konfigurace zařízení](../sprava-zarizeni/konfigurace-zarizeni.md)".
 
-{% page-ref page="../uvod/konfigurace-zarizeni.md" %}
+{% page-ref page="../sprava-zarizeni/konfigurace-zarizeni.md" %}
 
 
 

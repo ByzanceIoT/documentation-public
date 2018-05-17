@@ -8,7 +8,7 @@ Autojump je funkce bootloaderu, která zajišťuje **skok do hlavního programu*
 
 Čas Autojump lze konfigurovat jedním ze způsobů popsaným v kapitole konfigurace zařízení.
 
-{% page-ref page="../../uvod/konfigurace-zarizeni.md" %}
+{% page-ref page="../../sprava-zarizeni/konfigurace-zarizeni.md" %}
 
 ## Restart to bootloader
 
@@ -24,7 +24,7 @@ Další možnost, jak docílit restartování zařízení do bootloaderu, je **o
 
 Ruční metody ovládání restartbl jsou popsány v kapitole konfigurace zařízení.
 
-{% page-ref page="../../uvod/konfigurace-zarizeni.md" %}
+{% page-ref page="../../sprava-zarizeni/konfigurace-zarizeni.md" %}
 
 
 

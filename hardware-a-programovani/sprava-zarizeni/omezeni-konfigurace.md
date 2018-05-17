@@ -80,7 +80,7 @@ Přihlašovací heslo do MQTT brokeru.
 
 ### **alias**
 
-Alias zařízení, který si každý může nastavit pro lepší [identifikaci zařízení](identifikace-zarizeni.md).
+Alias zařízení, který si každý může nastavit pro lepší [identifikaci zařízení](../funkcionality/identifikace-zarizeni.md).
 
 | typ | char\[64\] |
 | --- | --- | --- | --- | --- |
@@ -113,7 +113,7 @@ Bootloader report. Zapnutí, nebo vypnutí výpisu hlavičky [bootloaderu](../ar
 
 ### **wdenable**
 
-Zapnutí [watchdogu](watchdog.md).
+Zapnutí [watchdogu](../funkcionality/watchdog.md).
 
 | typ | boolean |
 | --- | --- | --- | --- | --- |
@@ -124,7 +124,7 @@ Zapnutí [watchdogu](watchdog.md).
 
 ### **wdtime**
 
-Nastavení periody resetu [watchdogu](watchdog.md).
+Nastavení periody resetu [watchdogu](../funkcionality/watchdog.md).
 
 | typ | integer |
 | --- | --- | --- | --- | --- |
@@ -168,7 +168,7 @@ při prvním spuštění bootloader naběhne vždy do Command režimu a čeká n
 
 ### **webview**
 
-Zapnutí nebo vypnutí funkcionality [webového rozhraní](webove-rozhrani/).
+Zapnutí nebo vypnutí funkcionality [webového rozhraní](../funkcionality/webove-rozhrani/).
 
 | typ | boolean |
 | --- | --- | --- | --- | --- |
@@ -179,7 +179,7 @@ Zapnutí nebo vypnutí funkcionality [webového rozhraní](webove-rozhrani/).
 
 ### **webport**
 
-Port, na kterém bude přístupno [webové rozhraní](webove-rozhrani/).
+Port, na kterém bude přístupno [webové rozhraní](../funkcionality/webove-rozhrani/).
 
 | typ | 16 bit unsigned integer |
 | --- | --- | --- | --- | --- |
@@ -234,7 +234,7 @@ Identifikátor pro [restart zařízení do bootloaderu](../architektura-fw/bootl
 
 ### **revision**
 
-Zjištění [revize zařízení](revize.md)
+Zjištění [revize zařízení](../funkcionality/revize.md)
 
 | typ | 32 bit unsigned integer |
 | --- | --- | --- | --- | --- |
