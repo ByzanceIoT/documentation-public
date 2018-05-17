@@ -11,19 +11,19 @@ DigitalOut led(LED_BLUE);
 Thread thread;
 
 void led_thread() {
-    while (true) {	//loop the thread
-        led = !led;	//flip blue led
-        Thread::wait(1000);	//wait for a second
+    while (true) {    //loop the thread
+        led = !led;    //flip blue led
+        Thread::wait(1000);    //wait for a second
     }
 }
 
 void init() {
-	Byzance::led_module(false);  //disable LED module for Byzance
-    thread.start(led_thread);	 //start the thread
+    Byzance::led_module(false);  //disable LED module for Byzance
+    thread.start(led_thread);     //start the thread
 }
 
 void loop(){
-    printf("i do nothing\n");	//main thread does actually nothing
+    printf("i do nothing\n");    //main thread does actually nothing
     Thread::wait(500);
 }
 ```
@@ -37,35 +37,35 @@ Synchronize execution of threads, for example to protect access to a shared reso
 
 DigitalOut led(LED_BLUE);
 Thread thread;
-Mutex led_protection;	//led access protection
+Mutex led_protection;    //led access protection
 
 void led_thread() {
-    while (true) {	//loop the thread
-    	led_protection.lock();	//lock or wait forever for unlock
-    	for(uint8_t i=0; i<10; i++){	//blink 10 times fast
-			led = 1;	//flip blue led
-			Thread::wait(50);
-			led = 0;
-			Thread::wait(50);
-    	}
-    	led_protection.unlock();
+    while (true) {    //loop the thread
+        led_protection.lock();    //lock or wait forever for unlock
+        for(uint8_t i=0; i<10; i++){    //blink 10 times fast
+            led = 1;    //flip blue led
+            Thread::wait(50);
+            led = 0;
+            Thread::wait(50);
+        }
+        led_protection.unlock();
     }
 }
 
 void init() {
-	Byzance::led_module(false);  //disable LED module for Byzance
-    thread.start(led_thread);	 //start the thread
+    Byzance::led_module(false);  //disable LED module for Byzance
+    thread.start(led_thread);     //start the thread
 }
 
 void loop(){
-	led_protection.lock();	//lock or wait forever for unlock
-	for(uint8_t i=0; i<10; i++){	//blink 5 times slow
-		led = 1;	//flip blue led
-		Thread::wait(200);	//wait for a second
-		led = 0;
-		Thread::wait(200);
-	}
-	led_protection.unlock();
+    led_protection.lock();    //lock or wait forever for unlock
+    for(uint8_t i=0; i<10; i++){    //blink 5 times slow
+        led = 1;    //flip blue led
+        Thread::wait(200);    //wait for a second
+        led = 0;
+        Thread::wait(200);
+    }
+    led_protection.unlock();
 }
 ```
 
@@ -90,27 +90,27 @@ DigitalOut led(LED_BLUE);
 Thread thread;
 
 void led_thread() {
-    while (true) {	//loop the thread
-    	osEvent event = Thread::signal_wait(0);	//wait for any signal forever
-    	if(event.status == osEventSignal && (event.value.signals & BLINK_SIGNAL)){	//if event was signal and signal is BLINK_SIGNAL
-			for(uint8_t i=0; i<10; i++){	//blink 10 times fast
-				led = 0;
-				Thread::wait(50);
-				led = 1;
-				Thread::wait(50);
-			}
-    	}
+    while (true) {    //loop the thread
+        osEvent event = Thread::signal_wait(0);    //wait for any signal forever
+        if(event.status == osEventSignal && (event.value.signals & BLINK_SIGNAL)){    //if event was signal and signal is BLINK_SIGNAL
+            for(uint8_t i=0; i<10; i++){    //blink 10 times fast
+                led = 0;
+                Thread::wait(50);
+                led = 1;
+                Thread::wait(50);
+            }
+        }
     }
 }
 
 void init() {
-	Byzance::led_module(false);  //disable LED module for Byzance
-    thread.start(led_thread);	 //start the thread
+    Byzance::led_module(false);  //disable LED module for Byzance
+    thread.start(led_thread);     //start the thread
 }
 
-void loop(){	//set signal for thread once in 5 seconds
-	thread.signal_set(BLINK_SIGNAL);
-	Thread::wait(5000);
+void loop(){    //set signal for thread once in 5 seconds
+    thread.signal_set(BLINK_SIGNAL);
+    Thread::wait(5000);
 }
 ```
 
