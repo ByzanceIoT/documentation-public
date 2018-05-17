@@ -4,7 +4,7 @@
 
 V této sekci jsou zdokumentovány funkce z knihovny MBED API, sloužící k ovládání fyzických vstupů a výstupů GPIO sběrnice zařízení Byzance.
 
-## AnalogIn
+## [AnalogIn](https://os.mbed.com/docs/latest/reference/analogin.html)
 
 Převede napětí na pinu analogového vstupu v rozmezí 0 - 3.3V do digitální podoby a interpretujep ho číslem na škále 0-4095. Rozlišení převodníku je 2.44 mV.
 
@@ -22,7 +22,7 @@ void loop(){
 }
 ```
 
-## AnalogOut
+## [AnalogOut](https://os.mbed.com/docs/latest/reference/analogout.html)
 
 Funkce **AnalogOut** umožňuje definovat analogový výstup, který pomocí digitáně analogového převodníku dokáže na základě vstupní hodnoty této funkce měnit hodnotu napětí na výstupním pinu v rozsahu **0 - 3.3V** . Velikost napětí na výstupu je škálováno zápisem v rozsahu **0 - 1**, kdy 1 je maximální napětí 3.3V.
 
@@ -40,7 +40,7 @@ void loop(){
 }
 ```
 
-## DigitalIn
+## [DigitalIn](https://os.mbed.com/docs/latest/reference/digitalin.html)
 
 Přečte hodnotu digitálního vstupu
 
@@ -59,7 +59,7 @@ void loop(){
 }
 ```
 
-## DigitalOut
+## [DigitalOut](https://os.mbed.com/docs/latest/reference/digitalout.html)
 
 Nastaví na digitálním vástupu logickou úroveň.
 
@@ -78,7 +78,7 @@ void loop(){
 }
 ```
 
-## DigitalInOut
+## [DigitalInOut](https://os.mbed.com/docs/latest/reference/digitalinout.html)
 
 Obousměrný digitální pin, kombinace digitálního vstupu a digitálního výstupu.
 
@@ -98,7 +98,7 @@ diout.input();
 pc.printf("diout value = %d \n", diout.read());
 ```
 
-## BusIn
+## [BusIn](https://os.mbed.com/docs/latest/reference/busin.html)
 
 Funkcí BusIn lze vést libovolný počet digitálních vstupů jako bus, což umožňuje přečíst digitální hodnotu těchto vstupů jako jedno číslo.
 
@@ -127,7 +127,7 @@ void loop(){
 }
 ```
 
-## BusOut
+## [BusOut](https://os.mbed.com/docs/latest/reference/busout.html)
 
 Třída BusOut definuje z libovolného počtu digitálních výstupů výstupní sběrnici.  Na sběrnici je pak možné jednoduše zapisovat. 
 
@@ -149,7 +149,7 @@ void loop(){
 }
 ```
 
-## BusInOut
+## [BusInOut](https://os.mbed.com/docs/latest/reference/businout.html)
 
 Definuje bus, ze kterého je možné jak číst, tak do něj i zapisovat.
 
@@ -170,7 +170,7 @@ void loop(){
 }
 ```
 
-## PortIn
+## [PortIn](https://os.mbed.com/docs/latest/reference/portin.html)
 
 PortIn má stejnou funkci jako BusIn, je o dost rychlejší ale méně flexibilnější
 
@@ -191,7 +191,7 @@ void loop(){
 }
 ```
 
-## PortOut
+## [PortOut](https://os.mbed.com/docs/latest/reference/portout.html)
 
 Port Out nahrazuje BusOut, stejně jako PortIn je rychlejší ale méně flexibilnější
 
@@ -209,7 +209,7 @@ void loop(){
 }
 ```
 
-## PortInOut
+## [PortInOut](https://os.mbed.com/docs/latest/reference/portinout.html)
 
 Třída PortInOut kombinuje funkce PortIn a PortOut a mód této funkce lze nastavovat za běhu programu.
 
@@ -229,7 +229,7 @@ void loop(){
 }
 ```
 
-## PwmOut
+## [PwmOut](https://os.mbed.com/docs/latest/reference/pwmout.html)
 
 Třída PwmOut umožňuje na pinu vytvářet pulzně šířkovou modulaci, regulovat její periodu a šířku jejich pulsů.
 
@@ -262,7 +262,7 @@ void loop(){
 }
 ```
 
-## InterruptIn
+## [InterruptIn](https://os.mbed.com/docs/latest/reference/interruptin.html)
 
 Třída InterruptIn umožňuje uživateli okamžitě reagovat na změnu logické úrovně libovolného pinu \(na náběžnou i sestupnou hranu\) a na základě této změny zavolat libovolnou funkci.
 
