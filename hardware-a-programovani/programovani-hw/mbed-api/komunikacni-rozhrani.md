@@ -59,7 +59,7 @@ SPISlave spislave;
 
 ## I2C
 
-I2C Master functionality.
+Třída I2C poskytuje funkcionalitu I2C sběrnice v roli master. 
 
 ```cpp
 #include "byzance.h"
