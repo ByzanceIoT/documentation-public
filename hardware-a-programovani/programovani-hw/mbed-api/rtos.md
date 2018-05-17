@@ -7,6 +7,7 @@ Defining, creating and controlling thread functions in the system.
 ```cpp
 #include "byzance.h"
 
+Serial pc(SERIAL_TX, SERIAL_RX);	//USBSerial pc(0x1f00, 0x2012, 0x0001, false);
 DigitalOut led(LED_BLUE);
 Thread thread;
 
@@ -23,7 +24,7 @@ void init() {
 }
 
 void loop(){
-    printf("i do nothing\n");    //main thread does actually nothing
+    pc.printf("i do nothing\n");    //main thread does actually nothing
     Thread::wait(500);
 }
 ```
@@ -35,6 +36,7 @@ Synchronize execution of threads, for example to protect access to a shared reso
 ```cpp
 #include "byzance.h"
 
+Serial pc(SERIAL_TX, SERIAL_RX);	//USBSerial pc(0x1f00, 0x2012, 0x0001, false);
 DigitalOut led(LED_BLUE);
 Thread thread;
 Mutex led_protection;    //led access protection
@@ -86,6 +88,7 @@ Each Thread can wait for signals and to be notified of events.
 
 #define BLINK_SIGNAL 0x01
 
+Serial pc(SERIAL_TX, SERIAL_RX);	//USBSerial pc(0x1f00, 0x2012, 0x0001, false);
 DigitalOut led(LED_BLUE);
 Thread thread;
 
@@ -121,6 +124,7 @@ Allows queue pointers to data from producer threads to consumer threads.
 ```cpp
 #include "byzance.h"
 
+Serial pc(SERIAL_TX, SERIAL_RX);	//USBSerial pc(0x1f00, 0x2012, 0x0001, false);
 DigitalOut led(LED_BLUE);
 InterruptIn button(USR);
 Queue<void, 16> queue;	//maximum is 16 records, no data type delivered
@@ -140,7 +144,7 @@ void loop(){
 	static int pressed_times=0;
 	if(event.status == osEventMessage){	//if event was osEventMessage
 		pressed_times++;
-		printf("button pressed %d times\n",pressed_times);
+		pc.printf("button pressed %d times\n",pressed_times);
 		for(uint8_t i=0; i<10; i++){	//blink 10 times for each record in queue
 			led = 0;
 			Thread::wait(50);
@@ -157,7 +161,48 @@ void loop(){
 Define and manage fixed-size memory pools.
 
 ```cpp
-MemoryPool
+#include "byzance.h"
+
+typedef struct {
+    float    voltage;   /* AD result of measured voltage */
+    float    current;   /* AD result of measured current */
+    uint32_t counter;   /* A counter value               */
+} message_t;
+
+Serial pc(SERIAL_TX, SERIAL_RX);	//USBSerial pc(0x1f00, 0x2012, 0x0001, false);
+MemoryPool<message_t, 16> mpool;
+Queue<message_t, 16> queue;
+Thread thread;
+
+void send_thread (void) {
+    uint32_t i = 0;
+    while (true) {		//every 5 seconds queue 4 msgs
+        for(uint8_t j = 0; j < 5; j++){
+        	i++; // fake data update
+			message_t *message = mpool.alloc();	//alloc memory for message
+			message->voltage = (i * 0.1) * 33;
+			message->current = (i * 0.1) * 11;
+			message->counter = i;
+			queue.put(message);		//queue the message
+        }
+        pc.printf("sent 4 msgs from send thread\n");
+        Thread::wait(5000);
+    }
+}
+
+void init(){
+	thread.start(callback(send_thread));
+}
+
+void loop() {
+	osEvent evt = queue.get();		//wait for not empty queue
+	if (evt.status == osEventMessage) {
+		message_t *message = (message_t*)evt.value.p;
+		pc.printf("received msg no. %d voltage: %f V, current: %f A\n",message->counter, message->voltage, message->current);
+		mpool.free(message);	//free msg from memory
+	}
+
+}
 ```
 
 ## Mail
