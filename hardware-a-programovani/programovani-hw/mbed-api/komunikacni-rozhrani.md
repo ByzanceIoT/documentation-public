@@ -31,6 +31,8 @@ See [https://en.wikipedia.org/wiki/Serial\_Peripheral\_Interface\_Bus](https://e
 
 ```cpp
 #include "byzance.h"
+
+Serial pc(SERIAL_TX, SERIAL_RX);	//USBSerial pc(0x1f00, 0x2012, 0x0001, false); //
 SPI spi(X14, X12, X10); // mosi, miso, sclk
 DigitalOut cs( X08);
 ​
@@ -44,7 +46,7 @@ void loop(){
     spi.write(0x8F); //send 0x8f, the command to read the WHOAMI register
     int whoami = spi.write(0x00);   //send dummy byto to receive data
     cs = 1;          //deselect device
-    printf("WHOAMI register = 0x%X\n", whoami);    //print the result
+    pc.printf("WHOAMI register = 0x%X\n", whoami);    //print the result
     Thread::wait(1000);
 }
 ```
@@ -64,6 +66,7 @@ Třída I2C poskytuje funkcionalitu I2C sběrnice v roli master.
 ```cpp
 #include "byzance.h"
 
+Serial pc(SERIAL_TX, SERIAL_RX);	//USBSerial pc(0x1f00, 0x2012, 0x0001, false); //
 I2C i2c(X07, X06);	//sda, scl
 
 const int addr8bit = 0x48 << 1; // 8bit I2C address, 0x90
@@ -86,7 +89,7 @@ void loop(){
 	i2c.read( addr8bit, cmd, 2);
 
 	float tmp = (float((cmd[0]<<8)|cmd[1]) / 256.0);
-	printf("temperature = %.2f\n", tmp);
+	pc.printf("temperature = %.2f\n", tmp);
 }
 ```
 

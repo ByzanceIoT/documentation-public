@@ -13,10 +13,11 @@ Převede napětí na pinu analogového vstupu v rozmezí 0 - 3.3V do digitální
 
 #define SUPPLY_VOLTAGE 3.3
 
+Serial pc(SERIAL_TX, SERIAL_RX);	//USBSerial pc(0x1f00, 0x2012, 0x0001, false); //
 AnalogIn ain(X00);
 
 void loop(){
-	printf("voltage on pin X00 is %d V\n",ain.read()*SUPPLY_VOLTAGE);
+	pc.printf("voltage on pin X00 is %d V\n",ain.read()*SUPPLY_VOLTAGE);
 	Thread::wait(1000);
 }
 ```
@@ -28,6 +29,7 @@ Funkce **AnalogOut** umožňuje definovat analogový výstup, který pomocí dig
 ```cpp
 #include "byzance.h"
 
+Serial pc(SERIAL_TX, SERIAL_RX);	//USBSerial pc(0x1f00, 0x2012, 0x0001, false); //
 AnalogOut aout(Y23);
 
 void loop(){
@@ -45,13 +47,14 @@ Přečte hodnotu digitálního vstupu
 ```cpp
 #include "byzance.h"
 
+Serial pc(SERIAL_TX, SERIAL_RX);	//USBSerial pc(0x1f00, 0x2012, 0x0001, false); //
 DigitalIn din(USR);
 
 void loop(){
 	if(din.read() == 1){
-		printf("button is pressed\n");
+		pc.printf("button is pressed\n");
 	else{
-		printf("button is not pressed\n");
+		pc.printf("button is not pressed\n");
 	Thread::wait(1000);
 }
 ```
@@ -102,6 +105,7 @@ Funkcí BusIn lze vést libovolný počet digitálních vstupů jako bus, což u
 ```cpp
 #include "byzance.h"
 
+Serial pc(SERIAL_TX, SERIAL_RX);	//USBSerial pc(0x1f00, 0x2012, 0x0001, false); //
 BusIn switches(X01,X02,USR);	//bus is defined X01, X02 and USR button
 
 void init(){
@@ -110,14 +114,14 @@ void init(){
 
 void loop(){
 	switch(switches.read()){	//switch according to bus state	
-		case 0x0: printf("X01-DOWN X02-DOWNW USR-not-pressed\n"); break;
-		case 0x1: printf("X01-UP X02-DOWN USR-not-pressed\n"); break;
-		case 0x2: printf("X01-DOWN X02-UP USR-not-pressed\n"); break;
-		case 0x3: printf("X01-UP X02-UP USR-not-pressed\n"); break;
-		case 0x4: printf("X01-DOWN X02-DOWN USR-pressed\n"); break;
-		case 0x5: printf("X01-UP X02-DOWN USR-pressed\n"); break;
-		case 0x6: printf("X01-DOWN X02-UP USR-pressed\n"); break;
-		case 0x7: printf("X01-UP X02-UP USR-pressed\n"); break;
+		case 0x0: pc.printf("X01-DOWN X02-DOWNW USR-not-pressed\n"); break;
+		case 0x1: pc.printf("X01-UP X02-DOWN USR-not-pressed\n"); break;
+		case 0x2: pc.printf("X01-DOWN X02-UP USR-not-pressed\n"); break;
+		case 0x3: pc.printf("X01-UP X02-UP USR-not-pressed\n"); break;
+		case 0x4: pc.printf("X01-DOWN X02-DOWN USR-pressed\n"); break;
+		case 0x5: pc.printf("X01-UP X02-DOWN USR-pressed\n"); break;
+		case 0x6: pc.printf("X01-DOWN X02-UP USR-pressed\n"); break;
+		case 0x7: pc.printf("X01-UP X02-UP USR-pressed\n"); break;
 	}
 	Thread::wait(500);
 }
@@ -130,6 +134,7 @@ Třída BusOut definuje z libovolného počtu digitálních výstupů výstupní
 ```cpp
 #include "byzance.h"
 
+Serial pc(SERIAL_TX, SERIAL_RX);	//USBSerial pc(0x1f00, 0x2012, 0x0001, false); //
 BusOut leds(LED_BLUE,LED_RED,LED_GREEN);	//bus is defined by all RGB LED
 
 void init(){
@@ -149,6 +154,7 @@ void loop(){
 Definuje bus, ze kterého je možné jak číst, tak do něj i zapisovat.
 
 ```cpp
+Serial pc(SERIAL_TX, SERIAL_RX);	//USBSerial pc(0x1f00, 0x2012, 0x0001, false); //
 BusInOut io_bus(X01, X02, X03);
 
 void loop(){
@@ -159,7 +165,7 @@ void loop(){
   io_bus.input();  // Nastaví bus na BusIn
   wait(5);
   if(io_bus == 0x6){
-    printf("NUMBER 6!\n");
+    pc.printf("NUMBER 6!\n");
   }
 }
 ```
@@ -169,6 +175,7 @@ void loop(){
 PortIn má stejnou funkci jako BusIn, je o dost rychlejší ale méně flexibilnější
 
 ```cpp
+Serial pc(SERIAL_TX, SERIAL_RX);	//USBSerial pc(0x1f00, 0x2012, 0x0001, false); //
 // Argumentem konstruktoru je číslo portu a číslem určené piny tohoto portu
 PortIn p2(port2, 0x0000003F); // pin 21 - 26  
 
@@ -179,7 +186,7 @@ void init(){
 void loop(){
   int pins = p.read();
   if(pins){ //alespoň jeden vstup z portu má hodnotu jedna
-    printf("At least one switch is turned on");
+    pc.printf("At least one switch is turned on");
   }
 }
 ```
@@ -262,6 +269,7 @@ Třída InterruptIn umožňuje uživateli okamžitě reagovat na změnu logické
 ```cpp
 #include "byzance.h"
 
+Serial pc(SERIAL_TX, SERIAL_RX);	//USBSerial pc(0x1f00, 0x2012, 0x0001, false); //
 InterruptIn button(USR);     //InterruptIn on USR button
 DigitalOut led(LED_BLUE);    //blue LED control is inverted
 
@@ -281,7 +289,7 @@ void init(){
 
 void loop(){
     //we dont have to do nothing here, everything is done automatically
-	printf("im running!\n");
+	pc.printf("im running!\n");
 	Thread::wait(1000);
 }
 ```
