@@ -7,7 +7,7 @@ Umožňuje periodické volání funkcí s mikrosekundovou přesností.
 ```cpp
 #include "byzance.h"
 Ticker ticker;
-DigitaOut led(LED_BLUE);
+DigitalOut led(LED_BLUE);
 ​
 void flip() {    
     led = !led;    //blue led is blinking
@@ -15,7 +15,7 @@ void flip() {
 ​
 void init(){
     Byzance::led_module(false);  //disable LED module for Byzance
-    ticker.attach(&flip,2.0);    //call fnciton flip every 2 seconds
+    ticker.attach(&flip,2.0);    //call funciton flip every 2 seconds
 }
 ​
 void loop(){
