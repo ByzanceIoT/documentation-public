@@ -31,15 +31,15 @@ Umožňuje zpožděné volání příslušné funkce s mikrosekundovou přesnost
 ```cpp
 #include "byzance.h"
 Timeout timeout;
-DigitaOut led(LED_BLUE);
+DigitalOut led(LED_BLUE);    //led control is inverted
 
 void turn_off() {    
-    led = 0;    //turn off blue led
+    led = 1;    //turn off blue led
 }
 
 void init(){
     Byzance::led_module(false);      //disable LED module for Byzance
-    led = 1;                         //turn on blue led
+    led = 0;                         //turn on blue led
     timeout.attach(&turn_off,2.0);    //call funciton turn_off after 2 seconds
 }
 
