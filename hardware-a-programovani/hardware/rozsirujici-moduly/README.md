@@ -10,13 +10,14 @@ Na [základní jednotky](../zakladni-jednotky/) se připojují v této kapitole 
 
 Fyzicky jsou vstupy a výstupy základních jednotek rozděleny do dvou skupin, tzn. na **X konektor** a **Y konektor**. Tyto konektory obsahují vybrané na základní jednotce dostupné periferie \(UART, I2C, PWM, ...\), napájecí signály a nebo signály pro [SWD ](../../programovani-hw/offline-programovani/)či reset. 
 
-Kromě vstupně výstupních pinů jsou na konektorech dostupné i napájecí vývody a signály _user_ tlačítka a tlačítka _reset_. Jmenovitě jde o signály 3V3, USR, GND, VBUS, VBAT a RST.
+Kromě vstupně výstupních pinů jsou na konektorech dostupné i napájecí vývody a signály _user_ tlačítka a tlačítka _reset_. Jmenovitě jde o signály 3V3, USR, GND, VBUS, VBAT a RST \(obrázek níže\).
 
 * 3V3 - výstupní napájecí pin s napětím 3.3 V pro napájení externích periferií
 * USR - signál _user_ tlačítka \(emulace _user_ tlačítka z externího zařízení\)
 * GND - nulový potenciál jednotky, referenční nulový potenciál pro všechny ostatní signály
-* VBUS - napájecí výstup určený pro výstup napájecího napětí ze základní jednotky, více v sekci s napájením pro danou[ základní jednotku](../zakladni-jednotky/#prehled) \(konkrétně pro IODAG3E v [této části](../zakladni-jednotky/iodag3e/#moznosti-napajeni)\).
-* VBAT - vstupní napájení do [RTC obvodu](../../tutorialy/prace-s-datem-a-casem-rtc.md) základní jednotky 
+* VBUS - napájecí výstup určený pro výstup napájecího napětí ze základní jednotky, více v sekci s napájením pro danou[ základní jednotku](../zakladni-jednotky/#prehled) \(konkrétně pro IODAG3E v [této části](../zakladni-jednotky/iodag3e/#moznosti-napajeni)\)
+* VBAT - vstupní napájení do [RTC obvodu](../../funkcionality/pripojeni-zdroje-k-vbat.md) základní jednotky 
+* RST - resetovací vstup mikrokontroléru jednotky
 
 ![P&#x159;&#xED;klad X konektoru \(vlevo\) a Y konektory \(vpravo\) na z&#xE1;kladn&#xED; desce IODAG3E.](../../../.gitbook/assets/x_y_conn%20%283%29.png)
 
@@ -26,7 +27,7 @@ Základní jednotky podporující připojení [shieldů ](./)musí mít integrov
 
 Popis jednotlivých vstupů a výstupů je závislý na typu základní jednotky - různé základní jednotky se mohou mírně odlišovat v dostupných pinech/funkcích \(tzn. pin X05 může být hardwarově připojen na různý pin mikrokontroléru na různých základních jednotkách\). Přesto X konektor definuje např. dostupný UART vždy na pinech X09 a X11 a I2C sběrnici vždy dostupnou na vývodech X06 a X07. 
 
-V tabulce níže je uveden seznam dostupných periferií na každé [základní jednotce ](../zakladni-jednotky/)bez ohledu na její typ. Ukázka konkrétního zapojení vývodů na mikrokontrolér pro jednotku IODAG3E [zde](../zakladni-jednotky/iodag3e/konektor-x-a-y.md).
+V tabulce níže je uveden seznam dostupných periferií na každé [základní jednotce ](../zakladni-jednotky/)bez ohledu na její typ. Ukázka konkrétního zapojení vývodů na mikrokontrolér pro jednotku IODAG3E [zde](../zakladni-jednotky/iodag3e/konektor-x-a-y.md). 
 
 | **Pin** | **Funkce** |  | **Pin** | **Funkce** |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
