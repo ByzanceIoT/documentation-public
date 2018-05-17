@@ -27,7 +27,7 @@ Jednotka [IODAG3E](./) je postavena z běžně dostupných komerčních komponen
 | Příkon v činnosti \[mW\] |  | 650 | 800 |
 | Příkon ve spánku \[mW\] |  | 100 |  |
 | Příkon v hlubokém spánku \[mW\] |  | \#TODO 977 |  |
-| Proud pro RTC obvod \[uV\] |  | 1 | 3 |
+| Proud pro RTC obvod \[uA\] |  | 1 | 3 |
 
 Jednotka [IODAG3E ](./)je navržena pro přímé použití ve vnitřních a suchých prostorech bez kondenzující vlhkosti a přímých povětrnostních vlivů. Pro venkovní montáž, montáž do vlhkých a jinak náročných prostředí je vhodné jednotku uzavřít do krytu s odpovídajícím krytím \([IPxx](https://en.wikipedia.org/wiki/IP_Code)\).
 
