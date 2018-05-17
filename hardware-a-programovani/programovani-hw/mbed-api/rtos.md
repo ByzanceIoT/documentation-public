@@ -5,7 +5,27 @@
 Defining, creating and controlling thread functions in the system.
 
 ```cpp
-Thread t;
+#include "byzance.h"
+
+DigitalOut led(LED_BLUE);
+Thread thread;
+
+void led_thread() {
+    while (true) {	//loop the thread
+        led = !led;	//flip blue led
+        Thread::wait(1000);	//wait for a second
+    }
+}
+
+void init() {
+	Byzance::led_module(false);  //disable LED module for Byzance
+    thread.start(led_thread);	 //start the thread
+}
+
+void loop(){
+    printf("i do nothing\n");	//main thread does actually nothing
+    Thread::wait(500);
+}
 ```
 
 ## Mutex
@@ -13,7 +33,40 @@ Thread t;
 Synchronize execution of threads, for example to protect access to a shared resource.
 
 ```cpp
-Mutex mutex;
+#include "byzance.h"
+
+DigitalOut led(LED_BLUE);
+Thread thread;
+Mutex led_protection;	//led access protection
+
+void led_thread() {
+    while (true) {	//loop the thread
+    	led_protection.lock();	//lock or wait forever for unlock
+    	for(uint8_t i=0; i<10; i++){	//blink 10 times fast
+			led = 1;	//flip blue led
+			Thread::wait(50);
+			led=0;
+			Thread::wait(50);
+    	}
+    	led_protection.unlock();
+    }
+}
+
+void init() {
+	Byzance::led_module(false);  //disable LED module for Byzance
+    thread.start(led_thread);	 //start the thread
+}
+
+void loop(){
+	led_protection.lock();	//lock or wait forever for unlock
+	for(uint8_t i=0; i<10; i++){	//blink 5 times slow
+		led = 1;	//flip blue led
+		Thread::wait(200);	//wait for a second
+		led=0;
+		Thread::wait(200);
+	}
+	led_protection.unlock();
+}
 ```
 
 ## Semaphore
