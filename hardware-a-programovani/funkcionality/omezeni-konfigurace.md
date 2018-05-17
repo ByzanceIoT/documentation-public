@@ -247,3 +247,14 @@ Zjištění [revize zařízení](revize.md)
 | možnost číst | ano, uživatel |
 | možnost zapisovat | pouze při první konfiguraci, většinou ve výrobě |
 
+### **autojump**
+
+Nastavení funkce [autojump](omezeni-konfigurace.md#autojump).
+
+| typ | 32 bit unsigned integer |
+| --- | --- | --- | --- | --- |
+| omezení | 0 - 4294967296 |
+| výchozí hodnota | 300 |
+| možnost číst | ano, uživatel |
+| možnost zapisovat | ano, uživatel |
+
