@@ -122,7 +122,6 @@
   * [Webová konzole](hardware-a-programovani/funkcionality/webova-konzole.md)
   * [Vytížení zařízení](hardware-a-programovani/funkcionality/vytizeni-zarizeni.md)
   * [Odložený restart](hardware-a-programovani/funkcionality/odlozeny-restart.md)
-  * [Identifikace zařízení](hardware-a-programovani/funkcionality/identifikace-zarizeni.md)
   * [Revize](hardware-a-programovani/funkcionality/revize.md)
   * [OTP paměť](hardware-a-programovani/funkcionality/otp-pamet.md)
   * [Připojení zdroje k VBAT](hardware-a-programovani/funkcionality/pripojeni-zdroje-k-vbat.md)
@@ -131,6 +130,7 @@
   * [LED modul](hardware-a-programovani/funkcionality/led-modul.md)
   * [Náhodná čísla](hardware-a-programovani/funkcionality/nahodna-cisla.md)
 * Správa zařízení
+  * [Identifikace zařízení](hardware-a-programovani/sprava-zarizeni/identifikace-zarizeni.md)
   * [Konfigurace zařízení](hardware-a-programovani/sprava-zarizeni/konfigurace-zarizeni.md)
   * [Provozní informace](hardware-a-programovani/sprava-zarizeni/provozni-informace.md)
   * [Omezení konfigurace](hardware-a-programovani/sprava-zarizeni/omezeni-konfigurace.md)

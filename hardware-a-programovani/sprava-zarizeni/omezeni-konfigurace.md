@@ -80,7 +80,7 @@ Přihlašovací heslo do MQTT brokeru.
 
 ### **alias**
 
-Alias zařízení, který si každý může nastavit pro lepší [identifikaci zařízení](../funkcionality/identifikace-zarizeni.md).
+Alias zařízení, který si každý může nastavit pro lepší [identifikaci zařízení](identifikace-zarizeni.md).
 
 | typ | char\[64\] |
 | --- | --- | --- | --- | --- |

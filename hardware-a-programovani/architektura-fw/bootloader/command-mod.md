@@ -34,7 +34,7 @@ Více informací k MQTT připojení je možno nalézt v sekci [Komunikace se ser
 * **backup\_mqtt\_port** - Záložní port, na kterém běží Homer. 
 * **mqtt\_username** - Jméno pro přihlášení k Homerovi.
 * **mqtt\_password** - Heslo pro přihlášení k Homerovi.
-* **alias** - Alias zařízení, který si každý může nastavit pro lepší [identifikaci zařízení](../../funkcionality/identifikace-zarizeni.md).
+* **alias** - Alias zařízení, který si každý může nastavit pro lepší [identifikaci zařízení](../../sprava-zarizeni/identifikace-zarizeni.md).
 * **mac** - Zjištění MAC adresy.
 * **blreport** - Bootloader report. Zapnutí, nebo vypnutí výpisu hlavičky [bootloaderu](./) do konzole.
 * **wdenable** - Zapnutí [watchdogu](../../funkcionality/watchdog.md).
