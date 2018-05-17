@@ -55,5 +55,3 @@ Dočasné skladiště nepotřebnych informací.
 | Y25 | PA5 |  |  | SPI1\_SCK |  | ✓ | ADC12\_IN5 |  |
 | Y26 | PB10 | USART3\_TX |  |  |  | ✓ |  |  |
 
-
-
