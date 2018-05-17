@@ -90,9 +90,26 @@ Jediná správná možnost editace aliasu je pomocí Byzance Code \(Becki\). V s
 
 pokec o blink
 
-## Revision
+## Revize
 
-pokec o revision
+Revize \(revision\) je jeden z dalších identifikátorů každého zařízení.
+
+{% hint style="info" %}
+Revize slouží k odlišení různých vlastností stejného zařízení, které by při provozu neměly hrát roli.
+{% endhint %}
+
+Rozdíly revizí stejného zařízení můžou být například
+
+* jiná výrobní série
+* jiný výrobce PCB či dodavatel
+* jiná výrobní technologie 
+* implementační drobnost \(jiná použitá součástka\)
+
+Revision je interně interpretováno jako 32 bitové číslo, které se interpretuje HEX ASCII. Může tedy nabývat hodnoty ''0x00000000'' až ''0xFFFFFFFF''. Je nastaveno v [OTP paměti](../funkcionality/otp-pamet.md) při výrobě a proto už nelze změnit.
+
+Revizi je možno zjistit jednou z možností popsaných v sekci konfigurace zařízení.
+
+{% page-ref page="konfigurace-zarizeni.md" %}
 
 
 
