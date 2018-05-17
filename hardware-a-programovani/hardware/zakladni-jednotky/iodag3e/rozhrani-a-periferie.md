@@ -10,7 +10,7 @@
 
 Zařízení IODA disponuje celkem 54 piny vstupně výstupními piny na [X a Y konektoru](../../rozsirujici-moduly/#x-konektor-a-y-konektor) a to včetně napájecích pinů. Na pinech lze definovat digitální i analogové vstupy a výstupy, další komunikační sběrnice a nebo používat napájecí vývody pro napájení jednotky či jako výstup napájení pro externí zařízení.
 
-Vlastnosti vstupů a výstupů se odvíjí od použitého [mikrokontroléru](http://www.st.com/content/ccc/resource/technical/document/datasheet/fd/8c/0a/19/13/8f/41/99/DM00077036.pdf/files/DM00077036.pdf/jcr:content/translations/en.DM00077036.pdf) a jejich napojení je patrné z [tabulek s přiřazenými vývody](konektor-x-a-y.md).
+Vlastnosti vstupů a výstupů se odvíjí od použitého [mikrokontroléru](http://www.st.com/content/ccc/resource/technical/document/datasheet/fd/8c/0a/19/13/8f/41/99/DM00077036.pdf/files/DM00077036.pdf/jcr:content/translations/en.DM00077036.pdf) a jejich napojení je patrné z [tabulek s přiřazenými vývody](konektor-x-a-y.md). Lze se tak například dozvědět, jaká jednotka SPI sběrnice na daných pinech funguje a kde ne. 
 
 ![P&#x159;&#xED;klad X konektoru \(vlevo\) a Y konektory \(vpravo\) na z&#xE1;kladn&#xED; desce IODAG3E.](../../../../.gitbook/assets/x_y_conn%20%281%29.png)
 
@@ -31,7 +31,7 @@ Na GPIO lze definovat 8 analogových vstupů a to na pinech uvedených v tabulce
 
 ### Analogové výstupy
 
-Jako analogové výstupy lze použít následující dva piny:
+Analogové výstupy obsluhuje DA převodník \(Digital-to-analog converter\) se dvěma nezávislými výstupy a rozlišením až 12 bitů. Jeho pozitivní reference je na větvi _3V3_ a negativní na signálu _GND_.
 
 | Funkce | Pin |
 | :--- | :--- |
@@ -40,7 +40,7 @@ Jako analogové výstupy lze použít následující dva piny:
 
 ### I2C
 
-Zařízení IODA má na GPIO sběrnici k dispozici dvě sběrnice I2C. Obě sběrnice nabízejí možnost využití alternativního zapojení na jiné dvojici pinů.
+Zařízení IODA má mezi výstupy k dispozici také dvě sběrnice I2C. Obě sběrnice nabízejí možnost využití alternativního zapojení na jiné dvojici pinů.
 
 | **Funkce**  | **Pin** | **Alternativní pin** |
 | :--- | :--- | :--- |
@@ -100,7 +100,7 @@ Dále je možné definovat dvě sběrnice typu CAN na pinech:
 
 ### Timers \(PWM\)
 
-IODA má na své GPIO sběrnici dále k dispozici sadu timerů, které se primárně používají k vytváření PWM signálů. Procesor má k dispozici několik různých Timerů, které mají různé kanály.
+Mikrokontrolér jednotky má k dispozici sadu také skupinu timerů, které se primárně používají k vytváření PWM signálů. Procesor má k dispozici několik různých Timerů, které mají různé kanály.
 
 | Funkce | Pin |
 | :--- | :--- |
@@ -132,7 +132,5 @@ Budič LAN8720 \([Datasheet](http://ww1.microchip.com/downloads/en/DeviceDoc/872
 * Podpora PoE
 * Rychlost do 100Mbit
 
-## WEXP module \(Lowpan\)
-
- \#TODO \(Dopsat specifikace modulu WEXP + něco například k anténám\)
+## 
 
