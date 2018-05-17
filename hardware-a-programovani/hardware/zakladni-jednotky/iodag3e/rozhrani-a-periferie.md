@@ -4,6 +4,19 @@
 
 ![Rozm&#xED;st&#x11B;n&#xED; konektor&#x16F; a rozhran&#xED; na z&#xE1;kladn&#xED; jednotce IODAG3E.](../../../../.gitbook/assets/nakres-ioda-viktor%20%281%29.svg)
 
+## Ethernet
+
+Zařízení používá budič LAN8720 \([Datasheet](http://ww1.microchip.com/downloads/en/DeviceDoc/8720a.pdf)\) jako PHY \(physical layer\) rozhraní a spolu s mikrokontrolérem zajišťují 10/100 Mbit/s konektivitu jednotky po ethernetu. Ethernet je základní rozhraní pro připojení do cloudu a je na jednotce vždy přítomné. Kromě datové komunikace lze jednotku přes ethernetový port i napájet \([PoE napájení](napajeni.md#poe)\).
+
+* rychlost do 10/100 Mbit/s
+* podpora [PoE](napajeni.md#poe)
+
+## USB
+
+IODAG3E disponuje plnohodnotným mikro USB vstupem včetně datových vodičů. Použitý mikrokontrolér disponuje FS i HS USB periferií schopnou pracovat v režimech device, host i OTG. IODAG3E má však implementovánu podporu pouze USB FS a je zpravidla využíván jako device zařízení třídy CDC \(Communications Device Class\) .
+
+USB lze využít i pro napájení, kde další podrobnosti popsány v [článku o napájení](napajeni.md#usb).
+
 ## GPIO a sběrnice
 
 Zařízení IODA disponuje celkem 54 piny vstupně výstupními piny na [X a Y konektoru](../../rozsirujici-moduly/#x-konektor-a-y-konektor) a to včetně napájecích pinů. Na pinech lze definovat digitální i analogové vstupy a výstupy, další komunikační sběrnice a nebo používat napájecí vývody pro napájení jednotky či jako výstup napájení pro externí zařízení.
@@ -123,18 +136,7 @@ Mikrokontrolér jednotky má k dispozici sadu také skupinu timerů, které se p
 | TIM2\_CH1/TIM2\_ETR,TIM8\_CH1N | Y25 |
 | TIM2\_CH3 | Y26 |
 
-## USB
-
-IODAG3E disponuje plnohodnotným mikro USB vstupem včetně datových vodičů. Použitý mikrokontrolér disponuje FS i HS USB periferií schopnou pracovat v režimech device, host i OTG. IODAG3E má však implementovánu podporu pouze USB FS a je zpravidla využíván jako device zařízení třídy CDC \(Communications Device Class\) .
-
-USB lze využít i pro napájení, kde další podrobnosti popsány v [článku o napájení](./#moznosti-napajeni).
-
-## Ethernet
-
-Zařízení používá budič LAN8720 \([Datasheet](http://ww1.microchip.com/downloads/en/DeviceDoc/8720a.pdf)\) jako PHY \(physical layer\) rozhraní a spolu s mikrokontrolérem zajišťují 10/100 Mbit/s konektivitu jednotky po ethernetu. Ethernet je základní rozhraní pro připojení do cloudu a je na jednotce vždy přítomné. Kromě datové komunikace lze jednotku přes ethernetový port i napájet \([PoE napájení](./#moznosti-napajeni)\).
-
-* Podpora PoE
-* Rychlost do 100Mbit
-
 ## SWD
+
+
 
