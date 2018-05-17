@@ -1,12 +1,14 @@
 # Rozhraní a periférie
 
+
+
 ## Blokové schéma {#block-diagram}
 
-  \#TODO
+![](../../../../.gitbook/assets/ioda_blokove_schema%20%281%29.jpg)
 
 ## GPIO a sběrnice
 
-Zařízení IODA disponuje sběrnicí celkem 54 piny vstupně výstupními piny na **X a Y konektoru**. Na GPIO lze definovat digitální i analogové vstupy a výstupy, další komunikační sběrnice a nebo používat napájecí vývody. Souhrné informace k **X a Y konektorům** jsou dostupné v [obecném popisu](../#vstupy-a-vystupy) základních jednotek.
+Zařízení IODA disponuje celkem 54 piny vstupně výstupními piny na [X a Y konektoru](../../rozsirujici-moduly/#x-konektor-a-y-konektor) a to včetně napájecích pinů. Na pinech lze definovat digitální i analogové vstupy a výstupy, další komunikační sběrnice a nebo používat napájecí vývody pro napájení jednotky či jako výstup napájení pro externí zařízení.
 
 ![P&#x159;&#xED;klad X konektoru \(vlevo\) a Y konektory \(vpravo\) na z&#xE1;kladn&#xED; desce IODAG3E.](../../../../.gitbook/assets/x_y_conn%20%281%29.png)
 
