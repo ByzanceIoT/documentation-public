@@ -8,7 +8,7 @@ IODAG3E je základní jednotka vybavená vestavěným ethernetovým rozhraním p
 
 ![ioda\_board](../../../../.gitbook/assets/iodag3e.png)
 
-## Funkcionality
+## Hlavní funkcionality
 
 * mikrokontrolér STM32F437IIH6 \([Datasheet](http://www.st.com/content/ccc/resource/technical/document/datasheet/fd/8c/0a/19/13/8f/41/99/DM00077036.pdf/files/DM00077036.pdf/jcr:content/translations/en.DM00077036.pdf)\)
   * 2 MB FLASH
@@ -25,12 +25,12 @@ IODAG3E je základní jednotka vybavená vestavěným ethernetovým rozhraním p
 * dvě tlačítka \(_reset_ a _user_ tlačítko\) 
 * opensource návrh
 
-## Další funkce
+## Další funkcionality
 
 * online programování v C/C++ z webové aplikace Byzance
 * vzdálená aktualizace uživatelského programu
 * vestavěný webový server
-* konektor na uchycení 6LoWPAN modulu WEXP pro bezdrátovou komunikaci
+* konektor na uchycení 6LoWPAN modulu [WEXP ](../../ostatni/wexp.md)pro bezdrátovou komunikaci
 * low power management
 * hardwarová akcelerace CRC, šifrování
 * hardwarový watchdog
