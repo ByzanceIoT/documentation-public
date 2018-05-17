@@ -6,14 +6,16 @@ Stránka se zabývá mechanickým popisem desky [IODAG3E](./), uvádí důležit
 
 ## Rozměry a váha
 
-| Délka \(mm\) | Šířka \(mm\) | Výška včetně X konektoru \(mm\) | Váha \(g\) |
+| Délka \(mm\) | Šířka \(mm\) | Výška \(mm\) | Váha \(g\) |
 | --- | --- |
 | 63.0 | 41.0 | 11.5 | 30 |
+[Table caption, works as a reference][section-mmd-tables-tableddd]
 Table: Rozměry a hmotnost osazeného PCB..
 
-| Délka \(mm\) | Šířka \(mm\) | Výška včetně X konektoru \(mm\) | Váha \(g\) |
+| Délka \(mm\) | Šířka \(mm\) | Výška \(mm\) | Váha \(g\) |
 | --- | --- |
 | 65.5 | 42.5 | 11.5 | 30 |
+[Table caption, works as a reference][section-mmd-tables-table1]
 Table: Rozměry osazeného PCB včetně přesahů bočních konektorů.
 
 ![Rozm&#x11B;rov&#xFD; n&#xE1;&#x10D;rtek desky IODAG3E - obrysy desky a rozm&#xED;st&#x11B;n&#xED; otvor&#x16F;. ](../../../../.gitbook/assets/iodag3e_170725_dimensions_a.svg)
