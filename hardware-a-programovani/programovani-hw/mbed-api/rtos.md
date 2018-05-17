@@ -121,8 +121,6 @@ Allows queue pointers to data from producer threads to consumer threads.
 ```cpp
 #include "byzance.h"
 
-#define BLINK_SIGNAL 0x01
-
 DigitalOut led(LED_BLUE);
 InterruptIn button(USR);
 Queue<void, 16> queue;	//maximum is 16 records, no data type delivered
@@ -136,12 +134,13 @@ void init() {
     button.fall(&button_pressed);
 }
 
+//try to press button multiple times
 void loop(){
 	osEvent event = queue.get();	//wait for not empty queue forever
-	static int pressed_times=0;	
+	static int pressed_times=0;
 	if(event.status == osEventMessage){	//if event was osEventMessage
 		pressed_times++;
-		printf("button pressed %d times\n");
+		printf("button pressed %d times\n",pressed_times);
 		for(uint8_t i=0; i<10; i++){	//blink 10 times for each record in queue
 			led = 0;
 			Thread::wait(50);
