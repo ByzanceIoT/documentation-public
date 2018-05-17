@@ -21,7 +21,7 @@ Jednotka [IODAG3E](./) je postavena z běžně dostupných komerčních komponen
 | Parametr | Min | Typ | Max |
 | --- | --- | --- | --- |
 | Napájecí napětí \[V\] | 5.0 |  | 57.0 |  
-| Napájecí proud \[A\] |  | 0.5 | 1.0 |  |
+| Napájecí proud \[A\] |  | 0.5 | 1.0 |  
 | Příkon v činnosti \[mW\] |  | 650 | 800 | 
 | Příkon ve spánku \[mW\] |  | 100 |  |  
 | Příkon v hlubokém spánku \[mW\] |  |  |  |  
