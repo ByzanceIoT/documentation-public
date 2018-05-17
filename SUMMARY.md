@@ -55,7 +55,7 @@
       * [Interní paměť mikrokontroléru](hardware-a-programovani/hardware/zakladni-jednotky/iodag3e/interni-pamet-mikrokontroleru.md)
       * [Schémata](hardware-a-programovani/hardware/zakladni-jednotky/iodag3e/schemata.md)
       * [Konektor X a Y](hardware-a-programovani/hardware/zakladni-jednotky/iodag3e/konektor-x-a-y.md)
-      * Neaktuální
+      * [Neaktuální](hardware-a-programovani/hardware/zakladni-jednotky/iodag3e/neaktualni.md)
     * IODAG3L
   * [Rozšiřující moduly](hardware-a-programovani/hardware/rozsirujici-moduly/README.md)
     * [GSM shield](hardware-a-programovani/hardware/rozsirujici-moduly/gsm-shield.md)
