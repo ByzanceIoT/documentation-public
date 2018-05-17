@@ -1,4 +1,4 @@
-# Interní paměť mikrokontroléru
+# Interní paměť mikrokontrolérui
 
 ## Práce s interní pamětí
 

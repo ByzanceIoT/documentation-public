@@ -52,7 +52,7 @@
       * [Napájení](hardware-a-programovani/hardware/zakladni-jednotky/iodag3e/napajeni.md)
       * [Technické specifikace](hardware-a-programovani/hardware/zakladni-jednotky/iodag3e/technicke-specifikace.md)
       * [Rozložení a využití paměti](hardware-a-programovani/hardware/zakladni-jednotky/iodag3e/rozlozeni-a-vyuziti-pameti.md)
-      * [Interní paměť mikrokontroléru](hardware-a-programovani/hardware/zakladni-jednotky/iodag3e/interni-pamet-mikrokontroleru.md)
+      * [Interní paměť mikrokontrolérui](hardware-a-programovani/hardware/zakladni-jednotky/iodag3e/interni-pamet-mikrokontroleru.md)
       * [Schémata](hardware-a-programovani/hardware/zakladni-jednotky/iodag3e/schemata.md)
       * [Neaktuální](hardware-a-programovani/hardware/zakladni-jednotky/iodag3e/neaktualni.md)
     * IODAG3L
