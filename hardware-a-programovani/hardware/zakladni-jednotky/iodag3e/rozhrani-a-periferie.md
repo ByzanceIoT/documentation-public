@@ -10,13 +10,13 @@
 
 Zařízení IODA disponuje celkem 54 piny vstupně výstupními piny na [X a Y konektoru](../../rozsirujici-moduly/#x-konektor-a-y-konektor) a to včetně napájecích pinů. Na pinech lze definovat digitální i analogové vstupy a výstupy, další komunikační sběrnice a nebo používat napájecí vývody pro napájení jednotky či jako výstup napájení pro externí zařízení.
 
-Vlastnosti vstupů a výstupů se odvíjí od použitého mikrokontroléru a jejich napojení je patrné z tabulek s přiřazenými vývody.
+Vlastnosti vstupů a výstupů se odvíjí od použitého [mikrokontroléru](http://www.st.com/content/ccc/resource/technical/document/datasheet/fd/8c/0a/19/13/8f/41/99/DM00077036.pdf/files/DM00077036.pdf/jcr:content/translations/en.DM00077036.pdf) a jejich napojení je patrné z [tabulek s přiřazenými vývody](konektor-x-a-y.md).
 
 ![P&#x159;&#xED;klad X konektoru \(vlevo\) a Y konektory \(vpravo\) na z&#xE1;kladn&#xED; desce IODAG3E.](../../../../.gitbook/assets/x_y_conn%20%281%29.png)
 
 ### Analogové vstupy
 
-Na GPIO lze definovat 8 analogových vstupů a to na pinech uvedených v tabulce. Negativní referenci představuje potenciál _GND_ a kladnou referenci větev _3V3_. AD převodník [mikrokontroléru](http://www.st.com/content/ccc/resource/technical/document/datasheet/fd/8c/0a/19/13/8f/41/99/DM00077036.pdf/files/DM00077036.pdf/jcr:content/translations/en.DM00077036.pdf) tedy dokáže měřit napětí od 0.0 do 3.3 V
+Na GPIO lze definovat 8 analogových vstupů a to na pinech uvedených v tabulce. Negativní referenci představuje potenciál _GND_ a kladnou referenci větev _3V3_. AD převodník [mikrokontroléru](http://www.st.com/content/ccc/resource/technical/document/datasheet/fd/8c/0a/19/13/8f/41/99/DM00077036.pdf/files/DM00077036.pdf/jcr:content/translations/en.DM00077036.pdf) tedy dokáže měřit napětí od 0.0 do 3.3 V. Rozlišení AD převodníku je 12 bitů a může být obsluhován DMA přenosy.
 
 | Pin |
 | :--- |
