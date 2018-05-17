@@ -2,11 +2,15 @@
 
 ## Identifikace zařízení
 
-Všechny zařízení IODA mají ve FLASH paměti svého mikrokontroléru STM32 z výroby naprogramovaný **jedinečný identifikátor** , který se vyskytuje na specifické adrese v paměti \(liší se podle rodiny mikrokontroléru\) a lze ho pouze číst. Toto číslo je Byzance interně označováno jako **Full ID**. Full ID je pro člověka obtížně zapamatovatelné a slouží především k strojovému zpracovávání.
+Pokud je součástí rozsáhlejšího projektu více zařízení, je nezbytné se mezi nimi správně orientovat. Pro usnadnění existuje několik způsobů, které orientaci napomáhají.
+
+
 
 Každé zařízení dále umožňuje nastavit vlastní **Alias**, který slouží k jednodušší identifikaci člověkem. Název Alias může být například "kuchyn-svetlo".
 
-### Full ID
+### FULL ID
+
+Všechna zařízení IODA mají v mikrokontroléru STM32 z výroby naprogramovaný **jedinečný identifikátor** , který se vyskytuje na specifické adrese v [OTP paměti ](../funkcionality/otp-pamet.md)\(liší se podle rodiny mikrokontroléru\) a lze ho pouze číst. Toto číslo je Byzance interně označováno jako **Full ID**. Full ID je pro člověka obtížně zapamatovatelné a slouží především k strojovému zpracovávání.
 
 Jedná se o 96 bitů dlouhé číslo reprezentované **24 hexadecimálními ASCII znaky**. Full ID se zapisuje **velkými písmeny a bez oddělujícíh znaků**. Např. ''0123456789AB0123456789AB''.
 
