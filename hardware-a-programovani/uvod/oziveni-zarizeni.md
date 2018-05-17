@@ -18,7 +18,7 @@ Všechna zařízení Byzance jsou nakonfigurována již z výroby, tudíž pro k
 
 ![](../../.gitbook/assets/connected%20%281%29.gif)
 
-Pokud vše proběhlo úspěšně, zařízení je připraveno na [nahrání prvního programu.](upload-prvniho-programu.md)
+Pokud vše proběhlo úspěšně, zařízení je připraveno na [nahrání prvního programu.](nahrani-prvniho-programu.md)
 
 Nastal-li jakýkoliv problém, zařízení jej může detekovat jedním z dalších možných blikacích kódů LED modulu.
 

@@ -1,9 +1,3 @@
----
-description: >-
-  Stránka se věnuje technickému popisu základní jednotky IODAG3E a slouží jako
-  rozcestník na stránky s detailnějšími informacemi.
----
-
 # IODAG3E
 
 ## Přehled

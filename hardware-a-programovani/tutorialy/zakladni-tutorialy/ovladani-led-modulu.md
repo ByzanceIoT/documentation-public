@@ -1,9 +1,3 @@
----
-description: >-
-  Pokud uživatel vyžaduje vlastní signalizaci, odlišnou od výchozího chování
-  řízeného knihovnou Byzance, může postupovat dle následujícího postupu.
----
-
 # Ovládání LED modulu
 
 Nejdříve je třeba zakázat řízení LED modulu Byzance knihovnou. K tomu slouží funkce [Byzance API](https://github.com/byzance/public-documentation/tree/38b460c46404c197299c0f0a84e3402a9b74c8d7/byzance_documentation/hardware_intro/API/byzance-api.md) příkaz ''led\_module\(false\)''. Pro případné opětovné zapnutí kontroly Byzance knihovnou stačí analogicky použít ''led\_module\(true\)''.

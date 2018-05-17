@@ -1,6 +1,6 @@
 # Command mód
 
-Command mód je jeden z režimů [bootloaderu](./), kde je možné pomocí příkazů posílaných po [sériové lince](../../tutorialy/komunikace-po-seriove-lince-uart/) ověřovat a [nastavovat konfigurační parametry](../../uvod/konfigurace-zarizeni.md). Ostatní režimy jsou popsány v [příslušné kapitole](rezimy-bootloaderu.md).
+Command mód je jeden z režimů [bootloaderu](./), kde je možné pomocí příkazů posílaných po [sériové lince](../../tutorialy/komunikace-po-seriove-lince-uart-s-pc/) ověřovat a [nastavovat konfigurační parametry](../../uvod/konfigurace-zarizeni.md). Ostatní režimy jsou popsány v [příslušné kapitole](rezimy-bootloaderu.md).
 
 Do command režimu bootloaderu je možno vstopit následujícím způsobem
 

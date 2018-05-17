@@ -58,7 +58,7 @@ V hlavičce programu je nutné importovat knihovny [Byzance Hardware API](../../
 #include "byzance.h"
 ```
 
-Poté nasledují dva konstruktory definující objekt [sériové linky](../komunikace-po-seriove-lince-uart/) a objekt [digitálního vstupu](../../programovani-hw/mbed-api/).
+Poté nasledují dva konstruktory definující objekt [sériové linky](../komunikace-po-seriove-lince-uart-s-pc/) a objekt [digitálního vstupu](../../programovani-hw/mbed-api/).
 
 ```cpp
 Serial pc(SERIAL_TX, SERIAL_RX); 

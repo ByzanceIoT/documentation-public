@@ -1,10 +1,3 @@
----
-description: >-
-  Článek pojednává o obecných informacích z pohledu hardware platných pro
-  všechny základní jednotky a slouží pro získání celkového přehledu o základních
-  jednotkách bez větších technických detailů.
----
-
 # Základní jednotky
 
 ## Přehled

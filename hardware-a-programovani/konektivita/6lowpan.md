@@ -1,7 +1,3 @@
----
-description: tuto stránku ponechat
----
-
 # 6LowPAN
 
 ## Architektura

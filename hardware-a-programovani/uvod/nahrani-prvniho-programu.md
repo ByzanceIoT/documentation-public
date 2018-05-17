@@ -1,17 +1,10 @@
----
-description: >-
-  V této sekci je vysvětleno, jakým způsobem do zařízení nahrát svůj první
-  vlastní program. To lze provést několika způsoby, buď online pomocí portálu,
-  nebo několika způsoby offline přímo z PC.
----
-
 # Nahrání prvního programu
 
 ## Jak vytvořit první program? 
 
 Hardware Byzance se programuje v jazyce C++ a k programování má dostupné všechny standartní knihovny, knihovny [Mbed API](../programovani-hw/mbed-api/) a [Byzance Hardware API](../programovani-hw/byzance-hardware-api.md)**.** Jak má vypadat tělo programje možno se dozvědět v sekci [Struktura programu](../programovani-hw/struktura-programu.md). Každý program musí obsahovat alespoň jeden hlavní soubor **main.cpp**, jinak se kompilace neprovede správně. 
 
-Vhodnou ukázkou prvního programu může být například známý **Hello World**, který pravidelně vypisuje pozdrav přes [sériovou linku](../tutorialy/komunikace-po-seriove-lince-uart/#konfigurace-pc).
+Vhodnou ukázkou prvního programu může být například známý **Hello World**, který pravidelně vypisuje pozdrav přes [sériovou linku](../tutorialy/komunikace-po-seriove-lince-uart-s-pc/#konfigurace-pc).
 
 ```cpp
 #include "byzance.h"
@@ -42,7 +35,7 @@ Pokud nahráváme program do zařízení přímo z PC , máme několik možnost�
 
 ### Programování pomocí ZPP
 
-K programování můžeme použít zařízení [Byzance ZPPG3](../hardware/ostatni/daplink.md), které umožňuje drag&drop programování. Toto zařízení připojíme k programovacímu konektoru a PC a zařízení IODA zapojíme do napájení.  V počítači se hned poté inicializuje nový flash disk, na který stačí binární kód vložit a automaticky se nahraje do zařízení.
+K programování můžeme použít zařízení [Byzance ZPPG3](../hardware/ostatni/zppg3.md), které umožňuje drag&drop programování. Toto zařízení připojíme k programovacímu konektoru a PC a zařízení IODA zapojíme do napájení.  V počítači se hned poté inicializuje nový flash disk, na který stačí binární kód vložit a automaticky se nahraje do zařízení.
 
  \#TODO \(GIF pripojení ZPP do počítače a IODY - ticket  [HW-1054](https://youtrack.byzance.cz/youtrack/issue/HW-1054)\)
 

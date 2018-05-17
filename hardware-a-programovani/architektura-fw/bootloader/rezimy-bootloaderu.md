@@ -36,7 +36,7 @@ Tento mód navazuje na mód FLASH.  Pokud se hlavní program po posledním nafla
 
 ## Mód COMMANDS
 
-Mód COMMANDS slouží k offline konfiguraci zařízení pomocí [sériové linky.](../../tutorialy/komunikace-po-seriove-lince-uart/) 
+Mód COMMANDS slouží k offline konfiguraci zařízení pomocí [sériové linky.](../../tutorialy/komunikace-po-seriove-lince-uart-s-pc/) 
 
 Do módu COMMANDS je možné vstoupit několika způsoby
 

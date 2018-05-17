@@ -20,7 +20,7 @@ Serial pc(SERIAL_TX, SERIAL_RX);
 
 Zařízení IODA umožňuje inicializovat několik sériových linek. Na kterých pinech se tyto linky dají inicializovat se lze dozvědět s dokumentace zařízení v sekci [Rozhraní a periférie](../../hardware/zakladni-jednotky/iodag3e/rozhrani-a-periferie.md) v oddíle UART/USART. V příkladu jsou místo jmen pinů použita makra **SERIALTX a SERIALRX**, tyto makra vedou na sériovou linku na pinech **Y00 a Y01.**
 
-Dále je třeba zvolit baudovou rychlost, která určuje komunikační rychlost linky. To je nejvhodnější provést v sekci **init\(\)**. Baudová rychlost může být různá, záleží na uživateli a pohybuje se většinou v rozmezí 1200 - 230400 baud. Stejnou rychlost je třeba nastavit [na straně počítače při připojení](konfigurace-pc.md#konfigurace-na-windows).
+Dále je třeba zvolit baudovou rychlost, která určuje komunikační rychlost linky. To je nejvhodnější provést v sekci **init\(\)**. Baudová rychlost může být různá, záleží na uživateli a pohybuje se většinou v rozmezí 1200 - 230400 baud. Stejnou rychlost je třeba nastavit [na straně počítače při připojení](konfigurace-seriove-linky-v-pc.md#konfigurace-na-windows).
 
 ```cpp
 pc.baud(115200);
