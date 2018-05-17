@@ -262,24 +262,25 @@ Třída InterruptIn umožňuje uživateli okamžitě reagovat na změnu logické
 ```cpp
 #include "byzance.h"
 
-InterruptIn button(USR); //InterruptIn on USR button
-DigitalOut led(LED_BLUE);
+InterruptIn button(USR);     //InterruptIn on USR button
+DigitalOut led(LED_BLUE);    //blue LED control is inverted
 
 void pushed_button(){
-    led = 1;		//on pushed button, turn on blue LED
+    led = 0;		//on pushed button, turn on blue LED
 }
 
 void released_button(){
-    led = 0;		//on released button, turn off blue LED
+    led = 1;		//on released button, turn off blue LED
 }
 
 void init(){
     Byzance::led_module(false);  	//disable LED module for Byzance
-    button.fall(&pushed_button);	//attach pusehed_button function on rising edge
-    button.rise(&released_button);	//attach released_button function on falling edge
+    button.rise(&pushed_button);	//attach pusehed_button function on rising edge
+    button.fall(&released_button);	//attach released_button function on falling edge
 }
 
 void loop(){
+    //we dont have to do nothing here, everything is done automatically
 	printf("im running!\n");
 	Thread::wait(1000);
 }
