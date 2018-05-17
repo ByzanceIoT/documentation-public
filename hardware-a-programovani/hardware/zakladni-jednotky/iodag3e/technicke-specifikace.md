@@ -6,23 +6,32 @@ Stránka se zabývá mechanickým popisem desky [IODAG3E](./), uvádí důležit
 
 ## Rozměry a váha
 
+Rozměry a hmotnost osazeného PCB je uvedena v horní tabulce. Jde o rozměr bez přesahu bočních konektorů (USB, ethernet).
 | Délka \(mm\) | Šířka \(mm\) | Výška \(mm\) | Váha \(g\) |
 | --- | --- |
 | 63.0 | 41.0 | 11.5 | 30 |
-[Table caption, works as a reference][section-mmd-tables-tableddd]
-Table: Rozměry a hmotnost osazeného PCB..
 
+Spodní tabula uvádí rozsah včetně přesahujících konektorů (USB, ethernet).
 | Délka \(mm\) | Šířka \(mm\) | Výška \(mm\) | Váha \(g\) |
 | --- | --- |
 | 65.5 | 42.5 | 11.5 | 30 |
-[Table caption, works as a reference][section-mmd-tables-table1]
-Table: Rozměry osazeného PCB včetně přesahů bočních konektorů.
 
 ![Rozm&#x11B;rov&#xFD; n&#xE1;&#x10D;rtek desky IODAG3E - obrysy desky a rozm&#xED;st&#x11B;n&#xED; otvor&#x16F;. ](../../../../.gitbook/assets/iodag3e_170725_dimensions_a.svg)
 
 ![Rozm&#x11B;rov&#xFD; n&#xE1;&#x10D;rtek desky IODAG3E - rozm&#xED;st&#x11B;n&#xED; a velikosti konektor&#x16F;.](../../../../.gitbook/assets/iodag3e_170725_dimensions_b.svg)
 
 ## Doporučené operační podmínky
+
+| Parametr | Symbol | Min | Typ | Max |
+| --- | --- | --- | --- |
+| Napájecí napětí \[A\]               |     5.0   |     | 57.0|
+| Napájecí proud \[V\]                |           |  0.5   | 1.0 |
+| Příkon v činnosti \[mW\]            |           |   650  |  800|
+| Příkon ve spánku \[mW\]             |           |   100  |     |
+| Příkon v hlubokém spánku \[mW\]     |           |         |     |
+| Proud pro RTC obvod[^2] \[uV\]       |          |   1  |  3|
+[^1]: Bude uvedeno \#TODO HW-977  
+[^2]: Backup SRAM OFF, low-speed oscillator (LSE) and RTC ON
 
 Jednotka [IODAG3E ](./)je navržena pro přímé použití ve vnitřních a suchých prostorech bez kondenzující vlhkosti a přímých povětrnostních vlivů. Pro venkovní montáž, montáž do vlhkých a jinak náročných prostředí je vhodné jednotku uzavřít do krytu s odpovídajícím krytím \([IPxx](https://en.wikipedia.org/wiki/IP_Code)\).
 
@@ -35,9 +44,14 @@ Jednotka [IODAG3E](./) je postavena z běžně dostupných komerčních komponen
 
 
 
-## 
-
-
+## Absolute maximum ratings
+| Parametr | Symbol | Min | Typ | Max |
+| --- | --- | --- | --- |
+| Napájecí napětí \[A\]       |     4.0   |     | 60.0|
+| Napájecí proud \[V\]        |           |     | 1.2 |
+| Provozní rozsah \[\°C\]     |    -40       |     |  -85|
+| Skladovací rozsah \[\°C\]   |    -40       |     |  -85|
+| ESD ((human body model) \[V\]  |          |     |  2000|
 
 
 
