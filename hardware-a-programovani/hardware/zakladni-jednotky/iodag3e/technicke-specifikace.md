@@ -8,7 +8,13 @@ Stránka se zabývá mechanickým popisem desky [IODAG3E](./), uvádí důležit
 
 | Délka \(mm\) | Šířka \(mm\) | Výška včetně X konektoru \(mm\) | Váha \(g\) |
 | --- | --- |
-| 63.0 | 41.0 | 11.5 | 25 |
+| 63.0 | 41.0 | 11.5 | 30 |
+Table: Rozměry a hmotnost osazeného PCB..
+
+| Délka \(mm\) | Šířka \(mm\) | Výška včetně X konektoru \(mm\) | Váha \(g\) |
+| --- | --- |
+| 65.5 | 42.5 | 11.5 | 30 |
+Table: Rozměry osazeného PCB včetně přesahů bočních konektorů.
 
 ![Rozm&#x11B;rov&#xFD; n&#xE1;&#x10D;rtek desky IODAG3E - obrysy desky a rozm&#xED;st&#x11B;n&#xED; otvor&#x16F;. ](../../../../.gitbook/assets/iodag3e_170725_dimensions_a.svg)
 
@@ -21,6 +27,7 @@ Jednotka [IODAG3E ](./)je navržena pro přímé použití ve vnitřních a such
 | Základní provozní teplotní rozsah \(°C\) | Rozšířený provozní teplotní rozsah \(°C\) |
 | --- | --- |
 | 0 až +85 | -40 až +85  |
+
 
 Jednotka [IODAG3E](./) je postavena z běžně dostupných komerčních komponent přičemž každá komponenta má výrobcem daný rozsah provozních teplot. Většina komponenta pracuje v průmyslovém rozsahu -40°C až +85°C. Použitý ethernetový budič LAN8720A-CP pracuje až od teploty 0°C nicméně lze použít i variantu LAN8720Ai-CP s rozšířeným rozsahem -40°C až +85°C. Všechny ostatní komponenty plně splňují průmyslový rozsah -40°C až +85°C. 
 
