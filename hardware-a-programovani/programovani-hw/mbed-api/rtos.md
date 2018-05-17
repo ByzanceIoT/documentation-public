@@ -4,6 +4,8 @@
 
 Defining, creating and controlling thread functions in the system.
 
+Program demonstruje ovládání blikání LED diody z jiného vlákna, čímž je uvolněno hlavní vlákno.
+
 ```cpp
 #include "byzance.h"
 
@@ -32,6 +34,8 @@ void loop(){
 ## [Mutex](https://os.mbed.com/docs/latest/reference/mutex.html)
 
 Synchronize execution of threads, for example to protect access to a shared resource.
+
+Program demonstruje vyžití mutexu jako ošetření přístupu ke sdílenému zdroji. Sdíleným zdrojem je v tomto případě LED dioda, ke které je přistupováno z hlavního a vedlejšího vlákna. Obě vlákna blikají diodou, každé ovšem s jinou frekvencí - je demonstrováno pravidelné střídání vláken.
 
 ```cpp
 #include "byzance.h"
@@ -83,6 +87,8 @@ Semaphore semaphore;
 
 Each Thread can wait for signals and to be notified of events.
 
+Hlavní vlákno v pětisekundových intervalech nastavuje signál vedlejšímu vláknu. Vedlejší vlákno vždy čeká na signál a v případě jeho obdržení, zabliká 10x LED diodou.
+
 ```cpp
 #include "byzance.h"
 
@@ -120,6 +126,8 @@ void loop(){    //set signal for thread once in 5 seconds
 ## [Queue](https://os.mbed.com/docs/latest/reference/queue.html)
 
 Allows queue pointers to data from producer threads to consumer threads.
+
+Program demonstruje využití fronty. Stiskem tlačítka je vždy přidán jeden záznam do fronty z kontextu ISR. Hlavní vlákno pak postupně zpracovává jednotlivé záznamy z fronty tím, že na každou událost provede 10 bliknutí. Například osm stisků tlačítka postupně zařadí do fronty 80 bliknutí LED.
 
 ```cpp
 #include "byzance.h"
@@ -160,6 +168,8 @@ void loop(){
 
 Define and manage fixed-size memory pools.
 
+Demonstruje využití dynamické alokace v oblasti paměti s fixní velikostí, v příkladu je dále využito třídu Queue. Odesílací vlákno alokuje a přidá v najednou 5 zpráv do fronty. Hlavní vlákno poté zprávy postupně zpracovává a dealokuje z paměti. 
+
 ```cpp
 #include "byzance.h"
 
@@ -185,7 +195,7 @@ void send_thread (void) {
 			message->counter = i;
 			queue.put(message);		//queue the message
         }
-        pc.printf("sent 4 msgs from send thread\n");
+        pc.printf("sent 5 msgs from send thread\n");
         Thread::wait(5000);
     }
 }
@@ -208,6 +218,8 @@ void loop() {
 ## [Mail](https://os.mbed.com/docs/latest/reference/mail.html)
 
 Like queue, with the added benefit of providing a memory pool for allocating messages - combination of MemoryPool and Queue.
+
+Příklad využití spojení dynamické alokace a fronty v jednom - třídy Mail. Odesílací vlákno alokuje a přidá v najednou 5 zpráv do fronty. Hlavní vlákno poté zprávy postupně zpracovává a dealokuje z paměti. 
 
 ```cpp
 #include "byzance.h"
