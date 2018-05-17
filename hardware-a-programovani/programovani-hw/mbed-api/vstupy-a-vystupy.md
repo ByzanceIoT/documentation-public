@@ -257,7 +257,7 @@ void loop(){
 
 ## InterruptIn
 
-Funkce InterruptIn umožňuje uživateli okamžitě reagovat na změnu logické úrovně libovolného pinu \(na náběžnou i sestupnou hranu\) a na základě této změny zavolat libovolnou funkci.
+Třída InterruptIn umožňuje uživateli okamžitě reagovat na změnu logické úrovně libovolného pinu \(na náběžnou i sestupnou hranu\) a na základě této změny zavolat libovolnou funkci.
 
 ```cpp
 #include "byzance.h"
