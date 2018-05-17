@@ -6,6 +6,8 @@
 
 Hostname nebo IP adresa hlavního serveru.
 
+{% page-ref page="../konektivita/komunikace-s-portalem.md" %}
+
 | typ | char\[128\] |
 | --- | --- | --- | --- | --- |
 | omezení | tisknutelné ASCII znaky zakončené terminační nulou |
@@ -16,6 +18,8 @@ Hostname nebo IP adresa hlavního serveru.
 ### **normal\_mqtt\_port**
 
 MQTT port hlavního serveru.
+
+{% page-ref page="../konektivita/komunikace-s-portalem.md" %}
 
 | typ | 16 bit unsigned integer |
 | --- | --- | --- | --- | --- |
@@ -28,6 +32,8 @@ MQTT port hlavního serveru.
 
 Hostname nebo IP adresa záložního serveru.
 
+{% page-ref page="../konektivita/komunikace-s-portalem.md" %}
+
 | typ | char\[128\] |
 | --- | --- | --- | --- | --- |
 | omezení | tisknutelné ASCII znaky zakončené terminační nulou |
@@ -38,6 +44,8 @@ Hostname nebo IP adresa záložního serveru.
 ### **backup\_mqtt\_port**
 
 MQTT port záložního serveru.
+
+{% page-ref page="../konektivita/komunikace-s-portalem.md" %}
 
 | typ | 16 bit unsigned integer |
 | --- | --- | --- | --- | --- |
@@ -50,6 +58,8 @@ MQTT port záložního serveru.
 
 Přihlašovací jméno do MQTT brokeru.
 
+{% page-ref page="../konektivita/komunikace-s-portalem.md" %}
+
 | typ | char\[48\] |
 | --- | --- | --- | --- | --- |
 | omezení | tisknutelné ASCII znaky zakončené terminační nulou |
@@ -60,6 +70,8 @@ Přihlašovací jméno do MQTT brokeru.
 ### **mqtt\_password**
 
 Přihlašovací heslo do MQTT brokeru.
+
+{% page-ref page="../konektivita/komunikace-s-portalem.md" %}
 
 | typ | char\[48\] |
 | --- | --- | --- | --- | --- |
@@ -85,6 +97,13 @@ Alias zařízení, který si každý může nastavit pro lepší [identifikaci z
 
 Zjištění MAC adresy.
 
+| typ | char\[32\] |
+| --- | --- | --- | --- | --- |
+| omezení | 48 bitů; šestice dvojciferných hexadecimálních čísel oddělených dvojtečkou |
+| výchozí hodnota | ff:ff:ff:ff:ff:ff |
+| možnost číst | ano, uživatel |
+| možnost zapisovat | pouze při první konfiguraci, většinou ve výrobě |
+
 ### **blreport**
 
 Bootloader report. Zapnutí, nebo vypnutí výpisu hlavičky [bootloaderu](../architektura-fw/bootloader/) do konzole.
@@ -100,49 +119,131 @@ Bootloader report. Zapnutí, nebo vypnutí výpisu hlavičky [bootloaderu](../ar
 
 Zapnutí [watchdogu](watchdog.md).
 
+| typ | boolean |
+| --- | --- | --- | --- | --- |
+| omezení | 0, 1 |
+| výchozí hodnota | 1 |
+| možnost číst | ano, uživatel |
+| možnost zapisovat | ano, uživatel |
+
 ### **wdtime**
 
 Nastavení periody resetu [watchdogu](watchdog.md).
+
+| typ | integer |
+| --- | --- | --- | --- | --- |
+| omezení | 0 - 32 |
+| výchozí hodnota | 30 |
+| možnost číst | ano, uživatel |
+| možnost zapisovat | ano, uživatel |
 
 ### **autobackup**
 
 Funkce, která zajišťuje, zajišťuje zálohu starého firmware při doručení nového.
 
+| typ | boolean |
+| --- | --- | --- | --- | --- |
+| omezení | 0, 1 |
+| výchozí hodnota | 0 |
+| možnost číst | ano, uživatel |
+| možnost zapisovat | ano, uživatel |
+
 ### **netsource**
 
 Zdroj, odkud bere zařízení internet.
+
+| typ | enum |
+| --- | --- | --- | --- | --- |
+| omezení | disabled, ethernet, wifi, 6lowpan, gsm |
+| výchozí hodnota | ethernet |
+| možnost číst | ano, uživatel |
+| možnost zapisovat | ano, uživatel |
 
 ### **configured**
 
 při prvním spuštění bootloader naběhne vždy do Command režimu a čeká na konfiguraci všech parametrů. Až jsou parametry nastaveny, ''configured'' se přepne na 1 a tím se dá zařízení najevo, že je již plně nakonfigurováno a příště bude už nabíhat do normálního programu.
 
+| typ | boolean |
+| --- | --- | --- | --- | --- |
+| omezení | 0, 1 |
+| výchozí hodnota | 1 |
+| možnost číst | ano, uživatel |
+| možnost zapisovat | ano, uživatel |
+
 ### **webview**
 
 Zapnutí nebo vypnutí funkcionality [webového rozhraní](webove-rozhrani/).
+
+| typ | boolean |
+| --- | --- | --- | --- | --- |
+| omezení | 0, 1 |
+| výchozí hodnota | 1 |
+| možnost číst | ano, uživatel |
+| možnost zapisovat | ano, uživatel |
 
 ### **webport**
 
 Port, na kterém bude přístupno [webové rozhraní](webove-rozhrani/).
 
+| typ | 16 bit unsigned integer |
+| --- | --- | --- | --- | --- |
+| omezení | 0 - 65535 |
+| výchozí hodnota | 80 |
+| možnost číst | ano, uživatel |
+| možnost zapisovat | ano, uživatel |
+
 ### **timeoffset**
 
 Slouží pro lokalizovanou [práci s časem](../tutorialy/prace-s-datem-a-casem-rtc.md). Nastavení offsetu lokálního času RTC od UTC.
+
+| typ | 32 bit unsigned integer |
+| --- | --- | --- | --- | --- |
+| omezení |  4294967296; vyjadřuje sekundy |
+| výchozí hodnota | 0 |
+| možnost číst | ano, uživatel |
+| možnost zapisovat | ano, uživatel |
 
 ### **timesync**
 
 Slouží pro zapnutí [synchronizace času](../tutorialy/prace-s-datem-a-casem-rtc.md) mezi servery Byzance a RTC.
 
+| typ | boolean |
+| --- | --- | --- | --- | --- |
+| omezení |  0, 1 |
+| výchozí hodnota | 1 |
+| možnost číst | ano, uživatel |
+| možnost zapisovat | ano, uživatel |
+
 ### **lowpanbr**
 
 Zapnutí funkce [lowpan border router](../konektivita/6lowpan.md).
+
+| typ | boolean |
+| --- | --- | --- | --- | --- |
+| omezení |  0, 1 |
+| výchozí hodnota | 0 |
+| možnost číst | ano, uživatel |
+| možnost zapisovat | ano, uživatel |
 
 ### **restartbl**
 
 Identifikátor pro [restart zařízení do bootloaderu](../architektura-fw/bootloader/).
 
+| typ | boolean |
+| --- | --- | --- | --- | --- |
+| omezení | 0, 1 |
+| výchozí hodnota | 0 |
+| možnost číst | ano, uživatel |
+| možnost zapisovat | ano, uživatel |
+
 ### **revision**
 
 Zjištění [revize zařízení](revize.md)
 
-
+| typ | 32 bit unsigned integer |
+| --- | --- | --- | --- | --- |
+| omezení | 4 byte hexadecimální číslo 0x00000000-0xFFFFFFFF |
+| výchozí hodnota | 0xFFFFFFFF |
+| možnost číst | ano, uživatel |
+| možnost zapisovat | pouze při první konfiguraci, většinou ve výrobě |
 
