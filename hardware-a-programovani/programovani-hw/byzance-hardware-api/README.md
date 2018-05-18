@@ -7,6 +7,8 @@ Byzance API poskytuje uživateli veškeré funkcionality související s připoj
 * [Odložený restart](odlozeny-restart.md) - je-li vyžádán restart serverem, je možné jej odložit do doby, než bude restartování vhodné
 * [Uživatelská makra](uzivatelska-makra.md) - pro zjištění informací o verzi mbed, překladače aj.
 
+## Popis třídy Byzance
+
 ```cpp
     /**********************************************
      **********************************************

@@ -41,5 +41,7 @@ Hodnoty uvedeny při napájení 3.0 V a teplotě okolí 25°C.
 
 ## Schéma
 
-![Sch&#xE9;ma WEXP modulu obsahuje pouze RF transceiver, ant&#xE9;nn&#xED; obvod a nezbytn&#xE9; pasivn&#xED; sou&#x10D;&#xE1;stky.](../../../.gitbook/assets/wexp_170725_public.png)
+![Sch&#xE9;ma GSM shieldu s GSM modulem, ant&#xE9;nou a nap&#xE1;jec&#xED; &#x10D;&#xE1;st&#xED;. ](../../../.gitbook/assets/shieldg3l_gsm_180320_1.png)
+
+![Voliteln&#xFD; sp&#xED;nan&#xFD; zdroj, p&#x159;eklada&#x10D; nap&#x11B;&#x165;ov&#xFD;ch &#xFA;rovn&#xED;, slot na SIM kartu nebo obvod eSIM.](../../../.gitbook/assets/shieldg3l_gsm_180320_2.png)
 

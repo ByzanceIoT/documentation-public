@@ -288,11 +288,11 @@ InterruptIn button(USR);     //InterruptIn on USR button
 DigitalOut led(LED_BLUE);    //blue LED control is inverted
 
 void pushed_button(){
-    led = 0;		//on pushed button, turn on blue LED
+    led = LED_MODULE_ON;		//on pushed button, turn on blue LED
 }
 
 void released_button(){
-    led = 1;		//on released button, turn off blue LED
+    led = LED_MODULE_OFF;		//on released button, turn off blue LED
 }
 
 void init(){
@@ -307,4 +307,6 @@ void loop(){
 	Thread::wait(1000);
 }
 ```
+
+
 
