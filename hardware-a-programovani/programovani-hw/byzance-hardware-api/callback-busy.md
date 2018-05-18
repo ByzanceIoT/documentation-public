@@ -1,19 +1,27 @@
 # Callback Busy
 
-Tento callback je funkcí knihovny Byzance, která slouží k oznamování, že zařízení je ve stavu **busy**. Stav **busy** indikuje, že zařízení provádí update nového firmware, nebo přípravu na tento update. V tomto stavu v pozadí probíhá procesorově náročnější operace, která ovšem může být přerušována aktuálně probíhajícím uživatelským programem. Callback Busy slouží k ošetření uživatelského programu, aby neblokoval procesy probíhající v pozadí a k přípravě zařízení na restart, který je proveden po updatu nového firmware. K zavolání callbacku může dojít v průběhu vykonávání programu i několikrát po sobě - typicky při přípravě na update a posléze při aktualizaci samotné. Po dokončení update uživatelského programu může dojít k restartu zařízení.
+Callback je součást [Byzance API](./) a slouží k oznamování, že zařízení provádí update nového firmware, nebo přípravu na tento update. Toto je nazýváno jako **stav busy**. Většinou to znamená, že na pozadí probíhá výpočetně náročnější operace, která může narušovat aktuálně probíhající uživatelský program.
 
-Uživatelská funkce \(callback\), která má být provedena v případě přepnutí do stavu "busy", se připojí pomocí následující konstrukce
+{% hint style="info" %}
+Callback Busy slouží k ošetření uživatelského programu, aby nekolidoval s procesy probíhajícími na pozadí. 
+{% endhint %}
+
+K zavolání callbacku může dojít v průběhu vykonávání programu i několikrát po sobě - typicky při přípravě na update a posléze při aktualizaci samotné. Po dokončení aktualizace uživatelského programu může dojít k [restartu zařízení](odlozeny-restart.md).
+
+{% page-ref page="../../architektura-fw/aktualizace-fw.md" %}
+
+Uživatelská funkce \(callback\), která má být vykonána v případě přepnutí do stavu "busy", se připojí pomocí následující konstrukce
 
 ```cpp
 Byzance::attach_bin_busy(&<user-function-name>);
 ```
 
-Využití callbacku Busy je vhodné v případě, kdy je v programu často voláno přerušení\(ISR\), které by mohlo potřebovat většinu procesorového času na pozadí. Takovým případem může být například velmi často volaný Ticker. Dále je vhodné callback využít v případě, kdy je nutné ošetřit chování zařízení a ostatních připojených systémů v případě aktualizace. Takovým případem může být libovolný aktuátor, který by se v nejhorším případě mohl v průběhu update stát neovladatelným.
+Využití je vhodné v případě, kdy je v uživatelském programu například často voláno přerušení \(ISR\), které by mohlo potřebovat většinu výpočetního výkonu. Takovým případem může být například velmi často volaný Ticker. Dále je vhodné callback využít v případě, kdy je nutné ošetřit chování zařízení a ostatních připojených systémů v případě aktualizace. Takovým případem může být libovolný aktuátor, který by se v nejhorším případě mohl v průběhu update stát neovladatelným.
 
 Uživatelská funkce připojená ke callbacku je volána pokaždé, když se změní stav busy a tato informace je zároveň předána v argumentu volané funkce
 
 ```cpp
-// Function attached to busy callback - called when the busy state change
+// Function attached to busy callback
 void busy_function(bool busy){
 
     if(busy){
