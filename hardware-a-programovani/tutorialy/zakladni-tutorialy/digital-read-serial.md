@@ -52,7 +52,7 @@ void loop(){   // the loop routine runs forever :
 }
 ```
 
-V hlavičce programu je nutné importovat knihovny [Byzance Hardware API](../../programovani-hw/byzance-hardware-api.md) a [Mbed API](../../programovani-hw/mbed-api/). pomocí 
+V hlavičce programu je nutné importovat knihovny [Byzance Hardware API](../../programovani-hw/byzance-hardware-api/) a [Mbed API](../../programovani-hw/mbed-api/). pomocí 
 
 ```cpp
 #include "byzance.h"

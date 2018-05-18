@@ -16,7 +16,7 @@ Další informace jsou
 * [Čas, jak dlouho je zařízení připojeno k serverům](../../sprava-zarizeni/provozni-informace.md#cas-pripojeni-k-serverum)
 * [Aktuální čas z RTC](../../tutorialy/prace-s-datem-a-casem-rtc.md)
 * [Čas od startu zařízení](../../sprava-zarizeni/provozni-informace.md#cas-behu-zarizeni)
-* [Přehled o plánovaném restartu](../odlozeny-restart.md)
+* [Přehled o plánovaném restartu](../../programovani-hw/byzance-hardware-api/odlozeny-restart.md)
 
 ![](../../../.gitbook/assets/web_general.png)
 

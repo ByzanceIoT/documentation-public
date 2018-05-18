@@ -1,12 +1,12 @@
 # Struktura programu
 
-Zařízení Byznce se programují v jazyce **C++** a využívají [**MBED API**](https://os.mbed.com/docs/latest/reference/apis.html) a [**Byzance API**](byzance-hardware-api.md). Pro správnou funkčnost programu je nutné na první řádek nejprve importovat knihovnu "byzance.h" příkazem
+Zařízení Byznce se programují v jazyce **C++** a využívají [**MBED API**](https://os.mbed.com/docs/latest/reference/apis.html) a [**Byzance API**](byzance-hardware-api/). Pro správnou funkčnost programu je nutné na první řádek nejprve importovat knihovnu "byzance.h" příkazem
 
 ```cpp
 #include "byzance.h"
 ```
 
-Tato knihovna má za úkol automaticky inicializovat periferie, připojit zařízení k internetu a inicializovat vlákna, která se starají o [aktualizaci firmware](../architektura-fw/aktualizace-fw.md) a připojení k serverům. Importem knihovny se také zpřístupní funkce [Byzance API](byzance-hardware-api.md) a [uživatelská makra](uzivatelska-makra.md).
+Tato knihovna má za úkol automaticky inicializovat periferie, připojit zařízení k internetu a inicializovat vlákna, která se starají o [aktualizaci firmware](../architektura-fw/aktualizace-fw.md) a připojení k serverům. Importem knihovny se také zpřístupní funkce [Byzance API](byzance-hardware-api/) a [uživatelská makra](uzivatelska-makra.md).
 
 ## Definice fyzických vstupů a výstupů
 

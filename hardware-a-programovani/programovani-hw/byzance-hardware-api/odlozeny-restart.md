@@ -26,7 +26,7 @@ Dotazování na stav restartu je možné i periodicky funkcí ''Byzance::restart
 
 Více informací v příslušné části dokumentace.
 
-{% page-ref page="../programovani-hw/byzance-hardware-api.md" %}
+{% page-ref page="./" %}
 
 
 

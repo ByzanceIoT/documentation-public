@@ -24,7 +24,7 @@ Konfigurace probíhá pomocí [sériové linky](../tutorialy/komunikace-po-serio
 
 ## Konfigurace z Byzance API
 
-Pro zjištění či nastavení jednotlivých konfiguračních parametrů v průběhu běhu firmware je možno využít [Byzance API](../programovani-hw/byzance-hardware-api.md). 
+Pro zjištění či nastavení jednotlivých konfiguračních parametrů v průběhu běhu firmware je možno využít [Byzance API](../programovani-hw/byzance-hardware-api/). 
 
 Příklad pro zjištění např. položky "Alias" může vypadat takto
 
@@ -47,9 +47,9 @@ void loop(){
 }
 ```
 
-Stejně jako v ostatních případech, pokud dojde ke změně konfiguračních parametrů pomocí [Byzance API](../programovani-hw/byzance-hardware-api.md) přímo v zařízení, parametry mohou být po připojení k internetu IODAG3E přepsány konfigurací z Portálu.
+Stejně jako v ostatních případech, pokud dojde ke změně konfiguračních parametrů pomocí [Byzance API](../programovani-hw/byzance-hardware-api/) přímo v zařízení, parametry mohou být po připojení k internetu IODAG3E přepsány konfigurací z Portálu.
 
-{% page-ref page="../programovani-hw/byzance-hardware-api.md" %}
+{% page-ref page="../programovani-hw/byzance-hardware-api/" %}
 
 ## Konfigurace z webového rozhraní
 

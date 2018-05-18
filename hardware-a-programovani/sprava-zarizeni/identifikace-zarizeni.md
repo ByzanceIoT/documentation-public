@@ -63,7 +63,7 @@ Alias je možné zjistit při startu zařízení vyčtením při startu [bootloa
 
 Je možné jej zjistit či nastavit v [command režimu bootloaderu](../architektura-fw/bootloader/command-mod.md). V případě nastavení z bootloaderu není garantována funkčnost, protože zařízení při startu zařízení žádá o nastavení Aliasu a v případě, že je název s Tyrionem kolizní, za správnou variantu je považovana varianta Tyrionu.
 
-Alias je možné také zjistit v rámci uživatelského kódu dotazem pomocí [Byzance API](../programovani-hw/byzance-hardware-api.md) funkcí ''Byzance::get\_alias\(\);''.
+Alias je možné také zjistit v rámci uživatelského kódu dotazem pomocí [Byzance API](../programovani-hw/byzance-hardware-api/) funkcí ''Byzance::get\_alias\(\);''.
 
 Jednoduchý kód může vypadat například takto:
 

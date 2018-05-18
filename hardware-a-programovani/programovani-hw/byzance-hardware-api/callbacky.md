@@ -2,7 +2,7 @@
 
 ## Ukázka kódu
 
-V následujícím kódu jsou vytvořeny 2 metody "change\_link" a "change\_client". Pro změnu linkové vrstvy je použita metoda "change\_link" a jejím úkolem je oznámit \(například\) připojení či odpojení kabelu ethernetu.  Druhá metoda "change\_client" detekuje změnu stavu [MQTT clienta](komunikace-s-portalem.md). Připojení callbacků probíhá v sekci inicializace, protože je potřeba volat ji pouze jednou. 
+V následujícím kódu jsou vytvořeny 2 metody "change\_link" a "change\_client". Pro změnu linkové vrstvy je použita metoda "change\_link" a jejím úkolem je oznámit \(například\) připojení či odpojení kabelu ethernetu.  Druhá metoda "change\_client" detekuje změnu stavu [MQTT clienta](../../konektivita/komunikace-s-portalem.md). Připojení callbacků probíhá v sekci inicializace, protože je potřeba volat ji pouze jednou. 
 
 ```cpp
 #include "byzance.h"
