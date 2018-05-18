@@ -12,7 +12,7 @@ Pro potřeby Byzance byly udělány drobné úpravy a navržena vlastní deska. 
 
 Další pekný odstavec.
 
-![Daplink schema](../../../.gitbook/assets/daplink.png)
+![Daplink schema](../../../../.gitbook/assets/daplink.png)
 
 Z hlediska hardwarové a softwarové architektury je třeba rozlišit programující a programovaný mikroprocesor. Programující mikroprocesor \(na obrázku konkrétně LPC11U35\) má za úkol komunikovat s PC prostřednictvím sběrnice USB a vytvořit virtuální sériový port, MSD zařízení \(vyměnitelný disk\), případně GDB klienta. Pro programování programovaného mikroprocesoru využívá SWD/JTAG rozhraní, dále nabízí piny RX a TX virtuálního sériového portu. Z hlediska programovaného mikroprocesoru není Daplink univerzální - **jeden konkrétní firmware pro programující MCU je kompatibilní pouze s jedním nebo užší množinou programovaných MCU** - závislost na flashovacím algoritmu, oblasti RAM, velikost a pozice paměti flash aj..
 

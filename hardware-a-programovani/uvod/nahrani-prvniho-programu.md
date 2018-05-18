@@ -35,7 +35,7 @@ Pokud nahráváme program do zařízení přímo z PC , máme několik možnost�
 
 ### Programování pomocí ZPP
 
-K programování můžeme použít zařízení [Byzance ZPPG3](../hardware/ostatni/zppg3.md), které umožňuje drag&drop programování. Toto zařízení připojíme k programovacímu konektoru a PC a zařízení IODA zapojíme do napájení.  V počítači se hned poté inicializuje nový flash disk, na který stačí binární kód vložit a automaticky se nahraje do zařízení.
+K programování můžeme použít zařízení [Byzance ZPPG3](../hardware/ostatni/zppg3/), které umožňuje drag&drop programování. Toto zařízení připojíme k programovacímu konektoru a PC a zařízení IODA zapojíme do napájení.  V počítači se hned poté inicializuje nový flash disk, na který stačí binární kód vložit a automaticky se nahraje do zařízení.
 
  \#TODO \(GIF pripojení ZPP do počítače a IODY - ticket  [HW-1054](https://youtrack.byzance.cz/youtrack/issue/HW-1054)\)
 
