@@ -13,10 +13,11 @@ Testovací zařízení \(IODA ATE\) slouží ke komunikaci s počítačem, ovlá
 
 V průběhu komunikace s počítačem se vyměňují následující data
 
-* [x] sdfgsdfg
-* [x] asdf
-* [x] asdf
-* [x] asdf
+* počáteční konfigurace, odlišná od [výchozích hodnot](../../architektura-fw/bootloader/vychozi-hodnoty.md)
+* přidělená MAC adresa
+* příslušná [revize](../../sprava-zarizeni/identifikace-zarizeni.md#revize)
+* mapa testovaných pinů a předpokládaných výsledků testů
+* rozsah povolených napětí a proudů měření
 
 ![](../../../.gitbook/assets/garfield_layout.svg)
 
