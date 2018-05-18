@@ -8,6 +8,8 @@ V této sekci jsou zdokumentovány funkce z knihovny MBED API, sloužící k ovl
 
 Převede napětí na pinu analogového vstupu v rozmezí 0 - 3.3V do digitální podoby a interpretujep ho číslem na škále 0-4095. Rozlišení převodníku je 2.44 mV.
 
+Příklad každou sekundu čte analogovou úroveň z pinu X00;
+
 ```cpp
 #include "byzance.h"
 
@@ -26,6 +28,8 @@ void loop(){
 
 Funkce **AnalogOut** umožňuje definovat analogový výstup, který pomocí digitáně analogového převodníku dokáže na základě vstupní hodnoty této funkce měnit hodnotu napětí na výstupním pinu v rozsahu **0 - 3.3V** . Velikost napětí na výstupu je škálováno zápisem v rozsahu **0 - 1**, kdy 1 je maximální napětí 3.3V.
 
+Příklad střídavě nastavuje na pinu Y23 analogovou úroveň 3.3 V a 1.625 V.
+
 ```cpp
 #include "byzance.h"
 
@@ -42,7 +46,9 @@ void loop(){
 
 ## [DigitalIn](https://os.mbed.com/docs/latest/reference/digitalin.html)
 
-Přečte hodnotu digitálního vstupu
+Přečte hodnotu digitálního vstupu.
+
+Příklad vyhodnocuje logickou úroveň tlačítka USR a výsledek vypíše do sérové linky.
 
 ```cpp
 #include "byzance.h"
@@ -51,9 +57,9 @@ Serial pc(SERIAL_TX, SERIAL_RX);	//USBSerial pc(0x1f00, 0x2012, 0x0001, false); 
 DigitalIn din(USR);
 
 void loop(){
-	if(din.read() == 1){
+	if(din.read() == 1)
 		pc.printf("button is pressed\n");
-	else{
+	else
 		pc.printf("button is not pressed\n");
 	Thread::wait(1000);
 }
@@ -61,7 +67,9 @@ void loop(){
 
 ## [DigitalOut](https://os.mbed.com/docs/latest/reference/digitalout.html)
 
-Nastaví na digitálním vástupu logickou úroveň.
+Třída umožňuje nastavit na digitálním výstupu logickou úroveň.
+
+Příklad demonstruje blikání modrou LED. V každém otočení smyčky je hodnota na logickém vstupu negována. 
 
 ```cpp
 #include "byzance.h"
@@ -101,6 +109,8 @@ pc.printf("diout value = %d \n", diout.read());
 ## [BusIn](https://os.mbed.com/docs/latest/reference/busin.html)
 
 Funkcí BusIn lze vést libovolný počet digitálních vstupů jako bus, což umožňuje přečíst digitální hodnotu těchto vstupů jako jedno číslo.
+
+Příklad demonstruje využití vstupní sběrnice. Každých 0,5 sekundy je stav sběrnice přečten a vypsán na obrazovku. Stav sběrnice lze měnit pomocí tlačítka USR a pinů X01 a X02.
 
 ```cpp
 #include "byzance.h"
@@ -233,6 +243,8 @@ void loop(){
 
 Třída PwmOut umožňuje na pinu vytvářet pulzně šířkovou modulaci, regulovat její periodu a šířku jejich pulsů.
 
+Příklad ukazuje využití pulsně šířkové modulace pro ovládání modré LED diody. Efekt dýchání je dosažen postupným zvyšováním střídy a následným opětovným snižováním v rozsahu 0 až 1.
+
 ```cpp
 #include "byzance.h"
 
@@ -265,6 +277,8 @@ void loop(){
 ## [InterruptIn](https://os.mbed.com/docs/latest/reference/interruptin.html)
 
 Třída InterruptIn umožňuje uživateli okamžitě reagovat na změnu logické úrovně libovolného pinu \(na náběžnou i sestupnou hranu\) a na základě této změny zavolat libovolnou funkci.
+
+Příklad demonstruje využití přerušení od vzestupné i sestupné hrany. Na vzestupnou hranu je rozsvícena modrá LED \(stisk tlačítka\) a na sestupnou hranu je LED opět zhasnuta. Tím je docíleno toho, že dioda svítí po celou dobu stisku tlačítka. 
 
 ```cpp
 #include "byzance.h"
