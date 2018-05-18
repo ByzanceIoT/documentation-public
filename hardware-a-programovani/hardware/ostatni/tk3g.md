@@ -9,9 +9,14 @@ Z důvodů unifikace byla pro jednotlivé části převzata terminologie z prům
 
 ![](../../../.gitbook/assets/tk3g.png)
 
+Testovací zařízení \(IODA ATE\) slouží ke komunikaci s počítačem, ovládá periferie TK3G, řídí IODA DUT a [provádí ICT testy](https://en.wikipedia.org/wiki/In-circuit_test).
 
+V průběhu komunikace s počítačem se vyměňují následující data
 
-
+* [x] sdfgsdfg
+* [x] asdf
+* [x] asdf
+* [x] asdf
 
 ![](../../../.gitbook/assets/garfield_layout.svg)
 
