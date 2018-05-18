@@ -32,5 +32,44 @@ Nastal-li jakýkoliv problém, zařízení jej může detekovat jedním z dalš�
 2. vložte hash token z nálepky či QR kódu
 3. klepnutím na ADD přidáte zařízení do projektu
 
+## Vytvoření a uložení prvního programu
 
+V záložce CODE &gt; CODE programs v projektu vytvořte program, který nazvěte například _test_. Klepnutím na program se otevře editor. 
+
+Do editoru můžeme vložit následující jednoduchý program, který vypisuje "Hello World!" přes USB emulátor sériového rozhraní:
+
+```cpp
+#include "byzance.h"
+​
+USBSerial usb(0x1f00, 0x2012, 0x0001, false);
+​
+void init(){
+    // Hello world se vypise jednou pri startu
+    usb.printf("Hello world from init function\n");
+}
+​
+void loop(){
+    // Hello world se bude vypisovat stale dokola kazdych 500 ms
+    usb.printf("Hello World\n");
+    Thread::wait(500);
+}
+```
+
+Klepnutím na tlačítko BUILD se pokusíme zkompilovat tento program. Po úspěšné kompilaci vyskočí oznamovací bublina o úspěšné kompilaci.
+
+![](../../.gitbook/assets/image%20%284%29.png)
+
+Program uložíme.
+
+![](../../.gitbook/assets/image%20%281%29.png)
+
+1. klepnutím na SAVE vyvoláme dialogové okno
+2. nazveme verzi
+3. klepnutím na SAVE v diaglogovém okně vytvoříme verzi
+
+## Nahrání programu do zařízení
+
+V záložce HARDWARE klepneme na zařízení, které jsme předtím přidali do projektu.
+
+![](../../.gitbook/assets/image%20%282%29.png)
 
