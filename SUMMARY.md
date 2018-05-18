@@ -73,7 +73,7 @@
     * [ZPPG3](hardware-a-programovani/hardware/ostatni/zppg3/README.md)
       * [Schéma](hardware-a-programovani/hardware/ostatni/zppg3/schema.md)
     * WEXP
-      * Schéma
+      * [Schéma](hardware-a-programovani/hardware/ostatni/wexp/schema.md)
 * [Architektura FW](hardware-a-programovani/architektura-fw/README.md)
   * [Aktualizace FW](hardware-a-programovani/architektura-fw/aktualizace-fw.md)
   * [Autobackup](hardware-a-programovani/architektura-fw/autobackup.md)
