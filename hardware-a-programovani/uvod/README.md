@@ -83,3 +83,9 @@ Zařízení vytvoří virtuální sériový port. Připojením na tento port pom
 
 ![](../../.gitbook/assets/image%20%283%29.png)
 
+## Závěr
+
+Pokud je vše funkční, není nic snazšího než vyzkoušet nějaký z našich [tutoriálů](../tutorialy/), případně rovnou začít programovat s využitím [Byzance API](../programovani-hw/byzance-hardware-api/) anebo [mbed API](../programovani-hw/mbed-api/). 
+
+Pokud preferujete offline programování, je zapotřebí vlastnit nějaký programátor, nastavit vlastní IDE a další. Podrobnější popsi je možnéí najít v sekci offline programování.
+
