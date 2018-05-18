@@ -23,7 +23,18 @@ Jednotka IODAG3E obsahuje několik druhů pamětí, kde každý typ má svůj ú
 
 ## RAM
 
-Paměť RAM \(Random Access Memory\) je nevolatilní paměť sloužící pro data běžícího firmware.
+Paměť RAM \(Random Access Memory\) je nevolatilní paměť sloužící pro data běžícího firmware.  Pro správné pochopení je vhodné nejdříve přečíst si obecný článek o [nevolatilní paměti RAM](../../../knowledge-base/pamet-ram.md). Níže uvedený přehled obecné informace doplňuje a zpřesňuje pro konkrétní jednotku IODAG3E.
+
+IODAG3E mí k dispozici výše uvedených 256 kB paměti. Paměť je rozdělena na více oblastí a při použití minimálního projektu jsou orientačně zaplněny podle následující tabulky. Přesné hodnoty závisí na verzi projektu i knihoven a může se měnit.
+
+| oblast | .bss | .data | heap | stack |
+| --- | --- | --- |
+| umístění | CCM | CCM | RAM | RAM |
+| velikost | 1500 B | 48 kB | 48 kB | 26 kB |
+
+Na grafu níže je pro daný projekt uvedeno využití paměti pro obě oblasti. Z grafu je patrné, že téměř polovina paměti RAM je dostupná pro uživatelskou aplikaci. Opět platí, že jde o orientační hodnoty.
+
+![](../../../../.gitbook/assets/ram_ccm.png)
 
 ## FLASH v mikrokontroléru
 
