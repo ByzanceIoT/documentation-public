@@ -2,12 +2,13 @@
 
 Webové rozhraní nabízí přehled informací o daném zařízení. Mezi tyto informace se řadí
 
+* [Alias](../../sprava-zarizeni/identifikace-zarizeni.md#alias)
 * [Revize]()
 * [Napájecí napětí](../../sprava-zarizeni/provozni-informace.md#napajeci-napeti)
 * [Vnitřní refereční napětí jádra](../../sprava-zarizeni/provozni-informace.md#referencni-napeti)
 * [Teplota jádra](../../sprava-zarizeni/provozni-informace.md#teplota-jadra)
 * MAC adresa
-* FULL\_ID identifikátor
+* [FULL ID identifikátor](../../sprava-zarizeni/identifikace-zarizeni.md#full-id)
 * Stav [webové konzole](../webova-konzole.md)
 
 Další informace jsou
@@ -19,4 +20,10 @@ Další informace jsou
 * [Přehled o plánovaném restartu](../../programovani-hw/byzance-hardware-api/odlozeny-restart.md)
 
 ![](../../../.gitbook/assets/web_general.png)
+
+Některé z těchto možností jsou dostupné taktéž pomocí Byzance API. Více informací je popsáno v příslušné sekci.
+
+{% page-ref page="../../sprava-zarizeni/provozni-informace.md" %}
+
+
 

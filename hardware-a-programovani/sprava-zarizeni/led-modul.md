@@ -1,8 +1,10 @@
 # LED modul
 
-LED signalizace využívá interní LED modul, který je součástí všech Byzance zařízení. Ve výchozím nastavení bez zásahu uživatele **slouží k vizuální reprezentaci stavů zařízení**. Funkci LED modulu lze přeprogramovat vlastní funkcionalitou. Generace IODAG3E použivá k signalizaci stavu jednu RGB LED diodu. Stavy jsou proto dány jako kombinace blikání s určitou časovou sekvencí a barvou.
+Každé Byzance zařízení obsahuje vestavěný LED modul. Ve výchozím nastavení bez zásahu uživatele **slouží k vizuální reprezentaci stavů zařízení**. Funkci LED modulu lze přeprogramovat vlastní funkcionalitou. Generace IODAG3E použivá k signalizaci stavu jednu RGB LED diodu. Stavy jsou proto dány jako kombinace blikání s určitou časovou sekvencí a barvou.
 
-Pokud je vyžadováno, uživatelský kód může převzít kontrolu nad LED modulem. Více informací viz. \#TODO doplnit link na API a example s LED modulem.
+Pokud je vyžadováno, uživatelský kód může převzít kontrolu nad LED modulem. 
+
+{% page-ref page="../tutorialy/zakladni-tutorialy/ovladani-led-modulu.md" %}
 
 ## Stav CONNECTED
 

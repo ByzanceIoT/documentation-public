@@ -25,7 +25,7 @@ Další informace je možno naleznout v sekci [MBED API](mbed-api/).
 
 ## Definice virtuálních vstupů a výstupů
 
-Při programování funkčního bloku toolu [BLOCKO](https://github.com/byzance/public-documentation/tree/38b460c46404c197299c0f0a84e3402a9b74c8d7/programovani/odkaz%20na%20blocko/README.md) v portálu Byzance je často potřeba definovat virtuální vstupy a výstupy, které symbolizují právě vstupy a výstupy funkčního bloku. Tyto definice je nutné zanést společně s fyzikými vstupy a výstupy.
+Při programování funkčního bloku nástroji BLOCKO v portálu Byzance je často potřeba definovat virtuální vstupy a výstupy, které symbolizují právě vstupy a výstupy funkčního bloku ven ze zařízení. Tyto definice je nutné zanést společně s fyzickými vstupy a výstupy.
 
 ```cpp
 // digitalni vstup s nazvem din_name
