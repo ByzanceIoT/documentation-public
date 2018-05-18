@@ -13,13 +13,15 @@
 Jedná se o hraniční router, který má za úkol zajistit směrování paketů z/do bezdrátové sítě. Má tedy ze své podstaty dvě komunikační rozhraní:
 
 * bezdrátové s technologií 6LowPAN
-* obecný vstup do Internetu \(například GSM, Ethernet\)
+* obecný vstup do Internetu \(například [GSM](gsm.md), Ethernet\)
 
-Zařízení tohoto typu samo o sobě vytváří bezdrátovou síť a je tedy jakýmsi středobodem sítě.
+Zařízení tohoto typu samo o sobě vytváří bezdrátovou síť a je tedy jakýmsi středobodem sítě. Pro využití je nutné [nakonfigurovat](../sprava-zarizeni/konfigurace-zarizeni.md) zařízení tak, aby byla zapnutá funkcionalita _lowpanbr_ a byl [specifikován zdroj Internetu](specifikace-zdroje-internetu.md).
 
 ### Zařízení Router
 
-Jedná se o uzel bezdrátové sítě, aktivně využívá právě jedno komunikační rozhraní. Připojuje se k již existující síti vytvořené Border Routerem. Zařízení umožňuje přeposílat datové zprávy ostatním uzlům v síti, čímž lze navyšovat oblast pokrytí.
+Jedná se o uzel bezdrátové sítě, aktivně využívá právě jedno komunikační rozhraní. Připojuje se k již existující síti vytvořené Border Routerem. Zařízení umožňuje přeposílat datové zprávy ostatním uzlům v síti, čímž lze navyšovat oblast pokrytí. 
+
+Pro využití této funkcionality je nutné [specifikovat zdroj Internetu](specifikace-zdroje-internetu.md) jako _6lowpan_.
 
 ## Zabezpečení
 
