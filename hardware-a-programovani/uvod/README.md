@@ -22,7 +22,7 @@ Pokud vše proběhlo úspěšně, zařízení je připraveno na [nahrání prvn�
 
 Nastal-li jakýkoliv problém, zařízení jej může detekovat jedním z dalších možných blikacích kódů LED modulu.
 
-{% page-ref page="../funkcionality/led-modul.md" %}
+{% page-ref page="../sprava-zarizeni/led-modul.md" %}
 
 ## Přidání zařízení do projektu
 
