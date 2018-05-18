@@ -1,4 +1,4 @@
-# Práce s datem a časem \(RTC\)
+# Datum a čas \(RTC\)
 
 ## Práce s datem a časem \(RTC\)
 

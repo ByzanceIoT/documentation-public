@@ -97,7 +97,7 @@
     * [Upload kódu z konzole](hardware-a-programovani/programovani-hw/offline-programovani/upload-kodu-z-konzole.md)
     * [Upload kódu pomocí ZPP](hardware-a-programovani/programovani-hw/offline-programovani/upload-kodu-pomoci-zpp.md)
 * [Tutoriály](hardware-a-programovani/tutorialy/README.md)
-  * [Práce s datem a časem \(RTC\)](hardware-a-programovani/tutorialy/prace-s-datem-a-casem-rtc.md)
+  * [Datum a čas \(RTC\)](hardware-a-programovani/tutorialy/prace-s-datem-a-casem-rtc.md)
   * [Komunikace po sériové lince \(UART\) s PC](hardware-a-programovani/tutorialy/komunikace-po-seriove-lince-uart-s-pc/README.md)
     * [Konfigurace sériové linky v PC](hardware-a-programovani/tutorialy/komunikace-po-seriove-lince-uart-s-pc/konfigurace-seriove-linky-v-pc.md)
     * [Programování sériové linky](hardware-a-programovani/tutorialy/komunikace-po-seriove-lince-uart-s-pc/programovani-seriove-linky.md)
