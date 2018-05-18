@@ -2,9 +2,9 @@
 
 ## Přehled
 
-Modul WEXP je modul pro hardwarové rozšíření komunikačních schopností jednotky IODAG3E o technologii 6LoWPAN. Tento modul neobsahuje žádný mikrokontrolér, konvertory napájení atp., jde pouze o rádiové rozhraní připojované přes konektor na základní jednotku. Nejedná se tedy o samostatně funkční autonomní zařízení, ale pro své využití vyžaduje spojení s nadřazeným systémem \(mikrokontrolérem\).
+Modul WEXP je modul pro hardwarové rozšíření komunikačních schopností jednotky [IODAG3E ](../zakladni-jednotky/iodag3e/)o technologii [6LoWPAN](../../konektivita/6lowpan.md). Tento modul neobsahuje žádný mikrokontrolér, konvertory napájení atp., jde pouze o rádiové rozhraní připojované přes konektor na základní jednotku. Nejedná se tedy o samostatně funkční autonomní zařízení, ale pro své využití vyžaduje spojení s nadřazeným systémem \(mikrokontrolérem\).
 
-Na jednotku IODAG3E se vkládá do [patřičného konektoru](../zakladni-jednotky/iodag3e/rozhrani-a-periferie.md#prehled) \(č. 3\) a upevňuje šroubem M1.6.
+Na jednotku [IODAG3E ](../zakladni-jednotky/iodag3e/)se vkládá do [patřičného konektoru](../zakladni-jednotky/iodag3e/rozhrani-a-periferie.md#prehled) \(č. 3\) a upevňuje šroubem M1.6.
 
 ![](../../../.gitbook/assets/wexp_detail_small.png)
 
