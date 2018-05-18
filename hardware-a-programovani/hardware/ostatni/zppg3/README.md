@@ -1,8 +1,6 @@
 # ZPPG3
 
-{% hint style="info" %}
-## dopsat popisek; podrobné vývojářské info info o DAPlink bylo přesunuto do interní wiki {#pouziti}
-{% endhint %}
+![](../../../../.gitbook/assets/zpp.png)
 
 ##  Použití {#pouziti}
 
