@@ -1,10 +1,12 @@
 # Upload kódu Drag&drop
 
-[ZPPG3](../../hardware/ostatni/zppg3/) je zařízení učené k jednoduchému drag&drop flashování programu do zařízení IODA pomocí virtuálního disku, který se vytvoří po připojení ZPP do PC.
+Upload kódu pomocí drag and drop je operace, kdy se zařízení připojí jako virtuální [mass storage zařízení](https://en.wikipedia.org/wiki/Mass_storage) \(flash disk\) a poté umožňuje pouhým přetažení souboru s firmware aktualizovat kód zařízení. 
+
+Funkcionalita drag&drop je podmíněna přítomností programátoru a debuggeru, založeného na technologii [DAPlink](https://github.com/ARMmbed/DAPLink). DAPlink může být připojen buď externě jako v případě desky [ZPP](../../hardware/ostatni/zppg3/), či může být součástí zařízení, například [DKG3](../../hardware/ostatni/devkitg3/).
 
 ## Upload hlavního programu
 
-V případě, že máme k dispozici již zkompilovaný kód v binární podobě \(**main.bin**\), připojíme zařízení ZPP do desky a do PC a poté připojíme k desce libovolný zdroj napájení. Po startu desky IODA, dojde i ke startu desky ZPP, který se projeví rychlým problikáním modré LED diody. 
+V případě, že je k dispozici již zkompilovaný kód v binární podobě \(**main.bin**\), připojí se zařízení s DAPlink  do PC a poté se zajistí napájení. Správnou inicializaci by měl DAPlink signalizovat krátkým zablikáním.
 
  \#TODO \(Gif připojení ZPP podle ticketu HW-1054\) 
 
