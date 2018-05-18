@@ -1,6 +1,6 @@
 # Schémata
 
-Elektrická schémata všech periférií IODY
+Elektrická schémata celé jednotky IODAG3E v revizi 170725. 
 
 ![Sheet 1/6:  Sch&#xE9;ma vstupn&#xED; nap&#xE1;jec&#xED; &#x10D;&#xE1;sti spolu se zdrojem nap&#x11B;t&#xED; 3.3 V.](../../../../.gitbook/assets/iodag3e_170225_public_1.png)
 
