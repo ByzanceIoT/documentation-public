@@ -1,3 +1,7 @@
+---
+description: Přehled pamětí jednotky IODAG3E.
+---
+
 # Paměti
 
 ## Přehled
@@ -23,14 +27,18 @@ Jednotka IODAG3E obsahuje několik druhů pamětí, kde každý typ má svůj ú
 
 Většina mikrokontrolérů Cortex M4 má banky paměti rozdělené do menších částí, tzv. sektory. Platí to i pro mikrokontrolér použitý v jednotce IODAG3E a sektory jsou rozděleny podle tabulky níže. V případě použitého mikrokontroléru je paměť složena z více paměťových bank \(dvě banky po 1 MB\), struktura rozdělení sektorů se u druhé banky opakuje.
 
-| **Sektor číslo** | **Velikost sektoru \[kB\]** | **Počáteční adresy** |
-| --- | --- | --- | --- | --- | --- | --- |
-| 0 až 3 | 16 | 0x8000000 |
-| 4 | 64 |  |
-| 5 až 11 | 128 |  |
-| 12 až 15 | 16 |  |
-| 16 | 64 |  |
-| 17 až 23 | 128 |  |
+| **Blok paměti** | **Velikost bloku**  | **Počáteční adresa** |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Sektor 0 až 3 | 16 kB | 0x08000000 |
+| Sektor 4 | 64 kB | 0x08010000 |
+| Sektor 5 až 11 | 128 kB | 0x08020000 |
+| Sektor 12 až 15 | 16 kB | 0x08100000 |
+| Sektor 16 | 64 kB | 0x08110000 |
+| Sektor 17 až 23 | 128 kB | 0x08120000 |
+| System memory | 30 kB | 0x1FFF0000 |
+| OTP | 528 B | 0x1FFF7800 |
+| Option bytes 1 | 16 B | 0x1FFFC000 |
+| Option bytes 2 | 16 B | 0x1FFEC000 |
 
 ### Důsledky existence sektorů
 
@@ -44,6 +52,12 @@ Adresy 0x08000000 a 0x08010000 je tedy třeba znát při [ručním nahrávání]
 ### Přímá uživatelská práce s interní FLASH
 
 Přímá uživatelská práce s interní FLASH pamětí mikrokontroléru se nedoporučuje, protože může dojít k poškození firmware nebo bootloaderu. Výše uvedené skutečnosti je třeba reflektovat \(především při mazání, kde se může stát, že je třeba smazat jenom několik bytů dat, ale technologie FLASH smaže celou stránku společně i s jinými daty\).
+
+Pro ukládání uživatelských dat je určena externí FLASH paměť.
+
+### Ostatní části FLASH paměti
+
+V tabulce výše jsou patrné také další čísti paměti kromě sektorů pro uložení firmware. Jejich význam a použití se lze dočíst v [referenčních manuálech ](http://www.st.com/content/ccc/resource/technical/document/reference_manual/3d/6d/5a/66/b4/99/40/d4/DM00031020.pdf/files/DM00031020.pdf/jcr:content/translations/en.DM00031020.pdf)výrobce mikrokontroléru. Za zmíňku stojí OTP \(one-time programmable memory\) část, kde je např. uložena MAC adresa jednotky. 
 
 
 
