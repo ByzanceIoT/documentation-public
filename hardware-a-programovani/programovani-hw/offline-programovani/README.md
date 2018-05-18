@@ -10,17 +10,27 @@ K tomu ale zatím neexistuje tutoriál.
 
 ## Programování pomocí ZPP
 
-K programování je možno využít zařízení [Byzance ZPPG3](../../hardware/ostatni/zppg3/), které umožňuje drag&drop programování. Toto zařízení připojíme k programovacímu konektoru a PC a zařízení IODA zapojíme do napájení.  V počítači se hned poté inicializuje nový flash disk, na který stačí binární kód vložit a automaticky se nahraje do zařízení.
+K programování je možno využít zařízení [Byzance ZPPG3](../../hardware/ostatni/zppg3/). To slouží jako programátor a debugger a  propojuje počítač s deskou IODAG3. Díky tomu je paměť IODAG3E připojena jako virtuální mass storage zařízení \(flash disk\) a díky tomu podporuje funkci drag&drop.
 
- \#TODO \(GIF pripojení ZPP do počítače a IODY - ticket  [HW-1054](https://youtrack.byzance.cz/youtrack/issue/HW-1054)\)
+{% page-ref page="../../hardware/ostatni/zppg3/" %}
 
-Podrobný návod programování pomocí ZPP lze nalézt v sekci [Upload kódu pomocí ZPP](upload-kodu-pomoci-zpp.md). 
+## Programování zařízení DevKit
 
-### Programování zařízení DevKit
+Zařízení DevKit, má v sobě již zabudovaný programátor a debugger, tudíž není nutné k programování využívat žádné další zařízení jako v případě ZPP. DevKit stačí připojit k PC usb kabelem. V počítači se inicializuje nový flash disk, na který stačí binární kód přetáhnout pomocí drag&drop.
 
-Zařízení DevKit, má v sobě programátor zabudovaný, tudíž není nutné k programování využívat žádné další zařízení. DevKit stačí připojit k PC usb kabelem a v počítači se inicializuje nový flash disk, na který stačí binární kód přetáhnout drag&drop stejně jako pomocí ZPP.
+{% page-ref page="../../hardware/ostatni/devkitg3/" %}
 
-### Programování pomocí programátoru ST-link
+## Programování pomocí programátoru ST-link
 
-Vzhledem k tomu, že zařízení IODAG3E  má integrovaný procesor STM, je možné ho programovat pomocí programátoru ST-link. Pro více informací pokračujte do sekce [Upload kódu z GUI](upload-kodu-z-gui.md). 
+Vzhledem k tomu, že zařízení IODAG3E má integrovaný procesor STM, je možné ho programovat pomocí programátoru [ST-LINK](http://www.st.com/en/development-tools/st-link-v2.html) a utility [ST-LINK utility](http://www.st.com/en/development-tools/stsw-link004.html).
+
+Utilita má uživatelské GUI, které může být především pro začínající uživatele velkým zjednodušením.
+
+{% page-ref page="upload-kodu-z-gui.md" %}
+
+Pro strojové programování a automatizaci je naopak vhodné programování pomocí konzole. To je shrnuto v příslušném článku.
+
+{% page-ref page="upload-kodu-z-konzole.md" %}
+
+
 
