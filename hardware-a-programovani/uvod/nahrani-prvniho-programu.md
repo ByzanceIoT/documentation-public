@@ -1,3 +1,7 @@
+---
+description: '#todo dát někam do piče'
+---
+
 # Nahrání prvního programu
 
 ## Jak vytvořit první program? 
