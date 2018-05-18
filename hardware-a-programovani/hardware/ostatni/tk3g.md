@@ -9,3 +9,9 @@ Z důvodů unifikace byla pro jednotlivé části převzata terminologie z prům
 
 ![](../../../.gitbook/assets/tk3g.png)
 
+
+
+
+
+![](../../../.gitbook/assets/garfield_layout.svg)
+
