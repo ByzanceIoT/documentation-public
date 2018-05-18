@@ -8,8 +8,8 @@ Stránka se zabývá mechanickým popisem desky [IODAG3E](./), uvádí důležit
 
 | **Parametr** | **Min** | **Typ** | **Max** |
 | --- | --- | --- | --- |
-| Napájecí napětí \[A\] | 4.0 |  | 60.0 |
-| Napájecí proud \[V\] |  |  | 1.2 |
+| Napájecí napětí \[V\] | 4.0 |  | 60.0 |
+| Napájecí proud \[A\] |  |  | 1.2 |
 | Provozní rozsah \[°C\] | -40 |  | -85 |
 | Skladovací rozsah \[°C\] | -40 |  | -85 |
 | ESD \(human body model\) \[V\] |  |  | 2000 |
