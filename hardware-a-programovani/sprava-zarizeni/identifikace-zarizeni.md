@@ -4,7 +4,7 @@ Pokud je součástí rozsáhlejšího projektu více zařízení, je nezbytné s
 
 ## FULL ID
 
-Všechna zařízení IODA mají v mikrokontroléru STM32 z výroby naprogramovaný **jedinečný identifikátor** , který se vyskytuje na specifické adrese v [OTP paměti ](../funkcionality/otp-pamet.md)\(liší se podle rodiny mikrokontroléru\) a lze ho pouze číst. Toto číslo je Byzance interně označováno jako **Full ID**.
+Všechna zařízení IODA mají v mikrokontroléru STM32 z výroby naprogramovaný **jedinečný identifikátor** , který se vyskytuje na specifické adrese v [OTP paměti ]()\(liší se podle rodiny mikrokontroléru\) a lze ho pouze číst. Toto číslo je Byzance interně označováno jako **Full ID**.
 
 {% hint style="info" %}
 Full ID je pro člověka obtížně zapamatovatelné a slouží především k strojovému zpracovávání. Je pro každé zařízení unikátní.
@@ -107,7 +107,7 @@ Rozdíly revizí stejného zařízení můžou být například
 * jiná výrobní technologie 
 * implementační drobnost \(jiná použitá součástka\)
 
-Revision je interně interpretováno jako 32 bitové číslo, které se interpretuje HEX ASCII. Může tedy nabývat hodnoty ''0x00000000'' až ''0xFFFFFFFF''. Je nastaveno v [OTP paměti](../funkcionality/otp-pamet.md) při výrobě a proto už nelze změnit.
+Revision je interně interpretováno jako 32 bitové číslo, které se interpretuje HEX ASCII. Může tedy nabývat hodnoty ''0x00000000'' až ''0xFFFFFFFF''. Je nastaveno v [OTP paměti]() při výrobě a proto už nelze změnit.
 
 Revizi je možno zjistit jednou z možností popsaných v sekci konfigurace zařízení.
 
