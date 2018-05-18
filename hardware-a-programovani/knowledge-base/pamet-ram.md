@@ -2,11 +2,11 @@
 
 ## Volatilní paměť
 
-Voalitní paměť je na mikrokontrolérech STM32 tvořena jedním či dvěma moduly:
+Volatitní paměť je na v řídících jednotkách použitých mikrokontrolérech STM32 tvořena jedním či dvěma moduly a to jde o paměť RAM a paměť CCM.
 
 ### RAM
 
-plnohodnotná paměť pro náhodný přístup
+Plnohodnotná paměť pro náhodný přístup, lze k ní přistupovat z programu mikrokontroléru \(jádra\) a z periferií vestavěných v mikrokontroléru \(přes DMA\). Z pohledu uživatele nemá tato paměť omezení při použití. 
 
 ### CCM \(Core Coupled Memory\)
 
