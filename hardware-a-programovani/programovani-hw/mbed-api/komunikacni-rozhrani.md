@@ -29,6 +29,8 @@ Serial Peripheral Interface Master.
 
 See [https://en.wikipedia.org/wiki/Serial\_Peripheral\_Interface\_Bus](https://en.wikipedia.org/wiki/Serial_Peripheral_Interface_Bus)
 
+Příklad demonstruje využití sběrnice SPI pro čtení WHOAMI registru ze zařízení připojeného na sběrnici SPI na X konektoru. 
+
 ```cpp
 #include "byzance.h"
 
@@ -62,6 +64,8 @@ SPISlave spislave;
 ## [I2C](https://os.mbed.com/docs/latest/reference/i2c.html)
 
 Třída I2C poskytuje funkcionalitu I2C sběrnice v roli master. 
+
+Příklad demonstruje jednoduché čtení teploty z teplotního čidla LM75BD.
 
 ```cpp
 #include "byzance.h"
