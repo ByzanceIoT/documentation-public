@@ -14,19 +14,12 @@ Jedná se o vývojovou desku s integrovaným zařízením IODAG3E. Deska umožň
 
 Připojením DevKitu k PC je vytvořeno složené USB zařízení obsahující:
 
-* flashdisk s názvem _BYZG3\_\*\*\*\*_
-* virtuální sérový port
+* mass storage zařízení \(flashdisk\) s názvem _BYZG3\_\*\*\*\*_
+* virtuální sériový port
 
-### Programování firmware
+Aktualizace [firmware](../../../programovani-hw/struktura-programu.md) či [bootloaderu](../../../architektura-fw/bootloader/) IODA binárním souborem _\*.bin_ je možno provádět pomocí drag&drop z počítače na virtuální mass storage zařízení.
 
-Přenos binárního souboru _\*.bin_ do interní flash paměti zařízení IODA na adresu příslušící komponentně firmware je prováděn překopírováním souboru na flash disk.
-
-### Programování bootloader
-
-Přenos binárního souboru _\*.bin_ do interní flash paměti zařízení IODA na adresu příslušící komponentně bootloader je prováděn následujícím způsobem:
-
-* na flashdisk je nahrán prázdný soubor _BOOTLOAD.txt_, čímž dojde k dočasnému výběru cílové adresy pro bootloader
-* na flashdisk je poté nahrán soubor _\*.bin_ s bootloaderem
+{% page-ref page="../../../programovani-hw/offline-programovani/upload-kodu-pomoci-zpp.md" %}
 
 ## Konektory
 
