@@ -1,6 +1,6 @@
 # Konektor X a Y
 
-Každá [základní jednotka ](../)může mít piny [X a Y konektoru](../../rozsirujici-moduly/#x-konektor-a-y-konektor) zapojeny na mikrokontrolér odlišně. Tato stránka obsahuje podrobný a na typu jednotky závislý popis zapojení pinů [konektorů X a Y. ](../../rozsirujici-moduly/#x-konektor-a-y-konektor) Jednotka [IODAG3E](./) disponuje vývody periferií jako např. UART, I2C, SPI, CAN, TIM, ADC, DAC a přesné zapojení je v tabulce níže.
+Každá [základní jednotka ](../)může mít piny [X a Y konektoru](../../rozsirujici-moduly/#x-konektor-a-y-konektor) zapojeny na použití mikrokontrolér STM32F437IIH6 odlišně. Tato stránka obsahuje podrobný a na typu jednotky závislý popis zapojení pinů [konektorů X a Y. ](../../rozsirujici-moduly/#x-konektor-a-y-konektor) Jednotka [IODAG3E](./) disponuje vývody periferií jako např. UART, I2C, SPI, CAN, TIM, ADC, DAC a přesné zapojení je v tabulce níže.
 
 Všechny tabulky jsou také ke stažení ve formátu [PDF](https://blobscdn.gitbook.com/v0/b/gitbook-28427.appspot.com/o/assets%2F-L9jHroT0UirGp5ehgdL%2F-LChFUOlXOsoGchxLVFC%2F-LChFgci3OklqhyBE12F%2FXYconn.pdf?alt=media&token=c9d6aaef-9910-460b-b591-5804b4679b75).
 

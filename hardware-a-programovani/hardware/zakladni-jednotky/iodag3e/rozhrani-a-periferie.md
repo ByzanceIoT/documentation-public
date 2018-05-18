@@ -21,7 +21,7 @@ USB lze využít i pro napájení, kde další podrobnosti popsány v [článku 
 
 Zařízení IODA disponuje celkem 54 piny vstupně výstupními piny na [X a Y konektoru](../../rozsirujici-moduly/#x-konektor-a-y-konektor) \([namapování pinů](konektor-x-a-y.md)\) a to včetně [napájecích ](napajeni.md)pinů. Na pinech lze definovat digitální i analogové vstupy a výstupy, další komunikační sběrnice a nebo používat napájecí vývody pro napájení jednotky či jako výstup napájení pro externí zařízení.
 
-Vlastnosti vstupů a výstupů se odvíjí od použitého [mikrokontroléru](http://www.st.com/content/ccc/resource/technical/document/datasheet/fd/8c/0a/19/13/8f/41/99/DM00077036.pdf/files/DM00077036.pdf/jcr:content/translations/en.DM00077036.pdf) a jejich napojení je patrné z [tabulek s přiřazenými vývody](konektor-x-a-y.md). Lze se tak například dozvědět, jaká jednotka SPI sběrnice na daných pinech funguje a kde ne. 
+Vlastnosti vstupů a výstupů se odvíjí od použitého mikrokontroléru STM32F437IIH6 a jejich napojení je patrné z [tabulek s přiřazenými vývody](konektor-x-a-y.md). Lze se tak například dozvědět, jaká jednotka SPI sběrnice na daných pinech funguje a kde ne. 
 
 ![P&#x159;&#xED;klad X konektoru \(vlevo\) a Y konektory \(vpravo\) na z&#xE1;kladn&#xED; desce IODAG3E.](../../../../.gitbook/assets/x_y_conn%20%281%29.png)
 
