@@ -49,9 +49,9 @@ void led_thread() {
     while (true) {    //loop the thread
         led_protection.lock();    //lock or wait forever for unlock
         for(uint8_t i=0; i<10; i++){    //blink 10 times fast
-            led = 1;    //flip blue led
+            led = LED_MODULE_ON;    //flip blue led
             Thread::wait(50);
-            led = 0;
+            led = LED_MODULE_OFF;
             Thread::wait(50);
         }
         led_protection.unlock();
@@ -66,9 +66,9 @@ void init() {
 void loop(){
     led_protection.lock();    //lock or wait forever for unlock
     for(uint8_t i=0; i<10; i++){    //blink 5 times slow
-        led = 1; 
+        led = LED_MODULE_ON; 
         Thread::wait(200); 
-        led = 0;
+        led = LED_MODULE_OFF;
         Thread::wait(200);
     }
     led_protection.unlock();
@@ -103,9 +103,9 @@ void led_thread() {
         osEvent event = Thread::signal_wait(0);    //wait for any signal forever
         if(event.status == osEventSignal && (event.value.signals & BLINK_SIGNAL)){    //if event was signal and signal is BLINK_SIGNAL
             for(uint8_t i=0; i<10; i++){    //blink 10 times fast
-                led = 0;
+                led = LED_MODULE_ON;
                 Thread::wait(50);
-                led = 1;
+                led = LED_MODULE_OFF;
                 Thread::wait(50);
             }
         }
@@ -154,9 +154,9 @@ void loop(){
 		pressed_times++;
 		pc.printf("button pressed %d times\n",pressed_times);
 		for(uint8_t i=0; i<10; i++){	//blink 10 times for each record in queue
-			led = 0;
+			led = LED_MODULE_ON;
 			Thread::wait(50);
-			led = 1;
+			led = LED_MODULE_OFF;
 			Thread::wait(50);
 		}
 	}
