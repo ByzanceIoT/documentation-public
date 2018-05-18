@@ -4,6 +4,8 @@
 
 Umožňuje periodické volání funkcí s mikrosekundovou přesností.
 
+Příklad demonstruje využití tickeru pro účely blikání LED diodou. Každé 2 sekundy je invertován stav modré LED. Tímto je dosaženo blikání z kontextu ISR.
+
 ```cpp
 #include "byzance.h"
 
@@ -29,6 +31,8 @@ void loop(){
 ## [Timeout](https://os.mbed.com/docs/latest/reference/timeout.html)
 
 Umožňuje zpožděné volání příslušné funkce s mikrosekundovou přesností.
+
+Příklad demonstruje využití třídy Timeout pro zpožděné vypnutí modré LED diody. Dioda je vypnuta po 2 sekundách.
 
 ```cpp
 #include "byzance.h"
@@ -56,6 +60,8 @@ void loop(){
 ## [Timer](https://os.mbed.com/docs/latest/reference/timer.html)
 
 Umožňuje měření časových úseků až s mikrosekundovou přesností. 
+
+Příklad demonstruje využití časovače - pokud měřený časový úsek přesáhne 2 sekundy, je invertována modrá LED dioda a časovač vynulován a znovu spuštěn. Tímto je dosaženo blikání z kontextu vlákna.
 
 ```cpp
 #include "byzance.h"
