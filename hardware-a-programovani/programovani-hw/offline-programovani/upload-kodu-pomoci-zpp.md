@@ -52,7 +52,7 @@ Podrobnosti viz.: [MSD Commands](https://github.com/mbedmicro/DAPLink/blob/maste
 * _auto\_on.cfg_ - přepnutí do módu automation-allowed on \(ukládání do NVM\)
 * _auto\_off.cfg_ - přepnutí do módu automation-allowed off \(ukládání do NVM\)
 
-## Aktualizace firmware programátoru 
+## Upload firmware programátoru 
 
 Pokud je potřeba přehrát firmware programátoru, je zapotřebí:
 
