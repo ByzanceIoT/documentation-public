@@ -97,7 +97,7 @@ OTP_BLOCKS * OTP_BYTES_IN_BLOCK
 
 ## Externí FLASH
 
-Na PCB jednotky IODAG3E je umístěna také externí SPI FLASH paměť o kapacitě 64 Mb. Částečně je využívání pro potřeby Byzance knihoven a z části je plně dostupná pro uživatele. Uživatelsky dostupná část je velká 2 MB a pracuje se s ní výhradně přes API \#TODO link na API. 
+Na PCB jednotky IODAG3E je umístěna také externí SPI FLASH paměť o kapacitě 64 Mb. Částečně je využívání pro potřeby Byzance knihoven \(OTA update, konfigurace, ...\) a z části je plně dostupná pro uživatele. Uživatelsky dostupná část je velká 2 MB a pracuje se s ní výhradně přes API \#TODO link na API. 
 
 | **Fyzický rozsah adres uživatelské části paměti** |
 | --- | --- |
