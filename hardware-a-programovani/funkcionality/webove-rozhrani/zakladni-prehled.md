@@ -2,7 +2,7 @@
 
 Webové rozhraní nabízí přehled informací o daném zařízení. Mezi tyto informace se řadí
 
-* [Revize](../revize.md)
+* [Revize]()
 * [Napájecí napětí](../../sprava-zarizeni/provozni-informace.md#napajeci-napeti)
 * [Vnitřní refereční napětí jádra](../../sprava-zarizeni/provozni-informace.md#referencni-napeti)
 * [Teplota jádra](../../sprava-zarizeni/provozni-informace.md#teplota-jadra)

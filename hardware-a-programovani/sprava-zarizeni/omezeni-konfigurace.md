@@ -238,7 +238,7 @@ Identifikátor pro [restart zařízení do bootloaderu](../architektura-fw/bootl
 
 ### **revision**
 
-Zjištění [revize zařízení](../funkcionality/revize.md)
+Zjištění [revize zařízení]()
 
 | typ | 32 bit unsigned integer |
 | --- | --- | --- | --- | --- |

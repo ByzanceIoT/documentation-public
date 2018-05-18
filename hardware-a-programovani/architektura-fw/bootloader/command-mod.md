@@ -48,7 +48,7 @@ Více informací k MQTT připojení je možno nalézt v sekci [Komunikace se ser
 * **timesync** - Slouží pro zapnutí [synchronizace času](../../tutorialy/prace-s-datem-a-casem-rtc.md) mezi servery Byzance a RTC.
 * **lowpanbr** - Zapnutí funkce [lowpan border router](../../konektivita/6lowpan.md).
 * **restartbl** - Identifikátor pro [restart zařízení do bootloaderu](./).
-* **revision** - Zjištění [revize zařízení](../../funkcionality/revize.md)
+* **revision** - Zjištění [revize zařízení]()
 
 ## Příkazy pouze s parametrem
 

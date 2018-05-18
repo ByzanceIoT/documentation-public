@@ -123,7 +123,6 @@
   * [Webová konzole](hardware-a-programovani/funkcionality/webova-konzole.md)
   * [Vytížení zařízení](hardware-a-programovani/funkcionality/vytizeni-zarizeni.md)
   * [Odložený restart](hardware-a-programovani/funkcionality/odlozeny-restart.md)
-  * [Revize](hardware-a-programovani/funkcionality/revize.md)
   * [OTP paměť](hardware-a-programovani/funkcionality/otp-pamet.md)
   * [Připojení zdroje k VBAT](hardware-a-programovani/funkcionality/pripojeni-zdroje-k-vbat.md)
   * [Události](hardware-a-programovani/funkcionality/udalosti.md)
