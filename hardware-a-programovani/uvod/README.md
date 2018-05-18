@@ -24,5 +24,13 @@ Nastal-li jakýkoliv problém, zařízení jej může detekovat jedním z dalš�
 
 {% page-ref page="../funkcionality/led-modul.md" %}
 
+## Přidání zařízení do projektu
+
+![](../../.gitbook/assets/image.png)
+
+1. klepnutím na ADD DEVICE otevřete diaglog pro přidání zařízení; následně zvolte Single Registration
+2. vložte hash token z nálepky či QR kódu
+3. klepnutím na ADD přidáte zařízení do projektu
+
 
 
