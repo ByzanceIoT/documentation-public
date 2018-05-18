@@ -68,10 +68,12 @@
     * [Serial shield](hardware-a-programovani/hardware/rozsirujici-moduly/serial-shield.md)
   * [Ostatní](hardware-a-programovani/hardware/ostatni/README.md)
     * [DevKitG3](hardware-a-programovani/hardware/ostatni/devkitg3.md)
-    * [TK3G](hardware-a-programovani/hardware/ostatni/tk3g.md)
+    * [TK3G](hardware-a-programovani/hardware/ostatni/tk3g/README.md)
+      * Schéma
     * [ZPPG3](hardware-a-programovani/hardware/ostatni/zppg3/README.md)
       * Schéma
     * WEXP
+      * Schéma
 * [Architektura FW](hardware-a-programovani/architektura-fw/README.md)
   * [Aktualizace FW](hardware-a-programovani/architektura-fw/aktualizace-fw.md)
   * [Autobackup](hardware-a-programovani/architektura-fw/autobackup.md)
