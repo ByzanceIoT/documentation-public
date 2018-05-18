@@ -56,35 +56,7 @@ Jumperová propojka _JPP_ slouží k připojení programovací rozhraní a UART 
 * DevKit RX - IODA TX
 * Devkit TX - IODA RX
 
-## MSD příkazy
-
-Jedná se o příkazy, kterými lze ovládat programátor. Pro jejich vyvolání je nutné nahrát na disk soubor s příslušným názvem. Existují dva módy příkazů:
-
-* automation-allowed on - v tomto módu programátor přijímá příkazy přímo - tj. pokud je příkaz nahrán
-* automation-allowed off- pokud je programátor v tomto módu, příkazy přijímá pouze, pokud je při nahrávání příkazu stisknuto tlačítko RST \(výchozí mód\)
-
-#### Action Commands
-
-* _start\_bl.act_ - restartuje programátor do bootloader \(tj. jako CRP DISABLED flash disk\)
-* _start\_if.act_ - flashdisk se odpojí a znovu připojí
-* _erase.act_ - vymaže programovou paměť IODy \(bootloader i firmware\)
-
-#### Configuration Commands
-
-* _auto\_rst.cfg_ - zapne mód auto reset \(po dokončení programování cílového procesoru je procesor restartován; ve výchozím nastavení zapnut; ukládání do NVM\)
-* _hard\_rst.cfg_ - vypne mód auto reset  \(ukládání do NVM\)
-* _auto\_on.cfg_ - přepnutí do módu automation-allowed on \(ukládání do NVM\)
-* _auto\_off.cfg_ - přepnutí do módu automation-allowed off \(ukládání do NVM\)
-
-## Upload firmware programátoru 
-
-Pokud je potřeba přehrát firmware programátoru, je zapotřebí:
-
-1. odpojit DevKit z USB a veškerého napájení
-2. stisknout tlačítko RST a současně připojit USB kabel
-3. programátor se přihlásí jako flash disk _CRP DISABLED_
-4. smazat soubor _firmware.bin_ z flashdisku
-5. nahrát na flash disk soubor \#todo nahrát soubor
+Pro složitější operace je možno využívat [MSD příkazy](../../../programovani-hw/offline-programovani/upload-kodu-pomoci-zpp.md#msd-prikazy), či [aktualizovat firmware zařízení DAPlink](../../../programovani-hw/offline-programovani/upload-kodu-pomoci-zpp.md#aktualizace-firmware-programatoru).
 
 ## 
 
