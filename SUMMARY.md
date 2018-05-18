@@ -133,4 +133,6 @@
   * [Monitoring parametrů](hardware-a-programovani/sprava-zarizeni/provozni-informace.md)
   * [Konfigurace zařízení](hardware-a-programovani/sprava-zarizeni/konfigurace-zarizeni.md)
   * [Omezení konfigurace](hardware-a-programovani/sprava-zarizeni/omezeni-konfigurace.md)
+* Knowledge base
+  * [Paměť RAM](hardware-a-programovani/knowledge-base/pamet-ram.md)
 
