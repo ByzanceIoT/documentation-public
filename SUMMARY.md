@@ -97,7 +97,7 @@
     * [Vlastní IDE](hardware-a-programovani/programovani-hw/offline-programovani/vlastni-ide.md)
     * [Upload kódu z GUI](hardware-a-programovani/programovani-hw/offline-programovani/upload-kodu-z-gui.md)
     * [Upload kódu z konzole](hardware-a-programovani/programovani-hw/offline-programovani/upload-kodu-z-konzole.md)
-    * [Upload kódu pomocí ZPP](hardware-a-programovani/programovani-hw/offline-programovani/upload-kodu-pomoci-zpp.md)
+    * [Upload kódu Drag&drop](hardware-a-programovani/programovani-hw/offline-programovani/upload-kodu-pomoci-zpp.md)
 * [Tutoriály](hardware-a-programovani/tutorialy/README.md)
   * [Datum a čas \(RTC\)](hardware-a-programovani/tutorialy/prace-s-datem-a-casem-rtc.md)
   * [Komunikace po sériové lince \(UART\) s PC](hardware-a-programovani/tutorialy/komunikace-po-seriove-lince-uart-s-pc/README.md)

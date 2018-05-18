@@ -1,4 +1,4 @@
-# Upload kódu pomocí ZPP
+# Upload kódu Drag&drop
 
 [ZPPG3](../../hardware/ostatni/zppg3/) je zařízení učené k jednoduchému drag&drop flashování programu do zařízení IODA pomocí virtuálního disku, který se vytvoří po připojení ZPP do PC.
 
