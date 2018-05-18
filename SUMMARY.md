@@ -71,7 +71,7 @@
     * [TK3G](hardware-a-programovani/hardware/ostatni/tk3g/README.md)
       * Schéma
     * [ZPPG3](hardware-a-programovani/hardware/ostatni/zppg3/README.md)
-      * Schéma
+      * [Schéma](hardware-a-programovani/hardware/ostatni/zppg3/schema.md)
     * WEXP
       * Schéma
 * [Architektura FW](hardware-a-programovani/architektura-fw/README.md)
