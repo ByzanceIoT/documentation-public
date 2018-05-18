@@ -13,7 +13,7 @@ Pokud je zdrojem internetu 6lowpan či GSM, zařízení je schováno za NAT a we
 * Zjištění verzí jednotlivých komponent firmware.
 * [Využití výkonu](../vytizeni-zarizeni.md) mikrokontroléru a stav jednotlivých vláken.
 * Výpis aktuálních hodnot [konfigurace](../../sprava-zarizeni/konfigurace-zarizeni.md), případně jejich změna.
-* Zaregistrované Byzance [digitální/analogové/message vstupy a výstupy](../../programovani-hw/vstupy-a-vystupy-do-portalu.md).
+* Zaregistrované Byzance [digitální/analogové/message vstupy a výstupy](../../programovani-hw/byzance-hardware-api/vstupy-a-vystupy-do-portalu.md).
 
 ## Jak získat přístup do webového rozhraní
 

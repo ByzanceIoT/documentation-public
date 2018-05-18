@@ -1,6 +1,6 @@
 # Vstupy a výstupy do Portálu
 
-![](../../.gitbook/assets/hw-in-outs-_-porty-na-lince.png)
+![](../../../.gitbook/assets/hw-in-outs-_-porty-na-lince.png)
 
 ## Vstupy
 

@@ -6,6 +6,13 @@ Základní jednotka je samostatně fungující plnohodnotý kus hardware, který
 
 Základní jednotka slouží jako řídicí komponenta chytrého zařízení. Většinou je označována názvem IODA a podle typu jednotky se k názvu přidávají další znaky \(např. [IODAG3E ](iodag3e/)nebo [IODAG3L](iodag3l.md)\). 
 
+Existují následující základní jednotky:
+
+* [IODAG3E](https://docu.byzance.cz/~/drafts/-LCndL2X3pfmKdNp4d_E/primary/hardware-a-programovani/hardware/zakladni-jednotky/iodag3e)
+* [IODAG3L](https://docu.byzance.cz/~/drafts/-LCndL2X3pfmKdNp4d_E/primary/hardware-a-programovani/hardware/zakladni-jednotky/iodag3l)
+
+
+
 ![Z&#xE1;kladn&#xED; jednotka typu IODAG3E s ethernetov&#xFD;m p&#x159;ipojen&#xED;m.](../../../.gitbook/assets/maly_ioda.png)
 
 ## Blokové schéma

@@ -6,6 +6,19 @@ Na [základní jednotky](../zakladni-jednotky/) se připojují v této kapitole 
 
 [Základní jednotky](../zakladni-jednotky/) podporující připojení shieldů musí mít integrovaný tzv. [X konektor](./#x-konektor-a-y-konektor) \(např. [IODAG3E](../zakladni-jednotky/iodag3e/)\). 
 
+Existující následující rozšiřující moduly:
+
+* [GSM shield](gsm-shield.md)
+* [LED shield](led-shield.md)
+* [Relay shield](relay-shield.md)
+* [RFID shield](rfid-shield.md)
+* [Ultrasonic shield](ultrasonic-shield.md)
+* [Meteo shield](meteo-shield.md)
+* [Movement shield](movement-shield.md)
+* [PIR shield](pir-shield.md)
+* [RGB Displej shield](rgb-displej-shield.md)
+* [Serial shield](serial-shield.md)
+
 ## X konektor a Y konektor
 
 Fyzicky jsou vstupy a výstupy základních jednotek rozděleny do dvou skupin, tzn. na **X konektor** a **Y konektor**. Tyto konektory obsahují vybrané na základní jednotce dostupné periferie \(UART, I2C, PWM, ...\), napájecí signály a nebo signály pro [SWD ](../../programovani-hw/offline-programovani/)či reset. 
