@@ -30,7 +30,7 @@ IODAG3E je základní jednotka vybavená vestavěným ethernetovým rozhraním p
 * online programování v C/C++ z webové aplikace Byzance
 * vzdálená aktualizace uživatelského programu
 * vestavěný webový server
-* konektor na uchycení 6LoWPAN modulu [WEXP ](../../ostatni/wexp/)pro bezdrátovou komunikaci
+* konektor na uchycení 6LoWPAN modulu [WEXP ](../../ostatni/wexp.md)pro bezdrátovou komunikaci
 * low power management
 * hardwarová akcelerace CRC, šifrování
 * hardwarový watchdog

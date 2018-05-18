@@ -57,14 +57,14 @@ void loop(){
 
 Klepnutím na tlačítko BUILD se pokusíme zkompilovat tento program. Po úspěšné kompilaci vyskočí oznamovací bublina o úspěšné kompilaci.
 
-![](../../.gitbook/assets/image%20%284%29.png)
+![](../../.gitbook/assets/image%20%285%29.png)
 
 Program uložíme.
 
 ![](../../.gitbook/assets/image%20%281%29.png)
 
 1. klepnutím na SAVE vyvoláme dialogové okno
-2. nazveme verzi
+2. nazveme verzi - například _first version_
 3. klepnutím na SAVE v diaglogovém okně vytvoříme verzi
 
 ## Nahrání programu do zařízení
@@ -72,4 +72,14 @@ Program uložíme.
 V záložce HARDWARE klepneme na zařízení, které jsme předtím přidali do projektu.
 
 ![](../../.gitbook/assets/image%20%282%29.png)
+
+1. v bloku BYZANCE CODE klepneme na tlačítko MANUAL CHANGE, čímž vyvoláme dialogové okno pro manuální změnu firmware vybraného zařízení
+2. vybereme program dle názvu - v tomto případě tedy _test_
+3. vybereme verzi programu k uploadu - v tomto případě _first version_
+
+## Ověření funkčnosti
+
+Zařízení vytvoří virtuální sériový port. Připojením na tento port pomocí terminálu zjistíme, zda zařízení odesílá požadovaný text do konzole.
+
+![](../../.gitbook/assets/image%20%283%29.png)
 

@@ -15,11 +15,9 @@ void init(){
 
 void my_function(){
 
-    // nejaka logika na zjisteni, jestli mi restart vadi nebo ne
+    // some logic which can postpone waiting restart
 
-    // pokud vadi, o kolik se ma posunout
-
-    Byzance::restart_postpone(cislo);
+    Byzance::restart_postpone(seconds);
 
 }
 ```

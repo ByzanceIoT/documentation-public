@@ -1,6 +1,6 @@
 # Rozhraní a periférie
 
-[IODAG3E ](./)disponuje mnoha vstupy a výstupy vyvedenými na svém těle buď v podobě [X a Y konektorů](../../rozsirujici-moduly/#x-konektor-a-y-konektor) a nebo jako další konektory přímo na PCB. Mezi tyto rozhraní patří plnohodnotný mikro USB port, volitelný konektor externího napájení, volitelný [SWD](../../../programovani-hw/offline-programovani/) konektor, konektor pro připojení [WEXP ](../../ostatni/wexp/)modulu a zapuštěný konektor ethernetu.
+[IODAG3E ](./)disponuje mnoha vstupy a výstupy vyvedenými na svém těle buď v podobě [X a Y konektorů](../../rozsirujici-moduly/#x-konektor-a-y-konektor) a nebo jako další konektory přímo na PCB. Mezi tyto rozhraní patří plnohodnotný mikro USB port, volitelný konektor externího napájení, volitelný [SWD](../../../programovani-hw/offline-programovani/) konektor, konektor pro připojení [WEXP ](../../ostatni/wexp.md)modulu a zapuštěný konektor ethernetu.
 
 ![Rozm&#xED;st&#x11B;n&#xED; konektor&#x16F; a rozhran&#xED; na z&#xE1;kladn&#xED; jednotce IODAG3E.](../../../../.gitbook/assets/nakres-ioda-viktor%20%281%29.svg)
 
