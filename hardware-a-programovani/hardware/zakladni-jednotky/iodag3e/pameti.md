@@ -48,7 +48,7 @@ Většina mikrokontrolérů Cortex M4 má banky paměti rozdělené do menších
 
 Vzhledem k rozdělení paměti a existenci bootloaderu a hlavního programu je FLASH paměť logicky rozdělena na dvě části.
 
-* bootloader 64 kB - od adresy 0x08000000 po 0x80010000, sektory 0 až  3
+* bootloader 64 kB - od adresy 0x08000000 po 0x0800FFFF, sektory 0 až  3
 * firmware 1984 kB - od adresy 0x8010000 po 0x80200000,  - sektory 4 až 23
 
 Adresy 0x08000000 a 0x08010000 je tedy třeba znát při [ručním nahrávání](../../../programovani-hw/offline-programovani/) bootloaderu nebo firmware \(např přes [ST-LINK](../../../programovani-hw/offline-programovani/upload-kodu-z-gui.md)\).
