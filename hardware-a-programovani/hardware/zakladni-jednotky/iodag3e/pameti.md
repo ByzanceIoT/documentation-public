@@ -21,6 +21,10 @@ Jednotka IODAG3E obsahuje několik druhů pamětí, kde každý typ má svůj ú
   * připojena přes SPI rozhraní k mikrokontroléru
   * slouží pro uložení konfigurace, záložního firmware a jako uživatelský prostor
 
+## RAM
+
+Paměť RAM \(Random Access Memory\) je nevolatilní paměť sloužící pro data běžícího firmware.
+
 ## FLASH v mikrokontroléru
 
 ### Rozdělení sektorů
@@ -55,9 +59,26 @@ Přímá uživatelská práce s interní FLASH pamětí mikrokontroléru se nedo
 
 Pro ukládání uživatelských dat je určena externí FLASH paměť.
 
-### Ostatní části FLASH paměti
+### OTP a statní části FLASH paměti
 
-V tabulce výše jsou patrné také další čísti paměti kromě sektorů pro uložení firmware. Jejich význam a použití se lze dočíst v [referenčních manuálech ](http://www.st.com/content/ccc/resource/technical/document/reference_manual/3d/6d/5a/66/b4/99/40/d4/DM00031020.pdf/files/DM00031020.pdf/jcr:content/translations/en.DM00031020.pdf)výrobce mikrokontroléru. Za zmíňku stojí OTP \(one-time programmable memory\) část, kde je např. uložena MAC adresa jednotky. 
+V tabulce výše jsou patrné také další čísti paměti kromě sektorů pro uložení firmware. Jejich význam a použití se lze dočíst v [referenčních manuálech ](http://www.st.com/content/ccc/resource/technical/document/reference_manual/3d/6d/5a/66/b4/99/40/d4/DM00031020.pdf/files/DM00031020.pdf/jcr:content/translations/en.DM00031020.pdf)výrobce mikrokontroléru.
+
+Za zmíňku stojí OTP \(one-time programmable memory\) část, kde je např. uložena MAC adresa jednotky a kód revize zařízení. K tomu jsou rezervovány první 2 bloky OTP.
+
+```text
+Blok 0 -> adresa od 0x1FFF7800 - [6 bytů MAC adresa][10 bytů rezervováno]
+Blok 1 -> adresa od 0x1FFF7810 - [4 byty Revision][12 bytů rezervováno  ]
+```
+
+OTP paměť v zařízení IODAG3E má velikost 528 B, dostupných programově je 512 B.
+
+```text
+OTP_BLOCKS * OTP_BYTES_IN_BLOCK
+```
+
+```text
+16 * 32 = 512 B
+```
 
 
 
