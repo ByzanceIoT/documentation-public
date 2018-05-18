@@ -67,9 +67,10 @@
     * [RGB Displej shield](hardware-a-programovani/hardware/rozsirujici-moduly/rgb-displej-shield.md)
     * [Serial shield](hardware-a-programovani/hardware/rozsirujici-moduly/serial-shield.md)
   * [Ostatní](hardware-a-programovani/hardware/ostatni/README.md)
-    * [DevKitG3](hardware-a-programovani/hardware/ostatni/devkitg3.md)
+    * [DevKitG3](hardware-a-programovani/hardware/ostatni/devkitg3/README.md)
+      * [Schéma](hardware-a-programovani/hardware/ostatni/devkitg3/schema.md)
     * [TK3G](hardware-a-programovani/hardware/ostatni/tk3g/README.md)
-      * Schéma
+      * [Schéma](hardware-a-programovani/hardware/ostatni/tk3g/schema.md)
     * [ZPPG3](hardware-a-programovani/hardware/ostatni/zppg3/README.md)
       * [Schéma](hardware-a-programovani/hardware/ostatni/zppg3/schema.md)
     * WEXP

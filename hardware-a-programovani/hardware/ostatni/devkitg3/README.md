@@ -8,7 +8,7 @@ Jedná se o vývojovou desku s integrovaným zařízením IODAG3E. Deska umožň
 * tři uživatelská tlačítka
 * tři uživatelské LED
 
-![DevKitG3](../../../.gitbook/assets/dkg3.png)
+![DevKitG3](../../../../.gitbook/assets/dkg3.png)
 
 ## Použití
 
@@ -39,7 +39,7 @@ Konektor má několik funkcí:
 
 ### Konektor X, Y
 
-Rozložení pinů je stejné, jako na základní desce IODAG3E. Popis jednotlivých pinů je dostupný [v dokumentaci](../zakladni-jednotky/iodag3e/konektor-x-a-y.md).
+Rozložení pinů je stejné, jako na základní desce IODAG3E. Popis jednotlivých pinů je dostupný [v dokumentaci](../../zakladni-jednotky/iodag3e/konektor-x-a-y.md).
 
 ## Konfigurace
 

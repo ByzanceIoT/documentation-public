@@ -10,7 +10,7 @@ Na [základní jednotky](zakladni-jednotky/) se připojují [rozšiřující mod
 
 ![Roz&#x161;i&#x159;uj&#xED;c&#xED; jednotka Meteo shield. Vlevo pohled z horn&#xED; strany, vpravo spodn&#xED; strana.](../../.gitbook/assets/meteo_vedle_sebe_small.png)
 
-[Třetí skupinu](ostatni/) tvoří hardware nepatřící ani do jedné z předchozích kategorií a jde aktuálně o hardware zjednodušující vývoj firmware a testování Byzance platformy. Především jde o vývojářský kit [DevKitG3](ostatni/devkitg3.md) s věstavěným programátorem/debugerem a převodníkem seriové linky na USB a s vyvedenými konektory pro pohodlnější práci. Dále je k dispozici sestava pro automatizované testování a konfigurování hardware a nebo pouze malá doplňková deska s programátorem a debugerem.
+[Třetí skupinu](ostatni/) tvoří hardware nepatřící ani do jedné z předchozích kategorií a jde aktuálně o hardware zjednodušující vývoj firmware a testování Byzance platformy. Především jde o vývojářský kit [DevKitG3](ostatni/devkitg3/) s věstavěným programátorem/debugerem a převodníkem seriové linky na USB a s vyvedenými konektory pro pohodlnější práci. Dále je k dispozici sestava pro automatizované testování a konfigurování hardware a nebo pouze malá doplňková deska s programátorem a debugerem.
 
 ![V&#xFD;voj&#xE1;&#x159;sk&#xE1; deska DevKitG3 ze strany sou&#x10D;&#xE1;stek bez osazen&#xE9; z&#xE1;kladn&#xED; jednotky.](../../.gitbook/assets/devkit.png)
 
