@@ -6,6 +6,8 @@
 
 ##  Použití {#pouziti}
 
+ \#TODO \(GIF pripojení ZPP do počítače a IODY - ticket  [HW-1054](https://youtrack.byzance.cz/youtrack/issue/HW-1054)\)
+
 Připojením DevKitu k PC je vytvořeno složené USB zařízení obsahující:
 
 * mass storage zařízení \(flashdisk\) s názvem _BYZG3\_\*\*\*\*_
