@@ -126,7 +126,6 @@
   * [Webová konzole](hardware-a-programovani/funkcionality/webova-konzole.md)
   * [Vytížení zařízení](hardware-a-programovani/funkcionality/vytizeni-zarizeni.md)
   * [Připojení zdroje k VBAT](hardware-a-programovani/funkcionality/pripojeni-zdroje-k-vbat.md)
-  * [Události](hardware-a-programovani/funkcionality/udalosti.md)
   * [LED modul](hardware-a-programovani/funkcionality/led-modul.md)
   * [Náhodná čísla](hardware-a-programovani/funkcionality/nahodna-cisla.md)
 * Správa zařízení
