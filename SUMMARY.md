@@ -53,7 +53,6 @@
       * [Paměti](hardware-a-programovani/hardware/zakladni-jednotky/iodag3e/pameti.md)
       * [Technické specifikace](hardware-a-programovani/hardware/zakladni-jednotky/iodag3e/technicke-specifikace.md)
       * [Schémata](hardware-a-programovani/hardware/zakladni-jednotky/iodag3e/schemata.md)
-      * [Neaktuální](hardware-a-programovani/hardware/zakladni-jednotky/iodag3e/neaktualni.md)
     * IODAG3L
   * [Rozšiřující moduly](hardware-a-programovani/hardware/rozsirujici-moduly/README.md)
     * [GSM shield](hardware-a-programovani/hardware/rozsirujici-moduly/gsm-shield.md)
