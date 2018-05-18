@@ -1,6 +1,11 @@
 # Byzance API
 
-Nějaká omáčka na začátek o tom, co je to Byzance API.
+Byzance API poskytuje uživateli veškeré funkcionality související s připojením k portálu, informace o připojení k síti/portálu a o stavu probíhajících úloh. Jde především o:
+
+* [Vstupy a výstupy do Portálu](vstupy-a-vystupy-do-portalu.md) - zasílání analogových či digitálních hodnot a řetězců
+* Callbacky [Busy ](callback-busy.md)a [připojení](callbacky.md) - informace o změně stavu připojení nebo upozornění na vyšší vytížení procesoru 
+* [Odložený restart](odlozeny-restart.md) - je-li vyžádán restart serverem, je možné jej odložit do doby, než bude restartování vhodné
+* [Uživatelská makra](uzivatelska-makra.md) - pro zjištění informací o verzi mbed, překladače aj.
 
 ```cpp
     /**********************************************

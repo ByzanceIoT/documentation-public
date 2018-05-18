@@ -30,7 +30,7 @@ GSM shield si klade za cíl připojit základní jednotku k Internetu pomocí bu
 
 ## Schéma
 
-\#TODO doplnit schéma
+![Sch&#xE9;ma GSM shieldu s GSM modulem, ant&#xE9;nou a v&#xFD;b&#x11B;rem zdroje nap&#xE1;jen&#xED; pro modul.](../../../.gitbook/assets/shieldg3l_gsm_180320.png)
 
 ## Software
 
