@@ -1,6 +1,6 @@
 # Fade
 
-Tento příklad demonstruje použití funkce PwmOut pro vypnutí a zapnutí LED. PwmOut využívá modulaci šířky impulzů \(PWM\), které velmi rychle zapíná a vypíná digitální pin s jiným poměrem mezi zapnutou a vypnutou částí, čímž se vytvoří efekt blednutí.
+Tento příklad demonstruje použití funkce PwmOut pro vypnutí a zapnutí LED. PwmOut využívá modulaci šířky impulzů \(PWM\), které velmi rychle zapíná a vypíná digitální pin s jiným poměrem mezi zapnutou a vypnutou částí, čímž se vytvoří efekt blednutí.Jelikož se v hlavím programu neuvádí frekvence PWM je nastavena na záklaní-50Hz.
 
 ## Hardware
 
