@@ -1,13 +1,13 @@
 # Výchozí hodnoty
 
-Každé zařízení je vybaveno detekcí[ validní konfigurace](../../sprava-zarizeni/konfigurace-zarizeni.md). Pokud konfigurace neodpovídá očekávaným parametrům, případně pokud je zařízení nové a nikdy nebylo nakonfigurováno, místo některých \(nebo všech\) položek mohou být automaticky dosazeny výchozí hodnoty.
+Každé zařízení je vybaveno detekcí[ validní konfigurace](../../sprava-a-diagnostika/konfigurace-zarizeni.md). Pokud konfigurace neodpovídá očekávaným parametrům, případně pokud je zařízení nové a nikdy nebylo nakonfigurováno, místo některých \(nebo všech\) položek mohou být automaticky dosazeny výchozí hodnoty.
 
 Kontrola parametrů se děje vždy při vstupu do [bootloaderu](./), ještě před spuštěním vlastního firmware.
 
 | parameter | value | user configurable |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| MQTT\_HOSTNAME | 192.168.65.179 |  ✓ |
-| MQTT\_PORT | 1881 |  ✓ |
+| MQTT\_HOSTNAME | 192.168.65.179 | ✓ |
+| MQTT\_PORT | 1881 | ✓ |
 | MQTT\_USERNAME | user | ✓ |
 | MQTT\_PASSWORD | pass | ✓ |
 | FLASHFLAG | 0 | ✗ |

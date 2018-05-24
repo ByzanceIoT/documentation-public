@@ -2,7 +2,7 @@
 
 Pro komunikaci s Portálem se používají virtuální vstupy a výstupy.
 
-{% page-ref page="../../programovani-hw/byzance-hardware-api/vstupy-a-vystupy-do-portalu.md" %}
+{% page-ref page="../../programovani-hw/byzance-api/vstupy-a-vystupy-do-portalu.md" %}
 
 Přehled virtuálních vstupů je možno nalézt ve webovém rozhraní v záložce Inputs.
 

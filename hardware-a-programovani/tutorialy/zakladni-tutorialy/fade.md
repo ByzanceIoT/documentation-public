@@ -43,7 +43,7 @@ void loop(){   // The loop routine runs over and over agin forever
         aout.write(0.005 + offset);
         wait(0.25);
      }
-     
+
      for (float offset = 1.0 ; offset >= 0 ; offset -= 0.01) {
         pwm.write ( 0.005 + offset );
         wait ( 0.10 );

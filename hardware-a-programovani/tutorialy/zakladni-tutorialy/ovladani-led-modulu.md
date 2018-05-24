@@ -2,11 +2,11 @@
 
 LED modul je jedna ze základních součástí zařízení IODAG3E. Slouží k vizuální reprezentaci stavů. LED modul je automaticky řízen knihovnou Byzance.
 
-{% page-ref page="../../sprava-zarizeni/led-modul.md" %}
+{% page-ref page="../../sprava-a-diagnostika/led-modul.md" %}
 
 Pokud je automatická signalizace řízená knihovnou z jakéhokoliv důvodu nevyhovující, je možno tuto funkcionalitu zakázat a nahradit vlastní.
 
-K tomu slouží funkce [Byzance API](../../programovani-hw/byzance-hardware-api/) příkaz ''led\_module\(false\)''. Pro případné opětovné zapnutí kontroly Byzance knihovnou stačí analogicky použít ''led\_module\(true\)''.
+K tomu slouží funkce [Byzance API](../../programovani-hw/byzance-api/) příkaz ''led\_module\(false\)''. Pro případné opětovné zapnutí kontroly Byzance knihovnou stačí analogicky použít ''led\_module\(true\)''.
 
 Dále je třeba inicializovat si LED modul dle vlastních potřeb. V závislosti na targetu je třeba zjistit typ LED modulu.
 

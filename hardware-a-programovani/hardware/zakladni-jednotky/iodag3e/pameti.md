@@ -23,7 +23,7 @@ Jednotka IODAG3E obsahuje několik druhů pamětí, kde každý typ má svůj ú
 
 ## RAM
 
-Paměť RAM \(Random Access Memory\) je nevolatilní paměť sloužící pro data běžícího firmware.  Pro správné pochopení je vhodné nejdříve přečíst si obecný článek o [nevolatilní paměti RAM](../../../knowledge-base/pamet-ram.md). Níže uvedený přehled obecné informace doplňuje a zpřesňuje pro konkrétní jednotku IODAG3E.
+Paměť RAM \(Random Access Memory\) je nevolatilní paměť sloužící pro data běžícího firmware. Pro správné pochopení je vhodné nejdříve přečíst si obecný článek o [nevolatilní paměti RAM](../../../knowledge-base/pamet-ram.md). Níže uvedený přehled obecné informace doplňuje a zpřesňuje pro konkrétní jednotku IODAG3E.
 
 ### Rozdělení
 
@@ -46,7 +46,7 @@ Na grafu níže je pro daný projekt uvedeno využití paměti pro obě oblasti.
 
 Většina mikrokontrolérů Cortex M4 má banky paměti rozdělené do menších částí, tzv. sektory. Platí to i pro mikrokontrolér použitý v jednotce IODAG3E a sektory jsou rozděleny podle tabulky níže. V případě použitého mikrokontroléru je paměť složena z více paměťových bank \(dvě banky po 1 MB\), struktura rozdělení sektorů se u druhé banky opakuje.
 
-| **Blok paměti** | **Velikost bloku**  | **Počáteční adresa** |
+| **Blok paměti** | **Velikost bloku** | **Počáteční adresa** |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | Sektor 0 až 3 | 16 kB | 0x08000000 |
 | Sektor 4 | 64 kB | 0x08010000 |
@@ -97,9 +97,9 @@ OTP_BLOCKS * OTP_BYTES_IN_BLOCK
 
 ## Externí FLASH
 
-Na PCB jednotky IODAG3E je umístěna také externí SPI FLASH paměť o kapacitě 64 Mb. Částečně je využívání pro potřeby Byzance knihoven \(OTA update, konfigurace, ...\) a z části je plně dostupná pro uživatele. Uživatelsky dostupná část je velká 2 MB a pracuje se s ní výhradně přes API \#TODO link na API. 
+Na PCB jednotky IODAG3E je umístěna také externí SPI FLASH paměť o kapacitě 64 Mb. Částečně je využívání pro potřeby Byzance knihoven \(OTA update, konfigurace, ...\) a z části je plně dostupná pro uživatele. Uživatelsky dostupná část je velká 2 MB a pracuje se s ní výhradně přes API \#TODO link na API.
 
 | **Fyzický rozsah adres uživatelské části paměti** |
 | --- | --- |
-| 0x08400000 až  0x085FFFFF \(2 MB\)  |
+| 0x08400000 až  0x085FFFFF \(2 MB\) |
 

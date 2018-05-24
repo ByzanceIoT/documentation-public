@@ -1,6 +1,6 @@
 # Offline programování
 
-Každé zařízení Byzance je programovatelné. 
+Každé zařízení Byzance je programovatelné.
 
 {% hint style="info" %}
 Mělo by tu být intro o tom, že preferovaný způsob programování je "online"
@@ -10,7 +10,7 @@ K tomu ale zatím neexistuje tutoriál.
 
 ## Programování pomocí ZPP
 
-K programování je možno využít zařízení [Byzance ZPPG3](../../hardware/ostatni/zppg3/). To slouží jako programátor a debugger a  propojuje počítač s deskou IODAG3. Díky tomu je paměť IODAG3E připojena jako virtuální mass storage zařízení \(flash disk\) a díky tomu podporuje funkci drag&drop.
+K programování je možno využít zařízení [Byzance ZPPG3](../../hardware/ostatni/zppg3/). To slouží jako programátor a debugger a propojuje počítač s deskou IODAG3. Díky tomu je paměť IODAG3E připojena jako virtuální mass storage zařízení \(flash disk\) a díky tomu podporuje funkci drag&drop.
 
 {% page-ref page="../../hardware/ostatni/zppg3/" %}
 
@@ -31,6 +31,4 @@ Utilita má uživatelské GUI, které může být především pro začínajíc�
 Pro strojové programování a automatizaci je naopak vhodné programování pomocí konzole. To je shrnuto v příslušném článku.
 
 {% page-ref page="upload-kodu-z-konzole.md" %}
-
-
 

@@ -4,7 +4,7 @@
 
 Na [základní jednotky](../zakladni-jednotky/) se připojují v této kapitole rozebrané rozšiřující moduly \(shieldy\). Smyslem rozšiřujících jednotek je přinést konkrétní funkcionalitu bez nutnosti vyvíjet vlastní hardware. Jedná se o předpřipravené desky, které se pouze připojí na základní jednotky a bez dodatečné kabeléže nebo drátování na nepájivém poli lze vyzkoušet interakci s reálným světem. Dobře slouží pro rychlé vytvoření ukázek na nejčastěji řešené aplikace jako je měření teploty a nebo spínání relé. Lze s nimi rychle bez větší námahy postavit funkční prototyp. Těmto jednotkám se alternativně říká **shieldy**.
 
-[Základní jednotky](../zakladni-jednotky/) podporující připojení shieldů musí mít integrovaný tzv. [X konektor](./#x-konektor-a-y-konektor) \(např. [IODAG3E](../zakladni-jednotky/iodag3e/)\). 
+[Základní jednotky](../zakladni-jednotky/) podporující připojení shieldů musí mít integrovaný tzv. [X konektor](./#x-konektor-a-y-konektor) \(např. [IODAG3E](../zakladni-jednotky/iodag3e/)\).
 
 Existující následující rozšiřující moduly:
 
@@ -21,7 +21,7 @@ Existující následující rozšiřující moduly:
 
 ## X konektor a Y konektor
 
-Fyzicky jsou vstupy a výstupy základních jednotek rozděleny do dvou skupin, tzn. na **X konektor** a **Y konektor**. Tyto konektory obsahují vybrané na základní jednotce dostupné periferie \(UART, I2C, PWM, ...\), napájecí signály a nebo signály pro [SWD ](../../programovani-hw/offline-programovani/)či reset. 
+Fyzicky jsou vstupy a výstupy základních jednotek rozděleny do dvou skupin, tzn. na **X konektor** a **Y konektor**. Tyto konektory obsahují vybrané na základní jednotce dostupné periferie \(UART, I2C, PWM, ...\), napájecí signály a nebo signály pro [SWD ](../../programovani-hw/offline-programovani/)či reset.
 
 Kromě vstupně výstupních pinů jsou na konektorech dostupné i napájecí vývody a signály _user_ tlačítka a tlačítka _reset_. Jmenovitě jde o signály 3V3, USR, GND, VBUS, VBAT a RST \(obrázek níže\).
 
@@ -38,13 +38,13 @@ Kromě vstupně výstupních pinů jsou na konektorech dostupné i napájecí v�
 
 Základní jednotky podporující připojení [shieldů ](./)musí mít integrovaný tzv. **X konektor** \(např. [IODAG3E](../zakladni-jednotky/iodag3e/)\). Jde o standardní 20 pinový header s roztečí 2.54mm a rozložením 2x10 pinů \(samice\). Do tohoto headeru se shora připojují všechny shieldy. Kromě toho jsou vývody dostupné na hranách základních jednotek ve frézovaných prokovech. Rozteč prokovů je standardních 1.27mm. Rozšiřující moduly mají stejný typ konektoru včetně rozložení vývodů \(samec\).
 
-Popis jednotlivých vstupů a výstupů je závislý na typu základní jednotky - různé základní jednotky se mohou mírně odlišovat v dostupných pinech/funkcích \(tzn. pin X05 může být hardwarově připojen na různý pin mikrokontroléru na různých základních jednotkách\). Přesto X konektor definuje např. dostupný UART vždy na pinech X09 a X11 a I2C sběrnici vždy dostupnou na vývodech X06 a X07. 
+Popis jednotlivých vstupů a výstupů je závislý na typu základní jednotky - různé základní jednotky se mohou mírně odlišovat v dostupných pinech/funkcích \(tzn. pin X05 může být hardwarově připojen na různý pin mikrokontroléru na různých základních jednotkách\). Přesto X konektor definuje např. dostupný UART vždy na pinech X09 a X11 a I2C sběrnici vždy dostupnou na vývodech X06 a X07.
 
-V tabulce níže je uveden seznam dostupných periferií na každé [základní jednotce ](../zakladni-jednotky/)bez ohledu na její typ. Ukázka konkrétního zapojení vývodů na mikrokontrolér pro jednotku IODAG3E [zde](../zakladni-jednotky/iodag3e/konektor-x-a-y.md). 
+V tabulce níže je uveden seznam dostupných periferií na každé [základní jednotce ](../zakladni-jednotky/)bez ohledu na její typ. Ukázka konkrétního zapojení vývodů na mikrokontrolér pro jednotku IODAG3E [zde](../zakladni-jednotky/iodag3e/konektor-x-a-y.md).
 
 | **Pin** | **Funkce** |  | **Pin** | **Funkce** |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| X00 |  |               | X10 | SPI SCK |
+| X00 |  |  | X10 | SPI SCK |
 | X01 |  |  | X11 | USART TX |
 | X02 |  |  | X12 | SPI MISO |
 | X03 |  |  | X13 | CAN TX |
@@ -69,27 +69,23 @@ Vlevo je na nákresu vidět umístění X konektoru a dále jsou na shieldech dv
 
 ![Vlevo shield polovi&#x10D;n&#xED; velikosti, vpravo pln&#xE1; velikost.](../../../.gitbook/assets/shields_both_sizes_dimensions.png)
 
-
-
 ## Kompatibilita shieldů
 
 Každý z shieldů využivá určité datové piny z [X konektoru](../zakladni-jednotky/iodag3e/rozhrani-a-periferie.md#pinout) a zároveň žádný shield nevyužívá všechny najednou. Je tedy možné použít více shieldů najednou. V tétou sovislosti lze mluvit o kompatibilitě shiledů elektrické a mechanické.
 
 ### Mechanická kompatibilita
 
-Obecně lze shieldy na sebe skládat jako stavebnici a zapojovat jeden do druhého. Může se však stát, že např. [Ultrazvukový shield ](ultrasonic-shield.md)a [PIR shield ](pir-shield.md)na sebe dát nejdou. Nejdou na sebe dát z důvodu, že oba shieldy pro svou činnost potřebují volný prostor nad shieldem. Obdobně jiné shieldy mohou mít vysoké svorkovnice, které zabrání dalšímu skládání shieldů na sebe. 
+Obecně lze shieldy na sebe skládat jako stavebnici a zapojovat jeden do druhého. Může se však stát, že např. [Ultrazvukový shield ](ultrasonic-shield.md)a [PIR shield ](pir-shield.md)na sebe dát nejdou. Nejdou na sebe dát z důvodu, že oba shieldy pro svou činnost potřebují volný prostor nad shieldem. Obdobně jiné shieldy mohou mít vysoké svorkovnice, které zabrání dalšímu skládání shieldů na sebe.
 
-### Elektrická kompatibilita 
+### Elektrická kompatibilita
 
 Elektrická kompatibilita se odvíjí od sdílení pinů X konektoru mezi jednotlivými shieldy. Jinými slovy jde o to, že jeden pin [X konektoru](../zakladni-jednotky/iodag3e/rozhrani-a-periferie.md#pinout) mohou využívat dva důzné shieldy a takové shieldy nebude možné použít najednou. Teoreticky to možné být může, ale přinese to komplikace ve firmware. Pro jednoduchost však mluvíme o tom, že **shieldy není možné použít najednou**, tzn. **shieldy nejsou spolu** kompatibilní.
 
-V případě elektrické kompatibility shieldů je níže dostupná tabulka kompatibility, kde je kompatibilita patrná. 
+V případě elektrické kompatibility shieldů je níže dostupná tabulka kompatibility, kde je kompatibilita patrná.
 
 ![](../../../.gitbook/assets/xconn.svg)
 
 ## Firmware
 
 Zpravidla na všechny shieldy jsou vytvořené example projekty pro jednoduché vyzkoušení funkcionality hardware. Projekty stačí pouze zkompilovat, nahrát do zařízení a vyzkoušet. Všechny projekty jsou dostupné v k tomu určeném repozitáři. \#TODO zajistit dostupnost projektů
-
-
 

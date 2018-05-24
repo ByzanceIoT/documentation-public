@@ -14,12 +14,12 @@ Jedná se o vývojovou desku s integrovaným zařízením IODAG3E. Deska umožň
 
 Připojením DevKitu k PC je vytvořeno složené USB zařízení obsahující:
 
-* mass storage zařízení \(flashdisk\) s názvem _BYZG3\_\*\*\*\*_
+* mass storage zařízení \(flashdisk\) s názvem _BYZG3\_\*\*\*\*\_
 * virtuální sériový port
 
 Aktualizace [firmware](../../../programovani-hw/struktura-programu.md) či [bootloaderu](../../../architektura-fw/bootloader/) IODA binárním souborem _\*.bin_ je možno provádět pomocí drag&drop z počítače na virtuální mass storage zařízení.
 
-{% page-ref page="../../../programovani-hw/offline-programovani/upload-kodu-pomoci-zpp.md" %}
+{% page-ref page="../../../programovani-hw/offline-programovani/upload-kodu-drag-and-drop.md" %}
 
 ## Konektory
 
@@ -56,10 +56,5 @@ Jumperová propojka _JPP_ slouží k připojení programovací rozhraní a UART 
 * DevKit RX - IODA TX
 * Devkit TX - IODA RX
 
-Pro složitější operace je možno využívat [MSD příkazy](../../../programovani-hw/offline-programovani/upload-kodu-pomoci-zpp.md#msd-prikazy), či [aktualizovat firmware zařízení DAPlink](../../../programovani-hw/offline-programovani/upload-kodu-pomoci-zpp.md#aktualizace-firmware-programatoru).
-
-## 
-
-  
-
+Pro složitější operace je možno využívat [MSD příkazy](../../../programovani-hw/offline-programovani/upload-kodu-drag-and-drop.md#msd-prikazy), či [aktualizovat firmware zařízení DAPlink](../../../programovani-hw/offline-programovani/upload-kodu-drag-and-drop.md#aktualizace-firmware-programatoru).
 

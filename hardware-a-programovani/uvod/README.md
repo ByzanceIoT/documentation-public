@@ -8,7 +8,7 @@ Zařízení se automaticky spustí po připojení napájení. Zařízení lze na
 
 ![](../../.gitbook/assets/ioda_power_in.gif)
 
-Po připojení USB kabelu lze pozorovat rozsvícení několika indikačních LED diod a  pomalé blikání zelené diody LED modulu, které indikuje stav zařízení nepřipojeného k internetu.
+Po připojení USB kabelu lze pozorovat rozsvícení několika indikačních LED diod a pomalé blikání zelené diody LED modulu, které indikuje stav zařízení nepřipojeného k internetu.
 
 ![](../../.gitbook/assets/disconnected.gif)
 
@@ -22,7 +22,7 @@ Pokud vše proběhlo úspěšně, zařízení je připraveno na [nahrání prvn�
 
 Nastal-li jakýkoliv problém, zařízení jej může detekovat jedním z dalších možných blikacích kódů LED modulu.
 
-{% page-ref page="../sprava-zarizeni/led-modul.md" %}
+{% page-ref page="../sprava-a-diagnostika/led-modul.md" %}
 
 ## Přidání zařízení do projektu
 
@@ -34,7 +34,7 @@ Nastal-li jakýkoliv problém, zařízení jej může detekovat jedním z dalš�
 
 ## Vytvoření a uložení prvního programu
 
-V záložce CODE &gt; CODE programs v projektu vytvořte program, který nazvěte například _test_. Klepnutím na program se otevře editor. 
+V záložce CODE &gt; CODE programs v projektu vytvořte program, který nazvěte například _test_. Klepnutím na program se otevře editor.
 
 Do editoru můžeme vložit následující jednoduchý program, který vypisuje "Hello World!" přes USB emulátor sériového rozhraní:
 
@@ -85,7 +85,7 @@ Zařízení vytvoří virtuální sériový port. Připojením na tento port pom
 
 ## Závěr
 
-Pokud je vše funkční, není nic snazšího než vyzkoušet nějaký z našich [tutoriálů](../tutorialy/), případně rovnou začít programovat s využitím [Byzance API](../programovani-hw/byzance-hardware-api/) anebo [mbed API](../programovani-hw/mbed-api/). 
+Pokud je vše funkční, není nic snazšího než vyzkoušet nějaký z našich [tutoriálů](../tutorialy/), případně rovnou začít programovat s využitím [Byzance API](../programovani-hw/byzance-api/) anebo [mbed API](../programovani-hw/mbed-api/).
 
 Pokud preferujete offline programování, je zapotřebí vlastnit nějaký programátor, nastavit vlastní IDE a další. Podrobnější popsi je možnéí najít v sekci offline programování.
 

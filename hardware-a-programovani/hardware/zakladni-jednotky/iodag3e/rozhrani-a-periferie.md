@@ -23,7 +23,7 @@ USB lze využít i pro napájení, kde další podrobnosti popsány v [článku 
 
 Zařízení IODA disponuje celkem 54 piny vstupně výstupními piny na [X a Y konektoru](../../rozsirujici-moduly/#x-konektor-a-y-konektor) \([namapování pinů](konektor-x-a-y.md)\) a to včetně [napájecích ](napajeni.md)pinů. Na pinech lze definovat digitální i analogové vstupy a výstupy, další komunikační sběrnice a nebo používat napájecí vývody pro napájení jednotky či jako výstup napájení pro externí zařízení.
 
-Vlastnosti vstupů a výstupů se odvíjí od použitého mikrokontroléru STM32F437IIH6 a jejich napojení je patrné z [tabulek s přiřazenými vývody](konektor-x-a-y.md). Lze se tak například dozvědět, jaká jednotka SPI sběrnice na daných pinech funguje a kde ne. 
+Vlastnosti vstupů a výstupů se odvíjí od použitého mikrokontroléru STM32F437IIH6 a jejich napojení je patrné z [tabulek s přiřazenými vývody](konektor-x-a-y.md). Lze se tak například dozvědět, jaká jednotka SPI sběrnice na daných pinech funguje a kde ne.
 
 ![P&#x159;&#xED;klad X konektoru \(vlevo\) a Y konektory \(vpravo\) na z&#xE1;kladn&#xED; desce IODAG3E.](../../../../.gitbook/assets/x_y_conn%20%281%29.png)
 
@@ -55,7 +55,7 @@ Analogové výstupy obsluhuje DA převodník \(Digital-to-analog converter\) se 
 
 Zařízení IODA má mezi výstupy k dispozici také dvě sběrnice I2C. Obě sběrnice nabízejí možnost využití alternativního zapojení na jiné dvojici pinů.
 
-| **Funkce**  | **Pin** | **Alternativní pin** |
+| **Funkce** | **Pin** | **Alternativní pin** |
 | :--- | :--- | :--- |
 | I2C1 SCL | X06 | X15 |
 | I2C1 SDA | X07 | X13 |
@@ -72,7 +72,7 @@ IODA umožňuje komunikovat po několika sériových linkách. Na jeho sběrnici
 | UART1\_RX | X07 |
 | UART3\_TX | X11 |
 | UART3\_RX | X09 |
-| UART4\__TX_   | Y00 |
+| UART4\__TX_ | Y00 |
 | UART4\_RX | Y01 |
 | UART5\_TX | Y03 |
 | UART5\_RX | Y18 |
@@ -140,9 +140,7 @@ Mikrokontrolér jednotky má k dispozici sadu také skupinu timerů, které se p
 
 ## SWD
 
-SWD \(Serial Wire Debug\) konektor slouží k ručnímu naprogramování a ladění mikrokontroléru zařízení. Pro jeho využití je potřeba nezbytný hardware a počítač s patřičným softwarem. Informace o tomto druhu programování hardware je v článku o [offline programování](../../../programovani-hw/offline-programovani/) \(pomocí [ZPP ](../../../programovani-hw/offline-programovani/upload-kodu-pomoci-zpp.md)či [ST-linku](../../../programovani-hw/offline-programovani/upload-kodu-z-gui.md)\).
+SWD \(Serial Wire Debug\) konektor slouží k ručnímu naprogramování a ladění mikrokontroléru zařízení. Pro jeho využití je potřeba nezbytný hardware a počítač s patřičným softwarem. Informace o tomto druhu programování hardware je v článku o [offline programování](../../../programovani-hw/offline-programovani/) \(pomocí [ZPP ](../../../programovani-hw/offline-programovani/upload-kodu-drag-and-drop.md)či [ST-linku](../../../programovani-hw/offline-programovani/upload-kodu-z-gui.md)\).
 
 ![Spodn&#xED; polovina desky IODAG3E s um&#xED;st&#x11B;n&#xED;m SWD konektoru a vyzna&#x10D;en&#xFD;m pinem &#x10D;&#xED;slo 1.](../../../../.gitbook/assets/nakres-ioda-swd_pin_1.svg)
-
-
 

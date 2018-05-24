@@ -1,16 +1,16 @@
 # Struktura programu
 
-Zařízení Byznce se programují v jazyce **C++** a využívají [**MBED API**](https://os.mbed.com/docs/latest/reference/apis.html) a [**Byzance API**](byzance-hardware-api/). Pro správnou funkčnost programu je nutné na první řádek nejprve importovat knihovnu "byzance.h" příkazem
+Zařízení Byznce se programují v jazyce **C++** a využívají [**MBED API**](https://os.mbed.com/docs/latest/reference/apis.html) a [**Byzance API**](byzance-api/). Pro správnou funkčnost programu je nutné na první řádek nejprve importovat knihovnu "byzance.h" příkazem
 
 ```cpp
 #include "byzance.h"
 ```
 
-Tato knihovna má za úkol automaticky inicializovat periferie, připojit zařízení k internetu a inicializovat vlákna, která se starají o [aktualizaci firmware](../architektura-fw/aktualizace-fw.md) a připojení k serverům. Importem knihovny se také zpřístupní funkce [Byzance API](byzance-hardware-api/) a [uživatelská makra](byzance-hardware-api/uzivatelska-makra.md).
+Tato knihovna má za úkol automaticky inicializovat periferie, připojit zařízení k internetu a inicializovat vlákna, která se starají o [aktualizaci firmware](../architektura-fw/aktualizace-fw.md) a připojení k serverům. Importem knihovny se také zpřístupní funkce [Byzance API](byzance-api/) a [uživatelská makra](byzance-api/uzivatelska-makra.md).
 
 ## Definice fyzických vstupů a výstupů
 
-Po importu všech potřebných knihoven je možno začít používat objekty definované v knihovnách. Může se jednat o vytvoření konstuktorů, periferie, nebo fyzické [vstupy a výstupy](../hardware/zakladni-jednotky/iodag3e/rozhrani-a-periferie.md), které se budou v programu používat. 
+Po importu všech potřebných knihoven je možno začít používat objekty definované v knihovnách. Může se jednat o vytvoření konstuktorů, periferie, nebo fyzické [vstupy a výstupy](../hardware/zakladni-jednotky/iodag3e/rozhrani-a-periferie.md), které se budou v programu používat.
 
 ```cpp
 // Definice fyzických vstupů a výstupů
@@ -18,7 +18,6 @@ DigitalOut DI1(X02);
 DigitalIn DO1(X05);
 AnalogOut AO1(Y23);
 AnalogIn AI1(Y22)
-
 ```
 
 Další informace je možno naleznout v sekci [MBED API](mbed-api/).
@@ -41,7 +40,7 @@ ANALOG_INPUT(ain_name, {
 
 Bližší informace o významu a funkci virtuálních vstupů/výstupů a jejich programování je možno naleznout v příslušné kapitole.
 
-{% page-ref page="byzance-hardware-api/vstupy-a-vystupy-do-portalu.md" %}
+{% page-ref page="byzance-api/vstupy-a-vystupy-do-portalu.md" %}
 
 ## Definice komunikačních rozhraní
 

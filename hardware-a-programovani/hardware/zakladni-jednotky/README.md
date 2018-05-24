@@ -2,16 +2,15 @@
 
 ## Přehled
 
-Základní jednotka je samostatně fungující plnohodnotý kus hardware, který je schopný připojení do cloudu a autonomní funkce. Základní jednotky mají programovatelné vstupy a výstupy, nejrůznější sběrnice a rozhraní a po napojení jednotek na cloud slouží jednotky jako IoT prvky. V závislosti na na konkrétním typu jednotky se liší druh [připojení do cloudu](../../konektivita/) \(ethernet, GSM,  6LoWPAN\). 
+Základní jednotka je samostatně fungující plnohodnotý kus hardware, který je schopný připojení do cloudu a autonomní funkce. Základní jednotky mají programovatelné vstupy a výstupy, nejrůznější sběrnice a rozhraní a po napojení jednotek na cloud slouží jednotky jako IoT prvky. V závislosti na na konkrétním typu jednotky se liší druh [připojení do cloudu](../../konektivita/) \(ethernet, GSM, 6LoWPAN\).
 
-Základní jednotka slouží jako řídicí komponenta chytrého zařízení. Většinou je označována názvem IODA a podle typu jednotky se k názvu přidávají další znaky \(např. [IODAG3E ](iodag3e/)nebo [IODAG3L](iodag3l.md)\). 
+Základní jednotka slouží jako řídicí komponenta chytrého zařízení. Většinou je označována názvem IODA a podle typu jednotky se k názvu přidávají další znaky \(např. [IODAG3E ](iodag3e/)nebo [IODAG3L](https://github.com/ByzanceIoT/documentation-public/tree/6e016a60aa8878be079ca2cf94055bd978b6c0d6/hardware-a-programovani/hardware/zakladni-jednotky/iodag3l.md)\).
 
 Existují následující základní jednotky:
 
 * [IODAG3E](https://docu.byzance.cz/~/drafts/-LCndL2X3pfmKdNp4d_E/primary/hardware-a-programovani/hardware/zakladni-jednotky/iodag3e)
 * [IODAG3L](https://docu.byzance.cz/~/drafts/-LCndL2X3pfmKdNp4d_E/primary/hardware-a-programovani/hardware/zakladni-jednotky/iodag3l)
-
-
+* ddd
 
 ![Z&#xE1;kladn&#xED; jednotka typu IODAG3E s ethernetov&#xFD;m p&#x159;ipojen&#xED;m.](../../../.gitbook/assets/maly_ioda.png)
 
@@ -19,15 +18,13 @@ Existují následující základní jednotky:
 
 Všechny základní jednotky technicky vycházejí ze stejné myšlenky a proto se dá mluvit o společném blokovém schématu pro všechny základní jednotky. Každé zařízení obsahuje řídicí mikrokontrolér, napájecí obvody, komunikační sběrnice, vstupně výstupní piny atp. Konkrétní realizace a typy elektronických komponent však závisí na typu základní jednotky. Na uvedeném obrázku jsou patrné všechny základní bloky jednotek. V podkapitolách níže jsou jednotlivé body rozebrány podrobněji.
 
-\#TODO  [HW-1068](https://youtrack.byzance.cz/youtrack/issue/HW-1068)
-
-
+\#TODO [HW-1068](https://youtrack.byzance.cz/youtrack/issue/HW-1068)
 
 ### Napájecí obvody
 
 Každý elektronický systém vyžaduje ke své funkci **napájení** a proto i základní jednotky mají blok starající se o napájení. Zdrojem napájení mohou být obecně nejrůznější adaptéry, energie z USB portu, baterie nebo napájené dodávané po ethernetovém kabelu \(PoE\).
 
-Každá jednotka má své **specifické možnosti napájení** a detailní popis napájení je popsán v příslušné kapitole u každé základní jednotky. Možnosti se liší nejen v  množství i typech napájecích vstupů, ale i v mezních rozsazích provozních napětí.
+Každá jednotka má své **specifické možnosti napájení** a detailní popis napájení je popsán v příslušné kapitole u každé základní jednotky. Možnosti se liší nejen v množství i typech napájecích vstupů, ale i v mezních rozsazích provozních napětí.
 
 ### Mikrokontrolér
 
@@ -39,11 +36,11 @@ Mikrokontrolér založený na ARM architektuře je mozkem celého zařízení, v
 
 Každá základní jednotka je zpravidla osazena několika **tlačítky** a signalizačními **LED** diodami. Jejich účelem je usnadnit ovládaní jednotek a jednoduše vizualizovat vnitřní stavy zařízení. Fyzické umístění tlačítek a LED diod může být odlišné pro jednotlivé základní jednotky.
 
-Všechny jednotky mají v základu _User_  a _Reset_ tlačítko. Tlačítko _Reset_ slouží k hardwarovému restartu mikrokontroléru jednotky a hodí se zejména při vývoji. Po jeho stisku základní jednotka přeruší veškeré operace a řídicí program mikrokontroléru se začne vykonávat znovu od začátku. Tlačítko _User_ se hodí pro napojení na libovolnou v programu definovanou funkcionalitu \(vykonání něčeho po stisku tlačítka\). Během startu základních jednotek slouží _User_ tlačítko pro vstup do [Bootloaderu](../../architektura-fw/bootloader/).
+Všechny jednotky mají v základu _User_ a _Reset_ tlačítko. Tlačítko _Reset_ slouží k hardwarovému restartu mikrokontroléru jednotky a hodí se zejména při vývoji. Po jeho stisku základní jednotka přeruší veškeré operace a řídicí program mikrokontroléru se začne vykonávat znovu od začátku. Tlačítko _User_ se hodí pro napojení na libovolnou v programu definovanou funkcionalitu \(vykonání něčeho po stisku tlačítka\). Během startu základních jednotek slouží _User_ tlačítko pro vstup do [Bootloaderu](../../architektura-fw/bootloader/).
 
 ### Vstupy a výstupy
 
-Jak již bylo naznačeno v části o [mikrokontroléru](./#mikrokontroler), základní jednotky disponují množinou vstupů a výstupů. Obecně můžeme mluvit o **signálových** vstupech/výstupech a o **napájecích** vývodech. **Signálové** vstupy a výstupy jsou typicky vyvedeny přímo z mikrokontroléru a zahrnují nejrůznější sběrnice \(UART, I2C, SPI, ...\), AD či DA převodníky, PWM výstupy, obecné GPIO \(General-purpose input/output\) atp. Na tyto piny uživatel připojuje další aplikačně specifické obvody \(akční členy, senzory, jiné jednotky, atp.\). **Napájecí** vývody umožňují vyvést interní napájecí větvě i mimo základní jednotku \(3V3, VBUS\) případně skrze ně základní jednotku napájet. 
+Jak již bylo naznačeno v části o [mikrokontroléru](./#mikrokontroler), základní jednotky disponují množinou vstupů a výstupů. Obecně můžeme mluvit o **signálových** vstupech/výstupech a o **napájecích** vývodech. **Signálové** vstupy a výstupy jsou typicky vyvedeny přímo z mikrokontroléru a zahrnují nejrůznější sběrnice \(UART, I2C, SPI, ...\), AD či DA převodníky, PWM výstupy, obecné GPIO \(General-purpose input/output\) atp. Na tyto piny uživatel připojuje další aplikačně specifické obvody \(akční členy, senzory, jiné jednotky, atp.\). **Napájecí** vývody umožňují vyvést interní napájecí větvě i mimo základní jednotku \(3V3, VBUS\) případně skrze ně základní jednotku napájet.
 
 Základní jednotky disponují **X a Y konektory**, na které jsou popsané signály vyvedeny. Více o vlastnostech a použití v části [X konektor a Y konektor](../rozsirujici-moduly/#x-konektor-a-y-konektor).
 
@@ -55,13 +52,9 @@ Rozhraním SWD \(Serial Wire Debug\) je vybavena každá základní jednotka a h
 
 ### Konektivita do cloudu
 
-Pro připojení základní jednotky do cloudu se používají [různé technologie ](../../konektivita/)\(ethernet, GSM,  6LoWPAN\) a každá z nich vyžaduje další specifické hardwarové komponenty. Z tohoto důvodu je v blokovém schématu uvedena komponenta Konektivita do internetu \(\#TODO přejmenovat na ang. výraz\) a její implementace se odvíjí od typu jednotky.
+Pro připojení základní jednotky do cloudu se používají [různé technologie ](../../konektivita/)\(ethernet, GSM, 6LoWPAN\) a každá z nich vyžaduje další specifické hardwarové komponenty. Z tohoto důvodu je v blokovém schématu uvedena komponenta Konektivita do internetu \(\#TODO přejmenovat na ang. výraz\) a její implementace se odvíjí od typu jednotky.
 
 ## Typy základních jednotek
 
-V současné době disponujeme dvěma typy základních jednotek a to typem [IODAG3E](iodag3e/) s ethernetovým připojením a volitelnou GSM a/nebo 6LoWPAN konektivitou a nízkopříkonovým typem [IODAG3L ](iodag3l.md)výhradně s 6LoWPAN připojením. 
-
-## 
-
-
+V současné době disponujeme dvěma typy základních jednotek a to typem [IODAG3E](iodag3e/) s ethernetovým připojením a volitelnou GSM a/nebo 6LoWPAN konektivitou a nízkopříkonovým typem [IODAG3L ](https://github.com/ByzanceIoT/documentation-public/tree/6e016a60aa8878be079ca2cf94055bd978b6c0d6/hardware-a-programovani/hardware/zakladni-jednotky/iodag3l.md)výhradně s 6LoWPAN připojením.
 

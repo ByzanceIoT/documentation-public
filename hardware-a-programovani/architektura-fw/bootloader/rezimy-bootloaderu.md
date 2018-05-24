@@ -1,6 +1,6 @@
 # Režimy bootloaderu
 
-Bootloader \(tzv. zavaděč\) je softwarová komponenta, která se spouští jako první při zapnutí zařízení. Jejím úkolem je většinou pouze skok do hlavního programu. Má ale i několik dalších módů, které popisuje tato kapitola. Speciálním režimem je [mód commands](command-mod.md), díky němuž je možno [konfigurovat zařízení](../../sprava-zarizeni/konfigurace-zarizeni.md).
+Bootloader \(tzv. zavaděč\) je softwarová komponenta, která se spouští jako první při zapnutí zařízení. Jejím úkolem je většinou pouze skok do hlavního programu. Má ale i několik dalších módů, které popisuje tato kapitola. Speciálním režimem je [mód commands](command-mod.md), díky němuž je možno [konfigurovat zařízení](../../sprava-a-diagnostika/konfigurace-zarizeni.md).
 
 ## Mód JUMP
 
@@ -14,7 +14,7 @@ Režim JUMP sestává z několika kroků:
 
 ## Mód FLASH
 
-Do módu FLASH bootloader automaticky přechází, pokud při předchozím běhu firmware byl přijat nový  validní firmware, který bude nutno nahrát na místo hlavní aplikace \(více viz [aktualizace firmware](../aktualizace-fw.md)\). Mód je detekován tím, že v průběhu běhu předchozího firmware je zapnut signalizátor flashflag, který se po přehrání firmware automaticky vypíná. 
+Do módu FLASH bootloader automaticky přechází, pokud při předchozím běhu firmware byl přijat nový validní firmware, který bude nutno nahrát na místo hlavní aplikace \(více viz [aktualizace firmware](../aktualizace-fw.md)\). Mód je detekován tím, že v průběhu běhu předchozího firmware je zapnut signalizátor flashflag, který se po přehrání firmware automaticky vypíná.
 
 V průběhu aktualizace hlavního programu novým programem probíhají tyto kroky
 
@@ -32,11 +32,11 @@ Pokud všechny tyto kroky proběhnou v pořádku, následuje
 
 ## Mód RESTORE
 
-Tento mód navazuje na mód FLASH.  Pokud se hlavní program po posledním naflashování nespustil \(tedy bootloader detekuje zapnutý flag ''launched'' z režimu FLASH\), mikrokontrolér je po čase resetován [watchdogem](../../funkcionality/watchdog.md), mód RESTORE je automaticky vyvolán a spustí se obnovení posledního funkčního firmwaru, který byl dříve zazálohován funkcí [autobackup](../autobackup.md). 
+Tento mód navazuje na mód FLASH. Pokud se hlavní program po posledním naflashování nespustil \(tedy bootloader detekuje zapnutý flag ''launched'' z režimu FLASH\), mikrokontrolér je po čase resetován [watchdogem](../../funkcionality/watchdog.md), mód RESTORE je automaticky vyvolán a spustí se obnovení posledního funkčního firmwaru, který byl dříve zazálohován funkcí [autobackup](../autobackup.md).
 
 ## Mód COMMANDS
 
-Mód COMMANDS slouží k offline konfiguraci zařízení pomocí [sériové linky.](../../tutorialy/komunikace-po-seriove-lince-uart-s-pc/) 
+Mód COMMANDS slouží k offline konfiguraci zařízení pomocí [sériové linky.](../../tutorialy/komunikace-po-seriove-lince-uart-s-pc/)
 
 Do módu COMMANDS je možné vstoupit několika způsoby
 
@@ -55,8 +55,6 @@ Mód FACTORY RESET slouží k nastavený [výchozích hodnot](vychozi-hodnoty.md
 ## Výběr režimu
 
 Výběr režimu se řídí pravidly popsanými výše. Ucelený přehled a přechody mezi jednotlivými režimy shrnuje následující ilustrace stavového automatu bootloaderu.
-
-
 
 ![](../../../.gitbook/assets/rezimy%20%281%29.png)
 

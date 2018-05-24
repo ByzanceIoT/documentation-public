@@ -40,16 +40,17 @@ DigitalOut ledPin(X01);   // Set pin Y25 for led.
 Serial pc(SERIAL_TX, SERIAL_RX);   // Defines the comunication interface if the serial line , SPI, CAN is needen in the program.
 Timer casovac;
 void init(){   // The init routine runs only once when you press reset.
-	pc.baud(115200);   // Set baud rate.
-	casovac.start();
+    pc.baud(115200);   // Set baud rate.
+    casovac.start();
 }
 void loop(){
-	if(casovac.read()>2){
-		ledPin=!ledPin;
-		casovac.reset();
-	}
+    if(casovac.read()>2){
+        ledPin=!ledPin;
+        casovac.reset();
+    }
 }
 ```
+
 2.možnost programu
 
 ```cpp
@@ -64,16 +65,14 @@ DigitalOut ledPin(X01);   // Set pin Y25 for led.
 Serial pc(SERIAL_TX, SERIAL_RX);   // Defines the comunication interface if the serial line , SPI, CAN is needen in the program.
 Ticker casovac;
 void led(){
-	ledPin=!ledPin;
+    ledPin=!ledPin;
 }
 void init(){   // The init routine runs only once when you press reset.
-	pc.baud(115200);   // Set baud rate.
-	casovac.attach(led,2);
+    pc.baud(115200);   // Set baud rate.
+    casovac.attach(led,2);
 
 }
 void loop(){
 }
 ```
-
-
 
