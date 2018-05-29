@@ -6,7 +6,7 @@ Na [základní jednotky](../zakladni-jednotky/) se připojují v této kapitole 
 
 [Základní jednotky](../zakladni-jednotky/) podporující připojení shieldů musí mít integrovaný tzv. [X konektor](./#x-konektor-a-y-konektor) \(např. [IODAG3E](../zakladni-jednotky/iodag3e/)\).
 
-Existující následující rozšiřující moduly:
+Veškeré potřebné informace včetně ukázkového software jsou k jednotlivým modulům dostupné v následujících odkazech:
 
 * [GSM shield](gsm-shield.md)
 * [LED shield](led-shield.md)
@@ -85,7 +85,7 @@ V případě elektrické kompatibility shieldů je níže dostupná tabulka komp
 
 ![](../../../.gitbook/assets/xconn.svg)
 
-## Firmware
+## Software
 
-Zpravidla na všechny shieldy jsou vytvořené example projekty pro jednoduché vyzkoušení funkcionality hardware. Projekty stačí pouze zkompilovat, nahrát do zařízení a vyzkoušet. Všechny projekty jsou dostupné v k tomu určeném repozitáři. \#TODO zajistit dostupnost projektů
+Ke všem rozšiřujícím modulům jsou vytvořeny ukázkové příklady, které je možné nalézt na stránce příslušných modulů. V příkladech je zahrnuto správné mapování jednotlivých vývodů - stačí tedy pouze připojit modul, zkompilovat a nahrát kód do příslušného zařízení.
 
