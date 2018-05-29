@@ -20,7 +20,7 @@ GSM shield si klade za cíl připojit základní jednotku k Internetu pomocí bu
 
 ### Konfigrace a zapojení
 
-* propojka _SJ1_ - volba napájení 3,3 V ze základní jednotky \(spojení vlevo\); vlastní měnič \(spojení vpravo\)
+* propojka _SJ1_ - volba napájení 3,3 V ze základní jednotky \(spojení vlevo\); vlastní měnič \(spojení vpravo\); je-li základní jednotka napájena alespoň 6 V, je doporučeno využít vlastní měnič
 * propojka _SJ5_ - spojeno: pin DCD je připojen na X08 \(výchozí stav\)
 * _X4_ - koniktor mini SIM karty; může být vložena pouze, pokud není osazena eSIM
 * _IC1_ - zabudovaná SIM \(eSIM\); může být osazena pouze, pokud není vložena mini SIM
