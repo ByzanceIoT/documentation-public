@@ -8,9 +8,8 @@ Základní jednotka slouží jako řídicí komponenta chytrého zařízení. V�
 
 Existují následující základní jednotky:
 
-* [IODAG3E](https://docu.byzance.cz/~/drafts/-LCndL2X3pfmKdNp4d_E/primary/hardware-a-programovani/hardware/zakladni-jednotky/iodag3e)
-* [IODAG3L](https://docu.byzance.cz/~/drafts/-LCndL2X3pfmKdNp4d_E/primary/hardware-a-programovani/hardware/zakladni-jednotky/iodag3l)
-* ddd
+* [IODAG3E](iodag3e/)
+* [IODAG3L](iodag3l.md)
 
 ![Z&#xE1;kladn&#xED; jednotka typu IODAG3E s ethernetov&#xFD;m p&#x159;ipojen&#xED;m.](../../../.gitbook/assets/maly_ioda.png)
 
