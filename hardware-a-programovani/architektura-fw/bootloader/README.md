@@ -4,5 +4,5 @@ Bootloader \(tzv. zavaděč\) je firmwarová komponenta nahraná v každém zař
 
 Jednotlivé režimy jsou popsány v kapitolách [režimy bootloaderu](rezimy-bootloaderu.md), přičemž nejrozsáhlejší část - [command mode](command-mod.md) - má vyhrazenou vlastní kapitolu.
 
-![](../../../.gitbook/assets/bootloader_jump.jpg)
+![](../../../.gitbook/assets/bootloader-to-fw.png)
 
