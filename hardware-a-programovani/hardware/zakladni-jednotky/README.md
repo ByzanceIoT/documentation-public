@@ -4,7 +4,7 @@
 
 Základní jednotka je samostatně fungující plnohodnotý kus hardware, který je schopný připojení do cloudu a autonomní funkce. Základní jednotky mají programovatelné vstupy a výstupy, nejrůznější sběrnice a rozhraní a po napojení jednotek na cloud slouží jednotky jako IoT prvky. V závislosti na na konkrétním typu jednotky se liší druh [připojení do cloudu](../../konektivita/) \(ethernet, GSM, 6LoWPAN\).
 
-Základní jednotka slouží jako řídicí komponenta chytrého zařízení. Většinou je označována názvem IODA a podle typu jednotky se k názvu přidávají další znaky \(např. [IODAG3E ](iodag3e/)nebo [IODAG3L](https://github.com/ByzanceIoT/documentation-public/tree/6e016a60aa8878be079ca2cf94055bd978b6c0d6/hardware-a-programovani/hardware/zakladni-jednotky/iodag3l.md)\).
+Základní jednotka slouží jako řídicí komponenta chytrého zařízení. Většinou je označována názvem IODA a podle typu jednotky se k názvu přidávají další znaky \(např. [IODAG3E ](iodag3e/)nebo [IODAG3L](iodag3l.md)\).
 
 Existují následující základní jednotky:
 
@@ -55,5 +55,5 @@ Pro připojení základní jednotky do cloudu se používají [různé technolog
 
 ## Typy základních jednotek
 
-V současné době disponujeme dvěma typy základních jednotek a to typem [IODAG3E](iodag3e/) s ethernetovým připojením a volitelnou GSM a/nebo 6LoWPAN konektivitou a nízkopříkonovým typem [IODAG3L ](https://github.com/ByzanceIoT/documentation-public/tree/6e016a60aa8878be079ca2cf94055bd978b6c0d6/hardware-a-programovani/hardware/zakladni-jednotky/iodag3l.md)výhradně s 6LoWPAN připojením.
+V současné době disponujeme dvěma typy základních jednotek a to typem [IODAG3E](iodag3e/) s ethernetovým připojením a volitelnou GSM a/nebo 6LoWPAN konektivitou a nízkopříkonovým typem [IODAG3L ](iodag3l.md)výhradně s 6LoWPAN připojením.
 
