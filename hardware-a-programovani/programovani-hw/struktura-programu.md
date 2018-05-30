@@ -1,6 +1,6 @@
 # Struktura programu
 
-Zařízení Byznce se programují v jazyce **C++** a využívají [**MBED API**](https://os.mbed.com/docs/latest/reference/apis.html) a [**Byzance API**](byzance-api/). Pro správnou funkčnost programu je nutné na první řádek nejprve importovat knihovnu "byzance.h" příkazem
+Zařízení Byznce se programují v jazyce **C++** a využívají [**MBED API**](mbed-api/) a [**Byzance API**](byzance-api/). Pro správnou funkčnost programu je nutné na první řádek nejprve importovat knihovnu "byzance.h" příkazem
 
 ```cpp
 #include "byzance.h"
