@@ -238,7 +238,7 @@ Identifikátor pro [restart zařízení do bootloaderu](../architektura-fw/bootl
 
 ### **revision**
 
-Zjištění [revize zařízení](omezeni-konfigurace.md)
+Zjištění revize zařízení
 
 | typ | 32 bit unsigned integer |
 | --- | --- | --- | --- | --- |
@@ -249,7 +249,7 @@ Zjištění [revize zařízení](omezeni-konfigurace.md)
 
 ### **autojump**
 
-Nastavení funkce [autojump](omezeni-konfigurace.md#autojump).
+Nastavení funkce autojump.
 
 | typ | 32 bit unsigned integer |
 | --- | --- | --- | --- | --- |
