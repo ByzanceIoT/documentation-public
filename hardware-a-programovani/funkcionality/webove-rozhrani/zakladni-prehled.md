@@ -3,7 +3,7 @@
 Webové rozhraní nabízí přehled informací o daném zařízení. Mezi tyto informace se řadí
 
 * [Alias](../../sprava-a-diagnostika/identifikace-zarizeni.md#alias)
-* [Revize](zakladni-prehled.md)
+* Revize
 * [Napájecí napětí](../../sprava-a-diagnostika/monitoring-parametru.md#napajeci-napeti)
 * [Vnitřní refereční napětí jádra](../../sprava-a-diagnostika/monitoring-parametru.md#referencni-napeti)
 * [Teplota jádra](../../sprava-a-diagnostika/monitoring-parametru.md#teplota-jadra)
