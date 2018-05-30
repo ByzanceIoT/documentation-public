@@ -60,5 +60,5 @@ by mělo dojít k buildu projektu. Pokud neobsahuje chyby \(exit code 0\), výsl
 
 ## Programování
 
-Až je vlastní kód hotový, je třeba provést build, čímž se vytvoří odpovídající .bin soubor. Nahrátí samotné binárky může probíhat buď z [prostředí GUI](upload-kodu-z-gui.md), nebo [z konzole](upload-kodu-z-konzole.md). Pro pohodlnější programování je možné použít desku [DevKit](https://github.com/byzance/public-documentation/tree/38b460c46404c197299c0f0a84e3402a9b74c8d7/byzance_documentation/hardware_intro/hardware/dk3g.md), která obsahuje programátor a disponuje vlastností Drag&Drop, kdy je možné zařízení programovat pouhým přetažením na virtuální disk v průzkumníku souborů v počítači.
+Až je vlastní kód hotový, je třeba provést build, čímž se vytvoří odpovídající .bin soubor. Nahrátí samotné binárky může probíhat buď z [prostředí GUI](upload-kodu-z-gui.md), nebo [z konzole](upload-kodu-z-konzole.md). Pro pohodlnější programování je možné použít desku [DevKit](../../hardware/ostatni/devkitg3/), která obsahuje programátor a disponuje vlastností Drag&Drop, kdy je možné zařízení programovat pouhým přetažením na virtuální disk v průzkumníku souborů v počítači.
 
