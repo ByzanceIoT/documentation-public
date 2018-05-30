@@ -88,9 +88,9 @@ Jediná správná možnost editace aliasu je pomocí Byzance Code \(Becki\). V s
 
 ## Blink
 
-pokec o blink
+\#todo napsat pokec
 
-\#TODO animace
+![](../../.gitbook/assets/rgb-problik.gif)
 
 ## Revize
 
