@@ -8,7 +8,7 @@ Postup nahrávání je vždy stejný. Nová aktualizace se nahrává do sekce Bu
 * Nahrátí samotné binárky do IODA - proces [**upload**](aktualizace-fw.md#proces-upload) _\*\*_\(podrobněji popsán dále\). Binárka se v této chvíli uloží do sekce ''buffer''.
 * Aktualizace jedné z příslušných komponent aktualizací uloženou v sekci ''buffer''. Krok se nazývá [**update**](aktualizace-fw.md#proces-update) _\*\*_\(podrobněji popsán dále\).
 
-![](../../.gitbook/assets/aktualizace_hw.jpg)
+![](../../.gitbook/assets/cloud-to-buffer.png)
 
 ## Proces upload
 
