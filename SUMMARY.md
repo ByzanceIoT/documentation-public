@@ -83,7 +83,7 @@
 * [Programování HW](hardware-a-programovani/programovani-hw/README.md)
   * [Struktura programu](hardware-a-programovani/programovani-hw/struktura-programu.md)
   * [Byzance API](hardware-a-programovani/programovani-hw/byzance-api/README.md)
-    * [Byz API](hardware-a-programovani/programovani-hw/byzance-api/api/classes.md)
+    * [Byz API](hardware-a-programovani/programovani-hw/byzance-api/byz-api.md)
     * [Vstupy a výstupy do Portálu](hardware-a-programovani/programovani-hw/byzance-api/vstupy-a-vystupy-do-portalu.md)
     * [Callback Busy](hardware-a-programovani/programovani-hw/byzance-api/callback-busy.md)
     * [Odložený restart](hardware-a-programovani/programovani-hw/byzance-api/odlozeny-restart.md)
