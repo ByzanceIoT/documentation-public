@@ -7,7 +7,7 @@ Z důvodů unifikace byla pro jednotlivé části převzata terminologie z prům
 * Automatic Test Equipment = [ATE - testovací zařízení](https://en.wikipedia.org/wiki/Automatic_test_equipment). Je to ten, kdo řídí a provádí testy.
 * Device Under Test = [DUT - testované zařízení](https://en.wikipedia.org/wiki/Device_under_test). Je to ten, kdo je testován.
 
-![](../../../../.gitbook/assets/tk3g.png)
+![](../../../../.gitbook/assets/tk3g-schema-b.jpg)
 
 Testovací zařízení \(IODA ATE\) slouží ke komunikaci s počítačem, ovládá periferie TK3G, řídí IODA DUT a [provádí ICT testy](https://en.wikipedia.org/wiki/In-circuit_test).
 
