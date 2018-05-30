@@ -134,4 +134,5 @@
   * [Omezení konfigurace](hardware-a-programovani/sprava-a-diagnostika/omezeni-konfigurace.md)
 * Knowledge base
   * [Paměť RAM](hardware-a-programovani/knowledge-base/pamet-ram.md)
+  * [Byz API](hardware-a-programovani/programovani-hw/byzance-api/api/modules.md)
 
