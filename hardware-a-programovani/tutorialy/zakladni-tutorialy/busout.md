@@ -15,7 +15,7 @@ Tento program mění barvu RGB LED diody pomocí funkce `BusOut`. Barevný model
 
 ## Schéma
 
-![](../../../.gitbook/assets/busout_schema.png)
+![](../../../.gitbook/assets/busout.PNG)
 
 ## Code
 
