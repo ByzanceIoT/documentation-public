@@ -253,7 +253,7 @@ Nastavení funkce autojump.
 
 | typ | 32 bit unsigned integer |
 | --- | --- | --- | --- | --- |
-| omezení | 0 - 4294967296 |
+| omezení | 300 - 4294967296 |
 | výchozí hodnota | 300 |
 | možnost číst | ano, uživatel |
 | možnost zapisovat | ano, uživatel |
