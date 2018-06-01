@@ -50,8 +50,8 @@ Serial    pc(SERIAL_TX, SERIAL_RX); // tx, rx
 
 void init(){
 
-    pc.baud\(115200\);
-    pc.printf\("Time demo\n"\);
+    pc.baud(115200);
+    pc.printf("Time demo\n");
 
     time_t time_utc;
     time_t time_local;
@@ -62,19 +62,22 @@ void init(){
     p_utc    = (tm*)malloc(sizeof(tm));
     p_local  = (tm*)malloc(sizeof(tm));
 
-    // load UTC time to variable    
+    // load UTC time to variable
     time(&time_utc);
 
-    // calculate local time using timeoffset getter    
-    time_local = time_utc + Byzance::get_timeoffset();
+    int timeoffset;
+	Byzance::get_timeoffset(&timeoffset);
 
-    // convert UTC from timestamp to time struct    
-    memcpy(p_utc, gmtime(&time_utc), sizeof(tm));    
-    pc.printf("UTC time   = %2d:%02d\n", (p_utc  -&gt;tm\_hour\)%24, p_utc  -&gt;tm_min);
+	// calculate local time using timeoffset getter
+    time_local = time_utc + timeoffset;
 
-    // convert localtime from timestamp to time struct    
-    memcpy(p_local, gmtime(&time_local), sizeof(tm));    
-    pc.printf("Local time = %2d:%02d\n", (p_local-&gt;tm_hour)%24, p_local-&gt;tm_min\);
+    // convert UTC from timestamp to time struct
+    memcpy(p_utc, gmtime(&time_utc), sizeof(tm));
+    pc.printf("UTC time   = %2d:%02d\n", (p_utc->tm_hour)%24, p_utc->tm_min);
+
+    // convert localtime from timestamp to time struct
+    memcpy(p_local, gmtime(&time_local), sizeof(tm));
+    pc.printf("Local time = %2d:%02d\n", (p_local->tm_hour)%24, p_local->tm_min);
 }
 ```
 
