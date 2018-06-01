@@ -57,11 +57,11 @@ Omezení při nastavování Alias jsou popsána v příslušné kapitole.
 
 {% page-ref page="omezeni-konfigurace.md" %}
 
-Alias je možné zjistit při startu zařízení vyčtením při startu [bootloaderu](../architektura-fw/bootloader/).
+Alias je možné zjistit při startu zařízení vyčtením při startu [bootloaderu](bootloader/).
 
 ![alias\_bootloader](../../.gitbook/assets/alias_bootloader.png)
 
-Je možné jej zjistit či nastavit v [command režimu bootloaderu](../architektura-fw/bootloader/command-mod.md). V případě nastavení z bootloaderu není garantována funkčnost, protože zařízení při startu zařízení žádá o nastavení Aliasu a v případě, že je název s Tyrionem kolizní, za správnou variantu je považovana varianta Tyrionu.
+Je možné jej zjistit či nastavit v [command režimu bootloaderu](bootloader/command-mod.md). V případě nastavení z bootloaderu není garantována funkčnost, protože zařízení při startu zařízení žádá o nastavení Aliasu a v případě, že je název s Tyrionem kolizní, za správnou variantu je považovana varianta Tyrionu.
 
 Alias je možné také zjistit v rámci uživatelského kódu dotazem pomocí [Byzance API](../programovani-hw/byzance-api/) funkcí ''Byzance::get\_alias\(\);''.
 

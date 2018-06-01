@@ -29,7 +29,7 @@ Kromě vstupně výstupních pinů jsou na konektorech dostupné i napájecí v�
 * USR - signál _user_ tlačítka \(emulace _user_ tlačítka z externího zařízení\)
 * GND - nulový potenciál jednotky, referenční nulový potenciál pro všechny ostatní signály
 * VBUS - napájecí výstup určený pro výstup napájecího napětí ze základní jednotky, více v sekci s napájením pro danou[ základní jednotku](../zakladni-jednotky/#prehled) \(konkrétně pro IODAG3E v [této části](../zakladni-jednotky/iodag3e/#moznosti-napajeni)\)
-* VBAT - vstupní napájení do [RTC obvodu](../../funkcionality/pripojeni-zdroje-k-vbat.md) základní jednotky 
+* VBAT - vstupní napájení do [RTC obvodu](../zakladni-jednotky/iodag3e/pripojeni-zdroje-k-vbat.md) základní jednotky 
 * RST - resetovací vstup mikrokontroléru jednotky
 
 ![P&#x159;&#xED;klad X konektoru \(vlevo\) a Y konektory \(vpravo\) na z&#xE1;kladn&#xED; desce IODAG3E.](../../../.gitbook/assets/x_y_conn%20%283%29.png)

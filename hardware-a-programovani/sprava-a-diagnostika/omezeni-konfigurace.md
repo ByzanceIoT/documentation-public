@@ -106,7 +106,7 @@ Zjištění MAC adresy.
 
 ### **blreport**
 
-Bootloader report. Zapnutí, nebo vypnutí výpisu hlavičky [bootloaderu](../architektura-fw/bootloader/) do konzole.
+Bootloader report. Zapnutí, nebo vypnutí výpisu hlavičky [bootloaderu](bootloader/) do konzole.
 
 | typ | boolean |
 | --- | --- | --- | --- | --- |
@@ -117,7 +117,7 @@ Bootloader report. Zapnutí, nebo vypnutí výpisu hlavičky [bootloaderu](../ar
 
 ### **wdenable**
 
-Zapnutí [watchdogu](../funkcionality/watchdog.md).
+Zapnutí [watchdogu](../knowledge-base/watchdog.md).
 
 | typ | boolean |
 | --- | --- | --- | --- | --- |
@@ -128,7 +128,7 @@ Zapnutí [watchdogu](../funkcionality/watchdog.md).
 
 ### **wdtime**
 
-Nastavení periody resetu [watchdogu](../funkcionality/watchdog.md).
+Nastavení periody resetu [watchdogu](../knowledge-base/watchdog.md).
 
 | typ | integer |
 | --- | --- | --- | --- | --- |
@@ -172,7 +172,7 @@ při prvním spuštění bootloader naběhne vždy do Command režimu a čeká n
 
 ### **webview**
 
-Zapnutí nebo vypnutí funkcionality [webového rozhraní](../funkcionality/webove-rozhrani/).
+Zapnutí nebo vypnutí funkcionality [webového rozhraní](webove-rozhrani/).
 
 | typ | boolean |
 | --- | --- | --- | --- | --- |
@@ -183,7 +183,7 @@ Zapnutí nebo vypnutí funkcionality [webového rozhraní](../funkcionality/webo
 
 ### **webport**
 
-Port, na kterém bude přístupno [webové rozhraní](../funkcionality/webove-rozhrani/).
+Port, na kterém bude přístupno [webové rozhraní](webove-rozhrani/).
 
 | typ | 16 bit unsigned integer |
 | --- | --- | --- | --- | --- |
@@ -227,7 +227,7 @@ Zapnutí funkce [lowpan border router](../konektivita/6lowpan.md).
 
 ### **restartbl**
 
-Identifikátor pro [restart zařízení do bootloaderu](../architektura-fw/bootloader/).
+Identifikátor pro [restart zařízení do bootloaderu](bootloader/).
 
 | typ | boolean |
 | --- | --- | --- | --- | --- |

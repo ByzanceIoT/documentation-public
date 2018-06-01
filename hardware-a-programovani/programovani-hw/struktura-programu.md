@@ -6,7 +6,7 @@ Zařízení Byznce se programují v jazyce **C++** a využívají [**MBED API**]
 #include "byzance.h"
 ```
 
-Tato knihovna má za úkol automaticky inicializovat periferie, připojit zařízení k internetu a inicializovat vlákna, která se starají o [aktualizaci firmware](../architektura-fw/aktualizace-fw.md) a připojení k serverům. Importem knihovny se také zpřístupní funkce [Byzance API](byzance-api/) a [uživatelská makra](byzance-api/uzivatelska-makra.md).
+Tato knihovna má za úkol automaticky inicializovat periferie, připojit zařízení k internetu a inicializovat vlákna, která se starají o [aktualizaci firmware](architektura-fw/aktualizace-fw.md) a připojení k serverům. Importem knihovny se také zpřístupní funkce [Byzance API](byzance-api/) a [uživatelská makra](byzance-api/uzivatelska-makra.md).
 
 ## Definice fyzických vstupů a výstupů
 

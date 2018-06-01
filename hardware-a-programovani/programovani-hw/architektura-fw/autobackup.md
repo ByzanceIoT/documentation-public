@@ -8,7 +8,7 @@ Pokud je funkce autobackup **zapnutá**, při nahrávání nového firmware se p
 
 V případě, že je automatická záloha posledního funkčního firmware nežádoucí a je třeba jeden záložní firmware pro všechny situace, funkce autobackup je **vypnutá** a tomuto typu se říká [**statická záloha**](autobackup.md#staticka-zaloha).
 
-![](../../.gitbook/assets/autobackup.png)
+![](../../../.gitbook/assets/autobackup.png)
 
 ## Dynamická záloha
 
@@ -28,5 +28,5 @@ V případě, že je autobackup **vypnutý**, zařízení spoléhá na to, že v
 
 Pokud je nutné režim autobackup změnit, existuje několik možností, jak toho docílit. Podrobnější popis je v kapitole konfigurace, přičemž doporučováno je měnit nastavení pomocí nástroje v Portalu Byzance.
 
-{% page-ref page="../sprava-a-diagnostika/konfigurace-zarizeni.md" %}
+{% page-ref page="../../sprava-a-diagnostika/konfigurace-zarizeni.md" %}
 

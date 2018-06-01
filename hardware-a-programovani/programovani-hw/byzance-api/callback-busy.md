@@ -8,7 +8,7 @@ Callback Busy slouží k ošetření uživatelského programu, aby nekolidoval s
 
 K zavolání callbacku může dojít v průběhu vykonávání programu i několikrát po sobě - typicky při přípravě na update a posléze při aktualizaci samotné. Po dokončení aktualizace uživatelského programu může dojít k [restartu zařízení](odlozeny-restart.md).
 
-{% page-ref page="../../architektura-fw/aktualizace-fw.md" %}
+{% page-ref page="../architektura-fw/aktualizace-fw.md" %}
 
 Uživatelská funkce \(callback\), která má být vykonána v případě přepnutí do stavu "busy", se připojí pomocí následující konstrukce
 

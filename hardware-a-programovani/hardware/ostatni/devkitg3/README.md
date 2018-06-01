@@ -17,7 +17,7 @@ Připojením DevKitu k PC je vytvořeno složené USB zařízení obsahující:
 * mass storage zařízení \(flashdisk\) s názvem _BYZG3\_\*\*\*\*\_
 * virtuální sériový port
 
-Aktualizace [firmware](../../../programovani-hw/struktura-programu.md) či [bootloaderu](../../../architektura-fw/bootloader/) IODA binárním souborem _\*.bin_ je možno provádět pomocí drag&drop z počítače na virtuální mass storage zařízení.
+Aktualizace [firmware](../../../programovani-hw/struktura-programu.md) či [bootloaderu](../../../sprava-a-diagnostika/bootloader/) IODA binárním souborem _\*.bin_ je možno provádět pomocí drag&drop z počítače na virtuální mass storage zařízení.
 
 {% page-ref page="../../../programovani-hw/offline-programovani/upload-kodu-drag-and-drop.md" %}
 

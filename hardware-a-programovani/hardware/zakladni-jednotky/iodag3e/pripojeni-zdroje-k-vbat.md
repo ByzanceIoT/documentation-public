@@ -4,7 +4,7 @@ Zařízení IODAG3E disponuje pinem **VBAT**. Pokud se na tento pin přivede ext
 
 Napájení je nutné připojit podle schámatu napájecí části procesoru.
 
-![Power supply schema](../../.gitbook/assets/power_schema.PNG)
+![Power supply schema](../../../../.gitbook/assets/power_schema.PNG)
 
 U pinu VBAT je kapacitor, který udrží při napájení VBAT 3.6V hodnotu RTC i při úplném odpojení zhruba na 10 sekund.
 

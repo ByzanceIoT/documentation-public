@@ -4,11 +4,11 @@
 
 Čas běhu zařízení, neboli "uptime" je čítač, který je implementovaný v každém zařízení Byzance. Vyjadřuje počet sekund uplynulých od zapnutí zařízení. Slouží především k monitoringu stability kódu a zlepšení všeobecného přehledu o zařízení. Čítač se inkrementuje automaticky. Jeho maximální hodnota může být 2^32 - 1, tedy zhruba 136 let. Poté čítač přeteče znova na nulu.
 
-Pokud je zařízení přepnuto do [bootloaderu](../architektura-fw/bootloader/), ''uptime'' se neinkrementuje.
+Pokud je zařízení přepnuto do [bootloaderu](bootloader/), ''uptime'' se neinkrementuje.
 
 Hodnotu uptime je možno zjistit
 
-* Ve [webovém rozhraní](../funkcionality/webove-rozhrani/)
+* Ve [webovém rozhraní](webove-rozhrani/)
 * Pomocí uživatelského kódu a [Byzance API](../programovani-hw/byzance-api/)
 
 ## Čas připojení k serverům
@@ -19,7 +19,7 @@ Při každém odpojení od serverů se čítač přestane inkrementovat a resetu
 
 Hodnotu "connected time" je možno zjistit
 
-* ve [webovém rozhraní](../funkcionality/webove-rozhrani/)
+* ve [webovém rozhraní](webove-rozhrani/)
 * pomocí uživatelského kódu a [Byzance API](../programovani-hw/byzance-api/).
 
 ## Napájecí napětí
@@ -28,7 +28,7 @@ Každé zařízení IODA je možno napájet mnoha způsoby - záleží na konkr�
 
 Sem je napojen dělič, jehož výstup PWR\_MEAS je připojen do mikrokontroléru a vzorkován ADC převodníkem. Aktuální napětí ve voltech je možno získat
 
-* ve [webovém rozhraní](../funkcionality/webove-rozhrani/)
+* ve [webovém rozhraní](webove-rozhrani/)
 * pomocí uživatelského kódu a [Byzance API](../programovani-hw/byzance-api/).
 
 Napájecí napětí je však pouze orientační. Na základě zvolené větve napájení je třeba pro zjištění skutečné hodnoty k naměřené hodnotě přičíst úbytky na usměrňovací kaskádě - zhruba 0,7 voltu při průchodu každou diodou.
@@ -41,7 +41,7 @@ Napájecí napětí je však pouze orientační. Na základě zvolené větve na
 
 Teplotu jádra je možno získat
 
-* ve [webovém rozhraní](../funkcionality/webove-rozhrani/)
+* ve [webovém rozhraní](webove-rozhrani/)
 * pomocí uživatelského kódu a [Byzance API](../programovani-hw/byzance-api/).
 
 ## Referenční napětí
@@ -52,7 +52,7 @@ Teplotu jádra je možno získat
 
 Hodnotu referenčního napětí je možno získat
 
-* ve [webovém rozhraní](../funkcionality/webove-rozhrani/)
+* ve [webovém rozhraní](webove-rozhrani/)
 * pomocí uživatelského kódu a [Byzance API](../programovani-hw/byzance-api/).
 
 ![](../../.gitbook/assets/measure.png)

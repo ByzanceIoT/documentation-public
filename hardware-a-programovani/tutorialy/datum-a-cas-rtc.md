@@ -39,7 +39,7 @@ void loop(){
 
 ## Vlastní časové pásmo a parsování timestamp do struktury
 
-Časové razítko je v zařízení automaticky nastaveno nastaveno na UTC pásmo. Pro vlastní offset od UTC je třeba příslušnou položku změnit v [command režimu bootloaderu](../architektura-fw/bootloader/command-mod.md). Nastavený offset se za běhu normálního programu získat pomocí veřejné funkce ''Byzance::get\_timeoffset\(\)''.
+Časové razítko je v zařízení automaticky nastaveno nastaveno na UTC pásmo. Pro vlastní offset od UTC je třeba příslušnou položku změnit v [command režimu bootloaderu](../sprava-a-diagnostika/bootloader/command-mod.md). Nastavený offset se za běhu normálního programu získat pomocí veřejné funkce ''Byzance::get\_timeoffset\(\)''.
 
 S tím souvisí i parsování podle regionálního nastavení. K unixovému časovému razítku se přičte lokální offset a výslednou položku je možné konvertovat do časové struktury funkcí [gmtime\(\)](http://www.cplusplus.com/reference/ctime/gmtime/).
 
@@ -80,5 +80,5 @@ void init(){
 
 K převodu jednotek je možné dále využít například jeden z mnoha [online nástrojů](http://www.onlineconversion.com/unix_time.htm).
 
-Toto je možné vypnout v [bootloaderu](../architektura-fw/bootloader/).
+Toto je možné vypnout v [bootloaderu](../sprava-a-diagnostika/bootloader/).
 

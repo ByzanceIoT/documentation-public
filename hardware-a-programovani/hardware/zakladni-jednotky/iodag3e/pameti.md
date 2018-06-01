@@ -10,7 +10,7 @@ Jednotka IODAG3E obsahuje několik druhů pamětí, kde každý typ má svůj ú
 
 * RAM
   * 256 kB SRAM \(včetně 64 kB CCM\)
-  * 4 kB zálohované SRAM \(zálohováno [_VBAT_ ](../../../funkcionality/pripojeni-zdroje-k-vbat.md)zdrojem\) 
+  * 4 kB zálohované SRAM \(zálohováno [_VBAT_ ](pripojeni-zdroje-k-vbat.md)zdrojem\) 
   * součást mikrokontroléru sloužící pro data běžícího firmware
 * FLASH
   * 2 MB v mikrokontroléru

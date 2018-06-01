@@ -1,4 +1,0 @@
-# Funkcionality
-
-Funkcionality
-

@@ -35,7 +35,7 @@ Mikrokontrolér založený na ARM architektuře je mozkem celého zařízení, v
 
 Každá základní jednotka je zpravidla osazena několika **tlačítky** a signalizačními **LED** diodami. Jejich účelem je usnadnit ovládaní jednotek a jednoduše vizualizovat vnitřní stavy zařízení. Fyzické umístění tlačítek a LED diod může být odlišné pro jednotlivé základní jednotky.
 
-Všechny jednotky mají v základu _User_ a _Reset_ tlačítko. Tlačítko _Reset_ slouží k hardwarovému restartu mikrokontroléru jednotky a hodí se zejména při vývoji. Po jeho stisku základní jednotka přeruší veškeré operace a řídicí program mikrokontroléru se začne vykonávat znovu od začátku. Tlačítko _User_ se hodí pro napojení na libovolnou v programu definovanou funkcionalitu \(vykonání něčeho po stisku tlačítka\). Během startu základních jednotek slouží _User_ tlačítko pro vstup do [Bootloaderu](../../architektura-fw/bootloader/).
+Všechny jednotky mají v základu _User_ a _Reset_ tlačítko. Tlačítko _Reset_ slouží k hardwarovému restartu mikrokontroléru jednotky a hodí se zejména při vývoji. Po jeho stisku základní jednotka přeruší veškeré operace a řídicí program mikrokontroléru se začne vykonávat znovu od začátku. Tlačítko _User_ se hodí pro napojení na libovolnou v programu definovanou funkcionalitu \(vykonání něčeho po stisku tlačítka\). Během startu základních jednotek slouží _User_ tlačítko pro vstup do [Bootloaderu](../../sprava-a-diagnostika/bootloader/).
 
 ### Vstupy a výstupy
 

@@ -1,6 +1,6 @@
 # Režimy bootloaderu
 
-Bootloader \(tzv. zavaděč\) je softwarová komponenta, která se spouští jako první při zapnutí zařízení. Jejím úkolem je většinou pouze skok do hlavního programu. Má ale i několik dalších módů, které popisuje tato kapitola. Speciálním režimem je [mód commands](command-mod.md), díky němuž je možno [konfigurovat zařízení](../../sprava-a-diagnostika/konfigurace-zarizeni.md).
+Bootloader \(tzv. zavaděč\) je softwarová komponenta, která se spouští jako první při zapnutí zařízení. Jejím úkolem je většinou pouze skok do hlavního programu. Má ale i několik dalších módů, které popisuje tato kapitola. Speciálním režimem je [mód commands](command-mod.md), díky němuž je možno [konfigurovat zařízení](../konfigurace-zarizeni.md).
 
 ## Mód JUMP
 
@@ -9,18 +9,18 @@ Jedná se o výchozí mód, pokud není nastaveno jinak. Cílem je pouze spustit
 Režim JUMP sestává z několika kroků:
 
 * Kontrola přitomnosti hlavní aplikace. Pokud hlavní aplikace není dostupná, dojde k přepnutí do [command režimu](command-mod.md).
-* Spuštění watchdogu \(pokud je nastaveno\) a případné nastavení na příslušnou hodnotu. Blíže vysvětleno v sekci [watchdog](../../funkcionality/watchdog.md).
+* Spuštění watchdogu \(pokud je nastaveno\) a případné nastavení na příslušnou hodnotu. Blíže vysvětleno v sekci [watchdog](../../knowledge-base/watchdog.md).
 * **Skok do hlavní aplikace**
 
 ## Mód FLASH
 
-Do módu FLASH bootloader automaticky přechází, pokud při předchozím běhu firmware byl přijat nový validní firmware, který bude nutno nahrát na místo hlavní aplikace \(více viz [aktualizace firmware](../aktualizace-fw.md)\). Mód je detekován tím, že v průběhu běhu předchozího firmware je zapnut signalizátor flashflag, který se po přehrání firmware automaticky vypíná.
+Do módu FLASH bootloader automaticky přechází, pokud při předchozím běhu firmware byl přijat nový validní firmware, který bude nutno nahrát na místo hlavní aplikace \(více viz [aktualizace firmware](../../programovani-hw/architektura-fw/aktualizace-fw.md)\). Mód je detekován tím, že v průběhu běhu předchozího firmware je zapnut signalizátor flashflag, který se po přehrání firmware automaticky vypíná.
 
 V průběhu aktualizace hlavního programu novým programem probíhají tyto kroky
 
 * Načtení struktury s informacemi o novém firmware
 * Validace a případná oprava velikosti, je-li to možné
-* Je-li zapnuta funkce [autobackup](../autobackup.md), provede se záloha aktuálně běžícího firmware
+* Je-li zapnuta funkce [autobackup](../../programovani-hw/architektura-fw/autobackup.md), provede se záloha aktuálně běžícího firmware
 * Vymazání interní paměti
 * Překopírování všech částí binárky z externí paměti do mikrokontroléru
 * Aktualizace informací o novém firmware v mikrokontroléru
@@ -28,11 +28,11 @@ V průběhu aktualizace hlavního programu novým programem probíhají tyto kro
 Pokud všechny tyto kroky proběhnou v pořádku, následuje
 
 * Vypnutí ''flashflag''
-* Zapnutí signalizátoru ''launched'', který slouží ke kontrole funkčnosti nového firmware. Pokud bude po restartu nový firmware nefunkční, "lauchned" se nevypne, [watchdog](../../funkcionality/watchdog.md) restartuje mikrokontrolér a v dalším běhu bootloaderu je aktivován mód RESTORE.
+* Zapnutí signalizátoru ''launched'', který slouží ke kontrole funkčnosti nového firmware. Pokud bude po restartu nový firmware nefunkční, "lauchned" se nevypne, [watchdog](../../knowledge-base/watchdog.md) restartuje mikrokontrolér a v dalším běhu bootloaderu je aktivován mód RESTORE.
 
 ## Mód RESTORE
 
-Tento mód navazuje na mód FLASH. Pokud se hlavní program po posledním naflashování nespustil \(tedy bootloader detekuje zapnutý flag ''launched'' z režimu FLASH\), mikrokontrolér je po čase resetován [watchdogem](../../funkcionality/watchdog.md), mód RESTORE je automaticky vyvolán a spustí se obnovení posledního funkčního firmwaru, který byl dříve zazálohován funkcí [autobackup](../autobackup.md).
+Tento mód navazuje na mód FLASH. Pokud se hlavní program po posledním naflashování nespustil \(tedy bootloader detekuje zapnutý flag ''launched'' z režimu FLASH\), mikrokontrolér je po čase resetován [watchdogem](../../knowledge-base/watchdog.md), mód RESTORE je automaticky vyvolán a spustí se obnovení posledního funkčního firmwaru, který byl dříve zazálohován funkcí [autobackup](../../programovani-hw/architektura-fw/autobackup.md).
 
 ## Mód COMMANDS
 

@@ -16,11 +16,11 @@ Preferovaný způsob při změně konfigurace. Přehled jednotlivých parametrů
 
 ## Konfigurace pomocí bootloaderu
 
-[Bootloader ](../architektura-fw/bootloader/)je firmwarová komponenta \(zavaděč\). Spouští se jako první po startu zařízení a rozhoduje o tom, jestli dojde ke spuštění firmware, nebo vykoná některou se svých dalších možných funkcí. Jednou z těchto z těchto funkcí je [command režim](../architektura-fw/bootloader/command-mod.md), sloužící ke konfiguraci zařízení - především pokud je offline.
+[Bootloader ](bootloader/)je firmwarová komponenta \(zavaděč\). Spouští se jako první po startu zařízení a rozhoduje o tom, jestli dojde ke spuštění firmware, nebo vykoná některou se svých dalších možných funkcí. Jednou z těchto z těchto funkcí je [command režim](bootloader/command-mod.md), sloužící ke konfiguraci zařízení - především pokud je offline.
 
 Konfigurace probíhá pomocí [sériové linky](../tutorialy/komunikace-po-seriove-lince-uart-s-pc/#konfigurace-pc). Dojde-li ke konfliktu mezi nastavením provedeným z Bootloaderu a z Portálu, přednost má Portál a lokální nastavení v IODA je přepsáno.
 
-{% page-ref page="../architektura-fw/bootloader/" %}
+{% page-ref page="bootloader/" %}
 
 ## Konfigurace z Byzance API
 
@@ -53,9 +53,9 @@ Stejně jako v ostatních případech, pokud dojde ke změně konfiguračních p
 
 ## Konfigurace z webového rozhraní
 
-[Webové rozhraní](../funkcionality/webove-rozhrani/) IODAG3E \(webview\) je služba, která vznikla za účelem jednodušší kontroly zařízení, monitoringu a správu firmware. Pokud je webové rozhraní zapnuto a uživatel je i s IODAG3E na stejné síti \(platí pouze pro Ethernet\), je možné navštívit příslušnou URL požadovaného zařízení.
+[Webové rozhraní](webove-rozhrani/) IODAG3E \(webview\) je služba, která vznikla za účelem jednodušší kontroly zařízení, monitoringu a správu firmware. Pokud je webové rozhraní zapnuto a uživatel je i s IODAG3E na stejné síti \(platí pouze pro Ethernet\), je možné navštívit příslušnou URL požadovaného zařízení.
 
 Nutno brát v potaz, že lokálně provedené změny na IODAG3E mohou být přepsány Portálem při dalším připojení.
 
-{% page-ref page="../funkcionality/webove-rozhrani/" %}
+{% page-ref page="webove-rozhrani/" %}
 

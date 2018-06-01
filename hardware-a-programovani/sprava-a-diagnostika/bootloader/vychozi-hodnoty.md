@@ -1,6 +1,6 @@
 # Výchozí hodnoty
 
-Každé zařízení je vybaveno detekcí[ validní konfigurace](../../sprava-a-diagnostika/konfigurace-zarizeni.md). Pokud konfigurace neodpovídá očekávaným parametrům, případně pokud je zařízení nové a nikdy nebylo nakonfigurováno, místo některých \(nebo všech\) položek mohou být automaticky dosazeny výchozí hodnoty.
+Každé zařízení je vybaveno detekcí[ validní konfigurace](../konfigurace-zarizeni.md). Pokud konfigurace neodpovídá očekávaným parametrům, případně pokud je zařízení nové a nikdy nebylo nakonfigurováno, místo některých \(nebo všech\) položek mohou být automaticky dosazeny výchozí hodnoty.
 
 Kontrola parametrů se děje vždy při vstupu do [bootloaderu](./), ještě před spuštěním vlastního firmware.
 

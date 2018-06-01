@@ -16,7 +16,7 @@ Po inicializaci se v PC objeví nový virtuální disk pojmenovaný **BYZG3\_&lt
 
 ## Upload nové verze bootloaderu
 
-Pokud je třeba do zařízení nahrát novou verzi [bootloaderu](../../architektura-fw/bootloader/), postup nahrávání se nepatrně liší. Bootloader se nachází v jiné části paměti zařízení. Proto je potřeba před uploadem binárky s novým bootloaderem nejprve potřeba nahrát pomocí drag&drop prázdný textový soubor pojmenovaný **BOOTLOAD.txt.** Tím se DAPlink přeprogramuje na programování bootloaderu, díky čemuž je automaticky nahrán binární kód do správné části paměti. Po dokončení operace proběhne restart programovaného zařízení a DAPlink se sám přepne zpět do módu programování firmware.
+Pokud je třeba do zařízení nahrát novou verzi [bootloaderu](../../sprava-a-diagnostika/bootloader/), postup nahrávání se nepatrně liší. Bootloader se nachází v jiné části paměti zařízení. Proto je potřeba před uploadem binárky s novým bootloaderem nejprve potřeba nahrát pomocí drag&drop prázdný textový soubor pojmenovaný **BOOTLOAD.txt.** Tím se DAPlink přeprogramuje na programování bootloaderu, díky čemuž je automaticky nahrán binární kód do správné části paměti. Po dokončení operace proběhne restart programovaného zařízení a DAPlink se sám přepne zpět do módu programování firmware.
 
 ![](../../../.gitbook/assets/git_upload_zpp_bootload.gif)
 

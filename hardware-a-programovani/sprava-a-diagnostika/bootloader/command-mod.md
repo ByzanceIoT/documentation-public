@@ -1,6 +1,6 @@
 # Command mód
 
-Command mód je jeden z režimů [bootloaderu](./), kde je možné pomocí příkazů posílaných po [sériové lince](../../tutorialy/komunikace-po-seriove-lince-uart-s-pc/) ověřovat a [nastavovat konfigurační parametry](../../sprava-a-diagnostika/konfigurace-zarizeni.md). Ostatní režimy jsou popsány v [příslušné kapitole](rezimy-bootloaderu.md).
+Command mód je jeden z režimů [bootloaderu](./), kde je možné pomocí příkazů posílaných po [sériové lince](../../tutorialy/komunikace-po-seriove-lince-uart-s-pc/) ověřovat a [nastavovat konfigurační parametry](../konfigurace-zarizeni.md). Ostatní režimy jsou popsány v [příslušné kapitole](rezimy-bootloaderu.md).
 
 Do command režimu bootloaderu je možno vstopit následujícím způsobem
 
@@ -34,16 +34,16 @@ Více informací k MQTT připojení je možno nalézt v sekci [Komunikace se ser
 * **backup\_mqtt\_port** - Záložní port, na kterém běží Homer. 
 * **mqtt\_username** - Jméno pro přihlášení k Homerovi.
 * **mqtt\_password** - Heslo pro přihlášení k Homerovi.
-* **alias** - Alias zařízení, který si každý může nastavit pro lepší [identifikaci zařízení](../../sprava-a-diagnostika/identifikace-zarizeni.md).
+* **alias** - Alias zařízení, který si každý může nastavit pro lepší [identifikaci zařízení](../identifikace-zarizeni.md).
 * **mac** - Zjištění MAC adresy.
 * **blreport** - Bootloader report. Zapnutí, nebo vypnutí výpisu hlavičky [bootloaderu](./) do konzole.
-* **wdenable** - Zapnutí [watchdogu](../../funkcionality/watchdog.md).
-* **wdtime** - Nastavení periody resetu [watchdogu](../../funkcionality/watchdog.md).
+* **wdenable** - Zapnutí [watchdogu](../../knowledge-base/watchdog.md).
+* **wdtime** - Nastavení periody resetu [watchdogu](../../knowledge-base/watchdog.md).
 * **autobackup** - Funkce, která zajišťuje, zajišťuje zálohu starého firmware při doručení nového.
 * **netsource** - Zdroj, odkud bere zařízení internet.
 * **configured** - při prvním spuštění bootloader naběhne vždy do Command režimu a čeká na konfiguraci všech parametrů. Až jsou parametry nastaveny, ''configured'' se přepne na 1 a tím se dá zařízení najevo, že je již plně nakonfigurováno a příště bude už nabíhat do normálního programu.
-* **webview** - Zapnutí nebo vypnutí funkcionality [webového rozhraní](../../funkcionality/webove-rozhrani/).
-* **webport** - Port, na kterém bude přístupno [webové rozhraní](../../funkcionality/webove-rozhrani/).
+* **webview** - Zapnutí nebo vypnutí funkcionality [webového rozhraní](../webove-rozhrani/).
+* **webport** - Port, na kterém bude přístupno [webové rozhraní](../webove-rozhrani/).
 * **timeoffset** - Slouží pro lokalizovanou [práci s časem](../../tutorialy/datum-a-cas-rtc.md). Nastavení offsetu lokálního času RTC od UTC.
 * **timesync** - Slouží pro zapnutí [synchronizace času](../../tutorialy/datum-a-cas-rtc.md) mezi servery Byzance a RTC.
 * **lowpanbr** - Zapnutí funkce [lowpan border router](../../konektivita/6lowpan.md).

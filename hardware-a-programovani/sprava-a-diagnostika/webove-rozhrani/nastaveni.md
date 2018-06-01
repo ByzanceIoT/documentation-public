@@ -8,11 +8,11 @@ Konfigurace může probíhat několika způsoby, pričemž doporučovaný způso
 
 Popis ostatních možností konfigurace je možno nalézt v samostatném článku.
 
-{% page-ref page="../../sprava-a-diagnostika/konfigurace-zarizeni.md" %}
+{% page-ref page="../konfigurace-zarizeni.md" %}
 
 ![](../../../.gitbook/assets/web_config.png)
 
 Význam jednotlivých položek a jejich omezení je dostupný v příslušné sekci.
 
-{% page-ref page="../../sprava-a-diagnostika/omezeni-konfigurace.md" %}
+{% page-ref page="../omezeni-konfigurace.md" %}
 

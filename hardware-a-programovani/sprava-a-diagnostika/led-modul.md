@@ -44,7 +44,7 @@ Pokud je vyžadováno, uživatelský kód může převzít kontrolu nad LED modu
 
 ## Signalizace Bootloaderu
 
-[Bootloader](../architektura-fw/bootloader/) je softwarová komponenta, která je spuštěna ještě před startem vlastního programu a disponuje vlastní vizuální signalizací. Více informací ohledně přechodu do [command režimu](../architektura-fw/bootloader/command-mod.md) před startem firmware či pro obnovení [továrního nastavení ](../architektura-fw/bootloader/rezimy-bootloaderu.md#mod-restore)je možno nalézt v [příslušné kapitole](../architektura-fw/bootloader/).
+[Bootloader](bootloader/) je softwarová komponenta, která je spuštěna ještě před startem vlastního programu a disponuje vlastní vizuální signalizací. Více informací ohledně přechodu do [command režimu](bootloader/command-mod.md) před startem firmware či pro obnovení [továrního nastavení ](bootloader/rezimy-bootloaderu.md#mod-restore)je možno nalézt v [příslušné kapitole](bootloader/).
 
 Provádí-li bootloader náročnější operaci, může tuto činnost signalizovat nepravidelným blikáním.
 
