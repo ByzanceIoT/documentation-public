@@ -51,4 +51,14 @@ void loop(){   // The loop routine runs over and over agin forever
 
 }
 ```
+Cyklus **for** je řídicí struktura počítačového programu a je svou činností podobný cyklu while-do s testováním podmínky na začátku cyklu.
+```cpp
+     for(float offset=0.0; offset<=1; offset+=0.01) {
+        aout.write(0.005 + offset);
+        wait(0.25);
+     }
+```
+
+
+
 
