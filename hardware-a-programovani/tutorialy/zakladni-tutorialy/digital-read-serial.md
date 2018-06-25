@@ -1,6 +1,10 @@
 # Digital Read Serial
 
 Tento příklad ukazuje, jak monitorovat stav stisknutí tlačítka přes sériovou linku mezi IODA a PC.
+V tomto programu tlačítko odesílá 2 hodnoty-logickou 0 nebo 1.
+Kde 1 = stisknuto tím pádem se pin X01 propojí s 3V3.
+    0 = rozepnuto pin X01 je připojen na GND. 
+
 
 ## Použitý hardware
 
