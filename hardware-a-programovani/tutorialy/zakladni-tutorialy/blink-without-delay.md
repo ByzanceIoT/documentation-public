@@ -16,6 +16,10 @@ Pro sestavení obvodu připojte jeden konec odporu na pin Y25 na desce. Připojt
 
 ![](../../../.gitbook/assets/fade-fritzing%20%282%29.PNG)
 
+### Funkce 
+
+Tento program pouze mění stav na LED pomocí časovače. 
+
 ## Code
 
 ### 1.možnost programu\(Timer\)
