@@ -21,7 +21,8 @@ Připojte anodu \(delší, pozitivní kontakt\) své LED na analogový výstupn�
 ## Funkce 
 
 LED se stmívá a rozsvicí díky změně nastavení **PWM** která se mění v cyklu **for.**   
-Aby LED zhasla a rozsvítila se, postupně zvětšete hodnotu PWM z 0 \(úplně vypnuto\) na 1 \(zapnuto\) a pak znovu na 0, abyste cyklus dokončili. Pokaždé se přes smyčku zvyšuje o hodnotu proměnné offset.
+Aby LED zhasla a rozsvítila postupně se zvětšuje PWM z 0 \(úplně vypnuto\) na 1 \(zapnuto\) a pak  
+ znovu na 0. Pokaždé se přes smyčku zvyšuje o hodnotu proměnné offset.
 
 ## Code
 
