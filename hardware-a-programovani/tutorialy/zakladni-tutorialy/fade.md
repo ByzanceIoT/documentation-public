@@ -2,7 +2,7 @@
 
 Tento příklad demonstruje použití funkce PwmOut pro vypnutí a zapnutí LED. PwmOut využívá modulaci šířky impulzů \(PWM\), které velmi rychle zapíná a vypíná digitální pin s jiným poměrem mezi zapnutou a vypnutou částí, čímž se vytvoří efekt blednutí.Jelikož se v hlavím programu neuvádí frekvence PWM je nastavena na záklaní-50Hz.
 
-## Hardware
+## Použitý hardware
 
 * IODA
 * 220Ω rezistor
@@ -10,15 +10,17 @@ Tento příklad demonstruje použití funkce PwmOut pro vypnutí a zapnutí LED.
 * kabely
 * nepájivé kontaktní pole
 
-## Obvod
+## Schéma zapojení
 
 Připojte anodu \(delší, pozitivní kontakt\) své LED na analogový výstupní pin Y25 na desce prostřednictvím 220 ohmového rezistoru. Připojte katodu \(kratší, záporný kontakt\) přímo k zemi.
 
+![](../../../.gitbook/assets/aread-page-001.jpg)
+
 ![](../../../.gitbook/assets/fade-fritzing.PNG)
 
-## Schéma
+## Funkce 
 
-![](../../../.gitbook/assets/fade_schematic.PNG)
+LED bledne a rozsvicí se díky frekvenci PWM 
 
 ## Code
 
