@@ -13,7 +13,7 @@ Tento příklad znázorňuje, jak zjistit analogovou hodnotu napětí pomocí za
 
 Pro přípojení potenciometru se použijí 3 vodiče. První vychází z vnějšího pinu potenciometru na zem. Druhá část vychází z druhého vnějšího pinu na 3.3 voltu. Třetí vychází ze středního pinu potenciometru na analogový pin Y25. Pro zapojení LED se použijí 2 vodiče a jeden 100Ω rezistor.
 
-![](../../../.gitbook/assets/untitled-page-001-3.jpg)
+![](../../../.gitbook/assets/untitled-page-001-3%20%281%29.jpg)
 
 ![](../../../.gitbook/assets/analogreadserial-fritzing.PNG)
 

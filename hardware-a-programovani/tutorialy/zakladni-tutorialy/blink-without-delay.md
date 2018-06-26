@@ -12,7 +12,7 @@ Někdy je v programu potřeba udělat dvě věci najednou. Proto nelze použít 
 
 Pro sestavení obvodu připojte jeden konec odporu na pin Y25 na desce. Připojte dlouhý konektor LED \(kladný konektor nazvaný anoda\) na druhý konec odporu. Připojte krátký konektor LED \(negativní konektor, nazývanou katodou\) k desce GND, jak je znázorněno na výše uvedeném schématu a schématu níže.
 
-![](../../../.gitbook/assets/aread-page-001%20%281%29.jpg)
+![](../../../.gitbook/assets/untitled-page-001-2.jpg)
 
 ![](../../../.gitbook/assets/fade-fritzing%20%282%29.PNG)
 
@@ -46,13 +46,13 @@ void loop(){
 
 
 
-V hlavičce programu je nutné importovat knihovny [Byzance Hardware API](../../programovani-hw/byzance-api/) a [Mbed API](../../programovani-hw/mbed-api/). pomocí
+V hlavičce programu je nutné importovat knihovny [Byzance Hardware API](../../programovani-hw/byzance-api/) a [Mbed API](../../programovani-hw/mbed-api/). pomocí [timer](../../programovani-hw/mbed-api/casovani.md#timer).
 
 ```cpp
 #include "byzance.h"
 ```
 
-Poté nasledují tři konstruktory definující objekt [sériové linky](../komunikace-po-seriove-lince-uart-s-pc/) ,[digitálního výstupu](../../programovani-hw/mbed-api/vstupy-a-vystupy.md) a objekt [timer](../../programovani-hw/mbed-api/casovani.md).
+Poté nasledují tři konstruktory definující objekt [sériové linky](../komunikace-po-seriove-lince-uart-s-pc/) ,[digitálního výstupu](../../programovani-hw/mbed-api/vstupy-a-vystupy.md) a objekt .
 
 ```cpp
 Serial pc(SERIAL_TX, SERIAL_RX); 
