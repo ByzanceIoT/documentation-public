@@ -82,8 +82,7 @@ void init(){   // The init routine runs only once on the begin of the program
 }
 ```
 
-Cyklus **for** je řídicí struktura počítačového programu a je svou činností podobný cyklu while-do s testováním podmínky na začátku cyklu.  
- Uvnitř samotného cyklu se do proměnné **aout** přidává analogová hodnota 0.005  + **offset** která je zvětšována o 0.01 každých 25ms. 
+Cyklus **for** je řídicí struktura počítačového programu a je svou činností podobný cyklu while-do s testováním podmínky na začátku cyklu.
 
 ```cpp
      for(float offset=0.0; offset<=1; offset+=0.01) {
@@ -92,5 +91,9 @@ Cyklus **for** je řídicí struktura počítačového programu a je svou činno
      }
 ```
 
+ Uvnitř samotného cyklu se do proměnné **aout** přidává analogová hodnota 0.005  + **offset** která je zvětšována o 0.01 každých 25ms. 
 
+```cpp
+aout.write(0.005 + offset);
+```
 
