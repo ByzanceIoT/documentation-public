@@ -6,14 +6,6 @@ Tento příklad znázorňuje, jak zjistit analogovou hodnotu napětí pomocí za
 
 Zařízení IODA je vybavené ADC převodníky a na některých svých vstupech konektoru XY je schopné snímat analogovou hodnotu napětí a interpretovat tuto hodnotu číslem v programu. Hodnota tohoto vstupního napětí musí být v rozsahu **0-3.3V** a lze ji interpretovat několika způsoby. Buď jí lze interpretovat hodnotou **float**, která reprezentuje rozsah vstupního napětí desetiným číslem **0-1**, nebo jí lze interpretovat celočíselným 16ti-bitovým číslem \(uint16\_t\). Více o Analogovém vstupu se lze dozvědět v sekci [Vstupy a výstupy](../../programovani-hw/mbed-api/vstupy-a-vystupy.md#analogin). 
 
-
-
-Tato hodnota interpretuje napětí v rozsahu **0 - 3.3V**   
-
-
-
- jak číst z analogického vstupu pomocí potenciometru. **Potenciometr** je jednoduché mechanické zařízení, které mění odpor v závislosti na změně hřídele vůči odporové dráze. Průchodem napětí potenciometrem do analogového vstupu na desce lze měnit množství odporu, které se převede na analogovou hodnotu. V tomto příkladu monitoruje stav potenciometru po zavedení seriové komunikace mezi IODA a počítačem.
-
 ## Hardware
 
 * 10kΩ potenciometr

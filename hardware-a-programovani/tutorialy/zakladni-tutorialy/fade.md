@@ -46,19 +46,19 @@ void loop(){   // The loop routine runs over and over agin forever
 
      for (float offset = 1.0 ; offset >= 0 ; offset -= 0.01) {
         pwm.write ( 0.005 + offset );
-        wait ( 0.10 );
+        Thread::wait(10);
      }
 
 }
 ```
 
 Cyklus **for** je řídicí struktura počítačového programu a je svou činností podobný cyklu while-do s testováním podmínky na začátku cyklu.  
- Uvnitř samotného cyklu se do proměnné **aout** přidává analogová hodnota 0.005.
+ Uvnitř samotného cyklu se do proměnné **aout** přidává analogová hodnota 0.005  + **offset** která je zvětšována o 0.01 každých 25ms. 
 
 ```cpp
      for(float offset=0.0; offset<=1; offset+=0.01) {
         aout.write(0.005 + offset);
-        wait(0.25);
+        Thread::wait(25);
      }
 ```
 
