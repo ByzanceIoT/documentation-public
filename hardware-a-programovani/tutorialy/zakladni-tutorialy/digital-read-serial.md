@@ -16,7 +16,7 @@ Tlačítko SW1 připojíme mezi pin X01 a zem GND, dále připojíme pullup rezi
 
 ![](../../../.gitbook/assets/schema_pullup%20%282%29.png)
 
-![](../../../.gitbook/assets/digital-read-serial.PNG)
+![](../../../.gitbook/assets/digittalreadserial-fritz.PNG)
 
 ## Funkce
 
