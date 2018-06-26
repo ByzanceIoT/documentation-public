@@ -20,13 +20,12 @@ Připojte anodu \(delší, pozitivní kontakt\) své LED na analogový výstupn�
 
 ## Funkce 
 
-LED bledne a rozsvicí se díky frekvenci PWM 
+LED bledne a rozsvicí se díky díky změně nastavení **PWM** která se mění v cyklu **for.**   
+Aby LED zhasla a zapnula se, postupně zvětšete hodnotu PWM z 0 \(úplně vypnuto\) na 1 \(zapnuto\) a pak znovu na 0, abyste cyklus dokončili. V náčrtu níže je hodnota PWM nastavena pomocí proměnné nazvané brightness. Pokaždé se přes smyčku zvyšuje o hodnotu proměnné fadeAmount.
 
 ## Code
 
-Aby LED zhasla a zapnula se, postupně zvětšete hodnotu PWM z 0 \(úplně vypnuto\) na 1 \(zapnuto\) a pak znovu na 0, abyste cyklus dokončili. V náčrtu níže je hodnota PWM nastavena pomocí proměnné nazvané brightness. Pokaždé se přes smyčku zvyšuje o hodnotu proměnné fadeAmount.
-
-Je-li proměnná brightness na jedné z koncových hodnot \(buď 0 nebo 1\), změní se fadeAmount na negativní. Jinými slovy, pokud je `fadeAmount=0,01;` pak je nastavena na -0,01. Pokud je hodnota `fadeAmount=-0,01;`, pak je nastavena na hodnotu 0,01.
+je-li proměnná brightness na jedné z koncových hodnot \(buď 0 nebo 1\), změní se fadeAmount na negativní. Jinými slovy, pokud je `fadeAmount=0,01;` pak je nastavena na -0,01. Pokud je hodnota `fadeAmount=-0,01;`, pak je nastavena na hodnotu 0,01.
 
 ```cpp
 /**Fade
