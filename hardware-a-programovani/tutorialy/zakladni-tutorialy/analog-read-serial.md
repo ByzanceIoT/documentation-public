@@ -1,6 +1,6 @@
 # Analog Read Serial
 
-Tento příklad znázorňuje, jak zjistit analogovou hodnotu napětí pomocí zařízení IODA. Jako příklad budeme pomocí této hodnoty pozorovat pozici otočení potenciometru. Toto natočení budeme monitorovat pomocí sériové linky v PC
+Tento příklad znázorňuje, jak zjistit analogovou hodnotu napětí pomocí zařízení IODA. Jako příklad budeme pomocí této hodnoty pozorovat pozici otočení potenciometru. Toto natočení budeme monitorovat pomocí sériové linky v PC. Taktéž budeme měnit hodnotu napětí na LED a tím ji rozsvicet a zhasínat.
 
 ## Použitý hardware
 
@@ -13,7 +13,7 @@ Tento příklad znázorňuje, jak zjistit analogovou hodnotu napětí pomocí za
 
 Pro přípojení potenciometru se použijí 3 vodiče. První vychází z vnějšího pinu potenciometru na zem. Druhá část vychází z druhého vnějšího pinu na 3.3 voltu. Třetí vychází ze středního pinu potenciometru na analogový pin Y25. Pro zapojení LED se použijí 2 vodiče a jeden 100Ω rezistor.
 
-![](../../../.gitbook/assets/untitled-page-001-1%20%281%29.jpg)
+![](../../../.gitbook/assets/untitled-page-001-3.jpg)
 
 ![](../../../.gitbook/assets/analogreadserial-fritzing.PNG)
 
@@ -31,26 +31,18 @@ Zařízení IODA je vybavené ADC převodníky a na některých svých vstupech 
     * the result to set the pulse width modulation (PWM) of an output pin.
     * Also prints the results to the Serial Monitor.
     */
-
 #include "byzance.h"   // Include libraries for IODA.
-
 Serial pc(SERIAL_TX, SERIAL_RX);   // Defines the comunication interface if the serial line , SPI, CAN is needen in the program.
 
 AnalogOut aout(Y25);   
-
 AnalogIn ain(Y23);
-
 // the init routine runs only once when you press reset:
 void init(){
-
-
   pc.baud(115200);   // set baud rate.
 }
 // the loop routine runs over and over agin forever:
 void loop(){ 
-
   pc.printf("ain value =%3.3f%%\n",ain.read());
-
   aout=ain; 
 
   Thread::wait(100);   // Wait for 100ms.
@@ -58,11 +50,7 @@ void loop(){
 }
 ```
 
-Tato funkce slouží k definici sériového rozhraní a komunikaci po sériové lince. Ke komunikaci jsou zapotřebí dva piny - RX\(recieve data\) a TX\(transfer data\).
 
-```cpp
- Serial pc(SERIAL_TX, SERIAL_RX);
-```
 
  V hlavičce programu je nutné importovat knihovny [Byzance Hardware API](https://docu.byzance.cz/hardware-a-programovani/programovani-hw/byzance-api) a [Mbed API](https://docu.byzance.cz/hardware-a-programovani/programovani-hw/mbed-api). pomocí
 
@@ -70,7 +58,13 @@ Tato funkce slouží k definici sériového rozhraní a komunikaci po sériové 
  #include "byzance.h"
 ```
 
-### Analogový vstup \(AnalogIn\)
+ Poté nasleduje konstruktor definující objekt [sériové linky](https://docu.byzance.cz/hardware-a-programovani/tutorialy/komunikace-po-seriove-lince-uart-s-pc).
+
+```cpp
+ Serial pc(SERIAL_TX, SERIAL_RX);
+```
+
+## Analogový vstup \(AnalogIn\)
 
 Převede napětí na pinu analogového vstupu v rozmezí 0 - 3.3V do digitální podoby a interpretuje ho číslem na škále 0-4095. Rozlišení převodníku je 2.44 mV.
 

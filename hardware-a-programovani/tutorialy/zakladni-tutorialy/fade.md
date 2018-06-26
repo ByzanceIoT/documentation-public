@@ -14,7 +14,7 @@ Tento příklad demonstruje použití funkce PwmOut pro vypnutí a zapnutí LED.
 
 Připojte anodu \(delší, pozitivní kontakt\) své LED na analogový výstupní pin Y25 na desce prostřednictvím 220 ohmového rezistoru. Připojte katodu \(kratší, záporný kontakt\) přímo k zemi.
 
-![](../../../.gitbook/assets/aread-page-001%20%282%29.jpg)
+![](../../../.gitbook/assets/untitled-page-001-2.jpg)
 
 ![](../../../.gitbook/assets/fade-fritzing%20%281%29.PNG)
 
@@ -42,7 +42,7 @@ void loop(){   // The loop routine runs over and over agin forever
 
      for(float offset=0.0; offset<=1; offset+=0.01) {
         aout.write(0.005 + offset);
-        wait(0.25);
+        Thread::wait(0.25);
      }
 
      for (float offset = 1.0 ; offset >= 0 ; offset -= 0.01) {
@@ -51,6 +51,20 @@ void loop(){   // The loop routine runs over and over agin forever
      }
 
 }
+```
+
+
+
+ V hlavičce programu je nutné importovat knihovny [Byzance Hardware API](https://docu.byzance.cz/hardware-a-programovani/programovani-hw/byzance-api) a [Mbed API](https://docu.byzance.cz/hardware-a-programovani/programovani-hw/mbed-api). pomocí
+
+```cpp
+ #include "byzance.h"
+```
+
+ Poté nasleduje konstruktor definující objekt [sériové linky](https://docu.byzance.cz/hardware-a-programovani/tutorialy/komunikace-po-seriove-lince-uart-s-pc).
+
+```cpp
+ Serial pc(SERIAL_TX, SERIAL_RX);
 ```
 
 Cyklus **for** je řídicí struktura počítačového programu a je svou činností podobný cyklu while-do s testováním podmínky na začátku cyklu.  
@@ -62,4 +76,6 @@ Cyklus **for** je řídicí struktura počítačového programu a je svou činno
         Thread::wait(25);
      }
 ```
+
+
 
