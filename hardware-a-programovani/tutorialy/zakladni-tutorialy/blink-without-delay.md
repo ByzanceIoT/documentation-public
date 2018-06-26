@@ -1,26 +1,24 @@
 # Blink Without Delay
 
-Někdy je v programu potřeba udělat dvě věci najednou. Proto nelze použít funkci `Thread::wait()`. K vyřešení tohoto konkrétního problému lze použít funkci `Timer` .Která az provést.
+Někdy je v programu potřeba udělat dvě věci najednou. Proto nelze použít funkci `Thread::wait()`. K vyřešení tohoto konkrétního problému lze použít funkci `Timer`\|`Ticker` Která se založí v hlavičce programu.
 
-## Hardware
+## Použitý hardware
 
 * IODA
 * 220Ω rezistor
 * LED
 
-## Obvod
+## Schéma zapojení
 
 Pro sestavení obvodu připojte jeden konec odporu na pin Y25 na desce. Připojte dlouhý konektor LED \(kladný konektor nazvaný anoda\) na druhý konec odporu. Připojte krátký konektor LED \(negativní konektor, nazývanou katodou\) k desce GND, jak je znázorněno na výše uvedeném schématu a schématu níže.
 
-![](../../../.gitbook/assets/fade.PNG)
+![](../../../.gitbook/assets/aread-page-001%20%281%29.jpg)
 
-## Schematic
-
-![](../../../.gitbook/assets/fade_schematic.PNG)
+![](../../../.gitbook/assets/fade-fritzing%20%282%29.PNG)
 
 ## Code
 
-1.možnost programu
+### 1.možnost programu
 
 ```cpp
    /**BlinkWithoutDelay
@@ -46,7 +44,9 @@ void loop(){
 }
 ```
 
-2.možnost programu
+
+
+### 2.možnost programu
 
 ```cpp
    /**BlinkWithoutDelay

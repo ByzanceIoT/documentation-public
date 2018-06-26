@@ -14,9 +14,9 @@ Tento příklad demonstruje použití funkce PwmOut pro vypnutí a zapnutí LED.
 
 Připojte anodu \(delší, pozitivní kontakt\) své LED na analogový výstupní pin Y25 na desce prostřednictvím 220 ohmového rezistoru. Připojte katodu \(kratší, záporný kontakt\) přímo k zemi.
 
-![](../../../.gitbook/assets/aread-page-001.jpg)
+![](../../../.gitbook/assets/aread-page-001%20%282%29.jpg)
 
-![](../../../.gitbook/assets/fade-fritzing.PNG)
+![](../../../.gitbook/assets/fade-fritzing%20%281%29.PNG)
 
 ## Funkce 
 
