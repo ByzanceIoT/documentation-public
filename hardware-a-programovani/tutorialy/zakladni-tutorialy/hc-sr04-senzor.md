@@ -36,92 +36,38 @@ Poté co program načte vzdálenost předmětu projde podmínky pomoci kterých 
 
 ```cpp
 #include "byzance.h"
-#define cas 10
-#define max 30
-#define min 20
-#define dobaSignalu 30
 
 Serial pc(SERIAL_TX, SERIAL_RX);
 DigitalOut trigger(X02);
 DigitalIn  echo(X03);
-PwmOut pwm(Y06);
-PwmOut led(Y25);
-Timer timer;
-Timer casovac;
 Timer sonar;
 int correction = 0;
 int i;
 
-void blinkled(){
-led.period(0.1f);
-led.write(0.5f);
-}
-void bzucak(){
-        pwm.period(0.5f);
-        pwm.write(0.5f);
-        Thread::wait(100);
-}
-void bzucakoff(){
-    pwm.write(0.0f);
-    Thread::wait(100);
-}
-
 
 void init(){
     pc.baud(115200);
-
 }
-
 void loop(){
-
     float distance = 0;
     float i=0;
     sonar.reset();
         sonar.start();
         while (echo==2) {};
         sonar.stop();
-            trigger = 1;
-            sonar.reset();
-            wait_us(10.0);
-            trigger = 0;
-            while (echo==0) {};
-            sonar.start();
-            while (echo==1) {};
-            sonar.stop();
-            distance = (sonar.read_us())*0.017315;
-
-            if(distance>min&&distance<max&&timer==0){
-                pc.printf("dela se kava\n");
-                timer.start();
-            }
-            if(distance<min||distance>max){
-                timer.stop();
-                timer.reset();
-
-            }
-            if(timer>cas){
-                timer.stop();
-                timer.reset();
-                pc.printf("porad tu je\n");
-                casovac.start();
-                i=1;
-                }
-            if(distance>min&&distance<max&&i==1){
-                bzucak();
-                blinkled();
-            }
-            if(distance<min||distance>max||casovac.read()>dobaSignalu){
-                bzucakoff();
-                led.write(0.0f);
-                i=0;
-                casovac.stop();
-                casovac.reset();
-            }
-
-
-           pc.printf("%f",distance);
-           pc.printf("\n");
-            wait(0.2);
+        trigger = 1;
+        sonar.reset();
+        wait_us(10.0);
+        trigger = 0;
+        while (echo==0) {};
+        sonar.start();
+        while (echo==1) {};
+        sonar.stop();
+        
+        distance = (sonar.read_us())*0.017315;
+        pc.printf("%f",distance);
+        pc.printf("\n");
+        wait(0.2);
 
     }
 ```
