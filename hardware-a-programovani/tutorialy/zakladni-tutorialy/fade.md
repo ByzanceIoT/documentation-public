@@ -42,7 +42,7 @@ void loop(){   // The loop routine runs over and over agin forever
 
      for(float offset=0.0; offset<=1; offset+=0.01) {
         aout.write(0.005 + offset);
-        Thread::wait(0.25);
+        Thread::wait(25);
      }
 
      for (float offset = 1.0 ; offset >= 0 ; offset -= 0.01) {
@@ -65,6 +65,21 @@ void loop(){   // The loop routine runs over and over agin forever
 
 ```cpp
  Serial pc(SERIAL_TX, SERIAL_RX);
+```
+
+Nastavení PWM výstupu na pinu Y25 .
+
+```cpp
+PwmOut aout(Y25);   // Set pin Y25 for led.
+```
+
+  
+Při každém spuštění programu se nejprve provede funkce _**init\(\)**,_ která primárně slouží k inicializaci všech objektů a proměnných.V tomto programu pouze inicializujeme rychlost sériové linky.
+
+```cpp
+void init(){   // The init routine runs only once on the begin of the program
+  pc.baud(115200);   // Set baud rate.
+}
 ```
 
 Cyklus **for** je řídicí struktura počítačového programu a je svou činností podobný cyklu while-do s testováním podmínky na začátku cyklu.  
