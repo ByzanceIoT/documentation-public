@@ -2,28 +2,26 @@
 
 Tento příklad znázorňuje, jak zjistit analogovou hodnotu napětí pomocí zařízení IODA. Jako příklad budeme pomocí této hodnoty pozorovat pozici otočení potenciometru. Toto natočení budeme monitorovat pomocí sériové linky v PC
 
-## Analogový vstup
-
-Zařízení IODA je vybavené ADC převodníky a na některých svých vstupech konektoru XY je schopné snímat analogovou hodnotu napětí a interpretovat tuto hodnotu číslem v programu. Hodnota tohoto vstupního napětí musí být v rozsahu **0-3.3V** a lze ji interpretovat několika způsoby. Buď jí lze interpretovat hodnotou **float**, která reprezentuje rozsah vstupního napětí desetiným číslem **0-1**, nebo jí lze interpretovat celočíselným 16ti-bitovým číslem \(uint16\_t\). Více o Analogovém vstupu se lze dozvědět v sekci [Vstupy a výstupy](../../programovani-hw/mbed-api/vstupy-a-vystupy.md#analogin). 
-
-## Hardware
+## Použitý hardware
 
 * 10kΩ potenciometr
 * IODA
 * LED
 * 220Ω rezistor
 
-## Obvod
+## Schéma zapojení
 
 Pro přípojení potenciometru se použijí 3 vodiče. První vychází z vnějšího pinu potenciometru na zem. Druhá část vychází z druhého vnějšího pinu na 3.3 voltu. Třetí vychází ze středního pinu potenciometru na analogový pin Y25. Pro zapojení LED se použijí 2 vodiče a jeden 100Ω rezistor.
 
+![](../../../.gitbook/assets/analogreadserial-eagle.PNG)
+
 ![](../../../.gitbook/assets/analogreadserial-fritzing.PNG)
 
-## Schéma
 
 
+## Funkce
 
-![](../../../.gitbook/assets/sche.png)
+Zařízení IODA je vybavené ADC převodníky a na některých svých vstupech konektoru XY je schopné snímat analogovou hodnotu napětí a interpretovat tuto hodnotu číslem v programu. Hodnota tohoto vstupního napětí musí být v rozsahu **0-3.3V** a lze ji interpretovat několika způsoby. Buď jí lze interpretovat hodnotou **float**, která reprezentuje rozsah vstupního napětí desetiným číslem **0-1**, nebo jí lze interpretovat celočíselným 16ti-bitovým číslem \(uint16\_t\). Více o Analogovém vstupu se lze dozvědět v sekci [Vstupy a výstupy](../../programovani-hw/mbed-api/vstupy-a-vystupy.md#analogin). 
 
 ## Code
 
