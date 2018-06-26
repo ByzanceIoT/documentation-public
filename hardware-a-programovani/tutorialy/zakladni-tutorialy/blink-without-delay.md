@@ -18,7 +18,7 @@ Pro sestavení obvodu připojte jeden konec odporu na pin Y25 na desce. Připojt
 
 ### Funkce 
 
-Tento program pouze mění stav na LED pomocí časovače. 
+ Tento program bliká připojenou LED diodou bez toho aby omezoval hlavní vlákno.
 
 ## Code
 
@@ -50,13 +50,13 @@ void loop(){
 
 
 
-V hlavičce programu je nutné importovat knihovny [Byzance Hardware API](../../programovani-hw/byzance-api/) a [Mbed API](../../programovani-hw/mbed-api/). pomocí [timer](../../programovani-hw/mbed-api/casovani.md#timer).
+V hlavičce programu je nutné importovat knihovny [Byzance Hardware API](../../programovani-hw/byzance-api/) a [Mbed API](../../programovani-hw/mbed-api/). pomocí 
 
 ```cpp
 #include "byzance.h"
 ```
 
-Poté nasledují tři konstruktory definující objekt [sériové linky](../komunikace-po-seriove-lince-uart-s-pc/) ,[digitálního výstupu](../../programovani-hw/mbed-api/vstupy-a-vystupy.md) a objekt .
+Poté nasledují tři konstruktory definující objekt [sériové linky](../komunikace-po-seriove-lince-uart-s-pc/) ,[digitálního výstupu](../../programovani-hw/mbed-api/vstupy-a-vystupy.md) a objekt [timer](../../programovani-hw/mbed-api/casovani.md#timer).
 
 ```cpp
 Serial pc(SERIAL_TX, SERIAL_RX); 

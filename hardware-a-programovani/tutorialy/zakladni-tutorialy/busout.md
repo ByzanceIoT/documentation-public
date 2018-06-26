@@ -19,6 +19,8 @@ Tento program mění barvu RGB LED diody pomocí funkce `BusOut`. Barevný model
 
 RGB LED \(red,blue,green\) je LED která mění svou barvu podle toho jaké napětí je na konkrétních pinech.
 
+![](../../../.gitbook/assets/rgbmodel.gif)
+
 ## Code
 
 Ve funkci `void loop ()` se mění napětí na pinech\(Y01-Y03\) a tím i barva RGB LED .

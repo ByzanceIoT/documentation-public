@@ -19,11 +19,10 @@ Provedení změny \(např. rozsvícení LED\) je závislé na tom, kolikrát sti
 
 ![](../../../.gitbook/assets/digittalreadserial-fritzing.PNG)
 
-![](../../../.gitbook/assets/digital-read-serial-public-documentation.html)
+## Funkce 
 
-### Funkce 
-
-Stisknutím tlačítka, nebo přepínače se propojí dva body v obvodu. Když je tlačítko otevřeno \(není stisknuto\), nedojde k žádnému spojení mezi oběma kontakty tlačítka, takže kontakt je připojen k uzemnění \(pomocí pull-down\) a čte jako LOW nebo 0. Když je tlačítko zavřené \(stisknuto\), vytváří spojení mezi oběma kontakty, připojuje pin na 3.3 voltů tak, aby kontakt četl jako HIGH, nebo 1.
+Stisknutím tlačítka, nebo přepínače se propojí dva body v obvodu. Když je tlačítko rozepnuto \(není stisknuto\), nedojde k žádnému spojení mezi oběma kontakty tlačítka, takže kontakt je připojen k uzemnění \(pomocí pull-down\) a čte jako LOW nebo 0. Když je tlačítko sepnuto \(stisknuto\), vytváří spojení mezi oběma kontakty, připojuje pin na 3.3 voltů tak, aby kontakt četl jako HIGH, nebo 1.  
+V samotném programu se počítá kolikrát tlačítko bylo stisknuto a hodnoty se přičítají do proměnné **buttonPushCounter** pokud je tato proměnná dělitelná 4 rozsvítí se LED**.**
 
 ## Code
 
