@@ -14,7 +14,7 @@ Tento příklad demonstruje použití funkce PwmOut pro vypnutí a zapnutí LED.
 
 Připojte anodu \(delší, pozitivní kontakt\) své LED na analogový výstupní pin Y25 na desce prostřednictvím 220 ohmového rezistoru. Připojte katodu \(kratší, záporný kontakt\) přímo k zemi.
 
-![](../../../.gitbook/assets/fade.PNG)
+![](../../../.gitbook/assets/fade-fritzing.PNG)
 
 ## Schéma
 
@@ -51,14 +51,14 @@ void loop(){   // The loop routine runs over and over agin forever
 
 }
 ```
-Cyklus **for** je řídicí struktura počítačového programu a je svou činností podobný cyklu while-do s testováním podmínky na začátku cyklu.
+
+Cyklus **for** je řídicí struktura počítačového programu a je svou činností podobný cyklu while-do s testováním podmínky na začátku cyklu.  
+ Uvnitř samotného cyklu se do proměnné **aout** přidává analogová hodnota 0.005.
+
 ```cpp
      for(float offset=0.0; offset<=1; offset+=0.01) {
         aout.write(0.005 + offset);
         wait(0.25);
      }
 ```
-
-
-
 

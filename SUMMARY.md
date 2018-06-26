@@ -53,7 +53,7 @@
       * [Paměti](hardware-a-programovani/hardware/zakladni-jednotky/iodag3e/pameti.md)
       * [Technické specifikace](hardware-a-programovani/hardware/zakladni-jednotky/iodag3e/technicke-specifikace.md)
       * [Schémata](hardware-a-programovani/hardware/zakladni-jednotky/iodag3e/schemata.md)
-    * IODAG3L
+    * [IODAG3L](hardware-a-programovani/hardware/zakladni-jednotky/iodag3l.md)
   * [Rozšiřující moduly](hardware-a-programovani/hardware/rozsirujici-moduly/README.md)
     * [GSM shield](hardware-a-programovani/hardware/rozsirujici-moduly/gsm-shield.md)
     * [LED shield](hardware-a-programovani/hardware/rozsirujici-moduly/led-shield.md)
@@ -93,13 +93,13 @@
     * [DHT](hardware-a-programovani/programovani-hw/knihovny/dht.md)
     * [DS1820](hardware-a-programovani/programovani-hw/knihovny/ds1820.md)
     * [Dali](hardware-a-programovani/programovani-hw/knihovny/dali.md)
-    * EdgeStruct
+    * [EdgeStruct](hardware-a-programovani/programovani-hw/knihovny/edgestruct.md)
     * [I2CWrapper](hardware-a-programovani/programovani-hw/knihovny/i2cwrapper.md)
     * [Knock](hardware-a-programovani/programovani-hw/knihovny/knock.md)
     * [MFRC522](hardware-a-programovani/programovani-hw/knihovny/mfrc522.md)
-    * MFRC522::MIFARE\_Key
+    * [MFRC522::MIFARE\_Key](hardware-a-programovani/programovani-hw/knihovny/mfrc522-mifare_key.md)
     * [MPU9150](hardware-a-programovani/programovani-hw/knihovny/mpu9150.md)
-    * ms5637
+    * [ms5637](hardware-a-programovani/programovani-hw/knihovny/ms5637.md)
     * [OneWire](hardware-a-programovani/programovani-hw/knihovny/onewire.md)
     * [PCA9536](hardware-a-programovani/programovani-hw/knihovny/pca9536.md)
     * [RGB\_matrix](hardware-a-programovani/programovani-hw/knihovny/rgb_matrix.md)
@@ -110,7 +110,7 @@
     * [TCA6424A](hardware-a-programovani/programovani-hw/knihovny/tca6424a.md)
     * [TLC59116](hardware-a-programovani/programovani-hw/knihovny/tlc59116.md)
     * [TripleSevenSeg](hardware-a-programovani/programovani-hw/knihovny/triplesevenseg.md)
-    * MFRC522::Uid
+    * [MFRC522::Uid](hardware-a-programovani/programovani-hw/knihovny/mfrc522-uid.md)
     * [WS2812](hardware-a-programovani/programovani-hw/knihovny/ws2812.md)
     * [WakeUp](hardware-a-programovani/programovani-hw/knihovny/wakeup.md)
   * [Offline programování](hardware-a-programovani/programovani-hw/offline-programovani/README.md)
@@ -133,7 +133,7 @@
     * [Ovládání LED modulu](hardware-a-programovani/tutorialy/zakladni-tutorialy/ovladani-led-modulu.md)
     * [HC-SR04 Senzor](hardware-a-programovani/tutorialy/zakladni-tutorialy/hc-sr04-senzor.md)
   * [Pokročilé](hardware-a-programovani/tutorialy/pokrocile.md)
-* Správa a diagnostika
+* [Správa a diagnostika](hardware-a-programovani/sprava-a-diagnostika/README.md)
   * [LED modul](hardware-a-programovani/sprava-a-diagnostika/led-modul.md)
   * [Identifikace zařízení](hardware-a-programovani/sprava-a-diagnostika/identifikace-zarizeni.md)
   * [Monitoring parametrů](hardware-a-programovani/sprava-a-diagnostika/monitoring-parametru.md)
@@ -153,7 +153,7 @@
   * [Webová konzole](hardware-a-programovani/sprava-a-diagnostika/webova-konzole.md)
   * [Konfigurace zařízení](hardware-a-programovani/sprava-a-diagnostika/konfigurace-zarizeni.md)
   * [Omezení konfigurace](hardware-a-programovani/sprava-a-diagnostika/omezeni-konfigurace.md)
-* Knowledge base
+* [Knowledge base](hardware-a-programovani/knowledge-base/README.md)
   * [Náhodná čísla](hardware-a-programovani/knowledge-base/nahodna-cisla.md)
   * [Watchdog](hardware-a-programovani/knowledge-base/watchdog.md)
   * [Paměť RAM](hardware-a-programovani/knowledge-base/pamet-ram.md)

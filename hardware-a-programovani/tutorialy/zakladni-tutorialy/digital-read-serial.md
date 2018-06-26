@@ -8,8 +8,7 @@ Kde:
 
 1 = stisknuto tím pádem se pin X01 propojí s 3V3.
 
-0 = rozepnuto pin X01 je připojen na GND. 
-
+0 = rozepnuto pin X01 je připojen na GND.
 
 ## Použitý hardware
 

@@ -1,0 +1,2 @@
+# Správa a diagnostika
+
