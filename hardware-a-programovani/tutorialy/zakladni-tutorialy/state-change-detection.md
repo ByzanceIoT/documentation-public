@@ -17,7 +17,7 @@ Provedení změny \(např. rozsvícení LED\) je závislé na tom, kolikrát sti
 
 ![](../../../.gitbook/assets/assets-2f-l9jhrot0uirgp5ehgdl-2f-lce_ji7icmbikaodtth-2f-lce_rdtbvzgxef0ztof-2fschema_pullup.png)
 
-![](../../../.gitbook/assets/digittalreadserial-fritz%20%281%29.PNG)
+![](../../../.gitbook/assets/digittalreadserial-fritzing.PNG)
 
 ![](../../../.gitbook/assets/digital-read-serial-public-documentation.html)
 
