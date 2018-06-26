@@ -46,7 +46,7 @@ void loop(){   // The loop routine runs over and over agin forever
      }
 
      for (float offset = 1.0 ; offset >= 0 ; offset -= 0.01) {
-        pwm.write ( 0.005 + offset );
+        aout.write ( 0.005 + offset );
         Thread::wait(10);
      }
 
