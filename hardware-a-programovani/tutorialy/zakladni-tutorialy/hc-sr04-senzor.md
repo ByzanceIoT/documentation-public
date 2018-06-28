@@ -29,7 +29,7 @@ Echo: výstupní signál TTL\(5V\) -&gt; vzdálenost\[cm\] = doba\_Echo\[us\] \*
 
 ### Funkce 
 
- Ultrazvukový snímač vyvolává vysokofrekvenční zvukové vlny a zachytáva echo, které je získane odrazem od překážky. V programu se počíta časový interval mezi vyslaným a přimutým signálem čím lze určit vzdálenost od objektu. 
+ Ultrazvukový snímač vyvolává vysokofrekvenční zvukové vlny a zachytáva echo, které je získane odrazem od překážky. V programu se počíta časový interval mezi vyslaným a přijmutým signálem čím lze určit vzdálenost od objektu. 
 
 ## Code
 
