@@ -1,4 +1,4 @@
-# Digital Read Serial
+# Digital Read
 
 Tento příklad ukazuje, jak monitorovat stav stisknutí tlačítka přes sériovou linku mezi IODA a PC.
 

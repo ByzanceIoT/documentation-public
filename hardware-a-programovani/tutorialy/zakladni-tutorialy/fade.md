@@ -1,4 +1,4 @@
-# Fade
+# PWM Fade
 
 Tento příklad demonstruje použití funkce PwmOut ke stmívání LED diody. PwmOut využívá pulzně šířkovou modulaci \(PWM\), pomocí, které lze modulovat analogovou hodnotu napětí na digitálním výstupu. 
 

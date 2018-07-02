@@ -1,4 +1,4 @@
-# Analog Read Serial
+# Analog Read/Write
 
 Tento příklad znázorňuje, jak vyčíst analogovou hodnotu napětí pomocí zařízení IODAG3E. Jako příklad budeme pomocí této hodnoty pozorovat pozici otočení potenciometru. Toto natočení budeme monitorovat pomocí sériové linky v PC. Taktéž budeme měnit hodnotu napětí na LED a tím ji stmívat.
 
