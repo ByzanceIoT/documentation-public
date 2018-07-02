@@ -1,6 +1,6 @@
 # Fade
 
-Tento příklad demonstruje použití funkce PwmOut pro stmívání LED. PwmOut využívá modulaci šířky impulzů \(PWM\), které velmi rychle zapíná a vypíná digitální pin s jiným poměrem mezi zapnutou a vypnutou částí, čímž se vytvoří efekt blednutí.Jelikož se v hlavím programu neuvádí frekvence PWM je nastavena na záklaní-50Hz.
+Tento příklad demonstruje použití funkce PwmOut ke stmívání LED diody. PwmOut využívá pulzně šířkovou modulaci \(PWM\), pomocí, které lze modulovat analogovou hodnotu napětí na digitálním výstupu. 
 
 ## Použitý hardware
 
@@ -12,7 +12,7 @@ Tento příklad demonstruje použití funkce PwmOut pro stmívání LED. PwmOut 
 
 ## Schéma zapojení
 
-Připojte anodu \(delší, pozitivní kontakt\) své LED na analogový výstupní pin Y25 na desce prostřednictvím 220 ohmového rezistoru. Připojte katodu \(kratší, záporný kontakt\) přímo k zemi.
+[Anoda](https://cs.wikipedia.org/wiki/LED#/media/File:%2B-_of_LED_2.svg) LED je zapojena na pin Y25 přes 220Ω resistor. [Katoda](https://cs.wikipedia.org/wiki/LED#/media/File:%2B-_of_LED_2.svg) je připojena k zemi \(pinu GND\). 
 
 ![](../../../.gitbook/assets/untitled-page-001-2%20%281%29.jpg)
 
