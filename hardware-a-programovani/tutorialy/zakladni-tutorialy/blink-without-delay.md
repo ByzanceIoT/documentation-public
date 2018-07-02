@@ -1,6 +1,6 @@
 # Blink Without Delay
 
-Někdy je v programu potřeba udělat dvě věci najednou. Proto nelze použít funkci `Thread::wait()`. K vyřešení tohoto konkrétního problému lze použít funkci `Timer`\|`Ticker`\(časovač\)
+Tento tutoriál ukazuje jak neblokovat hlavní nekonečnou smyčku `loop()` v případě, že potřebujeme paralelně provádět časově přesnou operaci \(V tomto případě blikání LED\).
 
 ## Použitý hardware
 
@@ -10,7 +10,7 @@ Někdy je v programu potřeba udělat dvě věci najednou. Proto nelze použít 
 
 ## Schéma zapojení
 
-Pro sestavení obvodu připojte jeden konec odporu na pin Y25 na desce. Připojte dlouhý konektor LED \(kladný konektor nazvaný anoda\) na druhý konec odporu. Připojte krátký konektor LED \(negativní konektor, nazývanou katodou\) k desce GND, jak je znázorněno na výše uvedeném schématu a schématu níže.
+LED připojíme k digitálnímu výstupu X&lt;Michal doplní který&gt;.
 
 ![](../../../.gitbook/assets/untitled-page-001-2.jpg)
 
