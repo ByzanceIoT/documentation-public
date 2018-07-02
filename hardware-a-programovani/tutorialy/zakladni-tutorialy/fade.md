@@ -20,13 +20,9 @@ Tento příklad demonstruje použití funkce PwmOut ke stmívání LED diody. Pw
 
 ## Funkce 
 
-LED se stmívá a rozsvicí díky změně nastavení **PWM** která se mění v cyklu **for.**   
-Aby LED zhasla a rozsvítila postupně se zvětšuje PWM z 0 \(úplně vypnuto\) na 1 \(zapnuto\) a pak  
- znovu na 0. Pokaždé se přes smyčku zvyšuje o hodnotu proměnné offset.
+U **PWM** lze nastavit dva parametry - **frekvenci a střídu**. **Frekvence** nastavuje periodu pulzů a v tomto příkladě jí nastavíme dostatečně vysokou, aby lidské oko nebylo schopné zaznamenat rychlé blikání s LED diodou. **Střída** nastavuje poměr mezi zapnutím a vypnutím, tedy dobou, kdy je během jedné periody digitální výstup nastaven na logickou úroveň 1 a logickou 0. Tato hodnota určuje stmívání LED. V následujícím programu je nastavena fixní perioda na 0,01s \(100Hz\) a postupnou změnou střídy se LED dioda nejprve rozsvěcí a poté stmívá. 
 
 ## Code
-
-je-li proměnná brightness na jedné z koncových hodnot \(buď 0 nebo 1\), změní se fadeAmount na negativní. Jinými slovy, pokud je`offset=0,01;` pak je nastavena na -0,01. Pokud je hodnota `offset=-0,01;`, pak je nastavena na hodnotu 0,01.
 
 ```cpp
 /**Fade
@@ -37,7 +33,8 @@ je-li proměnná brightness na jedné z koncových hodnot \(buď 0 nebo 1\), zm�
 Serial pc(SERIAL_TX, SERIAL_RX);   // Defines the comunication interface if the serial line , SPI, CAN is needen in the program.
 PwmOut aout(Y25);   // Set pin Y25 for led.
 void init(){   // The init routine runs only once when you press reset.
-    pc.baud(115200);   // Set baud rate.
+    pc.baud(115200);     // Set baud rate.
+    aout.period(0.01f);  // Set the period(frequency) of PWM output to 0,01s (100Hz)
 }
 void loop(){   // The loop routine runs over and over agin forever
 
@@ -75,15 +72,16 @@ PwmOut aout(Y25);   // Set pin Y25 for led.
 ```
 
   
-Při každém spuštění programu se nejprve provede funkce _**init\(\)**,_ která primárně slouží k inicializaci všech objektů a proměnných.V tomto programu pouze inicializujeme rychlost sériové linky.
+Při každém spuštění programu se nejprve provede funkce _**init\(\)**,_ která primárně slouží k inicializaci všech objektů a proměnných.V tomto programu inicializujeme rychlost komunikace sériové linky a nastavujeme frekvenci PWM na 100Hz.
 
 ```cpp
 void init(){   // The init routine runs only once on the begin of the program
-  pc.baud(115200);   // Set baud rate.
+  pc.baud(115200);     // Set baud rate.
+  aout.period(0.01f);  // Set the period(frequency) of PWM output to 0,01s (100Hz)
 }
 ```
 
-Cyklus **for** je řídicí struktura počítačového programu a je svou činností podobný cyklu while-do s testováním podmínky na začátku cyklu.
+v hlavní smyčce `loop()` poté definujeme cyklus **for**, ve kterém postupně zvyšujeme střídu PWM na výstupu **aout**, čímž rozsvěcíme LED diodu. Obdobný cyklus později využíváme i ke zmenšování střídy \(stmívání LED\).
 
 ```cpp
      for(float offset=0.0; offset<=1; offset+=0.01) {
@@ -92,7 +90,7 @@ Cyklus **for** je řídicí struktura počítačového programu a je svou činno
      }
 ```
 
- Uvnitř samotného cyklu se do proměnné **aout** přidává analogová hodnota 0.005  + **offset** která je zvětšována o 0.01 každých 25ms. 
+ Změnu hodnoty střídy PWM aout provádíme pomocí příkazu 
 
 ```cpp
 aout.write(0.005 + offset);
