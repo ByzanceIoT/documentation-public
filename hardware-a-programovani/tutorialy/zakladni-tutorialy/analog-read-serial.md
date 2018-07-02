@@ -1,11 +1,11 @@
 # Analog Read Serial
 
-Tento příklad znázorňuje, jak zjistit analogovou hodnotu napětí pomocí zařízení IODA. Jako příklad budeme pomocí této hodnoty pozorovat pozici otočení potenciometru. Toto natočení budeme monitorovat pomocí sériové linky v PC. Taktéž budeme měnit hodnotu napětí na LED a tím ji rozsvicet a zhasínat.
+Tento příklad znázorňuje, jak vyčíst analogovou hodnotu napětí pomocí zařízení IODAG3E. Jako příklad budeme pomocí této hodnoty pozorovat pozici otočení potenciometru. Toto natočení budeme monitorovat pomocí sériové linky v PC. Taktéž budeme měnit hodnotu napětí na LED a tím ji stmívat.
 
 ## Použitý hardware
 
+* IODAG3E
 * 10kΩ potenciometr
-* IODA
 * LED
 * 220Ω rezistor
 
