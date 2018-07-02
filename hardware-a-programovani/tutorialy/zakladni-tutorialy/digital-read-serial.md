@@ -4,7 +4,7 @@ Tento příklad ukazuje, jak monitorovat stav stisknutí tlačítka přes sério
 
 ## Použitý hardware
 
-* IODA 
+* IODAG3E
 * tlačítko
 * kabely
 * 10kΩ rezistor
@@ -65,7 +65,7 @@ Serial pc(SERIAL_TX, SERIAL_RX);
 DigitalIn button(X01);   // Set the digital input pin.
 ```
 
-Při každém spuštění programu se nejprve provede funkce _**init\(\)**,_ která primárně slouží k inicializaci všech objektů a proměnných.V tomto programu pouze inicializujeme rychlost sériové linky.
+Při každém spuštění programu se nejprve provede funkce _**init\(\)**,_ která primárně slouží k inicializaci všech objektů a proměnných.V tomto případě pouze inicializujeme rychlost komunikace sériové linky.
 
 ```cpp
 void init(){   // The init routine runs only once on the begin of the program
@@ -73,7 +73,7 @@ void init(){   // The init routine runs only once on the begin of the program
 }
 ```
 
-V samotném programu, tedy v nekonečné smyčce _**loop\(\)**_, poté kontrolujeme stav stisknutí tlačítka pomocí funkce _**read\(\)**_ a na základě toho rozhodujeme, co za zprávu vypsat do sériové linky.
+V samotném programu, tedy v nekonečné smyčce _**loop\(\)**_, poté kontrolujeme stav stisknutí tlačítka pomocí funkce _**read\(\)**_ a na základě toho rozhodujeme, kterou zprávu vypsat do sériové linky.
 
 ```cpp
 if(button.read() == 0){
