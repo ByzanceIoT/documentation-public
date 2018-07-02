@@ -18,11 +18,11 @@ LED připojíme k digitálnímu výstupu X&lt;Michal doplní který&gt;.
 
 ### Funkce 
 
- Tento program bliká připojenou LED diodou bez toho aby omezoval hlavní vlákno.
+K tomu, abychom mohli blikat LED s určitou frekvencí bez toho abychom omezili hlavní vlákno, můžeme přistupovat dvěma způsoby. První způsob je použít Timer \(Časovač\), který lze spustit a pozorovat překročení dané doby. Druhým způsobem je využít Ticker, který cyklicky danou dobu volá zadanou funkci.
 
-## Code
+## Code 
 
-### 1.možnost programu\(Timer\)
+### 1. Program s Timerem
 
 ```cpp
    /**BlinkWithoutDelay
@@ -69,12 +69,11 @@ Při každém spuštění programu se nejprve provede funkce _**init\(\)**,_ kte
 ```cpp
 void init(){   // The init routine runs only once on the begin of the program
   pc.baud(115200);   // Set baud rate.
-  casovac.start();
+  casovac.start();   // Start timer 
 }
 ```
 
-V hlavní části programu je pouze podmínka if která se splní pokud časovač načte hodnotu větší než 2s.  
-Jestliže podmínka proměnná **ledPin** změní svojí stávající hodnotu a časovač se restartuje.
+V hlavní části programu je pouze podmínka, která je splněna v případě, že časovač je spuštěn déle než 2 sekundy. Jestliže je podmínka splněna, změní se stav na LED diodě \(zhasnout/rozsvítit\) a resetuje se časovač aby počítal opět od nuly.
 
 ```cpp
 void loop(){
@@ -85,7 +84,7 @@ void loop(){
 }
 ```
 
-### 2.možnost programu\(Ticker\)
+### 2. Program s Tickerem
 
 ```cpp
    /**BlinkWithoutDelay
@@ -97,13 +96,13 @@ void loop(){
 #include "byzance.h"   // Include libraries for IODA
 DigitalOut ledPin(X01);   // Set pin Y25 for led.
 Serial pc(SERIAL_TX, SERIAL_RX);   // Defines the comunication interface if the serial line , SPI, CAN is needen in the program.
-Ticker casovac;
-void led(){
+Ticker ticker;
+void blink_led(){
     ledPin=!ledPin;
 }
 void init(){   // The init routine runs only once when you press reset.
     pc.baud(115200);   // Set baud rate.
-    casovac.attach(led,2);
+    ticker.attach(blink_led,2);  // Attach to ticker function led() and call it each 2 seconds
 
 }
 void loop(){
@@ -112,13 +111,7 @@ void loop(){
 
 
 
-V hlavičce programu je nutné importovat knihovny [Byzance Hardware API](../../programovani-hw/byzance-api/) a [Mbed API](../../programovani-hw/mbed-api/). pomocí
-
-```cpp
-#include "byzance.h"
-```
-
-Poté nasledují tři konstruktory definující objekt [sériové linky](../komunikace-po-seriove-lince-uart-s-pc/) ,[digitálního výstupu](../../programovani-hw/mbed-api/vstupy-a-vystupy.md) a objekt [ticker](../../programovani-hw/mbed-api/casovani.md#ticker).
+U tohoto programu místo Timeru  definujeme Ticker. 
 
 ```cpp
 Serial pc(SERIAL_TX, SERIAL_RX); 
@@ -126,21 +119,22 @@ DigitalOut LedPin(X01);   // Set the digital output pin.
 Ticker casovac;
 ```
 
-V hlavičce programu taktéž založíme funkci **led**. Kterou budeme dále v programu vyvolávat.  
-Ve funkci se pouze mění hodnota proměnné **ledPin**.
+V programu dále definujeme novou funkci `blink_led()` , kterou bude Ticker volat.
 
 ```cpp
-void led(){
+void blink_led(){
     ledPin=!ledPin;
 }
 ```
 
-Při každém spuštění programu se nejprve provede funkce _**init\(\)**,_ která primárně slouží k inicializaci všech objektů a proměnných.Zde inicializujeme rychlost sériové linky a zjišťujeme zda časovač dosahl hodnoty 2s., pokud ano vyvolá se již zmiňovaná funkce **led.**
+Při každém spuštění programu se nejprve provede funkce _**init\(\)**,_ která primárně slouží k inicializaci všech objektů a proměnných.Zde inicializujeme rychlost sériové linky a nastavíme Ticker, aby volal funkci `led()`, každé 2 sekundy
 
 ```cpp
 void init(){   // The init routine runs only once on the begin of the program
   pc.baud(115200);   // Set baud rate.
-  casovac.attach(led,2);
+  ticker.attach(led,2);
 }
 ```
+
+V hlavní smyčce loop\(\), se poté mohou provádět libovolně jiné operace.
 
