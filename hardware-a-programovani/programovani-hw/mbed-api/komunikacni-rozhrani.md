@@ -25,40 +25,57 @@ void loop(){
 
 ## [SPI](https://os.mbed.com/docs/latest/reference/spi.html)
 
-Serial Peripheral Interface Master.
+Komunikace pomoc SPI \(Serial Peripheral Interface\), rozlišuje komunikační prvky na Mastra a jeho podřízené jednotky - Slave. Každý Master může obsluhovat několik Slavů tím způsobem, že vyzve jednotku ke komunikaci přepnutím příslušného pinu SS \(Slave select\) do logické nuly a vyslání dotazu \(Bytu\). Jednotka Slave poté na tento dotaz odpovídá zpátky. Po ukončení komunikace Master přepne pin SS zpět do logické jedničky. Jednotka Slave nikdy neodesílá žádná data bez výzvy a Master vždy může komunikovat pouze s jedním Slavem najednou. Pro každý Slave má Master jeden příslušný digitální pin SS. Komunikační protokol je blíže vysvětlený například na [Wiki](https://en.wikipedia.org/wiki/Serial_Peripheral_Interface_Bus). 
 
-See [https://en.wikipedia.org/wiki/Serial\_Peripheral\_Interface\_Bus](https://en.wikipedia.org/wiki/Serial_Peripheral_Interface_Bus)
+### [SPI Master](https://os.mbed.com/docs/latest/reference/spi.html)
 
 Příklad demonstruje využití sběrnice SPI pro čtení WHOAMI registru ze zařízení připojeného na sběrnici SPI na X konektoru. 
 
 ```cpp
 #include "byzance.h"
 
-Serial pc(SERIAL_TX, SERIAL_RX);	//USBSerial pc(0x1f00, 0x2012, 0x0001, false); //
-SPI spi(X14, X12, X10); // mosi, miso, sclk
-DigitalOut cs( X08);
+Serial pc(SERIAL_TX, SERIAL_RX);    //For USB use: USBSerial pc(0x1f00, 0x2012, 0x0001, false); //
+SPI spi(X14, X12, X10);  // mosi, miso, sclk
+DigitalOut ss0(X08);    // Slave 0 select pin (Sometimes called CS - Chip Select)
 ​
 void init(){
-    spi.format(8,3);           //8 bits, high steady state clock, second edge capture
-    spi.frequency(1000000);    //set clk frequency to 1 MHz
+    spi.format(8,3);           // 8 bits, high steady state clock, second edge capture
+    spi.frequency(1000000);    // Set clk frequency to 1 MHz
 }
 ​
 void loop(){     
-    cs = 0;          //select the device by seting chip select low
-    spi.write(0x8F); //send 0x8f, the command to read the WHOAMI register
-    int whoami = spi.write(0x00);   //send dummy byto to receive data
-    cs = 1;          //deselect device
-    pc.printf("WHOAMI register = 0x%X\n", whoami);    //print the result
+    ss0 = 0;                          // Select the device by seting chip select low
+    int whoami = spi.write(0x00);     // Send dummy byte to Slave and save received data
+    ss0 = 1;                          // Deselect device
+    pc.printf("WHOAMI register = 0x%X\n", whoami);    //Print the result
     Thread::wait(1000);
 }
 ```
 
-## [SPISlave](https://os.mbed.com/docs/latest/reference/spislave.html)
+### [SPISlave](https://os.mbed.com/docs/latest/reference/spislave.html)
 
-Serial Peripheral Interface Slave.
+Příklad programu, který reaguje na přijatá data od SPI Mastera přičtením jedničky k přijatému Bytu
 
 ```cpp
-SPISlave spislave;
+#include "byzance.h"
+
+Serial pc(SERIAL_TX, SERIAL_RX);
+SPISlave device(X14, X12, X10, X08);   // mosi, miso, scl, ss (or CS - Chip select)
+
+
+void init(){
+	pc.baud(115200);
+}
+
+void loop(){
+	// React if master send you a message
+	if(device.receive()) {
+		uint8_t v = device.read();    				// Read byte from master
+	    pc.printf("Byte 0x%X recieved\n",v);		// Print it
+	    device.reply(v+1);          			 	// Add one to received message and reply with it
+	 }
+}
+
 ```
 
 ## [I2C](https://os.mbed.com/docs/latest/reference/i2c.html)

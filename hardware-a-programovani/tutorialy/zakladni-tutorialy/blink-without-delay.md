@@ -10,7 +10,7 @@ Tento tutoriál ukazuje jak neblokovat hlavní nekonečnou smyčku `loop()` v p�
 
 ## Schéma zapojení
 
-LED připojíme k digitálnímu výstupu X01 
+ [Anoda](https://cs.wikipedia.org/wiki/LED#/media/File:%2B-_of_LED_2.svg) LED je zapojena na pin X01 přes 1000Ω resistor. [Katoda](https://cs.wikipedia.org/wiki/LED#/media/File:%2B-_of_LED_2.svg) je připojena k zemi \(pinu GND\).
 
 ![](../../../.gitbook/assets/untitled-page-001-4.jpg)
 
