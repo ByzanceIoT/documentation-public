@@ -5,18 +5,18 @@ Tento příklad demonstruje použití funkce PwmOut ke stmívání LED diody. Pw
 ## Použitý hardware
 
 * IODA
-* 220Ω rezistor
+* 1000Ω rezistor
 * LED
 * kabely
 * nepájivé kontaktní pole
 
 ## Schéma zapojení
 
-[Anoda](https://cs.wikipedia.org/wiki/LED#/media/File:%2B-_of_LED_2.svg) LED je zapojena na pin Y25 přes 220Ω resistor. [Katoda](https://cs.wikipedia.org/wiki/LED#/media/File:%2B-_of_LED_2.svg) je připojena k zemi \(pinu GND\). 
+[Anoda](https://cs.wikipedia.org/wiki/LED#/media/File:%2B-_of_LED_2.svg) LED je zapojena na pin X01 přes 1000Ω resistor. [Katoda](https://cs.wikipedia.org/wiki/LED#/media/File:%2B-_of_LED_2.svg) je připojena k zemi \(pinu GND\). 
 
-![](../../../.gitbook/assets/untitled-page-001-2%20%281%29.jpg)
+![](../../../.gitbook/assets/untitled-page-001-4%20%281%29.jpg)
 
-![](../../../.gitbook/assets/fade-fritzing%20%281%29.PNG)
+![](../../../.gitbook/assets/fade-fritzing%20%284%29.PNG)
 
 ## Funkce 
 
@@ -26,12 +26,12 @@ U **PWM** lze nastavit dva parametry - **frekvenci a střídu**. **Frekvence** n
 
 ```cpp
 /**Fade
-  *This example shows how to fade an LED on pin Y25 using the
+  *This example shows how to fade an LED on pin X01 using the
   *PWM function.
   */
 #include "byzance.h"   // Include libraries for IODA
 Serial pc(SERIAL_TX, SERIAL_RX);   // Defines the comunication interface if the serial line , SPI, CAN is needen in the program.
-PwmOut aout(Y25);   // Set pin Y25 for led.
+PwmOut aout(X01);   // Set pin X01 for led.
 void init(){   // The init routine runs only once when you press reset.
     pc.baud(115200);     // Set baud rate.
     aout.period(0.01f);  // Set the period(frequency) of PWM output to 0,01s (100Hz)

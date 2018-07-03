@@ -5,16 +5,16 @@ Tento tutoriál ukazuje jak neblokovat hlavní nekonečnou smyčku `loop()` v p�
 ## Použitý hardware
 
 * IODA
-* 220Ω rezistor
+* 1000Ω rezistor
 * LED
 
 ## Schéma zapojení
 
-LED připojíme k digitálnímu výstupu X&lt;Michal doplní který&gt;.
+LED připojíme k digitálnímu výstupu X01 
 
-![](../../../.gitbook/assets/untitled-page-001-2.jpg)
+![](../../../.gitbook/assets/untitled-page-001-4.jpg)
 
-![](../../../.gitbook/assets/fade-fritzing%20%282%29.PNG)
+![](../../../.gitbook/assets/fade-fritzing.PNG)
 
 ### Funkce 
 
