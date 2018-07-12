@@ -42,6 +42,8 @@ Více informací k MQTT připojení je možno nalézt v sekci [Komunikace se ser
 * **autobackup** - Funkce, která zajišťuje, zajišťuje zálohu starého firmware při doručení nového.
 * **netsource** - Zdroj, odkud bere zařízení internet.
 * **configured** - při prvním spuštění bootloader naběhne vždy do Command režimu a čeká na konfiguraci všech parametrů. Až jsou parametry nastaveny, ''configured'' se přepne na 1 a tím se dá zařízení najevo, že je již plně nakonfigurováno a příště bude už nabíhat do normálního programu.
+* **reconnect** - Nastavení, po kolika vteřinách se bude znovu provádět pokus o připojení k serveru v případě předchozího neúspěchu či odmítnutí.
+* **encryption** - Zapnutí nebo vypnutí šifrování komunikace.
 * **webview** - Zapnutí nebo vypnutí funkcionality [webového rozhraní](../webove-rozhrani/).
 * **webport** - Port, na kterém bude přístupno [webové rozhraní](../webove-rozhrani/).
 * **timeoffset** - Slouží pro lokalizovanou [práci s časem](../../tutorialy/datum-a-cas-rtc.md). Nastavení offsetu lokálního času RTC od UTC.
@@ -49,6 +51,7 @@ Více informací k MQTT připojení je možno nalézt v sekci [Komunikace se ser
 * **lowpanbr** - Zapnutí funkce [lowpan border router](../../konektivita/6lowpan.md).
 * **restartbl** - Identifikátor pro [restart zařízení do bootloaderu](./).
 * **revision** - Zjištění [revize zařízení](command-mod.md)
+* **autojump** - Nastavení časovače autojump na určitý čas. Po této době neaktivity \(v sekundách\) se zařízení přepne automaticky z bootloaderu do firmware.
 
 ## Příkazy pouze s parametrem
 
@@ -60,9 +63,9 @@ Více informací k MQTT připojení je možno nalézt v sekci [Komunikace se ser
 
   Parametry mohou být "bootloader", "firmware", "buffer", "backup".
 
-* **intmem** - Zformátuje paměť.
+* **erase** - Zformátuje paměť.
 
-  Parametry mohou být "intmem" nebo "extmem".
+  Parametry mohou být "firmware", "buffer", "backup", "extmem"
 
 * **firmware** - Práce si firmwarem.
 
