@@ -170,6 +170,28 @@ při prvním spuštění bootloader naběhne vždy do Command režimu a čeká n
 | možnost číst | ano, uživatel |
 | možnost zapisovat | ano, uživatel |
 
+### **reconnect**
+
+Nastavení času pro opětovné připojení k serverům, v případě chyby.
+
+| typ | 32 bit unsigned integer |
+| --- | --- | --- | --- | --- |
+| omezení | 0 -  4294967295 |
+| výchozí hodnota | 30 |
+| možnost číst | ano, uživatel |
+| možnost zapisovat | ano, uživatel |
+
+### encryption
+
+Zapnutí nebo vypnutí možnosti šifrování.
+
+| typ | boolean |
+| --- | --- | --- | --- | --- |
+| omezení | 0, 1 |
+| výchozí hodnota | 1 |
+| možnost číst | ano, uživatel |
+| možnost zapisovat | ano, uživatel |
+
 ### **webview**
 
 Zapnutí nebo vypnutí funkcionality [webového rozhraní](webove-rozhrani/).
