@@ -13,7 +13,7 @@ Testovací zařízení \(IODA ATE\) slouží ke komunikaci s počítačem, ovlá
 
 V průběhu komunikace s počítačem se vyměňují následující data
 
-* počáteční konfigurace, odlišná od [výchozích hodnot](../../../sprava-a-diagnostika/bootloader/vychozi-hodnoty.md)
+* počáteční konfigurace, odlišná od [výchozích hodnot]()
 * přidělená MAC adresa
 * příslušná [revize](../../../sprava-a-diagnostika/identifikace-zarizeni.md#revize)
 * mapa testovaných pinů a předpokládaných výsledků testů

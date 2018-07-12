@@ -188,7 +188,7 @@ Zapnutí nebo vypnutí možnosti šifrování.
 | typ | boolean |
 | --- | --- | --- | --- | --- |
 | omezení | 0, 1 |
-| výchozí hodnota | 1 |
+| výchozí hodnota | 0 |
 | možnost číst | ano, uživatel |
 | možnost zapisovat | ano, uživatel |
 

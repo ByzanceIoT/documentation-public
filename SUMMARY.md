@@ -149,7 +149,6 @@
     * [Režimy bootloaderu](hardware-a-programovani/sprava-a-diagnostika/bootloader/rezimy-bootloaderu.md)
     * [Command mód](hardware-a-programovani/sprava-a-diagnostika/bootloader/command-mod.md)
     * [Další vlastnosti bootloaderu](hardware-a-programovani/sprava-a-diagnostika/bootloader/dalsi-vlastnosti-bootloaderu.md)
-    * [Výchozí hodnoty](hardware-a-programovani/sprava-a-diagnostika/bootloader/vychozi-hodnoty.md)
   * [Webová konzole](hardware-a-programovani/sprava-a-diagnostika/webova-konzole.md)
   * [Konfigurace zařízení](hardware-a-programovani/sprava-a-diagnostika/konfigurace-zarizeni.md)
   * [Omezení konfigurace](hardware-a-programovani/sprava-a-diagnostika/omezeni-konfigurace.md)

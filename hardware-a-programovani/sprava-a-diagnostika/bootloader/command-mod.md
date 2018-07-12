@@ -22,7 +22,7 @@ Při prvním spuštění nebo při položce configured=0 bootloader skáče do c
 * **target** -Typ desky. 
 * **fullid** - vypíše FULL ID zařízení.  
 * **launch\_reset** - Pokud bylo předchozí spuštění firmware neúspěšné a není žádná validní binárka k obnovení, je třeba nahrát validní binárku a poté napsat příkaz ''launch\_reset''.
-* **defaults** - Veškeré nastavení se obnoví do [výchozích hodnot](vychozi-hodnoty.md).
+* **defaults** - Veškeré nastavení se obnoví do [výchozích hodnot]().
 
 ## Příkazy s parametrem i bez
 
