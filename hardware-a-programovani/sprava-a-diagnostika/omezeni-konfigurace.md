@@ -16,7 +16,7 @@ Z hlediska bezpečnosti se používá hlavní a záložní MQTT server.
 
 ### **normal\_mqtt\_hostname**
 
-Hostname nebo IP adresa hlavního serveru.
+Hostname nebo IP adresa hlavního serveru. Změna se projeví při dalším připojení k serveru.
 
 | typ | char\[128\] |
 | --- | --- | --- | --- | --- |
@@ -27,7 +27,7 @@ Hostname nebo IP adresa hlavního serveru.
 
 ### **normal\_mqtt\_port**
 
-MQTT port hlavního serveru.
+MQTT port hlavního serveru. Změna se projeví při dalším připojení k serveru.
 
 | typ | 16 bit unsigned integer |
 | --- | --- | --- | --- | --- |
@@ -38,7 +38,7 @@ MQTT port hlavního serveru.
 
 ### **backup\_mqtt\_hostname**
 
-Hostname nebo IP adresa záložního serveru.
+Hostname nebo IP adresa záložního serveru. Změna se projeví při dalším připojení k serveru.
 
 | typ | char\[128\] |
 | --- | --- | --- | --- | --- |
@@ -49,7 +49,7 @@ Hostname nebo IP adresa záložního serveru.
 
 ### **backup\_mqtt\_port**
 
-MQTT port záložního serveru.
+MQTT port záložního serveru. Změna se projeví při dalším připojení k serveru.
 
 | typ | 16 bit unsigned integer |
 | --- | --- | --- | --- | --- |
@@ -60,7 +60,7 @@ MQTT port záložního serveru.
 
 ### **mqtt\_username**
 
-Přihlašovací jméno do MQTT brokeru.
+Přihlašovací jméno do MQTT brokeru. Změna se projeví při dalším připojení k serveru.
 
 | typ | char\[48\] |
 | --- | --- | --- | --- | --- |
@@ -71,7 +71,7 @@ Přihlašovací jméno do MQTT brokeru.
 
 ### **mqtt\_password**
 
-Přihlašovací heslo do MQTT brokeru.
+Přihlašovací heslo do MQTT brokeru. Změna se projeví při dalším připojení k serveru.
 
 | typ | char\[48\] |
 | --- | --- | --- | --- | --- |
@@ -84,7 +84,7 @@ Přihlašovací heslo do MQTT brokeru.
 
 ### **alias**
 
-Alias zařízení, který si každý může nastavit pro lepší [identifikaci zařízení](identifikace-zarizeni.md).
+Alias zařízení, který si každý může nastavit pro lepší [identifikaci zařízení](identifikace-zarizeni.md). Změna se projeví okamžitě.
 
 | typ | char\[64\] |
 | --- | --- | --- | --- | --- |
@@ -106,7 +106,7 @@ Zjištění MAC adresy.
 
 ### **blreport**
 
-Bootloader report. Zapnutí, nebo vypnutí výpisu hlavičky [bootloaderu](bootloader/) do konzole.
+Bootloader report. Zapnutí, nebo vypnutí výpisu hlavičky [bootloaderu](bootloader/) do konzole. Změna se projeví po restartu zařízení.
 
 | typ | boolean |
 | --- | --- | --- | --- | --- |
@@ -117,7 +117,7 @@ Bootloader report. Zapnutí, nebo vypnutí výpisu hlavičky [bootloaderu](bootl
 
 ### **wdenable**
 
-Zapnutí [watchdogu](../knowledge-base/watchdog.md).
+Zapnutí [watchdogu](../knowledge-base/watchdog.md). Změna se projeví po restartu zařízení.
 
 | typ | boolean |
 | --- | --- | --- | --- | --- |
@@ -128,7 +128,7 @@ Zapnutí [watchdogu](../knowledge-base/watchdog.md).
 
 ### **wdtime**
 
-Nastavení periody resetu [watchdogu](../knowledge-base/watchdog.md).
+Nastavení periody resetu [watchdogu](../knowledge-base/watchdog.md). Změna se projeví po restartu zařízení.
 
 | typ | integer |
 | --- | --- | --- | --- | --- |
@@ -139,7 +139,7 @@ Nastavení periody resetu [watchdogu](../knowledge-base/watchdog.md).
 
 ### **autobackup**
 
-Funkce, která zajišťuje, zajišťuje zálohu starého firmware při doručení nového.
+Funkce, která zajišťuje, zajišťuje zálohu starého firmware při doručení nového. Změna se projeví při dalším updatu zařízení.
 
 | typ | boolean |
 | --- | --- | --- | --- | --- |
@@ -150,7 +150,7 @@ Funkce, která zajišťuje, zajišťuje zálohu starého firmware při doručen�
 
 ### **netsource**
 
-Zdroj, odkud bere zařízení internet.
+Zdroj, odkud bere zařízení internet. Změna se projeví po restartu zařízení.
 
 | typ | enum |
 | --- | --- | --- | --- | --- |
@@ -161,7 +161,7 @@ Zdroj, odkud bere zařízení internet.
 
 ### **configured**
 
-při prvním spuštění bootloader naběhne vždy do Command režimu a čeká na konfiguraci všech parametrů. Až jsou parametry nastaveny, ''configured'' se přepne na 1 a tím se dá zařízení najevo, že je již plně nakonfigurováno a příště bude už nabíhat do normálního programu.
+při prvním spuštění bootloader naběhne vždy do Command režimu a čeká na konfiguraci všech parametrů. Až jsou parametry nastaveny, ''configured'' se přepne na 1 a tím se dá zařízení najevo, že je již plně nakonfigurováno a příště bude už nabíhat do normálního programu. Změna se projeví po restartu zařízení.
 
 | typ | boolean |
 | --- | --- | --- | --- | --- |
@@ -172,7 +172,7 @@ při prvním spuštění bootloader naběhne vždy do Command režimu a čeká n
 
 ### **reconnect**
 
-Nastavení času pro opětovné připojení k serverům, v případě chyby.
+Nastavení času pro opětovné připojení k serverům, v případě chyby. Změna se projeví po restartu zařízení.
 
 | typ | 32 bit unsigned integer |
 | --- | --- | --- | --- | --- |
@@ -183,7 +183,7 @@ Nastavení času pro opětovné připojení k serverům, v případě chyby.
 
 ### encryption
 
-Zapnutí nebo vypnutí možnosti šifrování.
+Zapnutí nebo vypnutí možnosti šifrování. Změna se projeví po restartu zařízení.
 
 | typ | boolean |
 | --- | --- | --- | --- | --- |
@@ -194,7 +194,7 @@ Zapnutí nebo vypnutí možnosti šifrování.
 
 ### **webview**
 
-Zapnutí nebo vypnutí funkcionality [webového rozhraní](webove-rozhrani/).
+Zapnutí nebo vypnutí funkcionality [webového rozhraní](webove-rozhrani/). Změna se projeví po restartu zařízení.
 
 | typ | boolean |
 | --- | --- | --- | --- | --- |
@@ -205,7 +205,7 @@ Zapnutí nebo vypnutí funkcionality [webového rozhraní](webove-rozhrani/).
 
 ### **webport**
 
-Port, na kterém bude přístupno [webové rozhraní](webove-rozhrani/).
+Port, na kterém bude přístupno [webové rozhraní](webove-rozhrani/). Změna se projeví po restartu zařízení.
 
 | typ | 16 bit unsigned integer |
 | --- | --- | --- | --- | --- |
@@ -216,7 +216,7 @@ Port, na kterém bude přístupno [webové rozhraní](webove-rozhrani/).
 
 ### **timeoffset**
 
-Slouží pro lokalizovanou [práci s časem](../tutorialy/datum-a-cas-rtc.md). Nastavení offsetu lokálního času RTC od UTC.
+Slouží pro lokalizovanou [práci s časem](../tutorialy/datum-a-cas-rtc.md). Nastavení offsetu lokálního času RTC od UTC. 
 
 | typ | 32 bit unsigned integer |
 | --- | --- | --- | --- | --- |
@@ -238,7 +238,7 @@ Slouží pro zapnutí [synchronizace času](../tutorialy/datum-a-cas-rtc.md) mez
 
 ### **lowpanbr**
 
-Zapnutí funkce [lowpan border router](../konektivita/6lowpan.md).
+Zapnutí funkce [lowpan border router](../konektivita/6lowpan.md). Změna se projeví po restartu zařízení.
 
 | typ | boolean |
 | --- | --- | --- | --- | --- |
@@ -249,7 +249,7 @@ Zapnutí funkce [lowpan border router](../konektivita/6lowpan.md).
 
 ### **restartbl**
 
-Identifikátor pro [restart zařízení do bootloaderu](bootloader/).
+Identifikátor pro [restart zařízení do bootloaderu](bootloader/). Změna se projeví po restartu zařízení.
 
 | typ | boolean |
 | --- | --- | --- | --- | --- |
@@ -271,7 +271,7 @@ Zjištění revize zařízení
 
 ### **autojump**
 
-Nastavení funkce autojump.
+Nastavení funkce autojump. Změna se projeví po restartu zařízení.
 
 | typ | 32 bit unsigned integer |
 | --- | --- | --- | --- | --- |
@@ -279,4 +279,8 @@ Nastavení funkce autojump.
 | výchozí hodnota | 300 |
 | možnost číst | ano, uživatel |
 | možnost zapisovat | ano, uživatel |
+
+### lowpan\_credentials
+
+Nastavení přihlašovacích údajů k síti ve formátu `<název>-<klíč>`. Položka `<název>` může být až 16 znaků dlouhá; položka `<klíč>` je přesně 32 znaků dlouhá, přičemž povolené znaky jsou a-f, A-F a číslice 0-9. Změna se projeví po restartu zařízení.
 
