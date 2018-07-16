@@ -127,7 +127,7 @@
     * [Digital Read](hardware-a-programovani/tutorialy/zakladni-tutorialy/digital-read.md)
     * [Analog Read/Write](hardware-a-programovani/tutorialy/zakladni-tutorialy/analog-read-serial.md)
     * [PWM Fade](hardware-a-programovani/tutorialy/zakladni-tutorialy/fade.md)
-    * [Blink Without Delay](hardware-a-programovani/tutorialy/zakladni-tutorialy/blink-without-delay.md)
+    * [Timer/Ticker](hardware-a-programovani/tutorialy/zakladni-tutorialy/blink-without-delay.md)
     * [State Change Detection](hardware-a-programovani/tutorialy/zakladni-tutorialy/state-change-detection.md)
     * [Ovládání LED modulu](hardware-a-programovani/tutorialy/zakladni-tutorialy/ovladani-led-modulu.md)
     * [BusOut](hardware-a-programovani/tutorialy/zakladni-tutorialy/busout.md)

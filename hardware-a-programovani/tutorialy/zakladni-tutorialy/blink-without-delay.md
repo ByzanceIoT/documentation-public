@@ -1,16 +1,16 @@
-# Blink Without Delay
+# Timer/Ticker
 
-Tento tutoriál ukazuje jak neblokovat hlavní nekonečnou smyčku `loop()` v případě, že potřebujeme paralelně provádět časově přesnou operaci \(V tomto případě blikání LED\).
+Tento tutoriál demonstruje použití dvou důležitých funkcionalit \(Timeru a Tickeru\), které lze využít k přesnému časování periodických i aperiodických událostí, bez toho abychom ovlivnili program vykonávaný v hlavním vlákně `loop()`.
 
 ## Použitý hardware
 
-* IODA
-* 1000Ω rezistor
+* IODAG3E
+* 1kΩ rezistor
 * LED
 
 ## Schéma zapojení
 
- [Anoda](https://cs.wikipedia.org/wiki/LED#/media/File:%2B-_of_LED_2.svg) LED je zapojena na pin X01 přes 1000Ω resistor. [Katoda](https://cs.wikipedia.org/wiki/LED#/media/File:%2B-_of_LED_2.svg) je připojena k zemi \(pinu GND\).
+ [Anoda](https://cs.wikipedia.org/wiki/LED#/media/File:%2B-_of_LED_2.svg) LED je zapojena na pin X01. [Katoda](https://cs.wikipedia.org/wiki/LED#/media/File:%2B-_of_LED_2.svg) je přes resistor 1kΩ připojena k zemi \(pinu GND\).
 
 ![](../../../.gitbook/assets/untitled-page-001-4.jpg)
 
@@ -18,7 +18,7 @@ Tento tutoriál ukazuje jak neblokovat hlavní nekonečnou smyčku `loop()` v p�
 
 ### Funkce 
 
-K tomu, abychom mohli blikat LED s určitou frekvencí bez toho abychom omezili hlavní vlákno, můžeme přistupovat dvěma způsoby. První způsob je použít Timer \(Časovač\), který lze spustit a pozorovat překročení dané doby. Druhým způsobem je využít Ticker, který cyklicky danou dobu volá zadanou funkci.
+Následující program bliká LED diodou určitou frekvencí bez toho abychom omezili hlavní vlákno, můžeme přistupovat dvěma způsoby. První způsob je použít Timer \(Časovač\), který lze spustit a pozorovat překročení dané doby. Druhým způsobem je využít Ticker, který cyklicky danou dobu volá zadanou funkci.
 
 ## Code 
 
