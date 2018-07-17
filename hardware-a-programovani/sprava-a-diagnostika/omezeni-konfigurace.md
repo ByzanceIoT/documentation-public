@@ -177,7 +177,7 @@ Nastavení času pro opětovné připojení k serverům, v případě chyby. Zm�
 | typ | 32 bit unsigned integer |
 | --- | --- | --- | --- | --- |
 | omezení | 0 -  4294967295 |
-| výchozí hodnota | 30 |
+| výchozí hodnota | 15 |
 | možnost číst | ano, uživatel |
 | možnost zapisovat | ano, uživatel |
 
