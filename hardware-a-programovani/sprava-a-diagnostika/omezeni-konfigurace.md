@@ -21,7 +21,7 @@ Hostname nebo IP adresa hlavního serveru. Změna se projeví při dalším při
 | typ | char\[128\] |
 | --- | --- | --- | --- | --- |
 | omezení | tisknutelné ASCII znaky zakončené terminační nulou |
-| výchozí hodnota | 192.168.65.179 |
+| výchozí hodnota | main.homer.byzance.cz |
 | možnost číst | ano, uživatel |
 | možnost nastavit | ano, uživatel |
 
@@ -43,7 +43,7 @@ Hostname nebo IP adresa záložního serveru. Změna se projeví při dalším p
 | typ | char\[128\] |
 | --- | --- | --- | --- | --- |
 | omezení | tisknutelné ASCII znaky zakončené terminační nulou |
-| výchozí hodnota | 192.168.65.179 |
+| výchozí hodnota | backup.homer.byzance.cz |
 | možnost číst | ano, uživatel |
 | možnost nastavit | ano, uživatel |
 
