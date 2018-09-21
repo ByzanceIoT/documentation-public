@@ -30,7 +30,7 @@ Paměť RAM \(Random Access Memory\) je nevolatilní paměť sloužící pro dat
 IODAG3E mí k dispozici výše uvedených 256 kB paměti. Paměť je rozdělena na více oblastí a při použití minimálního projektu jsou orientačně zaplněny podle následující tabulky. Přesné hodnoty závisí na verzi projektu i knihoven a může se měnit.
 
 | oblast | .bss | .data | heap | stack |
-| --- | --- | --- |
+| :--- | :--- | :--- | :--- | :--- |
 | umístění | CCM | CCM | RAM | RAM |
 | velikost | 1500 B | 48 kB | 48 kB | 26 kB |
 
@@ -47,7 +47,7 @@ Na grafu níže je pro daný projekt uvedeno využití paměti pro obě oblasti.
 Většina mikrokontrolérů Cortex M4 má banky paměti rozdělené do menších částí, tzv. sektory. Platí to i pro mikrokontrolér použitý v jednotce IODAG3E a sektory jsou rozděleny podle tabulky níže. V případě použitého mikrokontroléru je paměť složena z více paměťových bank \(dvě banky po 1 MB\), struktura rozdělení sektorů se u druhé banky opakuje.
 
 | **Blok paměti** | **Velikost bloku** | **Počáteční adresa** |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| :--- | :--- | :--- |
 | Sektor 0 až 3 | 16 kB | 0x08000000 |
 | Sektor 4 | 64 kB | 0x08010000 |
 | Sektor 5 až 11 | 128 kB | 0x08020000 |
@@ -100,6 +100,6 @@ OTP_BLOCKS * OTP_BYTES_IN_BLOCK
 Na PCB jednotky IODAG3E je umístěna také externí SPI FLASH paměť o kapacitě 64 Mb. Částečně je využívání pro potřeby Byzance knihoven \(OTA update, konfigurace, ...\) a z části je plně dostupná pro uživatele. Uživatelsky dostupná část je velká 2 MB a pracuje se s ní výhradně přes API \#TODO link na API.
 
 | **Fyzický rozsah adres uživatelské části paměti** |
-| --- | --- |
+| :--- |
 | 0x08400000 až  0x085FFFFF \(2 MB\) |
 

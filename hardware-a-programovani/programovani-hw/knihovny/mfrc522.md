@@ -56,14 +56,14 @@ search:
 ## Classes
 
 | Type | Name |
-| --- | --- |
+| :--- | :--- |
 | struct | [**MIFARE\_Key**](https://github.com/ByzanceIoT/documentation-public/tree/3fe90b10188febdfcd320d169525b1b1c90c932e/hardware-a-programovani/programovani-hw/byzance-api/api/struct_m_f_r_c522_1_1_m_i_f_a_r_e___key.md) |
 | struct | [**Uid**](https://github.com/ByzanceIoT/documentation-public/tree/3fe90b10188febdfcd320d169525b1b1c90c932e/hardware-a-programovani/programovani-hw/byzance-api/api/struct_m_f_r_c522_1_1_uid.md) |
 
 ## Public Types
 
 | Type | Name |
-| --- | --- |
+| :--- | :--- |
 | enum | [**PCD\_Register**](mfrc522.md#1ae3b374c61bf50256289349fdb78fe181) { **CommandReg** = 0x01, **ComIEnReg** = 0x02, **DivIEnReg** = 0x03, **ComIrqReg** = 0x04, **DivIrqReg** = 0x05, **ErrorReg** = 0x06, **Status1Reg** = 0x07, **Status2Reg** = 0x08, **FIFODataReg** = 0x09, **FIFOLevelReg** = 0x0A, **WaterLevelReg** = 0x0B, **ControlReg** = 0x0C, **BitFramingReg** = 0x0D, **CollReg** = 0x0E, **ModeReg** = 0x11, **TxModeReg** = 0x12, **RxModeReg** = 0x13, **TxControlReg** = 0x14, **TxASKReg** = 0x15, **TxSelReg** = 0x16, **RxSelReg** = 0x17, **RxThresholdReg** = 0x18, **DemodReg** = 0x19, **MfTxReg** = 0x1C, **MfRxReg** = 0x1D, **SerialSpeedReg** = 0x1F, **CRCResultRegH** = 0x21, **CRCResultRegL** = 0x22, **ModWidthReg** = 0x24, **RFCfgReg** = 0x26, **GsNReg** = 0x27, **CWGsPReg** = 0x28, **ModGsPReg** = 0x29, **TModeReg** = 0x2A, **TPrescalerReg** = 0x2B, **TReloadRegH** = 0x2C, **TReloadRegL** = 0x2D, **TCntValueRegH** = 0x2E, **TCntValueRegL** = 0x2F, **TestSel1Reg** = 0x31, **TestSel2Reg** = 0x32, **TestPinEnReg** = 0x33, **TestPinValueReg** = 0x34, **TestBusReg** = 0x35, **AutoTestReg** = 0x36, **VersionReg** = 0x37, **AnalogTestReg** = 0x38, **TestDAC1Reg** = 0x39, **TestDAC2Reg** = 0x3A, **TestADCReg** = 0x3B } |
 | enum | [**PCD\_Command**](mfrc522.md#1a973011639bbee6ad7035ae4dd49e2e07) { **PCD\_Idle** = 0x00, **PCD\_Mem** = 0x01, **PCD\_GenerateRandomID** = 0x02, **PCD\_CalcCRC** = 0x03, **PCD\_Transmit** = 0x04, **PCD\_NoCmdChange** = 0x07, **PCD\_Receive** = 0x08, **PCD\_Transceive** = 0x0C, **PCD\_MFAuthent** = 0x0E, **PCD\_SoftReset** = 0x0F } |
 | enum | [**PCD\_RxGain**](mfrc522.md#1ab7e2bdb063a8ab5f8f29bd05e6867335) { **RxGain\_18dB** = 0x00 &lt;&lt; 4, **RxGain\_23dB** = 0x01 &lt;&lt; 4, **RxGain\_18dB\_2** = 0x02 &lt;&lt; 4, **RxGain\_23dB\_2** = 0x03 &lt;&lt; 4, **RxGain\_33dB** = 0x04 &lt;&lt; 4, **RxGain\_38dB** = 0x05 &lt;&lt; 4, **RxGain\_43dB** = 0x06 &lt;&lt; 4, **RxGain\_48dB** = 0x07 &lt;&lt; 4, **RxGain\_min** = 0x00 &lt;&lt; 4, **RxGain\_avg** = 0x04 &lt;&lt; 4, **RxGain\_max** = 0x07 &lt;&lt; 4 } |
@@ -75,19 +75,19 @@ search:
 ## Public Attributes
 
 | Type | Name |
-| --- | --- |
+| :--- | :--- |
 | [**Uid**](https://github.com/ByzanceIoT/documentation-public/tree/3fe90b10188febdfcd320d169525b1b1c90c932e/hardware-a-programovani/programovani-hw/byzance-api/api/struct_m_f_r_c522_1_1_uid.md) | [**uid**](mfrc522.md#1ad456545d41962dd7f8bd4210f5618498) |
 
 ## Public Static Attributes
 
 | Type | Name |
-| --- | --- |
+| :--- | :--- |
 | static const uint8\_t | [**FIFO\_SIZE**](mfrc522.md#1a45b3d611adc98970d1b11848f84bfdda) |
 
 ## Public Functions
 
 | Type | Name |
-| --- | --- |
+| :--- | :--- |
 |  | [**MFRC522**](mfrc522.md#1ade858e2bc1fdcb3986ac0166a3a8c431) \(PinName sda, PinName scl, uint32\_t frequency = 400000\) |
 |  | [**MFRC522**](mfrc522.md#1a1d945f8c15c00b1b86d9059efd6eaf2c) \(PinName sda, PinName scl, PinName reset\) |
 |  | [**~MFRC522**](mfrc522.md#1a864a3473182f9c76fe5b3ec1f6c91e20) \(\) |

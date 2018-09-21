@@ -18,7 +18,7 @@ Driver for [**SHT21**](sht21.md) I2C temperature and humidity sensor. [More...](
 ### Public Functions
 
 | Type | Name |
-| --- | --- |
+| :--- | :--- |
 |  | [**SHT21**](sht21.md#1add548804bebe3aa63d65920a452392eb) \(I2C \* i2c\) |
 | float | [**readTemp**](sht21.md#1a4b9977332ee233134ceff6e3c8a95e66) \(\) |
 | float | [**readHumidity**](sht21.md#1a8bf9612797cd5e91dbfc58c00c5331d8) \(\) |

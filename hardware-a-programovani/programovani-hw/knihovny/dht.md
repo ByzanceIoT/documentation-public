@@ -21,7 +21,7 @@ Class to read data from DHT11 humidity and temperature sensor.
 ## Public Types
 
 | Type | Name |
-| --- | --- |
+| :--- | :--- |
 | enum | [**eError**](dht.md#1a649af39fa19814c7862430a49e165d62) { **DHT11** = 11, **SEN11301P** = 11, **RHT01** = 11, **DHT22** = 22, **AM2302** = 22, **SEN51035P** = 22, **RHT02** = 22, **RHT03** = 22, **ERROR\_NONE** = 0, **BUS\_BUSY** =1, **ERROR\_NOT\_PRESENT** =2, **ERROR\_ACK\_TOO\_LONG** =3, **ERROR\_SYNC\_TIMEOUT** = 4, **ERROR\_DATA\_TIMEOUT** =5, **ERROR\_CHECKSUM** = 6, **ERROR\_NO\_PATIENCE** =7 } |
 | enum | [**eError**](dht.md#1a649af39fa19814c7862430a49e165d62) { **DHT11** = 11, **SEN11301P** = 11, **RHT01** = 11, **DHT22** = 22, **AM2302** = 22, **SEN51035P** = 22, **RHT02** = 22, **RHT03** = 22, **ERROR\_NONE** = 0, **BUS\_BUSY** =1, **ERROR\_NOT\_PRESENT** =2, **ERROR\_ACK\_TOO\_LONG** =3, **ERROR\_SYNC\_TIMEOUT** = 4, **ERROR\_DATA\_TIMEOUT** =5, **ERROR\_CHECKSUM** = 6, **ERROR\_NO\_PATIENCE** =7 } |
 | enum | [**eScale**](dht.md#1abad043321f886924f6833923336f634e) { **CELCIUS** =0, **FARENHEIT** =1, **KELVIN** =2 } |
@@ -29,7 +29,7 @@ Class to read data from DHT11 humidity and temperature sensor.
 ## Public Functions
 
 | Type | Name |
-| --- | --- |
+| :--- | :--- |
 |  | [**DHT**](dht.md#1aaecd9f1478e898b35dc76f17c893f9d5) \(PinName pin, int DHTtype\) |
 |  | [**~DHT**](dht.md#1aa3034e0207490f85b581a7700547d225) \(\) |
 | int | [**readData**](dht.md#1afd1bb67764109d11492c7d10036aeddb) \(void\) |

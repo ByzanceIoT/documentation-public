@@ -22,7 +22,7 @@ T��da ovl�daj�c� maticov� RGB diplej.
 ## Public Static Functions
 
 | Type | Name |
-| --- | --- |
+| :--- | :--- |
 | static void | [**Init**](rgb_matrix.md#1a1bf32e59aebd0f71dae7e4d7df873a33) \(PinName Pin\_R1, PinName Pin\_R2, PinName Pin\_G1, PinName Pin\_G2, PinName Pin\_B1, PinName Pin\_B2, PinName Pin\_CLK, PinName Pin\_LAT, PinName Pin\_OE, PinName Pin\_A, PinName Pin\_B, PinName Pin\_C, PinName Pin\_D\) |
 | static void | [**set\_color**](rgb_matrix.md#1a0b0efc012d447edbddb96d8010d14738) \(char color\) |
 | static void | [**set\_background**](rgb_matrix.md#1a3730975e93180ab12b0c4d3feaaddfec) \(char color\) |

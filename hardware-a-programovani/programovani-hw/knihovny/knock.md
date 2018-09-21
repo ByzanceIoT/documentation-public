@@ -38,7 +38,7 @@ TO DO. [More...](knock.md#detailed-description)
 ## Protected Attributes
 
 | Type | Name |
-| --- | --- |
+| :--- | :--- |
 | [**MPU9150**](mpu9150.md) | [**\_acc**](knock.md#1a1e4179879eb927650c2b6f8b9519ecc2) |
 | AnalogIn | [**\_mic**](knock.md#1a41524e28d2983cca57491cb55a577990) |
 | Ticker | [**\_tick**](knock.md#1afc79153e9cda52057e7b26eb844d62c6) |
@@ -58,7 +58,7 @@ TO DO. [More...](knock.md#detailed-description)
 ## Public Functions
 
 | Type | Name |
-| --- | --- |
+| :--- | :--- |
 |  | [**Knock**](knock.md#1ab6e36d4711fa31772bc0f86b1e9c8519) \(PinName acc\_sda, PinName acc\_scl, PinName mic\) |
 |  | [**~Knock**](knock.md#1ac2755a23c5b160f6032c7634d1e63204) \(\) |
 | void | [**start**](knock.md#1a874f3ecfaadceeaa6bb62e7949e6dda4) \(\) |
@@ -73,7 +73,7 @@ TO DO. [More...](knock.md#detailed-description)
 ## Protected Functions
 
 | Type | Name |
-| --- | --- |
+| :--- | :--- |
 | void | [**thread\_func**](knock.md#1a5f2e9f99fe152302297c403c25e18256) \(\) |
 | float | [**find\_maximum**](knock.md#1afc8ddfe75827b68a37b8c8cf93189c68) \(float \* array\) |
 

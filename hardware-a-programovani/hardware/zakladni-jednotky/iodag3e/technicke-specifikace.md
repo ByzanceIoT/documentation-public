@@ -7,7 +7,7 @@ Stránka se zabývá mechanickým popisem desky [IODAG3E](./), uvádí důležit
 ## Absolute maximum ratings
 
 | **Parametr** | **Min** | **Typ** | **Max** |
-| --- | --- | --- | --- |
+| :--- | :--- | :--- | :--- |
 | Napájecí napětí \[V\] | 4.0 |  | 60.0 |
 | Napájecí proud \[A\] |  |  | 1.2 |
 | Provozní rozsah \[°C\] | -40 |  | -85 |
@@ -21,7 +21,7 @@ Jednotka [IODAG3E](./) je postavena z běžně dostupných komerčních komponen
 ## Doporučené operační podmínky
 
 | **Parametr** | **Min** | **Typ** | **Max** |
-| --- | --- | --- | --- |
+| :--- | :--- | :--- | :--- |
 | Napájecí napětí \[V\] | 5.0 |  | 57.0 |
 | Napájecí proud \[A\] |  | 0.5 | 1.0 |
 | Příkon v činnosti \[mW\] |  | 650 | 800 |
@@ -36,13 +36,13 @@ Jednotka [IODAG3E ](./)je navržena pro přímé použití ve vnitřních a such
 Rozměry a hmotnost osazeného PCB je uvedena v horní tabulce. Jde o rozměr bez přesahu bočních konektorů \(USB, ethernet\).
 
 | Délka \(mm\) | Šířka \(mm\) | Výška \(mm\) | Váha \(g\) |
-| --- | --- |
+| :--- | :--- | :--- | :--- |
 | 63.0 | 41.0 | 11.5 | 30 |
 
 Spodní tabula uvádí rozsah včetně přesahujících konektorů \(USB, ethernet\).
 
 | Délka \(mm\) | Šířka \(mm\) | Výška \(mm\) | Váha \(g\) |
-| --- | --- |
+| :--- | :--- | :--- | :--- |
 | 65.5 | 42.5 | 11.5 | 30 |
 
 ![Rozm&#x11B;rov&#xFD; n&#xE1;&#x10D;rtek desky IODAG3E - obrysy desky a rozm&#xED;st&#x11B;n&#xED; otvor&#x16F;. ](../../../../.gitbook/assets/iodag3e_170725_dimensions_a.svg)

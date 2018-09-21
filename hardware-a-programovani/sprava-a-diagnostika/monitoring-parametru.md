@@ -36,7 +36,7 @@ Napájecí napětí je však pouze orientační. Na základě zvolené větve na
 ## Teplota jádra
 
 | Symbol | Rozsah | Přesnost |
-| --- | --- |
+| :--- | :--- | :--- |
 | Vsense | -40°C až 125°C | 1,5°C |
 
 Teplotu jádra je možno získat
@@ -47,7 +47,7 @@ Teplotu jádra je možno získat
 ## Referenční napětí
 
 | Symbol | Podmínky | Min | Typ | Max | Jednotka |
-| --- | --- |
+| :--- | :--- | :--- | :--- | :--- | :--- |
 | Vrefint | -40°C - 105°C | 1.18 | 1.21 | 1.24 | Volty |
 
 Hodnotu referenčního napětí je možno získat

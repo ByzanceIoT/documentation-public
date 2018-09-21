@@ -14,7 +14,7 @@ Class to control DALI \(Digital Addressable Lighting Interface\) bus.
 ## Public Functions
 
 | Type | Name |
-| --- | --- |
+| :--- | :--- |
 |  | [**Dali**](dali.md#1ab9aba96c89a70ab132f355990142dc42) \(PinName RX, PinName TX\) |
 | void | [**send**](dali.md#1a6d656872047bebe99c06631ef959e852) \(uint8\_t addr, uint8\_t cmd\) |
 | void | [**init**](dali.md#1ab3ce4681dfa3c9db82dc34dd84297ecb) \(\) |

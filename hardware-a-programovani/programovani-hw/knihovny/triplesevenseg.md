@@ -15,7 +15,7 @@ Driver to control three-digits 7-segment LED display on LED shield.
 ## Public Functions
 
 | Type | Name |
-| --- | --- |
+| :--- | :--- |
 |  | [**TripleSevenSeg**](triplesevenseg.md#1a58cb5aac681147422f9d0b60bc59468a) \(\) |
 | bool | [**is\_initialized**](triplesevenseg.md#1a70c5a71e0de4e3113579349d80c8eea4) \(void\) |
 | bool | [**display\_number**](triplesevenseg.md#1a8a642c977098e19839df2bade70a45ea) \(float value, uint8\_t decimal\_positions\) |

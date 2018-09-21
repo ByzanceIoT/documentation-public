@@ -17,7 +17,7 @@ Modul podporuje modulace několik typů BPSK a QPSK modulací a rychlostmi přen
 ### Absolute maximum ratings
 
 | **Parametr** | **Min** | **Typ** | **Max** |
-| --- | --- | --- | --- |
+| :--- | :--- | :--- | :--- |
 | Napájecí napětí \[V\] | 1.8 |  | 3.6 |
 | Napájecí proud \[mA\] |  |  | 30 |
 | Provozní rozsah \[°C\] | -40 |  | -85 |
@@ -29,7 +29,7 @@ Modul podporuje modulace několik typů BPSK a QPSK modulací a rychlostmi přen
 Hodnoty uvedeny při napájení 3.0 V a teplotě okolí 25°C.
 
 | **Parametr** | **Min** | **Typ** | **Max** |
-| --- | --- | --- | --- |
+| :--- | :--- | :--- | :--- |
 | Napájecí proud při vysílání \(+10 dB\) \[mA\] |  | 26.5 |  |
 | Napájecí proud při vysílání \(+0 dB\) \[mA\] |  | 13.5 |  |
 | Napájecí proud při vysílání \(-25 dB\) \[mA\] |  | 9.5 |  |

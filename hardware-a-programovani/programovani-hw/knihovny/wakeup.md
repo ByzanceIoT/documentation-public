@@ -15,7 +15,7 @@ Class to make wake up a microcontroller from deepsleep using a low-power timer. 
 ## Public Static Functions
 
 | Type | Name |
-| --- | --- |
+| :--- | :--- |
 | static void | [**set**](wakeup.md#1a35555135d939991c9b288c7fdf2acf1e) \(uint32\_t s\) |
 | static void | [**set\_ms**](wakeup.md#1abd46caf0490902d7330e5847cd0807fc) \(uint32\_t ms\) |
 | static void | [**attach**](wakeup.md#1a2acb127a35ced9e6d2c5d8013db7de66) \(Callback&lt; void\(\)&gt; function\) |

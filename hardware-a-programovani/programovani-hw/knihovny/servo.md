@@ -23,7 +23,7 @@ Driver for PWM controlled servo motors. [More...](servo.md#detailed-description)
 ## Protected Attributes
 
 | Type | Name |
-| --- | --- |
+| :--- | :--- |
 | PwmOut | [**\_pwm**](servo.md#1af786610974ae4db9d34e34f0044f1e22) |
 | float | [**\_range**](servo.md#1af9ae8d8b2a1b5a3a41a9cc8bfa8f86aa) |
 | float | [**\_degrees**](servo.md#1a674c5f736156204c478a5d3b1b44f708) |
@@ -32,7 +32,7 @@ Driver for PWM controlled servo motors. [More...](servo.md#detailed-description)
 ## Public Functions
 
 | Type | Name |
-| --- | --- |
+| :--- | :--- |
 |  | [**Servo**](servo.md#1a9f6bdad36dd357a385e0f5e3f8ce1a35) \(PinName pin\) |
 | void | [**write**](servo.md#1a2c508614c398623245e227831c45ed83) \(float percent\) |
 | float | [**read**](servo.md#1afa40011959b6addcfeaa93e526fa3427) \(\) |

@@ -43,7 +43,7 @@ Popis jednotlivých vstupů a výstupů je závislý na typu základní jednotky
 V tabulce níže je uveden seznam dostupných periferií na každé [základní jednotce ](../zakladni-jednotky/)bez ohledu na její typ. Ukázka konkrétního zapojení vývodů na mikrokontrolér pro jednotku IODAG3E [zde](../zakladni-jednotky/iodag3e/konektor-x-a-y.md).
 
 | **Pin** | **Funkce** |  | **Pin** | **Funkce** |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| :--- | :--- | :--- | :--- | :--- |
 | X00 |  |  | X10 | SPI SCK |
 | X01 |  |  | X11 | USART TX |
 | X02 |  |  | X12 | SPI MISO |

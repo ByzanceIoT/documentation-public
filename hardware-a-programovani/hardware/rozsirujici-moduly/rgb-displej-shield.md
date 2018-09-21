@@ -11,7 +11,7 @@ Jedná se o přizpůsobovací shield - poskytuje rozhraní k připojení RGB mat
 ### Zapojení X konektoru
 
 | **X01** | **X03** | **X05** | **X07** | **X09** | **X11** | **X13** | **X15** | **USR** | **VBUS** |
-| --- | --- | --- | --- |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
 | ​G1 | ​R2 | B2​ | ​PIN\_B | ​PIN\_D | ​LAT | ​ | ​ |  |  |
 | **X00** | **X02** | **X04** | **X06** | **X08** | **X10** | **X12** | **X14** | **3V3** | **GND** |
 | R1 | ​B1 | ​G2 | PIN\_A | ​PIN\_C | CLK​ | OE​ |  | 3.3 V | GND |

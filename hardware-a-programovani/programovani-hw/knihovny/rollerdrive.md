@@ -25,7 +25,7 @@ search:
 ## Public Functions
 
 | Type | Name |
-| --- | --- |
+| :--- | :--- |
 |  | [**RollerDrive**](rollerdrive.md#1a576ae4f2892d32129f206fa4391722e6) \(void\) |
 | uint8\_t | [**set\_poster**](rollerdrive.md#1a826e3597785562f5f4aaee7f92d50469) \(uint8\_t dst\) |
 | uint8\_t | [**set\_mode**](rollerdrive.md#1a31aedc32f379a62933dd8e951413a6e7) \(RollerMode mode\) |

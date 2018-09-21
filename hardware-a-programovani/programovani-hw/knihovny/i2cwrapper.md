@@ -22,13 +22,13 @@ Inherits the following classes: **I2C**
 ## Protected Attributes
 
 | Type | Name |
-| --- | --- |
+| :--- | :--- |
 | uint8\_t | [**\_address**](i2cwrapper.md#1a1f91e51cd8fdd06bf5512d379d49465b) |
 
 ## Public Functions
 
 | Type | Name |
-| --- | --- |
+| :--- | :--- |
 |  | [**I2CWrapper**](i2cwrapper.md#1a3d5c32611b4a9ca539cfcb48ce1cc3dc) \(PinName sda, PinName scl, uint8\_t address\) |
 | int | [**write\_reg**](i2cwrapper.md#1a818a5c98cd8d38d2614e811c8c28c8e3) \(uint8\_t reg, uint8\_t val\) |
 | int | [**write\_reg**](i2cwrapper.md#1ad50b3a8b13526dadf24f2fa3c78fc5d9) \(uint8\_t reg, uint8\_t \* val, uint16\_t size\) |

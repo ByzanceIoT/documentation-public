@@ -24,7 +24,7 @@ search:
 ## Public Functions
 
 | Type | Name |
-| --- | --- |
+| :--- | :--- |
 |  | [**OneWire**](onewire.md#1a9363813c295003567ee1f2b24a2b3dc9) \(PinName pin\) |
 | uint8\_t | [**reset**](onewire.md#1a6a742a9112392567eae3d06dde067c07) \(void\) |
 | void | [**select**](onewire.md#1accf808390abd63d3c7bce35677784384) \(const uint8\_t rom\) |
@@ -43,7 +43,7 @@ search:
 ## Public Static Functions
 
 | Type | Name |
-| --- | --- |
+| :--- | :--- |
 | static uint8\_t | [**crc8**](onewire.md#1ae3486a669581b750e4fdf3f3a12b05f1) \(const uint8\_t \* addr, uint8\_t len\) |
 
 ## Public Functions Documentation
