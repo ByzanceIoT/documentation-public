@@ -36,7 +36,7 @@ Nyní by se měl vypisovat log do okna aplikace.
 
 V případě přepnutí na Bootloader v zařízení Yoda není nutné měnit port.
 
-### Konfigurace sériové linky na Linux {#konfigurace-seriove-linky-na-linux}
+### Konfigurace sériové linky na Linux <a id="konfigurace-seriove-linky-na-linux"></a>
 
 Připojením zařízení k PC je v adresáři ''/dev/'' vytvořen soubor ''ttyUSBx'' nebo ''ttyACMx'', kde ''x'' je číslo. Výpis zařízení je tedy možné zobrazit pomocí správce souborů nebo příkazu ''ls /dev/tty\*''.
 

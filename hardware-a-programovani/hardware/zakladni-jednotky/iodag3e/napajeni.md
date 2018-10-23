@@ -67,7 +67,7 @@ Smyslem je umožnit běh desky z externího 5V zdroje \(typicky při vestavbě d
   
 
 
-####  {#aktivni-poe}
+####  <a id="aktivni-poe"></a>
 
   
 

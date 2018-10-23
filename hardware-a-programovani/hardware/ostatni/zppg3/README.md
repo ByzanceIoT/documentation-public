@@ -2,11 +2,11 @@
 
 ![](../../../../.gitbook/assets/zpp.png)
 
-## Konfigurace a zapojení {#pouziti}
+## Konfigurace a zapojení <a id="pouziti"></a>
 
 * _SJ1_ - napájecí propojka; pokud je spojena, je cílový procesor napájen z programátoru \(ve výchozím nastavení rozpojeno\)
 
-## Použití {#pouziti}
+## Použití <a id="pouziti"></a>
 
 \#TODO \(GIF pripojení ZPP do počítače a IODY - ticket [HW-1054](https://youtrack.byzance.cz/youtrack/issue/HW-1054)\)
 

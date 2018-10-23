@@ -52,6 +52,7 @@ Více informací k MQTT připojení je možno nalézt v sekci [Komunikace se ser
 * **restartbl** - Identifikátor pro [restart zařízení do bootloaderu](./).
 * **revision** - Zjištění [revize zařízení](command-mod.md)
 * **autojump** - Nastavení časovače autojump na určitý čas. Po této době neaktivity \(v sekundách\) se zařízení přepne automaticky z bootloaderu do firmware.
+* **lastpart** - zobrazuje počet části přijatých při posledním pokusu o aktualizaci bootloaderu firmwaru nebo backupu
 
 ## Příkazy pouze s parametrem
 
