@@ -20,9 +20,13 @@ Až je binárka nahraná v Iodovi, ještě je stále třeba ji z externí pamět
 
 ### Komponenta firmware
 
-Pokud je aktualizována komponenta firmware, automaticky se v průběhu vykonávání normálního programu zapne interní signalizátor ''flashflag''. Tento signalizátor je po restartu detekován [bootloaderem](../../sprava-a-diagnostika/bootloader/). Na základě toho se poté v bootloaderu spustí proces aktualizace. může provést zálohu aktuálního firmware \(je-li aktivována funkce [autobackup](autobackup.md)\). Nakonec dojde přeflashování hlavního programu z externí paměti ''buffer'' do interní ''firmware''.
+Pokud je aktualizována komponenta firmware, automaticky se v průběhu vykonávání normálního programu zapne interní signalizátor ''flashflag''. Tento signalizátor je po restartu detekován [bootloaderem](../../sprava-a-diagnostika/bootloader/). Na základě toho se poté v bootloaderu spustí proces aktualizace. Bootloader může zároveň provést zálohu aktuálního firmware \(je-li aktivována funkce [autobackup](autobackup.md)\). Nakonec dojde přeflashování hlavního programu z externí paměti ''buffer'' do interní ''firmware''. Pro aktualizaci firmware je tedy **potřeba restartovat zařízení**. 
 
 ### Komponenta backup nebo bootloader
 
-Pokud má být aktualizován záložní program nebo bootloader, kopírování z ''buffer'' do ''backup'' nebo ''bootloader'' se provede v **hlavním firmware** bez nutnosti restartu zařízení.
+Pokud má být aktualizován záložní program nebo bootloader, kopírování z ''buffer'' do ''backup'' nebo ''bootloader'' se provede v hlavním firmware **bez nutnosti restartu zařízení**.
+
+## Navazování update firmware
+
+V průběhu procesu "upload" se z mnoha různých důvodů může stát, že se proces přeruší. V takovém případě by standardně bylo nutné, aby proces "upload" započal odznova, včetně přípravy \(mazání\) bufferu. Zařízení jsou vybavena funkcí, která přerušení procesu dokáže detekovat a obnovit. Tato funkce si vždy po přenesení několika částí binárky \(ve výchozím stavu 32 částí\) aktualizuje počítadlo a CRC v non-volatilní paměti a provede příslušné kontroly integrity dat. Z toho vyplývá, že se část dat procesu může v průběhu chyby ztratit - ve výchozím stavu to může být 0 - 31 částí, které se poté posílají redundantně, přičemž se následně navazuje novými daty.
 
