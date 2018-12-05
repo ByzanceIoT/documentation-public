@@ -24,6 +24,7 @@ Hostname nebo IP adresa hlavního serveru. Změna se projeví při dalším při
 | výchozí hodnota | main.homer.byzance.cz |
 | možnost číst | ano, uživatel |
 | možnost nastavit | ano, uživatel |
+| confighash | ne |
 
 ### **normal\_mqtt\_port**
 
@@ -35,6 +36,7 @@ MQTT port hlavního serveru. Změna se projeví při dalším připojení k serv
 | výchozí hodnota | 1881 |
 | možnost číst | ano, uživatel |
 | možnost nastavit | ano, uživatel |
+| confighash | ne |
 
 ### **backup\_mqtt\_hostname**
 
@@ -46,6 +48,7 @@ Hostname nebo IP adresa záložního serveru. Změna se projeví při dalším p
 | výchozí hodnota | backup.homer.byzance.cz |
 | možnost číst | ano, uživatel |
 | možnost nastavit | ano, uživatel |
+| confighash | ne |
 
 ### **backup\_mqtt\_port**
 
@@ -57,6 +60,7 @@ MQTT port záložního serveru. Změna se projeví při dalším připojení k s
 | výchozí hodnota | 1881 |
 | možnost číst | ano, uživatel |
 | možnost nastavit | ano, uživatel |
+| confighash | ne |
 
 ### **mqtt\_username**
 
@@ -68,6 +72,7 @@ Přihlašovací jméno do MQTT brokeru. Změna se projeví při dalším připoj
 | výchozí hodnota | user |
 | možnost číst | uživatelsky ne, pouze interně |
 | možnost zapisovat | ano, uživatel |
+| confighash | ne |
 
 ### **mqtt\_password**
 
@@ -79,6 +84,7 @@ Přihlašovací heslo do MQTT brokeru. Změna se projeví při dalším připoje
 | výchozí hodnota | pass |
 | možnost číst | uživatelsky ne, pouze interně |
 | možnost zapisovat | ano, uživatel |
+| confighash | ne |
 
 ## Ostatní
 
@@ -92,6 +98,7 @@ Alias zařízení, který si každý může nastavit pro lepší [identifikaci z
 | výchozí hodnota | BYZANCE |
 | možnost číst | ano, uživatel |
 | možnost zapisovat | ano, uživatel |
+| confighash | ano |
 
 ### **mac**
 
@@ -103,6 +110,7 @@ Zjištění MAC adresy.
 | výchozí hodnota | ff:ff:ff:ff:ff:ff |
 | možnost číst | ano, uživatel |
 | možnost zapisovat | pouze při první konfiguraci, většinou ve výrobě |
+| confighash | ne |
 
 ### **blreport**
 
@@ -114,6 +122,7 @@ Bootloader report. Zapnutí, nebo vypnutí výpisu hlavičky [bootloaderu](bootl
 | výchozí hodnota | 0 |
 | možnost číst | ano, uživatel |
 | možnost zapisovat | ano, uživatel |
+| confighash | ano |
 
 ### **wdenable**
 
@@ -125,6 +134,7 @@ Zapnutí [watchdogu](../knowledge-base/watchdog.md). Změna se projeví po resta
 | výchozí hodnota | 1 |
 | možnost číst | ano, uživatel |
 | možnost zapisovat | ano, uživatel |
+| confighash | ano |
 
 ### **wdtime**
 
@@ -136,6 +146,7 @@ Nastavení periody resetu [watchdogu](../knowledge-base/watchdog.md). Změna se 
 | výchozí hodnota | 30 |
 | možnost číst | ano, uživatel |
 | možnost zapisovat | ano, uživatel |
+| confighash | ano |
 
 ### **autobackup**
 
@@ -147,6 +158,7 @@ Funkce, která zajišťuje, zajišťuje zálohu starého firmware při doručen�
 | výchozí hodnota | 0 |
 | možnost číst | ano, uživatel |
 | možnost zapisovat | ano, uživatel |
+| confighash | ano |
 
 ### **netsource**
 
@@ -158,6 +170,7 @@ Zdroj, odkud bere zařízení internet. Změna se projeví po restartu zařízen
 | výchozí hodnota | ethernet |
 | možnost číst | ano, uživatel |
 | možnost zapisovat | ano, uživatel |
+| confighash | ano |
 
 ### **configured**
 
@@ -169,6 +182,7 @@ při prvním spuštění bootloader naběhne vždy do Command režimu a čeká n
 | výchozí hodnota | 1 |
 | možnost číst | ano, uživatel |
 | možnost zapisovat | ano, uživatel |
+| confighash | ano |
 
 ### **reconnect**
 
@@ -180,6 +194,7 @@ Nastavení času pro opětovné připojení k serverům, v případě chyby. Zm�
 | výchozí hodnota | 15 |
 | možnost číst | ano, uživatel |
 | možnost zapisovat | ano, uživatel |
+| confighash | ano |
 
 ### encryption
 
@@ -191,6 +206,7 @@ Zapnutí nebo vypnutí možnosti šifrování. Změna se projeví po restartu za
 | výchozí hodnota | 0 |
 | možnost číst | ano, uživatel |
 | možnost zapisovat | ano, uživatel |
+| confighash | ano |
 
 ### **webview**
 
@@ -202,6 +218,7 @@ Zapnutí nebo vypnutí funkcionality [webového rozhraní](webove-rozhrani/). Zm
 | výchozí hodnota | 1 |
 | možnost číst | ano, uživatel |
 | možnost zapisovat | ano, uživatel |
+| confighash | ano |
 
 ### **webport**
 
@@ -213,6 +230,7 @@ Port, na kterém bude přístupno [webové rozhraní](webove-rozhrani/). Změna 
 | výchozí hodnota | 80 |
 | možnost číst | ano, uživatel |
 | možnost zapisovat | ano, uživatel |
+| confighash | ano |
 
 ### **timeoffset**
 
@@ -224,6 +242,7 @@ Slouží pro lokalizovanou [práci s časem](../tutorialy/datum-a-cas-rtc.md). N
 | výchozí hodnota | 0 |
 | možnost číst | ano, uživatel |
 | možnost zapisovat | ano, uživatel |
+| confighash | ano |
 
 ### **timesync**
 
@@ -235,6 +254,7 @@ Slouží pro zapnutí [synchronizace času](../tutorialy/datum-a-cas-rtc.md) mez
 | výchozí hodnota | 1 |
 | možnost číst | ano, uživatel |
 | možnost zapisovat | ano, uživatel |
+| confighash | ano |
 
 ### **lowpanbr**
 
@@ -246,10 +266,11 @@ Zapnutí funkce [lowpan border router](../konektivita/6lowpan.md). Změna se pro
 | výchozí hodnota | 0 |
 | možnost číst | ano, uživatel |
 | možnost zapisovat | ano, uživatel |
+| confighash | ano |
 
 ### **restartbl**
 
-Identifikátor pro [restart zařízení do bootloaderu](bootloader/). Změna se projeví po restartu zařízení.
+Identifikátor pro [restart zařízení do bootloaderu](bootloader/) - po restartu zařízení zůstane v command režimu. Po přepnutí proměnné je třeba zařízení restartovat. Po vystoupení z bootloaderu se proměmná automaticky opět vynuluje.
 
 | typ | boolean |
 | :--- | :--- |
@@ -257,6 +278,7 @@ Identifikátor pro [restart zařízení do bootloaderu](bootloader/). Změna se 
 | výchozí hodnota | 0 |
 | možnost číst | ano, uživatel |
 | možnost zapisovat | ano, uživatel |
+| confighash | ne |
 
 ### **revision**
 
@@ -268,6 +290,7 @@ Zjištění revize zařízení
 | výchozí hodnota | 0xFFFFFFFF |
 | možnost číst | ano, uživatel |
 | možnost zapisovat | pouze při první konfiguraci, většinou ve výrobě |
+| confighash | ne |
 
 ### **autojump**
 
@@ -279,6 +302,19 @@ Nastavení funkce autojump. Změna se projeví po restartu zařízení.
 | výchozí hodnota | 300 |
 | možnost číst | ano, uživatel |
 | možnost zapisovat | ano, uživatel |
+| confighash | ano |
+
+### **lastpart**
+
+Poslední validní část binárky v bufferu. Informace se ukládá každých 32 partů.
+
+| typ | 32 bit unsigned integer |
+| :--- | :--- |
+| omezení | 0 - 4294967296 |
+| výchozí hodnota | 0 |
+| možnost číst | ano, uživatel |
+| možnost zapisovat | automaticky |
+| confighash | ne |
 
 ### lowpan\_credentials
 
