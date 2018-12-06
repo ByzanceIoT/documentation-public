@@ -134,6 +134,7 @@
     * [HC-SR04 Senzor](hardware-a-programovani/tutorialy/zakladni-tutorialy/hc-sr04-senzor.md)
   * [Pokročilé](hardware-a-programovani/tutorialy/pokrocile.md)
 * [Správa a diagnostika](hardware-a-programovani/sprava-a-diagnostika/README.md)
+  * [Zdroj restartu](hardware-a-programovani/sprava-a-diagnostika/zdroj-restartu.md)
   * [LED modul](hardware-a-programovani/sprava-a-diagnostika/led-modul.md)
   * [Identifikace zařízení](hardware-a-programovani/sprava-a-diagnostika/identifikace-zarizeni.md)
   * [Monitoring parametrů](hardware-a-programovani/sprava-a-diagnostika/monitoring-parametru.md)
