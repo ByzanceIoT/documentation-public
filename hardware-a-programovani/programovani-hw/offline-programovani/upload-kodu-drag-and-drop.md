@@ -8,7 +8,7 @@ Funkcionalita drag&drop je podmíněna přítomností programátoru a debuggeru,
 
 V případě, že je k dispozici již zkompilovaný kód v binární podobě \(**main.bin**\), připojí se zařízení s DAPlink do PC a poté se zajistí napájení. Správnou inicializaci by měl DAPlink signalizovat krátkým zablikáním.
 
-\#TODO \(Gif připojení ZPP podle ticketu HW-1054\)
+![](../../../.gitbook/assets/zpp.gif)
 
 Po inicializaci se v PC objeví nový virtuální disk pojmenovaný **BYZG3\_&lt;pripona&gt;**. Na tento disk stačí pouze pomocí drag&drop přetáhnout zkompilovaný binární kód a DAPlink automaticky nahraje program do zařízení.
 
