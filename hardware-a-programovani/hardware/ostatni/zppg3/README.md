@@ -8,7 +8,7 @@
 
 ## Použití <a id="pouziti"></a>
 
-\#TODO \(GIF pripojení ZPP do počítače a IODY - ticket [HW-1054](https://youtrack.byzance.cz/youtrack/issue/HW-1054)\)
+![](../../../../.gitbook/assets/zpp.gif)
 
 Připojením DevKitu k PC je vytvořeno složené USB zařízení obsahující:
 
