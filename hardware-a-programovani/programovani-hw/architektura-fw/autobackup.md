@@ -24,6 +24,22 @@ V případě, že je autobackup **vypnutý**, zařízení spoléhá na to, že v
 * Výhodou je, že stačí zálohu nahrát jednou a zařízení si ji "navždy" pamatuje \(případně do doby než je autobackup zapnutý, čímž se záloha se automaticky přepíše na dynamickou\).
 * Nevýhoda je to, že pokud update selže, může se obnovit velmi stará fukční konfigurace, která v aktuálním kontextu nemusí být dávno platná.
 
+## Nepovolené stavy
+
+Pro zachování bezpečnosti existují nepovolené stavy, které zařízení nedopustí.
+
+| autobackup | backup | změna AB | změna B | změna FW |
+| :--- | :--- | :--- | :--- | :--- |
+| 1 | 0 | 1 | 1 | **0** |
+| 0 | 1 | 1 | 1 | 1 |
+| 1 | 0 | **0** | 1 | 1 |
+| 1 | 1 | 1 | 1 | 1 |
+
+blabla
+
+1. Pokud je vypnutý autobackup a neexistuje validní backup, není možno nahrávat firmware. V případě nahrání chybného firmware by bylo zařízení poškozeno a nedokázalo by se samo obnovit. Řešením je před nahráním firmware buď zapnout autobackup, nebo nahrát validní backup.
+2. Pokud neexistuje validní backup, nelze vypnout autobackup. Řešením je nahrátí nového firmware, čímž se validní backup vytvoří ze současného firmware, případně nahrátí validního backupu.
+
 ## Nastavování a zjišťování hodnot
 
 Pokud je nutné režim autobackup změnit, existuje několik možností, jak toho docílit. Podrobnější popis je v kapitole konfigurace, přičemž doporučováno je měnit nastavení pomocí nástroje v Portalu Byzance.
