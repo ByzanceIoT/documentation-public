@@ -75,7 +75,7 @@ Kombinovaný message vstup se čtyřmi argumenty typu 'bool', 'int', 'float' a '
 
 ```cpp
 // message input with 4 arguments - bool, int, float a string
-MESSAGE_INPUT(custom_message_input_combi, BOOLEAN, INTEGER, FLOAT, STRING {
+MESSAGE_INPUT(custom_message_input_combi, BOOLEAN, INTEGER, FLOAT, STRING, {
     printf("received message input bool %d, int %d, float %f, string %s\n", arg1, arg2, arg3, arg4);
 });
 ```
