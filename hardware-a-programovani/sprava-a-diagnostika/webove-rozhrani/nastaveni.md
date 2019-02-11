@@ -14,5 +14,5 @@ Popis ostatních možností konfigurace je možno nalézt v samostatném článk
 
 Význam jednotlivých položek a jejich omezení je dostupný v příslušné sekci.
 
-{% page-ref page="../omezeni-konfigurace.md" %}
+{% page-ref page="../omezeni-konfigurace/" %}
 

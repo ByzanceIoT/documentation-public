@@ -55,7 +55,7 @@ Narozdíl od Full ID, které je vždy unikátní z výroby a strojově dobře č
 
 Omezení při nastavování Alias jsou popsána v příslušné kapitole.
 
-{% page-ref page="omezeni-konfigurace.md" %}
+{% page-ref page="omezeni-konfigurace/" %}
 
 Alias je možné zjistit při startu zařízení vyčtením při startu [bootloaderu](bootloader/).
 

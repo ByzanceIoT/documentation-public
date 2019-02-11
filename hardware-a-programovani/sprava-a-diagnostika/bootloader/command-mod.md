@@ -53,7 +53,7 @@ Více informací k MQTT připojení je možno nalézt v sekci [Komunikace se ser
 * **revision** - Zjištění [revize zařízení](command-mod.md)
 * **autojump** - Nastavení časovače autojump na určitý čas. Po této době neaktivity \(v sekundách\) se zařízení přepne automaticky z bootloaderu do firmware.
 * **lastpart** - zobrazuje počet části přijatých při posledním pokusu o aktualizaci bootloaderu firmwaru nebo backupu
-* **confighash** - při změně nastavení se generuje nový confighash. Synchronizaci není nutno provádět vždy, ale pouze při změnách. Seznam parametrů, které generují nový confighash je možno nalézt v článku [omezení konfigurace](../omezeni-konfigurace.md).
+* **confighash** - při změně nastavení se generuje nový confighash. Synchronizaci není nutno provádět vždy, ale pouze při změnách. Seznam parametrů, které generují nový confighash je možno nalézt v článku [omezení konfigurace](../omezeni-konfigurace/).
 
 ## Příkazy pouze s parametrem
 

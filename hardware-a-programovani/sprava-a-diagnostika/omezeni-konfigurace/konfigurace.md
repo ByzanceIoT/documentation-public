@@ -1,96 +1,8 @@
-# Omezení konfigurace
-
-Každé zařízení je vybaveno detekcí [validní konfigurace](https://docu.byzance.cz/hardware-a-programovani/sprava-zarizeni/konfigurace-zarizeni). Pokud konfigurace neodpovídá očekávaným parametrům, případně pokud je zařízení nové a nikdy nebylo nakonfigurováno, místo některých \(nebo všech\) položek mohou být automaticky dosazeny výchozí hodnoty.
-
-Kontrola parametrů se děje vždy při vstupu do [bootloaderu](https://docu.byzance.cz/hardware-a-programovani/architektura-fw/bootloader), ještě před spuštěním vlastního firmware.
-
-## MQTT
-
-Připojení zařízení k serverům Byzance využívá technologii MQTT.
-
-{% page-ref page="../konektivita/komunikace-s-portalem.md" %}
-
-Z hlediska bezpečnosti se používá hlavní a záložní MQTT server.
-
-{% page-ref page="../konektivita/prepinani-mezi-servery.md" %}
-
-### **normal\_mqtt\_hostname**
-
-Hostname nebo IP adresa hlavního serveru. Změna se projeví při dalším připojení k serveru.
-
-| typ | char\[128\] |
-| :--- | :--- |
-| omezení | tisknutelné ASCII znaky zakončené terminační nulou |
-| výchozí hodnota | main.homer.byzance.cz |
-| možnost číst | ano, uživatel |
-| možnost nastavit | ano, uživatel |
-| confighash | ne |
-
-### **normal\_mqtt\_port**
-
-MQTT port hlavního serveru. Změna se projeví při dalším připojení k serveru.
-
-| typ | 16 bit unsigned integer |
-| :--- | :--- |
-| omezení | 0 - 65535 |
-| výchozí hodnota | 1881 |
-| možnost číst | ano, uživatel |
-| možnost nastavit | ano, uživatel |
-| confighash | ne |
-
-### **backup\_mqtt\_hostname**
-
-Hostname nebo IP adresa záložního serveru. Změna se projeví při dalším připojení k serveru.
-
-| typ | char\[128\] |
-| :--- | :--- |
-| omezení | tisknutelné ASCII znaky zakončené terminační nulou |
-| výchozí hodnota | backup.homer.byzance.cz |
-| možnost číst | ano, uživatel |
-| možnost nastavit | ano, uživatel |
-| confighash | ne |
-
-### **backup\_mqtt\_port**
-
-MQTT port záložního serveru. Změna se projeví při dalším připojení k serveru.
-
-| typ | 16 bit unsigned integer |
-| :--- | :--- |
-| omezení | 0 - 65535 |
-| výchozí hodnota | 1881 |
-| možnost číst | ano, uživatel |
-| možnost nastavit | ano, uživatel |
-| confighash | ne |
-
-### **mqtt\_username**
-
-Přihlašovací jméno do MQTT brokeru. Změna se projeví při dalším připojení k serveru.
-
-| typ | char\[48\] |
-| :--- | :--- |
-| omezení | tisknutelné ASCII znaky zakončené terminační nulou |
-| výchozí hodnota | user |
-| možnost číst | uživatelsky ne, pouze interně |
-| možnost zapisovat | ano, uživatel |
-| confighash | ne |
-
-### **mqtt\_password**
-
-Přihlašovací heslo do MQTT brokeru. Změna se projeví při dalším připojení k serveru.
-
-| typ | char\[48\] |
-| :--- | :--- |
-| omezení | tisknutelné ASCII znaky zakončené terminační nulou |
-| výchozí hodnota | pass |
-| možnost číst | uživatelsky ne, pouze interně |
-| možnost zapisovat | ano, uživatel |
-| confighash | ne |
-
-## Ostatní
+# Konfigurace
 
 ### **alias**
 
-Alias zařízení, který si každý může nastavit pro lepší [identifikaci zařízení](identifikace-zarizeni.md). Změna se projeví okamžitě.
+Alias zařízení, který si každý může nastavit pro lepší [identifikaci zařízení](../identifikace-zarizeni.md). Změna se projeví okamžitě.
 
 | typ | char\[64\] |
 | :--- | :--- |
@@ -114,7 +26,7 @@ Zjištění MAC adresy.
 
 ### **blreport**
 
-Bootloader report. Zapnutí, nebo vypnutí výpisu hlavičky [bootloaderu](bootloader/) do konzole. Změna se projeví po restartu zařízení.
+Bootloader report. Zapnutí, nebo vypnutí výpisu hlavičky [bootloaderu](../bootloader/) do konzole. Změna se projeví po restartu zařízení.
 
 | typ | boolean |
 | :--- | :--- |
@@ -126,7 +38,7 @@ Bootloader report. Zapnutí, nebo vypnutí výpisu hlavičky [bootloaderu](bootl
 
 ### **wdenable**
 
-Zapnutí [watchdogu](../knowledge-base/watchdog.md). Změna se projeví po restartu zařízení.
+Zapnutí [watchdogu](../../knowledge-base/watchdog.md). Změna se projeví po restartu zařízení.
 
 | typ | boolean |
 | :--- | :--- |
@@ -138,7 +50,7 @@ Zapnutí [watchdogu](../knowledge-base/watchdog.md). Změna se projeví po resta
 
 ### **wdtime**
 
-Nastavení periody resetu [watchdogu](../knowledge-base/watchdog.md). Změna se projeví po restartu zařízení.
+Nastavení periody resetu [watchdogu](../../knowledge-base/watchdog.md). Změna se projeví po restartu zařízení.
 
 | typ | integer |
 | :--- | :--- |
@@ -210,7 +122,7 @@ Zapnutí nebo vypnutí možnosti šifrování. Změna se projeví po restartu za
 
 ### **webview**
 
-Zapnutí nebo vypnutí funkcionality [webového rozhraní](webove-rozhrani/). Změna se projeví po restartu zařízení.
+Zapnutí nebo vypnutí funkcionality [webového rozhraní](../webove-rozhrani/). Změna se projeví po restartu zařízení.
 
 | typ | boolean |
 | :--- | :--- |
@@ -222,7 +134,7 @@ Zapnutí nebo vypnutí funkcionality [webového rozhraní](webove-rozhrani/). Zm
 
 ### **webport**
 
-Port, na kterém bude přístupno [webové rozhraní](webove-rozhrani/). Změna se projeví po restartu zařízení.
+Port, na kterém bude přístupno [webové rozhraní](../webove-rozhrani/). Změna se projeví po restartu zařízení.
 
 | typ | 16 bit unsigned integer |
 | :--- | :--- |
@@ -234,7 +146,7 @@ Port, na kterém bude přístupno [webové rozhraní](webove-rozhrani/). Změna 
 
 ### **timeoffset**
 
-Slouží pro lokalizovanou [práci s časem](../tutorialy/datum-a-cas-rtc.md). Nastavení offsetu lokálního času RTC od UTC. 
+Slouží pro lokalizovanou [práci s časem](../../tutorialy/datum-a-cas-rtc.md). Nastavení offsetu lokálního času RTC od UTC. 
 
 | typ | 32 bit unsigned integer |
 | :--- | :--- |
@@ -246,7 +158,7 @@ Slouží pro lokalizovanou [práci s časem](../tutorialy/datum-a-cas-rtc.md). N
 
 ### **timesync**
 
-Slouží pro zapnutí [synchronizace času](../tutorialy/datum-a-cas-rtc.md) mezi servery Byzance a RTC.
+Slouží pro zapnutí [synchronizace času](../../tutorialy/datum-a-cas-rtc.md) mezi servery Byzance a RTC.
 
 | typ | boolean |
 | :--- | :--- |
@@ -258,7 +170,7 @@ Slouží pro zapnutí [synchronizace času](../tutorialy/datum-a-cas-rtc.md) mez
 
 ### **lowpanbr**
 
-Zapnutí funkce [lowpan border router](../konektivita/6lowpan.md). Změna se projeví po restartu zařízení.
+Zapnutí funkce [lowpan border router](../../konektivita/6lowpan.md). Změna se projeví po restartu zařízení.
 
 | typ | boolean |
 | :--- | :--- |
@@ -270,7 +182,7 @@ Zapnutí funkce [lowpan border router](../konektivita/6lowpan.md). Změna se pro
 
 ### **restartbl**
 
-Identifikátor pro [restart zařízení do bootloaderu](bootloader/) - po restartu zařízení zůstane v command režimu. Po přepnutí proměnné je třeba zařízení restartovat. Po vystoupení z bootloaderu se proměmná automaticky opět vynuluje.
+Identifikátor pro [restart zařízení do bootloaderu](../bootloader/) - po restartu zařízení zůstane v command režimu. Po přepnutí proměnné je třeba zařízení restartovat. Po vystoupení z bootloaderu se proměmná automaticky opět vynuluje.
 
 | typ | boolean |
 | :--- | :--- |
@@ -315,8 +227,4 @@ Poslední validní část binárky v bufferu. Informace se ukládá každých 32
 | možnost číst | ano, uživatel |
 | možnost zapisovat | automaticky |
 | confighash | ne |
-
-### lowpan\_credentials
-
-Nastavení přihlašovacích údajů k síti ve formátu `<název>-<klíč>`. Položka `<název>` může být až 16 znaků dlouhá; položka `<klíč>` je přesně 32 znaků dlouhá, přičemž povolené znaky jsou a-f, A-F a číslice 0-9. Změna se projeví po restartu zařízení.
 

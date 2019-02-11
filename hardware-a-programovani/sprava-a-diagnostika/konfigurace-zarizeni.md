@@ -6,7 +6,7 @@ Všechna zařízení IODAG3E jsou konfigurovatelná. Před každou změnou vých
 
 Dojde-li ke konfliktu mezi jednotlivými konfiguračními soubory, soubor v IODAG3E je při připojení k Portálu automaticky přepsán konfigurací z Portálu. Proto je nutno konfiguraci provádět primárně přes Portál. Ostatní metody je třeba brát jako doplňkové pro případ, že bude zařízení offline.
 
-Výchozí hodnoty konfigurace a možná omezení jsou popsány v článku [Omezení konfigurace](omezeni-konfigurace.md).
+Výchozí hodnoty konfigurace a možná omezení jsou popsány v článku [Omezení konfigurace](omezeni-konfigurace/).
 
 ![](../../.gitbook/assets/local-global-config-file.jpg)
 
