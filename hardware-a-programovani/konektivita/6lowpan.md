@@ -13,7 +13,7 @@ Jedná se o hraniční router, který má za úkol zajistit směrování paketů
 * bezdrátové s technologií 6LowPAN
 * obecný vstup do Internetu \(například [GSM](gsm.md), Ethernet\)
 
-Zařízení tohoto typu samo o sobě vytváří bezdrátovou síť a je tedy jakýmsi středobodem sítě. Pro využití je nutné [nakonfigurovat](../sprava-a-diagnostika/konfigurace-zarizeni.md) zařízení tak, aby byla zapnutá funkcionalita _lowpanbr_ a byl [specifikován zdroj Internetu](specifikace-zdroje-internetu.md).
+Zařízení tohoto typu samo o sobě vytváří bezdrátovou síť a je tedy jakýmsi středobodem sítě. Pro využití je nutné [nakonfigurovat](../sprava-a-diagnostika/konfigurace-zarizeni/) zařízení tak, aby byla zapnutá funkcionalita _lowpanbr_ a byl [specifikován zdroj Internetu](specifikace-zdroje-internetu.md).
 
 ### Zařízení Router
 

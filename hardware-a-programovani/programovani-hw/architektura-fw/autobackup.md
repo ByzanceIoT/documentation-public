@@ -44,5 +44,5 @@ blabla
 
 Pokud je nutné režim autobackup změnit, existuje několik možností, jak toho docílit. Podrobnější popis je v kapitole konfigurace, přičemž doporučováno je měnit nastavení pomocí nástroje v Portalu Byzance.
 
-{% page-ref page="../../sprava-a-diagnostika/konfigurace-zarizeni.md" %}
+{% page-ref page="../../sprava-a-diagnostika/konfigurace-zarizeni/" %}
 

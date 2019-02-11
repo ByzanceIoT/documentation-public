@@ -20,7 +20,7 @@ Hostname nebo IP adresa hlavního serveru. Změna se projeví při dalším při
 | výchozí hodnota | main.homer.byzance.cz |
 | možnost číst | ano, uživatel |
 | možnost nastavit | ano, uživatel |
-| confighash | ne |
+| confighash | ano |
 
 ### **normal\_mqtt\_port**
 
@@ -32,7 +32,7 @@ MQTT port hlavního serveru. Změna se projeví při dalším připojení k serv
 | výchozí hodnota | 1881 |
 | možnost číst | ano, uživatel |
 | možnost nastavit | ano, uživatel |
-| confighash | ne |
+| confighash | ano |
 
 ### **backup\_mqtt\_hostname**
 
@@ -44,7 +44,7 @@ Hostname nebo IP adresa záložního serveru. Změna se projeví při dalším p
 | výchozí hodnota | backup.homer.byzance.cz |
 | možnost číst | ano, uživatel |
 | možnost nastavit | ano, uživatel |
-| confighash | ne |
+| confighash | ano |
 
 ### **backup\_mqtt\_port**
 
@@ -56,7 +56,7 @@ MQTT port záložního serveru. Změna se projeví při dalším připojení k s
 | výchozí hodnota | 1881 |
 | možnost číst | ano, uživatel |
 | možnost nastavit | ano, uživatel |
-| confighash | ne |
+| confighash | ano |
 
 ### **mqtt\_username**
 
@@ -68,7 +68,7 @@ Přihlašovací jméno do MQTT brokeru. Změna se projeví při dalším připoj
 | výchozí hodnota | user |
 | možnost číst | uživatelsky ne, pouze interně |
 | možnost zapisovat | ano, uživatel |
-| confighash | ne |
+| confighash | ano |
 
 ### **mqtt\_password**
 
@@ -80,5 +80,5 @@ Přihlašovací heslo do MQTT brokeru. Změna se projeví při dalším připoje
 | výchozí hodnota | pass |
 | možnost číst | uživatelsky ne, pouze interně |
 | možnost zapisovat | ano, uživatel |
-| confighash | ne |
+| confighash | ano |
 

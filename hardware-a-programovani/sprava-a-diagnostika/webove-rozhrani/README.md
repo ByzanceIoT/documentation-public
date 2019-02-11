@@ -12,14 +12,14 @@ Pokud je zdrojem internetu 6lowpan či GSM, zařízení je schováno za NAT a we
 * Zjištění stavu[ softwarového restartu](zakladni-prehled.md).
 * Zjištění verzí jednotlivých komponent firmware.
 * [Využití výkonu](../vytizeni-zarizeni.md) mikrokontroléru a stav jednotlivých vláken.
-* Výpis aktuálních hodnot [konfigurace](../konfigurace-zarizeni.md), případně jejich změna.
+* Výpis aktuálních hodnot [konfigurace](../konfigurace-zarizeni/), případně jejich změna.
 * Zaregistrované Byzance [digitální/analogové/message vstupy a výstupy](../../programovani-hw/byzance-api/vstupy-a-vystupy-do-portalu.md).
 
 ## Jak získat přístup do webového rozhraní
 
 Webové rozhraní musí být povoleno a nakonfigurováno na požadovaný port. K tomu je třeba zapnout proměnnou "webview" a nastavit "webport" libovolným způsobem konfigurace zařízení. Dále musí být nastaven "netsource" na "ethernet".
 
-{% page-ref page="../konfigurace-zarizeni.md" %}
+{% page-ref page="../konfigurace-zarizeni/" %}
 
 V dalším kroku je třeba zjistit přidělenou IP adresu zařízení. Toho je možno docílit například při běhu firmware metodou get\_ip\_address\(\).
 

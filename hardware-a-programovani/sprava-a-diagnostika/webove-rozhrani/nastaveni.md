@@ -8,7 +8,7 @@ Konfigurace může probíhat několika způsoby, pričemž doporučovaný způso
 
 Popis ostatních možností konfigurace je možno nalézt v samostatném článku.
 
-{% page-ref page="../konfigurace-zarizeni.md" %}
+{% page-ref page="../konfigurace-zarizeni/" %}
 
 ![](../../../.gitbook/assets/web_config.png)
 

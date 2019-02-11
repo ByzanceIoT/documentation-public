@@ -1,6 +1,6 @@
 # Režimy bootloaderu
 
-Bootloader \(tzv. zavaděč\) je softwarová komponenta, která se spouští jako první při zapnutí zařízení. Jejím úkolem je většinou pouze skok do hlavního programu. Má ale i několik dalších módů, které popisuje tato kapitola. Speciálním režimem je [mód commands](command-mod.md), díky němuž je možno [konfigurovat zařízení](../konfigurace-zarizeni.md).
+Bootloader \(tzv. zavaděč\) je softwarová komponenta, která se spouští jako první při zapnutí zařízení. Jejím úkolem je většinou pouze skok do hlavního programu. Má ale i několik dalších módů, které popisuje tato kapitola. Speciálním režimem je [mód commands](command-mod.md), díky němuž je možno [konfigurovat zařízení](../konfigurace-zarizeni/).
 
 ## Mód JUMP
 

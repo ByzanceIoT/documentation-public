@@ -111,5 +111,5 @@ Revision je interně interpretováno jako 32 bitové číslo, které se interpre
 
 Revizi je možno zjistit jednou z možností popsaných v sekci konfigurace zařízení.
 
-{% page-ref page="konfigurace-zarizeni.md" %}
+{% page-ref page="konfigurace-zarizeni/" %}
 
