@@ -6,7 +6,7 @@ Všechna zařízení IODAG3E jsou konfigurovatelná. Před každou změnou vých
 
 Dojde-li ke konfliktu mezi jednotlivými konfiguračními soubory, soubor v IODAG3E je při připojení k Portálu automaticky přepsán konfigurací z Portálu. Proto je nutno konfiguraci provádět primárně přes Portál. Ostatní metody je třeba brát jako doplňkové pro případ, že bude zařízení offline.
 
-Každá změna konfigurace generuje nový confighash. Jedná se o speciální položku, která umožňuje přeskakování synchronizace, pokud se nic nezměnilo mezi odpojením od serverů a opětovném připojení.
+Každá změna konfigurace generuje nový [confighash](confighash.md). Jedná se o speciální položku, která umožňuje přeskakování synchronizace, pokud se nic nezměnilo mezi odpojením od serverů a opětovném připojení.
 
 Výchozí hodnoty konfigurace, výjimky nereagující na confighash a možná omezení jsou popsány v článku [Omezení konfigurace](../omezeni-konfigurace/).
 
